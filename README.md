@@ -10,11 +10,16 @@
 This is VerifAI's TestGuru generated tests for https://github.com/qiyuangong/leetcode solutions for python.
 
 TestGuru generated tests for the python solutions for leetcode questions.
+
 These solutions were obtained from :  https://github.com/qiyuangong/leetcode
+
 Permission is granted to use these generated tests and results without any restriction.
 
 Repo Structure:
 ---------------
+
+
+<pre>
 testguru
 ├── 001_Two_Sum
 │   ├── .coverage
@@ -32,9 +37,15 @@ testguru
 │   ├── test.out.txt
 │   ├── test_002_Add_Two_Numbers.cov
 │   └── test_002_Add_Two_Numbers.py
+</pre>
 
 
-To run tests: cd 001_Two_Sum ; pytest test_001_Two_Sum.py
+To run tests:
+-------------
+
+`cd 001_Two_Sum`
+
+`pytest test_001_Two_Sum.py`
 
 
 
