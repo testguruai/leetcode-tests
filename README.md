@@ -1,4 +1,4 @@
-# leetcode-tests"
+# leetcode-tests
 # ==============================================================================
 # Copyright 2023 VerifAI All Rights Reserved.
 # hello@verifai.ai
