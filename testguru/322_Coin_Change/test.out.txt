@@ -1,0 +1,47 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+322_Coin_Change/test_322_Coin_Change.py F                                [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_coinChange ________________________________
+
+    def test_coinChange():
+        sol = Solution()
+        coins_1 = [1, 2, 5]
+        amount_1 = 11
+        assert sol.coinChange(coins_1, amount_1) == 3
+    
+        coins_2 = [2]
+        amount_2 = 3
+        assert sol.coinChange(coins_2, amount_2) == -1
+    
+        coins_3 = [1]
+        amount_3 = 0
+        assert sol.coinChange(coins_3, amount_3) == 0
+    
+        coins_4 = [1]
+        amount_4 = 1
+        assert sol.coinChange(coins_4, amount_4) == 1
+    
+        coins_5 = [1]
+        amount_5 = 2
+        assert sol.coinChange(coins_5, amount_5) == 2
+    
+        coins_6 = [186, 419, 83, 408]
+        amount_6 = 6249
+        assert sol.coinChange(coins_6, amount_6) == 20
+    
+        coins_7 = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+        amount_7 = 1100
+>       assert sol.coinChange(coins_7, amount_7) == 58
+E       assert 54 == 58
+E        +  where 54 = <bound method Solution.coinChange of <solution.Solution object at 0x7f8dea9f0400>>([1, 3, 5, 7, 9, 11, ...], 1100)
+E        +    where <bound method Solution.coinChange of <solution.Solution object at 0x7f8dea9f0400>> = <solution.Solution object at 0x7f8dea9f0400>.coinChange
+
+322_Coin_Change/test_322_Coin_Change.py:33: AssertionError
+=========================== short test summary info ============================
+FAILED 322_Coin_Change/test_322_Coin_Change.py::test_coinChange - assert 54 =...
+============================== 1 failed in 0.02s ===============================

@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+409_Longest_Palindrome/test_409_Longest_Palindrome.py F                  [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_longest_palindrome ____________________________
+
+    def test_longest_palindrome():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+409_Longest_Palindrome/test_409_Longest_Palindrome.py:5: NameError
+=========================== short test summary info ============================
+FAILED 409_Longest_Palindrome/test_409_Longest_Palindrome.py::test_longest_palindrome
+============================== 1 failed in 0.01s ===============================

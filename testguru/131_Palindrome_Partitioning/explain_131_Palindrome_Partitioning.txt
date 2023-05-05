@@ -1,0 +1,7 @@
+This is a Python class named `Solution` which provides a method named `partition` which takes a string as a parameter and returns a list of lists of strings. 
+
+The class has two other methods, `recurPartition` and `isPalindrome`. `recurPartition` is a recursive function used by the partition method to generate all possible palindromic partitions of the given string, while `isPalindrome` is a helper function to check whether a given substring is a palindrome.
+
+In `recurPartition`, the method first checks if the start index is equal to the length of the string, which indicates that all substrings have been processed. If this is the case, the current partition is added to the result list. Then, a loop traverses through all possible substrings starting from the current index. If a substring is detected as a palindrome, it is added to the current partition and the method is recursively called to process the remaining part of the string. After the recursive call, the substring is removed from the current partition using `curr.pop()`.
+
+The `isPalindrome` function simply returns a boolean value indicating whether the given substring is a palindrome or not, by traversing through the string from both ends and comparing the characters.

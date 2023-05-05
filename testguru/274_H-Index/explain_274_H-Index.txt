@@ -1,0 +1,9 @@
+The given Python code is a class `Solution` that contains a function `hIndex` to calculate the H-Index of a set of citations. 
+
+There are three different implementations of the `hIndex` function within the class, each using a different algorithm to calculate the H-Index.
+
+The first implementation is commented out, and - as per the comment - it works by sorting the citations and then finding the largest value `h` such that the number of papers with citation count equal to or greater than `h` is also `h`.
+
+The second implementation sorts the citations and then iterates through them backwards, counting how many papers have citation count greater than the iterator variable. The H-Index is then equal to the number of such papers.
+
+The third implementation uses counting sort to count the number of papers with each citation count. It then iterates backwards through these counts to find the largest value `k` such that the number of papers with citation count greater than or equal to `k` is also at least equal to `k`. This `k` value is then returned as the H-Index.

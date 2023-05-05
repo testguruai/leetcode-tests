@@ -1,0 +1,6 @@
+Name                                                                                                                        Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+340_Longest_Substring_with_At_Most_K_Distinct_Characters/test_340_Longest_Substring_with_At_Most_K_Distinct_Characters.py      19      3    84%   22-28
+/data/ethan/leetcode-master/python/340_Longest_Substring_with_At_Most_K_Distinct_Characters.py                                 16      0   100%
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                          35      3    91%

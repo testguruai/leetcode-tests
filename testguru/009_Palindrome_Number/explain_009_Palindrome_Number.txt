@@ -1,0 +1,9 @@
+This is a code for checking whether a given integer is a palindrome or not. 
+
+The code defines a class called "Solution" with a method called "isPalindrome". The input to this method is an integer "x" and the output is a boolean value indicating whether "x" is a palindrome or not. 
+
+The first line of the method converts the integer to a string. The second line checks whether the string is equal to its reverse (achieved using slicing with [::-1]). If it is, then the method returns True, else it returns False. 
+
+There are also four other commented out methods for checking for palindromes, but they are not used in the code. 
+
+Finally, the method is tested for an example input of 1001 using a newly created instance of the "Solution" class.

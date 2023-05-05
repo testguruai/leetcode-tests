@@ -1,0 +1,6 @@
+Name                                                                    Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------
+1310_XOR_Queries_of_a_Subarray/test_1310_XOR_Queries_of_a_Subarray.py      25      8    68%   26-35
+/data/ethan/leetcode-master/python/1310_XOR_Queries_of_a_Subarray.py       10      0   100%
+-----------------------------------------------------------------------------------------------------
+TOTAL                                                                      35      8    77%

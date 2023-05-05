@@ -1,0 +1,147 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+113_Path_Sum_II/test_113_Path_Sum_II.py ..FFFF.                          [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_pathSum_positive_num ___________________________
+
+    def test_pathSum_positive_num():
+        # Test tree with positive numbers
+        s = Solution()
+    
+        # Test tree:
+        #         5
+        #       /   \
+        #      4     8
+        #     / \   / \
+        #    11  2 13  4
+        #   /   / \     \
+        #  7   5   1     1
+    
+        tree = TreeNode(5)
+        tree.left = TreeNode(4)
+        tree.right = TreeNode(8)
+        tree.left.left = TreeNode(11)
+        tree.left.left.left = TreeNode(7)
+        tree.left.right = TreeNode(2)
+        tree.right.left = TreeNode(13)
+        tree.right.right = TreeNode(4)
+        tree.right.right.right = TreeNode(1)
+        tree.left.right.left = TreeNode(5)
+        tree.left.right.right = TreeNode(1)
+    
+        expected_results = [[5, 4, 11, 7], [5, 8, 13], [5, 8, 4, 1]]
+>       assert s.pathSum(tree, 22) == expected_results
+E       assert [] == [[5, 4, 11, 7... [5, 8, 4, 1]]
+E         Right contains 3 more items, first extra item: [5, 4, 11, 7]
+E         Use -v to get more diff
+
+113_Path_Sum_II/test_113_Path_Sum_II.py:46: AssertionError
+__________________________ test_pathSum_negative_num ___________________________
+
+    def test_pathSum_negative_num():
+        # Test tree with negative numbers
+    
+        s = Solution()
+    
+        # Test tree:
+        #         -5
+        #       /   \
+        #      4     8
+        #     / \   / \
+        #   -11 -2 13  -4
+        #   /   / \     \
+        #  7   -5 -1     1
+    
+        tree = TreeNode(-5)
+        tree.left = TreeNode(4)
+        tree.right = TreeNode(8)
+        tree.left.left = TreeNode(-11)
+        tree.left.left.left = TreeNode(7)
+        tree.left.right = TreeNode(-2)
+        tree.right.left = TreeNode(13)
+        tree.right.right = TreeNode(-4)
+        tree.right.right.right = TreeNode(1)
+        tree.left.right.left = TreeNode(-5)
+        tree.left.right.right = TreeNode(-1)
+    
+        expected_results = [[-5, 4, -11, 7], [-5, 4, -2, -1]]
+>       assert s.pathSum(tree, -5) == expected_results
+E       assert [[-5, 4, -11, 7]] == [[-5, 4, -11,...5, 4, -2, -1]]
+E         Right contains one more item: [-5, 4, -2, -1]
+E         Use -v to get more diff
+
+113_Path_Sum_II/test_113_Path_Sum_II.py:75: AssertionError
+______________________________ test_pathSum_mixed ______________________________
+
+    def test_pathSum_mixed():
+        # Test tree with mixed numbers
+    
+        s = Solution()
+    
+        # Test tree:
+        #         5
+        #       /   \
+        #    -10     8
+        #     / \   / \
+        #    11  2  13 4
+        #   /   / \    \
+        # -10   5   1   10
+    
+        tree = TreeNode(5)
+        tree.left = TreeNode(-10)
+        tree.right = TreeNode(8)
+        tree.left.left = TreeNode(11)
+        tree.left.left.left = TreeNode(-10)
+        tree.left.right = TreeNode(2)
+        tree.right.left = TreeNode(13)
+        tree.right.right = TreeNode(4)
+        tree.right.right.right = TreeNode(10)
+        tree.left.right.left = TreeNode(5)
+        tree.left.right.right = TreeNode(1)
+    
+        expected_results = [[5, -10, 11, -10, 5], [5, 8, 13, 4], [5, -10, 2, 5, 1]]
+>       assert s.pathSum(tree, 1) == expected_results
+E       assert [] == [[5, -10, 11,...-10, 2, 5, 1]]
+E         Right contains 3 more items, first extra item: [5, -10, 11, -10, 5]
+E         Use -v to get more diff
+
+113_Path_Sum_II/test_113_Path_Sum_II.py:104: AssertionError
+______________________________ test_pathSum_zero _______________________________
+
+    def test_pathSum_zero():
+        # Test tree with zeros
+    
+        s = Solution()
+    
+        # Test tree:
+        #         1
+        #       /   \
+        #      0     0
+        #     / \   / \
+        #    0   0 0   0
+        tree = TreeNode(1)
+        tree.left = TreeNode(0)
+        tree.right = TreeNode(0)
+        tree.left.left = TreeNode(0)
+        tree.left.right = TreeNode(0)
+        tree.right.left = TreeNode(0)
+        tree.right.right = TreeNode(0)
+    
+        expected_results = [[1, 0, 0, 0], [1, 0, 0, 0], [1, 0, 0, 0, 0, 0]]
+>       assert s.pathSum(tree, 1) == expected_results
+E       assert [[1, 0, 0], [...0], [1, 0, 0]] == [[1, 0, 0, 0]..., 0, 0, 0, 0]]
+E         At index 0 diff: [1, 0, 0] != [1, 0, 0, 0]
+E         Left contains one more item: [1, 0, 0]
+E         Use -v to get more diff
+
+113_Path_Sum_II/test_113_Path_Sum_II.py:126: AssertionError
+=========================== short test summary info ============================
+FAILED 113_Path_Sum_II/test_113_Path_Sum_II.py::test_pathSum_positive_num - a...
+FAILED 113_Path_Sum_II/test_113_Path_Sum_II.py::test_pathSum_negative_num - a...
+FAILED 113_Path_Sum_II/test_113_Path_Sum_II.py::test_pathSum_mixed - assert [...
+FAILED 113_Path_Sum_II/test_113_Path_Sum_II.py::test_pathSum_zero - assert [[...
+========================= 4 failed, 3 passed in 0.03s ==========================

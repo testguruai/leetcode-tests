@@ -1,0 +1,55 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+366_Find_Leaves_of_Binary_Tree/test_366_Find_Leaves_of_Binary_Tree.py .F [ 40%]
+FFF                                                                      [100%]
+
+=================================== FAILURES ===================================
+___________________ TestSolution.test_findLeaves_singleNode ____________________
+
+self = <test_366_Find_Leaves_of_Binary_Tree.TestSolution object at 0x7f8b98ad05e0>
+
+    def test_findLeaves_singleNode(self):
+        sol = Solution()
+>       root = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+366_Find_Leaves_of_Binary_Tree/test_366_Find_Leaves_of_Binary_Tree.py:12: NameError
+__________________ TestSolution.test_findLeaves_leftChildOnly __________________
+
+self = <test_366_Find_Leaves_of_Binary_Tree.TestSolution object at 0x7f8b98ad0700>
+
+    def test_findLeaves_leftChildOnly(self):
+        sol = Solution()
+>       root = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+366_Find_Leaves_of_Binary_Tree/test_366_Find_Leaves_of_Binary_Tree.py:18: NameError
+_________________ TestSolution.test_findLeaves_rightChildOnly __________________
+
+self = <test_366_Find_Leaves_of_Binary_Tree.TestSolution object at 0x7f8b98ad0820>
+
+    def test_findLeaves_rightChildOnly(self):
+        sol = Solution()
+>       root = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+366_Find_Leaves_of_Binary_Tree/test_366_Find_Leaves_of_Binary_Tree.py:26: NameError
+__________________ TestSolution.test_findLeaves_completeTree ___________________
+
+self = <test_366_Find_Leaves_of_Binary_Tree.TestSolution object at 0x7f8b98ad0940>
+
+    def test_findLeaves_completeTree(self):
+        sol = Solution()
+>       root = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+366_Find_Leaves_of_Binary_Tree/test_366_Find_Leaves_of_Binary_Tree.py:34: NameError
+=========================== short test summary info ============================
+FAILED 366_Find_Leaves_of_Binary_Tree/test_366_Find_Leaves_of_Binary_Tree.py::TestSolution::test_findLeaves_singleNode
+FAILED 366_Find_Leaves_of_Binary_Tree/test_366_Find_Leaves_of_Binary_Tree.py::TestSolution::test_findLeaves_leftChildOnly
+FAILED 366_Find_Leaves_of_Binary_Tree/test_366_Find_Leaves_of_Binary_Tree.py::TestSolution::test_findLeaves_rightChildOnly
+FAILED 366_Find_Leaves_of_Binary_Tree/test_366_Find_Leaves_of_Binary_Tree.py::TestSolution::test_findLeaves_completeTree
+========================= 4 failed, 1 passed in 0.02s ==========================

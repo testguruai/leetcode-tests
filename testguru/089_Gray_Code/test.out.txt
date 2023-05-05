@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+089_Gray_Code/test_089_Gray_Code.py .FF                                  [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_grayCode_empty ______________________________
+
+    def test_grayCode_empty():
+>       assert not s.grayCode(0)
+E       assert not [0]
+E        +  where [0] = <bound method Solution.grayCode of <solution.Solution object at 0x7fda14013fd0>>(0)
+E        +    where <bound method Solution.grayCode of <solution.Solution object at 0x7fda14013fd0>> = <solution.Solution object at 0x7fda14013fd0>.grayCode
+
+089_Gray_Code/test_089_Gray_Code.py:10: AssertionError
+_________________________ test_grayCode_invalid_input __________________________
+
+    def test_grayCode_invalid_input():
+        with pytest.raises(TypeError):
+            s.grayCode('a')
+        with pytest.raises(TypeError):
+            s.grayCode(1.5)
+>       with pytest.raises(ValueError):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+089_Gray_Code/test_089_Gray_Code.py:17: Failed
+=========================== short test summary info ============================
+FAILED 089_Gray_Code/test_089_Gray_Code.py::test_grayCode_empty - assert not [0]
+FAILED 089_Gray_Code/test_089_Gray_Code.py::test_grayCode_invalid_input - Fai...
+========================= 2 failed, 1 passed in 0.02s ==========================

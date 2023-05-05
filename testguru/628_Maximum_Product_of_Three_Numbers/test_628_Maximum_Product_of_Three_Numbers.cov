@@ -1,0 +1,6 @@
+Name                                                                                Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------------
+628_Maximum_Product_of_Three_Numbers/test_628_Maximum_Product_of_Three_Numbers.py      23      8    65%   25-34
+/data/ethan/leetcode-master/python/628_Maximum_Product_of_Three_Numbers.py             21      0   100%
+-----------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                  44      8    82%

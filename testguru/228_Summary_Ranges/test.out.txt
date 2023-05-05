@@ -1,0 +1,35 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 8 items
+
+228_Summary_Ranges/test_228_Summary_Ranges.py ...F.F..                   [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_summaryRanges_duplicate _________________________
+
+    def test_summaryRanges_duplicate():
+        solution = Solution()
+        result = solution.summaryRanges([0, 1, 1, 2])
+>       assert result == ["0->2"]
+E       AssertionError: assert ['0->1', '1->2'] == ['0->2']
+E         At index 0 diff: '0->1' != '0->2'
+E         Left contains one more item: '1->2'
+E         Use -v to get more diff
+
+228_Summary_Ranges/test_228_Summary_Ranges.py:22: AssertionError
+_________________________ test_summaryRanges_all_same __________________________
+
+    def test_summaryRanges_all_same():
+        solution = Solution()
+        result = solution.summaryRanges([1,1,1,1,1])
+>       assert result == ["1"]
+E       AssertionError: assert ['1', '1', '1', '1', '1'] == ['1']
+E         Left contains 4 more items, first extra item: '1'
+E         Use -v to get more diff
+
+228_Summary_Ranges/test_228_Summary_Ranges.py:32: AssertionError
+=========================== short test summary info ============================
+FAILED 228_Summary_Ranges/test_228_Summary_Ranges.py::test_summaryRanges_duplicate
+FAILED 228_Summary_Ranges/test_228_Summary_Ranges.py::test_summaryRanges_all_same
+========================= 2 failed, 6 passed in 0.02s ==========================

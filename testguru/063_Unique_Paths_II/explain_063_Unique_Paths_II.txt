@@ -1,0 +1,11 @@
+This is a Python class `Solution` that provides a method `uniquePathsWithObstacles` to solve a problem related to calculating the number of unique paths from the top-left corner of a grid to the bottom-right corner, while there are some obstacles present in the grid.
+
+The method takes a 2D list `obstacleGrid` as input, where each element is either 0 or 1, representing if a cell is empty or blocked, respectively.
+
+The algorithm works by creating a dynamic programming map `dmap` of the same size as `obstacleGrid`, where `dmap[i][j]` represents the number of unique paths to reach cell `(i, j)` from the top-left corner.
+
+The first part of the code (commented out) initializes the `dmap` as well as the number of unique paths for the first row and column, considering the obstacles.
+
+The second part of the code initializes the `dmap` values for the bottom-right cell and then iterates over the remaining cells in the reverse order (bottom-up and right-left), updating `dmap` with the corresponding number of unique paths considering the presence of obstacles.
+
+Finally, the method returns the value in `dmap[0][0]` which represents the number of unique paths to reach the bottom-right corner from the top-left while avoiding obstacles.

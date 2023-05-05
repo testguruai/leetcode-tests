@@ -1,0 +1,7 @@
+This is a Python class called "Solution" that provides a method named "totalFruit". The method takes an input parameter called "tree", which is a list of integers. The output of the method is an integer that represents the maximum number of fruits that can be collected from two types of trees. 
+
+The first version of the method that is commented out uses a dictionary to keep track of the fruits in the basket and their frequency. It starts with a basket that can hold two types of fruits and uses a sliding window approach to iterate through the list of fruit trees. When a third type of fruit is encountered, the method moves the start of the window forward until only two types of fruits remain in the basket. The method returns the maximum number of fruits collected under this condition.
+
+The second version of the method uses itertools.groupby function to group the consecutive trees that have the same fruit types. Then it starts to scan these blocks of fruit trees to find the largest subarray that contains only two types of fruits. 
+
+The third version of the method uses a dictionary from the collection module to keep track of the count of the in-basket fruit trees. It starts with an empty basket and uses a sliding window approach to iterate through the list of fruit trees. When the basket contains more than two types of fruits, the method moves the start of the window forward until only two types of fruits remain in the basket. The method returns the maximum number of fruits collected under this condition.

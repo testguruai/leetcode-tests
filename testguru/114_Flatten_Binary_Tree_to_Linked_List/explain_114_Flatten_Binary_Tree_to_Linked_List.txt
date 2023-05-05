@@ -1,0 +1,9 @@
+The code is an implementation of the "flatten binary tree to linked list" problem. The problem is to flatten a binary tree such that all the nodes are in a single linked list in a specific order. 
+
+The code contains two solutions, one using a stack and the other using recursion. 
+
+The stack solution initializes a stack with the root node and a variable `current` to keep track of the current node. It then pops a node from the stack, appends its right and left children to the stack in this order (right child first), sets its left child as `None`, and sets the current node's right child to the popped node. This process continues until the stack is empty.
+
+The recursive solution uses a post-order traversal of the binary tree. It first flattens the right subtree, then the left subtree. It then sets the root node's right child to the previously flattened subtree and left child to `None`. Finally, it stores the root node for use in the next recursive call.
+
+Both solutions modify the binary tree in-place and do not return anything.

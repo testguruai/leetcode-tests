@@ -1,0 +1,11 @@
+This code defines a class `Solution` which contains a method `circularArrayLoop`. This method takes in a list of integers `nums` and returns a boolean value indicating whether or not it contains a circular loop.
+
+The function loops through every element in the list, setting the current element as the slow pointer. It then sets a fast pointer as the index of the element in the list by calling the `index` method. The `index` method takes in a list and an index value, returns the new index after adding the value of the element at the current index and looping over the list (so that indices wrap around to the beginning of the list if needed).
+
+The slow and fast pointers continue to move through the list as long as the values of the elements pointed to by the slow and fast pointers multiplied together are positive (indicating they are both either positive or negative, which is necessary for a circular loop). 
+
+If the slow and fast pointers ever collide, this means that there is a circular loop in the list. If they collide but are not at the same index, the function returns True. If they collide and are at the same index, the function breaks out of the loop and continues to the next element in the list.
+
+If a loop is not found, the function resets the values of the elements pointed to by a runner pointer to 0. The runner pointer starts at the current element and moves to the next element using the index method until it reaches an element that it has already visited (indicated by a value of 0). 
+
+The function returns False if no circular loop is found.

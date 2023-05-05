@@ -1,0 +1,5 @@
+This Python code defines a class named Solution, which has a method `fib` that computes the Nth Fibonacci number. The class uses dynamic programming with memoization to optimize the algorithm's runtime. 
+
+The class initializes its memoization list (`self.memo`) with the base cases of Fibonacci (0 and 1). When `fib` is called, the method checks if the desired Fibonacci number N is already in the memoization list. If it is, it returns the value. If it is not, it computes the value iteratively using the previous two values in the memoization list and adds the result to the memoization list for later use. Finally, it returns the computed value.
+
+There is an unused implementation of the `fib` method that uses recursion to compute the Nth Fibonacci number, but this implementation is less efficient than the memoization method because it recomputes the same values repeatedly.

@@ -1,0 +1,61 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py F [ 20%]
+FFFF                                                                     [100%]
+
+=================================== FAILURES ===================================
+_________________________ TestSolution.test_empty_tree _________________________
+
+self = <test_145_Binary_Tree_Postorder_Traversal.TestSolution object at 0x7fa678f84370>
+
+    def test_empty_tree(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py:6: NameError
+______________________ TestSolution.test_single_node_tree ______________________
+
+self = <test_145_Binary_Tree_Postorder_Traversal.TestSolution object at 0x7fa678f84460>
+
+    def test_single_node_tree(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py:10: NameError
+______________________ TestSolution.test_full_binary_tree ______________________
+
+self = <test_145_Binary_Tree_Postorder_Traversal.TestSolution object at 0x7fa678f84580>
+
+    def test_full_binary_tree(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py:15: NameError
+______________________ TestSolution.test_left_skewed_tree ______________________
+
+self = <test_145_Binary_Tree_Postorder_Traversal.TestSolution object at 0x7fa678f846a0>
+
+    def test_left_skewed_tree(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py:26: NameError
+_____________________ TestSolution.test_right_skewed_tree ______________________
+
+self = <test_145_Binary_Tree_Postorder_Traversal.TestSolution object at 0x7fa678f847c0>
+
+    def test_right_skewed_tree(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py:34: NameError
+=========================== short test summary info ============================
+FAILED 145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py::TestSolution::test_empty_tree
+FAILED 145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py::TestSolution::test_single_node_tree
+FAILED 145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py::TestSolution::test_full_binary_tree
+FAILED 145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py::TestSolution::test_left_skewed_tree
+FAILED 145_Binary_Tree_Postorder_Traversal/test_145_Binary_Tree_Postorder_Traversal.py::TestSolution::test_right_skewed_tree
+============================== 5 failed in 0.02s ===============================

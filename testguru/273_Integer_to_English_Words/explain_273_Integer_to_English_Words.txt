@@ -1,0 +1,15 @@
+This is a Python class named "Solution" that defines a method "numberToWords". The method takes an integer as input and returns the English word equivalent of that number.
+
+The method first initializes two lists: "to19" and "tens". The "to19" list holds strings representing the English words for numbers 1-19. The "tens" list holds strings representing the English words for multiples of 10, from 20 to 90.
+
+Then, the method defines an inner function called "words". This function takes an integer as input and returns a list of English words that represent that number. The function accomplishes this by recursively breaking down the number into its English word equivalents.
+
+If the number is less than 20, the function simply returns the corresponding string from the "to19" list.
+
+If the number is between 20 and 99, the function first determines the tens place by dividing the number by 10 and subtracting 2 (to account for the fact that "twenty" is the 3rd element in the "tens" list). The function then recursively calls itself on the number modulo 10 (the ones place) and combines the resulting strings.
+
+If the number is between 100 and 999, the function first determines the hundreds place by dividing the number by 100 and subtracting 1 (to get the index in the "to19" list). The function then recursively calls itself on the number modulo 100 (the remaining two digits) and combines the resulting strings with the word "Hundred".
+
+If the number is greater than or equal to 1000, the function uses a for loop to iterate through the powers of 1000 (Thousand, Million, Billion) and recursively calls itself on the number divided by the current power of 1000 and on the number modulo the current power of 1000. The resulting strings are combined with the current power of 1000.
+
+Finally, the method returns a string that is the result of joining the list of English words returned by the "words" function with spaces. If the input is 0, the method returns the string "Zero".

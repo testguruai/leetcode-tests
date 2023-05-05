@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+346_Moving_Average_from_Data_Stream/test_346_Moving_Average_from_Data_Stream.py E [ 50%]
+E                                                                        [100%]
+
+==================================== ERRORS ====================================
+_____________ ERROR at setup of test_moving_average_initialization _____________
+
+    @pytest.fixture
+    def moving_average():
+>       return MovingAverage(3)
+E       NameError: name 'MovingAverage' is not defined
+
+346_Moving_Average_from_Data_Stream/test_346_Moving_Average_from_Data_Stream.py:5: NameError
+__________________ ERROR at setup of test_moving_average_next __________________
+
+    @pytest.fixture
+    def moving_average():
+>       return MovingAverage(3)
+E       NameError: name 'MovingAverage' is not defined
+
+346_Moving_Average_from_Data_Stream/test_346_Moving_Average_from_Data_Stream.py:5: NameError
+=========================== short test summary info ============================
+ERROR 346_Moving_Average_from_Data_Stream/test_346_Moving_Average_from_Data_Stream.py::test_moving_average_initialization
+ERROR 346_Moving_Average_from_Data_Stream/test_346_Moving_Average_from_Data_Stream.py::test_moving_average_next
+============================== 2 errors in 0.02s ===============================

@@ -1,0 +1,11 @@
+This is a Python implementation of the "Merge Two Sorted Lists" problem in LeetCode. The problem requires merging two sorted linked lists into a new sorted linked list.
+
+The code defines a class `Solution` with a method `mergeTwoLists` that takes two linked lists `l1` and `l2` as input and returns a merged linked list.
+
+The implementation uses a dummy head node, which is initialized with a value of -1 and a variable `pos` that points to the dummy head node. The code then iterates over both linked lists simultaneously using a while loop that terminates when either of the linked lists becomes empty. 
+
+For each iteration of the loop, the code compares the head nodes of the two lists. If `l1.val <= l2.val`, the node from `l1` is appended to the result list and `l1` is moved to the next node. If `l1.val > l2.val`, the node from `l2` is appended to the result list and `l2` is moved to the next node.
+
+After the loop completes, the code checks whether either of the linked lists has any remaining nodes. If `l1` is not empty, its remaining nodes are appended to the end of the result list. If `l2` is not empty, its remaining nodes are similarly appended. Finally, the dummy head node is returned as the starting node of the merged list.
+
+There is also a commented out recursive implementation of the same method.

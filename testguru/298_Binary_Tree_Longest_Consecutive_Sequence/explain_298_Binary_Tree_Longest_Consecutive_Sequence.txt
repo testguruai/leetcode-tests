@@ -1,0 +1,13 @@
+This is a Python class that contains one method to find the length of the longest consecutive sequence in a binary tree. 
+
+The main function is `longestConsecutive()`, which takes in a binary tree `root` and returns an integer value, representing the length of the longest consecutive sequence in the tree. 
+
+The `longestConsecutive()` function calls another function `longestConsecutive_helper()` to compute the length. There are two versions of this helper function included in the code, but only one is currently being used. 
+
+The current helper function is a top-down recursive approach. It takes in the current node `root`, a value `previous` to compare against, and an integer `curr` representing the length of the current consecutive sequence. 
+
+If the current node's value is one more than the `previous` value, then the current consecutive sequence length is updated to `curr + 1`. Otherwise, the current consecutive sequence length is reset to 1. 
+
+Then, the helper function is recursively called on the left and right children of `root`, passing in the updated `curr` value. The function returns the maximum length of the consecutive sequence found on any path from the current node to a leaf, by taking the maximum of `curr`, `l_res` (the longest consecutive sequence found in the left subtree), and `r_res` (the longest consecutive sequence found in the right subtree). 
+
+The commented out version of `longestConsecutive_helper()` is a bottom-up recursive approach that updates a class variable `max_length` as it traverses the tree. This approach has the same logic as the top-down approach, but handles the base cases differently. The two versions of the helper function are functionally equivalent, but the top-down approach may be slightly more efficient since it only needs to return a single value (the maximum length) instead of updating a class variable.

@@ -1,0 +1,6 @@
+Name                                                                                                    Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------------------------------------------------
+108_Convert_Sorted_Array_to_Binary_Search_Tree/test_108_Convert_Sorted_Array_to_Binary_Search_Tree.py      26     24     8%   4-39
+/data/ethan/leetcode-master/python/108_Convert_Sorted_Array_to_Binary_Search_Tree.py                       12      8    33%   26, 29-35
+-------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                      38     32    16%

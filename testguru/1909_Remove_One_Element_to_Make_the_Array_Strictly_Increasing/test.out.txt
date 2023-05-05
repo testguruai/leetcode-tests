@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing/test_1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing.py _
+1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing/test_1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing.py:2: in <module>
+    from solution import Solution
+1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing/solution.py:1: in <module>
+    class Solution:
+1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing/solution.py:2: in Solution
+    def canBeIncreasing(self, nums: List[int]) -> bool:
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR 1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing/test_1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

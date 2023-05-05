@@ -1,0 +1,7 @@
+This Python code defines a class `Solution` with a method `convertBST` that takes a binary search tree `root` and converts it to a greater tree, where the value of each node is the sum of all values greater than itself.
+
+There are two implementations provided, one using recursion and the other using iteration with a stack.
+
+The recursive implementation maintains a global variable `total` that keeps track of the sum of all nodes visited so far. The method visits the right subtree, increases `total` with the current node's value, updates the current node's value to `total`, and visits the left subtree. Finally, it returns the modified `root`.
+
+The iterative implementation uses a stack to simulate the recursion, in order to reduce space complexity. The method initializes a local variable `total` to 0, and initially sets `node` to `root`. Then it enters a loop that terminates when the stack is empty and there is no node left to process. Inside the loop, the method pushes all nodes up to (and including) the maximum in the right subtree of `node` onto the stack, and then pops the top node of the stack. It increases `total` with the popped node's value, modifies the node's value to `total`, and sets `node` to the left subtree of the popped node, if any. Finally, it returns the modified `root`.

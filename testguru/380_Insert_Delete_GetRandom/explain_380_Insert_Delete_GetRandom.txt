@@ -1,0 +1,15 @@
+This is a Python implementation of a data structure called "Randomized Set" using a list and a dictionary. A randomized set is a set data structure that supports insert, remove, and getRandom operations, all in O(1) time complexity (constant time).
+
+* `import random`: This imports the `random` module, which contains functions that can generate random numbers.
+
+* `class RandomizedSet(object):`: This defines a new class called `RandomizedSet` that acts as the data structure we want to implement.
+
+* `def __init__(self):`: This is the constructor for the class that initializes the class variables. In this case, we create two instance variables:
+  * `num_to_idx`: A dictionary that maps each number to its index in the `num_list`. This allows us to look up the index of a number in O(1) time complexity.
+  * `num_list`: A list that stores the actual numbers in the set.
+
+* `def insert(self, val):`: This method inserts a new element into the set. It takes the value to be inserted as a parameter and first checks if it is already present in the set. If it is, it returns `False`, indicating that the value was not inserted. If it is not present, it appends the value to the `num_list` and adds its index to the `num_to_idx` dictionary, with the value as the key and its index as the value. Finally, it returns `True` to indicate that the value was successfully inserted.
+
+* `def remove(self, val):`: This method removes an element from the set. It takes the value to be removed as a parameter and first checks if it is present in the set. If it is not, it returns `False`, indicating that the value was not removed. If it is present, it gets the index of the value from `num_to_idx`. It then swaps the value at the index with the last element in `num_list` so that we can pop the last element in constant time. It updates the index of the last element to the index of the original value and deletes the key-value pair for the original value from `num_to_idx`. Finally, it returns `True` to indicate that the value was successfully removed.
+
+* `def getRandom(self):`: This method returns a random number from the set. It accomplishes this by using the `random.choice` function to select a random number from `num_list`. Since each number has an equal probability of being selected, this satisfies the randomness requirement of the data structure.

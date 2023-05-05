@@ -1,0 +1,7 @@
+This is a Python class `Solution` with two methods `threeSumSmaller` and `twoSumSmaller`. 
+
+The `threeSumSmaller` method takes in an array of integers `nums` and an integer `target`. It first sorts the array in ascending order using the `sort()` method. It then initializes variables `ls` and `res` to the length of the array `nums` and zero respectively.
+
+It then loops through elements in the array `nums` using the range function with the parameter `ls-1`. For each element `nums[i]`, it calculates the sum `target-nums[i]` and calls the `twoSumSmaller` method with the array `nums`, the index `i+1`, and the calculated sum. The result of the `twoSumSmaller` method is added to the variable `res`. Finally, the method returns the value of `res`.
+
+The `twoSumSmaller` method takes in an array of integers `nums`, a start index `start`, and a target integer `target`. It initializes variables `res`, `left`, and `right` to 0, `start`, and `len(nums)-1` respectively. It then loops through the array `nums` while `left` is less than `right`. If the sum of `nums[left]` and `nums[right]` is less than `target`, it adds the difference between `right` and `left` to `res` and increments `left`. Otherwise, it decrements `right`. After the loop, it returns the value of `res`.

@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+844_Backspace_String_Compare/test_844_Backspace_String_Compare.py F      [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_backspaceCompare _____________________________
+
+    def test_backspaceCompare():
+>       obj = Solution()
+E       NameError: name 'Solution' is not defined
+
+844_Backspace_String_Compare/test_844_Backspace_String_Compare.py:4: NameError
+=========================== short test summary info ============================
+FAILED 844_Backspace_String_Compare/test_844_Backspace_String_Compare.py::test_backspaceCompare
+============================== 1 failed in 0.02s ===============================

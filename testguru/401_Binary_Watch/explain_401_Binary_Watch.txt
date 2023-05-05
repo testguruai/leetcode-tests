@@ -1,0 +1,9 @@
+This is a class called `Solution` that has a single method `readBinaryWatch()` which takes an integer argument `num`. 
+
+The purpose of this method is to return a list of string representations of times on a binary watch where the number of set bits (ones) in the binary representation of the time is equal to `num`. 
+
+The method accomplishes this by using a list comprehension to generate all possible times on the watch (based on 12 hours and 60 minutes). For each time, it checks if the binary representation of the hour (`bin(h)`) and the binary representation of the minute (`bin(m)`) concatenated together contain exactly `num` ones. 
+
+If it does, then the time is added to the list of results in the format `%d:%02d`, which means the hour is represented as an integer with a leading zero if necessary (`%d`) and the minute is represented as an integer with two digits always (`%02d`). 
+
+Finally, the method returns the list of strings representing the valid times on the binary watch.

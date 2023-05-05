@@ -1,0 +1,9 @@
+The given code initializes a class `Solution` that contains a method `oddEvenList` which takes in a singly-linked list as input, and rearranges it such that all the odd-indexed nodes appear first, followed by the even-indexed nodes.
+
+The method first identifies the head node of the linked list and sets it as the `odd` node. It then checks if the `head` input is `None` or if it only has one node. In either of these cases, it simply returns the original `head`. If there are multiple nodes, the `even_head` and `even` pointers are set to the second node (i.e. the even-indexed node).
+
+The `while` loop then iterates over the linked list until either the `odd` or `even` pointer reaches the end of the list. During each iteration, it links the `odd` node to its next odd-indexed node (which is the next node in the original even-indexed sequence), updates the `odd` node to its new position, links the `even` node to its next even-indexed node (which is the next node in the original odd-indexed sequence), and updates the `even` node to its new position.
+
+Finally, the method links the last node in the odd-indexed sequence to the first node in the even-indexed sequence, and returns the modified `head`.
+ 
+There is an alternate method for the same function `oddEvenList` commented out below. This alternate method uses slicing to first extract all the elements of the list into a list `x`, then uses slicing to create two lists - one containing all the odd-indexed elements and one containing all the even-indexed elements. Finally, it concatenates these lists and returns the result.

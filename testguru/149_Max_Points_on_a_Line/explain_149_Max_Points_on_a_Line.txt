@@ -1,0 +1,13 @@
+This is a solution to find the maximum number of points that lie on the same line in a 2D plane. The input `points` is a list of `Point` objects, each representing a coordinate pair (x, y) in the plane.
+
+The solution works as follows:
+- First, it checks if the input `points` is empty. If it is, then the function returns 0.
+- Then, it iterates through each point in the list. For each point, it creates a dictionary `line_map` that will store the count of points that lie on lines passing through this point with a specific slope.
+- It also initializes two variables `overlap` and `max_point` to 0. These will be used to count the number of overlapping points and the maximum number of points that lie on a single line respectively.
+- Then, it iterates through all the points after the current point in the list. For each point, it calculates the slope between the current point and the new point, and reduces it to its simplest form using the `generateGCD` function.
+- If the slope is the same as one seen before for this point (`x` in the `line_map` dictionary), then it increments the count of points with that slope. Otherwise, it adds a new entry in the dictionary for this slope.
+- After iterating through all other points, it updates the `max_point` variable to the maximum count of points that lie on a single line amongst all slopes seen for this point.
+- Finally, it updates the `res` variable (the final result) to be the maximum of `res` and `max_point + overlap + 1` (adding 1 to count the current point itself).
+- The function returns the final value of `res`.
+
+The `generateGCD` function is a helper function used to simplify the slope to its simplest form. It uses the Euclidean algorithm to calculate the greatest common divisor (GCD) of the two numbers `x` and `y`, and returns it.

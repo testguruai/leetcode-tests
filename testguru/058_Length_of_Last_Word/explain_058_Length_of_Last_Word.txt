@@ -1,0 +1,11 @@
+This is a Python class named `Solution`, which has a single method named `lengthOfLastWord`. This method takes two arguments: `self` (a reference to the class instance) and `s` (a string). The method returns an integer, which is the length of the last word in the input string `s`.
+
+The method first checks if the length of `s` is zero. If it is, the method returns 0.
+
+Otherwise, the method splits `s` into words using the `split` method, with a space as the separator. The resulting list of words is stored in a variable named `temp`.
+
+The method then uses a list comprehension to remove any empty strings from `temp` (i.e., any strings with zero length). The resulting list is assigned back to `temp`.
+
+If `temp` is now empty (i.e., there were only empty strings in `s`), the method returns 0.
+
+Otherwise, the method returns the length of the last element of `temp` (i.e., the length of the last word in `s`).

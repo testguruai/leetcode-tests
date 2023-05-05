@@ -1,0 +1,5 @@
+The code defines a Solution class with a method called middleNode that takes a singly-linked list as input and returns the middle node of that list.
+
+The first implementation of the method stores all the nodes of the list in a list called res, then returns the node at index len(res) / 2, which is the middle node.
+
+The second implementation uses two pointers, one called slow and another called fast. The fast pointer moves twice as fast as the slow pointer, so when the fast pointer reaches the end of the list, the slow pointer will be at the middle node. This is achieved by moving the slow pointer one step at a time and the fast pointer two steps at a time.

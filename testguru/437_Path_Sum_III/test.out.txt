@@ -1,0 +1,43 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+437_Path_Sum_III/test_437_Path_Sum_III.py FFF                            [100%]
+
+=================================== FAILURES ===================================
+_________________________ TestPathSum.test_empty_tree __________________________
+
+self = <test_437_Path_Sum_III.TestPathSum object at 0x7fc358d5c370>
+
+    def test_empty_tree(self):
+        # Tests pathSum() on an empty tree
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+437_Path_Sum_III/test_437_Path_Sum_III.py:6: NameError
+______________________ TestPathSum.test_single_node_tree _______________________
+
+self = <test_437_Path_Sum_III.TestPathSum object at 0x7fc358d5c460>
+
+    def test_single_node_tree(self):
+        # Tests pathSum() on a single node tree
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+437_Path_Sum_III/test_437_Path_Sum_III.py:11: NameError
+_________________________ TestPathSum.test_binary_tree _________________________
+
+self = <test_437_Path_Sum_III.TestPathSum object at 0x7fc358d5c580>
+
+    def test_binary_tree(self):
+        # Tests pathSum() on a binary tree
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+437_Path_Sum_III/test_437_Path_Sum_III.py:18: NameError
+=========================== short test summary info ============================
+FAILED 437_Path_Sum_III/test_437_Path_Sum_III.py::TestPathSum::test_empty_tree
+FAILED 437_Path_Sum_III/test_437_Path_Sum_III.py::TestPathSum::test_single_node_tree
+FAILED 437_Path_Sum_III/test_437_Path_Sum_III.py::TestPathSum::test_binary_tree
+============================== 3 failed in 0.01s ===============================

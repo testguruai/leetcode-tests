@@ -1,0 +1,6 @@
+Name                                                          Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------
+200_Number_of_Islands/test_200_Number_of_Islands.py              14      0   100%
+/data/ethan/leetcode-master/python/200_Number_of_Islands.py      22      1    95%   24
+-------------------------------------------------------------------------------------------
+TOTAL                                                            36      1    97%

@@ -1,0 +1,6 @@
+Name                                                                Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------------
+351_Android_Unlock_Patterns/test_351_Android_Unlock_Patterns.py        31      5    84%   8-11, 52
+/data/ethan/leetcode-master/python/351_Android_Unlock_Patterns.py      32      1    97%   28
+-------------------------------------------------------------------------------------------------
+TOTAL                                                                  63      6    90%

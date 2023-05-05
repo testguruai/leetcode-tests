@@ -1,0 +1,7 @@
+This is a Python class named Solution that solves the problem of finding the intersection of two lists of integers. The solution is implemented in the method named "intersect", which takes in two lists of integers nums1 and nums2 as input.
+
+The method first sorts both input lists using the sort method. Then it initializes an empty list named "res" and two variables named "pos1" and "pos2" to keep track of the current positions in the two lists.
+
+Then it enters into a loop that iterates as long as both pos1 and pos2 are less than the lengths of nums1 and nums2, respectively. Within the loop, it compares the value at the current position in nums1 and nums2. If they are equal, it appends the value to the res list and increments both pos1 and pos2. If the value in nums1 is smaller, it increments pos1, and if the value in nums2 is smaller, it increments pos2.
+
+Finally, it returns the res list that contains the intersection of the two input lists.

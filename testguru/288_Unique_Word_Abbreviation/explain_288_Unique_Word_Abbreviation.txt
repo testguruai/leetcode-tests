@@ -1,0 +1,16 @@
+This is a Python implementation of a class named `ValidWordAbbr` used for checking if a given word in a dictionary has a unique abbreviated form. The class has the following methods:
+
+1. `__init__(self, dictionary)` - This method initializes the data structure and takes an input parameter `dictionary` which is a list of strings. 
+- It initializes two dictionaries; `self.dictionary` is a set of all the words in the input `dictionary`, while `self.abb_dic` is an empty dictionary. 
+- For each word in `self.dictionary`, it computes its abbreviation using the `getAbb(self, word)` method which is further called using the `self.getAbb(s)` parameter. 
+- If the resulting abbreviation is already in the `self.abb_dic` dictionary, then the associated value is set to `False`, else it is set to `True`. This means that if there are multiple words in the dictionary that have the same abbreviation, they are not unique.
+
+2. `isUnique(self, word)` - This method checks if a given word is unique. It takes an input parameter `word` which is a string and returns a boolean indicating whether the given word has a unique abbreviation or not. 
+- It first checks if an abbreviation exists for the given word by calling the `getAbb(self, word)` method and using its result to look up the `self.abb_dic` dictionary using `self.abb_dic.get(abb, None)`.
+- If the resulting value is `None`, it means the abbreviation does not exist in the dictionary and the method returns `True` indicating that the abbreviation and the word are unique.
+- If the resulting value is `True`, it means the abbreviation exists in the dictionary and it further checks if the word exists in `self.dictionary`. If it does, it means the word and the abbreviation are not unique, and the method returns `False`.
+- If the word does not exist in `self.dictionary`, it means that the abbreviation and the word do not match, and the method returns `True`.
+
+3. `getAbb(self, word)` - This method is called by the other methods to compute the abbreviation of a given input word. If a given input word has a length less than or equal to 2, the method returns the input word itself. Otherwise, it returns the first character of the input word concatenated with the length of characters between its first and last character and then the last character. E.g. "internationalization" would become "i18n". 
+
+At the end of the class definition, we have some sample code that instantiates and uses the ValidWordAbbr class to check a couple of sample words for their unique-ness.

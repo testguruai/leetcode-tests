@@ -1,0 +1,56 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py F [ 20%]
+EEEE                                                                     [100%]
+
+==================================== ERRORS ====================================
+______________________ ERROR at setup of test_trie_insert ______________________
+
+    @pytest.fixture
+    def trie():
+>       return Trie()
+E       NameError: name 'Trie' is not defined
+
+208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py:6: NameError
+___________________ ERROR at setup of test_trie_searchPrefix ___________________
+
+    @pytest.fixture
+    def trie():
+>       return Trie()
+E       NameError: name 'Trie' is not defined
+
+208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py:6: NameError
+______________________ ERROR at setup of test_trie_search ______________________
+
+    @pytest.fixture
+    def trie():
+>       return Trie()
+E       NameError: name 'Trie' is not defined
+
+208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py:6: NameError
+___________________ ERROR at setup of test_trie_starts_with ____________________
+
+    @pytest.fixture
+    def trie():
+>       return Trie()
+E       NameError: name 'Trie' is not defined
+
+208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py:6: NameError
+=================================== FAILURES ===================================
+___________________________ test_trie_node_creation ____________________________
+
+    def test_trie_node_creation():
+>       node = TrieNode()
+E       NameError: name 'TrieNode' is not defined
+
+208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py:10: NameError
+=========================== short test summary info ============================
+FAILED 208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py::test_trie_node_creation
+ERROR 208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py::test_trie_insert
+ERROR 208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py::test_trie_searchPrefix
+ERROR 208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py::test_trie_search
+ERROR 208_Implement_Trie_(Prefix_Tree)/test_208_Implement_Trie_(Prefix_Tree).py::test_trie_starts_with
+========================= 1 failed, 4 errors in 0.02s ==========================

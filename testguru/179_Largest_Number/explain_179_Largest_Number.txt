@@ -1,0 +1,7 @@
+The given Python code is a solution to the LeetCode problem 'Largest Number'. The program takes an input array of non-negative integers called nums and returns a string containing the largest number that can be formed by concatenating the numbers.
+
+The program first defines a class called LargerNumKey that extends the string class. The __lt__ method of this class is overridden to compare two strings based on their concatenated forms. 
+
+Next, a class called Solution is defined, which contains a function called largestNumber that takes an array of integers as an input. In this function, the map function is used to convert all integers into strings, and the joined string is sorted using custom comparison logic provided by the LargerNumKey class.
+
+The final result is checked for leading zeroes, which are removed if present. If the final result contains only zeroes, a single zero is returned. If not, the final result is returned as a string.

@@ -1,0 +1,7 @@
+This code defines a class `Solution` with a method `twoSum` that takes in two arguments: a list of integers called `numbers` and an integer called `target`. The method returns a list of two integers, which are the indices of two elements in the `numbers` list that add up to the `target` integer. 
+
+The method uses the Two Pointers technique to solve the problem. Two pointers `begin` and `end` are initialized to the beginning and end of the list `numbers`, respectively. In a `while` loop, the method maintains the invariant that `begin` always points to a smaller number and `end` always points to a larger number. 
+
+During each iteration of the loop, the method computes the sum of the numbers pointed to by `begin` and `end` and stores it in `curr`. If `curr` equals `target`, then the method returns a list containing the indices of `begin` and `end` incremented by one (since the problem requires one-based indexing). Otherwise, if `curr` is less than `target`, the method increments `begin` to move to a larger number, otherwise it decrements `end` to move to a smaller number. 
+
+If no two numbers are found that sum up to the `target`, the program will exit the loop and terminate without returning anything.

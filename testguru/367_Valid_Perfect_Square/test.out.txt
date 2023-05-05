@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+367_Valid_Perfect_Square/test_367_Valid_Perfect_Square.py F.F.           [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_case1 __________________________________
+
+    def test_case1():
+        sol = Solution()
+>       assert sol.isPerfectSquare(16) == True
+E       assert False == True
+E        +  where False = <bound method Solution.isPerfectSquare of <solution.Solution object at 0x7fcfbf814700>>(16)
+E        +    where <bound method Solution.isPerfectSquare of <solution.Solution object at 0x7fcfbf814700>> = <solution.Solution object at 0x7fcfbf814700>.isPerfectSquare
+
+367_Valid_Perfect_Square/test_367_Valid_Perfect_Square.py:6: AssertionError
+__________________________________ test_case3 __________________________________
+
+    def test_case3():
+        sol = Solution()
+>       assert sol.isPerfectSquare(0) == True
+E       assert False == True
+E        +  where False = <bound method Solution.isPerfectSquare of <solution.Solution object at 0x7fcfbf8163e0>>(0)
+E        +    where <bound method Solution.isPerfectSquare of <solution.Solution object at 0x7fcfbf8163e0>> = <solution.Solution object at 0x7fcfbf8163e0>.isPerfectSquare
+
+367_Valid_Perfect_Square/test_367_Valid_Perfect_Square.py:14: AssertionError
+=========================== short test summary info ============================
+FAILED 367_Valid_Perfect_Square/test_367_Valid_Perfect_Square.py::test_case1
+FAILED 367_Valid_Perfect_Square/test_367_Valid_Perfect_Square.py::test_case3
+========================= 2 failed, 2 passed in 0.02s ==========================

@@ -1,0 +1,9 @@
+This is an implementation of the "add two linked lists" problem, where we are given two singly linked lists representing two non-negative integers, and we need to return the sum of these two integers as a linked list. The numbers are in reverse order, meaning that the least significant digit is at the head of each list.
+
+The code defines a ListNode class that represents a single node of a linked list. Each node contains a value and a reference to the next node.
+
+The addTwoNumbers function takes as input two ListNode objects, l1 and l2, representing the two linked lists to be added. The function returns a ListNode object representing the sum of the two input lists.
+
+The first implementation of the function uses a loop to iterate through both lists, adding the corresponding digits and propagating the carry. It initializes a new linked list to contain the sum, and adds each new node to the end of the list.
+
+The second implementation uses a dummy head node for the output list, which simplifies the code by eliminating the need to handle the first node separately. It also uses a shorter syntax to check for the end of either input list using the "or" operator.

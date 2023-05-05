@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+766_Toeplitz_Matrix/test_766_Toeplitz_Matrix.py F                        [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_toeplitz_matrix _____________________________
+
+    def test_toeplitz_matrix():
+        s = Solution()
+    
+>       assert s.isToeplitzMatrix([[1, 2], [3, 4]]) == True
+E       assert False == True
+E        +  where False = <bound method Solution.isToeplitzMatrix of <solution.Solution object at 0x7f0e386b0460>>([[1, 2], [3, 4]])
+E        +    where <bound method Solution.isToeplitzMatrix of <solution.Solution object at 0x7f0e386b0460>> = <solution.Solution object at 0x7f0e386b0460>.isToeplitzMatrix
+
+766_Toeplitz_Matrix/test_766_Toeplitz_Matrix.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED 766_Toeplitz_Matrix/test_766_Toeplitz_Matrix.py::test_toeplitz_matrix
+============================== 1 failed in 0.01s ===============================

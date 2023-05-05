@@ -1,0 +1,5 @@
+This is a Python class called `Solution` that contains a method called `sortArrayByParityII`. This method takes an input list `A` as its argument and returns a new list `ans` that is sorted based on the parity of its elements.
+
+The first portion of the code is commented out, so it is not executed when the method is called. It is an alternate implementation of `sortArrayByParityII` that generates a new list `ans`. It does this by iterating over `A`, first adding all even numbers to `ans` at even indices and then adding all odd numbers to `ans` at odd indices.
+
+The second implementation of `sortArrayByParityII` sorts `A` in place. It first initializes `odd` to be 1, as odd numbers should be added to `A` at odd indices. Then it iterates over `A` with step size 2 (only even indices), and if the current element is odd, it swaps it with the element at index `odd`. It then increments `odd` by 2 to find the next available odd index. This ensures that all even elements end up at even indices and all odd elements end up at odd indices in the output `A`. Finally, it returns the sorted `A`.

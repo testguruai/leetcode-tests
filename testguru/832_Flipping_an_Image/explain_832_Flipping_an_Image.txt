@@ -1,0 +1,9 @@
+This Python code defines a class `Solution` with a method `flipAndInvertImage` that takes a 2D list of integers (represented by `A`) as input. The method flips and inverts each row of the 2D list as follows:
+- Each row is iterated over using a for loop.
+- For each row, another for loop runs for half the length of the row (i.e. half the elements of the row). This is because flipping the row involves swapping the values at positions i and (length of row - 1 - i) for i=0 to (length of row / 2).
+- Using Python's index notation, the i-th value of the row is accessed from the left as `row[i]` and from the right as `row[~i]`. 
+- The `^` operator in Python performs a bitwise XOR operation, so `row[i] ^ 1` and `row[~i] ^ 1` invert the binary value of the i-th and (length of row - 1 - i)-th elements of the row.
+- The two elements are then swapped using Python's parallel assignment feature, which allows multiple variables to be assigned values simultaneously.
+- Finally, the inverted and flipped 2D list is returned. 
+
+The commented out line of code at the end is an alternative way to achieve the same result using list comprehension, but it is slightly less efficient.

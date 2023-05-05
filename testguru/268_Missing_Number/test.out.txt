@@ -1,0 +1,130 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 15 items
+
+268_Missing_Number/test_268_Missing_Number.py FFFFFFFFFFFFFFF            [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_missingNumber_1 _____________________________
+
+    def test_missingNumber_1():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:5: NameError
+_____________________________ test_missingNumber_2 _____________________________
+
+    def test_missingNumber_2():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:9: NameError
+_____________________________ test_missingNumber_3 _____________________________
+
+    def test_missingNumber_3():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:13: NameError
+_____________________________ test_missingNumber_4 _____________________________
+
+    def test_missingNumber_4():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:17: NameError
+_____________________________ test_missingNumber_5 _____________________________
+
+    def test_missingNumber_5():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:21: NameError
+_____________________________ test_missingNumber_6 _____________________________
+
+    def test_missingNumber_6():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:25: NameError
+_____________________________ test_missingNumber_7 _____________________________
+
+    def test_missingNumber_7():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:29: NameError
+_____________________________ test_missingNumber_8 _____________________________
+
+    def test_missingNumber_8():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:33: NameError
+_____________________________ test_missingNumber_9 _____________________________
+
+    def test_missingNumber_9():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:37: NameError
+____________________________ test_missingNumber_10 _____________________________
+
+    def test_missingNumber_10():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:41: NameError
+____________________________ test_missingNumber_11 _____________________________
+
+    def test_missingNumber_11():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:45: NameError
+____________________________ test_missingNumber_12 _____________________________
+
+    def test_missingNumber_12():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:49: NameError
+____________________________ test_missingNumber_13 _____________________________
+
+    def test_missingNumber_13():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:53: NameError
+____________________________ test_missingNumber_14 _____________________________
+
+    def test_missingNumber_14():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:57: NameError
+____________________________ test_missingNumber_15 _____________________________
+
+    def test_missingNumber_15():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+268_Missing_Number/test_268_Missing_Number.py:61: NameError
+=========================== short test summary info ============================
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_1 - ...
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_2 - ...
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_3 - ...
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_4 - ...
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_5 - ...
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_6 - ...
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_7 - ...
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_8 - ...
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_9 - ...
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_10
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_11
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_12
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_13
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_14
+FAILED 268_Missing_Number/test_268_Missing_Number.py::test_missingNumber_15
+============================== 15 failed in 0.04s ==============================

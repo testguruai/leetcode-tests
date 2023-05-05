@@ -1,0 +1,7 @@
+This is a Python class named `Solution` that defines a method called `mostCommonWord`. The method takes two arguments, `paragraph` and `banned`, and returns a string. The purpose of this method is to find the most common word in the `paragraph` that is not in the `banned` list.
+
+The first line of the method converts the `banned` list to a set for faster lookup. 
+
+The second line uses the `collections` module of Python to count the occurrence of each word in the `paragraph`. The `re.split()` function is used to split the paragraph into words based on certain characters such as space, exclamation mark, question mark, comma, period, and apostrophe. The `lower()` function is used to convert all letters to lowercase to treat capitalized words the same as un-capitalized ones. Finally, `if word` is used to filter out any empty string that might have resulted from the splitting.
+
+The third line uses the `max()` function to get the item with the highest occurrence in the `count` dictionary that is not in the `banned` set. The `itemgetter()` function of the `operator` module is used to specify that the comparison should be based on the occurrence count. The item key of the element with the highest value is returned.

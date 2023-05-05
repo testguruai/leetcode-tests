@@ -1,0 +1,16 @@
+The given code contains a class `Solution` with three methods to find a number that occurs only once in a given list of integers `nums`.
+
+1. **Method 1: Using Dictionary**
+   
+   The commented-out method  `singleNumber(self, nums)` uses hash map (dictionary) to store the frequency of each element in the list `nums`. Then it loops through the list again to find the element with frequency as 1, which is the required answer. 
+
+2. **Method 2: Using Set**
+
+   The second commented-out method `singleNumber(self,nums)` uses a set to store the elements in the list `nums`. If an element appears twice, it is removed from the set. The last remaining element in the set is the required answer.
+
+3. **Method 3: Using Bitwise XOR**
+
+   The third method `singleNumber(self, nums)` uses the bitwise XOR operation to find the element that appears only once in the list. 
+   - The XOR of any number with itself is 0. 
+   - The XOR of any number with 0 is the number itself. 
+   - If we XOR all numbers in the list, the elements that appear twice will be cancelled out and the only remaining element will be the one that appears only once.

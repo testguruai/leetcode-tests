@@ -1,0 +1,51 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py F [ 20%]
+FFFF                                                                     [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_read_empty_buf ______________________________
+
+    def test_read_empty_buf():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py:3: NameError
+__________________________ test_read_zero_characters ___________________________
+
+    def test_read_zero_characters():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py:9: NameError
+_______________________ test_read_less_than_4_characters _______________________
+
+    def test_read_less_than_4_characters():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py:15: NameError
+___________________________ test_read_multiple_times ___________________________
+
+    def test_read_multiple_times():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py:22: NameError
+________________________ test_read_more_than_available _________________________
+
+    def test_read_more_than_available():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py:32: NameError
+=========================== short test summary info ============================
+FAILED 158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py::test_read_empty_buf
+FAILED 158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py::test_read_zero_characters
+FAILED 158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py::test_read_less_than_4_characters
+FAILED 158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py::test_read_multiple_times
+FAILED 158_Read_N_Characters_Given_Read4_II_Call_multiple_times/test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py::test_read_more_than_available
+============================== 5 failed in 0.02s ===============================

@@ -1,0 +1,6 @@
+Name                                                                        Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------------------------
+128_Longest_Consecutive_Sequence/test_128_Longest_Consecutive_Sequence.py      14      9    36%   12-36
+/data/ethan/leetcode-master/python/128_Longest_Consecutive_Sequence.py         22     18    18%   11-28
+---------------------------------------------------------------------------------------------------------
+TOTAL                                                                          36     27    25%

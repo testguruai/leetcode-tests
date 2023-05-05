@@ -1,0 +1,47 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+973_K_Closest_Points_to_Origin/test_973_K_Closest_Points_to_Origin.py EE [ 50%]
+EE                                                                       [100%]
+
+==================================== ERRORS ====================================
+______________ ERROR at setup of test_kClosest_with_sorted_points ______________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+973_K_Closest_Points_to_Origin/test_973_K_Closest_Points_to_Origin.py:6: NameError
+_____________ ERROR at setup of test_kClosest_with_unsorted_points _____________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+973_K_Closest_Points_to_Origin/test_973_K_Closest_Points_to_Origin.py:6: NameError
+____________ ERROR at setup of test_kClosest_with_points_on_origin _____________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+973_K_Closest_Points_to_Origin/test_973_K_Closest_Points_to_Origin.py:6: NameError
+__________ ERROR at setup of test_kClosest_with_K_larger_than_points ___________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+973_K_Closest_Points_to_Origin/test_973_K_Closest_Points_to_Origin.py:6: NameError
+=========================== short test summary info ============================
+ERROR 973_K_Closest_Points_to_Origin/test_973_K_Closest_Points_to_Origin.py::test_kClosest_with_sorted_points
+ERROR 973_K_Closest_Points_to_Origin/test_973_K_Closest_Points_to_Origin.py::test_kClosest_with_unsorted_points
+ERROR 973_K_Closest_Points_to_Origin/test_973_K_Closest_Points_to_Origin.py::test_kClosest_with_points_on_origin
+ERROR 973_K_Closest_Points_to_Origin/test_973_K_Closest_Points_to_Origin.py::test_kClosest_with_K_larger_than_points
+============================== 4 errors in 0.02s ===============================

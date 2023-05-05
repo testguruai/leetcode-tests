@@ -1,0 +1,5 @@
+This is a Python class named "Solution" that contains a method named "selfDividingNumbers" that takes in two integer arguments "left" and "right" and returns a list of integers that are self-dividing in the inclusive range of "left" and "right."
+
+A self-dividing number is a number that is divisible by every digit it contains. For example, 128 is a self-dividing number because 1, 2, and 8 divide it evenly.
+
+The method works by iterating over the range of "left" and "right," constructing a list comprehension that returns all the numbers between "left" and "right" that meet the criteria of a self-dividing number. It does this by checking if the current number "x" is divisible by every one of its digits. This is achieved by converting "x" into a string, iterating over each of its characters "i", and then converting each "i" back into an integer so that it can be used to check the divisibility of "x." The method returns a list of integers that meet the criteria of a self-dividing number in the inclusive range of "left" and "right."

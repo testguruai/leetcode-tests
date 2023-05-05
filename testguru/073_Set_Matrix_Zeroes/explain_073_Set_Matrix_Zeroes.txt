@@ -1,0 +1,9 @@
+This code defines a class `Solution` with a method `setZeroes`. The purpose of this method is to modify a given matrix in-place, such that if any element in the matrix is 0, then the entire row and column containing that element is set to 0.
+
+The input parameter `matrix` is a list of lists, representing the matrix. The method first checks if the input matrix is empty or not. If it is empty, the method returns without doing anything. Otherwise, it determines the dimensions of the matrix by finding the number of its rows and columns, denoted by `m` and `n`, respectively.
+
+Then, it creates two empty lists `r` and `c`, which are used to store the indexes of rows and columns that contain 0s. The method iterates over each element of the matrix, and if the element is 0, it appends the row and column indexes of that element to `r` and `c`, respectively.
+
+Next, it converts `r` and `c` to sets, which removes any duplicates and makes it easy to determine which rows and columns need to be set to 0. Finally, the method iterates over each row index in `r`, and sets all elements in that row to 0. Similarly, it iterates over each column index in `c`, and sets all elements in that column to 0. The resulting matrix is the modified matrix with all necessary rows and columns set to 0. 
+
+Note that this method does not return anything since it is modifying the matrix in-place instead of creating a new matrix.

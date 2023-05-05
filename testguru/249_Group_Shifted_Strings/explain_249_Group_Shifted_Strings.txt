@@ -1,0 +1,13 @@
+This is a Python class containing two methods - `groupStrings` and `hashCode`.
+
+`groupStrings` takes a list of strings as input and returns a list of lists, where each inner list contains strings that are "grouped" together based on some pattern in the characters. 
+
+The function works by first creating an empty dictionary `dic`. It then iterates through each string in the input list `strings` and calls the `hashCode` function to encode the string into a particular key that reflects its pattern. It then tries to add the string to the list associated with that key in the dictionary. If the key is not already in the dictionary, it creates a new list for that key and adds the string to it.
+
+Finally, the function returns a list of the dictionary's values, i.e. a list containing all the lists of grouped strings.
+
+The `hashCode` function takes a string as input and returns an encoded key that represents its pattern. The function first checks if the string is empty or has only one character. If so, it simply returns "a" or an empty string. 
+
+If the string has multiple characters, it computes a "step" value by taking the absolute difference between the ASCII values of the first character and 'a'. It then iterates through the remaining characters in the string, subtracts the step value from each character's ASCII value, and appends the resulting character to a new string `key`. If the resulting ASCII value is less than 'a', the function adds 26 to it to wrap around to the end of the alphabet. The final key is returned as a string. 
+
+The `hashCode` function essentially encodes the string into a pattern that reflects the distance between each character and the first character in the string. Two strings with the same encoded key will have the same pattern of distances between their characters and will be "grouped" together in the results returned by `groupStrings`.

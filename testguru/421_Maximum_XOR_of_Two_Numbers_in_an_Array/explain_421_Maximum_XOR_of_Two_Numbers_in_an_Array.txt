@@ -1,0 +1,11 @@
+This code defines a class called `Solution` that has a method `findMaximumXOR`. This method takes in a list of integers named `nums` and returns an integer.
+
+The `findMaximumXOR` method implements a bitwise search algorithm and finds the maximum XOR value that can be obtained between two numbers in the `nums` list. XOR is a bitwise operation that returns a 1 when two bits are different and a 0 when they are the same.
+
+The algorithm starts by initializing `answer` to 0. Then, for each bit position (from 31 to 0), it shifts `answer` to the left by 1 bit, effectively multiplying it by 2.
+
+It creates a set called `prefixes` by taking each number in the `nums` list and shifting it to the right i times, where i is the current bit position. This effectively removes all the bits to the right of the current bit position. By doing this, we ignore the bits that will not impact the XOR values of the numbers.
+
+It checks if there exists a pair of numbers x and y such that `answer ^ 1 ^ x == y`, where `^` is the XOR operation. If such a pair exists, it means that the next bit in the maximum XOR value is a 1, and it adds that to `answer`.
+
+This process is repeated for all 32 bits, and finally, the maximum XOR value found is returned.

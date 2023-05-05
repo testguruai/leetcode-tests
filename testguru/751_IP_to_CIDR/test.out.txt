@@ -1,0 +1,35 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+751_IP_to_CIDR/test_751_IP_to_CIDR.py ..F                                [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_ipToCIDR _________________________________
+
+    def test_ipToCIDR():
+        solution = Solution()
+>       assert solution.ipToCIDR("0.0.0.0", 1) == ['0.0.0.0/32']
+
+751_IP_to_CIDR/test_751_IP_to_CIDR.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f6e1ad30760>, ip = '0.0.0.0', n = 1
+
+    def ipToCIDR(self, ip, n):
+        # Start value of IP
+        start = self.ipToInt(ip)
+        ans = []
+        while n:
+            # Last 1 of start or can start from 0
+            mask = max(33 - (start & -start).bit_length(),
+                       33 - n.bit_length())
+            ans.append(self.intToIP(start) + '/' + str(mask))
+>           start += 1 << (32 - mask)
+E           ValueError: negative shift count
+
+751_IP_to_CIDR/solution.py:21: ValueError
+=========================== short test summary info ============================
+FAILED 751_IP_to_CIDR/test_751_IP_to_CIDR.py::test_ipToCIDR - ValueError: neg...
+========================= 1 failed, 2 passed in 0.01s ==========================

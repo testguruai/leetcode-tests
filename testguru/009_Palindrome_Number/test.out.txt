@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+009_Palindrome_Number/test_009_Palindrome_Number.py ..F                  [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_isPalindrome_error ____________________________
+
+    def test_isPalindrome_error():
+        s = Solution()
+>       with pytest.raises(TypeError):
+E       Failed: DID NOT RAISE <class 'TypeError'>
+
+009_Palindrome_Number/test_009_Palindrome_Number.py:22: Failed
+=========================== short test summary info ============================
+FAILED 009_Palindrome_Number/test_009_Palindrome_Number.py::test_isPalindrome_error
+========================= 1 failed, 2 passed in 0.01s ==========================

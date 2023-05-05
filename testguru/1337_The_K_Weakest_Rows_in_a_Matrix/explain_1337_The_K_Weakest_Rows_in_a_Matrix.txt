@@ -1,0 +1,9 @@
+This is a Python class that contains a function `kWeakestRows` that takes in two arguments: `mat` which is a list of lists of integers representing a matrix, and `k` which is the number of rows to be returned.
+
+The function first initializes an empty list `res` to store the weakest rows, and gets the number of rows and columns in the matrix `mat`. It also initializes a variable `col` to 0 and a flag `flag` to 1.
+
+The `while` loop iterates through each column and each row of the matrix until k weakest rows are found. Within the loop, it checks if a row is already added to `res`, and skips it if it is already added. If the first 0 in a column is found in a row, that row is added to `res`. If `k` rows have been added to `res`, the `flag` is set to 0 to exit out of the `while` loop.
+
+If `res` is still less than `k`, the function iterates through each row, adds it to `res` if it is not already added, and exits the loop if `res` reaches `k`.
+
+Finally, the function returns the list of weakest rows.

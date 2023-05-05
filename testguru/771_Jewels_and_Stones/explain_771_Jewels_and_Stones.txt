@@ -1,0 +1,7 @@
+This code defines a class called Solution with a single method called numJewelsInStones. The purpose of this method is to count the number of stones that are jewels. The method takes two string arguments, J and S, which respectively contain the jewels and the stones.
+
+The method starts by checking if either J or S is empty, in which case it returns 0 since there cannot be any jewels in empty strings. Otherwise, it creates a set of the jewels to make the search more efficient.
+
+The method then initializes a variable called ans to 0 and iterates over each character in the string S. For each character, it checks if it is in the j_set (i.e., if it is a jewel) and if so, it increments the count in ans.
+
+Finally, the method returns the total count of jewels found in S, as represented by ans.

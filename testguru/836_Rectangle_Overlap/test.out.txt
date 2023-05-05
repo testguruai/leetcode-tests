@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+836_Rectangle_Overlap/test_836_Rectangle_Overlap.py .....F               [100%]
+
+=================================== FAILURES ===================================
+________________________ test_intersect_helper_function ________________________
+
+    def test_intersect_helper_function():
+        sol = Solution()
+>       assert sol.intersect(0,3,2,4) == True
+E       AttributeError: 'Solution' object has no attribute 'intersect'
+
+836_Rectangle_Overlap/test_836_Rectangle_Overlap.py:36: AttributeError
+=========================== short test summary info ============================
+FAILED 836_Rectangle_Overlap/test_836_Rectangle_Overlap.py::test_intersect_helper_function
+========================= 1 failed, 5 passed in 0.02s ==========================

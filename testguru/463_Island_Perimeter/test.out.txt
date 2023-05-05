@@ -1,0 +1,58 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+463_Island_Perimeter/test_463_Island_Perimeter.py .FFF                   [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_islandPerimeter_one_island ________________________
+
+    def test_islandPerimeter_one_island():
+        s = Solution()
+        grid = [[0,1,0],
+                [1,1,1],
+                [0,1,0]]
+>       assert s.islandPerimeter(grid) == 16
+E       assert 12 == 16
+E        +  where 12 = <bound method Solution.islandPerimeter of <solution.Solution object at 0x7f8a74c847c0>>([[0, 1, 0], [1, 1, 1], [0, 1, 0]])
+E        +    where <bound method Solution.islandPerimeter of <solution.Solution object at 0x7f8a74c847c0>> = <solution.Solution object at 0x7f8a74c847c0>.islandPerimeter
+
+463_Island_Perimeter/test_463_Island_Perimeter.py:17: AssertionError
+____________________ test_islandPerimeter_multiple_islands _____________________
+
+    def test_islandPerimeter_multiple_islands():
+        s = Solution()
+        grid = [[0,1,0,0],
+                [1,1,1,0],
+                [0,1,0,0],
+                [1,1,0,0]]
+>       assert s.islandPerimeter(grid) == 24
+E       assert 16 == 24
+E        +  where 16 = <bound method Solution.islandPerimeter of <solution.Solution object at 0x7f8a74ac5cf0>>([[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]])
+E        +    where <bound method Solution.islandPerimeter of <solution.Solution object at 0x7f8a74ac5cf0>> = <solution.Solution object at 0x7f8a74ac5cf0>.islandPerimeter
+
+463_Island_Perimeter/test_463_Island_Perimeter.py:25: AssertionError
+______________________ test_islandPerimeter_invalid_input ______________________
+
+    def test_islandPerimeter_invalid_input():
+        s = Solution()
+        grid = []
+        assert s.islandPerimeter(grid) == 0
+    
+        grid = [[]]
+        assert s.islandPerimeter(grid) == 0
+    
+        grid = [[0,1,2],
+                [3,4,5]]
+>       assert s.islandPerimeter(grid) == 0
+E       assert 4 == 0
+E        +  where 4 = <bound method Solution.islandPerimeter of <solution.Solution object at 0x7f8a74ac7a60>>([[0, 1, 2], [3, 4, 5]])
+E        +    where <bound method Solution.islandPerimeter of <solution.Solution object at 0x7f8a74ac7a60>> = <solution.Solution object at 0x7f8a74ac7a60>.islandPerimeter
+
+463_Island_Perimeter/test_463_Island_Perimeter.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED 463_Island_Perimeter/test_463_Island_Perimeter.py::test_islandPerimeter_one_island
+FAILED 463_Island_Perimeter/test_463_Island_Perimeter.py::test_islandPerimeter_multiple_islands
+FAILED 463_Island_Perimeter/test_463_Island_Perimeter.py::test_islandPerimeter_invalid_input
+========================= 3 failed, 1 passed in 0.02s ==========================

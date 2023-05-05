@@ -1,0 +1,5 @@
+This is a Python class `Solution` that defines two methods to find the difference between two strings `s` and `t`. The first method `findTheDifference` takes two arguments `s` and `t`, which are both strings, and returns a single character that is present in `t` but not in `s`. The second method is commented out and is an alternative implementation of `findTheDifference`.
+
+In the first method, the variable `res` is initially set to the ASCII code value of the last character of `t`. Then, for each character in `s`, the ASCII code value of the corresponding character in `t` is added to `res`, and the ASCII code value of the corresponding character in `s` is subtracted from `res`. Finally, the resulting `res` is converted to a single character using `chr()` and returned.
+
+The second method uses the XOR bitwise operator (`^`) to combine all the ASCII code values of characters in `s` and `t`, and return the resulting character using `chr()`.

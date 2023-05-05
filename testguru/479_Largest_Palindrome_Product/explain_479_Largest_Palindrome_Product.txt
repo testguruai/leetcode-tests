@@ -1,0 +1,7 @@
+This is a Python class named Solution that contains a method called largestPalindrome. The method takes in an integer n as an argument and returns an integer. The code has two versions of the method, one is commented out and the other is active.
+
+In the first version of the method (commented out), if n is 1, the method returns 9. Otherwise, it sets an upperBound and lowerBound based on the value of n, calculates the maximum possible palindrome of two n-digit numbers, and checks if it is divisible by any n-digit numbers. It continues to decrement the first half of the maximum palindrome until it finds a palindrome that is divisible by some n-digit number. It returns the palindrome modulo 1337.
+
+The second version of the method utilizes a different algorithm. Again, if n is 1, it returns 9. It loops through a range of values from 2 to 9 times 10 to the power of n-1. For each value of a, it calculates the highest possible value for one of the n-digit numbers and checks if it is a palindrome. If it is, it checks if the resulting value of the second n-digit number is also n-digit and if the product of the two is a palindrome. If it is, the method returns the product modulo 1337.
+
+Both versions of the method are solutions to the "largest palindrome product" problem on LeetCode.

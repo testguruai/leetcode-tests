@@ -1,0 +1,11 @@
+This is a class named "Solution" which contains a single function named "rob". The "rob" function takes a list "nums" of integers as input and returns an integer.
+
+The code contains three similar implementations of the "rob" function which use different algorithms to solve the same problem. 
+
+The first implementation uses dynamic programming to solve the "House Robber" problem. This problem involves a robber who is trying to rob houses on a street, where each house has some value of money. The robber cannot rob two adjacent houses, and the goal is to maximize the amount of money the robber can steal. 
+
+The second and third implementations are simpler optimizations of the first implementation, which achieve the same result in fewer lines of code. 
+
+The second implementation works by iterating through the list of numbers and keeping track of the highest sum of values seen so far. At each iteration, it compares the current value to the sum of the previous value and the value two indices before it, and takes the maximum of the two. 
+
+The third implementation is a more memory-efficient version of the second implementation, which avoids creating a new list to store the maximum values seen so far. Instead, it uses two variables to store the current maximum and the previous maximum, and updates them at each iteration.

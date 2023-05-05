@@ -1,0 +1,9 @@
+This Python code defines a class `Solution` with a method `toLowerCase` that takes a string `str` as input and converts all uppercase letters in the string to lowercase. 
+
+The function first initializes an empty list called `res` and computes the difference in ASCII values between the upper and lowercase letters using the `ord` function. 
+
+It then iterates through each character in the input string, checking if the ASCII value of the character falls within the uppercase letter range. If it does, the function appends the corresponding lowercase letter to the `res` list using the `chr` function and adding the ASCII gap calculated earlier. If the character is not an uppercase letter, it is simply appended to the `res` list as is. 
+
+Finally, the function returns a string representing the concatenation of all characters in the `res` list. 
+
+There is also a commented out version of the `toLowerCase` function that achieves the same result using the built-in `lower()` method of Python strings.

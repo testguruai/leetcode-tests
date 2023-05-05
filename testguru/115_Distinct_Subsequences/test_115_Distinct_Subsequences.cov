@@ -1,0 +1,6 @@
+Name                                                          Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------
+115_Distinct_Subsequences/solution.py                            13      0   100%
+115_Distinct_Subsequences/test_115_Distinct_Subsequences.py      14      0   100%
+-------------------------------------------------------------------------------------------
+TOTAL                                                            27      0   100%

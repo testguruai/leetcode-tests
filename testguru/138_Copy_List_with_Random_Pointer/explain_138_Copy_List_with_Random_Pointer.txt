@@ -1,0 +1,7 @@
+This python code is an implementation of a solution for copying a linked list with a random pointer. There are three methods defined here, each with a different approach to solve the problem.
+
+The first method uses a hash table to store the original linked list nodes as keys and their respective copied nodes as values. It iterates through the linked list, copying each node and its random pointer to the hash table. It returns the head of the copied linked list.
+
+The second method is similar to the first one but creates a dummy head node and copies the labels of each node in the original linked list to a new node and copies its random pointer to a hash table. Then it iterates through the linked list again, assigning the corresponding random pointers to the copied nodes. It returns the next node after the dummy head, which is the head of the copied linked list.
+
+The third method modifies the original linked list by inserting a copy of each node between itself and its next node. Then it iterates through the linked list again, assigning the corresponding random pointers to the copied nodes. Finally, it extracts the copied linked list by separating it from the original linked list. It returns the head of the copied linked list.

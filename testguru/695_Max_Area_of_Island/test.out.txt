@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+695_Max_Area_of_Island/test_695_Max_Area_of_Island.py F                  [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_maxAreaOfIsland _____________________________
+
+    def test_maxAreaOfIsland():
+        s = Solution()
+    
+        # Test case 1: typical input with multiple islands
+        grid = [[0,0,1,0,0],[0,0,0,1,1],[1,0,0,1,1],[0,1,1,0,0],[0,0,0,0,0]]
+>       assert s.maxAreaOfIsland(grid) == 6
+E       assert 4 == 6
+E        +  where 4 = <bound method Solution.maxAreaOfIsland of <solution.Solution object at 0x7f26f74f0400>>([[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]])
+E        +    where <bound method Solution.maxAreaOfIsland of <solution.Solution object at 0x7f26f74f0400>> = <solution.Solution object at 0x7f26f74f0400>.maxAreaOfIsland
+
+695_Max_Area_of_Island/test_695_Max_Area_of_Island.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED 695_Max_Area_of_Island/test_695_Max_Area_of_Island.py::test_maxAreaOfIsland
+============================== 1 failed in 0.01s ===============================

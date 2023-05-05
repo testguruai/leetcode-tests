@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+206_Reverse_Linked_List/test_206_Reverse_Linked_List.py FF               [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_reverseList_iteratively _________________________
+
+    def test_reverseList_iteratively():
+        # test case 1
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+206_Reverse_Linked_List/test_206_Reverse_Linked_List.py:6: NameError
+_________________________ test_reverseList_recursively _________________________
+
+    def test_reverseList_recursively():
+        # test case 1
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+206_Reverse_Linked_List/test_206_Reverse_Linked_List.py:28: NameError
+=========================== short test summary info ============================
+FAILED 206_Reverse_Linked_List/test_206_Reverse_Linked_List.py::test_reverseList_iteratively
+FAILED 206_Reverse_Linked_List/test_206_Reverse_Linked_List.py::test_reverseList_recursively
+============================== 2 failed in 0.01s ===============================

@@ -1,0 +1,99 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py FFFFF          [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_topKFrequent_1 ______________________________
+
+    def test_topKFrequent_1():
+        s = Solution()
+>       assert s.topKFrequent(["hello", "world", "hello", "world", "and", "hello"], 2) == ["hello", "world"]
+
+692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fea5ddc48b0>
+words = ['hello', 'world', 'hello', 'world', 'and', 'hello'], k = 2
+
+    def topKFrequent(self, words, k):
+>       count = collections.Counter(words)
+E       NameError: name 'collections' is not defined
+
+692_Top_K_Frequent_Words/solution.py:24: NameError
+_____________________________ test_topKFrequent_2 ______________________________
+
+    def test_topKFrequent_2():
+        s = Solution()
+>       assert s.topKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 3) == ["i", "love", "coding"]
+
+692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fea5ddc5810>
+words = ['i', 'love', 'leetcode', 'i', 'love', 'coding'], k = 3
+
+    def topKFrequent(self, words, k):
+>       count = collections.Counter(words)
+E       NameError: name 'collections' is not defined
+
+692_Top_K_Frequent_Words/solution.py:24: NameError
+_____________________________ test_topKFrequent_3 ______________________________
+
+    def test_topKFrequent_3():
+        s = Solution()
+>       assert s.topKFrequent([], 1) == []
+
+692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fea5ddc79a0>, words = [], k = 1
+
+    def topKFrequent(self, words, k):
+>       count = collections.Counter(words)
+E       NameError: name 'collections' is not defined
+
+692_Top_K_Frequent_Words/solution.py:24: NameError
+_____________________________ test_topKFrequent_4 ______________________________
+
+    def test_topKFrequent_4():
+        s = Solution()
+>       assert s.topKFrequent(["a", "a", "a", "b", "b", "c"], 2) == ["a", "b"]
+
+692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fea5ddc6980>
+words = ['a', 'a', 'a', 'b', 'b', 'c'], k = 2
+
+    def topKFrequent(self, words, k):
+>       count = collections.Counter(words)
+E       NameError: name 'collections' is not defined
+
+692_Top_K_Frequent_Words/solution.py:24: NameError
+_____________________________ test_topKFrequent_5 ______________________________
+
+    def test_topKFrequent_5():
+        s = Solution()
+>       assert s.topKFrequent(["this", "is", "a", "test"], 1) == ["a"]
+
+692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fea5ddc5030>
+words = ['this', 'is', 'a', 'test'], k = 1
+
+    def topKFrequent(self, words, k):
+>       count = collections.Counter(words)
+E       NameError: name 'collections' is not defined
+
+692_Top_K_Frequent_Words/solution.py:24: NameError
+=========================== short test summary info ============================
+FAILED 692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py::test_topKFrequent_1
+FAILED 692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py::test_topKFrequent_2
+FAILED 692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py::test_topKFrequent_3
+FAILED 692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py::test_topKFrequent_4
+FAILED 692_Top_K_Frequent_Words/test_692_Top_K_Frequent_Words.py::test_topKFrequent_5
+============================== 5 failed in 0.02s ===============================

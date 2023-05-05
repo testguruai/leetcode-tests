@@ -1,0 +1,49 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 10 items
+
+475_Heaters/test_475_Heaters.py ..FF....F.                               [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_case_3 __________________________________
+
+    def test_case_3():
+        s = Solution()
+        houses = [1, 2, 3, 5, 6]
+        heaters = [1, 5]
+>       assert s.findRadius(houses, heaters) == 1
+E       assert 2 == 1
+E        +  where 2 = <bound method Solution.findRadius of <solution.Solution object at 0x7ffb73ee8e20>>([1, 2, 3, 5, 6], [1, 5])
+E        +    where <bound method Solution.findRadius of <solution.Solution object at 0x7ffb73ee8e20>> = <solution.Solution object at 0x7ffb73ee8e20>.findRadius
+
+475_Heaters/test_475_Heaters.py:21: AssertionError
+_________________________________ test_case_4 __________________________________
+
+    def test_case_4():
+        s = Solution()
+        houses = [1, 2, 3, 4, 5, 6]
+        heaters = [1, 6]
+>       assert s.findRadius(houses, heaters) == 3
+E       assert 2 == 3
+E        +  where 2 = <bound method Solution.findRadius of <solution.Solution object at 0x7ffb73eeb1c0>>([1, 2, 3, 4, 5, 6], [1, 6])
+E        +    where <bound method Solution.findRadius of <solution.Solution object at 0x7ffb73eeb1c0>> = <solution.Solution object at 0x7ffb73eeb1c0>.findRadius
+
+475_Heaters/test_475_Heaters.py:27: AssertionError
+_________________________________ test_case_9 __________________________________
+
+    def test_case_9():
+        s = Solution()
+        houses = [1, 2, 3, 4, 5, 6]
+        heaters = []
+>       assert s.findRadius(houses, heaters) == 0
+E       assert inf == 0
+E        +  where inf = <bound method Solution.findRadius of <solution.Solution object at 0x7ffb73d2fc10>>([1, 2, 3, 4, 5, 6], [])
+E        +    where <bound method Solution.findRadius of <solution.Solution object at 0x7ffb73d2fc10>> = <solution.Solution object at 0x7ffb73d2fc10>.findRadius
+
+475_Heaters/test_475_Heaters.py:57: AssertionError
+=========================== short test summary info ============================
+FAILED 475_Heaters/test_475_Heaters.py::test_case_3 - assert 2 == 1
+FAILED 475_Heaters/test_475_Heaters.py::test_case_4 - assert 2 == 3
+FAILED 475_Heaters/test_475_Heaters.py::test_case_9 - assert inf == 0
+========================= 3 failed, 7 passed in 0.02s ==========================

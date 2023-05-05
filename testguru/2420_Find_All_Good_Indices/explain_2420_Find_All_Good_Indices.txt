@@ -1,0 +1,17 @@
+This is a Python program to find all the good indices in a list of integers. 
+
+The good indices are those indices where the following two conditions are satisfied:
+- all the elements before it are non-increasing
+- all the elements after it are non-decreasing
+
+The program defines a class Solution with a method goodIndices that takes two arguments: nums, a list of integers, and k, an integer. The method returns a list of indices that satisfy the conditions.
+
+The method first initializes two lists, posi and nega, both with a single element 0. The lists are used to count the number of increasing and decreasing indices, respectively.
+
+The program then iterates over the list nums, starting from the second element. For each element, it calculates the difference between it and the previous element, and stores it in the variable diff. It then appends the previous values of posi and nega to the respective lists.
+
+If the difference is positive, it means the current element is greater than the previous element, and hence posi[i] (the count of increasing indices) is incremented. If the difference is negative, nega[i] (the count of decreasing indices) is incremented.
+
+After iterating over the list, the program then checks each index i from k to len(nums)-k. It checks the two conditions by comparing the difference between the count of decreasing indices from i+1 to i+k (nega[i+k]-nega[i+1]) with 0, and the count of increasing indices from i-k to i-1 (posi[i-1]-posi[i-k]) with 0.
+
+If both conditions are satisfied, the index i is appended to the list ans, which is then returned at the end of the method.

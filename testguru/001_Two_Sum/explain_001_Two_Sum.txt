@@ -1,0 +1,7 @@
+This is a Python class that contains a function called `twoSum` that takes in two arguments `nums` (a list of integers) and `target` (an integer). The purpose of the function is to find two numbers in `nums` that add up to `target` and return their indices in the list as a list of two integers.
+
+There are three implementations of the `twoSum` function in this class. The first implementation uses nested for loops to compare each pair of numbers in the list until a pair that adds up to `target` is found. This has a time complexity of O(n^2).
+
+The second implementation uses a hash table to store the indices of the numbers in `nums`. The function loops through the list and for each number, it checks if the hash table already contains the difference between the current number and `target`, and if so, returns the indices of the two numbers that add up to `target`. This has a time complexity of O(n) as the hash table lookups take constant time.
+
+The third implementation uses the two-pointer technique. It first creates a list of tuples containing each number in `nums` and its index, then sorts the list by the value of the numbers. It then initializes two pointers at the beginning and end of the sorted list and moves them inward until it finds a pair that adds up to `target`. This also has a time complexity of O(n) as we only need to loop through the list once.

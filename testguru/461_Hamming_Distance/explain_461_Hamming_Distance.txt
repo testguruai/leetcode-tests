@@ -1,0 +1,9 @@
+This is a class definition for a Solution object in Python which has a method called `hammingDistance`. This method takes two integer arguments, `x` and `y`, and returns the Hamming distance between them. 
+
+The Hamming distance is the number of positions at which the corresponding bits in two integers are different. 
+
+The method computes the bitwise XOR of `x` and `y` using the ^ operator, which produces a new integer with bits set where the bits of `x` and `y` differ.
+
+The result of the XOR operation is then passed to the `bin` function which returns the binary representation of the integer as a string. 
+
+Finally, the `count` method is called on the binary string with the argument '1' which counts the number of '1' bits in the string, and this is returned as the Hamming distance between `x` and `y`.

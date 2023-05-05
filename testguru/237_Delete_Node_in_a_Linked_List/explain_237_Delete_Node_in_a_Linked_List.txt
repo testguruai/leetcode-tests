@@ -1,0 +1,7 @@
+This is a solution to a problem of deleting a node in a singly-linked list (a data structure in which each element in the list contains a reference to the next one).
+
+The function `deleteNode` takes a singly-linked list node as its input, and it modifies it in-place (i.e., without creating a new copy of it). 
+
+The main idea of the function is to remove the given node from the list by copying the value and the next reference of the next node into the current node. This effectively removes the current node from the list, because its value and next reference have been replaced with the ones of the next node.
+
+The code does this by accessing the value of the next node (`node.next.val`) and setting it as the value of the current node (`node.val`). Then, it updates the next reference of the current node to be the next next reference (`node.next.next`), effectively skipping the next node and removing it from the list.

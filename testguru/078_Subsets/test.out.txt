@@ -1,0 +1,46 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+078_Subsets/test_078_Subsets.py F                                        [100%]
+
+=================================== FAILURES ===================================
+__________________________ TestSolution.test_subsets ___________________________
+
+self = <test_078_Subsets.TestSolution object at 0x7f11f1934430>
+
+    def test_subsets(self):
+        # Test case where nums is empty.
+        s = Solution()
+        nums = []
+        assert s.subsets(nums) == [[]]
+    
+        # Test case where nums has only one element.
+        nums = [1]
+        result = [[], [1]]
+        assert s.subsets(nums) == result
+    
+        # Test case where nums has two elements.
+        nums = [1, 2]
+        result = [[], [1], [2], [1, 2]]
+        assert s.subsets(nums) == result
+    
+        # Test case where nums has three elements.
+        nums = [1, 2, 3]
+        result = [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
+        assert s.subsets(nums) == result
+    
+        # Test case where nums has duplicate elements.
+        nums = [1, 2, 2]
+        result = [[], [1], [2], [1, 2], [2, 2], [1, 2, 2]]
+>       assert s.subsets(nums) == result
+E       assert [[], [1], [2]..., [1, 2], ...] == [[], [1], [2]...2], [1, 2, 2]]
+E         At index 4 diff: [2] != [2, 2]
+E         Left contains 2 more items, first extra item: [2, 2]
+E         Use -v to get more diff
+
+078_Subsets/test_078_Subsets.py:31: AssertionError
+=========================== short test summary info ============================
+FAILED 078_Subsets/test_078_Subsets.py::TestSolution::test_subsets - assert [...
+============================== 1 failed in 0.02s ===============================

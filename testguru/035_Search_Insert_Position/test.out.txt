@@ -1,0 +1,38 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+035_Search_Insert_Position/test_035_Search_Insert_Position.py F          [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_searchInsert _______________________________
+
+    def test_searchInsert():
+        s = Solution()
+        assert s.searchInsert([1,3,5,6], 5) == 2
+        assert s.searchInsert([1,3,5,6], 2) == 1
+        assert s.searchInsert([1,3,5,6], 7) == 4
+        assert s.searchInsert([1,3,5,6], 0) == 0
+>       assert s.searchInsert([], 5) == 0
+
+035_Search_Insert_Position/test_035_Search_Insert_Position.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f91329a0400>, nums = [], target = 5
+
+    def searchInsert(self, nums, target):
+        l, r = int(0), len(nums) - 1
+        while l < r:
+            mid = int((l + r) / 2)
+            if nums[mid] < target:
+                l = mid + 1
+            else:
+                r = mid
+>       if nums[l] < target:
+E       IndexError: list index out of range
+
+035_Search_Insert_Position/solution.py:33: IndexError
+=========================== short test summary info ============================
+FAILED 035_Search_Insert_Position/test_035_Search_Insert_Position.py::test_searchInsert
+============================== 1 failed in 0.01s ===============================

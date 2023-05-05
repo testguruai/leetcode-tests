@@ -1,0 +1,7 @@
+This is a python code that implements the "Gray Code" algorithm. The gray code is a binary numeral system where two successive values differ in only one bit. This code takes an integer "n" as input and returns a list of gray codes of length "n".
+
+The code starts by initializing a list "res" with 0, indicating the first gray code. Then it loops through "n" and reverses the range of elements in "res". For each element in the reversed range, it appends to "res" the bitwise OR of that element with 1 shifted left by "i". This effectively generates the rest of the gray codes for "n". Finally, it returns the list of gray codes.
+
+There is also a commented out function "count_one" which is not used in this code. It is a helper function that counts the number of 1's in a binary number. 
+
+The "if __name__ == '__main__':" block is used to check if the code is being run as the main program and not being imported as a module. It creates an instance of the "Solution" class, calls the "grayCode" method with an input of 2, and prints the result.

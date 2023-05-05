@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+453_Minimum_Moves_to_Equal_Array_Elements/test_453_Minimum_Moves_to_Equal_Array_Elements.py . [ 16%]
+..F..                                                                    [100%]
+
+=================================== FAILURES ===================================
+_ test_minMoves_when_list_has_both_positive_and_negative_integers_then_returns_correct_number_of_moves _
+
+    def test_minMoves_when_list_has_both_positive_and_negative_integers_then_returns_correct_number_of_moves():
+>       assert Solution().minMoves([-10, 0, 10]) == 20
+E       assert 30 == 20
+E        +  where 30 = <bound method Solution.minMoves of <solution.Solution object at 0x7f2f385b4ac0>>([-10, 0, 10])
+E        +    where <bound method Solution.minMoves of <solution.Solution object at 0x7f2f385b4ac0>> = <solution.Solution object at 0x7f2f385b4ac0>.minMoves
+E        +      where <solution.Solution object at 0x7f2f385b4ac0> = Solution()
+
+453_Minimum_Moves_to_Equal_Array_Elements/test_453_Minimum_Moves_to_Equal_Array_Elements.py:19: AssertionError
+=========================== short test summary info ============================
+FAILED 453_Minimum_Moves_to_Equal_Array_Elements/test_453_Minimum_Moves_to_Equal_Array_Elements.py::test_minMoves_when_list_has_both_positive_and_negative_integers_then_returns_correct_number_of_moves
+========================= 1 failed, 5 passed in 0.02s ==========================

@@ -1,0 +1,11 @@
+This is a Python class named Solution with a method called toHex that receives an integer num and returns a string representing its hexadecimal equivalent. 
+
+The first part of the method checks if the input num is equal to zero. If it is, it returns the string '0'. If not, it initializes an empty string called ans and a string called mp with all hexadecimal digits.
+
+The method then iterates over a range of 8 times. In each iteration, it performs a bitwise AND operation between the input num and the integer value 15 (which is represented in binary as 1111). This gets the last 4 digits of the binary representation of num. It then uses this value as an index to get the corresponding hexadecimal letter from the mp string and concatenates it to the beginning of the ans string.
+
+After each iteration, the method right-shifts the num value by 4 bits to discard the last 4 digits that were already converted to hexadecimal. 
+
+The method returns the ans string with any leading zeroes stripped off.
+
+This implementation assumes that num is a 32-bit signed integer. There are 2 additional implementations of the toHex method that are commented out, but they are not used.

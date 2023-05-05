@@ -1,0 +1,15 @@
+This is a Python solution for the problem of calculating a number `a` to the power of another number `b` in modulo arithmetic with a fixed base value of `1337`. Modulo arithmetic is a way of performing arithmetic operations on numbers by only keeping the remainder after division by a given constant.
+
+The `Solution` class has two methods, `__init__` and `superPow`, and a helper method `powmod`. 
+
+The `__init__` method initializes the object with a fixed `base` value of `1337`.
+
+The `superPow` method takes two arguments, `a` and `b`, where `a` is an integer to be raised to the power of `b`, which is a list of integers representing the power. The method implements the following formula for computing `a` to the power of `b` using modulo arithmetic with the fixed `base` value:
+
+   a^1234567 % k = (a^1234560 % k) * (a^7 % k) % k = (a^123456 % k)^10 % k * (a^7 % k) % k
+
+It first checks if `b` is either `None` or an empty list, in which case it returns `1`. If `b` is not empty, it removes the last digit from the list (`last_digit = b.pop()`) and recursively computes `a` raised to the power of the remaining `b` digits (`self.superPow(a, b)`). It then uses the `self.powmod` helper method to compute the result of the formula above, where the first argument is the result of the recursive call, and the second argument is `10`. It multiplies this result by `a` raised to the power of the `last_digit` and takes the remainder after division by `base` to ensure the result is in modulo arithmetic.
+
+The `powmod` method takes two arguments, `a` and `k`, and computes `a` raised to the power of `k` in modulo arithmetic with the fixed `base` value. It first computes the remainder after division of `a` by `base`, and then iteratively multiplies `result` by `a` modulo `base` `k` times and returns the remainder after division by `base`.
+
+Overall, this solution allows for efficient computation of large power values using modulo arithmetic with a fixed base value.

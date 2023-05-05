@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+042_Trapping_Rain_Water/test_042_Trapping_Rain_Water.py .F               [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_rain_water ________________________________
+
+    def test_rain_water():
+        s = Solution()
+>       assert s.rain_water([2,6,3,8,2,7,2,5,0], 0, 3) == 3
+E       assert -5 == 3
+E        +  where -5 = <bound method Solution.rain_water of <solution.Solution object at 0x7fc3df7a45b0>>([2, 6, 3, 8, 2, 7, ...], 0, 3)
+E        +    where <bound method Solution.rain_water of <solution.Solution object at 0x7fc3df7a45b0>> = <solution.Solution object at 0x7fc3df7a45b0>.rain_water
+
+042_Trapping_Rain_Water/test_042_Trapping_Rain_Water.py:17: AssertionError
+=========================== short test summary info ============================
+FAILED 042_Trapping_Rain_Water/test_042_Trapping_Rain_Water.py::test_rain_water
+========================= 1 failed, 1 passed in 0.01s ==========================

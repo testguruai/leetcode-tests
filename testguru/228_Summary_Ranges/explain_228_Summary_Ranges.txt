@@ -1,0 +1,5 @@
+This python code defines a class called "Solution" with a method called "summaryRanges". This method takes a list of integers "nums" as input and returns a list of strings. 
+
+The first implementation of the "summaryRanges" method uses a for loop over the input list to find continuous ranges of numbers and append them to the result list with a "->" separator. If there is only one number in the range, it's appended as a single value. It returns the result list.
+
+The second implementation of the "summaryRanges" method is a more concise version of the same functionality. It uses a start index and a for loop to iterate over the input list. It checks if the current number is consecutive with the next number in the list. If yes, it continues with the next iteration. If not, it appends the range of numbers from the start index to the current index to the result list. It then sets the start index to the next index. At the end of the loop, it returns the result list.

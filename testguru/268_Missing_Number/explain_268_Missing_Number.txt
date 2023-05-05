@@ -1,0 +1,9 @@
+The code defines a class `Solution` with three methods that find the missing number from an array of consecutive numbers from 0 to n.
+
+The first method `missingNumber` uses a formula to find the missing number. It calculates the total sum of all the numbers from 0 to n, subtracts the sum of the array and returns the result. 
+
+The second method `missingNumber` uses the XOR operator to find the missing number. The algorithm works by XOR-ing all the numbers in the array with their indices and then XOR-ing the result with the length of the array. The result is the missing number.
+
+The third method `missingNumber` uses binary search to find the missing number. It first sorts the array in ascending order and then searches for the first number that is greater than its index. The index of this number is the missing number.
+
+All three methods return the same result - the missing number in the array.

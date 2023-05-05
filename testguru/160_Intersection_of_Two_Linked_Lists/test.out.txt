@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 160_Intersection_of_Two_Linked_Lists/test_160_Intersection_of_Two_Linked_Lists.py _
+ImportError while importing test module '/data/sandeep/leetcode-master/.verifaiws/160_Intersection_of_Two_Linked_Lists/test_160_Intersection_of_Two_Linked_Lists.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+160_Intersection_of_Two_Linked_Lists/test_160_Intersection_of_Two_Linked_Lists.py:3: in <module>
+    from solution import ListNode, Solution
+E   ImportError: cannot import name 'ListNode' from 'solution' (/data/sandeep/leetcode-master/.verifaiws/160_Intersection_of_Two_Linked_Lists/solution.py)
+=========================== short test summary info ============================
+ERROR 160_Intersection_of_Two_Linked_Lists/test_160_Intersection_of_Two_Linked_Lists.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

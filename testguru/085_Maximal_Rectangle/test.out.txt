@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+085_Maximal_Rectangle/test_085_Maximal_Rectangle.py F                    [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_maximalRectangle _____________________________
+
+    def test_maximalRectangle():
+        solution = Solution()
+>       assert solution.maximalRectangle([[1, 0, 1, 0, 0],
+                                          [1, 0, 1, 1, 1],
+                                          [1, 1, 1, 1, 1],
+                                          [1, 0, 0, 1, 0]]) == 6
+E       assert 0 == 6
+E        +  where 0 = <bound method Solution.maximalRectangle of <Maximal_Rectangle.Solution object at 0x7f5ee9594400>>([[1, 0, 1, 0, 0], [1, 0, 1, 1, 1], [1, 1, 1, 1, 1], [1, 0, 0, 1, 0]])
+E        +    where <bound method Solution.maximalRectangle of <Maximal_Rectangle.Solution object at 0x7f5ee9594400>> = <Maximal_Rectangle.Solution object at 0x7f5ee9594400>.maximalRectangle
+
+085_Maximal_Rectangle/test_085_Maximal_Rectangle.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED 085_Maximal_Rectangle/test_085_Maximal_Rectangle.py::test_maximalRectangle
+============================== 1 failed in 0.01s ===============================

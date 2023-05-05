@@ -1,0 +1,6 @@
+Name                                                                                                  Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------------------------------
+030_Substring_with_Concatenation_of_All_Words/solution.py                                                27      2    93%   44-46
+030_Substring_with_Concatenation_of_All_Words/test_030_Substring_with_Concatenation_of_All_Words.py       8      0   100%
+-----------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                    35      2    94%

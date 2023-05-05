@@ -1,0 +1,7 @@
+This is a Python class named Solution, which contains a method called wallsAndGates. The purpose of this method is to modify a given matrix of integers "rooms" in place, such that each element represents the minimum distance to the nearest gate (represented by 0) in the matrix.
+
+The method achieves this by first initializing a queue of gates (elements with value 0) in the matrix. It then performs a BFS (breadth-first search) with this queue, updating the distance of each neighboring element until the entire matrix has been traversed.
+
+The BFS algorithm used here is implemented with a while loop and a nested for loop that iterates over each element in the matrix. It first dequeues an element (using pop(0)) from the queue and gets its current row and column position. It then checks each of the four adjacent elements in the matrix (up, down, left, right) to see if they are valid (i.e. not out of bounds and not a wall, represented by a large integer). If they are valid, it updates their distance from the nearest gate (located at the current element) and enqueues them into the queue for further processing.
+
+The result is a modified input matrix "rooms" where each element represents the minimum distance to the nearest gate. This is achieved in place, meaning that the input matrix is modified directly rather than creating a new copy. The method does not return anything, as instructed by the rtype documentation.

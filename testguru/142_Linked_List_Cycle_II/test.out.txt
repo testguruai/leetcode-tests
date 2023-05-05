@@ -1,0 +1,35 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+__ ERROR collecting 142_Linked_List_Cycle_II/test_142_Linked_List_Cycle_II.py __
+/home/azureuser/verifai/lib/python3.10/site-packages/_pytest/python.py:617: in _importtestmodule
+    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)
+/home/azureuser/verifai/lib/python3.10/site-packages/_pytest/pathlib.py:564: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+/home/azureuser/verifai/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:163: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+/home/azureuser/verifai/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:345: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+/usr/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/data/sandeep/leetcode-master/.verifaiws/142_Linked_List_Cycle_II/test_142_Linked_List_Cycle_II.py", line 41
+E       pytest test_solution.py
+E              ^^^^^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR 142_Linked_List_Cycle_II/test_142_Linked_List_Cycle_II.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.10s ===============================

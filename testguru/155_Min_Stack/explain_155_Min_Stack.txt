@@ -1,0 +1,8 @@
+This code defines a class called MinStack that implements a stack data structure. The stack supports four methods:
+
+- push(x): Adds an element x to the top of the stack.
+- pop(): Removes the element from the top of the stack.
+- top(): Returns the element currently at the top of the stack.
+- getMin(): Returns the minimum element in the stack.
+
+To implement the getMin() method in O(1) time, the class uses an additional stack called min_stack that keeps track of the minimum element seen so far. When a new element is pushed onto the stack, it is compared to the top element of the min_stack. If it is smaller than or equal to the top element, it is added to the min_stack as well. If it is larger, the top element of the min_stack is added again to maintain the same minimum value. When an element is popped from the stack, the top element of the min_stack is also popped. The top() method simply returns the top element of the stack, while getMin() returns the top element of the min_stack.

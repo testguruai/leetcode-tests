@@ -1,0 +1,9 @@
+This is a python code for a class called `Solution` which contains three different methods to find the closest value to a target value in a binary tree. 
+
+The `closestValue` function takes in the root of the binary tree and the target value as input parameters and returns an integer representing the closest value in the tree to the target value.
+
+The first method is commented out and is a brute force approach which searches for all values in the tree by calling a helper function.
+
+The second method is an iterative approach where the function compares the root value with the target value and traverses either the left or right subtree depending on whether the target is less or greater than the root value, respectively. It then stores the values in an array and returns the minimum value in the array using the lambda function to compute the absolute difference between the target value and the array values.
+
+The third method is a recursive approach where the function first compares the root value with the target value and then recursively calls itself on either the left or right subtree depending on whether the target is less or greater than the root value, respectively. It then takes the minimum of the result from the recursive calls and the root value using the lambda function to compute the absolute difference between the target value and the values.

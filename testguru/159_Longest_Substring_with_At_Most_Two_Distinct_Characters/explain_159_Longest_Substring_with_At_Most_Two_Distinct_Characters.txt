@@ -1,0 +1,13 @@
+This Python code defines a solution class with a method called 'lengthOfLongestSubstringTwoDistinct'. The method takes in one parameter s, which is a string and returns an integer. The objective of the function is to find and return the length of the longest substring in the given string s that contains at most two distinct characters.
+
+The method uses three variables, i, j, and maxLen. The value of i is initially set to 0, and the value of j is set to -1. The value of maxLen is initially set to 0.
+
+The method uses a for-loop to iterate through all the characters of the given string, except for the first character. The for-loop uses the variable k as an index to traverse through the string. There are two main if-statements inside the for-loop.
+
+The first if-statement checks if the current character is the same as the previous character. If that's true, then it continues to the next iteration.
+
+The second if-statement checks if there are already two distinct characters in the current substring. If yes, then it stores the length of the current substring and updates the start index i to the position right after the last occurrence of the second distinct character.
+
+Then, the current index (k) becomes the last occurrence of the second distinct character, and the maxLen variable updates with the maximum length of the substring found so far.
+
+Finally, the method returns the maximum length found by comparing the length of the substring that starts at index i and the maxLen variable.

@@ -1,0 +1,7 @@
+This code defines a class Solution which has a method "isSymmetric" that takes a root node of a binary tree and returns whether the given tree is symmetric or not. 
+
+If the given root node is None, it returns True as an empty tree is always symmetric. 
+
+Otherwise, it calls the second method "mirrorVisit" from the "isSymmetric" method by passing the left and right child nodes of the root. "mirrorVisit" recursively compares the left and right trees for symmetry by checking if the left child value is equal to the right child value. For a tree to be symmetric, the left subtree of the left node should be the same as the right subtree of the right node and the right subtree of the left node should be the same as the left subtree of the right node. If any of these conditions fails, it returns False. If the value of any node is None and the other node has a value, it returns False immediately. 
+
+The code uses the try-except block to handle the case where the left or right node is None. If such a case exists, it immediately returns False from the "mirrorVisit" method.

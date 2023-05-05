@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 728_Self_Dividing_Numbers/test_728_Self_Dividing_Numbers.py _
+728_Self_Dividing_Numbers/test_728_Self_Dividing_Numbers.py:3: in <module>
+    from solution import Solution
+728_Self_Dividing_Numbers/solution.py:1: in <module>
+    class Solution:
+728_Self_Dividing_Numbers/solution.py:2: in Solution
+    def selfDividingNumbers(self, left: int, right: int) -> List[int]:
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR 728_Self_Dividing_Numbers/test_728_Self_Dividing_Numbers.py - NameError...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

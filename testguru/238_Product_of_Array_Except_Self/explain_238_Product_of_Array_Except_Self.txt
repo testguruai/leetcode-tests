@@ -1,0 +1,13 @@
+This is a Python implementation for the solution of LeetCode problem 238: Product of Array Except Self.
+
+The problem asks for an algorithm to find an array such that the element at each index is the product of all the other elements in the input array except the element at that index.
+
+The class Solution defines a function called productExceptSelf that takes an input list called nums and returns a list of integers.
+
+The first operation in the function creates a new list called ans with the same length as the input list and fills it with 1s. This is because, for each element in the input list, we will multiply all the other elements, and 1 is the identity value for multiplication.
+
+Then, a loop is run over each element in the input list except the first, and the following element in the ans list is set to be the product of all the elements to the left of the current element in the input list.
+
+Next, a variable called right is initialized to 1, and a loop is run over each element in the input list starting from the last element and going backwards. For each element, the corresponding element in the ans array is multiplied by the value of right, which is the product of all the elements to the right of the current element in the input list.
+
+Finally, the updated ans array is returned as the solution to the problem.

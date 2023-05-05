@@ -1,0 +1,45 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+147_Insertion_Sort_List/test_147_Insertion_Sort_List.py F                [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_insertionSortList ____________________________
+
+    def test_insertionSortList():
+    
+        # Test case 1
+        head = ListNode(4)
+        head.next = ListNode(2)
+        head.next.next = ListNode(1)
+        head.next.next.next = ListNode(3)
+    
+        solution = Solution()
+>       sorted_head = solution.insertionSortList(head)
+
+147_Insertion_Sort_List/test_147_Insertion_Sort_List.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f3db7be0700>
+head = <solution.ListNode object at 0x7f3db7be0580>
+
+    def insertionSortList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        # https://discuss.leetcode.com/topic/8570/an-easy-and-clear-way-to-sort-o-1-space
+        if head is None:
+            return None
+        helper = ListNode(-1000)
+        pre, curr = helper, head
+        while curr is not None:
+>           next_step = curr.__next__
+E           AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+147_Insertion_Sort_List/solution.py:19: AttributeError
+=========================== short test summary info ============================
+FAILED 147_Insertion_Sort_List/test_147_Insertion_Sort_List.py::test_insertionSortList
+============================== 1 failed in 0.01s ===============================

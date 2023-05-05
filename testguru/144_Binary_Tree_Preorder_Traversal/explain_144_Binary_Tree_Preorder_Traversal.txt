@@ -1,0 +1,9 @@
+The given python code is an implementation of the preorder traversal algorithm of a binary tree iteratively using a stack.
+
+The 'Solution' class has one function, 'preorderTraversal', which takes a binary tree as input and returns its preorder traversal.
+
+The function first checks if the root node of the binary tree is None or not. If it is None, then an empty list is returned. Else, the function creates an empty list 'res' and a stack with the root node 'stack = [root]'.
+
+Then, the function starts a loop which runs till the length of the stack is greater than 0. In each iteration, the function pops an element (a node) from the top of the stack and appends its value to the list 'res'. Then, if the node has a right child, the right child is appended to the stack. Similarly, if the node has a left child, the left child is appended to the stack. 
+
+Finally, when all the nodes have been traversed, the function returns the list 'res' containing the preorder traversal of the binary tree.

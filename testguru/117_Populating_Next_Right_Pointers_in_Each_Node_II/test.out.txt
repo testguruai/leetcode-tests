@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 117_Populating_Next_Right_Pointers_in_Each_Node_II/test_117_Populating_Next_Right_Pointers_in_Each_Node_II.py _
+ImportError while importing test module '/data/sandeep/leetcode-master/.verifaiws/117_Populating_Next_Right_Pointers_in_Each_Node_II/test_117_Populating_Next_Right_Pointers_in_Each_Node_II.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+117_Populating_Next_Right_Pointers_in_Each_Node_II/test_117_Populating_Next_Right_Pointers_in_Each_Node_II.py:3: in <module>
+    from solution import Solution, TreeLinkNode
+E   ImportError: cannot import name 'TreeLinkNode' from 'solution' (/data/sandeep/leetcode-master/.verifaiws/117_Populating_Next_Right_Pointers_in_Each_Node_II/solution.py)
+=========================== short test summary info ============================
+ERROR 117_Populating_Next_Right_Pointers_in_Each_Node_II/test_117_Populating_Next_Right_Pointers_in_Each_Node_II.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

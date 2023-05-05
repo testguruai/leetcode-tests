@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+043_Multiply_Strings/test_043_Multiply_Strings.py F                      [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_multiply _________________________________
+
+    def test_multiply():
+        s = Solution()
+        assert s.multiply("0", "123") == "0"
+>       assert s.multiply("987654321", "123") == "12193263163"
+E       AssertionError: assert '1.2148148148...000054.838.33' == '12193263163'
+E         - 12193263163
+E         + 1.214814814832.1481481482999991.48148148299999964.8148148300000038.1481483000000031.48148299999999724.8148300000000018.1482999999999991.48300000000000054.838.33
+
+043_Multiply_Strings/test_043_Multiply_Strings.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED 043_Multiply_Strings/test_043_Multiply_Strings.py::test_multiply - Ass...
+============================== 1 failed in 0.01s ===============================

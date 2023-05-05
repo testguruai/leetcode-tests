@@ -1,0 +1,7 @@
+The given code defines a class named "Solution" which has a method "romanToInt" that takes a string ("s") as input and returns an integer. The method follows the rules of converting a Roman numeral to integer notation.
+
+The method creates a dictionary named "roman" which contains the Roman numerals and their corresponding integer representations. It initializes two variables "prev" and "total" as 0. It then uses a for loop to iterate through each character "c" in the input string "s". 
+
+Inside the loop, it retrieves the integer value of "c" from the dictionary and adds it to the "total" variable. It then checks if the current integer value is greater than the previous integer value. If yes, then it subtracts twice the previous value from the total, as per the Roman numeral conversion rules.
+
+Finally, the method returns the "total" variable, which contains the integer representation of the input Roman numeral.

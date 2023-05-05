@@ -1,0 +1,9 @@
+This is a class definition for a solution to the maximum subarray problem in Python. The maximum subarray problem involves finding a contiguous subarray within an array of numbers that has the largest sum. 
+
+The class has a single method, `maxSubArray`, which takes in an array of integers (`nums`) and finds the maximum subarray within that array. There are three different implementations of the method, all of which use different algorithms to solve the problem.
+
+The first implementation is currently commented out, but it uses a divide-and-conquer algorithm to find the maximum subarray. It recursively splits the array into two halves and finds the maximum subarray by considering subarrays that cross the midpoint of the array. 
+
+The second implementation uses dynamic programming to find the maximum subarray. It iterates backwards through the array, calculating the maximum subarray that ends at each index. It then uses this information to find the maximum subarray that includes that index. 
+
+The third implementation also uses dynamic programming, but it is more space-efficient than the second implementation. It keeps track of the maximum subarray that ends at the current position (`maxEndingHere`) and the maximum subarray seen so far (`maxSofFar`). It iterates through the array, updating these values as it goes, and returns `maxSofFar` as the maximum subarray.

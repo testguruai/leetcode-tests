@@ -1,0 +1,5 @@
+This code defines a class called Solution with a method called generate that takes an integer parameter numRows. The method generates a list of lists (2D list) with numRows rows and each row containing i+1 elements. The list is filled with zeros initially.
+
+Then, the method loops through each row and each element of that row. If the element is the first or last element of the row (when j is 0 or i), it sets the value to 1 since those elements represent the ends of Pascal's triangle. Otherwise, it sets the value to the sum of the two values above it in the previous row.
+
+Finally, the updated list is returned as the output. This code generates the Pascal's triangle, a triangular array of binomial coefficients.

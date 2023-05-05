@@ -1,0 +1,7 @@
+This is a Python class `Solution` that contains a method `isAnagram` that takes in two string arguments `s` and `t` and returns a boolean indicating whether `t` is an anagram of `s` (i.e. if `t` contains the same letters as `s` but in a different order).
+
+The code provides two methods to determine if `t` is an anagram of `s`. The first is by sorting both strings and checking if they are equal (which is commented out) while the second is by using a hash table. The code first checks if the length of `s` and `t` are equal. If they are not equal, then `t` cannot be an anagram of `s` and the method returns `False`.
+
+If the lengths are equal, the `counter` list is created with a length of 26 (representing the 26 lowercase English letters). The occurrences of each letter in `s` and `t` are counted by incrementing the corresponding element of the `counter` array using the `ord` function (which returns the ASCII value of a character) and the `'a'` character as an offset. The count is then decremented for each corresponding element in `t`.
+
+Finally, the code checks if any element in the `counter` array is nonzero. If any element is nonzero, then `t` cannot be an anagram of `s` and the method returns `False`. Otherwise, the method returns `True`, indicating that `t` is an anagram of `s`.

@@ -1,0 +1,13 @@
+This is a definition of a `Solution` class in Python containing a method called `addDigits` that takes an integer as input and returns an integer as output.
+
+The `addDigits` method first checks if the input number is already a single digit (less than 10), in which case it simply returns the input number as it is.
+
+Otherwise, it uses the mathematical concept of digital root to obtain the sum of the digits of the input number. The digital root of a non-negative integer is obtained by repeatedly summing its digits until a single digit is obtained. For example, the digital root of 1234 is 1 + 2 + 3 + 4 = 10, and the digital root of 10 is 1 + 0 = 1.
+
+The formula used in the code to calculate the digital root of a number is based on the fact that the digital root of a number `n` is equal to `n` modulo 9, except when `n` is divisible by 9, in which case the digital root is 9. The formula is:
+
+`digital_root(n) = (n - 1) % 9 + 1`
+
+This formula is derived from the fact that `n` can be written as `9k + r` where `k` is a non-negative integer and `r` is the remainder when `n` is divided by 9. The digital root of `n` is then equal to the digital root of `r` when `r` is non-zero, and to 9 when `r` is zero (because `n` is divisible by 9).
+
+In the code, the formula is simplified using integer division instead of modulo. The expression `(n - 1) / 9` computes the integer quotient of `n` divided by 9, which is the value of `k` in the above formula. Multiplying this value by 9 gives the largest multiple of 9 that is less than or equal to `n`, which is subtracted from `n` to obtain the remainder `r`. Finally, the digital root of `n` is obtained by computing the digital root of `r` using the first line of the `addDigits` method.

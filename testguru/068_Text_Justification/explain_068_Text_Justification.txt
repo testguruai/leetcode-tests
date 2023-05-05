@@ -1,0 +1,9 @@
+The code defines a class `Solution` with a method `fullJustify` that takes a list of words and a maximum line width and returns a list of justified strings. The justification is done by adding extra spaces between words in each line so that the line is exactly as long as the maximum width.
+
+The code first initializes a list `res` to hold the final result, and three variables `res_list`, `curr`, and `count`. `res_list` is a list of lists, where each inner list holds a group of words that will be justified into a line. `curr` is a list that temporarily holds words until they can be added to `res_list`. `count` is the count of the number of characters in the `curr` list.
+
+The code then iterates through the `words` list using a `while` loop that terminates when all words have been added to a line. At each step, the code checks if the next word can be added to the current line based on the length of the current line. If it can be added, the code adds the word to `curr`, updates the count and position variables, and continues searching for the next word. If it cannot be added, the current line is complete and the `curr` list is added to `res_list`.
+
+After all words have been added to `res_list`, the code iterates through each inner list in `res_list` and justifies the words into a string. If the list has only one word, the word is left-aligned. If the list is the last line, the words are left-aligned with the remaining spaces added to the right. If the list has more than one word and is not the last line, the words are evenly distributed with extra spaces assigned to the leftmost words.
+
+Finally, the method returns the `res` list containing the justified strings. The code includes a main block that creates an instance of the `Solution` class and calls the `fullJustify` method with a test list of words.

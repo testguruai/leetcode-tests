@@ -1,0 +1,10 @@
+This is a solution to a problem from LeetCode that removes the n-th node from the end of a linked list.
+
+The `ListNode` class defines a node of a linked list, with a value (`val`) and a reference to the next node (`next`).
+
+There are two implementations of the `removeNthFromEnd` method:
+
+1. The first implementation uses O(n) space to store all the nodes of the linked list in an array (`index`), then finds the n-th node from the end and removes it by updating the `next` reference of the previous node. The time complexity is also O(n) due to the traversal of the entire linked list, but the space complexity is O(n) as well due to the array used.
+2. The second implementation is more efficient, using only O(1) space. It starts by initializing both a `slow` and a `fast` pointer to the head of the linked list. The `fast` pointer is moved n steps ahead, so that the distance between `slow` and `fast` is n. Then, both pointers are moved at the same pace until `fast` reaches the end of the linked list. At that point, `slow` points to the n-th node from the end. To remove that node, the `next` reference of the previous node is updated to skip that node and point to the next one. The return value is the head of the updated linked list.
+
+The `removeNthFromEnd` method is part of a `Solution` class that provides solutions to other linked list problems as well. However, those solutions are not relevant to the problem at hand.

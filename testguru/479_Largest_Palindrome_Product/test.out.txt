@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+479_Largest_Palindrome_Product/test_479_Largest_Palindrome_Product.py F  [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_largestPalindrome ____________________________
+
+    def test_largestPalindrome():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+479_Largest_Palindrome_Product/test_479_Largest_Palindrome_Product.py:4: NameError
+=========================== short test summary info ============================
+FAILED 479_Largest_Palindrome_Product/test_479_Largest_Palindrome_Product.py::test_largestPalindrome
+============================== 1 failed in 0.01s ===============================

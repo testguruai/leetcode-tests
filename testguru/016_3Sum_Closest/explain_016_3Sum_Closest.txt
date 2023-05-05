@@ -1,0 +1,15 @@
+This is a python class implementation of the threeSumClosest function that takes in a list of integers and a target value as input and returns an integer which is the sum of the three integers (from the input list) closest to the target value.
+
+The initial part of the code initializes the class and function definition for the same.
+
+The main body of the function first finds the length of the input list, sorts the input list in non-decreasing order and assigns the variable 'res' (short for result) to the sum of the first three elements from the sorted input list.
+
+It then iterates through all the elements of the input list in a nested loop with two-pointer technique. It sets two pointers 'j' and 'k' to the the element next to the current element being iterated through and the last element of the input list respectively. It then finds the sum of the elements at the current element (the one being iterated through currently), the 'j'-th and 'k'-th position of the sorted input list.
+
+It then check if the absolute difference between the target value and this sum is less than that of the previously stored 'res' value. If yes, it updates the 'res' value with the current sum.
+
+Next, it checks if this sum is less than the target value. If yes, it moves the 'j' pointer one position to the right, otherwise it moves the 'k' pointer one position to the left.
+
+This loop continues until the 'j'-th pointer becomes equal to the 'k'-th pointer.
+
+Finally, the function returns the updated 'res' variable (which now stores the sum of the closest three integers to the target value).

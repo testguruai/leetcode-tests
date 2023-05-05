@@ -1,0 +1,6 @@
+Name                                                                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------
+953_Verifying_an_Alien_Dictionary/solution.py                                    25      4    84%   30-33
+953_Verifying_an_Alien_Dictionary/test_953_Verifying_an_Alien_Dictionary.py      19      0   100%
+-----------------------------------------------------------------------------------------------------------
+TOTAL                                                                            44      4    91%

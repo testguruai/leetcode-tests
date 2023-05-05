@@ -1,0 +1,18 @@
+This is a Python class that defines a solution for the "Heaters" problem, an optimization problem on the LeetCode website.
+
+The problem statement is as follows:
+
+- You are given an array of houses, where each house is located on a number line.
+- You are also given an array of heaters, where each heater is located on a number line.
+- Your task is to find the minimum radius such that all houses are within that radius of some heater. 
+- The radius is defined as the distance from a heater to the closest house.
+
+The `findRadius` function takes two inputs: a list of houses and a list of heaters. The function returns an integer, which is the minimum radius needed to heat all the houses.
+
+The code sorts the list of heaters and appends infinity to the end of the sorted array. 
+
+The `i` and `r` variables are initialized to zero. `i` is used to keep track of the current heater being used to heat the houses. `r` is assigned to the maximum difference between heater and house, which is calculated later.
+
+The function then loops through each house, which is also sorted. For each house, it finds the index of the closest heater to the left of it by continuously moving into the list of heaters until it finds the closest heater, using the midpoint of the current heater and the next one to the right to get the average distance of the current heater. Moving forward this way, the pointer i is incremented for each "gap" before the next means of two sequential heater locations surpasses the location of the house.
+
+The current radius is updated with the difference between the current heater and the house and the loop repeats for each house until the maximum difference is found. The result is returned.

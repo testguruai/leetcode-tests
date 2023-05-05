@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+342_Power_of_Four/test_342_Power_of_Four.py FF                           [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_is_power_of_four_true __________________________
+
+    def test_is_power_of_four_true():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+342_Power_of_Four/test_342_Power_of_Four.py:3: NameError
+_________________________ test_is_power_of_four_false __________________________
+
+    def test_is_power_of_four_false():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+342_Power_of_Four/test_342_Power_of_Four.py:10: NameError
+=========================== short test summary info ============================
+FAILED 342_Power_of_Four/test_342_Power_of_Four.py::test_is_power_of_four_true
+FAILED 342_Power_of_Four/test_342_Power_of_Four.py::test_is_power_of_four_false
+============================== 2 failed in 0.01s ===============================

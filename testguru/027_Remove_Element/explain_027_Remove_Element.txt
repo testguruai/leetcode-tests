@@ -1,0 +1,7 @@
+This Python code defines a class named `Solution` with a method named `removeElement`. The `removeElement` method takes an array `nums` and an integer `val` as input parameters and returns the length of a new array with all the occurrences of `val` removed. This method has two implementations.
+
+The first implementation uses a loop to iterate through the array and if an element is equal to `val`, it is skipped, otherwise, the element is replaced with the value of `pos` and the `pos` is incremented. Finally, the length of the modified array is returned.
+
+The second implementation also iterates through the array but instead of using a `pos` variable, it uses a `count` variable to keep track of the number of times `val` occurs in the array, and an `index` variable to keep track of the position of the current element being inspected. If the current element is equal to `val`, the value at the end of the array (`nums[ls - 1 - count]`) is placed in that position to remove the occurrence of `val`. The `count` is incremented and the `index` remains unchanged. This process continues until all the elements in the array have been inspected. Finally, the length of the modified array is returned by subtracting `count` from the original length of the array.
+
+The main block creates an instance of the `Solution` class and calls the `removeElement` method with an input array `[1]` and value `1`. The output of the method is printed using the `print` statement.

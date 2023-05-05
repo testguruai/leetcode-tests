@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution/test_1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution.py . [ 16%]
+....F                                                                    [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_generateTheString_6 ___________________________
+
+solution = <solution.Solution object at 0x7ff4c52a4e80>
+
+    def test_generateTheString_6(solution):
+        result = solution.generateTheString(0)
+>       assert result == ""
+E       AssertionError: assert 'b' == ''
+E         + b
+
+1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution/test_1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution.py:35: AssertionError
+=========================== short test summary info ============================
+FAILED 1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution/test_1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution.py::test_generateTheString_6
+========================= 1 failed, 5 passed in 0.02s ==========================

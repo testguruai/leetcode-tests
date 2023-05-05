@@ -1,0 +1,13 @@
+This is a Python class `Solution` that defines a method `reverseStr` that reverses every `k` characters in a given string `s`. 
+
+The function takes two parameters: 
+- `s`: a string that needs to be reversed, 
+- `k`: an integer that represents the number of characters to be reversed.
+
+The function first calculates the length of the input string `s` and initializes an empty string variable `ans` and a `position` variable to `0`. 
+
+Then, it enters a while loop that continues until the `position` is less than the length of the string `s`. In each iteration, it extracts the next `k` characters using slicing, reverses them using `[::-1]`, adds them to the `ans` variable, and then adds the next `k` characters as they are, without reversing them. The loop then updates the `position` variable to move to the next pair of `k` characters. 
+
+Once the loop ends, the function returns the `ans` string, which contains the original string with every `k` characters reversed.
+
+There is also a commented-out alternative implementation of the `reverseStr` function that first converts the input string `s` to a list, reverses every `k` characters, and then joins the reversed characters back to a string.

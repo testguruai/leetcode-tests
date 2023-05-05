@@ -1,0 +1,9 @@
+This is a Python implementation of a solution to a problem related to swapping adjacent nodes in a singly-linked list. 
+
+The ListNode class contains a constructor function that initializes a node with a specific value and sets its next value to None. 
+
+The Solution class defines a method called swapPairs that accepts a head node of a singly-linked list as an argument. 
+
+The first implementation of the swapPairs method uses three variables to keep track of the current, last, and second-to-last nodes while traversing the linked list. In each iteration of the loop, the next node is stored in a temporary variable called nex. The code checks if the current node is the next node of the last node. If so, the last node's next value is updated to nex, and the current node and last node are swapped. Finally, the last2 variable is updated to store the second-to-last node, and the last variable is updated to store the current node. The function returns the head node of the linked list. 
+
+The second implementation of the swapPairs method uses a dummy head node that points to the input head node to simplify the code. It also uses two variables to keep track of the previous and current nodes while traversing the linked list. The code checks if the current node and its next node exist. If so, it creates two variables q and r to store the next node and the node after that. Then, it updates the previous node value to the next node, the next node's next value to the current node, and the current node's next value to the node after that. Finally, the variables p and prev are updated to store the r node and the current node, respectively. The function returns the modified head node.

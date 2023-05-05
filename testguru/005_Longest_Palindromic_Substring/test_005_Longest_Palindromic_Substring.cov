@@ -1,0 +1,6 @@
+Name                                                                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------
+005_Longest_Palindromic_Substring/solution.py                                    31      2    94%   88-89
+005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py      23      0   100%
+-----------------------------------------------------------------------------------------------------------
+TOTAL                                                                            54      2    96%

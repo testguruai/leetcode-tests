@@ -1,0 +1,7 @@
+This is a python class called Solution that contains two methods, reverseWords and reverse. 
+
+reverseWords takes a parameter 's', which is expected to be a list of 1 length strings. This method first checks if the input is either None or an empty list, and if so, returns. Otherwise, it calls the reverse method with parameters s, 0, and the length of s. Then it iterates over the length of s plus one, checking if the current index is at the end of the list or a space character. If either of these conditions are met, it calls the reverse method again with the current position and the current index as parameters, updates the position to be the current index + 1, and continues iterating.
+
+The reverse method takes three parameters, an array (array_s), a beginning index (begin), and an ending index (end). This method iterates over half of the length of the subset of the array from begin to end, swapping the first and last elements and then moving inward towards the middle until the entire subset has been reversed. 
+
+The purpose of this code is to effectively reverse the order of the words within the input list, rather than reversing the order of the individual characters in each string.

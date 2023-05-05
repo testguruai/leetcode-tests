@@ -1,0 +1,5 @@
+This code defines two classes, NumArray and a modified version of NumArray. Both classes are used to perform range sum queries on a given list of integers.
+
+The first class, NumArray, uses square-root decomposition to split the list of integers into smaller blocks, such that the sum of each block can be precomputed and saved. The sumRange() method then returns the sum of integers in the specified range by adding up the sums of the relevant blocks.
+
+The second class is a modified version that uses a segment tree to store the sums of the ranges for each node. The buildTree() method is called to initialize the tree with the list of integers, and update() method updates the value at a given index in the tree. The sumRange() method returns the sum of integers in the specified range by traversing the tree and summing up the ranges that partially or fully overlap with the specified range.

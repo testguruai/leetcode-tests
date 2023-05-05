@@ -1,0 +1,123 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 20 items
+
+448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py . [  5%]
+.......FFFFFF.FF...                                                      [100%]
+
+=================================== FAILURES ===================================
+________________________ test_findDisappearedNumbers_9 _________________________
+
+solution = <solution.Solution object at 0x7f75e3ec5900>
+
+    def test_findDisappearedNumbers_9(solution):
+        nums = [-4, -3, -2, -7, -8, -2, -3, -1]
+        expected_result = [4, 5, 6, 7]
+>       assert solution.findDisappearedNumbers(nums) == expected_result
+E       assert [] == [4, 5, 6, 7]
+E         Right contains 4 more items, first extra item: 4
+E         Use -v to get more diff
+
+448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py:62: AssertionError
+________________________ test_findDisappearedNumbers_10 ________________________
+
+solution = <solution.Solution object at 0x7f75e3d1fbb0>
+
+    def test_findDisappearedNumbers_10(solution):
+        nums = [-1, -2, -3, -4, -5]
+        expected_result = [1, 2, 3, 4, 5]
+>       assert solution.findDisappearedNumbers(nums) == expected_result
+E       assert [] == [1, 2, 3, 4, 5]
+E         Right contains 5 more items, first extra item: 1
+E         Use -v to get more diff
+
+448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py:68: AssertionError
+________________________ test_findDisappearedNumbers_11 ________________________
+
+solution = <solution.Solution object at 0x7f75e3d2ba00>
+
+    def test_findDisappearedNumbers_11(solution):
+        nums = [-5, -4, -3, -2, -1]
+        expected_result = [1, 2, 3, 4, 5]
+>       assert solution.findDisappearedNumbers(nums) == expected_result
+E       assert [] == [1, 2, 3, 4, 5]
+E         Right contains 5 more items, first extra item: 1
+E         Use -v to get more diff
+
+448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py:74: AssertionError
+________________________ test_findDisappearedNumbers_12 ________________________
+
+solution = <solution.Solution object at 0x7f75e3d1f670>
+
+    def test_findDisappearedNumbers_12(solution):
+        nums = [-1, -1, -1, -1, -1]
+        expected_result = [1, 2, 3, 4, 5]
+>       assert solution.findDisappearedNumbers(nums) == expected_result
+E       assert [] == [1, 2, 3, 4, 5]
+E         Right contains 5 more items, first extra item: 1
+E         Use -v to get more diff
+
+448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py:80: AssertionError
+________________________ test_findDisappearedNumbers_13 ________________________
+
+solution = <solution.Solution object at 0x7f75e3d2b250>
+
+    def test_findDisappearedNumbers_13(solution):
+        nums = [1, 1, 1, 1, 1, -2, -3, -4, -5]
+        expected_result = [2, 3, 4, 5, 6, 7, 8]
+>       assert solution.findDisappearedNumbers(nums) == expected_result
+E       assert [] == [2, 3, 4, 5, 6, 7, ...]
+E         Right contains 7 more items, first extra item: 2
+E         Use -v to get more diff
+
+448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py:86: AssertionError
+________________________ test_findDisappearedNumbers_14 ________________________
+
+solution = <solution.Solution object at 0x7f75e3d1e6b0>
+
+    def test_findDisappearedNumbers_14(solution):
+        nums = [1, 1, 1, 1, 1, 2, 3, 4, 5]
+        expected_result = []
+>       assert solution.findDisappearedNumbers(nums) == expected_result
+E       assert [6, 7, 8, 9] == []
+E         Left contains 4 more items, first extra item: 6
+E         Use -v to get more diff
+
+448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py:92: AssertionError
+________________________ test_findDisappearedNumbers_16 ________________________
+
+solution = <solution.Solution object at 0x7f75e3d2a440>
+
+    def test_findDisappearedNumbers_16(solution):
+        nums = [1, 2, 3, 4, 5, -2, -3, -4, -5]
+        expected_result = [1]
+>       assert solution.findDisappearedNumbers(nums) == expected_result
+E       assert [] == [1]
+E         Right contains one more item: 1
+E         Use -v to get more diff
+
+448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py:104: AssertionError
+________________________ test_findDisappearedNumbers_17 ________________________
+
+solution = <solution.Solution object at 0x7f75e3d1cfa0>
+
+    def test_findDisappearedNumbers_17(solution):
+        nums = [1, 2, 3, 4, 5, -1, -2, -3, -4]
+        expected_result = [5]
+>       assert solution.findDisappearedNumbers(nums) == expected_result
+E       assert [] == [5]
+E         Right contains one more item: 5
+E         Use -v to get more diff
+
+448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py:110: AssertionError
+=========================== short test summary info ============================
+FAILED 448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py::test_findDisappearedNumbers_9
+FAILED 448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py::test_findDisappearedNumbers_10
+FAILED 448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py::test_findDisappearedNumbers_11
+FAILED 448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py::test_findDisappearedNumbers_12
+FAILED 448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py::test_findDisappearedNumbers_13
+FAILED 448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py::test_findDisappearedNumbers_14
+FAILED 448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py::test_findDisappearedNumbers_16
+FAILED 448_Find_All_Numbers_Disappeared_in_an_Array/test_448_Find_All_Numbers_Disappeared_in_an_Array.py::test_findDisappearedNumbers_17
+========================= 8 failed, 12 passed in 0.04s =========================

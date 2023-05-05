@@ -1,0 +1,12 @@
+This is a Python code for a solution class that finds the depth sum of a nested list of integers.
+
+The class contains an interface for the NestedInteger class which is not implemented. It has three methods:
+
+- isInteger(): returns True if the current NestedInteger object holds a single integer, False if it holds a nested list
+- getInteger(): returns the single integer that the current NestedInteger object holds, None if it holds a nested list
+- getList(): returns the nested list that the current NestedInteger object holds, None if it holds a single integer
+
+The Solution class has two methods:
+
+- depthSum(nestedList): a method that takes a list of NestedInteger objects as input and returns the depth sum of its integers. It calls the helper method depthSum_helper() recursively to calculate the sum.
+- depthSum_helper(nestedList, depth): a helper method that takes a list of NestedInteger objects and a depth level as input, and returns the depth sum of its integers. If the current NestedInteger object holds a single integer, it adds the integer multiplied by the depth to the result. If the current object holds a nested list, it calls the helper method again with the nested list and a depth level incremented by one. Finally, it returns the total sum.

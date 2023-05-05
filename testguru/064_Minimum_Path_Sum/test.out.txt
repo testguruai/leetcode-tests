@@ -1,0 +1,49 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+064_Minimum_Path_Sum/test_064_Minimum_Path_Sum.py F                      [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_minPathSum ________________________________
+
+solution = <solution.Solution object at 0x7fa028fdc520>
+
+    def test_minPathSum(solution):
+        grid = [[1,3,1],[1,5,1],[4,2,1]]
+        assert solution.minPathSum(grid) == 7
+    
+        grid = [[1,2,3],[4,5,6]]
+        assert solution.minPathSum(grid) == 12
+    
+        grid = [[1]]
+        assert solution.minPathSum(grid) == 1
+    
+        grid = [[]]
+>       assert solution.minPathSum(grid) == 0
+
+064_Minimum_Path_Sum/test_064_Minimum_Path_Sum.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fa028fdc520>, grid = [[]]
+
+    def minPathSum(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: int
+        """
+        height = len(grid)
+        if height == 0:
+            return 0
+        width = len(grid[0])
+        pathmap = []
+        for i in range(height):
+            pathmap.append([100000000000] * width)
+>       pathmap[0][0] = grid[0][0]
+E       IndexError: list index out of range
+
+064_Minimum_Path_Sum/solution.py:14: IndexError
+=========================== short test summary info ============================
+FAILED 064_Minimum_Path_Sum/test_064_Minimum_Path_Sum.py::test_minPathSum - I...
+============================== 1 failed in 0.01s ===============================

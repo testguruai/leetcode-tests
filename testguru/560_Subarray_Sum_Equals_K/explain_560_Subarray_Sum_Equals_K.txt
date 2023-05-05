@@ -1,0 +1,9 @@
+This is a python class implementation of a method `subarraySum` that takes in two arguments: a list `nums` of integers and an integer `k`. The method returns an integer that represents the count of subarrays whose sum is equal to `k`.
+
+The method first initializes a dictionary `sum_map`. It then sets the value of the key `0` to 1 in the dictionary i.e. `sum_map[0] = 1`. It also sets two variables, `count` and `curr_sum` to 0.
+
+It then iterates over the elements in the `nums` list. For each element `num` in `nums`, it adds it to `curr_sum`. The method then checks if `curr_sum - k` is in the `sum_map` dictionary. If it is, it adds the value of the key `curr_sum - k` to the `count` variable. 
+
+After that, it adds the value of `curr_sum` to the `sum_map` dictionary with a default value of 0.
+
+Finally, the method returns the value of `count` variable.

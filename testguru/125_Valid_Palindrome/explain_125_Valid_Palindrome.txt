@@ -1,0 +1,13 @@
+This is a Python class named 'Solution' with a method 'isPalindrome'. 
+
+The method takes a string 's' as input and it checks whether the string is a palindrome or not. A palindrome is a sequence of characters that can be read the same way in both forward and reverse direction.
+
+The method first creates a list 'alnum_s' which contains only the alphanumeric characters of the input string in lower case by looping through each character of 's' using list comprehension. 
+
+Then, the length of the 'alnum_s' list is calculated and stored in 'ls'. If 'ls' is less than or equal to 1, the method returns True because a single character or an empty string is always a palindrome.
+
+If the length of 'alnum_s' is greater than 1, it calculates the midpoint of the string and initializes it to 'mid'. 
+
+Then, the method iterates through the first half of the 'alnum_s' list (up to the midpoint) and checks if each character is equal to the corresponding character from the second half of the list (i.e. (ls-1) - i). 
+
+If any characters don't match, it returns False because the input string is not a palindrome. If all characters match up to the midpoint, the method returns True because the input string is a palindrome.

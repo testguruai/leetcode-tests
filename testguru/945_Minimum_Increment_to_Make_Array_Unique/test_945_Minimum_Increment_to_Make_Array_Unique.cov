@@ -1,0 +1,6 @@
+Name                                                                                            Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------------------------
+945_Minimum_Increment_to_Make_Array_Unique/test_945_Minimum_Increment_to_Make_Array_Unique.py      17      0   100%
+/data/ethan/leetcode-master/python/945_Minimum_Increment_to_Make_Array_Unique.py                   28      1    96%   36
+-----------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                              45      1    98%

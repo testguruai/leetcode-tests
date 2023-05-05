@@ -1,0 +1,16 @@
+This python code implements a solution for the "Coin Change" problem, which is related to finding the minimum number of coins needed to make a certain amount of money. 
+
+The code provides two solutions: 
+- A top-down dynamic programming approach that uses memoization to store previously calculated sub-problems results and avoid unnecessary calculations. 
+- A bottom-up dynamic programming approach that builds the solution iteratively and uses an array to store the minimum number of coins for each amount up to the target amount.
+
+The "coinChange" function takes two arguments: 
+- coins: a list of integers representing the denominations of available coins. 
+- amount: an integer representing the target amount to reach using the minimum number of coins.
+
+The first implementation uses a recursive approach to solve the problem. The "coinChange_helper" function is a recursive function that takes three arguments:
+- coins: the list of available coins.
+- amount: the target amount.
+- count: an array to store previously calculated results to avoid repeated calculations.
+
+The second implementation is a bottom-up approach that uses a list "dp" to store the minimum number of coins required to make up to each amount from 0 to "amount". The algorithm iterates from 1 to "amount" and for each amount "i", it iterates over the list of coins and tries to update the minimum number of coins required to make amount "i" using the minimum number of coins required to make (i-coin) + 1. The function returns -1 if the target amount cannot be reached using any combination of the given coins.

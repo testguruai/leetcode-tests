@@ -1,0 +1,42 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+380_Insert_Delete_GetRandom/test_380_Insert_Delete_GetRandom.py FFFF     [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_insert __________________________________
+
+    def test_insert():
+>     rs = RandomizedSet()
+E     NameError: name 'RandomizedSet' is not defined
+
+380_Insert_Delete_GetRandom/test_380_Insert_Delete_GetRandom.py:3: NameError
+_________________________________ test_remove __________________________________
+
+    def test_remove():
+>     rs = RandomizedSet()
+E     NameError: name 'RandomizedSet' is not defined
+
+380_Insert_Delete_GetRandom/test_380_Insert_Delete_GetRandom.py:10: NameError
+________________________________ test_getRandom ________________________________
+
+    def test_getRandom():
+>     rs = RandomizedSet()
+E     NameError: name 'RandomizedSet' is not defined
+
+380_Insert_Delete_GetRandom/test_380_Insert_Delete_GetRandom.py:19: NameError
+________________________________ test_combined _________________________________
+
+    def test_combined():
+>     rs = RandomizedSet()
+E     NameError: name 'RandomizedSet' is not defined
+
+380_Insert_Delete_GetRandom/test_380_Insert_Delete_GetRandom.py:27: NameError
+=========================== short test summary info ============================
+FAILED 380_Insert_Delete_GetRandom/test_380_Insert_Delete_GetRandom.py::test_insert
+FAILED 380_Insert_Delete_GetRandom/test_380_Insert_Delete_GetRandom.py::test_remove
+FAILED 380_Insert_Delete_GetRandom/test_380_Insert_Delete_GetRandom.py::test_getRandom
+FAILED 380_Insert_Delete_GetRandom/test_380_Insert_Delete_GetRandom.py::test_combined
+============================== 4 failed in 0.02s ===============================

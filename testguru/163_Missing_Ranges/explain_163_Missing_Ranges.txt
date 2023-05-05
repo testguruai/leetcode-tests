@@ -1,0 +1,14 @@
+This is a class named `Solution` that has a method `findMissingRanges`. 
+
+This function takes three arguments: a list of integers `nums`, an integer `lower`, and an integer `upper`.
+
+The function returns a list of strings representing the ranges of missing numbers between `lower` and `upper` that are not present in `nums`.
+
+- `ranges = []` initializes an empty list called `ranges`.
+- `prev = lower - 1` initializes a variable called `prev` to the value of `lower - 1` which represents the previous number that we've seen in the iteration.
+- The `for` loop iterates over every element in `nums` plus one extra iteration. In the last iteration, `curr` will be set to `upper + 1`.
+- `curr` is set to the current number in `nums` we are iterating over.
+- If the difference between `curr` and `prev` is greater than 2, then there must be a range of missing numbers between `prev + 1` and `curr - 1`. The string representation of this range is added to the `ranges` list using string formatting.
+- If the difference between `curr` and `prev` is exactly 2, then there is only one missing number between `prev` and `curr`. This is added to the `ranges` list.
+- `prev` is updated to be equal to `curr`.
+- The list `ranges` is returned.

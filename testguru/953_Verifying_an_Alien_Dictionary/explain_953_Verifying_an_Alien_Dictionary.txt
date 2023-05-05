@@ -1,0 +1,7 @@
+This is a Python implementation of a function called `isAlienSorted` which takes in two arguments: a list of words and a string representing the order of characters in an alien language. The function returns a boolean value indicating whether the given list of words is sorted in the order defined by the alien language or not.
+
+The function first creates a dictionary called `order_map` which maps each character in the alien language to its index position. It then defines a nested function called `cmp_alien` which takes in two words (x and y) and compares them based on the order defined by the alien language. The function returns a negative value if x is less than y, zero if both words are equal, and a positive value if x is greater than y.
+
+The function then uses a while-loop to iterate through the list of words and compare adjacent words using the `cmp_alien` function. If it finds a pair of adjacent words that are not sorted in the correct order, it returns `False`. If it successfully iterates through the entire list without finding any out-of-order words, it returns `True`.
+
+The function is called three times with different inputs, and the return values are printed to the console.

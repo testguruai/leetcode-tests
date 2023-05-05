@@ -1,0 +1,9 @@
+This code defines a class named Solution with a method called isOneEditDistance that takes two arguments 's' and 't' which are strings and returns a boolean value. This method checks if the two strings are of edit distance one or not.
+To do this, it first finds the lengths of both strings. It also assumes that the length of 's' is less than or equal to the length of 't'.
+It then checks if the length of 't' minus the length of 's' is greater than one. This is because if the difference in their length is greater than one, it is impossible for them to have an edit distance of one.
+
+If the length of 's' is less than that of 't', it reverses the arguments by calling the same function with 't' and 's' as arguments since the approach to be implemented is the same for both cases, and also to reduce the number of cases to check.
+
+Then it finds the position where the characters start differing by comparing the characters in each string. If the call finishes with the 'i' equal to the length of string 's', then it means that all the characters are the same in both strings, so it returns True if the shift is greater than 0.
+
+If the shift is 0, the while loop aids it in checking if only one edit is needed. If the shift is not zero, then it ensures that only one edit operation is needed by iterating over the length of string 's' and comparing the characters of both strings in these positions. Finally, it returns the boolean value 'True' if 'i' is equal to the length of 's' and returns 'False' otherwise.

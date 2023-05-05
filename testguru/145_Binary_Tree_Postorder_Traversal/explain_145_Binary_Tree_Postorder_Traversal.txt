@@ -1,0 +1,9 @@
+This is a Python implementation of the postorder traversal of a binary tree. The code defines a class called Solution with a method called postorderTraversal that takes in a TreeNode object as input, representing the root node of the binary tree. 
+
+The code is commented out into three sections, each of which implements postorder traversal differently:
+
+1. Recursion: This section uses a recursive helper method to traverse the binary tree in postorder. The helper method traverses the left subtree, then the right subtree, and finally adds the current node's value to the result list. The postorderTraversal method simply calls the helper method and returns the list of visited nodes.
+
+2. Stack: This section uses a stack to traverse the binary tree in postorder. The algorithm follows the same process as the recursive method but instead of using recursion, it uses a stack. The algorithm iteratively traverses the tree starting from the root node, and each node that is visited is pushed onto the stack. When the stack is empty, the algorithm ends and the postorder traversal list is returned.
+
+3. Modified Stack: This section uses a modified stack to traverse the binary tree in postorder. The algorithm is similar to the stack-based algorithm, but instead of adding the node value to the result list immediately, it pushes the node's value to the stack and continues with the traversal. If a node is popped from the stack and it is not a TreeNode object (but rather a value that was added previously), it is added to the result list. If a TreeNode object is popped, its value is pushed onto the stack, followed by its right child and then its left child. This ensures that the right subtree is traversed before the left subtree, thus resulting in a postorder traversal of the binary tree.

@@ -1,0 +1,52 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+056_Merge_Intervals/test_056_Merge_Intervals.py FFFFF                    [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_merge_invalid_input ___________________________
+
+    def test_merge_invalid_input():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+056_Merge_Intervals/test_056_Merge_Intervals.py:15: NameError
+____________________________ test_merge_one_element ____________________________
+
+    def test_merge_one_element():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+056_Merge_Intervals/test_056_Merge_Intervals.py:19: NameError
+___________________ test_merge_two_non_overlapping_intervals ___________________
+
+    def test_merge_two_non_overlapping_intervals():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+056_Merge_Intervals/test_056_Merge_Intervals.py:24: NameError
+_____________________ test_merge_two_overlapping_intervals _____________________
+
+    def test_merge_two_overlapping_intervals():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+056_Merge_Intervals/test_056_Merge_Intervals.py:29: NameError
+__________________ test_merge_multiple_overlapping_intervals ___________________
+
+interval_list = [<test_056_Merge_Intervals.Interval object at 0x7fe079f58fa0>, <test_056_Merge_Intervals.Interval object at 0x7fe079f5...t_056_Merge_Intervals.Interval object at 0x7fe079f59690>, <test_056_Merge_Intervals.Interval object at 0x7fe079f59360>]
+
+    def test_merge_multiple_overlapping_intervals(interval_list):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+056_Merge_Intervals/test_056_Merge_Intervals.py:34: NameError
+=========================== short test summary info ============================
+FAILED 056_Merge_Intervals/test_056_Merge_Intervals.py::test_merge_invalid_input
+FAILED 056_Merge_Intervals/test_056_Merge_Intervals.py::test_merge_one_element
+FAILED 056_Merge_Intervals/test_056_Merge_Intervals.py::test_merge_two_non_overlapping_intervals
+FAILED 056_Merge_Intervals/test_056_Merge_Intervals.py::test_merge_two_overlapping_intervals
+FAILED 056_Merge_Intervals/test_056_Merge_Intervals.py::test_merge_multiple_overlapping_intervals
+============================== 5 failed in 0.02s ===============================

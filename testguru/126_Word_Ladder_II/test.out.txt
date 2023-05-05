@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+126_Word_Ladder_II/test_126_Word_Ladder_II.py F                          [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_findLadders _______________________________
+
+    def test_findLadders():
+        s = Solution()
+        assert s.findLadders('hit', 'cog', set(["hot","dot","dog","lot","log"])) == [['hit', 'hot', 'dot', 'dog', 'cog'], ['hit', 'hot', 'lot', 'log', 'cog']]
+        assert s.findLadders('a', 'b', set(['a', 'b', 'c'])) == [['a', 'b']]
+        assert s.findLadders('hot', 'dog', set(['hot', 'dog'])) == []
+>       assert s.findLadders("qa", "sq", set(["si","go","se","cm","so","ph","mt","db","mb","sb","kr","ln","tm","le","av","sm","ar","ci","ca","br","ti","ba","to","ra","fa","yo","ow","sn","ya","cr","po","fe","ho","ma","re","or","rn","au","ur","rh","sr","tc","lt","lo","as","fr","nb","yb","if","pb","ge","th","pm","rb","sh","co","ga","li","ha","hz","no","bi","di","hi","qa","pi","os","uh","wm","an","me","mo","na","la","st","er","sc","ne","mn","mi","am","ex","pt","io","be","fm","ta","tb","ni","mr","pa","he","lr","sq","ye"])) == ['qa', 'ba', 'be', 'se', 'sq']
+E       AssertionError: assert [['qa', 'ba',...', 'sq'], ...] == ['qa', 'ba', 'be', 'se', 'sq']
+E         At index 0 diff: ['qa', 'ba', 'be', 'se', 'sq'] != 'qa'
+E         Left contains 46 more items, first extra item: ['qa', 'ca', 'co', 'so', 'sq']
+E         Use -v to get more diff
+
+126_Word_Ladder_II/test_126_Word_Ladder_II.py:9: AssertionError
+----------------------------- Captured stdout call -----------------------------
+{'hit': ['hot'], 'hot': ['dot', 'lot'], 'dog': ['cog'], 'log': ['cog'], 'dot': ['dog'], 'lot': ['log']}
+{'a': ['b']}
+{}
+{'qa': ['ba', 'ca', 'fa', 'ga', 'ha', 'la', 'ma', 'na', 'pa', 'ra', 'ta', 'ya'], 'sb': ['sq'], 'sc': ['sq'], 'se': ['sq'], 'sh': ['sq'], 'si': ['sq'], 'sm': ['sq'], 'sn': ['sq'], 'so': ['sq'], 'sr': ['sq'], 'st': ['sq'], 'ph': ['sh'], 'rh': ['sh'], 'th': ['sh'], 'uh': ['sh'], 'an': ['sn'], 'ln': ['sn'], 'mn': ['sn'], 'rn': ['sn'], 'tc': ['sc'], 'bi': ['si'], 'ci': ['si'], 'di': ['si'], 'hi': ['si'], 'li': ['si'], 'mi': ['si'], 'ni': ['si'], 'pi': ['si'], 'ti': ['si'], 'co': ['so'], 'go': ['so'], 'ho': ['so'], 'io': ['so'], 'lo': ['so'], 'mo': ['so'], 'no': ['so'], 'po': ['so'], 'to': ['so'], 'yo': ['so'], 'am': ['sm'], 'cm': ['sm'], 'fm': ['sm'], 'pm': ['sm'], 'tm': ['sm'], 'wm': ['sm'], 'lt': ['st'], 'mt': ['st'], 'pt': ['st'], 'ar': ['sr'], 'br': ['sr'], 'cr': ['sr'], 'er': ['sr'], 'fr': ['sr'], 'kr': ['sr'], 'lr': ['sr'], 'mr': ['sr'], 'or': ['sr'], 'ur': ['sr'], 'db': ['sb'], 'mb': ['sb'], 'nb': ['sb'], 'pb': ['sb'], 'rb': ['sb'], 'tb': ['sb'], 'yb': ['sb'], 'be': ['se'], 'fe': ['se'], 'ge': ['se'], 'he': ['se'], 'le': ['se'], 'me': ['se'], 'ne': ['se'], 're': ['se'], 'ye': ['se'], 'ga': ['ge', 'go'], 'ya': ['yb', 'ye', 'yo'], 'la': ['le', 'li', 'ln', 'lo', 'lr', 'lt'], 'na': ['nb', 'ne', 'ni', 'no'], 'pa': ['pb', 'ph', 'pi', 'pm', 'po', 'pt'], 'ca': ['ci', 'cm', 'co', 'cr'], 'ma': ['mb', 'me', 'mi', 'mn', 'mo', 'mr', 'mt'], 'ra': ['rb', 're', 'rh', 'rn'], 'ta': ['tb', 'tc', 'th', 'ti', 'tm', 'to'], 'fa': ['fe', 'fm', 'fr'], 'ba': ['be', 'bi', 'br'], 'ha': ['he', 'hi', 'ho']}
+=========================== short test summary info ============================
+FAILED 126_Word_Ladder_II/test_126_Word_Ladder_II.py::test_findLadders - Asse...
+============================== 1 failed in 0.01s ===============================

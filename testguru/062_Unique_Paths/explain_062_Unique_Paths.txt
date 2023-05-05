@@ -1,0 +1,19 @@
+This Python code is implementing a solution to the "Unique Paths" problem. The problem statement is as follows:
+
+A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+
+The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+
+How many possible unique paths are there?
+
+The code accepts two integer inputs 'm' and 'n', which represents the dimensions of the grid. It then creates a 2D list 'dmap' of size m x n and initializes all elements to 0. 
+
+Next, it initializes the first row and first column of 'dmap' to 1, since there is only one possible path to reach any cell in the first row or first column - either move right or move down respectively. 
+
+Finally, starting from the second row and second column, the code computes the number of possible unique paths to reach that cell by summing the number of possible paths to reach the cell to its left and to its top. This calculation is performed using the following formula:
+
+dmap[i][j] = dmap[i-1][j] + dmap[i][j-1]
+
+The final result is the value stored in dmap[m-1][n-1], which represents the total number of unique paths to reach the bottom-right cell of the grid. 
+
+The time complexity of this solution is O(m*n) since each cell in the grid is visited once.

@@ -1,0 +1,11 @@
+This is a Python class implementing a solution to find the maximum product of three numbers in a given list of integers. The class has a single method, `maximumProduct`, which takes a list of integers `nums` as input and returns the maximum product of three numbers in `nums`.
+
+The first implementation of the `maximumProduct` method sorts the input list and returns the maximum of two products: the smallest two numbers in the list multiplied by the largest number in the list, or the largest three numbers in the list multiplied together. However, this implementation is commented out and not used.
+
+The second implementation of the `maximumProduct` method works by iterating through the input list `nums` and keeping track of the smallest two and largest three numbers encountered so far. It uses four variables `min1`, `min2`, `max1`, and `max2` to store the smallest two and largest two numbers, respectively, and an additional variable `max3` to store the third largest number. 
+
+For each number `num` in the list `nums`, the method checks if `num` is smaller than or equal to the current smallest number `min1`. If it is, the second smallest number `min2` is updated to the previous value of `min1`, and `min1` is updated to `num`. If `num` is larger than `min1` but smaller than the current `min2`, `min2` is updated to `num`. Similarly, the method checks if `num` is larger than or equal to the current largest number `max1`, second largest number `max2`, or third largest number `max3`, and updates these variables if necessary.
+
+Finally, the method returns the maximum of two products: the product of the smallest two numbers and the largest number, or the product of the three largest numbers. This is computed using the `max` built-in function.
+
+Overall, this implementation of `maximumProduct` has a time complexity of O(n) and a space complexity of O(1).

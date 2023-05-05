@@ -1,0 +1,21 @@
+This is the solution code for building a binary tree from in-order and post-order traversal arrays.
+
+The function `buildTree` takes two parameters: `inorder` and `postorder`, which are lists of integers representing the in-order and post-order traversal of a binary tree respectively. It returns the root node of the binary tree.
+
+The code first initializes a variable `n` to the length of `inorder` list. Then it creates a dictionary called `inOrderMap` which maps each element of `inorder` to its index in the list, using dictionary comprehension.
+
+The method `buildTreeUtil` is then called with the initial parameters: `inorder`, `postorder`, `inOrderMap`, `0` (pStart), `n-1` (pEnd), `0` (iStart) and `n-1` (iEnd). 
+
+The `buildTreeUtil` method first checks if either the post-order sequence or the in-order sequence is empty. If either is empty, it returns `None` which indicates that the current subtree is empty. Otherwise, it creates a new node with the last element of `postorder` list (`postorder[pEnd]`), which is also the root of the current subtree.
+
+It then searches for the position of the root value in the `inorder` list using `inOrderMap`. This gives the index of the root in the in-order sequence.
+
+Next, it recursively constructs the left and right subtrees of the current subtree as follows:
+
+The left subtree is constructed by calling the `buildTreeUtil` method with parameters `inorder`, `postorder`, `inOrderMap`, `pStart`, `pStart + rootIdx - iStart - 1`, `iStart`, and `rootIdx - 1`. The first two parameters here specify the post-order sequence and the remaining four specify the left half of the in-order sequence. This creates the left subtree rooted at the left child of the current node.
+
+The right subtree is similarly constructed by calling the `buildTreeUtil` method with parameters `inorder`, `postorder`, `inOrderMap`, `pStart + rootIdx - iStart`, `pEnd - 1`, `rootIdx + 1`, and `iEnd`. The first two parameters specify the post-order sequence and the remaining four specify the right half of the in-order sequence. This creates the right subtree rooted at the right child of the current node.
+
+Finally, the `buildTreeUtil` method returns the current node which completes the construction of the binary tree.
+
+Overall, the code uses the in-order and post-order traversal sequences to construct the binary tree using a recursive approach.

@@ -1,0 +1,9 @@
+This is a Python code defining a class Solution with a method transpose to find the transpose of a given matrix. 
+
+The transpose of a matrix is a matrix obtained by interchanging the rows and columns of the original matrix. In other words, the element at position (i, j) in the original matrix would be at position (j, i) in the transposed matrix.
+
+The transpose() method takes a 2D list A of integers as input. The code first finds the size of the matrix (number of rows and columns) using the len() function. It then initializes an output matrix ans with dimensions C x R, where C is the number of columns in the original matrix and R is the number of rows.
+
+The method then iterates over each element of the original matrix and assigns it to the corresponding position in the transposed matrix. This is done using nested for loops. Finally, the method returns the transposed matrix.
+
+There is an alternative solution provided in the code as well, which uses a slightly different approach using nested for loops to iterate over the elements and append them to a result list. However, both solutions achieve the same result, which is to find the transpose of the given matrix.

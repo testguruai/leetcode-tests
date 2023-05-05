@@ -1,0 +1,60 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+280_Wiggle_Sort/test_280_Wiggle_Sort.py FFFFF                            [100%]
+
+=================================== FAILURES ===================================
+__________________ TestWiggleSort.test_wiggle_sort_empty_list __________________
+
+self = <test_280_Wiggle_Sort.TestWiggleSort object at 0x7efdb2d08370>
+
+    def test_wiggle_sort_empty_list(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+280_Wiggle_Sort/test_280_Wiggle_Sort.py:5: NameError
+_______________ TestWiggleSort.test_wiggle_sort_one_element_list _______________
+
+self = <test_280_Wiggle_Sort.TestWiggleSort object at 0x7efdb2d08460>
+
+    def test_wiggle_sort_one_element_list(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+280_Wiggle_Sort/test_280_Wiggle_Sort.py:11: NameError
+_________________ TestWiggleSort.test_wiggle_sort_sorted_list __________________
+
+self = <test_280_Wiggle_Sort.TestWiggleSort object at 0x7efdb2d08580>
+
+    def test_wiggle_sort_sorted_list(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+280_Wiggle_Sort/test_280_Wiggle_Sort.py:17: NameError
+________________ TestWiggleSort.test_wiggle_sort_reversed_list _________________
+
+self = <test_280_Wiggle_Sort.TestWiggleSort object at 0x7efdb2d086a0>
+
+    def test_wiggle_sort_reversed_list(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+280_Wiggle_Sort/test_280_Wiggle_Sort.py:23: NameError
+_________________ TestWiggleSort.test_wiggle_sort_random_list __________________
+
+self = <test_280_Wiggle_Sort.TestWiggleSort object at 0x7efdb2d087c0>
+
+    def test_wiggle_sort_random_list(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+280_Wiggle_Sort/test_280_Wiggle_Sort.py:29: NameError
+=========================== short test summary info ============================
+FAILED 280_Wiggle_Sort/test_280_Wiggle_Sort.py::TestWiggleSort::test_wiggle_sort_empty_list
+FAILED 280_Wiggle_Sort/test_280_Wiggle_Sort.py::TestWiggleSort::test_wiggle_sort_one_element_list
+FAILED 280_Wiggle_Sort/test_280_Wiggle_Sort.py::TestWiggleSort::test_wiggle_sort_sorted_list
+FAILED 280_Wiggle_Sort/test_280_Wiggle_Sort.py::TestWiggleSort::test_wiggle_sort_reversed_list
+FAILED 280_Wiggle_Sort/test_280_Wiggle_Sort.py::TestWiggleSort::test_wiggle_sort_random_list
+============================== 5 failed in 0.02s ===============================

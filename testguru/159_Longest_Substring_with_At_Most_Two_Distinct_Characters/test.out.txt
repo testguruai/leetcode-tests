@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+159_Longest_Substring_with_At_Most_Two_Distinct_Characters/test_159_Longest_Substring_with_At_Most_Two_Distinct_Characters.py F [100%]
+
+=================================== FAILURES ===================================
+___________________ test_lengthOfLongestSubstringTwoDistinct ___________________
+
+    def test_lengthOfLongestSubstringTwoDistinct():
+        sol = Solution()
+    
+        assert sol.lengthOfLongestSubstringTwoDistinct('eceba') == 3
+        assert sol.lengthOfLongestSubstringTwoDistinct('ccaabbb') == 5
+>       assert sol.lengthOfLongestSubstringTwoDistinct('abcabcbb') == 3
+E       AssertionError: assert 4 == 3
+E        +  where 4 = <bound method Solution.lengthOfLongestSubstringTwoDistinct of <solution.Solution object at 0x7ff3352ec400>>('abcabcbb')
+E        +    where <bound method Solution.lengthOfLongestSubstringTwoDistinct of <solution.Solution object at 0x7ff3352ec400>> = <solution.Solution object at 0x7ff3352ec400>.lengthOfLongestSubstringTwoDistinct
+
+159_Longest_Substring_with_At_Most_Two_Distinct_Characters/test_159_Longest_Substring_with_At_Most_Two_Distinct_Characters.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED 159_Longest_Substring_with_At_Most_Two_Distinct_Characters/test_159_Longest_Substring_with_At_Most_Two_Distinct_Characters.py::test_lengthOfLongestSubstringTwoDistinct
+============================== 1 failed in 0.01s ===============================

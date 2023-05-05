@@ -1,0 +1,9 @@
+This is a Python class named `Solution` with a method named `runningSum` which takes a list of integers `nums` as input and returns a list of integers as output. 
+
+The `runningSum` method first checks whether the input list is None or empty, and if so, returns the input list as is.
+
+If the input list is not None or empty, the method uses a for loop to iterate over the indices of the input list from the second element to the last element (the first element is not modified). For each index `i`, the method adds the value at that index to the value at the previous index (`i-1`) and replaces the value at index `i` with the sum. 
+
+After the for loop completes, the method returns the modified list. 
+
+There is also a commented out method definition that uses Python's `accumulate()` method to achieve the same result as the current implementation.

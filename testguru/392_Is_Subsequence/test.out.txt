@@ -1,0 +1,73 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+392_Is_Subsequence/test_392_Is_Subsequence.py EEEEEEE                    [100%]
+
+==================================== ERRORS ====================================
+____________ ERROR at setup of test_is_subsequence_with_subsequence ____________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+392_Is_Subsequence/test_392_Is_Subsequence.py:5: NameError
+__________ ERROR at setup of test_is_subsequence_without_subsequence ___________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+392_Is_Subsequence/test_392_Is_Subsequence.py:5: NameError
+___________ ERROR at setup of test_is_subsequence_with_empty_strings ___________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+392_Is_Subsequence/test_392_Is_Subsequence.py:5: NameError
+_________ ERROR at setup of test_is_subsequence_with_one_empty_string __________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+392_Is_Subsequence/test_392_Is_Subsequence.py:5: NameError
+_________ ERROR at setup of test_is_subsequence_with_one_char_strings __________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+392_Is_Subsequence/test_392_Is_Subsequence.py:5: NameError
+___________ ERROR at setup of test_is_subsequence_with_long_strings ____________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+392_Is_Subsequence/test_392_Is_Subsequence.py:5: NameError
+______________ ERROR at setup of test_is_subsequence_with_symbols ______________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+392_Is_Subsequence/test_392_Is_Subsequence.py:5: NameError
+=========================== short test summary info ============================
+ERROR 392_Is_Subsequence/test_392_Is_Subsequence.py::test_is_subsequence_with_subsequence
+ERROR 392_Is_Subsequence/test_392_Is_Subsequence.py::test_is_subsequence_without_subsequence
+ERROR 392_Is_Subsequence/test_392_Is_Subsequence.py::test_is_subsequence_with_empty_strings
+ERROR 392_Is_Subsequence/test_392_Is_Subsequence.py::test_is_subsequence_with_one_empty_string
+ERROR 392_Is_Subsequence/test_392_Is_Subsequence.py::test_is_subsequence_with_one_char_strings
+ERROR 392_Is_Subsequence/test_392_Is_Subsequence.py::test_is_subsequence_with_long_strings
+ERROR 392_Is_Subsequence/test_392_Is_Subsequence.py::test_is_subsequence_with_symbols
+============================== 7 errors in 0.03s ===============================

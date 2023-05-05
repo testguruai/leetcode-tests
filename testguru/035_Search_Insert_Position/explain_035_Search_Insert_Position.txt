@@ -1,0 +1,9 @@
+The code defines a class `Solution` with a method `searchInsert` that takes two arguments: a list of integers `nums` and an integer `target`. The method uses binary search to find the index position of the `target` in the `nums` list and returns the index position. If the `target` is not found in the `nums` list, the method returns the index position of where the `target` should be inserted to maintain the sorted order of the list.
+
+The method starts by initializing the variables `l` and `r` where `l` represents the index position of the start of the list and `r` represents the index position of the end of the list. It then enters a while loop that continues until `l` is greater than or equal to `r`. 
+
+Inside the loop, the variable `mid` is set to the index position of the middle element in the range of indices between `l` and `r`. If the element at the `mid` index position is less than the `target`, `l` is set to `mid + 1`. Otherwise, `r` is set to `mid`.
+
+Finally, the method checks if the element at the `l` index position is less than the `target`. If it is, the method returns the index position of `l + 1`, which is where the `target` should be inserted in the list to maintain its sorted order. Otherwise, the method returns the index position of `l`, which is where the `target` was found in the list by the binary search. 
+
+The script then creates an instance of the `Solution` class, calls the `searchInsert` method with a list `[1,3,5,6]` and a target integer `5`, and prints the result. The output will be `2`, which is the index position of `5` in the list `[1,3,5,6]`.

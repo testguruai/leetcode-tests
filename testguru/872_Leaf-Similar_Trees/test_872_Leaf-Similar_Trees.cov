@@ -1,0 +1,6 @@
+Name                                                           Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------------------------
+872_Leaf-Similar_Trees/test_872_Leaf-Similar_Trees.py             60     57     5%   7-88
+/data/ethan/leetcode-master/python/872_Leaf-Similar_Trees.py      19     15    21%   16-24, 27-32
+--------------------------------------------------------------------------------------------
+TOTAL                                                             79     72     9%

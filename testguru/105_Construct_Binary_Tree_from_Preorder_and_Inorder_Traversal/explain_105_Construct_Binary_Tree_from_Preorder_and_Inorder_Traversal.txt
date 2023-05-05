@@ -1,0 +1,11 @@
+This is a Python code that implements a solution to the problem of constructing a binary tree from its preorder and inorder traversal lists.
+
+The class Solution has a method buildTree that takes two arguments, preorder and inorder, which are lists of integers representing the preorder and inorder traversal of a binary tree respectively.
+
+The first implementation of buildTree is an iterative solution that uses a stack to keep track of the current node and its ancestors as well as a pointer to traverse the preorder list and a flag to determine whether to add a node as the left or right child of its parent.
+
+The second implementation of buildTree is a recursive solution that uses a helper function buildTreeUtil to construct the binary tree recursively. It first constructs a dictionary called inOrderMap that maps each value in the inorder list to its index. Then, it recursively constructs the left and right subtrees of the root node by dividing the preorder list into smaller parts and finding the root of each subtree by using the inOrderMap dictionary to find the index of the root node in the inorder list.
+
+The third implementation of buildTree is a basic recursive solution that constructs the binary tree by using the index of the root node in the inorder list to split the preorder and inorder lists into left and right sublists for the left and right subtrees respectively. However, this solution may run out of memory if the input lists are too large.
+
+All three implementations return the root node of the constructed binary tree.

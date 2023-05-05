@@ -1,0 +1,8 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+981_Time_Based_Store/test_981_Time_Based_Store.py ....                   [100%]
+
+============================== 4 passed in 0.01s ===============================

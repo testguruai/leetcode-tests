@@ -1,0 +1,13 @@
+This is a Python code that checks whether a given pattern in a string follows a particular word pattern or not.
+
+The function 'wordPattern' takes two arguments: 'pattern' and 'str'. These are strings that represent the pattern and the input string.
+
+The function first checks if the 'pattern' or 'str' is None. If either of them is None, then it returns True (as per the problem requirements).
+
+Then, it initializes two dictionaries - 'words_to_pattern' and 'pattern_to_words'. These dictionaries are used to map the words in the 'str' to their corresponding pattern in the 'pattern' and vice-versa.
+
+The 'str' is split into a list of words using the 'split' function. The function checks if the length of the list is the same as that of the 'pattern'. If not, it returns False (because then the pattern cannot be matched).
+
+Then, the function iterates through the list of words in the 'str' using the 'enumerate' function. For each word, it checks the pattern at the same position in the 'pattern'. If the pattern for the current word does not match the pattern in the 'pattern' or the pattern for the current word in the 'words_to_pattern' dictionary does not match the pattern in the 'pattern', then it returns False. If both match, it updates the dictionaries.
+
+After iterating through all the words in the 'str', if it has not returned False, then it returns True (meaning it has successfully matched the pattern).

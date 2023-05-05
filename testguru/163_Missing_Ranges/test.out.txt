@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+163_Missing_Ranges/test_163_Missing_Ranges.py ..F..                      [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_findMissingRanges_full __________________________
+
+    def test_findMissingRanges_full():
+        s = Solution()
+        nums = [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        lower = -15
+        upper = 15
+        expected_output = ["-15->-11", "-10->10", "11->15"]
+>       assert s.findMissingRanges(nums, lower, upper) == expected_output
+E       AssertionError: assert ['-15->-11', '11->15'] == ['-15->-11', ...10', '11->15']
+E         At index 1 diff: '11->15' != '-10->10'
+E         Right contains one more item: '11->15'
+E         Use -v to get more diff
+
+163_Missing_Ranges/test_163_Missing_Ranges.py:26: AssertionError
+=========================== short test summary info ============================
+FAILED 163_Missing_Ranges/test_163_Missing_Ranges.py::test_findMissingRanges_full
+========================= 1 failed, 4 passed in 0.02s ==========================

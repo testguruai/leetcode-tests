@@ -1,0 +1,15 @@
+This is a Python code for the merging overlapping intervals problem. 
+
+The code defines a class Solution with a method merge that takes a list of intervals as input and returns the merged intervals.
+
+The Interval class is also defined, with a constructor that takes in two parameters, s and e, representing the start and end points of the interval respectively.
+
+The merge method first checks if the intervals list is empty, and if so, returns None. It then checks if there is only one interval in the list, and if so, returns the list itself since there is nothing to merge.
+
+The intervals list is then sorted by their start points using the sort method, and the pos variable is initialized to 0.
+
+A while loop is then used to iterate over each interval in the list, checking for overlaps between consecutive intervals. If there is an overlap, the next interval is popped from the list and checked to see if it is still overlapping with the current interval or if it is completely contained within the current interval. If it is still overlapping, the end point of the current interval is updated to the maximum value of its end point and the end point of the next interval. If it is completely contained, the next interval is ignored and the loop continues with the current interval. If there is no overlap, the loop moves to the next interval.
+
+Finally, the merged intervals list is returned.
+
+The code then creates an instance of the Solution class and calls the merge method with a list of intervals as input. The result is printed to the console.

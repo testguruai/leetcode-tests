@@ -1,0 +1,7 @@
+This code defines a class Solution that contains a method called leafSimilar that takes two binary trees represented as TreeNode objects and returns a boolean indicating whether or not the two trees have the same leaf values in the same order.
+
+The method first checks if both trees are empty, in which case it returns True. Otherwise, it initializes two empty lists, leaf1 and leaf2, which will be used to store the leaf values of the two trees.
+
+It then calls the dfs method (which stands for depth-first search) on both trees, passing in the respective leaf lists as arguments. This method performs a recursive depth-first traversal of the tree, checking if the current node has any children and appending the node's value to the leaf list if it is a leaf node.
+
+Finally, the method checks if the two leaf lists are equal, and returns True if they are, and False otherwise.

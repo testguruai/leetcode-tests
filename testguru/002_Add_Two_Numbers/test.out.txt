@@ -1,0 +1,172 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+002_Add_Two_Numbers/test_002_Add_Two_Numbers.py FFFFF                    [100%]
+
+=================================== FAILURES ===================================
+_______________________ TestAddTwoNumbers.test_base_case _______________________
+
+self = <test_002_Add_Two_Numbers.TestAddTwoNumbers object at 0x7f59eb280490>
+
+    def test_base_case(self):
+        l1 = create_linked_list([2, 4, 3])
+        l2 = create_linked_list([5, 6, 4])
+        expected = create_linked_list([7, 0, 8])
+        s = Solution()
+>       result = s.addTwoNumbers(l1, l2)
+
+002_Add_Two_Numbers/test_002_Add_Two_Numbers.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f59eb280a60>
+l1 = <solution.ListNode object at 0x7f59eb280a90>
+l2 = <solution.ListNode object at 0x7f59eb280bb0>
+
+    def addTwoNumbers(self, l1, l2):
+        carry = 0
+        # dummy head
+        head = curr = ListNode(0)
+        while l1 or l2:
+            val = carry
+            if l1:
+                val += l1.val
+>               l1 = l1.__next__
+E               AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+002_Add_Two_Numbers/solution.py:48: AttributeError
+_________________________ TestAddTwoNumbers.test_zeros _________________________
+
+self = <test_002_Add_Two_Numbers.TestAddTwoNumbers object at 0x7f59eb280580>
+
+    def test_zeros(self):
+        l1 = create_linked_list([0])
+        l2 = create_linked_list([0])
+        expected = create_linked_list([0])
+        s = Solution()
+>       result = s.addTwoNumbers(l1, l2)
+
+002_Add_Two_Numbers/test_002_Add_Two_Numbers.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f59eb281210>
+l1 = <solution.ListNode object at 0x7f59eb281420>
+l2 = <solution.ListNode object at 0x7f59eb281540>
+
+    def addTwoNumbers(self, l1, l2):
+        carry = 0
+        # dummy head
+        head = curr = ListNode(0)
+        while l1 or l2:
+            val = carry
+            if l1:
+                val += l1.val
+>               l1 = l1.__next__
+E               AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+002_Add_Two_Numbers/solution.py:48: AttributeError
+___________________ TestAddTwoNumbers.test_different_length ____________________
+
+self = <test_002_Add_Two_Numbers.TestAddTwoNumbers object at 0x7f59eb2806a0>
+
+    def test_different_length(self):
+        l1 = create_linked_list([2, 4, 3])
+        l2 = create_linked_list([5, 6, 4, 2, 1])
+        expected = create_linked_list([7, 0, 8, 2, 1])
+        s = Solution()
+>       result = s.addTwoNumbers(l1, l2)
+
+002_Add_Two_Numbers/test_002_Add_Two_Numbers.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f59eb281e70>
+l1 = <solution.ListNode object at 0x7f59eb281c30>
+l2 = <solution.ListNode object at 0x7f59eb281ae0>
+
+    def addTwoNumbers(self, l1, l2):
+        carry = 0
+        # dummy head
+        head = curr = ListNode(0)
+        while l1 or l2:
+            val = carry
+            if l1:
+                val += l1.val
+>               l1 = l1.__next__
+E               AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+002_Add_Two_Numbers/solution.py:48: AttributeError
+______________________ TestAddTwoNumbers.test_carry_over _______________________
+
+self = <test_002_Add_Two_Numbers.TestAddTwoNumbers object at 0x7f59eb2807c0>
+
+    def test_carry_over(self):
+        l1 = create_linked_list([9, 9, 9])
+        l2 = create_linked_list([1, 0, 0])
+        expected = create_linked_list([0, 0, 0, 1])
+        s = Solution()
+>       result = s.addTwoNumbers(l1, l2)
+
+002_Add_Two_Numbers/test_002_Add_Two_Numbers.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f59eb0c7bb0>
+l1 = <solution.ListNode object at 0x7f59eb0c7c70>
+l2 = <solution.ListNode object at 0x7f59eb0c69b0>
+
+    def addTwoNumbers(self, l1, l2):
+        carry = 0
+        # dummy head
+        head = curr = ListNode(0)
+        while l1 or l2:
+            val = carry
+            if l1:
+                val += l1.val
+>               l1 = l1.__next__
+E               AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+002_Add_Two_Numbers/solution.py:48: AttributeError
+______________________ TestAddTwoNumbers.test_empty_lists ______________________
+
+self = <test_002_Add_Two_Numbers.TestAddTwoNumbers object at 0x7f59eb2808e0>
+
+    def test_empty_lists(self):
+        l1 = None
+        l2 = None
+        expected = None
+        s = Solution()
+>       result = s.addTwoNumbers(l1, l2)
+
+002_Add_Two_Numbers/test_002_Add_Two_Numbers.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f59eb283160>, l1 = None, l2 = None
+
+    def addTwoNumbers(self, l1, l2):
+        carry = 0
+        # dummy head
+        head = curr = ListNode(0)
+        while l1 or l2:
+            val = carry
+            if l1:
+                val += l1.val
+                l1 = l1.__next__
+            if l2:
+                val += l2.val
+                l2 = l2.__next__
+            curr.next = ListNode(val % 10)
+            curr = curr.__next__
+            carry = int(val / 10)
+        if carry > 0:
+            curr.next = ListNode(carry)
+>       return head.__next__
+E       AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+002_Add_Two_Numbers/solution.py:57: AttributeError
+=========================== short test summary info ============================
+FAILED 002_Add_Two_Numbers/test_002_Add_Two_Numbers.py::TestAddTwoNumbers::test_base_case
+FAILED 002_Add_Two_Numbers/test_002_Add_Two_Numbers.py::TestAddTwoNumbers::test_zeros
+FAILED 002_Add_Two_Numbers/test_002_Add_Two_Numbers.py::TestAddTwoNumbers::test_different_length
+FAILED 002_Add_Two_Numbers/test_002_Add_Two_Numbers.py::TestAddTwoNumbers::test_carry_over
+FAILED 002_Add_Two_Numbers/test_002_Add_Two_Numbers.py::TestAddTwoNumbers::test_empty_lists
+============================== 5 failed in 0.03s ===============================

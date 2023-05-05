@@ -1,0 +1,90 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 8 items
+
+034_Search_for_a_Range/test_034_Search_for_a_Range.py FFFFFFFF           [100%]
+
+=================================== FAILURES ===================================
+___________________ TestSolution.test_searchRange_emptyList ____________________
+
+self = <test_034_Search_for_a_Range.TestSolution object at 0x7f2cfdbf8340>
+
+    def test_searchRange_emptyList(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+034_Search_for_a_Range/test_034_Search_for_a_Range.py:6: NameError
+___________________ TestSolution.test_searchRange_notInList ____________________
+
+self = <test_034_Search_for_a_Range.TestSolution object at 0x7f2cfdbf8430>
+
+    def test_searchRange_notInList(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+034_Search_for_a_Range/test_034_Search_for_a_Range.py:10: NameError
+_________________ TestSolution.test_searchRange_oneOccurrence __________________
+
+self = <test_034_Search_for_a_Range.TestSolution object at 0x7f2cfdbf8550>
+
+    def test_searchRange_oneOccurrence(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+034_Search_for_a_Range/test_034_Search_for_a_Range.py:14: NameError
+______________ TestSolution.test_searchRange_multipleOccurrences _______________
+
+self = <test_034_Search_for_a_Range.TestSolution object at 0x7f2cfdbf8670>
+
+    def test_searchRange_multipleOccurrences(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+034_Search_for_a_Range/test_034_Search_for_a_Range.py:18: NameError
+__________________ TestSolution.test_searchRange_firstElement __________________
+
+self = <test_034_Search_for_a_Range.TestSolution object at 0x7f2cfdbf8790>
+
+    def test_searchRange_firstElement(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+034_Search_for_a_Range/test_034_Search_for_a_Range.py:22: NameError
+__________________ TestSolution.test_searchRange_lastElement ___________________
+
+self = <test_034_Search_for_a_Range.TestSolution object at 0x7f2cfdbf88b0>
+
+    def test_searchRange_lastElement(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+034_Search_for_a_Range/test_034_Search_for_a_Range.py:26: NameError
+_________________ TestSolution.test_searchRange_singleElement __________________
+
+self = <test_034_Search_for_a_Range.TestSolution object at 0x7f2cfdbf89d0>
+
+    def test_searchRange_singleElement(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+034_Search_for_a_Range/test_034_Search_for_a_Range.py:30: NameError
+________________ TestSolution.test_searchRange_negativeNumbers _________________
+
+self = <test_034_Search_for_a_Range.TestSolution object at 0x7f2cfdbf8af0>
+
+    def test_searchRange_negativeNumbers(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+034_Search_for_a_Range/test_034_Search_for_a_Range.py:34: NameError
+=========================== short test summary info ============================
+FAILED 034_Search_for_a_Range/test_034_Search_for_a_Range.py::TestSolution::test_searchRange_emptyList
+FAILED 034_Search_for_a_Range/test_034_Search_for_a_Range.py::TestSolution::test_searchRange_notInList
+FAILED 034_Search_for_a_Range/test_034_Search_for_a_Range.py::TestSolution::test_searchRange_oneOccurrence
+FAILED 034_Search_for_a_Range/test_034_Search_for_a_Range.py::TestSolution::test_searchRange_multipleOccurrences
+FAILED 034_Search_for_a_Range/test_034_Search_for_a_Range.py::TestSolution::test_searchRange_firstElement
+FAILED 034_Search_for_a_Range/test_034_Search_for_a_Range.py::TestSolution::test_searchRange_lastElement
+FAILED 034_Search_for_a_Range/test_034_Search_for_a_Range.py::TestSolution::test_searchRange_singleElement
+FAILED 034_Search_for_a_Range/test_034_Search_for_a_Range.py::TestSolution::test_searchRange_negativeNumbers
+============================== 8 failed in 0.02s ===============================

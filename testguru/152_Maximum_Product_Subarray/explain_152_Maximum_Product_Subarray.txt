@@ -1,0 +1,9 @@
+This code defines a class called Solution that has a function called maxProduct that takes in a list of integers called nums. The function returns the maximum product that can be obtained from any non-empty subarray of nums. 
+
+The code first checks if the input list is None or empty, and if so, returns 0. It then initializes three variables: max_here, min_here, and max_so_far, all set to the first element of the list. 
+
+Next, the code goes through a loop that starts at index 1 of the input list and goes up to but not including the end of the list. Within the loop, the code initializes two variables mx and mn to max_here and min_here, respectively. 
+
+The code then updates max_here to be the maximum value among mx * nums[i], nums[i], and mn * nums[i], and updates min_here to be the minimum value among mx * nums[i], nums[i], and mn * nums[i]. Finally, the code updates max_so_far to be the maximum value among max_here and max_so_far. 
+
+Once the loop is finished, the function returns max_so_far, which represents the maximum product that can be obtained from any non-empty subarray of nums.

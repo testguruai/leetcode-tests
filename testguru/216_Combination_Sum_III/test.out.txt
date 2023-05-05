@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+___ ERROR collecting 216_Combination_Sum_III/test_216_Combination_Sum_III.py ___
+/home/azureuser/verifai/lib/python3.10/site-packages/_pytest/python.py:617: in _importtestmodule
+    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)
+/home/azureuser/verifai/lib/python3.10/site-packages/_pytest/pathlib.py:564: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+/home/azureuser/verifai/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:172: in exec_module
+    exec(co, module.__dict__)
+216_Combination_Sum_III/test_216_Combination_Sum_III.py:2: in <module>
+    from solution import Solution
+E     File "/data/sandeep/leetcode-master/.verifaiws/216_Combination_Sum_III/solution.py", line 2
+E       class Solution(object):
+E   IndentationError: unexpected indent
+=========================== short test summary info ============================
+ERROR 216_Combination_Sum_III/test_216_Combination_Sum_III.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.07s ===============================

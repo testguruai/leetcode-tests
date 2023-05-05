@@ -1,0 +1,11 @@
+This is a Python code for finding all unique combinations of a given set of numbers that add up to a particular target sum. The algorithm behind this code is based on dynamic programming.
+
+The code defines a class named "Solution" that implements the "combinationSum" method. The "combinationSum" method takes two arguments: a list of integers "candidates" and an integer "target". It returns a list of lists of integers that represent all unique combinations of "candidates" that add up to "target".
+
+The code starts by sorting the "candidates" list in ascending order. Then, it creates a 2D list named "dp" with "target+1" rows and empty lists as elements. The first row of "dp" contains a single empty list, as there is only one way to make a sum of zero.
+
+The code then iterates through each integer "i" from 1 to "target". For each "i", it iterates through each integer "j" in the "candidates" list. If "j" is greater than "i", it breaks out of the loop since all subsequent "candidates" will also be greater than "i". Otherwise, it iterates through each element "k" in the "dp[i-j]" list and creates a new list "temp" by appending "candidates[j]" to it. If any element in "temp" is greater than the last element of the "dp[i-j][k]" list, it skips adding it to the "dp[i]" list. Otherwise, it appends "temp" to the "dp[i]" list.
+
+Finally, it returns the "dp[target]" list, which contains all unique combinations of "candidates" that add up to "target".
+
+The code also includes a "main" function that creates an instance of the "Solution" class and calls the "combinationSum" method with a test case of "candidates"=[8,7,4,3] and "target"=11. It then prints the result.

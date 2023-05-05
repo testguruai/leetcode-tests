@@ -1,0 +1,11 @@
+This code defines a class `Solution` that contains a method `minDepth`. The `minDepth` method takes a binary tree node `root` as input and returns the minimum depth of the tree. 
+
+The code provides two implementations for this method, one using recursion and the other using BFS.
+
+The recursion implementation starts by checking if `root` is `None`. If it is, the method returns `0` since an empty tree has no depth. Otherwise, it recursively calls itself on `root.left` and `root.right` to get the minimum depths of the left and right subtrees. If both subtrees have nonzero depths, the function returns the minimum of the two plus 1 (to account for the current node at depth 1). Otherwise, it returns the sum of the depths of the non-empty subtree plus 1.
+
+The BFS implementation checks if `root` is `None` as well. If it is, the method returns `0`. Otherwise, it creates a queue containing `root` and initializes variables `depth` and `rightMost` to 1 and `root`, respectively. The method then enters a while loop that continues until the queue is empty. In each iteration, it dequeues the first item from the queue and checks if it is a leaf node (i.e., it has no children). If it is, the loop breaks and the method returns the current value of `depth`.
+
+If the dequeued node is not a leaf, the method enqueues its non-empty children (if it has any) and updates the `rightMost` variable to the right child (if it has one) or the left child (if it doesn't). This ensures that the `rightMost` variable always points to the last node in the current level of the tree. If the dequeued node is equal to the `rightMost` node, it means that the current level has been fully traversed and it is time to move to the next level. The method increments `depth` and updates the `rightMost` variable to the right child of the current node (if it exists) or the left child (if it doesn't).
+
+In summary, both implementations use different algorithms to traverse the binary tree and return the minimum depth of the tree.

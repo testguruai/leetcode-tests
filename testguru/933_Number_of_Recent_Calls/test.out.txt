@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+933_Number_of_Recent_Calls/test_933_Number_of_Recent_Calls.py F          [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_recent_counter ______________________________
+
+    def test_recent_counter():
+        recent_counter = RecentCounter()
+    
+        # Test case 1
+        assert recent_counter.ping(1) == 1
+    
+        # Test case 2
+        assert recent_counter.ping(100) == 2
+    
+        # Test case 3
+>       assert recent_counter.ping(3001) == 1
+E       assert 3 == 1
+E        +  where 3 = <bound method RecentCounter.ping of <solution.RecentCounter object at 0x7f7ca4f184f0>>(3001)
+E        +    where <bound method RecentCounter.ping of <solution.RecentCounter object at 0x7f7ca4f184f0>> = <solution.RecentCounter object at 0x7f7ca4f184f0>.ping
+
+933_Number_of_Recent_Calls/test_933_Number_of_Recent_Calls.py:15: AssertionError
+=========================== short test summary info ============================
+FAILED 933_Number_of_Recent_Calls/test_933_Number_of_Recent_Calls.py::test_recent_counter
+============================== 1 failed in 0.01s ===============================

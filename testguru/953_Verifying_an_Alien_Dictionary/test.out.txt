@@ -1,0 +1,36 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+953_Verifying_an_Alien_Dictionary/test_953_Verifying_an_Alien_Dictionary.py . [ 14%]
+...F..                                                                   [100%]
+
+=================================== FAILURES ===================================
+________________________ test_isAlienSorted_empty_order ________________________
+
+solution = <solution.Solution object at 0x7f3a978ac370>
+
+    def test_isAlienSorted_empty_order(solution):
+>       assert solution.isAlienSorted(["hello", "leetcode"], "") == True
+
+953_Verifying_an_Alien_Dictionary/test_953_Verifying_an_Alien_Dictionary.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+953_Verifying_an_Alien_Dictionary/solution.py:22: in isAlienSorted
+    if cmp_alien(words[pos], words[pos + 1]) > 0:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+x = 'hello', y = 'leetcode'
+
+    def cmp_alien(x, y):
+        ls = min(len(x), len(y))
+        index = 0
+        while index < ls:
+            if x[index] != y[index]:
+>               return order_map[x[index]] - order_map[y[index]]
+E               KeyError: 'h'
+
+953_Verifying_an_Alien_Dictionary/solution.py:17: KeyError
+=========================== short test summary info ============================
+FAILED 953_Verifying_an_Alien_Dictionary/test_953_Verifying_an_Alien_Dictionary.py::test_isAlienSorted_empty_order
+========================= 1 failed, 6 passed in 0.02s ==========================

@@ -1,0 +1,7 @@
+This code defines a class Solution which contains a method called findMedianSortedArrays which takes two sorted arrays nums1 and nums2 as input arguments and returns the median of the two arrays. The code contains two definitions for the findMedianSortedArrays method, one of which is commented out.
+
+The first definition of the method uses a simple approach to merge the two sorted arrays into a single sorted array all_nums, and then return the median of the merged array. The median is calculated by checking if the length of the merged array is even or odd, and then taking the appropriate elements from the array.
+
+The second definition of the method is a more efficient approach which has a time complexity of O(log(min(m, n))). It works by partitioning the arrays into two halves such that the left half and right half of both arrays have equal number of elements. It then uses a binary search to find the median of the two arrays.
+
+The __name__ == '__main__' block instantiates an object of the Solution class and calls the findMedianSortedArrays method with two input arrays [1, 1] and [1, 2]. The expected output is the median of these two arrays, which is 1.0.

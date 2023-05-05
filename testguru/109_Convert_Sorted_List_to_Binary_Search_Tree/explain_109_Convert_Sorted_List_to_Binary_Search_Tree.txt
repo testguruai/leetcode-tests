@@ -1,0 +1,9 @@
+This is a solution for the problem of converting a sorted linked list into a height-balanced binary tree. There are three implementations provided in this code.
+
+The first implementation is commented out and is based on converting the linked list to an array and then using binary search to construct the binary tree. A recursive `sortList` function is used to divide the array into subarrays, construct the nodes for the root and its left and right subtrees, and link them together. The time complexity of this approach is O(nlgn) and the space complexity is O(n).
+
+The second implementation is based on a bottom-up recursive approach that constructs the binary tree in-place without converting the linked list to an array. A recursive `inorderHelper` function is used to divide the linked list into the halves, and construct the root and its subtrees in ascending order while traversing the linked list. The time complexity of this approach is O(n) and the space complexity is O(lgn).
+
+The third implementation is also based on a recursive approach, but it works top-down, using two pointers to divide the linked list in half and recursively build the root and its subtrees. The time complexity of this approach is O(nlgn) and the space complexity is O(n).
+
+Note that in each implementation, a `ListNode` class and a `TreeNode` class are defined to represent a linked list node and a binary tree node, respectively.

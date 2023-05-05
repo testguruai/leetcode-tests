@@ -1,0 +1,6 @@
+Name                                                          Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------
+020_Valid_Parentheses/test_020_Valid_Parentheses.py              28      0   100%
+/data/ethan/leetcode-master/python/020_Valid_Parentheses.py      32      0   100%
+-------------------------------------------------------------------------------------------
+TOTAL                                                            60      0   100%

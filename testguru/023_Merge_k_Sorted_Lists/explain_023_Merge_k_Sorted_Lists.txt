@@ -1,0 +1,10 @@
+This Python code implements three different methods for merging k sorted linked lists:
+
+Method 1: Priority queue
+This method uses a priority queue to sort all the values from k linked lists and then create a new linked list using these sorted values. It first imports a PriorityQueue from the Queue module. It then iterates through all the k linked lists, adds their values to the priority queue and moves to the next node in each linked list. Finally, it creates a new linked list using the sorted values from the priority queue.
+
+Method 2: Hashing
+This method uses a hash table to group all the nodes with the same value in all k linked lists, and then sorts and connects the nodes to create a new linked list. It first creates an empty hash table and iterates through all the k linked lists, adding each node to the hash table using its value as the key. Finally, it sorts the keys in the hash table and connects all the nodes with the same key in order.
+
+Method 3: Recursive merge
+This method uses a recursive approach to merge k linked lists into a single sorted list. It first checks if the input is valid (i.e., lists is not None and is not empty), and then calls a helper function mergeK with the start and end indices of the lists array. In the mergeK function, it first checks if the start and end indices are the same, in which case it simply returns the single linked list at that index. If the start and end indices are adjacent, it calls the mergeTwolists helper function to merge those two adjacent linked lists. If the start and end indices are not adjacent, it recursively calls mergeK for the two halves of the lists, and then merges the resulting linked lists using the mergeTwolists helper function. The mergeTwolists helper function merges two sorted linked lists into a single sorted list.

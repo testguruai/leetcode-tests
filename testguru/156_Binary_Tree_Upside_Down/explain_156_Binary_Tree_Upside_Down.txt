@@ -1,0 +1,7 @@
+This is a solution to the problem of "Upside Down Binary Tree", which means to convert a binary tree where each node has either 0 or 2 children into a format that has each node with exactly 2 children, except for the leaves.
+
+The code starts with initializing three variables: `node`, `parent` and `parentRight`. `node` is set to the root of the given binary tree, while `parent` and `parentRight` are set to None.
+
+Then, a while loop is started that iterates until `node` becomes None. Inside the loop, the left child of the current `node` is stored in a variable `left`. Then, the left child of `node` is set to `parentRight`. `parentRight` is then set to the right child of `node`. Finally, the right child of `node` is set to `parent`, and `parent` is set to `node`. `node` is then updated to `left`.
+
+At the end of the loop, `parent` points to the new root of the upside-down binary tree. This new root is then returned.

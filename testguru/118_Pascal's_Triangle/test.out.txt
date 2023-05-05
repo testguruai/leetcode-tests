@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+118_Pascal's_Triangle/test_118_Pascal's_Triangle.py .....F               [100%]
+
+=================================== FAILURES ===================================
+________________ test_generate_negative_rows_raises_value_error ________________
+
+solution = <solution.Solution object at 0x7f73b7f38eb0>
+
+    def test_generate_negative_rows_raises_value_error(solution):
+>       with pytest.raises(ValueError):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+118_Pascal's_Triangle/test_118_Pascal's_Triangle.py:43: Failed
+=========================== short test summary info ============================
+FAILED 118_Pascal's_Triangle/test_118_Pascal's_Triangle.py::test_generate_negative_rows_raises_value_error
+========================= 1 failed, 5 passed in 0.02s ==========================

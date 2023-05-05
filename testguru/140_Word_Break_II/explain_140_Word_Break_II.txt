@@ -1,0 +1,9 @@
+This code implements the word break problem on LeetCode (https://leetcode.com/problems/word-break-ii/). The goal is to find all possible sentences that can be formed by breaking a given string s into words from a given dictionary wordDict.
+
+The Solution class has an __init__ method that initializes an empty dictionary to store previously computed solutions. The wordBreak method takes in a string s and a set of words wordDict and returns a list of strings representing all possible breakings of s.
+
+The method first checks whether the solution for s is already stored in the dictionary. If it is, the stored solution is returned instead of recalculating it. If not, the method proceeds to calculate the answer.
+
+If s is itself a word from wordDict, it is added to the result list. Then, for each possible prefix of s, the method recursively computes all possible breakings of the prefix and all possible words that can be appended to it to form a valid solution for s. The results are concatenated to form the final list of solutions for s.
+
+Finally, the computed solution is stored in the dictionary and returned.

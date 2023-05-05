@@ -1,0 +1,44 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 8 items
+
+1323_Maximum_69_Number/test_1323_Maximum_69_Number.py ....F.FF           [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_no_6 ___________________________________
+
+    def test_no_6():
+        s = Solution()
+        num = 1234567890
+>       assert s.maximum69Number(num) == '1234567890'
+E       AssertionError: assert '1234597890' == '1234567890'
+E         - 1234567890
+E         ?      ^
+E         + 1234597890
+E         ?      ^
+
+1323_Maximum_69_Number/test_1323_Maximum_69_Number.py:28: AssertionError
+_____________________________ test_negative_input ______________________________
+
+    def test_negative_input():
+        s = Solution()
+        num = -666
+>       with pytest.raises(ValueError):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+1323_Maximum_69_Number/test_1323_Maximum_69_Number.py:38: Failed
+____________________________ test_non_integer_input ____________________________
+
+    def test_non_integer_input():
+        s = Solution()
+        num = '123'
+>       with pytest.raises(TypeError):
+E       Failed: DID NOT RAISE <class 'TypeError'>
+
+1323_Maximum_69_Number/test_1323_Maximum_69_Number.py:44: Failed
+=========================== short test summary info ============================
+FAILED 1323_Maximum_69_Number/test_1323_Maximum_69_Number.py::test_no_6 - Ass...
+FAILED 1323_Maximum_69_Number/test_1323_Maximum_69_Number.py::test_negative_input
+FAILED 1323_Maximum_69_Number/test_1323_Maximum_69_Number.py::test_non_integer_input
+========================= 3 failed, 5 passed in 0.02s ==========================

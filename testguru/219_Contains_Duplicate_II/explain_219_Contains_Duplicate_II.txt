@@ -1,0 +1,5 @@
+This code defines a class named Solution which has a method named containsNearbyDuplicate that takes in a list of integers (nums) and an integer (k) as parameters and returns a boolean value. 
+
+The first implementation of containsNearbyDuplicate uses a dictionary named check to hash all values in nums with their indexes. Then it checks for any two indexes of a value whose difference is less than or equal to k. If such indexes are found, then the method returns True, otherwise False. 
+
+The second implementation of containsNearbyDuplicate uses a set named check instead. It iterates through the list of numbers checking if the current number is already in the set. If it is, then it returns True. If not, it adds the current number to the set. If the size of the set exceeds k, then it removes the oldest number from the set. Finally, if no duplicates are found within the k interval, the method returns False.

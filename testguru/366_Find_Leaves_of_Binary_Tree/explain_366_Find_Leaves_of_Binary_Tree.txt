@@ -1,0 +1,11 @@
+This is a Python class called `Solution`, which contains a method `findLeaves` to return the leaves of the input binary tree as a list of lists, where each inner list represents a level of the tree and contains the values of the nodes in that level. 
+
+The method takes in one input parameter `root`, which is an instance of the binary tree node class `TreeNode`. 
+
+The two implementations of `findLeaves` indicate two ways to solve this problem:
+
+- The commented-out implementation uses a stack to traverse the tree and a set to keep track of visited nodes. It first traverses the tree to populate `check_set` with every node in the tree. Then it repeatedly finds nodes whose child nodes are not in `check_set` and adds them to the inner list of `res` representing their respective levels. After each level is processed, the corresponding nodes are removed from `check_set`. The outer while loop continues until all nodes have been processed and `check_set` is empty. This is a depth-first search approach. 
+
+- The uncommented implementation uses recursion. It defines a helper function `findLeaves_helper` that takes in two parameters: the current node being traversed and `res`, which is the list of lists to be returned. If `node` is None, the recursion should stop and return -1. Otherwise, the function calls itself recursively for the left and right child nodes of the current node to get their levels. The function then calculates the level of the current node based on the maximum of its children's levels plus one. If the length of `res` is less than the current level plus one, then a new inner list is appended to `res` to represent this level. The current node's value is added to the inner list of `res` at its corresponding level, and the function returns the level of the current node to its parent call. This is a post-order traversal approach. 
+
+Both implementations return `res`, the list of lists representing the levels of the input binary tree.

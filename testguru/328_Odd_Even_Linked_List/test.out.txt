@@ -1,0 +1,60 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py FFFFF          [100%]
+
+=================================== FAILURES ===================================
+_____________________ TestSolution.test_oddEvenList_empty ______________________
+
+self = <test_328_Odd_Even_Linked_List.TestSolution object at 0x7fa598b44490>
+
+    def test_oddEvenList_empty(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py:19: NameError
+_____________________ TestSolution.test_oddEvenList_single _____________________
+
+self = <test_328_Odd_Even_Linked_List.TestSolution object at 0x7fa598b44580>
+
+    def test_oddEvenList_single(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py:23: NameError
+_____________________ TestSolution.test_oddEvenList_double _____________________
+
+self = <test_328_Odd_Even_Linked_List.TestSolution object at 0x7fa598b446a0>
+
+    def test_oddEvenList_double(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py:28: NameError
+______________________ TestSolution.test_oddEvenList_odd _______________________
+
+self = <test_328_Odd_Even_Linked_List.TestSolution object at 0x7fa598b447c0>
+
+    def test_oddEvenList_odd(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py:35: NameError
+______________________ TestSolution.test_oddEvenList_even ______________________
+
+self = <test_328_Odd_Even_Linked_List.TestSolution object at 0x7fa598b448e0>
+
+    def test_oddEvenList_even(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py:48: NameError
+=========================== short test summary info ============================
+FAILED 328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py::TestSolution::test_oddEvenList_empty
+FAILED 328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py::TestSolution::test_oddEvenList_single
+FAILED 328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py::TestSolution::test_oddEvenList_double
+FAILED 328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py::TestSolution::test_oddEvenList_odd
+FAILED 328_Odd_Even_Linked_List/test_328_Odd_Even_Linked_List.py::TestSolution::test_oddEvenList_even
+============================== 5 failed in 0.02s ===============================

@@ -1,0 +1,13 @@
+This is a Python implementation of a solution to the "Letter Combinations of a Phone Number" problem. The problem involves given a string of digits, the function should return all possible combinations of letters that can be formed using the phone keyboard mapping.
+
+The first part of the code is a dictionary called `dmap` which maps each digit to its corresponding letters on the phone keyboard.
+
+The class `Solution` contains a method called `letterCombinations` which takes a string `digits` and returns a list of all possible letter combinations. The solution uses Depth First Search (DFS) to generate the combinations recursively.
+
+The function first initializes an empty list called `result`. It then checks the length of the input string `digits`. If `digits` is empty, it returns the empty `result` list.
+
+If the length of `digits` is not zero, it takes the first character of the string and stores it in the `current` variable. It then recursively calls `letterCombinations` function on the remaining characters of the string and stores the result in the `posfix` variable.
+
+The function then iterates over the letters corresponding to the current digit in `dmap` variable. If `posfix` contains any elements, the function then iterates over each element in `posfix`, concatenating the current letter to each element in `posfix` and appending it to the `result` list. If `posfix` is empty, it simply appends the current letter to the `result` list.
+
+Finally, the function returns the `result` list containing all possible letter combinations.

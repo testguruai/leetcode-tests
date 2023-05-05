@@ -1,0 +1,7 @@
+This is a python class named `Solution` with a method named `hammingWeight`. The method takes an integer `n` as input and returns the number of 1 bits in the binary representation of the input. 
+
+The class has two implementations of the `hammingWeight` method. 
+
+The first implementation uses the built-in `bin` function to convert the input to a binary string, removes the '0b' prefix from the string, and then uses the `count` method to count the number of '1's in the string. 
+
+The second implementation is more efficient and uses the bitwise AND operator `&` to repeatedly clear the least significant 1 bit in `n` by subtracting 1 from `n` and performing a bitwise AND with `n`. This operation sets the least significant 1 bit in `n` to 0, and increments a counter. The loop continues until all 1 bits have been cleared and the value of `n` becomes 0. Finally, the method returns the counter value, which represents the number of set bits in the binary representation of the input.

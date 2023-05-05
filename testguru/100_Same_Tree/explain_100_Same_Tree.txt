@@ -1,0 +1,9 @@
+This code is a Python implementation of the isSameTree function that determines whether two binary trees are the same or not. Here is the explanation of the code:
+
+- The function isSameTree takes in two parameters "p" and "q", both of which are instances of the TreeNode class. "p" and "q" are the roots of two separate binary trees that are to be compared.
+- The function returns a boolean value, which is True if the two binary trees are the same and False otherwise.
+- Within the function, we first check if "p" and "q" are the same instances. If they are the same, it means they are pointing to the same object in memory, and hence, they are automatically the same tree. Hence, the function returns True in this case.
+- If "p" and "q" are not the same, we then check if their respective values are the same. If the values are not the same, then the function returns False as it implies that the trees are different.
+- If the values of "p" and "q" are the same, we recursively compare the left and right sub-trees of "p" and "q". This is done by calling the isSameTree function recursively on the left sub-tree of p and q. Similarly, we call the function recursively on the right sub-tree of "p" and "q". The variables "left" and "right" are used to store the boolean values returned by these recursive calls.
+- Finally, we return the logical AND of "left" and "right", i.e., we return True only if both the left and right sub-trees are the same for "p" and "q". If they are not the same, then the function returns False.
+- If an error occurs, such as when "p" or "q" is None or if an exception is raised during the recursive calls, the function returns False.

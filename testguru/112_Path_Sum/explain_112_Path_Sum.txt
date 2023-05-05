@@ -1,0 +1,11 @@
+This code defines a class `Solution` with a method `hasPathSum` for checking if a binary tree has a path whose sum equals a given number. The `TreeNode` class is defined as well, with a constructor method that initializes a node of the tree with its value and two children nodes (left and right).
+
+The `hasPathSum` method takes two arguments: a root node of the binary tree and an integer `sum` representing the desired path sum. The method returns a boolean, indicating whether the path exists or not.
+
+The method starts by checking if the root is `None`. If it is, there is no path and the method returns `False`. Otherwise, the `sum` argument is reduced by the value of the current node (`root.val`).
+
+Next, the method checks if `sum` is now equal to 0 and if both children of the current node are `None`. If that's the case, it means that the path has been found, and the method returns `True`.
+
+If the path hasn't been found yet, the method calls itself recursively with the left and right children of the current node and the reduced `sum`. The boolean results of these recursive calls are stored in `left` and `right` variables.
+
+Finally, the method returns the logical OR of `left` and `right`. If any of them is `True`, it means that the path was found somewhere in the tree, and the method returns `True`. If both `left` and `right` are `False`, the method returns `False`, indicating that no path with the desired sum exists.

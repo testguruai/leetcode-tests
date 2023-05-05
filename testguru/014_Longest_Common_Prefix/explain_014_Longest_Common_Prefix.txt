@@ -1,0 +1,9 @@
+This is a Python implementation of a function that takes in a list of strings (called `strs`) and returns the longest common prefix between all of them. 
+
+If the length of the list is 1, then the function returns the only element in the list. Otherwise, a loop is started to find the longest common prefix. In each iteration, a `try` block gets the character at the current position in the first string of the list. If the index is out of range (i.e. the length of the first string is less than the current position), the loop is broken. 
+
+Otherwise, the loop continues and checks if the character at the current position in each subsequent string in the list matches the character in the first string. If there is a mismatch, the loop is broken. If all strings match, then the character is added to the `prefix` string and the loop continues to the next position. 
+
+Finally, the longest common prefix is returned. 
+
+There is also an unused method in the class that utilizes the `itertools.takewhile` method to return the longest common prefix in one line.

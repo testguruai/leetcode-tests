@@ -1,0 +1,5 @@
+This is a Python code defining a class `Solution` that contains a method `smallestEvenMultiple`. This method takes a positive integer `n` as input and returns the smallest positive integer that is a multiple of both 2 and `n`.
+
+The code first checks if `n` is already a multiple of 2 by checking if `n % 2 == 0`. If it is, then `n` is already the smallest even multiple of itself and the code returns `n`.
+
+If `n` is not already a multiple of 2, then the smallest even multiple of `n` is `n * 2`. So the code returns `n * 2`.

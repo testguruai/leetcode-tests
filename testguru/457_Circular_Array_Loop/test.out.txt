@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+___ ERROR collecting 457_Circular_Array_Loop/test_457_Circular_Array_Loop.py ___
+457_Circular_Array_Loop/test_457_Circular_Array_Loop.py:3: in <module>
+    from solution import Solution
+457_Circular_Array_Loop/solution.py:1: in <module>
+    class Solution:
+457_Circular_Array_Loop/solution.py:2: in Solution
+    def circularArrayLoop(self, nums: List[int]) -> bool:
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR 457_Circular_Array_Loop/test_457_Circular_Array_Loop.py - NameError: na...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

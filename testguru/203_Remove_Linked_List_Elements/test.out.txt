@@ -1,0 +1,86 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py F [ 16%]
+FFFFF                                                                    [100%]
+
+=================================== FAILURES ===================================
+________________________ test_removeElements_empty_list ________________________
+
+    def test_removeElements_empty_list():
+        # Empty list should return None
+        s = Solution()
+>       assert s.removeElements(None, 2) == None
+
+203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py:9: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fdc0428ca90>, head = None, val = 2
+
+    def removeElements(self, head, val):
+        """
+        :type head: ListNode
+        :type val: int
+        :rtype: ListNode
+        """
+        # add a extra head for removing head
+>       prehead = ListNode(-1)
+E       NameError: name 'ListNode' is not defined
+
+203_Remove_Linked_List_Elements/solution.py:15: NameError
+___________________ test_removeElements_remove_all_elements ____________________
+
+    def test_removeElements_remove_all_elements():
+        # Removing all occurrences of element from list
+        # should return None
+        s = Solution()
+>       head = ListNode(2)
+E       NameError: name 'ListNode' is not defined
+
+203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py:16: NameError
+_______________________ test_removeElements_remove_head ________________________
+
+    def test_removeElements_remove_head():
+        # Removing head element from list
+        s = Solution()
+>       head = ListNode(2)
+E       NameError: name 'ListNode' is not defined
+
+203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py:25: NameError
+__________________ test_removeElements_remove_middle_element ___________________
+
+    def test_removeElements_remove_middle_element():
+        # Removing middle element from list
+        s = Solution()
+>       head = ListNode(2)
+E       NameError: name 'ListNode' is not defined
+
+203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py:33: NameError
+___________________ test_removeElements_remove_last_element ____________________
+
+    def test_removeElements_remove_last_element():
+        # Removing last element from list
+        s = Solution()
+>       head = ListNode(2)
+E       NameError: name 'ListNode' is not defined
+
+203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py:42: NameError
+___________________ test_removeElements_no_element_to_remove ___________________
+
+    def test_removeElements_no_element_to_remove():
+        # List does not contain the element to remove
+        s = Solution()
+>       head = ListNode(2)
+E       NameError: name 'ListNode' is not defined
+
+203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py:51: NameError
+=========================== short test summary info ============================
+FAILED 203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py::test_removeElements_empty_list
+FAILED 203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py::test_removeElements_remove_all_elements
+FAILED 203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py::test_removeElements_remove_head
+FAILED 203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py::test_removeElements_remove_middle_element
+FAILED 203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py::test_removeElements_remove_last_element
+FAILED 203_Remove_Linked_List_Elements/test_203_Remove_Linked_List_Elements.py::test_removeElements_no_element_to_remove
+============================== 6 failed in 0.02s ===============================

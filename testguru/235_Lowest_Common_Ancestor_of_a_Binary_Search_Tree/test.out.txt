@@ -1,0 +1,55 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py F [ 20%]
+FFFF                                                                     [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_lowestCommonAncestor1 __________________________
+
+    def test_lowestCommonAncestor1():
+>       root=TreeNode(6)
+E       NameError: name 'TreeNode' is not defined
+
+235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py:5: NameError
+__________________________ test_lowestCommonAncestor2 __________________________
+
+    def test_lowestCommonAncestor2():
+>       root=TreeNode(6)
+E       NameError: name 'TreeNode' is not defined
+
+235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py:24: NameError
+__________________________ test_lowestCommonAncestor3 __________________________
+
+    def test_lowestCommonAncestor3():
+>       root=TreeNode(6)
+E       NameError: name 'TreeNode' is not defined
+
+235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py:43: NameError
+__________________________ test_lowestCommonAncestor4 __________________________
+
+    def test_lowestCommonAncestor4():
+>       root=TreeNode(6)
+E       NameError: name 'TreeNode' is not defined
+
+235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py:62: NameError
+__________________________ test_lowestCommonAncestor5 __________________________
+
+    def test_lowestCommonAncestor5():
+        root=None
+        p=None
+        q=None
+        expected_ans=None
+>       s=Solution()
+E       NameError: name 'Solution' is not defined
+
+235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py:85: NameError
+=========================== short test summary info ============================
+FAILED 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py::test_lowestCommonAncestor1
+FAILED 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py::test_lowestCommonAncestor2
+FAILED 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py::test_lowestCommonAncestor3
+FAILED 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py::test_lowestCommonAncestor4
+FAILED 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree/test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py::test_lowestCommonAncestor5
+============================== 5 failed in 0.02s ===============================

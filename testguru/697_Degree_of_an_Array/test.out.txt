@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+697_Degree_of_an_Array/test_697_Degree_of_an_Array.py FF                 [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_findShortestSubArray ___________________________
+
+    def test_findShortestSubArray():
+        solution = Solution()
+        assert solution.findShortestSubArray([1, 2, 2, 3, 1]) == 2
+        assert solution.findShortestSubArray([1, 2, 2, 3, 1, 4, 2]) == 6
+        assert solution.findShortestSubArray([1, 2, 3, 4, 5]) == 1
+>       assert solution.findShortestSubArray([1, 2, 3, 2, 1]) == 5
+E       assert 3 == 5
+E        +  where 3 = <bound method Solution.findShortestSubArray of <solution.Solution object at 0x7fcedc3844f0>>([1, 2, 3, 2, 1])
+E        +    where <bound method Solution.findShortestSubArray of <solution.Solution object at 0x7fcedc3844f0>> = <solution.Solution object at 0x7fcedc3844f0>.findShortestSubArray
+
+697_Degree_of_an_Array/test_697_Degree_of_an_Array.py:9: AssertionError
+____________________________ test_smallestSubArray _____________________________
+
+    def test_smallestSubArray():
+        solution = Solution()
+>       assert solution.smallestSubArray([1, 2, 2, 3, 1], 2, 2) == 2
+E       AttributeError: 'Solution' object has no attribute 'smallestSubArray'
+
+697_Degree_of_an_Array/test_697_Degree_of_an_Array.py:16: AttributeError
+=========================== short test summary info ============================
+FAILED 697_Degree_of_an_Array/test_697_Degree_of_an_Array.py::test_findShortestSubArray
+FAILED 697_Degree_of_an_Array/test_697_Degree_of_an_Array.py::test_smallestSubArray
+============================== 2 failed in 0.01s ===============================

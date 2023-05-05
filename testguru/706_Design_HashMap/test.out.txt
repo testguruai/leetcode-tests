@@ -1,0 +1,88 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+706_Design_HashMap/test_706_Design_HashMap.py F.FF                       [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_put_get_remove ______________________________
+
+    def test_put_get_remove():
+        #Testcase to check basic fuctionality
+        hashMap = MyHashMap()
+>       hashMap.put(1,1)
+
+706_Design_HashMap/test_706_Design_HashMap.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+706_Design_HashMap/solution.py:21: in put
+    prev = find(self.nodes[index], key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+bucket = <solution.ListNode object at 0x7f37dcd00940>, key = 1
+
+    def find(bucket, key):
+        # find prev node of this key
+        node = bucket
+        prev = None
+        while node is not None and node.key != key:
+            prev = node
+>           node = node.__next__
+E           AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+706_Design_HashMap/solution.py:63: AttributeError
+________________________________ test_duplicate ________________________________
+
+    def test_duplicate():
+        #Testcase to test duplicates
+        hashMap = MyHashMap()
+>       hashMap.put(1, 1)
+
+706_Design_HashMap/test_706_Design_HashMap.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+706_Design_HashMap/solution.py:21: in put
+    prev = find(self.nodes[index], key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+bucket = <solution.ListNode object at 0x7f37dcb4f9a0>, key = 1
+
+    def find(bucket, key):
+        # find prev node of this key
+        node = bucket
+        prev = None
+        while node is not None and node.key != key:
+            prev = node
+>           node = node.__next__
+E           AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+706_Design_HashMap/solution.py:63: AttributeError
+___________________________ test_remove_nonexistant ____________________________
+
+    def test_remove_nonexistant():
+        #Testcase to test removing a non-existent element
+        hashMap = MyHashMap()
+>       hashMap.put(1, 1)
+
+706_Design_HashMap/test_706_Design_HashMap.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+706_Design_HashMap/solution.py:21: in put
+    prev = find(self.nodes[index], key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+bucket = <solution.ListNode object at 0x7f37dcd02cb0>, key = 1
+
+    def find(bucket, key):
+        # find prev node of this key
+        node = bucket
+        prev = None
+        while node is not None and node.key != key:
+            prev = node
+>           node = node.__next__
+E           AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+706_Design_HashMap/solution.py:63: AttributeError
+=========================== short test summary info ============================
+FAILED 706_Design_HashMap/test_706_Design_HashMap.py::test_put_get_remove - A...
+FAILED 706_Design_HashMap/test_706_Design_HashMap.py::test_duplicate - Attrib...
+FAILED 706_Design_HashMap/test_706_Design_HashMap.py::test_remove_nonexistant
+========================= 3 failed, 1 passed in 0.02s ==========================

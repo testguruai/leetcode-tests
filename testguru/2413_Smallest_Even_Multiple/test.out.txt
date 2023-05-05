@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+2413_Smallest_Even_Multiple/test_2413_Smallest_Even_Multiple.py F        [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_smallestEvenMultiple ___________________________
+
+    def test_smallestEvenMultiple():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+2413_Smallest_Even_Multiple/test_2413_Smallest_Even_Multiple.py:4: NameError
+=========================== short test summary info ============================
+FAILED 2413_Smallest_Even_Multiple/test_2413_Smallest_Even_Multiple.py::test_smallestEvenMultiple
+============================== 1 failed in 0.01s ===============================

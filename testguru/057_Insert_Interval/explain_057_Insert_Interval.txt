@@ -1,0 +1,9 @@
+This is a Python implementation of the "Insert Interval" problem in LeetCode. The problem statement asks to insert a new interval into a list of non-overlapping intervals and merge any overlapping intervals.
+
+The code starts by checking if the given list is empty or None. If so, it simply returns the new interval as a list. Otherwise, it sorts the intervals based on the start time of each interval.
+
+Then, it iterates over the sorted intervals and checks for any overlap with the new interval. If there is no overlap, it simply moves on to the next interval. If there is overlap, it merges the two intervals by replacing the current interval with a merged interval and checks for any further overlap with the next interval.
+
+Finally, it adds the new interval to the end of the list if it has not been inserted in any of the previous iterations.
+
+The functions "check_overlap" and "merge_intervals" are helper functions used to determine if two intervals overlap and merge two overlapping intervals, respectively.

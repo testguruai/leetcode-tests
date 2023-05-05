@@ -1,0 +1,9 @@
+This code defines a class called Solution with one method called getHint. This method takes two arguments, secret and guess, both of which are strings. It returns a string in the format "xAyB", where x is the number of bulls (correct digits in the correct positions) and y is the number of cows (correct digits in the wrong positions).
+
+The method first creates an empty dictionary called check to store the count of each digit in secret. It then calculates the length of secret and initializes two variables, bull and cow, to zero.
+
+Next, it iterates over the indices of secret using a for loop. If the digit at that index in guess is the same as the digit at that index in secret, then bull is incremented. Otherwise, the index is appended to a list called different and the count of the corresponding digit in secret is added to the check dictionary.
+
+The method then iterates over the indices stored in different using another for loop. If the corresponding digit in guess is in the check dictionary and its count is greater than zero, then cow is incremented and the count in check is decremented.
+
+Finally, the method returns the number of bulls and cows in the format specified above using string formatting. The if __name__ == "__main__" block creates an instance of the Solution class and calls the getHint method with the strings "1122" and "1222" as arguments, printing the output to the console. This particular example should output "3A0B".

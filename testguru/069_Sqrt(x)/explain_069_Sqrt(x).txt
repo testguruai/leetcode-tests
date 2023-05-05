@@ -1,0 +1,35 @@
+This is a python class named `Solution`.
+
+The class has a method called `mySqrt` which takes an integer `x` as an argument and returns the square root of `x`.
+
+The method first checks if `x` is equal to 0. If it is, then it returns 0.
+
+If `x` is not 0, the method proceeds to calculate the square root of `x` using the binary search method.
+
+The method initializes `low` to 0 and `high` to `x`.
+
+It then sets `last` to `x`.
+
+A while loop is used to perform binary search on `x`.
+
+Inside the while loop, the method calculates the middle point `mid` by getting the average of `low` and `high`.
+
+It then calculates the square of `mid` and assigns it to a variable `temp`.
+
+If `temp` is equal to `x`, then `mid` is the square root of `x`. The method returns `mid`.
+
+If `temp` is less than `x`, the method sets `low` to `mid+1` and updates `last` to `mid`.
+
+If `temp` is greater than `x`, the method sets `high` to `mid-1`.
+
+After the while loop, the method returns `last`.
+
+However, there is also a commented out section of code that uses a different method to calculate the square root of `x`. 
+
+It uses a recursive formula to calculate the square root of `x`. If `x` is less than 4, the method returns 1.
+
+Otherwise, it sets `res` to 2 times the square root of `x/4`.
+
+It then checks if `(res + 1) * (res + 1)` is less than or equal to `x` and greater than or equal to 0. If it is, then `res + 1` is returned. 
+
+If `(res + 1) * (res + 1)` is greater than `x` or less than 0, then `res` is returned.

@@ -1,0 +1,11 @@
+This is a Python implementation of a stack using two queues. The first version (commented out) uses two queues to mimic the stack behavior by always moving elements from one queue to another. The second version uses a clever trick to achieve the same result but with a single queue.
+
+The `Stack` class is initialized with two empty lists `queue1` and `queue2` that act as the two queues in the first version, and an additional attribute `curr_top` that holds the top element of the stack.
+
+The `push` method adds an element `x` to the stack by appending it to `queue2`. Then, it moves all elements from `queue1` to `queue2` in reverse order, so that `queue2` holds all elements in the desired order. The `temp` variable is used to swap the contents of `queue1` and `queue2`.
+
+The `pop` method removes the top element of the stack by simply popping the first element of `queue1`. If there are other elements in `queue1`, it updates `curr_top` to the new top element.
+
+The `top` method returns the top element of the stack, which is simply `curr_top`. If the stack is empty, the method returns `None`.
+
+The `empty` method returns `True` if `queue1` is empty, and `False` otherwise.

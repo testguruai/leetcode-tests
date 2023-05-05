@@ -1,0 +1,40 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+259_3Sum_Smaller/test_259_3Sum_Smaller.py FFF                            [100%]
+
+=================================== FAILURES ===================================
+______________________ TestSolution.test_threeSumSmaller _______________________
+
+self = <test_259_3Sum_Smaller.TestSolution object at 0x7f2d84490340>
+
+    def test_threeSumSmaller(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+259_3Sum_Smaller/test_259_3Sum_Smaller.py:5: NameError
+_______________________ TestSolution.test_twoSumSmaller ________________________
+
+self = <test_259_3Sum_Smaller.TestSolution object at 0x7f2d84490430>
+
+    def test_twoSumSmaller(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+259_3Sum_Smaller/test_259_3Sum_Smaller.py:24: NameError
+________________________ TestSolution.test_binarySearch ________________________
+
+self = <test_259_3Sum_Smaller.TestSolution object at 0x7f2d84490550>
+
+    def test_binarySearch(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+259_3Sum_Smaller/test_259_3Sum_Smaller.py:47: NameError
+=========================== short test summary info ============================
+FAILED 259_3Sum_Smaller/test_259_3Sum_Smaller.py::TestSolution::test_threeSumSmaller
+FAILED 259_3Sum_Smaller/test_259_3Sum_Smaller.py::TestSolution::test_twoSumSmaller
+FAILED 259_3Sum_Smaller/test_259_3Sum_Smaller.py::TestSolution::test_binarySearch
+============================== 3 failed in 0.02s ===============================

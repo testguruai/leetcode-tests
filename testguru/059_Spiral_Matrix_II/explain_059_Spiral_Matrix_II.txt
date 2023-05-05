@@ -1,0 +1,23 @@
+The given Python code generates a matrix of size n x n with the numbers from 1 to n^2 in a spiral order. 
+
+The method generateMatrix() takes an integer n as input, which represents the size of the matrix.
+
+The first line in the method initializes the matrix with zeros using list comprehension. The statement creates a nested list of n lists with n zeros in each.
+
+Next, the pos variable is initialized as [0,0] to represent the starting position of the spiral.
+
+The move variable is set as (0,1), which represents the direction of the spiral as moving right initially.
+
+The for loop generates the numbers in the matrix using the range() function with the end value as n*n+1. 
+
+Inside the loop, the current index value is inserted into the current position of the matrix, and then the next position is calculated by adding the move vector to the position.
+
+If the new position lies outside the matrix, the modulus operator is used to bring it back inside the matrix.
+
+The if statement checks if the next position has already been filled with a number. If so, the move direction is updated by rotating it by 90 degrees clockwise.
+
+Finally, the updated position is stored back in the pos variable.
+
+The generateMatrix() method returns the resulting matrix. 
+
+In the main block, an instance of the class Solution is created and the generateMatrix() method is called with input 2. This will print the matrix with values `[1, 2], [4, 3]` since it forms a spiral of size 2.

@@ -1,0 +1,19 @@
+This is a Python function that solves a problem related to finding the minimum path sum from the top to the bottom of a given triangle. 
+
+The function takes in two arguments: a list of lists `triangle` representing the triangle, and `self` which specifies an instance of the Solution class.
+
+The first if statement checks whether the input triangle is none or empty. If so, the function returns zero.
+
+The next line initializes a variable `ls` to store the length of the input triangle.
+
+The next line creates a list `dp` of `ls` elements and initializes all elements to zero. This list `dp` is used to store the minimum path sum from the top to each specific node in the triangle.
+
+The next line initializes the first element of the `dp` list to be the first element of the first row of the triangle.
+
+The for loop iterates through the rows of the triangle starting from the second row. For each row, the `dp` list is updated in reverse order. 
+
+For each element in the row, the minimum path sum to reach that element is either from the left or from the right. Hence, the `dp[j]` list element will be updated as the minimum sum of the previous row `dp[j-1]` and the current row element `triangle[i][j]`, and the current `dp[j] + triangle[i][j]`. 
+
+Finally, the first element of the `dp` list is updated to include the first element of the current row of the triangle. 
+
+After all rows of the triangle have been processed, the function returns the minimum element of the `dp` list as the minimum path sum.

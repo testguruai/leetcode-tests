@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+344_Reverse_String/test_344_Reverse_String.py F                          [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_reverse_string ______________________________
+
+    def test_reverse_string():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+344_Reverse_String/test_344_Reverse_String.py:2: NameError
+=========================== short test summary info ============================
+FAILED 344_Reverse_String/test_344_Reverse_String.py::test_reverse_string - N...
+============================== 1 failed in 0.01s ===============================

@@ -1,0 +1,9 @@
+This is a solution in Python for a problem that asks to generate a string of length n where each character appears an odd number of times. If n is even, the string must contain (n-1) instances of one character and 1 instance of another. If n is odd, the string must contain n instances of one character.
+
+The method name is `generateTheString()` and it takes a integer parameter `n`. It returns a string. The implementation is as follows:
+
+1. Check if n is even by checking if n%2==0.
+2. If n is even, return a string with (n-1) instances of 'a' character followed by one instance of 'b' character.
+3. If n is odd, return a string with n instances of 'a' character. 
+
+For example, if n is 4, the code generates the output "pppz".

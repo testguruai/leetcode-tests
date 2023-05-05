@@ -1,0 +1,34 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+370_Range_Addition/test_370_Range_Addition.py F                          [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_getModifiedArray _____________________________
+
+    def test_getModifiedArray():
+        s = Solution()
+        # Testcase 1
+        length = 5
+        updates = [[1,3,2],[2,4,3],[0,2,-2]]
+        assert s.getModifiedArray(length, updates) == [-2,0,3,5,3]
+    
+        # Testcase 2
+        length = 2
+        updates = [[0,1,2]]
+        assert s.getModifiedArray(length, updates) == [2,2]
+    
+        # Testcase 3
+        length = 3
+        updates = [[0,0,1],[1,1,1]]
+>       assert s.getModifiedArray(length, updates) == [1,2,1]
+E       assert [1, 1, 0] == [1, 2, 1]
+E         At index 1 diff: 1 != 2
+E         Use -v to get more diff
+
+370_Range_Addition/test_370_Range_Addition.py:20: AssertionError
+=========================== short test summary info ============================
+FAILED 370_Range_Addition/test_370_Range_Addition.py::test_getModifiedArray
+============================== 1 failed in 0.01s ===============================

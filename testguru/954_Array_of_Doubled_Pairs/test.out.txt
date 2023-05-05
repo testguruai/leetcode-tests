@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+954_Array_of_Doubled_Pairs/test_954_Array_of_Doubled_Pairs.py ...F       [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_case_4 __________________________________
+
+solution_obj = <solution.Solution object at 0x7f334175cb20>
+
+    def test_case_4(solution_obj):
+        A = [1, 2, 4, 16, 8, 4]
+>       assert solution_obj.canReorderDoubled(A) == True
+E       assert False == True
+E        +  where False = <bound method Solution.canReorderDoubled of <solution.Solution object at 0x7f334175cb20>>([1, 2, 4, 4, 8, 16])
+E        +    where <bound method Solution.canReorderDoubled of <solution.Solution object at 0x7f334175cb20>> = <solution.Solution object at 0x7f334175cb20>.canReorderDoubled
+
+954_Array_of_Doubled_Pairs/test_954_Array_of_Doubled_Pairs.py:23: AssertionError
+=========================== short test summary info ============================
+FAILED 954_Array_of_Doubled_Pairs/test_954_Array_of_Doubled_Pairs.py::test_case_4
+========================= 1 failed, 3 passed in 0.01s ==========================

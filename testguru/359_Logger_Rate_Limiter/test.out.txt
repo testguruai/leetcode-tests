@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+359_Logger_Rate_Limiter/test_359_Logger_Rate_Limiter.py F                [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_shouldPrintMessage ____________________________
+
+    def test_shouldPrintMessage():
+>       logger = Logger()
+E       NameError: name 'Logger' is not defined
+
+359_Logger_Rate_Limiter/test_359_Logger_Rate_Limiter.py:4: NameError
+=========================== short test summary info ============================
+FAILED 359_Logger_Rate_Limiter/test_359_Logger_Rate_Limiter.py::test_shouldPrintMessage
+============================== 1 failed in 0.01s ===============================

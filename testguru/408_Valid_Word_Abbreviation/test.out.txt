@@ -1,0 +1,31 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+408_Valid_Word_Abbreviation/test_408_Valid_Word_Abbreviation.py F        [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_validWordAbbreviation __________________________
+
+    def test_validWordAbbreviation():
+        sol = Solution()
+        word1 = "internationalization"
+        abbr1 = "i12iz4n"
+        word2 = "apple"
+        abbr2 = "a2e"
+        word3 = "dog"
+        abbr3 = "d081"
+        word4 = "abbreviation"
+        abbr4 = "a10n"
+    
+        assert sol.validWordAbbreviation(word1, abbr1) == True
+>       assert sol.validWordAbbreviation(word2, abbr2) == True
+E       AssertionError: assert False == True
+E        +  where False = <bound method Solution.validWordAbbreviation of <solution.Solution object at 0x7f3fa1cd03d0>>('apple', 'a2e')
+E        +    where <bound method Solution.validWordAbbreviation of <solution.Solution object at 0x7f3fa1cd03d0>> = <solution.Solution object at 0x7f3fa1cd03d0>.validWordAbbreviation
+
+408_Valid_Word_Abbreviation/test_408_Valid_Word_Abbreviation.py:17: AssertionError
+=========================== short test summary info ============================
+FAILED 408_Valid_Word_Abbreviation/test_408_Valid_Word_Abbreviation.py::test_validWordAbbreviation
+============================== 1 failed in 0.01s ===============================

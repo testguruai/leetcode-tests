@@ -1,0 +1,56 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py E [ 20%]
+EEEE                                                                     [100%]
+
+==================================== ERRORS ====================================
+_______________ ERROR at setup of test_kWeakestRows_valid_inputs _______________
+file /data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py, line 6
+  def test_kWeakestRows_valid_inputs(Solution):
+E       fixture 'Solution' not found
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py:6
+____________ ERROR at setup of test_kWeakestRows_k_larger_than_rows ____________
+file /data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py, line 12
+  def test_kWeakestRows_k_larger_than_rows(Solution):
+E       fixture 'Solution' not found
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py:12
+_______________ ERROR at setup of test_kWeakestRows_empty_matrix _______________
+file /data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py, line 16
+  def test_kWeakestRows_empty_matrix(Solution):
+E       fixture 'Solution' not found
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py:16
+_______________ ERROR at setup of test_kWeakestRows_k_equal_to_0 _______________
+file /data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py, line 20
+  def test_kWeakestRows_k_equal_to_0(Solution):
+E       fixture 'Solution' not found
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py:20
+______________ ERROR at setup of test_kWeakestRows_non_integer_k _______________
+file /data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py, line 24
+  def test_kWeakestRows_non_integer_k(Solution):
+E       fixture 'Solution' not found
+>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+/data/sandeep/leetcode-master/.verifaiws/1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py:24
+=========================== short test summary info ============================
+ERROR 1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py::test_kWeakestRows_valid_inputs
+ERROR 1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py::test_kWeakestRows_k_larger_than_rows
+ERROR 1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py::test_kWeakestRows_empty_matrix
+ERROR 1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py::test_kWeakestRows_k_equal_to_0
+ERROR 1337_The_K_Weakest_Rows_in_a_Matrix/test_1337_The_K_Weakest_Rows_in_a_Matrix.py::test_kWeakestRows_non_integer_k
+============================== 5 errors in 0.01s ===============================

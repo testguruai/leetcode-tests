@@ -1,0 +1,13 @@
+This is a Python class that contains a method called "searchRange". The searchRange method takes in two arguments: a list of integers called "nums" and an integer called "target". It returns a list of two integers, which represent the range of indices in the "nums" list that contain the target value. If the target value is not found, the method returns [-1, -1].
+
+The method starts by getting the length of the "nums" list and checking if the length is 0. If the length is 0, the method returns [-1, -1].
+
+If the length is not 0, the method initializes two variables: min to 0 and max to length-1. The method then uses a while loop to search for the target value in the "nums" list using a binary search algorithm.
+
+The binary search algorithm works by repeatedly dividing the search interval in half. If the value at the midpoint of the interval is greater than the target value, the search continues on the lower half of the interval. If the value at the midpoint is less than the target value, the search continues on the upper half of the interval. If the value at the midpoint is equal to the target value, the method enters a loop that searches for the minimum and maximum indices that contain the target value.
+
+The loop starts by iterating through the indices from min to max using a "for" loop. If the value at an index in the "nums" list is equal to the target value, the loop checks if the current index is less than the current value of "min" and if the value at the current index is not equal to the value at the current "min" index. If both conditions are true, the loop updates the value of "min" to the current index. Otherwise, the loop updates the value of "max" to the current index.
+
+After the loop completes, the method returns a list containing the final values of "min" and "max".
+
+If the while loop exits and the target value is not found, the method returns [-1, -1].

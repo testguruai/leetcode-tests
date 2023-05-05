@@ -1,0 +1,34 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+046_Permutations/test_046_Permutations.py FFF                            [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_permute_using_itertools _________________________
+
+    def test_permute_using_itertools():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+046_Permutations/test_046_Permutations.py:4: NameError
+_____________________ test_permute_using_DPS_with_swapping _____________________
+
+    def test_permute_using_DPS_with_swapping():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+046_Permutations/test_046_Permutations.py:10: NameError
+_______________________ test_permute_iterative_solution ________________________
+
+    def test_permute_iterative_solution():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+046_Permutations/test_046_Permutations.py:17: NameError
+=========================== short test summary info ============================
+FAILED 046_Permutations/test_046_Permutations.py::test_permute_using_itertools
+FAILED 046_Permutations/test_046_Permutations.py::test_permute_using_DPS_with_swapping
+FAILED 046_Permutations/test_046_Permutations.py::test_permute_iterative_solution
+============================== 3 failed in 0.01s ===============================

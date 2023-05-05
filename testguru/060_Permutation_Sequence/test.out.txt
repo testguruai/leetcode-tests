@@ -1,0 +1,93 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+060_Permutation_Sequence/test_060_Permutation_Sequence.py FF.F           [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_getPermutation[3-2-132] _________________________
+
+solution = <solution.Solution object at 0x7f0477788e50>, n = 3, k = 2
+result = '132'
+
+    @pytest.mark.parametrize("n,k,result", [
+        (3, 2, "132"),
+        (4, 9, "2314"),
+        (1, 1, "1")
+    ])
+    def test_getPermutation(solution, n, k, result):
+>       assert solution.getPermutation(n, k) == result
+
+060_Permutation_Sequence/test_060_Permutation_Sequence.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+060_Permutation_Sequence/solution.py:16: in getPermutation
+    res = self.do_getPermutation(remain, total, n - 1, k - 1)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f0477788e50>, remain = [1, 2, 3]
+curr = 1.0, n = 2, k = 1
+
+    def do_getPermutation(self, remain, curr, n, k):
+        if n == 0 or k <= 0 or curr == 0:
+            return remain
+        # which block
+        step = k / curr
+        # remain k value
+        k %= curr
+        curr /= n
+>       res = [remain[step]] + self.do_getPermutation(remain[:step] + remain[step + 1:], curr, n - 1, k)
+E       TypeError: list indices must be integers or slices, not float
+
+060_Permutation_Sequence/solution.py:28: TypeError
+________________________ test_getPermutation[4-9-2314] _________________________
+
+solution = <solution.Solution object at 0x7f0477788e50>, n = 4, k = 9
+result = '2314'
+
+    @pytest.mark.parametrize("n,k,result", [
+        (3, 2, "132"),
+        (4, 9, "2314"),
+        (1, 1, "1")
+    ])
+    def test_getPermutation(solution, n, k, result):
+>       assert solution.getPermutation(n, k) == result
+
+060_Permutation_Sequence/test_060_Permutation_Sequence.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+060_Permutation_Sequence/solution.py:16: in getPermutation
+    res = self.do_getPermutation(remain, total, n - 1, k - 1)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f0477788e50>, remain = [1, 2, 3, 4]
+curr = 2.0, n = 3, k = 2
+
+    def do_getPermutation(self, remain, curr, n, k):
+        if n == 0 or k <= 0 or curr == 0:
+            return remain
+        # which block
+        step = k / curr
+        # remain k value
+        k %= curr
+        curr /= n
+>       res = [remain[step]] + self.do_getPermutation(remain[:step] + remain[step + 1:], curr, n - 1, k)
+E       TypeError: list indices must be integers or slices, not float
+
+060_Permutation_Sequence/solution.py:28: TypeError
+______________________ test_getPermutation_negative_cases ______________________
+
+solution = <solution.Solution object at 0x7f0477788e50>
+
+    def test_getPermutation_negative_cases(solution):
+        assert solution.getPermutation(0, 0) == ""
+        assert solution.getPermutation(-3, -2) == ""
+>       assert solution.getPermutation(3, -2) == ""
+E       AssertionError: assert '123' == ''
+E         + 123
+
+060_Permutation_Sequence/test_060_Permutation_Sequence.py:20: AssertionError
+=========================== short test summary info ============================
+FAILED 060_Permutation_Sequence/test_060_Permutation_Sequence.py::test_getPermutation[3-2-132]
+FAILED 060_Permutation_Sequence/test_060_Permutation_Sequence.py::test_getPermutation[4-9-2314]
+FAILED 060_Permutation_Sequence/test_060_Permutation_Sequence.py::test_getPermutation_negative_cases
+========================= 3 failed, 1 passed in 0.02s ==========================

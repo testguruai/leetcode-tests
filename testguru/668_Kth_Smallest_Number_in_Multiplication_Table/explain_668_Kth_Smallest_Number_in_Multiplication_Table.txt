@@ -1,0 +1,13 @@
+This is a Python solution for the problem of finding the kth smallest number in the multiplication table of m and n. 
+
+The solution defines a class named Solution and a method called findKthNumber which takes 3 integer parameters m, n, and k and returns an integer. 
+
+The inner function enough takes an integer x and returns a boolean value indicating whether there are at least k numbers in the multiplication table that are less than or equal to x. 
+
+The function enough iterates through each row in the multiplication table up to the value of m and counts the number of elements in each row that are less than or equal to x. The total count is then returned and compared to k. 
+
+The findKthNumber method sets two variables lo and hi initially to 1 and m * n respectively. It then runs a while loop which continues until lo is equal to hi. 
+
+The middle value mi is calculated as the floor division of the sum of lo and hi by 2. If enough(mi) returns False, it means there are not enough numbers in the multiplication table that are less than or equal to mi, so lo is set to mi + 1. 
+
+If enough(mi) returns True, it means there are enough numbers in the multiplication table that are less than or equal to mi. In this case, hi is set to mi. The loop continues until lo and hi are equal, which is the final result and is returned by the findKthNumber method.

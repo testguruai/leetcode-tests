@@ -1,0 +1,17 @@
+The code defines a class named `Solution` with a method `fractionToDecimal()`. The method takes two integer arguments `numerator` and `denominator` and returns a string. 
+
+The method first checks if the `numerator` is zero or not. If it is, then it returns '0'. 
+
+Otherwise, it initializes an empty string called `fraction`. Then if either `numerator` or `denominator` is negative (but not both), it adds a '-' to `fraction`.
+
+It then calculates the value of the fraction and adds it to the `fraction` string. It then calculates the remainder. If the remainder is zero, it returns the `fraction` string. 
+
+If the remainder is not zero, it adds a '.' to the `fraction` string and initializes an empty dictionary called `dic`. A while loop starts, where it checks if the remainder is not equal to zero. If it is not zero, it performs a sequence of calculations to add the decimal part of the fraction to `fraction`.
+
+If the `remainder` is already in the `dic`, it means that the sequence of calculations are repeating, and it adds parentheses to the `fraction` string to denote the repeating decimal. It then breaks out of the loop.
+
+If the `remainder` is not already in the `dic`, it adds the `remainder` and the corresponding position of the `fraction` string to the `dic` and continues with the loop. 
+
+At the end, it returns the `fraction` string. 
+
+The code then creates an instance of the `Solution` class called `s`, and calls the `fractionToDecimal()` method on it with the arguments `-50` and `8`. The result is printed to the console.

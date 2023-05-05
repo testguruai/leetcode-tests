@@ -1,0 +1,7 @@
+This is a solution to the popular problem of counting the number of islands in a grid, where an island is defined as a group of connected '1's (either horizontally or vertically). The code is a Python class with two methods:
+
+1. `numIslands` function takes in a 2D grid of '0's and '1's and returns the number of islands in the grid using a BFS (breadth-first search) algorithm with marks. It initializes a counter, 'islands', to zero and loops over every cell of the grid. When a '1' is found, it calls the helper function 'explore' on that cell and increments the island counter. It then continues to loop over the grid until all islands have been counted, and returns the final island count.
+
+2. 'explore' function is a recursive helper function that explores the current '1' cell and marks it with an 'X' so it won't be counted again. It then checks its neighboring cells (up, down, left, right) to see if any of them are also '1' cells and calls itself on each of these neighboring cells until all connected '1' '1's have been marked and accounted for.
+
+Overall, the code has a time complexity of O(m*n) where m and n are the number of rows and columns in the grid, respectively.

@@ -1,0 +1,61 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py F [ 20%]
+FFFF                                                                     [100%]
+
+=================================== FAILURES ===================================
+___________________________ TestSolution.test_read1 ____________________________
+
+self = <test_157_Read_N_Characters_Given_Read4.TestSolution object at 0x7fa4b35a43d0>
+
+    def test_read1(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py:5: NameError
+___________________________ TestSolution.test_read2 ____________________________
+
+self = <test_157_Read_N_Characters_Given_Read4.TestSolution object at 0x7fa4b35a44c0>
+
+    def test_read2(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py:11: NameError
+___________________________ TestSolution.test_read3 ____________________________
+
+self = <test_157_Read_N_Characters_Given_Read4.TestSolution object at 0x7fa4b35a45e0>
+
+    def test_read3(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py:17: NameError
+___________________________ TestSolution.test_read4 ____________________________
+
+self = <test_157_Read_N_Characters_Given_Read4.TestSolution object at 0x7fa4b35a4700>
+
+    def test_read4(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py:23: NameError
+___________________________ TestSolution.test_read5 ____________________________
+
+self = <test_157_Read_N_Characters_Given_Read4.TestSolution object at 0x7fa4b35a4820>
+
+    def test_read5(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py:29: NameError
+=========================== short test summary info ============================
+FAILED 157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py::TestSolution::test_read1
+FAILED 157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py::TestSolution::test_read2
+FAILED 157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py::TestSolution::test_read3
+FAILED 157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py::TestSolution::test_read4
+FAILED 157_Read_N_Characters_Given_Read4/test_157_Read_N_Characters_Given_Read4.py::TestSolution::test_read5
+============================== 5 failed in 0.02s ===============================

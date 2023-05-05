@@ -1,0 +1,9 @@
+This is a Python implementation of the 3Sum problem, which asks to find all unique triplets in an array of integers whose sum is zero. The code includes three different solutions to the problem: 
+
+1. The first solution uses brute force to check every possible triplet, which has a time complexity of O(n^3). To optimize it, the code skips duplicates and stops iterating if the current value is greater than zero, since then it won't be possible to have a sum of zero with two other numbers.
+
+2. The second solution uses a technique similar to the twoSum problem, where a hash table is used to store the complement of each value and then check if it exists in the table. This reduces the time complexity to O(n^2), but it also has some extra overhead to handle duplicates and to check if a triplet has already been stored.
+
+3. The third solution is similar to the first one, but it sorts the input array first to simplify the search for triplets. It iterates over each value and uses two pointers to search for pairs that sum up to the complement of the current value (i.e., -1 times the current value). If a triplet is found, it is added to a list of results and the pointers are moved to skip duplicates.
+
+Overall, the code provides three alternative solutions to the 3Sum problem, each with different time and space complexities and tradeoffs between efficiency and simplicity.

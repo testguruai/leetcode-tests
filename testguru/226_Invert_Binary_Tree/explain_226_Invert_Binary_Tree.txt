@@ -1,0 +1,5 @@
+This is a Python solution to the problem of inverting (flipping) a binary tree. The code defines a class named Solution, which has an instance method named invertTree that takes the root node of a binary tree as an argument and returns the inverted binary tree.
+
+The first method definition inside the class is commented out and is a recursive solution to the problem. It works by recursively calling itself and swapping the left and right child nodes of each node in the tree.
+
+The second method definition is an iterative solution that works by using a queue to traverse the tree level by level. It starts by adding the root node to the queue, then iterates while there are still nodes in the queue. For each node in the queue, it swaps its left and right child nodes, and adds them to the end of the queue (if they exist). Finally, it returns the root node of the inverted tree.

@@ -1,0 +1,13 @@
+This code is a Python class named "Solution" that contains a function called "addBinary". The "addBinary" function takes two string inputs "a" and "b", representing binary numbers, and returns their sum as a string.
+
+The code first defines a commented-out block of code that uses a while loop to add the binary numbers digit-by-digit. However, it is not used in the function.
+
+The actual implementation of the "addBinary" function uses a while loop with a single condition that checks if either input string has any more digits to add. It initializes an empty string "res" to hold the result string, and sets the lengths of the input strings as "lsa" and "lsb". It also initializes the current position of the digits to the rightmost end of the strings using a variable "pos", sets the initial carry value to 0 using "plus", and specifies a starting value of 0 for the current binary digit being added using "curr".
+
+Within the while loop, it first checks if the current position is within the bounds of both input strings, adding the binary digits at the current position of both strings along with the carry value "plus" to the current binary digit "curr". If the sum of three values is greater than or equal to 2, it updates "plus" to 1 and performs a modulus operation to set "curr" to the correct binary value. Otherwise, it sets "plus" to 0 and simply sets "curr" to the sum of the three values.
+
+It then appends the current binary digit to the left side of the result string "res" using string concatenation. It decrements the "pos" variable to move to the next position of the input strings, and repeats the same process until all digits in the input strings have been processed.
+
+After the while loop completes, it checks if there is a final carry value of 1. If so, it prefixes a '1' to the result string "res".
+
+Finally, the function returns the result string "res" as the total sum of the two binary numbers.

@@ -1,0 +1,7 @@
+This code defines a class called Solution with a method called `isPowerOfFour` that determines whether an integer number is a power of 4 or not. The method takes an integer `num` as input and returns a boolean value.
+
+The method first checks if the given number is greater than 0. If it is not greater than 0, then it cannot be a power of 4. If it is greater than 0, then it proceeds to the next step.
+
+The method then checks if the given number has only one bit set to 1, which is the characteristic property of power of 2. This is done using the `num & (num-1) == 0` condition. If it does not have only one bit set to 1, then it cannot be a power of 4.
+
+Finally, the method checks if the position of the set bit is even or odd. If it is even, then the given number is a power of 4; otherwise, it is not. This is done using the `len(bin(num)[3:]) % 2 == 0` condition, where `bin(num)[3:]` converts the given number into a binary string and skips the initial '0b' prefix, and `len()` returns the length of the binary string.

@@ -1,0 +1,9 @@
+This is a Python class named "Solution" that contains four methods that implement different algorithms to "wiggle sort" an input list of integers. The "wiggleSort" method takes the input list "nums" and modifies it in-place so that the final modified list satisfies the "wiggle sort" condition.
+
+The first method uses the sort method of the input list to sort it in ascending order and then alternates the highest and lowest values to satisfy the "wiggle sort" condition.
+
+The second method also sorts the input list in ascending order and then swaps the values at odd and even indices to satisfy the "wiggle sort" condition.
+
+The third method checks whether the current index is odd or even and swaps the adjacent values accordingly to satisfy the "wiggle sort" condition.
+
+The fourth method iterates through the input list and swaps adjacent values based on whether the current index is odd or even to satisfy the "wiggle sort" condition.

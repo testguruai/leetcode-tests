@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+054_Spiral_Matrix/test_054_Spiral_Matrix.py ..F                          [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_get_spiralOrder _____________________________
+
+    def test_get_spiralOrder():
+        s = Solution()
+        assert s.get_spiralOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 0, 2, 0, 2) == [1, 2, 3, 6, 9, 8, 7, 4, 5]
+        assert s.get_spiralOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1, 1, 1, 1) == [5]
+>       assert s.get_spiralOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 0, 1, 0, 1) == [1, 2, 4, 5]
+E       assert [1, 2, 5, 4] == [1, 2, 4, 5]
+E         At index 2 diff: 5 != 4
+E         Use -v to get more diff
+
+054_Spiral_Matrix/test_054_Spiral_Matrix.py:28: AssertionError
+=========================== short test summary info ============================
+FAILED 054_Spiral_Matrix/test_054_Spiral_Matrix.py::test_get_spiralOrder - as...
+========================= 1 failed, 2 passed in 0.02s ==========================

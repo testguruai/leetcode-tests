@@ -1,0 +1,11 @@
+This is a Python code for the "checkSubarraySum" function of the "Solution" class. The function takes in two arguments: "nums", a list of integers, and "k", an integer. 
+
+The purpose of the function is to check if there is a subarray within "nums" whose sum is a multiple of "k". If such a subarray exists, the function returns True, otherwise it returns False.
+
+To solve this problem, the function maintains a dictionary called "remainders" which stores the remainder of the prefix sum of nums till the current index, divided by "k". The dictionary initially contains a key-value pair of 0:0, to handle cases where the subarray sum is directly divisible by "k".
+
+The "pre_sum" variable accumulates the prefix sum of nums till the current index. For each index value and item in "nums", the function adds the item to "pre_sum", and calculates the remainder using the modulo operator. 
+
+Then, the function checks if this remainder already exists in the "remainders" dictionary. If it does not exist, the function adds a key-value pair (remainder:index+1) to the dictionary. If it does exist, then the function checks if the previous occurrence of this remainder is not in the same index as the current one. If this condition is satisfied, it means that there is a subarray whose sum is divisible by "k", and the function returns True.
+
+Finally, if the function has checked all possible subarrays and has not found any whose sum is divisible by "k", it returns False.

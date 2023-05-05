@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+401_Binary_Watch/test_401_Binary_Watch.py F                              [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_readBinaryWatch _____________________________
+
+    def test_readBinaryWatch():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+401_Binary_Watch/test_401_Binary_Watch.py:3: NameError
+=========================== short test summary info ============================
+FAILED 401_Binary_Watch/test_401_Binary_Watch.py::test_readBinaryWatch - Name...
+============================== 1 failed in 0.01s ===============================

@@ -1,0 +1,58 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+027_Remove_Element/test_027_Remove_Element.py FFFFFF                     [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_empty_list ________________________________
+
+    def test_empty_list():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+027_Remove_Element/test_027_Remove_Element.py:4: NameError
+___________________________ test_remove_all_elements ___________________________
+
+    def test_remove_all_elements():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+027_Remove_Element/test_027_Remove_Element.py:8: NameError
+___________________________ test_remove_no_elements ____________________________
+
+    def test_remove_no_elements():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+027_Remove_Element/test_027_Remove_Element.py:12: NameError
+__________________________ test_remove_some_elements ___________________________
+
+    def test_remove_some_elements():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+027_Remove_Element/test_027_Remove_Element.py:16: NameError
+_________________________ test_remove_just_one_element _________________________
+
+    def test_remove_just_one_element():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+027_Remove_Element/test_027_Remove_Element.py:20: NameError
+____________________ test_remove_with_multiple_occurrences _____________________
+
+    def test_remove_with_multiple_occurrences():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+027_Remove_Element/test_027_Remove_Element.py:24: NameError
+=========================== short test summary info ============================
+FAILED 027_Remove_Element/test_027_Remove_Element.py::test_empty_list - NameE...
+FAILED 027_Remove_Element/test_027_Remove_Element.py::test_remove_all_elements
+FAILED 027_Remove_Element/test_027_Remove_Element.py::test_remove_no_elements
+FAILED 027_Remove_Element/test_027_Remove_Element.py::test_remove_some_elements
+FAILED 027_Remove_Element/test_027_Remove_Element.py::test_remove_just_one_element
+FAILED 027_Remove_Element/test_027_Remove_Element.py::test_remove_with_multiple_occurrences
+============================== 6 failed in 0.02s ===============================

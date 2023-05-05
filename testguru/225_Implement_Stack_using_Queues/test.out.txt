@@ -1,0 +1,43 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+225_Implement_Stack_using_Queues/test_225_Implement_Stack_using_Queues.py F [ 25%]
+FFF                                                                      [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_push ___________________________________
+
+    def test_push():
+>       s = Stack()
+E       NameError: name 'Stack' is not defined
+
+225_Implement_Stack_using_Queues/test_225_Implement_Stack_using_Queues.py:4: NameError
+___________________________________ test_pop ___________________________________
+
+    def test_pop():
+>       s = Stack()
+E       NameError: name 'Stack' is not defined
+
+225_Implement_Stack_using_Queues/test_225_Implement_Stack_using_Queues.py:21: NameError
+___________________________________ test_top ___________________________________
+
+    def test_top():
+>       s = Stack()
+E       NameError: name 'Stack' is not defined
+
+225_Implement_Stack_using_Queues/test_225_Implement_Stack_using_Queues.py:42: NameError
+__________________________________ test_empty __________________________________
+
+    def test_empty():
+>       s = Stack()
+E       NameError: name 'Stack' is not defined
+
+225_Implement_Stack_using_Queues/test_225_Implement_Stack_using_Queues.py:59: NameError
+=========================== short test summary info ============================
+FAILED 225_Implement_Stack_using_Queues/test_225_Implement_Stack_using_Queues.py::test_push
+FAILED 225_Implement_Stack_using_Queues/test_225_Implement_Stack_using_Queues.py::test_pop
+FAILED 225_Implement_Stack_using_Queues/test_225_Implement_Stack_using_Queues.py::test_top
+FAILED 225_Implement_Stack_using_Queues/test_225_Implement_Stack_using_Queues.py::test_empty
+============================== 4 failed in 0.02s ===============================

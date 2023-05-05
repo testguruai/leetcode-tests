@@ -1,0 +1,9 @@
+This is a Python class that implements a recursive and iterative method to search a binary search tree (BST) for a node with a given value.
+
+The class has a method called "searchBST" that takes two arguments: "root", which is a TreeNode representing the root of the BST, and "val", which is the value to search for in the tree. The method returns a TreeNode if a node with the given value is found in the tree, or None if no node with the given value is found.
+
+The class defines two versions of the "searchBST" method:
+
+1. The first version is a recursive implementation. It starts by checking if the root node is None; if it is, then it returns None. If the root node has the same value as the target value, it returns the root node. If the target value is smaller than the root value, it recursively calls the function on the left subtree. If the target value is bigger than the root value, it recursively calls the function on the right subtree.
+
+2. The second version is an iterative implementation. It uses a while loop to traverse the BST until it finds a node with the target value or until it reaches the end of the tree. If the current node has the target value, it returns the current node. If the target value is smaller than the current node value, it moves to the left subtree. If the target value is bigger than the current node value, it moves to the right subtree. If it reaches the end of the tree without finding the target value, it returns None.

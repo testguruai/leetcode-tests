@@ -1,0 +1,8 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+242_Valid_Anagram/test_242_Valid_Anagram.py .......                      [100%]
+
+============================== 7 passed in 0.01s ===============================

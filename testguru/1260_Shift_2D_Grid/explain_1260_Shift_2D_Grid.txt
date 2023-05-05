@@ -1,0 +1,17 @@
+This is a Python class that contains a single method `shiftGrid` that takes in a 2-dimensional list of integers (`grid`) and an integer (`k`) and returns another 2-dimensional list of integers `new_grid`.
+
+The objective of the `shiftGrid` method is to shift the elements of `grid` k positions to the right. If an element goes beyond the last column, then it should wrap around to the next row. If an element goes beyond the last row, then it should wrap around to the first row.
+
+Here's a step-by-step explanation of the `shiftGrid` method:
+
+1. Create a new empty 2-dimensional list `new_grid` that has the same dimensions as `grid`.
+2. Get the number of rows (`m`) and columns (`n`) in `grid`.
+3. Compute the actual number of positions `true_k` to shift by. If `k` is greater than `m * n` (the total number of elements in `grid`), then we only need to shift by `k % (m * n)` positions.
+4. Compute the number of rows (`move_i`) and columns (`move_j`) to move the elements by. To move `true_k` positions to the right, we need to move `move_i = true_k // n` rows down and `move_j = true_k % n` columns right.
+5. Iterate through the elements of `grid` using two nested for-loops.
+6. Calculate the new row and column for the current element based on the amount we need to shift it.
+7. If the column for the current element goes beyond the last column, then we need to move it to the next row (by adding 1 to `new_i`). Similarly, if the row for the current element goes beyond the last row, then we need to wrap it around to the first row (by using the modulus operator `%`).
+8. Copy the current element into the corresponding position of `new_grid`.
+9. Return `new_grid`.
+
+Note that the method uses integer division (`//`) and modulus (`%`) operators to compute the values of `move_i` and `new_i` respectively, ensuring that the values are integers.

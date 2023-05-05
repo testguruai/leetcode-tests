@@ -1,0 +1,9 @@
+This is a Python class that provides a solution for searching a matrix for a target value using the binary search algorithm. The class has a single method called `searchMatrix` that takes in two parameters: a matrix (a list of lists) and a target value. 
+
+The method first checks if the matrix is empty or not. If the matrix is empty, it returns False. If not, it gets the length of the matrix and stores it in `ls_row` and the length of the first row in `ls_col`. 
+
+In the first implementation of the `searchMatrix` method (commented out), the method then searches for the target value by first searching for the row that the target value could potentially fall into using a binary search. If it finds the row, it then performs another binary search within that row to find the target value. 
+
+In the second implementation of the `searchMatrix` method, the method uses a single binary search algorithm to search for the target value. It checks if the target value falls within the range of the matrix's minimum and maximum values. If it does not, it returns False. If it does, it sets `begin` to 0 and `end` to `ls_row * ls_col -1`, which is the index of the last element in the matrix. 
+
+The method then enters a while loop that continues while `begin` is less than or equal to `end`. In each iteration, it calculates the middle index using `(begin + end) / 2`, and then finds the corresponding row and column of this index by dividing by `ls_col` and taking the remainder respectively. It compares the value at this index to the target value, and either returns True if they are equal, sets `end` to `mid-1` if the value is greater than the target, or sets `begin` to `mid+1` if the value is less than the target. If the while loop finishes without finding the target value, the method returns False.

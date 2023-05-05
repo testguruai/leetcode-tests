@@ -1,0 +1,75 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 11 items
+
+461_Hamming_Distance/test_461_Hamming_Distance.py ..F.FF..FF.            [100%]
+
+=================================== FAILURES ===================================
+_______________ TestSolution.test_hammingDistance_large_numbers ________________
+
+self = <test_461_Hamming_Distance.TestSolution object at 0x7fb86fca8730>
+
+    def test_hammingDistance_large_numbers(self):
+        sol = Solution()
+>       assert sol.hammingDistance(123456, 654321) == 15
+E       assert 8 == 15
+E        +  where 8 = <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fca8c40>>(123456, 654321)
+E        +    where <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fca8c40>> = <solution.Solution object at 0x7fb86fca8c40>.hammingDistance
+
+461_Hamming_Distance/test_461_Hamming_Distance.py:15: AssertionError
+______________ TestSolution.test_hammingDistance_negative_numbers ______________
+
+self = <test_461_Hamming_Distance.TestSolution object at 0x7fb86fca8970>
+
+    def test_hammingDistance_negative_numbers(self):
+        sol = Solution()
+>       assert sol.hammingDistance(-1, -4) == 1
+E       assert 2 == 1
+E        +  where 2 = <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fcabd60>>(-1, -4)
+E        +    where <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fcabd60>> = <solution.Solution object at 0x7fb86fcabd60>.hammingDistance
+
+461_Hamming_Distance/test_461_Hamming_Distance.py:23: AssertionError
+____________ TestSolution.test_hammingDistance_one_negative_number _____________
+
+self = <test_461_Hamming_Distance.TestSolution object at 0x7fb86fca8a90>
+
+    def test_hammingDistance_one_negative_number(self):
+        sol = Solution()
+>       assert sol.hammingDistance(-1, 4) == 1
+E       assert 2 == 1
+E        +  where 2 = <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fcf3bb0>>(-1, 4)
+E        +    where <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fcf3bb0>> = <solution.Solution object at 0x7fb86fcf3bb0>.hammingDistance
+
+461_Hamming_Distance/test_461_Hamming_Distance.py:27: AssertionError
+_______________ TestSolution.test_hammingDistance_large_integers _______________
+
+self = <test_461_Hamming_Distance.TestSolution object at 0x7fb86fca8df0>
+
+    def test_hammingDistance_large_integers(self):
+        sol = Solution()
+>       assert sol.hammingDistance(1234567890, 987654321) == 18
+E       assert 15 == 18
+E        +  where 15 = <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fcabaf0>>(1234567890, 987654321)
+E        +    where <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fcabaf0>> = <solution.Solution object at 0x7fb86fcabaf0>.hammingDistance
+
+461_Hamming_Distance/test_461_Hamming_Distance.py:39: AssertionError
+_______________ TestSolution.test_hammingDistance_mixed_integers _______________
+
+self = <test_461_Hamming_Distance.TestSolution object at 0x7fb86fca8f10>
+
+    def test_hammingDistance_mixed_integers(self):
+        sol = Solution()
+>       assert sol.hammingDistance(1234567890, -987654321) == 19
+E       assert 15 == 19
+E        +  where 15 = <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fcf31c0>>(1234567890, -987654321)
+E        +    where <bound method Solution.hammingDistance of <solution.Solution object at 0x7fb86fcf31c0>> = <solution.Solution object at 0x7fb86fcf31c0>.hammingDistance
+
+461_Hamming_Distance/test_461_Hamming_Distance.py:43: AssertionError
+=========================== short test summary info ============================
+FAILED 461_Hamming_Distance/test_461_Hamming_Distance.py::TestSolution::test_hammingDistance_large_numbers
+FAILED 461_Hamming_Distance/test_461_Hamming_Distance.py::TestSolution::test_hammingDistance_negative_numbers
+FAILED 461_Hamming_Distance/test_461_Hamming_Distance.py::TestSolution::test_hammingDistance_one_negative_number
+FAILED 461_Hamming_Distance/test_461_Hamming_Distance.py::TestSolution::test_hammingDistance_large_integers
+FAILED 461_Hamming_Distance/test_461_Hamming_Distance.py::TestSolution::test_hammingDistance_mixed_integers
+========================= 5 failed, 6 passed in 0.03s ==========================

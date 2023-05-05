@@ -1,0 +1,7 @@
+This is a Python implementation of a TimeMap. A TimeMap is a data structure that stores key-value pairs with timestamps. The "set" method sets the value of a key at a specific timestamp, while the "get" method returns the value of the key at the latest timestamp that is less than or equal to a given timestamp.
+
+The implementation of the TimeMap uses a defaultdict to store the key-value pairs. The defaultdict is a dictionary that automatically creates a list for a new key if it doesn't already exist. 
+
+The "set" method takes in a key, value, and timestamp and appends a tuple of (value, timestamp) to the list of values for that key in the defaultdict.
+
+The "get" method takes in a key and a timestamp and gets the list of values for that key from the defaultdict. It initializes the variable "res" to an empty string. It then performs a binary search on the list of values to find the latest timestamp that is less than or equal to the given timestamp. It updates the "res" variable to be the value at that timestamp. Finally, it returns the "res" variable. If there are no values for the given key, the method returns an empty string.

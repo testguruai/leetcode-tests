@@ -1,0 +1,41 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+732_My_Calendar_III/test_732_My_Calendar_III.py FFF                      [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_book ___________________________________
+
+    def test_book():
+      c = MyCalendarThree()
+>     assert c.book(10, 20) == 1
+E     assert None == 1
+E      +  where None = <bound method MyCalendarThree.book of <solution.MyCalendarThree object at 0x7f3f7abdf610>>(10, 20)
+E      +    where <bound method MyCalendarThree.book of <solution.MyCalendarThree object at 0x7f3f7abdf610>> = <solution.MyCalendarThree object at 0x7f3f7abdf610>.book
+
+732_My_Calendar_III/test_732_My_Calendar_III.py:7: AssertionError
+______________________________ test_book_invalid _______________________________
+
+    def test_book_invalid():
+      c = MyCalendarThree()
+>     with pytest.raises(TypeError):
+E     Failed: DID NOT RAISE <class 'TypeError'>
+
+732_My_Calendar_III/test_732_My_Calendar_III.py:16: Failed
+____________________________ test_duplicate_events _____________________________
+
+    def test_duplicate_events():
+      c = MyCalendarThree()
+>     assert c.book(10, 20) == 1
+E     assert None == 1
+E      +  where None = <bound method MyCalendarThree.book of <solution.MyCalendarThree object at 0x7f3f7aa340d0>>(10, 20)
+E      +    where <bound method MyCalendarThree.book of <solution.MyCalendarThree object at 0x7f3f7aa340d0>> = <solution.MyCalendarThree object at 0x7f3f7aa340d0>.book
+
+732_My_Calendar_III/test_732_My_Calendar_III.py:24: AssertionError
+=========================== short test summary info ============================
+FAILED 732_My_Calendar_III/test_732_My_Calendar_III.py::test_book - assert No...
+FAILED 732_My_Calendar_III/test_732_My_Calendar_III.py::test_book_invalid - F...
+FAILED 732_My_Calendar_III/test_732_My_Calendar_III.py::test_duplicate_events
+============================== 3 failed in 0.02s ===============================

@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+__________________ ERROR collecting 015_3Sum/test_015_3Sum.py __________________
+015_3Sum/test_015_3Sum.py:18: in <module>
+    test_threeSum()
+015_3Sum/test_015_3Sum.py:4: in test_threeSum
+    s = Solution()
+E   NameError: name 'Solution' is not defined
+=========================== short test summary info ============================
+ERROR 015_3Sum/test_015_3Sum.py - NameError: name 'Solution' is not defined
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

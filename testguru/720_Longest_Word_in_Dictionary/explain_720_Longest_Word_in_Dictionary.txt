@@ -1,0 +1,17 @@
+This is a Python class called Solution, which has a method called longestWord that takes a list of words as an argument and returns the longest word in the list that can be constructed one letter at a time by adding letters to the end of other words in the list. 
+
+The code has three versions of the longestWord method, the first two are commented out and the third is active. 
+
+The first implementation of longestWord sorts the list of words, creates an empty set containing only the empty string, and initializes the variable longest_word to an empty string. 
+
+Then, it iterates over each word in the sorted list and checks if the word minus its last letter is in the words_set. If it is, the word is added to the words_set and if the length of the current word is longer than the length of the longest_word, it is assigned to longest_word. Finally, the longest_word is returned.
+
+The second implementation initializes a variable ans to an empty string and creates a set from the list of words. It then iterates over each word in the sorted list. For each word, it checks if its length is greater than the length of ans or if they’re equal, and the current word is lexicographically less than ans. If it is, then for all prefixes of the current word, the prefix is checked against the wordset created from the list of words. If all prefixes are found in the wordset, ans is updated to the current word. Finally, it returns ans.
+
+The third implementation uses a Trie data structure, which is a tree-like data structure used for efficient retrieval of keys. The method first creates a Trie data structure by defining a Trie function using Python’s collections library. It also defines a variable END to mark the end of a word in the Trie. 
+
+Then, it iterates over the list of words and adds each word to the Trie as a key, with its value assigned as the index of the word in the list. 
+
+Next, it initializes a stack with the values of the Trie and a variable ans to an empty string. While the stack is not empty, it pops a value from the stack and checks if it contains the END marker. If it does, it retrieves the word associated with the END marker from the original list of words. If this word is longer than ans or of equal length and lexicographically smaller than ans, ans is updated to this word. The function then appends to the stack the values in the Trie dictionary that are not the END marker. 
+
+Finally, the function returns the value of ans.

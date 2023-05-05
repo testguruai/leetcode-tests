@@ -1,0 +1,14 @@
+This Python code defines a class solution that contains a function named "isNumber". This function takes a string argument "s" and returns a boolean value indicating whether the string represents a valid number. 
+
+The function works by first removing any leading and trailing spaces from the input string, and then analyzing the string character by character to determine if it represents a number. 
+
+The logic of the function is as follows: 
+
+- If the length of the input string is 0, return False.
+- If the first character of the input string is a sign (+ or -), skip it and move to the next character.
+- Check if the current character is a digit. If it is, move to the next character and set the variable "isNumeric" to True.
+- If the current character is a dot (.), skip it and check the next character(s) to see if they are digits. If they are, move to the next character(s) and set "isNumeric" to True.
+- If the current character is an "e", check if "isNumeric" is True (to ensure there is a number before the exponent). If it is, skip the "e" and check for a sign (+ or -) and then for digits in the subsequent characters. Set "isNumeric" to True if at least one digit is found.
+- If all characters have been processed and "isNumeric" is still True, return True. Otherwise, return False.
+
+The print statement at the end of the function is for debugging purposes only and can be ignored.

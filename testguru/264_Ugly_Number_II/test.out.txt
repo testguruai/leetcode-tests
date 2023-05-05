@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+264_Ugly_Number_II/test_264_Ugly_Number_II.py F                          [100%]
+
+=================================== FAILURES ===================================
+______________________ TestSolution.test_n_th_ugly_number ______________________
+
+self = <test_264_Ugly_Number_II.TestSolution object at 0x7f4a78b602e0>
+
+    def test_n_th_ugly_number(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+264_Ugly_Number_II/test_264_Ugly_Number_II.py:5: NameError
+=========================== short test summary info ============================
+FAILED 264_Ugly_Number_II/test_264_Ugly_Number_II.py::TestSolution::test_n_th_ugly_number
+============================== 1 failed in 0.01s ===============================

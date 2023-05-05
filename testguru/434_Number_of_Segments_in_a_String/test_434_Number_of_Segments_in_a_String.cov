@@ -1,0 +1,6 @@
+Name                                                                            Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------------------------
+434_Number_of_Segments_in_a_String/test_434_Number_of_Segments_in_a_String.py      16      3    81%   19-22
+/data/ethan/leetcode-master/python/434_Number_of_Segments_in_a_String.py            8      0   100%
+-------------------------------------------------------------------------------------------------------------
+TOTAL                                                                              24      3    88%

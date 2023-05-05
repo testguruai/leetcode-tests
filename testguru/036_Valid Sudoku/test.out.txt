@@ -1,0 +1,88 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+036_Valid Sudoku/test_036_Valid Sudoku.py FF.                            [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_valid_sudoku _______________________________
+
+    def test_valid_sudoku():
+        s = Solution()
+        board = [
+                  ["5","3",".",".","7",".",".",".","."],
+                  ["6",".",".","1","9","5",".",".","."],
+                  [".","9","8",".",".",".",".","6","."],
+                  ["8",".",".",".","6",".",".",".","3"],
+                  ["4",".",".","8",".","3",".",".","1"],
+                  ["7",".",".",".","2",".",".",".","6"],
+                  [".","6",".",".",".",".","2","8","."],
+                  [".",".",".","4","1","9",".",".","5"],
+                  [".",".",".",".","8",".",".","7","9"]
+                ]
+>       assert s.isValidSudoku(board) == True
+
+036_Valid Sudoku/test_036_Valid Sudoku.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f6efc744550>
+board = [['5', '3', '.', '.', '7', '.', ...], ['6', '.', '.', '1', '9', '5', ...], ['.', '9', '8', '.', '.', '.', ...], ['8', '.', '.', '.', '6', '.', ...], ['4', '.', '.', '8', '.', '3', ...], ['7', '.', '.', '.', '2', '.', ...], ...]
+
+    def isValidSudoku(self, board):
+        vset = [0] * 9
+        hset = [0] * 9
+        bset = [0] * 9
+        for i in range(9):
+            for j in range(9):
+                curr = board[i][j]
+                if curr != '.':
+                    index = 1 << (ord(curr) - ord('0'))
+                    if (hset[i] & index) > 0 or\
+                                    (vset[j] & index) > 0 or\
+>                                   (bset[(i / 3) * 3 + j / 3] & index) > 0:
+E                                   TypeError: list indices must be integers or slices, not float
+
+036_Valid Sudoku/solution.py:19: TypeError
+_____________________________ test_invalid_sudoku ______________________________
+
+    def test_invalid_sudoku():
+        s = Solution()
+        board = [
+                  ["5","3",".",".","7","7",".",".","."],
+                  ["6",".",".","1","9","5",".",".","."],
+                  [".","9","8",".",".",".",".","6","."],
+                  ["8",".",".",".","6",".",".",".","3"],
+                  ["4",".",".","8",".","3",".",".","1"],
+                  ["7",".",".",".","2",".",".",".","6"],
+                  [".","6",".",".",".",".","2","8","."],
+                  [".",".",".","4","1","9",".",".","5"],
+                  [".",".",".",".","8",".",".","7","9"]
+                ]
+>       assert s.isValidSudoku(board) == False
+
+036_Valid Sudoku/test_036_Valid Sudoku.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f6efc583b80>
+board = [['5', '3', '.', '.', '7', '7', ...], ['6', '.', '.', '1', '9', '5', ...], ['.', '9', '8', '.', '.', '.', ...], ['8', '.', '.', '.', '6', '.', ...], ['4', '.', '.', '8', '.', '3', ...], ['7', '.', '.', '.', '2', '.', ...], ...]
+
+    def isValidSudoku(self, board):
+        vset = [0] * 9
+        hset = [0] * 9
+        bset = [0] * 9
+        for i in range(9):
+            for j in range(9):
+                curr = board[i][j]
+                if curr != '.':
+                    index = 1 << (ord(curr) - ord('0'))
+                    if (hset[i] & index) > 0 or\
+                                    (vset[j] & index) > 0 or\
+>                                   (bset[(i / 3) * 3 + j / 3] & index) > 0:
+E                                   TypeError: list indices must be integers or slices, not float
+
+036_Valid Sudoku/solution.py:19: TypeError
+=========================== short test summary info ============================
+FAILED 036_Valid Sudoku/test_036_Valid Sudoku.py::test_valid_sudoku - TypeErr...
+FAILED 036_Valid Sudoku/test_036_Valid Sudoku.py::test_invalid_sudoku - TypeE...
+========================= 2 failed, 1 passed in 0.02s ==========================

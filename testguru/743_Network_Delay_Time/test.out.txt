@@ -1,0 +1,50 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+743_Network_Delay_Time/test_743_Network_Delay_Time.py FFFF               [100%]
+
+=================================== FAILURES ===================================
+___________________ TestSolution.test_network_delay_time_dfs ___________________
+
+self = <test_743_Network_Delay_Time.TestSolution object at 0x7f07deb483a0>
+
+    def test_network_delay_time_dfs(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+743_Network_Delay_Time/test_743_Network_Delay_Time.py:7: NameError
+________________ TestSolution.test_network_delay_time_dijkstra _________________
+
+self = <test_743_Network_Delay_Time.TestSolution object at 0x7f07deb48490>
+
+    def test_network_delay_time_dijkstra(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+743_Network_Delay_Time/test_743_Network_Delay_Time.py:15: NameError
+______________ TestSolution.test_network_delay_time_invalid_input ______________
+
+self = <test_743_Network_Delay_Time.TestSolution object at 0x7f07deb485b0>
+
+    def test_network_delay_time_invalid_input(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+743_Network_Delay_Time/test_743_Network_Delay_Time.py:23: NameError
+_______________ TestSolution.test_network_delay_time_large_input _______________
+
+self = <test_743_Network_Delay_Time.TestSolution object at 0x7f07deb486d0>
+
+    def test_network_delay_time_large_input(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+743_Network_Delay_Time/test_743_Network_Delay_Time.py:31: NameError
+=========================== short test summary info ============================
+FAILED 743_Network_Delay_Time/test_743_Network_Delay_Time.py::TestSolution::test_network_delay_time_dfs
+FAILED 743_Network_Delay_Time/test_743_Network_Delay_Time.py::TestSolution::test_network_delay_time_dijkstra
+FAILED 743_Network_Delay_Time/test_743_Network_Delay_Time.py::TestSolution::test_network_delay_time_invalid_input
+FAILED 743_Network_Delay_Time/test_743_Network_Delay_Time.py::TestSolution::test_network_delay_time_large_input
+============================== 4 failed in 0.02s ===============================

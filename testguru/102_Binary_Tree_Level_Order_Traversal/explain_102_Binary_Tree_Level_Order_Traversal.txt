@@ -1,0 +1,5 @@
+This is a Python implementation of a function to perform a level-order traversal of a binary tree. The tree is defined using a TreeNode class containing a value, and left and right child nodes. 
+
+The first implementation of the levelOrder function is a recursive solution. It takes in a root node and uses another helper function "get_level" to traverse through each level of the tree and append the values at each level to a results list. The "get_level" function is also recursive and traverses the tree from left to right appending values as it goes.
+
+The second implementation of the levelOrder function is a slightly more optimal solution. It uses a queue data structure to traverse the tree in a breadth-first order. The function starts by initializing a queue with the root node. It then iterates through level by level, appending each child node of the current level to a record list. Once it has finished adding all of the child nodes for the current level, it appends the record to the queue and moves on to the next level. Finally, it returns a list of lists containing the values of each level in the correct order.

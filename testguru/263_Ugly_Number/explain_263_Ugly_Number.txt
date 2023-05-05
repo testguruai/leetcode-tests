@@ -1,0 +1,5 @@
+This is a python class named `Solution` which has a method `isUgly` that takes an integer `num` and returns `True` if `num` is an ugly number, i.e. a positive number whose prime factors only include `2`, `3` or `5`, and `False` otherwise. 
+
+There are two implementations provided for the method `isUgly`. The commented out implementation uses multiple while loops to check if `num` is divisible by `2`, `3` and `5` until `num` becomes `1` or a divisor other than `2`, `3` and `5` is found (making `num` not an ugly number). The other implementation loops through a list of `divisors` (2, 3, and 5), and checks if `num` is divisible by each of them using while loop. Finally, it checks if `num` is equal to `1` (i.e. it is an ugly number) or not.
+
+The code, when run, creates an object of the `Solution` class, calls the method `isUgly` with a very large negative integer, `-2147483648`, and prints the result (which in this case is `False`).

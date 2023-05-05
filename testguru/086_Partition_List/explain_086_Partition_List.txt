@@ -1,0 +1,15 @@
+This code defines a solution class with a function partition. The partition function takes a linked list(head) and an integer x as inputs and returns the linked list with all nodes with values less than x moved to the beginning of the list, while the rest are left in the same order. 
+
+Inside the function, it first checks if the head node is None and returns None in that case. The function then initializes three variables less, lesshead, last with None value, and pos is assigned the head value.
+
+A while loop is used to iterate through the linked list. 
+
+In the loop,if the value of the current node(pos) is less than x, the code checks if the lesshead pointer is None, if it is None, it sets the value of the current position(pos) as lesshead else it sets the next node(less.next) as the current position(pos).
+
+ The less pointer is then assigned the current position(pos), if the head is equal to the current position, it sets the last pointer value to head = pos.next, else it sets the next value of last to the next value of the current position. If the value of the current node is greater than or equal to x, last is simply set to pos.
+
+The pos pointer is then set to the next value and the loop continues until pos is equal to None.
+
+The function then checks if any node has been found with a value less than x. If it has, the pointer less.next is set to head, otherwise, it sets lesshead value to the head.
+
+Finally, it returns the lesshead value.

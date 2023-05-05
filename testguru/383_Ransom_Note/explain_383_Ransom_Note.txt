@@ -1,0 +1,9 @@
+This is a python program in the form of a class named "Solution" with a method named "canConstruct". The method takes two arguments 'ransomNote' and 'magazine'. The aim of the method is to check whether the 'ransomNote' can be constructed using the characters in the 'magazine'. If the 'ransomNote' can be constructed using the characters present in the 'magazine', then the method returns True, otherwise, it returns False.
+
+In order to check whether the 'ransomNote' can be constructed or not, the program uses a dictionary named "letter_map". This dictionary keeps count of the characters present in the 'magazine'. The 'for' loop is used to iterate through every character in the 'magazine' and to update the count of that character in the 'letter_map' dictionary using the 'get' method of the dictionary.
+
+After the count of each character is updated in the 'letter_map' dictionary, the program again loops through every character in the 'ransomNote'. For each character in the 'ransomNote', the program subtracts the count of that character from the 'letter_map' dictionary using the 'get' method again. If the count of a particular character in the 'letter_map' dictionary becomes negative, then the program returns False as the character required to construct the 'ransomNote' is not available. 
+
+If the program loops through all the characters in the 'ransomNote' without encountering any negative count, it means that the 'ransomNote' can be constructed using the characters present in the 'magazine'. Therefore, the method returns True. 
+
+There is one more implementation of the same function that is commented out. This implementation uses the Counter method that is part of the collections module in python. It works by subtracting the character counters of the 'ransomNote' and 'magazine' strings, and if the result is an empty dictionary then it returns True, otherwise, it returns False.

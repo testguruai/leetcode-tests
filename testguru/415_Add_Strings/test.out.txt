@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+415_Add_Strings/test_415_Add_Strings.py F                                [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_addStrings ________________________________
+
+    def test_addStrings():
+        # test case 1
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+415_Add_Strings/test_415_Add_Strings.py:5: NameError
+=========================== short test summary info ============================
+FAILED 415_Add_Strings/test_415_Add_Strings.py::test_addStrings - NameError: ...
+============================== 1 failed in 0.01s ===============================

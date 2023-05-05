@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+680_Valid_Palindrome_II/test_680_Valid_Palindrome_II.py F                [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_validPalindrome _____________________________
+
+    def test_validPalindrome():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+680_Valid_Palindrome_II/test_680_Valid_Palindrome_II.py:4: NameError
+=========================== short test summary info ============================
+FAILED 680_Valid_Palindrome_II/test_680_Valid_Palindrome_II.py::test_validPalindrome
+============================== 1 failed in 0.01s ===============================

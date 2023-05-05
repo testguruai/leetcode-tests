@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 1304_Find_N_Unique_Integers_Sum_up_to_Zero/test_1304_Find_N_Unique_Integers_Sum_up_to_Zero.py _
+1304_Find_N_Unique_Integers_Sum_up_to_Zero/test_1304_Find_N_Unique_Integers_Sum_up_to_Zero.py:3: in <module>
+    from solution import Solution
+1304_Find_N_Unique_Integers_Sum_up_to_Zero/solution.py:1: in <module>
+    class Solution:
+1304_Find_N_Unique_Integers_Sum_up_to_Zero/solution.py:2: in Solution
+    def sumZero(self, n: int) -> List[int]:
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR 1304_Find_N_Unique_Integers_Sum_up_to_Zero/test_1304_Find_N_Unique_Integers_Sum_up_to_Zero.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

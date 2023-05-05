@@ -1,0 +1,9 @@
+This is a Python class `Solution` that has two methods: `generatePalindromes` and `permute`. 
+
+The `generatePalindromes` method takes a string `s` as input and returns a list of all possible palindromes that can be formed using the characters in `s`. 
+
+The function first creates a dictionary `dic` that stores the count of each character in the input string `s`. It then checks if there are more than one characters with odd count in the dictionary. If there are, it returns an empty list since it is impossible to form a palindrome with more than one character with odd count.
+
+Next, it generates all possible combinations of half of the palindrome by permuting the characters in the even count characters in the dictionary. It then merges the two halves along with the middle character (if there is any) to form all possible palindromes.
+
+The `permute` method is a helper method that is used to permute the characters in the even count characters to generate the possible half of the palindrome. It uses a recursive approach to generate all possible permutations of the characters in the input list `num`. The resulting permutations are stored in the list `res`.

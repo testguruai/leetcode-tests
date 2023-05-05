@@ -1,0 +1,9 @@
+This is a python code for finding all the possible paths in a binary tree starting from the root node to any leaf node. 
+
+The function binaryTreePaths takes in a binary tree root node as input and returns a list of strings (path from root to leaf node).
+
+The function first checks if the root node is None, if so, it returns an empty list. Else, it creates an empty list called 'paths' and calls the helper function 'get_path' passing the 'paths' list, an empty list and the root node.
+
+The get_path function recursively traverses the binary tree using Depth-First-Search and stores the values of each traversed node in the 'path' list. When it reaches a leaf node, the 'path' list is appended to the 'result' list (which is passed as input to get_path).
+
+Finally, the 'result' list is converted to a list of strings by joining the elements in each list with an arrow '->' and returned.

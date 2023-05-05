@@ -1,0 +1,9 @@
+This is a Python class that contains a method to check if a given integer is a power of 3.
+
+The method is named `isPowerOfThree` and takes an integer `n` as its parameter.
+
+The commented out code block above the method appears to be an alternate implementation of the method using logarithmic calculations. However, it is not currently being used in the class.
+
+The active implementation uses a pre-calculated maximum value of 3 raised to the power of 19 (i.e. 3^19), which is stored in the variable `max3pow`. If the given integer `n` is not positive or exceeds this maximum value, the method returns False.
+
+If `n` is a valid input value, the method checks if `max3pow` is divisible by `n`. If it is, then `n` is a power of 3 and the method returns True. Otherwise, `n` is not a power of 3 and the method returns False.

@@ -1,0 +1,58 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 9 items
+
+110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py FFFFFF...      [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_solution_balanced_tree __________________________
+
+    def test_solution_balanced_tree():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py:28: NameError
+________________________ test_solution_unbalanced_tree _________________________
+
+    def test_solution_unbalanced_tree():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py:32: NameError
+___________________________ test_solution_empty_tree ___________________________
+
+    def test_solution_empty_tree():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py:37: NameError
+________________________ test_solution_single_node_tree ________________________
+
+    def test_solution_single_node_tree():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py:41: NameError
+_________________________ test_solution_two_node_tree __________________________
+
+    def test_solution_two_node_tree():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py:46: NameError
+____________________ test_solution_two_node_unbalanced_tree ____________________
+
+    def test_solution_two_node_unbalanced_tree():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py:52: NameError
+=========================== short test summary info ============================
+FAILED 110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py::test_solution_balanced_tree
+FAILED 110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py::test_solution_unbalanced_tree
+FAILED 110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py::test_solution_empty_tree
+FAILED 110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py::test_solution_single_node_tree
+FAILED 110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py::test_solution_two_node_tree
+FAILED 110_Balanced_Binary_Tree/test_110_Balanced_Binary_Tree.py::test_solution_two_node_unbalanced_tree
+========================= 6 failed, 3 passed in 0.02s ==========================

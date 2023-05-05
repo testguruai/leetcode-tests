@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+153_Find_Minimum_in_Rotated_Sorted_Array/test_153_Find_Minimum_in_Rotated_Sorted_Array.py F [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_findMin _________________________________
+
+    def test_findMin():
+        sol = Solution()
+    
+>       assert sol.findMin([4, 5, 6, 7, 0, 1, 2]) == 0
+
+153_Find_Minimum_in_Rotated_Sorted_Array/test_153_Find_Minimum_in_Rotated_Sorted_Array.py:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fc3c8998400>
+nums = [4, 5, 6, 7, 0, 1, ...]
+
+    def findMin(self, nums):
+        # A[l] > A[r]
+        l, r = 0, len(nums) - 1
+        while l < r and nums[l] >= nums[r]:
+            mid = (l + r) / 2
+>           if nums[mid] > nums[r]:
+E           TypeError: list indices must be integers or slices, not float
+
+153_Find_Minimum_in_Rotated_Sorted_Array/solution.py:32: TypeError
+=========================== short test summary info ============================
+FAILED 153_Find_Minimum_in_Rotated_Sorted_Array/test_153_Find_Minimum_in_Rotated_Sorted_Array.py::test_findMin
+============================== 1 failed in 0.01s ===============================

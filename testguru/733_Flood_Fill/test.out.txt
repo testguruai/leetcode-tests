@@ -1,0 +1,40 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+733_Flood_Fill/test_733_Flood_Fill.py FFF                                [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_floodFill_dfs ______________________________
+
+image = [[1, 1, 1], [1, 1, 0], [1, 0, 1]]
+
+    def test_floodFill_dfs(image):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+733_Flood_Fill/test_733_Flood_Fill.py:8: NameError
+________________________ test_floodFill_dfs_same_color _________________________
+
+image = [[1, 1, 1], [1, 1, 0], [1, 0, 1]]
+
+    def test_floodFill_dfs_same_color(image):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+733_Flood_Fill/test_733_Flood_Fill.py:12: NameError
+______________________________ test_floodFill_bfs ______________________________
+
+image = [[1, 1, 1], [1, 1, 0], [1, 0, 1]]
+
+    def test_floodFill_bfs(image):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+733_Flood_Fill/test_733_Flood_Fill.py:16: NameError
+=========================== short test summary info ============================
+FAILED 733_Flood_Fill/test_733_Flood_Fill.py::test_floodFill_dfs - NameError:...
+FAILED 733_Flood_Fill/test_733_Flood_Fill.py::test_floodFill_dfs_same_color
+FAILED 733_Flood_Fill/test_733_Flood_Fill.py::test_floodFill_bfs - NameError:...
+============================== 3 failed in 0.01s ===============================

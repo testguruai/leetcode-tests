@@ -1,0 +1,13 @@
+This code is an implementation of the Trie data structure using Python as the programming language. It defines two classes - TrieNode and Trie, with various methods to insert words, search for prefixes and search for exact matches in the Trie.
+
+The TrieNode class represents a node in the trie and contains a links list (representing the edges in the Trie) and a boolean flag 'isEnd' to indicate if the node represents the end of a valid word.
+
+The Trie class represents a Trie data structure and contains a root node of the Trie. It has methods to insert words into the Trie, search for prefixes and search for exact matches in the Trie.
+
+The insert method takes a string word as input and inserts it into the Trie by traversing the Trie starting from the root node and adding new nodes as necessary.
+
+The searchPrefix method takes a prefix string as input and returns the node in the Trie that represents the end of the prefix.
+
+The search method takes a word as input and checks if it exists in the Trie by checking if the node representing the end of the word is marked as 'isEnd'.
+
+The startsWith method takes a prefix string as input and checks if any word in the Trie starts with the prefix by checking if the node representing the end of the prefix exists in the Trie.

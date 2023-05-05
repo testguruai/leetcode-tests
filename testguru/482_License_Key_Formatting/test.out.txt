@@ -1,0 +1,43 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+482_License_Key_Formatting/test_482_License_Key_Formatting.py F          [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_licenseKeyFormatting ___________________________
+
+    def test_licenseKeyFormatting():
+        solution = Solution()
+    
+        # Test case where S is empty string
+        assert solution.licenseKeyFormatting("", 4) == ""
+    
+        # Test case where S contains only one character
+        assert solution.licenseKeyFormatting("a", 4) == "A"
+    
+        # Test case where S contains only hyphens
+        assert solution.licenseKeyFormatting("---", 4) == ""
+    
+        # Test case where K is larger than the length of S
+        assert solution.licenseKeyFormatting("abc", 4) == "ABC"
+    
+        # Test case where S contains only one block of characters
+        assert solution.licenseKeyFormatting("abcd", 4) == "ABCD"
+    
+        # Test case where S contains multiple blocks of characters and K is a factor of the length of S
+        assert solution.licenseKeyFormatting("ab-cd-ef", 2) == "AB-CD-EF"
+    
+        # Test case where S contains multiple blocks of characters and K is not a factor of the length of S
+>       assert solution.licenseKeyFormatting("abc-defg-hij", 4) == "ABCD-EFGH-IJ"
+E       AssertionError: assert 'AB-CDEF-GHIJ' == 'ABCD-EFGH-IJ'
+E         - ABCD-EFGH-IJ
+E         ?     -    -
+E         + AB-CDEF-GHIJ
+E         ?   +    +
+
+482_License_Key_Formatting/test_482_License_Key_Formatting.py:27: AssertionError
+=========================== short test summary info ============================
+FAILED 482_License_Key_Formatting/test_482_License_Key_Formatting.py::test_licenseKeyFormatting
+============================== 1 failed in 0.01s ===============================

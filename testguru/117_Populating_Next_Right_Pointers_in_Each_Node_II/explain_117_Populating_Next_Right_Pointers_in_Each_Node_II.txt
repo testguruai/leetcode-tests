@@ -1,0 +1,11 @@
+This is a Python implementation of a solution for the LeetCode problem "Populating Next Right Pointers in Each Node", which involves connecting each node in a binary tree to its next node at the same level in a "next" pointer.
+
+The code defines a class called Solution with a method called connect, which takes in a parameter called root that represents the root node of the binary tree.
+
+The first implementation of the connect method uses a level-by-level approach to traverse the binary tree and connect the nodes at each level using a "next" pointer. It starts by checking if the root node is None, and if so, returns nothing. Otherwise, it creates a list called nodes containing the root node, and enters a while loop that continues as long as nodes is not empty.
+
+Inside the loop, it initializes an empty list called next_step and a variable called last to None. Then, it iterates through each node in the nodes list and checks if last is not None (which means the previous node had a next node), and if so, sets last's next to the current node. It also checks if the current node has a left or right child, and if so, appends them to the next_step list. Finally, it sets last to the current node and replaces the nodes list with next_step.
+
+The second implementation of the connect method is more efficient and uses constant space, as it does not create any extra lists. Instead, it uses a dummyHead node to keep track of the next nodes at each level, and a variable called pre to keep track of the previous node in the current level. It has a while loop that continues as long as the root node is not None.
+
+Inside the loop, it checks if the root node has a left child, and if so, sets pre's next to the left child and updates pre to be the left child. It does the same for the right child if it exists. It then sets the root node to its next node using the "next" pointer. If root is None (which means it has reached the end of the current level), it resets pre to the dummyHead node, sets root to dummyHead's next node (which is the first node in the next level), and sets dummyHead's next to None (which initializes it for the next level).

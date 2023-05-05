@@ -1,0 +1,11 @@
+The code defines a class called Solution that contains a function called divide. This function takes two integers - dividend and divisor - as arguments and returns an integer result that represents the quotient of the division.
+
+The first block of code checks if the divisor is zero, in which case it returns the maximum integer value that can be represented. If the dividend is zero, the function returns zero. The variable isPositive is set to true if both dividend and divisor have the same sign (positive or negative). The absolute values of dividend and divisor are then stored in the variables m and n respectively.
+
+The next block of code uses the logarithm and exponential functions from the math library to compute the quotient and store it in the variable res. If isPositive is true, the function returns the minimum value between res and 2147483647 (the maximum integer value that can be represented). Otherwise, it returns the maximum value between 0 - res and -2147483648 (the minimum integer value that can be represented).
+
+The second block of code is commented out and is an alternative approach to computing the quotient using a while loop that performs repeated subtraction. The result is accumulated in the variable result, while the divisor and dividend are repeatedly shifted left bit-wise until the dividend is smaller than the divisor. 
+
+The function then returns either the maximum bound, minimum bound or the result depending on the sign of dividend and divisor. 
+
+The code at the bottom instantiates an object of the Solution class and calls the divide function with arguments 1 and 1. The result is then printed.

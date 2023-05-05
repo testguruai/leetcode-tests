@@ -1,0 +1,7 @@
+This is a Python class `Solution` with a method `sumZero`. The method takes in a single integer argument `n` and returns a list of integers. The `List[int]` in the method signature indicates that the method returns a list of integers.
+
+The method works by first initializing two variables `prefix_sum` and `res` to 0 and an empty list, respectively. It then loops through the range from 1 up to (but not including) `n`, appending each number to the `res` list and adding it to the `prefix_sum`.
+
+After the loop, the sum of all the numbers from 1 to n-1 is negated and appended to the `res` list. This ensures that the sum of all the numbers in the resulting list is 0.
+
+The method finally returns the `res` list. There is also a commented-out alternative implementation of the same method. This alternative implementation uses the `range` function to create a list `prefix` containing the numbers from 1 up to (but not including) `n`, and then adds the negation of the sum of this list to the end of it.

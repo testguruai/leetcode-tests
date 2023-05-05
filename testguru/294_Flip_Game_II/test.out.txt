@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+294_Flip_Game_II/test_294_Flip_Game_II.py F                              [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_Solution _________________________________
+
+    def test_Solution():
+        s = Solution()
+    
+        assert s.canWin(None) == False
+        assert s.canWin("") == False
+        assert s.canWin("++") == True
+        assert s.canWin("+") == False
+>       assert s.canWin("+++++") == True
+E       AssertionError: assert False == True
+E        +  where False = <bound method Solution.canWin of <solution.Solution object at 0x7fdc57a84430>>('+++++')
+E        +    where <bound method Solution.canWin of <solution.Solution object at 0x7fdc57a84430>> = <solution.Solution object at 0x7fdc57a84430>.canWin
+
+294_Flip_Game_II/test_294_Flip_Game_II.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED 294_Flip_Game_II/test_294_Flip_Game_II.py::test_Solution - AssertionEr...
+============================== 1 failed in 0.01s ===============================

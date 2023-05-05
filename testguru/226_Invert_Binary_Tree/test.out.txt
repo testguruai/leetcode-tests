@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+____ ERROR collecting 226_Invert_Binary_Tree/test_226_Invert_Binary_Tree.py ____
+ImportError while importing test module '/data/sandeep/leetcode-master/.verifaiws/226_Invert_Binary_Tree/test_226_Invert_Binary_Tree.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+226_Invert_Binary_Tree/test_226_Invert_Binary_Tree.py:2: in <module>
+    from .solution_file import Solution, TreeNode
+E   ImportError: attempted relative import with no known parent package
+=========================== short test summary info ============================
+ERROR 226_Invert_Binary_Tree/test_226_Invert_Binary_Tree.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

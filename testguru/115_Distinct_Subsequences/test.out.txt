@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+115_Distinct_Subsequences/test_115_Distinct_Subsequences.py F            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_numDistinct _______________________________
+
+    def test_numDistinct():
+        assert soluton.numDistinct("rabbbit", "rabbit") == 3
+        assert soluton.numDistinct("babgbag", "bag") == 5
+        assert soluton.numDistinct("ABCDE", "AEC") == 0
+        assert soluton.numDistinct("qqqqqq", "") == 1
+        assert soluton.numDistinct("", "") == 1
+        assert soluton.numDistinct("A", "A") == 1
+        assert soluton.numDistinct("AB", "A") == 1
+        assert soluton.numDistinct("AB", "B") == 1
+        assert soluton.numDistinct("ABB", "AB") == 2
+>       assert soluton.numDistinct("ABABA", "ABA") == 3
+E       AssertionError: assert 4 == 3
+E        +  where 4 = <bound method Solution.numDistinct of <solution.Solution object at 0x7fbc4973beb0>>('ABABA', 'ABA')
+E        +    where <bound method Solution.numDistinct of <solution.Solution object at 0x7fbc4973beb0>> = <solution.Solution object at 0x7fbc4973beb0>.numDistinct
+
+115_Distinct_Subsequences/test_115_Distinct_Subsequences.py:17: AssertionError
+=========================== short test summary info ============================
+FAILED 115_Distinct_Subsequences/test_115_Distinct_Subsequences.py::test_numDistinct
+============================== 1 failed in 0.01s ===============================

@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 1310_XOR_Queries_of_a_Subarray/test_1310_XOR_Queries_of_a_Subarray.py _
+1310_XOR_Queries_of_a_Subarray/test_1310_XOR_Queries_of_a_Subarray.py:3: in <module>
+    from solution import Solution
+1310_XOR_Queries_of_a_Subarray/solution.py:1: in <module>
+    class Solution:
+1310_XOR_Queries_of_a_Subarray/solution.py:2: in Solution
+    def xorQueries(self, arr: List[int], queries: List[List[int]]) -> List[int]:
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR 1310_XOR_Queries_of_a_Subarray/test_1310_XOR_Queries_of_a_Subarray.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

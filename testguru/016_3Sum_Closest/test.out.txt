@@ -1,0 +1,40 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+016_3Sum_Closest/test_016_3Sum_Closest.py F                              [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_threeSumClosest _____________________________
+
+    def test_threeSumClosest():
+        sol = Solution()
+    
+        assert sol.threeSumClosest([-1, 2, 1, -4], 1) == 2
+    
+        assert sol.threeSumClosest([0, 1, 2], 3) == 3
+    
+        assert sol.threeSumClosest([-1, 0, 1], 2) == 0
+    
+        assert sol.threeSumClosest([-1, 2, 1, -4], -1) == -1
+    
+        assert sol.threeSumClosest([1, 1, 1, 0], -100) == 2
+    
+>       assert sol.threeSumClosest([], 1) == None
+
+016_3Sum_Closest/test_016_3Sum_Closest.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fddf3d30490>, nums = [], target = 1
+
+    def threeSumClosest(self, nums, target):
+        ls = len(nums)
+        sort_nums = sorted(nums)
+>       res = nums[0] + nums[1] + nums[2]
+E       IndexError: list index out of range
+
+016_3Sum_Closest/solution.py:12: IndexError
+=========================== short test summary info ============================
+FAILED 016_3Sum_Closest/test_016_3Sum_Closest.py::test_threeSumClosest - Inde...
+============================== 1 failed in 0.01s ===============================

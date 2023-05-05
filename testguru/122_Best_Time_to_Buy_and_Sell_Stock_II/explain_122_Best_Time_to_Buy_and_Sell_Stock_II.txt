@@ -1,0 +1,7 @@
+This is a Python class named "Solution" that defines a method (or function) called "maxProfit". The method takes a single parameter named "prices", which is expected to be a list of integers.
+
+The purpose of this method is to calculate the maximum profit that can be earned by buying and selling stocks at specific prices. The method uses a mathematical formula that calculates the sum of the difference between each consecutive pair of prices, but only if the second price is greater than the first price.
+
+The method first defines a list comprehension that iterates over each pair of consecutive prices in the input list "prices". For each pair, it checks whether the first price is less than the second price. If so, it calculates the difference between the two prices and adds it to a list.
+
+Finally, the method returns the sum of the list of differences. This represents the maximum profit that can be earned by buying and selling stocks at the given prices.

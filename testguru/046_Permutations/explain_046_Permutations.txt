@@ -1,0 +1,25 @@
+The code is defining a class "Solution" with three methods, all of which are implementations of the problem of finding all permutations of a given list of integers.
+
+### Method 1
+
+The first method is commented out. It uses the `permutations()` method of the `itertools` module to generate all permutations of the input list `nums`. It then converts each permutation tuple to a list and appends it to a result list. The result list is then returned.
+
+### Method 2
+
+The second method `permute()` uses a Depth First Search (DPS) algorithm with swapping to generate all permutations of the input list `nums`. It initializes an empty result list `res` and checks if the length of the input list is zero. If it is zero, it returns an empty result list.
+
+It then calls the helper method `get_permute()` with three arguments, the result list `res`, the input list `nums`, and an index `0`. The `get_permute()` method is responsible for recursively generating all permutations of the input list by swapping elements of the array and performing the DPS algorithm.
+
+The `get_permute()` method checks whether the current `index` is equal to the length of the input list `nums`. If it is, it means that all the elements have been swapped and adds the list to the `res` list.
+
+If not, it loops through the remaining elements of the list starting from the current `index` and swaps the current index element with each of the other elements in the list. This generates a new permutation and the recursive call to `get_permute()` is made with the updated `index` value.
+
+Before returning from the recursive call, the swapped elements are swapped back to their original positions to maintain the original input list state.
+
+### Method 3
+
+The third method is commented out. It generates all permutations of the input list using an iterative approach. It initializes an empty result list `res` with a list containing an empty list.
+
+It then iterates over the input list `nums` and generates all possible permutations for each size of the list. For each size `i` of the list, it generates all permutations by taking an existing permutation and inserting the current element at all possible positions within that permutation. It then checks for duplicate permutations using a temporary set `cache`.
+
+Finally, it returns the result list `res` containing all the unique permutations.

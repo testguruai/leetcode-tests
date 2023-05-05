@@ -1,0 +1,13 @@
+This is a python code for finding the maximum area that can be formed by two vertical lines and x-axis using a given list of heights. 
+
+The class `Solution` has a function `maxArea` that takes in a list `height` as input and returns an integer value as output. This function uses a two-pointers approach where two pointers `left` and `right` are initialized to the first and last indices of the list, respectively. 
+
+The variable `result` is initialized to 0, which will be used to store the maximum area found. The while loop continues until `left` is less than `right`. 
+
+In the loop, the function finds the current area by taking the minimum of the heights of the two points at indices `left` and `right` and then multiplies it with the distance (difference of indices) between `left` and `right`. 
+
+If this area is greater than the current `result`, the `result` is updated. 
+
+If the height at `left` is greater than the height at `right`, then the pointer `right` is moved to the left by one index, otherwise, the pointer `left` is moved to the right by one index. 
+
+Finally, the `result` value is returned as the maximum area that can be formed by two vertical lines and x-axis using the given list of heights.

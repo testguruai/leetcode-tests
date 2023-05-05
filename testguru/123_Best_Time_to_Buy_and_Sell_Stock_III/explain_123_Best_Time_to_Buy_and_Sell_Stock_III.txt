@@ -1,0 +1,7 @@
+This code defines a class called `Solution`. The class has a method called `maxProfit` which takes a list of integers called `prices` as an input and returns an integer value, which represents the maximum profit that can be gained by trading stocks based on the given list of prices. 
+
+The code has two implementations of the `maxProfit` method. The first implementation uses dynamic programming to solve the problem, while the second implementation is a simplified version of the first one without using dynamic programming.
+
+The first implementation creates a 2D list called `dp` to store the maximum profit at each transaction and each day. It iterates over each transaction and each day, and updates the list by taking the maximum value of either keeping the previous value or buying on the current day with the maximum possible gain from the previous transaction. 
+
+The second implementation does not use dynamic programming and is more optimized. It uses four variables to keep track of the best and worst buying and selling possibilities at each day, and updates them based on the current day's price. The final result is the maximum value between the two possible selling scenarios.

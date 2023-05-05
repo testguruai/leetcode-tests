@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+198_House_Robber/test_198_House_Robber.py ....F                          [100%]
+
+=================================== FAILURES ===================================
+________________________ test_rob_with_negative_numbers ________________________
+
+    def test_rob_with_negative_numbers():
+        assert Solution().rob([-1, -2, -3, -4, -5]) == 0
+>       assert Solution().rob([-5, -4, -3, -2, -1]) == -2
+E       assert 0 == -2
+E        +  where 0 = <bound method Solution.rob of <solution.Solution object at 0x7f46315c0a90>>([-5, -4, -3, -2, -1])
+E        +    where <bound method Solution.rob of <solution.Solution object at 0x7f46315c0a90>> = <solution.Solution object at 0x7f46315c0a90>.rob
+E        +      where <solution.Solution object at 0x7f46315c0a90> = Solution()
+
+198_House_Robber/test_198_House_Robber.py:22: AssertionError
+=========================== short test summary info ============================
+FAILED 198_House_Robber/test_198_House_Robber.py::test_rob_with_negative_numbers
+========================= 1 failed, 4 passed in 0.01s ==========================

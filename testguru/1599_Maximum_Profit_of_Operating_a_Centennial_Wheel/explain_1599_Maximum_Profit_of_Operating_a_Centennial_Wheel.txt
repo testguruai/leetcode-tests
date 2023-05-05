@@ -1,0 +1,15 @@
+The above Python code defines a class called "Solution" that contains a function called "minOperationsMaxProfit". 
+
+The "minOperationsMaxProfit" function takes three parameters - "customers" (a list of integers), "boardingCost" (an integer), and "runningCost" (an integer).
+
+The function initializes some variables - "profit", "preprofit", "cuscount", "j", "i", and "roundcus". It then checks three conditions to return a specific value in those cases.
+
+After that, the function enters a while loop that runs until the "cuscount" variable becomes 0 or the "i" variable becomes equal to the length of the "customers" list.
+
+Inside the while loop, the function checks if the "cuscount" variable is greater than 3. If true, the function adds 4 to the "roundcus" variable and calculates the "profit" using the "boardingCost" and "runningCost" variables. It then compares the current "profit" with the previous "preprofit". If the "preprofit" is greater than or equal to the current "profit", the while loop is broken. Otherwise, the function increments the "j" variable, subtracts 4 from the "cuscount" variable, and adds the next customer count from the "customers" list to the "cuscount" variable (if the current index "i" is less than the length of the "customers" list). 
+
+If the "cuscount" variable is less than or equal to 3, the function adds the current "cuscount" value to the "roundcus" variable. It then calculates the "profit" in a similar manner as before, checks if the "preprofit" is greater than or equal to the current "profit", increments the "j" variable, sets the "cuscount" variable to 0, and adds the next customer count from the "customers" list to the "cuscount" variable (if the current index "i" is less than the length of the "customers" list).
+
+Once the while loop terminates, the function checks if the "profit" is less than 0. If true, it returns -1. Otherwise, it returns "j-1".
+
+The last part of the code creates an instance of the "Solution" class, initializes the "num", "b", and "r" variables, and prints the result of calling the "minOperationsMaxProfit" function with those variables as arguments.

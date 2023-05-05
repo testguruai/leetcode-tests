@@ -1,0 +1,5 @@
+This is a class called Solution with a method called backspaceCompare that takes in two string arguments, S and T. The method compares the two strings and returns True if they are equal after taking into account the effect of the "#" character, which acts as a backspace. 
+
+The method first compares the strings to see if they are the same without backspaces, returning True if they are. Then the method creates two empty stacks, s_stack and t_stack, and iterates through S and T. If the current character is not "#", it is appended to its respective stack. If the current character is "#", the last character is removed from the stack if the stack is not empty. 
+
+After both strings have been iterated over, the method returns True if the joined s_stack is equal to the joined t_stack, and False otherwise. There are also three alternative implementations of the method that are commented out, each with different strategies to solve the problem.

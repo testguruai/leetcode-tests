@@ -1,0 +1,13 @@
+This code defines a class called Solution that has a single method called poorPigs. The method takes in three arguments: buckets, minutesToDie, and minutesToTest. 
+
+The goal of this method is to determine the minimum number of pigs required to figure out the bucket that is poisoned within a certain time frame. The method uses the following logic:
+
+1. First, it initializes a variable called "pigs" to 0.
+2. It then enters a while loop. 
+3. Within the while loop, it calculates a value using the given formula: 
+      (minutesToTest / minutesToDie + 1) ** pigs, where ** means exponentiation.
+4. It checks if the value calculated in step 3 is less than the total number of buckets.
+5. If the value is less than the total number of buckets, it increments the number of pigs by 1 and repeats the process.
+6. If the value is greater than or equal to the total number of buckets, it returns the current number of pigs.
+
+Essentially, this algorithm checks how many times a group of pigs can sample the buckets within the given time frame and returns the minimum number of pigs required to confirm the poisoned bucket.

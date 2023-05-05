@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+303_Range_Sum_Query_Immutable/test_303_Range_Sum_Query_Immutable.py EFE  [100%]
+
+==================================== ERRORS ====================================
+_______________________ ERROR at setup of test_sumRange ________________________
+
+    @pytest.fixture
+    def num_array():
+>       return NumArray([1, 2, 3, 4, 5])
+E       NameError: name 'NumArray' is not defined
+
+303_Range_Sum_Query_Immutable/test_303_Range_Sum_Query_Immutable.py:6: NameError
+____________________ ERROR at setup of test_negative_values ____________________
+
+    @pytest.fixture
+    def num_array():
+>       return NumArray([1, 2, 3, 4, 5])
+E       NameError: name 'NumArray' is not defined
+
+303_Range_Sum_Query_Immutable/test_303_Range_Sum_Query_Immutable.py:6: NameError
+=================================== FAILURES ===================================
+_______________________________ test_empty_array _______________________________
+
+    def test_empty_array():
+>       num_array = NumArray([])
+E       NameError: name 'NumArray' is not defined
+
+303_Range_Sum_Query_Immutable/test_303_Range_Sum_Query_Immutable.py:17: NameError
+=========================== short test summary info ============================
+FAILED 303_Range_Sum_Query_Immutable/test_303_Range_Sum_Query_Immutable.py::test_empty_array
+ERROR 303_Range_Sum_Query_Immutable/test_303_Range_Sum_Query_Immutable.py::test_sumRange
+ERROR 303_Range_Sum_Query_Immutable/test_303_Range_Sum_Query_Immutable.py::test_negative_values
+========================= 1 failed, 2 errors in 0.02s ==========================

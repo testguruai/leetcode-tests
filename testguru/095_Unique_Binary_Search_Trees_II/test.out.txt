@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+095_Unique_Binary_Search_Trees_II/test_095_Unique_Binary_Search_Trees_II.py . [ 33%]
+FF                                                                       [100%]
+
+=================================== FAILURES ===================================
+________________________ TestSolution.test_single_node _________________________
+
+self = <test_095_Unique_Binary_Search_Trees_II.TestSolution object at 0x7fadeb5f8580>
+
+    def test_single_node(self):
+        sol = Solution()
+>       expected_tree = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+095_Unique_Binary_Search_Trees_II/test_095_Unique_Binary_Search_Trees_II.py:11: NameError
+_______________________ TestSolution.test_multiple_nodes _______________________
+
+self = <test_095_Unique_Binary_Search_Trees_II.TestSolution object at 0x7fadeb5f86a0>
+
+    def test_multiple_nodes(self):
+        sol = Solution()
+>       expected_tree_1 = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+095_Unique_Binary_Search_Trees_II/test_095_Unique_Binary_Search_Trees_II.py:16: NameError
+=========================== short test summary info ============================
+FAILED 095_Unique_Binary_Search_Trees_II/test_095_Unique_Binary_Search_Trees_II.py::TestSolution::test_single_node
+FAILED 095_Unique_Binary_Search_Trees_II/test_095_Unique_Binary_Search_Trees_II.py::TestSolution::test_multiple_nodes
+========================= 2 failed, 1 passed in 0.01s ==========================

@@ -1,0 +1,9 @@
+The code defines a class named "Solution" and contains a method named "combine". 
+
+The "combine" method takes two arguments, "n" and "k", and returns all possible combinations of k numbers out of 1 to n.
+
+The code contains two implementations of the "get_combine" method. The first implementation uses recursion with an array of candidates and a start index, while the second implementation uses recursion with only one array and a start index.
+
+The "combine" method calls the second implementation of "get_combine" with an empty result array, an empty prefix array, the input integers n and k, and a start index of 1. The final solution is returned as the result array. 
+
+The "if __name__ == "__main__" block creates an instance of the "Solution" class and calls the "combine" method with inputs 4 and 2 to print the possible combinations of 2 numbers out of 1 to 4.

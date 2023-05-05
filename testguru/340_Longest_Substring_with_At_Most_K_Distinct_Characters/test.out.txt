@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+340_Longest_Substring_with_At_Most_K_Distinct_Characters/test_340_Longest_Substring_with_At_Most_K_Distinct_Characters.py F [100%]
+
+=================================== FAILURES ===================================
+____________________ test_lengthOfLongestSubstringKDistinct ____________________
+
+    def test_lengthOfLongestSubstringKDistinct():
+        s1 = "eceba"
+        k1 = 2
+        s2 = "aa"
+        k2 = 1
+        s3 = "aaa"
+        k3 = 1
+        s4 = "abcabcabcabc"
+        k4 = 3
+    
+        sol = Solution()
+        assert sol.lengthOfLongestSubstringKDistinct(s1, k1) == 3
+        assert sol.lengthOfLongestSubstringKDistinct(s2, k2) == 2
+        assert sol.lengthOfLongestSubstringKDistinct(s3, k3) == 3
+>       assert sol.lengthOfLongestSubstringKDistinct(s4, k4) == 3
+E       AssertionError: assert 12 == 3
+E        +  where 12 = <bound method Solution.lengthOfLongestSubstringKDistinct of <solution.Solution object at 0x7fcc5f138430>>('abcabcabcabc', 3)
+E        +    where <bound method Solution.lengthOfLongestSubstringKDistinct of <solution.Solution object at 0x7fcc5f138430>> = <solution.Solution object at 0x7fcc5f138430>.lengthOfLongestSubstringKDistinct
+
+340_Longest_Substring_with_At_Most_K_Distinct_Characters/test_340_Longest_Substring_with_At_Most_K_Distinct_Characters.py:19: AssertionError
+=========================== short test summary info ============================
+FAILED 340_Longest_Substring_with_At_Most_K_Distinct_Characters/test_340_Longest_Substring_with_At_Most_K_Distinct_Characters.py::test_lengthOfLongestSubstringKDistinct
+============================== 1 failed in 0.01s ===============================

@@ -1,0 +1,7 @@
+This code defines a class `Solution` that contains a method `compareVersion` which compares two version numbers of format "major.minor.patch". The method takes two version numbers as input arguments `version1` and `version2` and returns an integer that indicates the relative comparison between the two versions. The possible return values are:
+
+- 1: `version1` is greater than `version2`
+- -1: `version1` is smaller than `version2`
+- 0: `version1` is equal to `version2`
+
+The method first splits the two input strings by "." into two lists of integers using the `split()` and `map()` functions. It then compares the two lists and if they are the same, it returns 0. If the lengths of the two lists are not the same, it pads the smaller list with zeros to make their lengths equal. Finally, it compares the two lists element by element and returns the appropriate integer based on the comparison between the two elements.

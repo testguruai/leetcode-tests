@@ -1,0 +1,7 @@
+The code defines a class `Solution` with a method `addStrings` that takes in two string arguments `num1` and `num2` representing non-negative integers as strings. The method returns the sum of `num1` and `num2` as a string.
+
+The first implementation of the method (commented out) uses the approach of adding the digits at each position of `num1` and `num2` while keeping track of any carry from the previous position. The digits are added from the rightmost position to the leftmost position and the resulting sum is stored in a list `res`. Finally, `res` is converted to a string and returned.
+
+The second implementation of the method (uncommented) uses a similar approach but instead of starting from the rightmost position, it starts from the leftmost position. It uses a while loop that continues until no more digits are available in either `num1` or `num2` and there is no more carry remaining. The loop retrieves the digits from the corresponding positions in `num1` and `num2`, adds the digits along with the carry from the previous position, and updates the carry and the result list `res`. Finally, the `res` list is converted to a string and returned.
+
+The approach used by the second implementation is simpler and more efficient as it avoids the need to pad the shorter string with zeros and reverses the result list only once at the end instead of multiple times inside the loop.

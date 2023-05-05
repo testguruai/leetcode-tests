@@ -1,0 +1,9 @@
+This code defines a class `Solution` with a function `spiralOrder` which takes a matrix of integers as input and returns a list of integers that represent the elements of the matrix in a spiral order. 
+
+If the input matrix is `None` or has length `0`, the function returns the matrix. Otherwise, it creates two variables `m` and `n` which represent the number of rows and columns in the matrix respectively. It then calls the function `get_spiralOrder` with the input matrix and four variables representing the starting and ending rows and columns of the matrix. 
+
+The `get_spiralOrder` function first checks if the starting rows and columns are greater than the ending rows and columns, in which case it returns an empty list. If the starting row equals the ending row, it returns the values of that row with columns from `c_start` to `c_end`. If the starting column equals the ending column, it returns the values of that column with rows from `r_start` to `r_end`. 
+
+Otherwise, it creates a list `curr` that represents the elements of the matrix that are currently being traversed in a spiral order, starting from the top left corner and moving clockwise. This list combines the elements of the first row, the last column (excluding the first and last row), the last row (excluding the first and last column), and the first column (excluding the first and last row) in that order. The list `curr` is then returned along with a recursive call to `get_spiralOrder` with updated values of `r_start`, `r_end`, `c_start`, and `c_end` to traverse the remaining elements of the matrix in a spiral order.
+
+Lastly, the code creates an instance of the `Solution` class and calls its `spiralOrder` function with a sample matrix as input. The resulting spiral order of elements from the matrix is printed.

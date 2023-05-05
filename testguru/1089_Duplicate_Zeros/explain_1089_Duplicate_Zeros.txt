@@ -1,0 +1,11 @@
+This is a class definition for a solution to a problem where an input list `arr` is given, and the task is to insert a duplicate 0 after every occurrence of a 0 in `arr`. The goal is to modify `arr` in-place and return nothing.
+
+The class has only one method called `duplicateZeros`, which takes `arr` as input and modifies it directly. The explanation of the method is provided in the docstring comment at the beginning of the method.
+
+The method iterates through the list `arr` to find the number of duplicate 0s needed. It does this by keeping track of two indices - `move_pos` and `last_pos`. Initially, `move_pos` is set to 0 and `last_pos` is set to `len(arr) - 1`.
+
+It then loops through `arr` and checks each element in the range `[0, lastPos - movePos]`. If an element is 0, `move_pos` is increased by 1. If `move_pos` goes beyond `last_pos`, the loop breaks.
+
+After this loop, `last_pos` is updated by subtracting the `move_pos` count. Then, another loop is executed in reverse order starting from `last_pos`. If an element is 0, it inserts a duplicate of 0 at `i + move_pos` index and decrements `move_pos`. Finally, the rest of the elements are shifted towards the end of the list, taking `move_pos` into account.
+
+This way, the required number of 0s are duplicated and the original list is modified in-place without using any extra space.

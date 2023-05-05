@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+543_Diameter_of_Binary_Tree/test_543_Diameter_of_Binary_Tree.py ......F  [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_diameter_large_tree ___________________________
+
+    def test_diameter_large_tree():
+        s = Solution()
+        root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+        root.left.left = TreeNode(4)
+        root.left.right = TreeNode(5)
+        root.right.left = TreeNode(6)
+        root.right.right = TreeNode(7)
+        root.left.left.left = TreeNode(8)
+        root.left.left.right = TreeNode(9)
+        root.left.right.left = TreeNode(10)
+        root.right.left.right = TreeNode(11)
+        root.left.right.left.left = TreeNode(12)
+>       assert s.diameterOfBinaryTree(root) == 6
+E       assert 7 == 6
+E        +  where 7 = <bound method Solution.diameterOfBinaryTree of <solution.Solution object at 0x7f4b1ccc51e0>>(<solution.TreeNode object at 0x7f4b1ccc52a0>)
+E        +    where <bound method Solution.diameterOfBinaryTree of <solution.Solution object at 0x7f4b1ccc51e0>> = <solution.Solution object at 0x7f4b1ccc51e0>.diameterOfBinaryTree
+
+543_Diameter_of_Binary_Tree/test_543_Diameter_of_Binary_Tree.py:58: AssertionError
+=========================== short test summary info ============================
+FAILED 543_Diameter_of_Binary_Tree/test_543_Diameter_of_Binary_Tree.py::test_diameter_large_tree
+========================= 1 failed, 6 passed in 0.02s ==========================

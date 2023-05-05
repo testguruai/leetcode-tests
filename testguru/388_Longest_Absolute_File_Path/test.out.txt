@@ -1,0 +1,43 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+388_Longest_Absolute_File_Path/test_388_Longest_Absolute_File_Path.py FF [ 50%]
+FF                                                                       [100%]
+
+=================================== FAILURES ===================================
+______________________ test_lengthLongestPath_empty_input ______________________
+
+    def test_lengthLongestPath_empty_input():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+388_Longest_Absolute_File_Path/test_388_Longest_Absolute_File_Path.py:3: NameError
+_______________________ test_lengthLongestPath_no_files ________________________
+
+    def test_lengthLongestPath_no_files():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+388_Longest_Absolute_File_Path/test_388_Longest_Absolute_File_Path.py:7: NameError
+______________________ test_lengthLongestPath_single_file ______________________
+
+    def test_lengthLongestPath_single_file():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+388_Longest_Absolute_File_Path/test_388_Longest_Absolute_File_Path.py:12: NameError
+____________________ test_lengthLongestPath_multiple_files _____________________
+
+    def test_lengthLongestPath_multiple_files():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+388_Longest_Absolute_File_Path/test_388_Longest_Absolute_File_Path.py:17: NameError
+=========================== short test summary info ============================
+FAILED 388_Longest_Absolute_File_Path/test_388_Longest_Absolute_File_Path.py::test_lengthLongestPath_empty_input
+FAILED 388_Longest_Absolute_File_Path/test_388_Longest_Absolute_File_Path.py::test_lengthLongestPath_no_files
+FAILED 388_Longest_Absolute_File_Path/test_388_Longest_Absolute_File_Path.py::test_lengthLongestPath_single_file
+FAILED 388_Longest_Absolute_File_Path/test_388_Longest_Absolute_File_Path.py::test_lengthLongestPath_multiple_files
+============================== 4 failed in 0.02s ===============================

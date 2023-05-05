@@ -1,0 +1,6 @@
+Name                                                                Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------------
+347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py        14      0   100%
+/data/ethan/leetcode-master/python/347_Top_K_Frequent_Elements.py       5      1    80%   10
+-------------------------------------------------------------------------------------------------
+TOTAL                                                                  19      1    95%

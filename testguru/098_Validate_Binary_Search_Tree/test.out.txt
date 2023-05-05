@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+098_Validate_Binary_Search_Tree/test_098_Validate_Binary_Search_Tree.py . [ 50%]
+F                                                                        [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_isVaild_helper ______________________________
+
+    def test_isVaild_helper():
+        root = TreeNode(5)
+        root.left = TreeNode(3)
+        root.right = TreeNode(7)
+        root.left.left = TreeNode(2)
+        root.left.right = TreeNode(4)
+        root.right.left = TreeNode(6)
+        root.right.right = TreeNode(8)
+    
+>       assert Solution().isVaild_helper(root, -sys.maxint-1, sys.maxint) == True
+E       AttributeError: module 'sys' has no attribute 'maxint'
+
+098_Validate_Binary_Search_Tree/test_098_Validate_Binary_Search_Tree.py:42: AttributeError
+=========================== short test summary info ============================
+FAILED 098_Validate_Binary_Search_Tree/test_098_Validate_Binary_Search_Tree.py::test_isVaild_helper
+========================= 1 failed, 1 passed in 0.01s ==========================

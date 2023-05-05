@@ -1,0 +1,35 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+804_Unique_Morse_Code_Words/test_804_Unique_Morse_Code_Words.py F        [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_solution _________________________________
+
+    def test_solution():
+        words1 = ["gin", "zen", "gig", "msg"]
+        expected_output1 = 2
+        solution = Solution()
+        assert solution.uniqueMorseRepresentations(words1) == expected_output1
+    
+        words2 = []
+        expected_output2 = 0
+        assert solution.uniqueMorseRepresentations(words2) == expected_output2
+    
+        words3 = ["foo", "bar"]
+        expected_output3 = 2
+        assert solution.uniqueMorseRepresentations(words3) == expected_output3
+    
+        words4 = ["bad", "dad"]
+        expected_output4 = 1
+>       assert solution.uniqueMorseRepresentations(words4) == expected_output4
+E       AssertionError: assert 2 == 1
+E        +  where 2 = <bound method Solution.uniqueMorseRepresentations of <solution.Solution object at 0x7f48e2098340>>(['bad', 'dad'])
+E        +    where <bound method Solution.uniqueMorseRepresentations of <solution.Solution object at 0x7f48e2098340>> = <solution.Solution object at 0x7f48e2098340>.uniqueMorseRepresentations
+
+804_Unique_Morse_Code_Words/test_804_Unique_Morse_Code_Words.py:21: AssertionError
+=========================== short test summary info ============================
+FAILED 804_Unique_Morse_Code_Words/test_804_Unique_Morse_Code_Words.py::test_solution
+============================== 1 failed in 0.01s ===============================

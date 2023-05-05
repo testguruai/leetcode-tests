@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+165_Compare_Version_Numbers/test_165_Compare_Version_Numbers.py F        [100%]
+
+=================================== FAILURES ===================================
+_______________________ TestSolution.test_compareVersion _______________________
+
+self = <test_165_Compare_Version_Numbers.TestSolution object at 0x7f24bc9c0400>
+
+    def test_compareVersion(self):
+        solution = Solution()
+    
+        assert solution.compareVersion("1.0.1", "1") == 1
+        assert solution.compareVersion("1.2", "1.10") == -1
+        assert solution.compareVersion("2.4.3", "2.4.3") == 0
+        assert solution.compareVersion("1.1.2", "1.01.2") == 0
+        assert solution.compareVersion("1.0", "1.0.0") == 0
+    
+        with pytest.raises(TypeError):
+>           solution.compareVersion(1, 2)
+
+165_Compare_Version_Numbers/test_165_Compare_Version_Numbers.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f24bc9c0520>, version1 = 1, version2 = 2
+
+    def compareVersion(self, version1: str, version2: str) -> int:
+>       l1=list(map(int,version1.split('.')))
+E       AttributeError: 'int' object has no attribute 'split'
+
+165_Compare_Version_Numbers/solution.py:3: AttributeError
+=========================== short test summary info ============================
+FAILED 165_Compare_Version_Numbers/test_165_Compare_Version_Numbers.py::TestSolution::test_compareVersion
+============================== 1 failed in 0.01s ===============================

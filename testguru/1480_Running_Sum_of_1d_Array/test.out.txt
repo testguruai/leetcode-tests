@@ -1,0 +1,34 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+1480_Running_Sum_of_1d_Array/test_1480_Running_Sum_of_1d_Array.py FFF    [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_runningSum_empty _____________________________
+
+    def test_runningSum_empty():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+1480_Running_Sum_of_1d_Array/test_1480_Running_Sum_of_1d_Array.py:4: NameError
+_________________________ test_runningSum_single_value _________________________
+
+    def test_runningSum_single_value():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+1480_Running_Sum_of_1d_Array/test_1480_Running_Sum_of_1d_Array.py:9: NameError
+_______________________ test_runningSum_multiple_values ________________________
+
+    def test_runningSum_multiple_values():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+1480_Running_Sum_of_1d_Array/test_1480_Running_Sum_of_1d_Array.py:14: NameError
+=========================== short test summary info ============================
+FAILED 1480_Running_Sum_of_1d_Array/test_1480_Running_Sum_of_1d_Array.py::test_runningSum_empty
+FAILED 1480_Running_Sum_of_1d_Array/test_1480_Running_Sum_of_1d_Array.py::test_runningSum_single_value
+FAILED 1480_Running_Sum_of_1d_Array/test_1480_Running_Sum_of_1d_Array.py::test_runningSum_multiple_values
+============================== 3 failed in 0.01s ===============================

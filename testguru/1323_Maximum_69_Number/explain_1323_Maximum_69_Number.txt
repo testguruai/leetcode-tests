@@ -1,0 +1,5 @@
+This is a class named `Solution` that has a method called `maximum69Number` which takes an integer `num` and returns an integer. 
+
+The method first converts the integer `num` into a string using the `str` function. Then, it replaces the first occurrence of the character '6' in the string representation of `num` with the character '9' using the `replace` function. 
+
+Finally, the method returns the modified string, which would be the maximum possible integer that can be obtained by changing at most one digit in the input integer from 6 to 9. The `-> int` after the parameter declaration indicates the type of the returned value.

@@ -1,0 +1,60 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+283_Move Zeroes/test_283_Move Zeroes.py FFFFF                            [100%]
+
+=================================== FAILURES ===================================
+________________________ TestSolution.test_moveZeroes1 _________________________
+
+self = <test_283_Move Zeroes.TestSolution object at 0x7fa085d0c340>
+
+    def test_moveZeroes1(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+283_Move Zeroes/test_283_Move Zeroes.py:6: NameError
+________________________ TestSolution.test_moveZeroes2 _________________________
+
+self = <test_283_Move Zeroes.TestSolution object at 0x7fa085d0c430>
+
+    def test_moveZeroes2(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+283_Move Zeroes/test_283_Move Zeroes.py:12: NameError
+________________________ TestSolution.test_moveZeroes3 _________________________
+
+self = <test_283_Move Zeroes.TestSolution object at 0x7fa085d0c550>
+
+    def test_moveZeroes3(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+283_Move Zeroes/test_283_Move Zeroes.py:18: NameError
+________________________ TestSolution.test_moveZeroes4 _________________________
+
+self = <test_283_Move Zeroes.TestSolution object at 0x7fa085d0c670>
+
+    def test_moveZeroes4(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+283_Move Zeroes/test_283_Move Zeroes.py:24: NameError
+________________________ TestSolution.test_moveZeroes5 _________________________
+
+self = <test_283_Move Zeroes.TestSolution object at 0x7fa085d0c790>
+
+    def test_moveZeroes5(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+283_Move Zeroes/test_283_Move Zeroes.py:30: NameError
+=========================== short test summary info ============================
+FAILED 283_Move Zeroes/test_283_Move Zeroes.py::TestSolution::test_moveZeroes1
+FAILED 283_Move Zeroes/test_283_Move Zeroes.py::TestSolution::test_moveZeroes2
+FAILED 283_Move Zeroes/test_283_Move Zeroes.py::TestSolution::test_moveZeroes3
+FAILED 283_Move Zeroes/test_283_Move Zeroes.py::TestSolution::test_moveZeroes4
+FAILED 283_Move Zeroes/test_283_Move Zeroes.py::TestSolution::test_moveZeroes5
+============================== 5 failed in 0.02s ===============================

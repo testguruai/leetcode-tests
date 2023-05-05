@@ -1,0 +1,70 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py FFFFFF             [100%]
+
+=================================== FAILURES ===================================
+_______________ TestSolution.test_searchMatrix_with_empty_matrix _______________
+
+self = <test_074_Search_a_2D_Matrix.TestSolution object at 0x7f2d22cec430>
+
+    def test_searchMatrix_with_empty_matrix(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py:6: NameError
+__________ TestSolution.test_searchMatrix_with_invalid_matrix_values ___________
+
+self = <test_074_Search_a_2D_Matrix.TestSolution object at 0x7f2d22cec520>
+
+    def test_searchMatrix_with_invalid_matrix_values(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py:10: NameError
+__________ TestSolution.test_searchMatrix_with_matrix_values_in_range __________
+
+self = <test_074_Search_a_2D_Matrix.TestSolution object at 0x7f2d22cec640>
+
+    def test_searchMatrix_with_matrix_values_in_range(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py:15: NameError
+________ TestSolution.test_searchMatrix_with_matrix_values_out_of_range ________
+
+self = <test_074_Search_a_2D_Matrix.TestSolution object at 0x7f2d22cec760>
+
+    def test_searchMatrix_with_matrix_values_out_of_range(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py:21: NameError
+_______________ TestSolution.test_searchMatrix_with_same_values ________________
+
+self = <test_074_Search_a_2D_Matrix.TestSolution object at 0x7f2d22cec880>
+
+    def test_searchMatrix_with_same_values(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py:26: NameError
+_____________ TestSolution.test_searchMatrix_with_negative_values ______________
+
+self = <test_074_Search_a_2D_Matrix.TestSolution object at 0x7f2d22cec9a0>
+
+    def test_searchMatrix_with_negative_values(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py:30: NameError
+=========================== short test summary info ============================
+FAILED 074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py::TestSolution::test_searchMatrix_with_empty_matrix
+FAILED 074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py::TestSolution::test_searchMatrix_with_invalid_matrix_values
+FAILED 074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py::TestSolution::test_searchMatrix_with_matrix_values_in_range
+FAILED 074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py::TestSolution::test_searchMatrix_with_matrix_values_out_of_range
+FAILED 074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py::TestSolution::test_searchMatrix_with_same_values
+FAILED 074_Search_a_2D_Matrix/test_074_Search_a_2D_Matrix.py::TestSolution::test_searchMatrix_with_negative_values
+============================== 6 failed in 0.02s ===============================

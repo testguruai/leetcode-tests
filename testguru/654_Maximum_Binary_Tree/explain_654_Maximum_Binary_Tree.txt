@@ -1,0 +1,11 @@
+This is a Python code that implements the solution for the problem "Maximum Binary Tree" on LeetCode. The problem requires constructing a binary tree from an array of integers such that the root of the tree is the maximum value in the array, and the left and right subtrees are constructed recursively from the subarrays on the left and right of the maximum value.
+
+The code defines a class called Solution with a method called constructMaximumBinaryTree that takes an array of integers as input and returns a TreeNode object, which represents the root of the constructed binary tree.
+
+The method first checks if the input array is empty or None. If so, it returns None, since there is no tree to be constructed.
+
+If the input array is not empty, the method finds the index of the maximum value in the array and creates a TreeNode object with that value as the root. It then recursively constructs the left subtree from the subarray on the left of the maximum value and the right subtree from the subarray on the right of the maximum value.
+
+The time complexity of this method is O(n^2) in the worst case, where n is the length of the input array, since for every node in the binary tree, it needs to find the maximum value in the subarray. The space complexity is also O(n) in the worst case, where n is the length of the input array, since it needs to store the entire input array in memory.
+
+There is also a commented-out version of the method that uses a stack to construct the binary tree in O(n) time and space complexity. This implementation is more efficient but slightly more complex.

@@ -1,0 +1,47 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+166_Fraction_to_Recurring_Decimal/test_166_Fraction_to_Recurring_Decimal.py . [ 20%]
+FFF.                                                                     [100%]
+
+=================================== FAILURES ===================================
+______________________ test_fraction_to_decimal_positive _______________________
+
+solution_instance = <solution.Solution object at 0x7f9c4ba18ca0>
+
+    def test_fraction_to_decimal_positive(solution_instance):
+>       assert solution_instance.fractionToDecimal(12, 5) == '2.4'
+E       AssertionError: assert '2.4.4.0' == '2.4'
+E         - 2.4
+E         + 2.4.4.0
+
+166_Fraction_to_Recurring_Decimal/test_166_Fraction_to_Recurring_Decimal.py:12: AssertionError
+______________________ test_fraction_to_decimal_negative _______________________
+
+solution_instance = <solution.Solution object at 0x7f9c4ba1bd90>
+
+    def test_fraction_to_decimal_negative(solution_instance):
+>       assert solution_instance.fractionToDecimal(-12, 5) == '-2.4'
+E       AssertionError: assert '-2.4.4.0' == '-2.4'
+E         - -2.4
+E         + -2.4.4.0
+
+166_Fraction_to_Recurring_Decimal/test_166_Fraction_to_Recurring_Decimal.py:15: AssertionError
+______________________ test_fraction_to_decimal_recurring ______________________
+
+solution_instance = <solution.Solution object at 0x7f9c4ba199c0>
+
+    def test_fraction_to_decimal_recurring(solution_instance):
+>       assert solution_instance.fractionToDecimal(1, 3) == '0.(3)'
+E       AssertionError: assert '0.3333333333...333333333335)' == '0.(3)'
+E         - 0.(3)
+E         + 0.3333333333333333.(3.3333333333333335)
+
+166_Fraction_to_Recurring_Decimal/test_166_Fraction_to_Recurring_Decimal.py:18: AssertionError
+=========================== short test summary info ============================
+FAILED 166_Fraction_to_Recurring_Decimal/test_166_Fraction_to_Recurring_Decimal.py::test_fraction_to_decimal_positive
+FAILED 166_Fraction_to_Recurring_Decimal/test_166_Fraction_to_Recurring_Decimal.py::test_fraction_to_decimal_negative
+FAILED 166_Fraction_to_Recurring_Decimal/test_166_Fraction_to_Recurring_Decimal.py::test_fraction_to_decimal_recurring
+========================= 3 failed, 2 passed in 0.02s ==========================

@@ -1,0 +1,35 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+170_Two_Sum_III-Data_structure_design/test_170_Two_Sum_III-Data_structure_design.py F [ 33%]
+FF                                                                       [100%]
+
+=================================== FAILURES ===================================
+___________________________________ test_add ___________________________________
+
+    def test_add():
+>       ts = TwoSum()
+E       NameError: name 'TwoSum' is not defined
+
+170_Two_Sum_III-Data_structure_design/test_170_Two_Sum_III-Data_structure_design.py:4: NameError
+________________________________ test_find_true ________________________________
+
+    def test_find_true():
+>       ts = TwoSum()
+E       NameError: name 'TwoSum' is not defined
+
+170_Two_Sum_III-Data_structure_design/test_170_Two_Sum_III-Data_structure_design.py:12: NameError
+_______________________________ test_find_false ________________________________
+
+    def test_find_false():
+>       ts = TwoSum()
+E       NameError: name 'TwoSum' is not defined
+
+170_Two_Sum_III-Data_structure_design/test_170_Two_Sum_III-Data_structure_design.py:20: NameError
+=========================== short test summary info ============================
+FAILED 170_Two_Sum_III-Data_structure_design/test_170_Two_Sum_III-Data_structure_design.py::test_add
+FAILED 170_Two_Sum_III-Data_structure_design/test_170_Two_Sum_III-Data_structure_design.py::test_find_true
+FAILED 170_Two_Sum_III-Data_structure_design/test_170_Two_Sum_III-Data_structure_design.py::test_find_false
+============================== 3 failed in 0.01s ===============================

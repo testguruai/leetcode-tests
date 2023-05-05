@@ -1,0 +1,6 @@
+Name                                                          Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------
+422_Valid_Word_Square/test_422_Valid_Word_Square.py              22      0   100%
+/data/ethan/leetcode-master/python/422_Valid_Word_Square.py      15      2    87%   14, 16
+-------------------------------------------------------------------------------------------
+TOTAL                                                            37      2    95%

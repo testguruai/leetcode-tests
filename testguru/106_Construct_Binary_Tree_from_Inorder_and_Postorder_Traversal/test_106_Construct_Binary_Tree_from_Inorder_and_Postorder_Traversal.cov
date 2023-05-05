@@ -1,0 +1,6 @@
+Name                                                                                                                                    Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal/test_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.py      24     22     8%   4-28
+/data/ethan/leetcode-master/python/106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.py                                       14     10    29%   16-18, 21-30
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                      38     32    16%

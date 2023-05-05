@@ -1,0 +1,29 @@
+This is a Python class named `Solution` that contains a method named `reverseWords`. 
+
+The `reverseWords` method takes in a string `s` as input, and it returns a new string where each word in the input string `s` is reversed.
+
+The implementation of this method is as follows:
+
+1. Split the input string `s` into a list of words using the `.split()` method. The delimiter used for splitting is a single space character ' '.
+
+2. Use a list comprehension to iterate over the list of words, and for each word, reverse its characters using the slicing syntax `word[::-1]`. This returns a new list of reversed words.
+
+3. Join the list of reversed words using the `.join()` method, and separate each reversed word with a single space character ' '.
+
+4. Return the final string that was created in step 3, which contains reversed words separated by spaces.
+
+Here is an example of how to use this class:
+
+```python
+s = Solution()
+result = s.reverseWords("the quick brown fox")
+print(result)
+```
+
+The output of this program is:
+
+```python
+eht kciuq nworb xof
+```
+
+which is the string `s` with each word reversed.

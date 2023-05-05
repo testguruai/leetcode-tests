@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 10 items
+
+997_Find_The_Town_Judge/test_997_Find_The_Town_Judge.py .........F       [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_findJudge_10 _______________________________
+
+solution = <solution.Solution object at 0x7f8f1fee93c0>
+
+    def test_findJudge_10(solution):
+>       assert solution.findJudge(5, [[1,3],[2,3],[3,4],[4,5],[5,3]]) == 3
+E       assert -1 == 3
+E        +  where -1 = <bound method Solution.findJudge of <solution.Solution object at 0x7f8f1fee93c0>>(5, [[1, 3], [2, 3], [3, 4], [4, 5], [5, 3]])
+E        +    where <bound method Solution.findJudge of <solution.Solution object at 0x7f8f1fee93c0>> = <solution.Solution object at 0x7f8f1fee93c0>.findJudge
+
+997_Find_The_Town_Judge/test_997_Find_The_Town_Judge.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED 997_Find_The_Town_Judge/test_997_Find_The_Town_Judge.py::test_findJudge_10
+========================= 1 failed, 9 passed in 0.02s ==========================

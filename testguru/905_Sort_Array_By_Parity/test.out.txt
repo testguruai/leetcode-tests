@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+905_Sort_Array_By_Parity/test_905_Sort_Array_By_Parity.py .F...          [100%]
+
+=================================== FAILURES ===================================
+____________________ test_sortArrayByParity_oddNumbersFirst ____________________
+
+solution = <solution.Solution object at 0x7fe27fd9cd00>
+
+    def test_sortArrayByParity_oddNumbersFirst(solution):
+>       assert solution.sortArrayByParity([3, 5, 2, 4, 8, 6]) == [2, 4, 8, 6, 3, 5]
+E       assert [6, 8, 2, 4, 5, 3] == [2, 4, 8, 6, 3, 5]
+E         At index 0 diff: 6 != 2
+E         Use -v to get more diff
+
+905_Sort_Array_By_Parity/test_905_Sort_Array_By_Parity.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED 905_Sort_Array_By_Parity/test_905_Sort_Array_By_Parity.py::test_sortArrayByParity_oddNumbersFirst
+========================= 1 failed, 4 passed in 0.02s ==========================

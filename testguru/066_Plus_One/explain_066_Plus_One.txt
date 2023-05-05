@@ -1,0 +1,3 @@
+The code defines a class `Solution` with a method `plusOne` which takes a list of digits as an argument and returns a list of digits with the integer represented by the input list incremented by 1.
+
+The first implementation commented in the code uses a while loop to add 1 to the last digit of the list and carries it over to the next digit until no more carry is required. The second implementation uses a for loop to iterate through the digits in reverse order and if the last digit is less than 9, it increments it by 1 and returns the list. Otherwise, it sets the last digit to 0 and continues to the next digit. If all digits have been iterated through and still no return is executed, it adds 1 to the beginning of the list and returns it.

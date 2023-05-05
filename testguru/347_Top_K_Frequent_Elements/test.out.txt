@@ -1,0 +1,137 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py FFFFFF   [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_empty_list ________________________________
+
+    def test_empty_list():
+>       assert Solution().topKFrequent([], 1) == []
+
+347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py:6: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f1b9eca8910>, nums = [], k = 1
+
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+>       counter = collections.Counter(nums)
+E       NameError: name 'collections' is not defined
+
+347_Top_K_Frequent_Elements/solution.py:8: NameError
+___________________________ test_single_element_list ___________________________
+
+    def test_single_element_list():
+>       assert Solution().topKFrequent([1], 1) == [1]
+
+347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py:9: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f1b9ecaae60>, nums = [1], k = 1
+
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+>       counter = collections.Counter(nums)
+E       NameError: name 'collections' is not defined
+
+347_Top_K_Frequent_Elements/solution.py:8: NameError
+___________________________ test_duplicate_elements ____________________________
+
+    def test_duplicate_elements():
+>       assert Solution().topKFrequent([1,1,2,2,2,3], 2) == [2, 1]
+
+347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f1b9ecab0a0>, nums = [1, 1, 2, 2, 2, 3]
+k = 2
+
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+>       counter = collections.Counter(nums)
+E       NameError: name 'collections' is not defined
+
+347_Top_K_Frequent_Elements/solution.py:8: NameError
+_______________ test_k_is_greater_than_number_of_unique_elements _______________
+
+    def test_k_is_greater_than_number_of_unique_elements():
+>       assert Solution().topKFrequent([1,2,3], 4) == [1, 2, 3]
+
+347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f1b9eca9fc0>, nums = [1, 2, 3], k = 4
+
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+>       counter = collections.Counter(nums)
+E       NameError: name 'collections' is not defined
+
+347_Top_K_Frequent_Elements/solution.py:8: NameError
+_________________ test_k_is_equal_to_number_of_unique_elements _________________
+
+    def test_k_is_equal_to_number_of_unique_elements():
+>       assert Solution().topKFrequent([1,1,2,3], 3) == [1, 2, 3]
+
+347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f1b9eca9ab0>, nums = [1, 1, 2, 3], k = 3
+
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+>       counter = collections.Counter(nums)
+E       NameError: name 'collections' is not defined
+
+347_Top_K_Frequent_Elements/solution.py:8: NameError
+________________________ test_all_elements_are_the_same ________________________
+
+    def test_all_elements_are_the_same():
+>       assert Solution().topKFrequent([1,1,1,1], 1) == [1]
+
+347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f1b9eca94b0>, nums = [1, 1, 1, 1], k = 1
+
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+>       counter = collections.Counter(nums)
+E       NameError: name 'collections' is not defined
+
+347_Top_K_Frequent_Elements/solution.py:8: NameError
+=========================== short test summary info ============================
+FAILED 347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py::test_empty_list
+FAILED 347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py::test_single_element_list
+FAILED 347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py::test_duplicate_elements
+FAILED 347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py::test_k_is_greater_than_number_of_unique_elements
+FAILED 347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py::test_k_is_equal_to_number_of_unique_elements
+FAILED 347_Top_K_Frequent_Elements/test_347_Top_K_Frequent_Elements.py::test_all_elements_are_the_same
+============================== 6 failed in 0.02s ===============================

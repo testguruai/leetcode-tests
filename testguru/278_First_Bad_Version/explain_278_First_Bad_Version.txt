@@ -1,0 +1,7 @@
+This is a Python code for finding the first bad version in a series of versions. The code contains a class named Solution with a method named firstBadVersion that takes an integer n (representing the number of versions) as input and returns the index of the first bad version.
+
+The code uses the binary search algorithm to find the first bad version. It initializes the left and right pointers to the first and last versions (1 and n), respectively. It then continues to divide the search space in half until it finds the first bad version.
+
+Inside the loop, the code calculates the middle index using the formula (left + right) / 2 and checks whether the current version is bad using the isBadVersion function. If the current version is bad, it sets the right pointer to the current index, indicating that the bad version is somewhere to the left. If the current version is not bad, it sets the left pointer to the current index + 1, indicating that the bad version is somewhere to the right.
+
+After the loop terminates, the left pointer contains the index of the first bad version, which is then returned by the method.

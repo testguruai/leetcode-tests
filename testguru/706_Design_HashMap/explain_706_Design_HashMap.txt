@@ -1,0 +1,15 @@
+This is a class definition for a hash map implementation called `MyHashMap` in Python. The data structure is designed to allow for efficient mapping of keys to values, with constant time complexity for insertions, lookups, and deletions, on average.
+
+The `__init__` method initializes an empty hash map with a default size of 10000 and an array of `None` nodes to hold the keys and values. 
+
+The `put` method inserts a new key-value pair into the hash map. It first computes the hash code for the key and finds the corresponding index in the array. If there is no key-value pair at that index yet, it creates a new `ListNode` object to hold a default (key, value) pair of (-1, -1) to serve as a sentinel node. It then uses the `find` method to traverse the linked list of nodes at the index to either update the value of an existing node with the same key, or add a new (key, value) node to the end of the list.
+
+The `get` method looks up the value corresponding to a given key in the hash map. It first computes the hash code for the key and finds the corresponding index in the array. If there is no key-value pair at that index yet, it returns -1. Otherwise, it uses the `find` method to traverse the linked list of nodes at the index to find the node with the given key and returns its value. If the key is not found in the linked list, it returns -1.
+
+The `remove` method removes the key-value pair corresponding to a given key in the hash map. It first computes the hash code for the key and finds the corresponding index in the array. If there is no key-value pair at that index yet, it returns. Otherwise, it uses the `find` method to traverse the linked list of nodes at the index to find the node with the given key and removes it from the list by updating the `next` pointer of its predecessor node.
+
+The `find` method takes a linked list of nodes and a key and returns the node in the list with the given key, or the node that would immediately precede it in the list if it were present. It does this by iterating through the linked list until it finds the first node with a key that matches or exceeds the given key, and returning its predecessor node. 
+
+The `ListNode` class is a simple container for a (key, value) pair, along with a reference to the next node in the hash map's linked list. 
+
+Lastly, the typical usage of the `MyHashMap` class is shown in the comments at the end of the code block, where an instance of the class is created and the `put`, `get`, and `remove` methods are called as needed.

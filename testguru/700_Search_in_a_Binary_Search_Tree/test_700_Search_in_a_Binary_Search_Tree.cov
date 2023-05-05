@@ -1,0 +1,6 @@
+Name                                                                            Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------------------------
+700_Search_in_a_Binary_Search_Tree/test_700_Search_in_a_Binary_Search_Tree.py      21     19    10%   4-33
+/data/ethan/leetcode-master/python/700_Search_in_a_Binary_Search_Tree.py           10      7    30%   27-34
+-------------------------------------------------------------------------------------------------------------
+TOTAL                                                                              31     26    16%

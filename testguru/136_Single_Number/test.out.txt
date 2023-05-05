@@ -1,0 +1,65 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+136_Single_Number/test_136_Single_Number.py FFFFF                        [100%]
+
+=================================== FAILURES ===================================
+___________________ TestSolution.test_singleNumber_with_hash ___________________
+
+self = <test_136_Single_Number.TestSolution object at 0x7fd2adf4c3a0>
+
+    def test_singleNumber_with_hash(self):
+        nums = [1, 2, 3, 2, 1]
+>       assert Solution().singleNumber(nums) == 3
+E       NameError: name 'Solution' is not defined
+
+136_Single_Number/test_136_Single_Number.py:6: NameError
+___________________ TestSolution.test_singleNumber_with_set ____________________
+
+self = <test_136_Single_Number.TestSolution object at 0x7fd2adf4c490>
+
+    def test_singleNumber_with_set(self):
+        nums = [1, 2, 3, 2, 1]
+>       assert Solution().singleNumber(nums) == 3
+E       NameError: name 'Solution' is not defined
+
+136_Single_Number/test_136_Single_Number.py:10: NameError
+___________________ TestSolution.test_singleNumber_with_xor ____________________
+
+self = <test_136_Single_Number.TestSolution object at 0x7fd2adf4c5b0>
+
+    def test_singleNumber_with_xor(self):
+        nums = [1, 2, 3, 2, 1]
+>       assert Solution().singleNumber(nums) == 3
+E       NameError: name 'Solution' is not defined
+
+136_Single_Number/test_136_Single_Number.py:14: NameError
+__________________ TestSolution.test_singleNumber_with_empty ___________________
+
+self = <test_136_Single_Number.TestSolution object at 0x7fd2adf4c6d0>
+
+    def test_singleNumber_with_empty(self):
+        nums = []
+>       assert Solution().singleNumber(nums) is None
+E       NameError: name 'Solution' is not defined
+
+136_Single_Number/test_136_Single_Number.py:18: NameError
+_______________ TestSolution.test_singleNumber_with_one_element ________________
+
+self = <test_136_Single_Number.TestSolution object at 0x7fd2adf4c7f0>
+
+    def test_singleNumber_with_one_element(self):
+        nums = [1]
+>       assert Solution().singleNumber(nums) == 1
+E       NameError: name 'Solution' is not defined
+
+136_Single_Number/test_136_Single_Number.py:22: NameError
+=========================== short test summary info ============================
+FAILED 136_Single_Number/test_136_Single_Number.py::TestSolution::test_singleNumber_with_hash
+FAILED 136_Single_Number/test_136_Single_Number.py::TestSolution::test_singleNumber_with_set
+FAILED 136_Single_Number/test_136_Single_Number.py::TestSolution::test_singleNumber_with_xor
+FAILED 136_Single_Number/test_136_Single_Number.py::TestSolution::test_singleNumber_with_empty
+FAILED 136_Single_Number/test_136_Single_Number.py::TestSolution::test_singleNumber_with_one_element
+============================== 5 failed in 0.02s ===============================

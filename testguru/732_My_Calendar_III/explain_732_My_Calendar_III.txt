@@ -1,0 +1,9 @@
+This code defines a class called `MyCalendarThree`, which is used for booking appointments in a calendar. The class has one attribute, `self.timeline`, which is a SortedDict object from the `sortedcontainers` module. This is used to keep track of the schedule of appointments.
+
+The `book` method takes two integer arguments, `start` and `end`, which represent the start and end times of the appointment, respectively. The method first updates the `self.timeline` dictionary by incrementing the value for the key `start` by 1 and decrementing the value for the key `end` by 1. This indicates that there is one event starting at `start` and one event ending at `end`.
+
+The method then initializes two variables `ans` and `activeEvents` to 0. The variable `ans` is used to keep track of the maximum number of overlapping appointments, while `activeEvents` represents the number of currently active (overlapping) events.
+
+Next, the method loops through the values in the `self.timeline` dictionary (which are sorted by key). For each value, it updates `activeEvents` by adding the value (which will either be 1 or -1). It then checks if `activeEvents` is greater than `ans` and updates `ans` if necessary.
+
+Finally, the method returns the value of `ans`, which represents the maximum number of overlapping appointments at any point in time. This approach is based on the concept of a line sweep algorithm, where we "sweep" through the timeline of events and keep track of the current count of active events at each point.

@@ -1,0 +1,13 @@
+This is a Python class called "Solution" that has one method called "numDistinct". The method takes in two string arguments "s" and "t" and returns an integer value. 
+
+The method is using dynamic programming to solve a problem where we need to find the number of distinct subsequences of string t in string s. The solution is stored in a matrix called "dp". We initialize this matrix using two loops. The first loop initializes the first row to zeros, and the second loop initializes the first column to ones. 
+
+Next, we use two nested loops to fill up the rest of the matrix using the formula:
+
+    dp[i][j] = dp[i - 1][j] + dp[i - 1][j - 1] * (s[i - 1] == t[j - 1])
+
+This formula takes into account two cases: 
+1) when the current character in s doesn't match the current character in t (i.e., s[i-1] != t[j-1]), we only need to copy the number of distinct subsequences up to the previous character in s (dp[i-1][j]). 
+2) when the current character in s matches the current character in t (i.e., s[i-1] == t[j-1]), in addition to copying the value from the previous character in s (dp[i-1][j]), we add the number of distinct subsequences that could come from the match (dp[i-1][j-1]).
+
+Finally, we return the value stored in the bottom-right corner of the matrix "dp[-1][-1]" which represents the number of distinct subsequences of t in s.

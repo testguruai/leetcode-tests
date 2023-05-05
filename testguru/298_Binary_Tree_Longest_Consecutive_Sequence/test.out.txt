@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 298_Binary_Tree_Longest_Consecutive_Sequence/test_298_Binary_Tree_Longest_Consecutive_Sequence.py _
+298_Binary_Tree_Longest_Consecutive_Sequence/test_298_Binary_Tree_Longest_Consecutive_Sequence.py:67: in <module>
+    test_longestConsecutive()  # run the test function to check
+298_Binary_Tree_Longest_Consecutive_Sequence/test_298_Binary_Tree_Longest_Consecutive_Sequence.py:5: in test_longestConsecutive
+    assert Solution().longestConsecutive(None) == 0
+E   NameError: name 'Solution' is not defined
+=========================== short test summary info ============================
+ERROR 298_Binary_Tree_Longest_Consecutive_Sequence/test_298_Binary_Tree_Longest_Consecutive_Sequence.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

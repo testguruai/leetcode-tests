@@ -1,0 +1,15 @@
+This is a Python implementation of the problem of generating all possible unique structurally balanced binary search trees (BSTs) that store values from 1 to n.
+
+The class `Solution` defines a method `generateTrees` that takes an integer `n` as input, which denotes the maximum value of any node (leaf or internal) that can be stored in a generated BST. The method returns a list of BSTs of all possible unique shapes and sizes that can be constructed with values from 1 to n.
+
+The method `generateTrees` first checks if `n` is 0, in which case it returns an empty list since there are no BSTs that can be constructed with 0 values. Otherwise, it calls another method `get_trees` with the input arguments 1 and n, which define the range of values that can be stored at the root of a BST.
+
+The method `get_trees` recursively computes all possible unique BSTs that can be constructed in the range [start, end], where start and end are inclusive indices that define the range of values that can be stored in the nodes of a BST. The method first checks if the range is invalid, i.e., if `start` is greater than `end`. If this is the case, it returns a list containing a single None value, indicating that there is no BST that can be constructed in this range of values.
+
+If the range is valid, the method uses a loop to iterate over all possible root values that can be stored in the BSTs constructed in this range. For each root value `i`, the method recursively generates all possible unique BSTs that can be created in the left and right subtrees of the root, respectively, by calling `get_trees` with the input arguments `start` and `i-1` for the left subtree, and `i+1` and `end` for the right subtree.
+
+After getting the lists of all possible left and right subtrees, the method uses two nested loops to iterate over all possible combinations of left and right subtrees. For each combination, the method creates a new BST with the root value `i`, and with the left and right subtrees as the left and right children of the root, respectively.
+
+The method `get_trees` returns a list containing all possible unique BSTs that can be constructed in the range [start, end].
+
+Overall, the `generateTrees` method uses the `get_trees` method to generate all possible unique BSTs that can be constructed using values from 1 to `n`, and returns a list containing all of them. Note that the `TreeNode` class is a helper class that defines a node structure for a binary tree with a `val` attribute (the value stored at the node), and `left` and `right` attributes that point to the left and right children of the node, respectively.

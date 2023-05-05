@@ -1,0 +1,11 @@
+This is a Python class named `Solution` that contains a method called `numUniqueEmails`. 
+
+The `numUniqueEmails` method takes in a list of email addresses as a parameter and returns an integer representing the number of unique email addresses in the input list. 
+
+The method creates an empty set called `email_set` to store unique email addresses and then iterates through each email address in the input list using a `for` loop. 
+
+For each email, the method splits the email into two parts, the username and domain name, using the `split()` method. It then removes any text after a `+` sign in the username and replaces all periods (`.`) with an empty string. 
+
+This modified username and the domain name are then concatenated together and added to the `email_set`. 
+
+Finally, the method returns the length of the `email_set`, which represents the number of unique email addresses in the input list.

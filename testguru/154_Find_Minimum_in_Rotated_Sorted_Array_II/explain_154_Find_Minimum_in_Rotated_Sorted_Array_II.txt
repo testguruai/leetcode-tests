@@ -1,0 +1,9 @@
+This is a Python class called Solution that has a method called findMin which finds the minimum element in a given rotated sorted array.
+
+The code defines three different implementations of the findMin method, involving recursive and iterative binary search algorithms.
+
+The first implementation uses the get_min method to recursively divide the array in half and determine which half of the array is still sorted. If the right half is sorted, it checks whether the pivot point (the middle element) is greater than the first element in the array, and returns the first element if it is not. Otherwise, it repeats the recursion on the left half of the array. If the left half is sorted, it simply repeats the recursion on the right half of the array. If neither half is sorted, it makes two recursive calls to the get_min method on each half of the array.
+
+The second implementation uses an iterative binary search algorithm. It initializes two variables, start and end, to the beginning and end of the array, respectively, and iteratively divides the array in half by calculating the middle index as (start + end) / 2. It then checks whether the middle element is greater than the last element of the array. If it is, it sets start to mid + 1. If it is less than the last element, it sets end to mid. If they are equal, it decrements end by 1. It continues this until start and end converge to a single element, and then returns that element.
+
+The third implementation is similar to the second, except it initializes two variables, l and r, to the beginning and end of the array, respectively. It then checks whether the left element is greater than or equal to the right element. If it is, it enters an iterative binary search loop that is similar to the second implementation. If not, it simply returns the left element, since it must be the minimum element in the array.

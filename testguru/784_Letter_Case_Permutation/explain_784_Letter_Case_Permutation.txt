@@ -1,0 +1,15 @@
+This is a Python class called `Solution` that contains a method `letterCasePermutation`. The method takes a string `S` as input and generates all possible letter case permutations of the string.
+
+The method first checks how many letters are contained in the string `S` by using the `isalpha()` method which returns `True` if a character is a letter and `False` otherwise. It counts the number of letters by using a generator expression with the `sum()` method.
+
+It then creates an empty list called `ans` that will be used to store the permutations.
+
+Next, it uses a `for` loop and the bitwise operator `<<` to generate all binary numbers from `0` to `2^B -1`, where `B` is the number of letters in `S`. Each binary number is used to determine whether a letter should be in upper or lower case in the final permutation.
+
+Inside the loop, it initializes a variable `b` to `0` and creates an empty list called `word` that will be used to store the current permutation. It then iterates over each character in `S`, checking whether each character is a letter or not.
+
+If the character is a letter, it checks whether the `b`th bit is set in the binary number `bits`. If it is set, the letter is appended in lower case to `word`, otherwise it is appended in upper case. The variable `b` is then incremented.
+
+If the character is not a letter, it is simply appended to `word`.
+
+Finally, the method appends the current permutation as a string to the `ans` list. After the loop completes, the method returns the `ans` list containing all possible permutations.

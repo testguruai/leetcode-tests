@@ -1,0 +1,101 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py FFFFF              [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_totalFruit1 _______________________________
+
+    def test_totalFruit1():
+        s = Solution()
+>       res = s.totalFruit([1,2,1])
+
+904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py:6: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f2ad2ca8820>, tree = [1, 2, 1]
+
+    def totalFruit(self, tree):
+        ans = i = 0
+>       count = collections.Counter()
+E       NameError: name 'collections' is not defined
+
+904_Fruit_Into_Baskets/solution.py:48: NameError
+_______________________________ test_totalFruit2 _______________________________
+
+    def test_totalFruit2():
+        s = Solution()
+>       res = s.totalFruit([0,1,2,2])
+
+904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f2ad2ca95d0>, tree = [0, 1, 2, 2]
+
+    def totalFruit(self, tree):
+        ans = i = 0
+>       count = collections.Counter()
+E       NameError: name 'collections' is not defined
+
+904_Fruit_Into_Baskets/solution.py:48: NameError
+_______________________________ test_totalFruit3 _______________________________
+
+    def test_totalFruit3():
+        s = Solution()
+>       res = s.totalFruit([1,2,3,2,2])
+
+904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f2ad2ca9450>, tree = [1, 2, 3, 2, 2]
+
+    def totalFruit(self, tree):
+        ans = i = 0
+>       count = collections.Counter()
+E       NameError: name 'collections' is not defined
+
+904_Fruit_Into_Baskets/solution.py:48: NameError
+_______________________________ test_totalFruit4 _______________________________
+
+    def test_totalFruit4():
+        s = Solution()
+>       res = s.totalFruit([3,3,3,1,2,1,1,2,3,3,4])
+
+904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f2ad2ca9bd0>
+tree = [3, 3, 3, 1, 2, 1, ...]
+
+    def totalFruit(self, tree):
+        ans = i = 0
+>       count = collections.Counter()
+E       NameError: name 'collections' is not defined
+
+904_Fruit_Into_Baskets/solution.py:48: NameError
+_______________________________ test_totalFruit5 _______________________________
+
+    def test_totalFruit5():
+        s = Solution()
+>       res = s.totalFruit([])
+
+904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f2ad2caa380>, tree = []
+
+    def totalFruit(self, tree):
+        ans = i = 0
+>       count = collections.Counter()
+E       NameError: name 'collections' is not defined
+
+904_Fruit_Into_Baskets/solution.py:48: NameError
+=========================== short test summary info ============================
+FAILED 904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py::test_totalFruit1
+FAILED 904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py::test_totalFruit2
+FAILED 904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py::test_totalFruit3
+FAILED 904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py::test_totalFruit4
+FAILED 904_Fruit_Into_Baskets/test_904_Fruit_Into_Baskets.py::test_totalFruit5
+============================== 5 failed in 0.02s ===============================

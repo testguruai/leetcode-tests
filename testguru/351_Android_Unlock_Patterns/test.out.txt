@@ -1,0 +1,100 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+351_Android_Unlock_Patterns/test_351_Android_Unlock_Patterns.py F.F      [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_numberOfPatterns _____________________________
+
+    def test_numberOfPatterns():
+        sol = Solution()
+        assert sol.numberOfPatterns(1, 1) == 9
+>       assert sol.numberOfPatterns(1, 2) == 65
+
+351_Android_Unlock_Patterns/test_351_Android_Unlock_Patterns.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+351_Android_Unlock_Patterns/solution.py:11: in numberOfPatterns
+    res += self.calc_patterns(used, -1, l)
+351_Android_Unlock_Patterns/solution.py:41: in calc_patterns
+    res += self.calc_patterns(used, i, length - 1)
+351_Android_Unlock_Patterns/solution.py:39: in calc_patterns
+    if self.is_valid(used, i, last):
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f3ccc504700>
+used = [True, False, False, False, False, False, ...], index = 6, last = 0
+
+    def is_valid(self, used, index, last):
+        # markded
+        if used[index]:
+            return False
+        # first digit
+        if last == -1:
+            return True
+        # adjacent cells (in a row or in a column)
+        if (last + index) % 2 == 1:
+            return True
+        mid = (last + index) / 2
+        if mid == 4:
+            return used[mid]
+        # adjacent cells on diagonal
+        if (index % 3 != last % 3) and (index / 3 != last / 3):
+            return True
+        # all other cells which are not adjacent
+>       return used[mid]
+E       TypeError: list indices must be integers or slices, not float
+
+351_Android_Unlock_Patterns/solution.py:32: TypeError
+______________________________ test_calc_patterns ______________________________
+
+    def test_calc_patterns():
+        sol = Solution()
+        used = [False] * 9
+    
+        # Test length 0 returns 1
+        assert sol.calc_patterns(used, -1, 0) == 1
+    
+        # Test number of patterns for length 1
+        assert sol.calc_patterns(used, -1, 1) == 9
+    
+        # Test number of patterns for length 2
+>       assert sol.calc_patterns(used, -1, 2) == 56
+
+351_Android_Unlock_Patterns/test_351_Android_Unlock_Patterns.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+351_Android_Unlock_Patterns/solution.py:41: in calc_patterns
+    res += self.calc_patterns(used, i, length - 1)
+351_Android_Unlock_Patterns/solution.py:39: in calc_patterns
+    if self.is_valid(used, i, last):
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f3ccc543730>
+used = [True, False, False, False, False, False, ...], index = 6, last = 0
+
+    def is_valid(self, used, index, last):
+        # markded
+        if used[index]:
+            return False
+        # first digit
+        if last == -1:
+            return True
+        # adjacent cells (in a row or in a column)
+        if (last + index) % 2 == 1:
+            return True
+        mid = (last + index) / 2
+        if mid == 4:
+            return used[mid]
+        # adjacent cells on diagonal
+        if (index % 3 != last % 3) and (index / 3 != last / 3):
+            return True
+        # all other cells which are not adjacent
+>       return used[mid]
+E       TypeError: list indices must be integers or slices, not float
+
+351_Android_Unlock_Patterns/solution.py:32: TypeError
+=========================== short test summary info ============================
+FAILED 351_Android_Unlock_Patterns/test_351_Android_Unlock_Patterns.py::test_numberOfPatterns
+FAILED 351_Android_Unlock_Patterns/test_351_Android_Unlock_Patterns.py::test_calc_patterns
+========================= 2 failed, 1 passed in 0.02s ==========================

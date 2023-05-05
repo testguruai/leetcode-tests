@@ -1,0 +1,14 @@
+This Python code defines a class called "Solution" and a method called "validWordSquare". The method takes a list of strings called "words" as an argument and returns a boolean value. 
+
+The method first checks if the "words" list is either None or empty. If it is, it returns True. Otherwise, it proceeds to check if the "words" list is a valid word square. 
+
+A word square is a special arrangement of words where the first word is read left-to-right and top-to-bottom, the second word is read top-to-bottom and left-to-right, the third word is read left-to-right and top-to-bottom, and so on. For example, the following is a word square: 
+
+BALL
+AREA
+LEAD
+LADY
+
+The method checks if each row in the "words" list has the same length as the list itself. If any row has a different length, it returns False. Then, it checks if the words in each column of the "words" list match the corresponding words in each row. If any mismatch is found, it returns False. If all the rows and columns match, it returns True. 
+
+The commented-out code at the end of the method is an alternative solution using a one-liner. It transposes the "matrix" (the "words" list) using the "map" function and compares it to the transposed matrix of the original matrix (which is also transposed using the "map" function). The "map(None, ...)" syntax is used to fill in missing spots with "None" due to the varying lengths of the strings in the "words" list.

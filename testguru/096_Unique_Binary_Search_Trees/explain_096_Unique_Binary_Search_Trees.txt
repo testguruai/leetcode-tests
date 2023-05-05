@@ -1,0 +1,7 @@
+This code defines a class Solution with a method numTrees that takes an integer n and returns the number of structurally unique binary search trees (BSTs) that store values 1 to n. 
+
+The function uses dynamic programming to calculate the answer. An array dp of size n+1 is used to store the number of BSTs that can be formed with i nodes, dp[0] is initialized to 1 and dp[1] is set to 1 since there is only one BST that can be formed with one node. 
+
+For i >= 2, the function iterates through the range from 2 to n+1 to evaluate the number of BSTs that can be formed with i nodes. The inner loop ranges from 1 to i, representing the root node. The number of BSTs that can be formed with root node as the current node is determined by multiplying the number of BSTs that can be formed with nodes in the left subtree (root-1) and nodes in the right subtree (level-root).
+
+The function continued to accumulate the results in the dp array. Finally, it returns the result at dp[n].

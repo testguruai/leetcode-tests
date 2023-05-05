@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+051_N-Queens/test_051_N-Queens.py EE                                     [100%]
+
+==================================== ERRORS ====================================
+____________________ ERROR at setup of test_do_solveNQueens ____________________
+
+    @pytest.fixture
+    def setup():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+051_N-Queens/test_051_N-Queens.py:5: NameError
+_____________________ ERROR at setup of test_solveNQueens ______________________
+
+    @pytest.fixture
+    def setup():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+051_N-Queens/test_051_N-Queens.py:5: NameError
+=========================== short test summary info ============================
+ERROR 051_N-Queens/test_051_N-Queens.py::test_do_solveNQueens - NameError: na...
+ERROR 051_N-Queens/test_051_N-Queens.py::test_solveNQueens - NameError: name ...
+============================== 2 errors in 0.01s ===============================

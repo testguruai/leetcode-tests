@@ -1,0 +1,9 @@
+This Python code defines a class Solution with a method trap that takes a list of integers as input and returns an integer as output. The objective of the method is to calculate the total amount of water that can be trapped between bars of the given heights (similar to a container). The method first computes the length of the input array, then proceeds to handle two cases for each bar in the input array:
+
+- If the current bar has a height no less than the left bar, then the method computes the rainwater between the left and the right bars, adds the result to the total, and moves the left bar to the current position.
+- If the current bar is the rightmost bar, then the left bar is set to the highest bar between the current and the leftmost bars, and the rainwater is computed between the left and the new highest bar.
+- Otherwise, the method moves to the next bar and repeats the process.
+
+The rainwater computation is performed by the internal method rain_water, which computes the amount of water trapped by a container between two bars given their heights. The method iterates through all the bars between the left and the right bars and sums the height differences. Finally, the rainwater amount is calculated by subtracting the height differences from the base area (i.e., the minimum height between the left and the right bars times the distance between them).
+
+There is also a commented-out alternative implementation of the trap method that makes use of two auxiliary arrays to store the maximum bars from the left and the right sides of each bar. This approach iterates over the bars once to fill the two arrays, then iterates again to compute the amount of trapped water between each bar using the maximum bars from both sides.

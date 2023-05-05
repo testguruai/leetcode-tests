@@ -1,0 +1,90 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 8 items
+
+028_Implement_strStr()/test_028_Implement_strStr().py FFFFFFFF           [100%]
+
+=================================== FAILURES ===================================
+____________________ TestSolution.test_strStr_empty_needle _____________________
+
+self = <test_028_Implement_strStr().TestSolution object at 0x7fb79dbac430>
+
+    def test_strStr_empty_needle(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+028_Implement_strStr()/test_028_Implement_strStr().py:6: NameError
+______________________ TestSolution.test_strStr_no_match _______________________
+
+self = <test_028_Implement_strStr().TestSolution object at 0x7fb79dbac520>
+
+    def test_strStr_no_match(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+028_Implement_strStr()/test_028_Implement_strStr().py:10: NameError
+________________ TestSolution.test_strStr_single_char_haystack _________________
+
+self = <test_028_Implement_strStr().TestSolution object at 0x7fb79dbac640>
+
+    def test_strStr_single_char_haystack(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+028_Implement_strStr()/test_028_Implement_strStr().py:14: NameError
+__________________ TestSolution.test_strStr_multiple_matches ___________________
+
+self = <test_028_Implement_strStr().TestSolution object at 0x7fb79dbac760>
+
+    def test_strStr_multiple_matches(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+028_Implement_strStr()/test_028_Implement_strStr().py:18: NameError
+____________________ TestSolution.test_strStr_match_at_end _____________________
+
+self = <test_028_Implement_strStr().TestSolution object at 0x7fb79dbac880>
+
+    def test_strStr_match_at_end(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+028_Implement_strStr()/test_028_Implement_strStr().py:22: NameError
+__________________________ TestSolution.test_makeNext __________________________
+
+self = <test_028_Implement_strStr().TestSolution object at 0x7fb79dbac9a0>
+
+    def test_makeNext(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+028_Implement_strStr()/test_028_Implement_strStr().py:26: NameError
+___________________ TestSolution.test_makeNext_empty_needle ____________________
+
+self = <test_028_Implement_strStr().TestSolution object at 0x7fb79dbacac0>
+
+    def test_makeNext_empty_needle(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+028_Implement_strStr()/test_028_Implement_strStr().py:30: NameError
+________________ TestSolution.test_makeNext_single_char_needle _________________
+
+self = <test_028_Implement_strStr().TestSolution object at 0x7fb79dbacbe0>
+
+    def test_makeNext_single_char_needle(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+028_Implement_strStr()/test_028_Implement_strStr().py:34: NameError
+=========================== short test summary info ============================
+FAILED 028_Implement_strStr()/test_028_Implement_strStr().py::TestSolution::test_strStr_empty_needle
+FAILED 028_Implement_strStr()/test_028_Implement_strStr().py::TestSolution::test_strStr_no_match
+FAILED 028_Implement_strStr()/test_028_Implement_strStr().py::TestSolution::test_strStr_single_char_haystack
+FAILED 028_Implement_strStr()/test_028_Implement_strStr().py::TestSolution::test_strStr_multiple_matches
+FAILED 028_Implement_strStr()/test_028_Implement_strStr().py::TestSolution::test_strStr_match_at_end
+FAILED 028_Implement_strStr()/test_028_Implement_strStr().py::TestSolution::test_makeNext
+FAILED 028_Implement_strStr()/test_028_Implement_strStr().py::TestSolution::test_makeNext_empty_needle
+FAILED 028_Implement_strStr()/test_028_Implement_strStr().py::TestSolution::test_makeNext_single_char_needle
+============================== 8 failed in 0.02s ===============================

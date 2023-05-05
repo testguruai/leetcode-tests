@@ -1,0 +1,7 @@
+This code is a Python solution to the problem of finding the minimum path sum from the top-left corner to the bottom-right corner of a grid. The grid is represented as a 2D list of integers, where each element represents the cost to travel to that cell from the top-left corner.
+
+The `minPathSum` method takes a `grid` parameter and returns an integer representing the minimum path sum. It first checks the size of the grid, and if it is empty, it returns 0. It then initializes variables to store the height and width of the grid, and creates a new 2D list called `pathmap` to store the minimum path sums.
+
+It then sets the value of the top-left cell in `pathmap` to the value of the top-left cell in `grid`. It then iterates over each cell in the grid using nested loops, and for each cell it calculates the minimum path sum to that cell using the minimum sum of the adjacent cells in `pathmap` plus the cost to travel to the current cell from the adjacent cell. It then sets the value of the current cell in `pathmap` to this minimum path sum.
+
+Finally, it returns the value of the bottom-right cell in `pathmap`, which represents the minimum path sum from the top-left corner to the bottom-right corner of the grid.

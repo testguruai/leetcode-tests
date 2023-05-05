@@ -1,0 +1,5 @@
+This code defines a class called Solution that has a method called findAnagrams. This method takes in two parameters, strings s and p, and returns a list of integers. The function finds all the starting indices of the anagrams of the string p in the string s.
+
+The implementation uses a sliding window approach. We first create a character map of string p, which is an array of 256 integers initialized to 0. Then, we loop through the characters in p and update the character map accordingly. Next, we have three pointers, left, right, and count, initialized to 0, 0, and the length of p respectively. We slide the right pointer through s and decrement count whenever we encounter a character that is present in the character map. We slide the left pointer to the next position whenever the substring of length p is found, and increment count whenever the character count in the character map is more than or equal to 0.
+
+The function has two more implementations of finding anagrams of p in s. The first implementation uses a bit map to keep track of character occurrence, and the second uses a dictionary to keep track of character counts.

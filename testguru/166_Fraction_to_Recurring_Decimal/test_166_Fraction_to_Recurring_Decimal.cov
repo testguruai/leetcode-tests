@@ -1,0 +1,6 @@
+Name                                                                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------
+166_Fraction_to_Recurring_Decimal/solution.py                                    28      2    93%   34-36
+166_Fraction_to_Recurring_Decimal/test_166_Fraction_to_Recurring_Decimal.py      15      0   100%
+-----------------------------------------------------------------------------------------------------------
+TOTAL                                                                            43      2    95%

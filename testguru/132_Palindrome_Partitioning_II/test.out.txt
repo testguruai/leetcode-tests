@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+132_Palindrome_Partitioning_II/test_132_Palindrome_Partitioning_II.py F  [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_solution _________________________________
+
+    def test_solution():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+132_Palindrome_Partitioning_II/test_132_Palindrome_Partitioning_II.py:4: NameError
+=========================== short test summary info ============================
+FAILED 132_Palindrome_Partitioning_II/test_132_Palindrome_Partitioning_II.py::test_solution
+============================== 1 failed in 0.01s ===============================

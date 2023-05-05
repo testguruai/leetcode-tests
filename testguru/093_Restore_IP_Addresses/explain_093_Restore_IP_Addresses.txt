@@ -1,0 +1,9 @@
+This is a Python program that uses the class "Solution" to implement a solution for the problem of restoring IP addresses. The function takes in a string as input and returns a list of all possible valid IP addresses that can be formed from the string.
+
+The program consists of two methods: "restoreIpAddresses" and "isValid". The former takes in a string and uses the latter to check if each part of the IP address is valid. If a valid combination is found, it is added to the result list. The "isValid" method is used to check whether a given string represents a valid IP address field or not.
+
+The first version of the code that is commented out takes a recursive approach to solve the problem, where it tries to generate all possible IP addresses by trying out different combinations of substrings. However, this approach is inefficient and may result in time limit exceeded errors.
+
+The second version of the code takes a more efficient approach by using three nested loops to generate all possible combinations of four substrings. It then uses the "isValid" function to check if each of these four substrings represents a valid IP address field or not. If all four substrings are valid, the IP address is added to the result list. 
+
+When the program is run, the "restoreIpAddresses" function is called with the input string "25525511135". The output list is printed and contains the four possible valid IP addresses that can be formed from this input string: ["255.255.11.135", "255.255.111.35", "255.255.1.135", "255.255.113.5"].

@@ -1,0 +1,93 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+048_Rotate_Image/test_048_Rotate_Image.py F.F.F                          [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_rotate_4x4_matrix ____________________________
+
+    def test_rotate_4x4_matrix():
+        s = Solution()
+        matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
+        expected_result = [[13,9,5,1],[14,10,6,2],[15,11,7,3],[16,12,8,4]]
+>       s.rotate(matrix)
+
+048_Rotate_Image/test_048_Rotate_Image.py:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f62ced6c850>
+matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+
+    def rotate(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: void Do not return anything, modify matrix in-place instead.
+        """
+        # rotate from outside to inside
+        if matrix is None or len(matrix) == 1:
+            return
+        ls = len(matrix)
+>       for i in range(ls / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+048_Rotate_Image/solution.py:11: TypeError
+___________________________ test_rotate_empty_matrix ___________________________
+
+    def test_rotate_empty_matrix():
+        s = Solution()
+        matrix = []
+        expected_result = []
+>       s.rotate(matrix)
+
+048_Rotate_Image/test_048_Rotate_Image.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f62cebadea0>, matrix = []
+
+    def rotate(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: void Do not return anything, modify matrix in-place instead.
+        """
+        # rotate from outside to inside
+        if matrix is None or len(matrix) == 1:
+            return
+        ls = len(matrix)
+>       for i in range(ls / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+048_Rotate_Image/solution.py:11: TypeError
+____________________________ test_rotate_odd_matrix ____________________________
+
+    def test_rotate_odd_matrix():
+        s = Solution()
+        matrix = [[1,2,3],[4,5,6],[7,8,9]]
+        expected_result = [[7,4,1],[8,5,2],[9,6,3]]
+>       s.rotate(matrix)
+
+048_Rotate_Image/test_048_Rotate_Image.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f62ced6cdf0>
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+    def rotate(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: void Do not return anything, modify matrix in-place instead.
+        """
+        # rotate from outside to inside
+        if matrix is None or len(matrix) == 1:
+            return
+        ls = len(matrix)
+>       for i in range(ls / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+048_Rotate_Image/solution.py:11: TypeError
+=========================== short test summary info ============================
+FAILED 048_Rotate_Image/test_048_Rotate_Image.py::test_rotate_4x4_matrix - Ty...
+FAILED 048_Rotate_Image/test_048_Rotate_Image.py::test_rotate_empty_matrix - ...
+FAILED 048_Rotate_Image/test_048_Rotate_Image.py::test_rotate_odd_matrix - Ty...
+========================= 3 failed, 2 passed in 0.02s ==========================

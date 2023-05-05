@@ -1,0 +1,11 @@
+This is a python code that implements a solution for finding the first missing positive integer in an unsorted integer array.
+
+The code defines a class named Solution which has a method named firstMissingPositive that takes two arguments; self and nums (which is an unsorted integer list) and returns the first missing positive integer.
+
+The code then initializes a variable named ls with the length of the nums list and a variable named index to 0.
+
+It then enters a while loop with index as its condition and checks if the current number is less than or equal to zero, greater than ls, or if the number is in the correct position. If any of these checks pass, index is incremented by 1. Otherwise, a variable named pos is initialized to the index of the number that should be in the current position and the current number is swapped with the number in the correct position.
+
+After the while loop, a variable named res is initialized to 0 and another while loop is entered with res as its condition. This while loop checks that res is less than ls and that the current number at index res in nums is equal to res+1. If the condition is true, res is incremented by 1.
+
+Finally, the method returns the value of res+1 which is the first missing positive integer in the nums list.

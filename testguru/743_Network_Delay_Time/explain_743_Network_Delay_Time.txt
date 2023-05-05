@@ -1,0 +1,9 @@
+This is a solution implementation for the LeetCode problem "Network Delay Time". The problem asks to find the minimum time required for all nodes in a given directed graph to receive a signal from a starting node K. 
+
+The solution uses two different algorithms - DFS and Dijkstra's algorithm - to find the minimum time. 
+
+The first method - DFS - traverses the graph starting from the source node K and updates the minimum time required to reach each node. It maintains a dictionary of distances from the source node to each node, initialized to infinity. It also updates the distance for each neighbor node of the current node based on the time required to go from the current node to the neighbor node. 
+
+The second method - Dijkstra's algorithm - is a more efficient approach to solve shortest path problems. It maintains a dictionary of minimum distances from the source node to each node. It also uses a boolean array to check if a node has already been visited. The algorithm iteratively selects the node with minimum distance (which has not been visited) and updates the distances of its unvisited neighbors based on the distance to the selected node. 
+
+The solution returns the maximum value of distances in the dictionary, which represents the minimum time required for all nodes to receive the signal. If the maximum value is still infinity, it means not all nodes were reached and the function returns -1.

@@ -1,0 +1,13 @@
+This is a python class named Solution that defines a method called wordBreak. 
+
+The wordBreak method takes in two arguments: s (a string) and wordDict (a set of strings). It returns a boolean value. 
+
+The purpose of the wordBreak method is to determine if the input string s can be segmented into a space-separated sequence of one or more dictionary words as specified by wordDict. 
+
+The method uses a queue data structure to BFS (breadth-first search) through the input string s and check if sub-strings of s exist in wordDict. It does this by checking if the current string s[start:start+l] where l is a length of a word in wordDict is in wordDict. 
+
+If the current string is in wordDict, the method then checks if the end of the current string is the end of the input string s. If it is, it returns True, otherwise it continues to BFS by adding the next possible substring to the queue. 
+
+A visited list is used to keep track of previously visited sub-strings to avoid duplicate checks. 
+
+If no valid segmentation is found, the method returns False.

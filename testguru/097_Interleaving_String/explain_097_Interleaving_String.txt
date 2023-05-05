@@ -1,0 +1,15 @@
+This is a Python class called 'Solution' that contains a function called 'isInterleave'. This function takes three string arguments: s1, s2, and s3. The function returns a boolean value indicating whether s3 is a valid interleaving of s1 and s2. 
+
+The function uses a breadth-first search algorithm with a queue to explore all possible interleavings of s1 and s2 that could match s3. 
+
+The function first checks if the lengths of s1 and s2 add up to the length of s3. If not, it immediately returns False since s3 can't be an interleaving of s1 and s2 in this case.
+
+The function then initializes a queue of tuples representing indices into s1 and s2 that represent possible matching positions in s3. It also initializes a set to keep track of previously visited positions. Finally, it initializes a boolean variable called 'isSuccess' to keep track of whether a matching combination of s1 and s2 has been found.
+
+It then enters into a while-loop, which continues until either the queue is empty or it reaches a special tuple (-1, -1), which is a flag used to indicate that all possible matching combinations have been exhausted. It pops the first item from the queue and checks if it has reached the end of both s1 and s2 simultaneously, in which case it returns True since s3 is indeed a valid interleaving. 
+
+If the position tuple is a special tuple (-1, -1), it re-inserts it into the queue and increments an index variable to keep track of which character to check next in s3. 
+
+Otherwise, it checks if the current position tuple has already been visited before. If so, it skips it. If not, it adds it to the set of visited positions and checks if the current position matches the next character in s3. If so, it adds the next possible matching positions to the queue.
+
+If no valid interleaving combinations are found and the while-loop finishes, the function returns False.

@@ -1,0 +1,9 @@
+This is a Python class named `Solution` that has a method named `isValidBST` that returns a boolean indicating whether a given binary tree is a valid Binary Search Tree or not.
+
+The class also has a helper method named `isVaild_helper` that takes three parameters: `root`, `minVal`, and `maxVal`. The `root` parameter represents the current node being processed, while `minVal` and `maxVal` are the minimum and maximum permissible values for a Binary Search Tree, respectively.
+
+The `isValidBST` method calls the `isVaild_helper` method by passing the root node of the binary tree and the minimum and maximum permissible values set as negative infinite and positive infinite, respectively.
+
+Inside the `isVaild_helper` method, if the `root` node is None, it simply returns `True` as an empty tree is always a valid Binary Search Tree. Otherwise, it checks whether the current node's value violates the Binary Search Tree property (i.e., the value should be strictly greater than the minimum value and strictly less than the maximum value). If the property is violated, it returns `False`. Otherwise, it recursively checks its left and right subtrees, updating the `minVal` parameter for the left subtree to the current node's value and the `maxVal` parameter for the right subtree to the current node's value.
+
+Finally, if all the recursive calls return `True`, the method returns `True`, indicating that the binary tree is a valid Binary Search Tree.

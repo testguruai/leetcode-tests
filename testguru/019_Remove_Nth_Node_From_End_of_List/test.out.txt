@@ -1,0 +1,51 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py F [ 20%]
+FFFF                                                                     [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_removeNthFromEnd_empty_list _______________________
+
+    def test_removeNthFromEnd_empty_list():
+>     s = Solution()
+E     NameError: name 'Solution' is not defined
+
+019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py:4: NameError
+_______________________ test_removeNthFromEnd_invalid_n ________________________
+
+    def test_removeNthFromEnd_invalid_n():
+>     s = Solution()
+E     NameError: name 'Solution' is not defined
+
+019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py:8: NameError
+______________________ test_removeNthFromEnd_remove_head _______________________
+
+    def test_removeNthFromEnd_remove_head():
+>     s = Solution()
+E     NameError: name 'Solution' is not defined
+
+019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py:17: NameError
+______________________ test_removeNthFromEnd_remove_tail _______________________
+
+    def test_removeNthFromEnd_remove_tail():
+>     s = Solution()
+E     NameError: name 'Solution' is not defined
+
+019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py:27: NameError
+_____________________ test_removeNthFromEnd_remove_middle ______________________
+
+    def test_removeNthFromEnd_remove_middle():
+>     s = Solution()
+E     NameError: name 'Solution' is not defined
+
+019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py:40: NameError
+=========================== short test summary info ============================
+FAILED 019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py::test_removeNthFromEnd_empty_list
+FAILED 019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py::test_removeNthFromEnd_invalid_n
+FAILED 019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py::test_removeNthFromEnd_remove_head
+FAILED 019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py::test_removeNthFromEnd_remove_tail
+FAILED 019_Remove_Nth_Node_From_End_of_List/test_019_Remove_Nth_Node_From_End_of_List.py::test_removeNthFromEnd_remove_middle
+============================== 5 failed in 0.02s ===============================

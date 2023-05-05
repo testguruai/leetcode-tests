@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+852_Peak_Index_in_a_Mountain_Array/test_852_Peak_Index_in_a_Mountain_Array.py F [100%]
+
+=================================== FAILURES ===================================
+________________________ test_peakIndexInMountainArray _________________________
+
+    def test_peakIndexInMountainArray():
+        s = Solution()
+>       assert s.peakIndexInMountainArray([0,1,0])==1
+
+852_Peak_Index_in_a_Mountain_Array/test_852_Peak_Index_in_a_Mountain_Array.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fe768524400>, A = [0, 1, 0]
+
+    def peakIndexInMountainArray(self, A):
+        lo, hi = 0, len(A) - 1
+        while lo < hi:
+            mid = (lo + hi) / 2
+>           if A[mid] < A[mid + 1]:
+E           TypeError: list indices must be integers or slices, not float
+
+852_Peak_Index_in_a_Mountain_Array/solution.py:16: TypeError
+=========================== short test summary info ============================
+FAILED 852_Peak_Index_in_a_Mountain_Array/test_852_Peak_Index_in_a_Mountain_Array.py::test_peakIndexInMountainArray
+============================== 1 failed in 0.01s ===============================

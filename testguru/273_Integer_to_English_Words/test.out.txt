@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+273_Integer_to_English_Words/test_273_Integer_to_English_Words.py F      [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_numberToWords ______________________________
+
+    def test_numberToWords():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+273_Integer_to_English_Words/test_273_Integer_to_English_Words.py:3: NameError
+=========================== short test summary info ============================
+FAILED 273_Integer_to_English_Words/test_273_Integer_to_English_Words.py::test_numberToWords
+============================== 1 failed in 0.01s ===============================

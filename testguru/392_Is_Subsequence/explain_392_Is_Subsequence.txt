@@ -1,0 +1,7 @@
+This is a Python code defining a class named Solution with a method called `isSubsequence` that checks if the given string `s` is a subsequence of another given string `t`. 
+
+The method `isSubsequence` takes two string parameters (`s` and `t`), and returns a boolean value indicating whether `s` is a subsequence of `t` or not. 
+
+The logic of the method is that it iterates through each character in `s` and checks if that character is present in the string `t`. If it's not, it returns `False`. If it is present, it searches for the first occurrence of that character in `t` using a loop and `index()` method of string. Once found, it removes all the characters from the beginning of the string `t` till that index using slicing. 
+
+Finally, if all the characters in `s` are found in `t` in the same order, it returns `True`, indicating `s` is a subsequence of `t`. Otherwise, it returns `False`.

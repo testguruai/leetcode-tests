@@ -1,0 +1,124 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+023_Merge_k_Sorted_Lists/test_023_Merge_k_Sorted_Lists.py FFF.           [100%]
+
+=================================== FAILURES ===================================
+_________________________ testMergeKListsPriorityQueue _________________________
+
+    def testMergeKListsPriorityQueue():
+        lists = []
+        lists.append(ListNode(1))
+        lists[0].next = ListNode(4)
+        lists[0].next.next = ListNode(5)
+    
+        lists.append(ListNode(1))
+        lists[1].next = ListNode(3)
+        lists[1].next.next = ListNode(4)
+    
+        lists.append(ListNode(2))
+        lists[2].next = ListNode(6)
+    
+>       merged_list = Solution().mergeKLists(lists)
+
+023_Merge_k_Sorted_Lists/test_023_Merge_k_Sorted_Lists.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+023_Merge_k_Sorted_Lists/solution.py:57: in mergeKLists
+    return self.mergeK(lists, 0, len(lists) - 1)
+023_Merge_k_Sorted_Lists/solution.py:65: in mergeK
+    return self.mergeTwolists(self.mergeK(lists, low, mid), self.mergeK(lists, mid + 1, high))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f90a6b69540>
+lists = [<solution.ListNode object at 0x7f90a6b69240>, <solution.ListNode object at 0x7f90a6b69360>, <solution.ListNode object at 0x7f90a6b69480>]
+low = 0, high = 1.0
+
+    def mergeK(self, lists, low, high):
+        if low == high:
+            return lists[low]
+        elif low + 1 == high:
+>           return self.mergeTwolists(lists[low], lists[high])
+E           TypeError: list indices must be integers or slices, not float
+
+023_Merge_k_Sorted_Lists/solution.py:63: TypeError
+_____________________________ testMergeKListsSort ______________________________
+
+    def testMergeKListsSort():
+        lists = []
+        lists.append(ListNode(1))
+        lists[0].next = ListNode(4)
+        lists[0].next.next = ListNode(5)
+    
+        lists.append(ListNode(1))
+        lists[1].next = ListNode(3)
+        lists[1].next.next = ListNode(4)
+    
+        lists.append(ListNode(2))
+        lists[2].next = ListNode(6)
+    
+>       merged_list = Solution().mergeKLists(lists)
+
+023_Merge_k_Sorted_Lists/test_023_Merge_k_Sorted_Lists.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+023_Merge_k_Sorted_Lists/solution.py:57: in mergeKLists
+    return self.mergeK(lists, 0, len(lists) - 1)
+023_Merge_k_Sorted_Lists/solution.py:65: in mergeK
+    return self.mergeTwolists(self.mergeK(lists, low, mid), self.mergeK(lists, mid + 1, high))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f90a69acf10>
+lists = [<solution.ListNode object at 0x7f90a69ad030>, <solution.ListNode object at 0x7f90a69ad240>, <solution.ListNode object at 0x7f90a69ad270>]
+low = 0, high = 1.0
+
+    def mergeK(self, lists, low, high):
+        if low == high:
+            return lists[low]
+        elif low + 1 == high:
+>           return self.mergeTwolists(lists[low], lists[high])
+E           TypeError: list indices must be integers or slices, not float
+
+023_Merge_k_Sorted_Lists/solution.py:63: TypeError
+___________________________ testMergeKListsRecursive ___________________________
+
+    def testMergeKListsRecursive():
+        lists = []
+        lists.append(ListNode(1))
+        lists[0].next = ListNode(4)
+        lists[0].next.next = ListNode(5)
+    
+        lists.append(ListNode(1))
+        lists[1].next = ListNode(3)
+        lists[1].next.next = ListNode(4)
+    
+        lists.append(ListNode(2))
+        lists[2].next = ListNode(6)
+    
+>       merged_list = Solution().mergeKLists(lists)
+
+023_Merge_k_Sorted_Lists/test_023_Merge_k_Sorted_Lists.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+023_Merge_k_Sorted_Lists/solution.py:57: in mergeKLists
+    return self.mergeK(lists, 0, len(lists) - 1)
+023_Merge_k_Sorted_Lists/solution.py:65: in mergeK
+    return self.mergeTwolists(self.mergeK(lists, low, mid), self.mergeK(lists, mid + 1, high))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f90a69bb130>
+lists = [<solution.ListNode object at 0x7f90a69bb3d0>, <solution.ListNode object at 0x7f90a69bb430>, <solution.ListNode object at 0x7f90a69bb040>]
+low = 0, high = 1.0
+
+    def mergeK(self, lists, low, high):
+        if low == high:
+            return lists[low]
+        elif low + 1 == high:
+>           return self.mergeTwolists(lists[low], lists[high])
+E           TypeError: list indices must be integers or slices, not float
+
+023_Merge_k_Sorted_Lists/solution.py:63: TypeError
+=========================== short test summary info ============================
+FAILED 023_Merge_k_Sorted_Lists/test_023_Merge_k_Sorted_Lists.py::testMergeKListsPriorityQueue
+FAILED 023_Merge_k_Sorted_Lists/test_023_Merge_k_Sorted_Lists.py::testMergeKListsSort
+FAILED 023_Merge_k_Sorted_Lists/test_023_Merge_k_Sorted_Lists.py::testMergeKListsRecursive
+========================= 3 failed, 1 passed in 0.03s ==========================

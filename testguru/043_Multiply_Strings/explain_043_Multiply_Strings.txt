@@ -1,0 +1,11 @@
+The code defines a class Solution, which contains two methods: multiply and add_strings. The add_strings method is not used in the current implementation of multiply and can be ignored.
+
+The multiply method takes two string inputs, num1 and num2, representing non-negative integers, and returns their product as a string. It first checks if either of the inputs is 0 and returns 0 if so. It then initializes an empty string variable res and finds the length of both inputs. It creates a list arr with length equal to the sum of the lengths of the inputs, initialized with all zeroes.
+
+It then loops over the indices of num1 in reverse order and for each index, loops over the indices of num2 in reverse order. It calculates the product of the integers at these indices (using int() to convert the string inputs to integers) and adds it to the corresponding index in arr. This step calculates the direct results of multiplying each digit in the two inputs.
+
+Once the nested loops are complete, the code loops over the indices of arr in reverse order (excluding the first element) and performs a digital addition by adding the integer at the previous index and dividing by 10 to the integer at the current index, and taking the modulo of the sum by 10 to get the final result. This step handles any carryovers that occurred during the multiplication.
+
+The final step is to convert the list arr back to a string by looping over the indices of arr starting from the first non-zero element (if any) and concatenating the string version of the integer at each index to res. The resulting string is the product of the two inputs and is returned.
+
+The code includes a main block that creates an instance of the Solution class, calls the multiply method with inputs '98' and '9', and prints the result '882'.

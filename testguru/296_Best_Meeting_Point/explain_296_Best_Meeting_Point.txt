@@ -1,0 +1,9 @@
+The given code defines a class named "Solution". It has three methods: `minTotalDistance`, `minDistance1D`, `collectRows` and `collectCols`. 
+
+`collectRows` method takes a grid as input and returns a list of row numbers where the value is 1. 
+
+`collectCols` method takes a grid as input and returns a list of column numbers where the value is 1. 
+
+`minDistance1D` method takes a list of points and calculates the minimum distance between them. It does this by computing the sum of differences between the maximum and minimum points.
+
+`minTotalDistance` returns the minimum total distance to move all the 1s in the grid to a single point. It first collects the rows and columns where the 1s are located, then calculates the median row and column. Finally, it uses `minDistance1D` to calculate the minimum distance needed to move all the 1s to the median row and column.

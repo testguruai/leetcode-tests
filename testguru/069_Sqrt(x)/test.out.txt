@@ -1,0 +1,58 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+069_Sqrt(x)/test_069_Sqrt(x).py FFFFFF                                   [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_mySqrt_zero _______________________________
+
+    def test_mySqrt_zero():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+069_Sqrt(x)/test_069_Sqrt(x).py:5: NameError
+_______________________________ test_mySqrt_one ________________________________
+
+    def test_mySqrt_one():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+069_Sqrt(x)/test_069_Sqrt(x).py:10: NameError
+_______________________________ test_mySqrt_four _______________________________
+
+    def test_mySqrt_four():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+069_Sqrt(x)/test_069_Sqrt(x).py:15: NameError
+_______________________________ test_mySqrt_nine _______________________________
+
+    def test_mySqrt_nine():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+069_Sqrt(x)/test_069_Sqrt(x).py:20: NameError
+___________________________ test_mySqrt_twenty_five ____________________________
+
+    def test_mySqrt_twenty_five():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+069_Sqrt(x)/test_069_Sqrt(x).py:25: NameError
+_____________________________ test_mySqrt_negative _____________________________
+
+    def test_mySqrt_negative():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+069_Sqrt(x)/test_069_Sqrt(x).py:30: NameError
+=========================== short test summary info ============================
+FAILED 069_Sqrt(x)/test_069_Sqrt(x).py::test_mySqrt_zero - NameError: name 'S...
+FAILED 069_Sqrt(x)/test_069_Sqrt(x).py::test_mySqrt_one - NameError: name 'So...
+FAILED 069_Sqrt(x)/test_069_Sqrt(x).py::test_mySqrt_four - NameError: name 'S...
+FAILED 069_Sqrt(x)/test_069_Sqrt(x).py::test_mySqrt_nine - NameError: name 'S...
+FAILED 069_Sqrt(x)/test_069_Sqrt(x).py::test_mySqrt_twenty_five - NameError: ...
+FAILED 069_Sqrt(x)/test_069_Sqrt(x).py::test_mySqrt_negative - NameError: nam...
+============================== 6 failed in 0.02s ===============================

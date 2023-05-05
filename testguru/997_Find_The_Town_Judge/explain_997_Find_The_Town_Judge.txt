@@ -1,0 +1,13 @@
+This is a python function to solve a problem related to finding a judge in a town. 
+
+The function `findJudge` takes two arguments, `N` and `trust`. `N` is an integer representing the number of people in the town, and `trust` is a list of lists representing trust relationships between pairs of people in the town. Each sub-list in `trust` contains two integers `i` and `j`, indicating that person `i` trusts person `j`.
+
+The function checks if there is only one person in the town. If so, then that person is the judge, and the function returns 1.
+
+If there is more than one person in the town, the function proceeds to create two dictionaries: `d1` and `d2`. `d1` is used to store the number of people who trust a particular person, while `d2` is used to store the number of people a particular person trusts. 
+
+The function then loops through all the sub-lists in `trust` and increments the corresponding values in `d1` and `d2` dictionaries.
+
+After that, the function loops through the items in the `d1` dictionary, looking for a person with `N-1` trusts. If such a person is found and they're not in `d2`, then that person is the judge and the function returns their id.
+
+If no such person is found, the function returns -1, indicating that there is no judge in the town.

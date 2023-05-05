@@ -1,0 +1,9 @@
+This code defines a class `Solution` with a method `sumOfLeftLeaves` that calculates the sum of all left leaves in a binary tree.
+
+The class has two implementations of this method, one using recursion and another using a stack. The commented out implementation is recursive while the other one uses a stack to traverse the tree iteratively.
+
+Both implementations take a `root` parameter which is a reference to the root node of the binary tree and return an integer representing the sum of all left leaves.
+
+The recursive implementation works by checking if the current node is a left leaf, if so it adds its value to the sum and then recursively calls the function again with the right child of the current node. If the current node is not a left leaf, it recursively calls the function with the left and right children of the current node.
+
+The iterative implementation works by using a stack to keep track of the nodes to be visited. It pops a node from the front of the stack, checks if it is a left leaf, if so it adds its value to the sum. It then pushes the right child and then the left child of the current node (if they exist) onto the stack. It repeats this process until all nodes have been visited.

@@ -1,0 +1,12 @@
+This code defines a class Solution with a method convertToTitle that takes an integer n as an input parameter and returns a string.
+
+Within the method, an empty string variable res is initialized. 
+The while loop continues to execute as long as n is greater than 0. 
+In each iteration of the loop, 1 is subtracted from n and the character corresponding to the ASCII value of (65 + n % 26) is appended to the beginning of the result string res. 
+The value of n is then updated to n divided by 26 using integer division. 
+Then the loop continues until n becomes 0.
+Finally, the method returns the value of variable res.
+
+The purpose of this method is to convert a given positive integer into an Excel column title. In Excel, the first column is called "A", the second "B", and so on until "Z". After that, the columns start to use two or more letters (i.e "AA", "AB", "AC"...). 
+
+To achieve this list of titles, this method tries to solve a base-26 conversion problem where each letter corresponds to a digit in base-26 and 1 is subtracted from the column number to start at 0.

@@ -1,0 +1,5 @@
+The above code contains a class Solution with a single method named isRectangleOverlap which takes two lists of integers, `rec1` and `rec2`, as inputs and returns a boolean output. The method checks if `rec1` and `rec2` overlap with each other or not. 
+
+There are two implementations of the method. The first implementation uses a single line of code that combines multiple conditions using the logical OR operator. The expression within the parentheses returns `True` if any of the conditions is satisfied. If any of these conditions are true, the method returns `False`, otherwise, it returns `True`.
+
+The second implementation uses a helper function `intersect` that takes four integer inputs, `p_left`, `p_right`, `q_left`, `q_right`, and returns `True` if the two line segments `[p_left, p_right]` and `[q_left, q_right]` intersect with each other. The method then uses this helper function to check if the horizontal and vertical line segments of `rec1` and `rec2` intersect with each other and returns `True` if they do, otherwise, it returns `False`.

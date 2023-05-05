@@ -1,0 +1,9 @@
+This is a Python code that finds the k smallest pairs from two input lists of integers, nums1 and nums2. The function definition is kSmallestPairs(self, nums1, nums2, k) which takes three input parameters. 
+
+The first line of the function initializes an empty list called queue. To this list, the push() function is defined which accepts two input parameters i and j. The push() function adds a new tuple to the queue list if both i and j are less than the length of nums1 and nums2.
+
+Then, the push() function is called with initial arguments push(0, 0) to the initializing queue. The pairs variable is initialized as an empty list to store the sorted pair.
+
+The main loop of the function checks if the queue is not an empty list and the number of pairs is less than k. If the conditions are true, then the smallest element from the heap queue is obtained using heapq.heappop(queue), and this element is added to the pairs list. The push() function is called with updated parameters to get pairs of the next smallest element.
+
+Finally, the function returns the sorted pairs list.

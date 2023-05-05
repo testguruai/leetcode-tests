@@ -1,0 +1,6 @@
+Name                                                                                                      Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------------------------------------------------------
+1342_Number_of_Steps_to_Reduce_a_Number_to_Zero/test_1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.py      23      2    91%   25-26
+/data/ethan/leetcode-master/python/1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.py                        12      0   100%
+---------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                        35      2    94%

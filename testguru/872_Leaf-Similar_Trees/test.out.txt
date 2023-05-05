@@ -1,0 +1,56 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+872_Leaf-Similar_Trees/test_872_Leaf-Similar_Trees.py F                  [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_leaf_similar _______________________________
+
+    def test_leaf_similar():
+        # create the first tree
+        root1 = TreeNode(3)
+        root1.left = TreeNode(5)
+        root1.right = TreeNode(1)
+        root1.left.left = TreeNode(6)
+        root1.left.right = TreeNode(2)
+        root1.left.right.left = TreeNode(7)
+        root1.left.right.right = TreeNode(4)
+        root1.right.left = TreeNode(9)
+        root1.right.right = TreeNode(8)
+    
+        # create the second tree
+        root2 = TreeNode(3)
+        root2.left = TreeNode(5)
+        root2.right = TreeNode(1)
+        root2.left.left = TreeNode(6)
+        root2.left.right = TreeNode(2)
+        root2.left.right.left = TreeNode(7)
+        root2.left.right.right = TreeNode(4)
+        root2.right.left = TreeNode(9)
+        root2.right.right = TreeNode(8)
+    
+        assert Solution().leafSimilar(root1, root2) == True
+    
+        # create the third tree
+        root3 = TreeNode(3)
+        root3.left = TreeNode(5)
+        root3.right = TreeNode(1)
+        root3.left.left = TreeNode(6)
+        root3.left.right = TreeNode(7)
+        root3.right.left = TreeNode(4)
+        root3.right.right = TreeNode(2)
+        root3.right.right.left = TreeNode(9)
+        root3.right.right.right = TreeNode(8)
+    
+>       assert Solution().leafSimilar(root1, root3) == False
+E       assert True == False
+E        +  where True = <bound method Solution.leafSimilar of <solution.Solution object at 0x7fe108020f10>>(<solution.TreeNode object at 0x7fe1080204f0>, <solution.TreeNode object at 0x7fe108020bb0>)
+E        +    where <bound method Solution.leafSimilar of <solution.Solution object at 0x7fe108020f10>> = <solution.Solution object at 0x7fe108020f10>.leafSimilar
+E        +      where <solution.Solution object at 0x7fe108020f10> = Solution()
+
+872_Leaf-Similar_Trees/test_872_Leaf-Similar_Trees.py:43: AssertionError
+=========================== short test summary info ============================
+FAILED 872_Leaf-Similar_Trees/test_872_Leaf-Similar_Trees.py::test_leaf_similar
+============================== 1 failed in 0.02s ===============================

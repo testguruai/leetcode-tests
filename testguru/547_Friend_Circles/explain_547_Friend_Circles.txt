@@ -1,0 +1,11 @@
+This is a Python class implementation of finding the number of disjoint sets in a matrix representing friendships between people. The matrix `M` is a list of lists, where `M[i][j]` is 1 if person `i` is friends with person `j`, and 0 otherwise. 
+
+The method `findCircleNum` takes in the matrix `M` as input and returns an integer representing the number of disjoint sets (or friend circles) in the matrix. 
+
+The class has three implementation options:
+
+1. Depth First Search (DFS) - uses a recursive DFS function to traverse the matrix and mark visited cells. The number of times the DFS function is called corresponds to the number of friend circles in the matrix.
+
+2. Breadth First Search (BFS) - uses a queue to traverse the matrix and mark visited cells. Similar to DFS, the number of iterations of the loop corresponds to the number of friend circles in the matrix.
+
+3. Union Find - this is a weighted quick union find algorithm implementation. It connects pairs of friends in the matrix and keeps track of the number of disjoint sets. The method `Union` performs the union find algorithm, and `add`, `find`, and `union` are helper functions.

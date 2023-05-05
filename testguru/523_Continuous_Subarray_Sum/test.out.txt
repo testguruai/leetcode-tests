@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+523_Continuous_Subarray_Sum/test_523_Continuous_Subarray_Sum.py F        [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_checkSubarraySum _____________________________
+
+    def test_checkSubarraySum():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+523_Continuous_Subarray_Sum/test_523_Continuous_Subarray_Sum.py:3: NameError
+=========================== short test summary info ============================
+FAILED 523_Continuous_Subarray_Sum/test_523_Continuous_Subarray_Sum.py::test_checkSubarraySum
+============================== 1 failed in 0.02s ===============================

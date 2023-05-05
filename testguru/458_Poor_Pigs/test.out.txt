@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_____________ ERROR collecting 458_Poor_Pigs/test_458_Poor_Pigs.py _____________
+458_Poor_Pigs/test_458_Poor_Pigs.py:37: in <module>
+    test_poorPigs()
+458_Poor_Pigs/test_458_Poor_Pigs.py:19: in test_poorPigs
+    assert sol.poorPigs(3, 1, 1) == 1
+E   assert 2 == 1
+E    +  where 2 = <bound method Solution.poorPigs of <solution.Solution object at 0x7f9739ac7eb0>>(3, 1, 1)
+E    +    where <bound method Solution.poorPigs of <solution.Solution object at 0x7f9739ac7eb0>> = <solution.Solution object at 0x7f9739ac7eb0>.poorPigs
+=========================== short test summary info ============================
+ERROR 458_Poor_Pigs/test_458_Poor_Pigs.py - assert 2 == 1
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

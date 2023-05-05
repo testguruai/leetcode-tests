@@ -1,0 +1,11 @@
+This Python code represents a class named "Solution" that contains a function called "jump". The jump function takes a list of integers as input, and it tries to find the minimum number of jumps needed to reach the end of the list. 
+
+The function first checks if the length of the input list is less than or equal to 1. If it is, then it returns 0 because there are no jumps needed. Otherwise, it starts a loop that keeps iterating until the end of the list is reached. 
+
+Within the loop, it sets an "end" variable to the sum of the first element in the list and 0. It also sets a "start" variable to 0 and a "step" variable to 1. Finally, it sets a "maxDis" variable to the sum of the first element and 0. 
+
+The loop then iterates over the range between start and end variables. Within this inner loop, it sets the "maxDis" variable to the maximum between its current value and the sum of the current element in the input list and its index. 
+
+After the inner loop has completed iterating, it sets the "start" variable to the "end" variable from the previous iteration and the "end" variable to the current value of "maxDis". It also increases the "step" variable by 1. 
+
+The loop continues until the "end" variable is greater than or equal to the length of the input list - 1. Finally, the function returns the value of the "step" variable, which represents the minimum number of jumps needed to reach the end of the input list.

@@ -1,0 +1,9 @@
+This code defines a class named Solution with a method named maximalRectangle that takes a 2D list of strings as input and returns the maximum size of a rectangle that can be formed using the '1's in the list.
+
+First, the code checks if the input matrix is empty or not. If it's empty, it returns 0. Then it initializes three arrays of length equal to the number of columns in the input matrix.
+
+The 'left' array keeps track of the index of the leftmost '1' that can be used to form a rectangle with the current '1'. The 'right' array keeps track of the index of the rightmost '1' that can be used to form a rectangle with the current '1'. The 'height' array keeps track of the height of the rectangle that can be formed using the current '1'.
+
+Then, the code loops through each row of the input matrix. For each row, it updates the 'height' array based on the current row. Then it updates the 'left' and 'right' arrays based on the current row and the values in the previous row. Finally, it calculates the area of the rectangle that can be formed using a '1' at the current position and updates the maximum area if necessary.
+
+The code returns the maximum area of any rectangle that can be formed using the '1's in the input matrix.

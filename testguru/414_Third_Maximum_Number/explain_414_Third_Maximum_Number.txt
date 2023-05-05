@@ -1,0 +1,15 @@
+This Python code defines a class `Solution` that contains a method `thirdMax` which takes a list of integers `nums` as input and returns the third largest distinct number in `nums`. If there are less than 3 distinct numbers in `nums`, the method returns the largest number.
+
+The method first imports the `Queue` module, which provides a PriorityQueue class. It then creates a PriorityQueue object `pq` with a capacity of 4. It also creates a set `check` to keep track of distinct numbers seen so far.
+
+The method then loops through each number `n` in `nums` and performs the following operations:
+
+- if `n` is already in `check`, skip to the next number
+- otherwise, add `n` to both `pq` and `check`
+- if `check` has more than 3 elements, remove the smallest element from `check` using `pq.get()`
+
+After processing all the numbers in `nums`, the method checks the size of `check` and sets the variable `total` to be that size.
+
+If `total` is less than 3 but greater than 1, the method subtracts 1 from `total`.
+
+The method then returns the smallest element in `pq`, which is the third largest distinct number in `nums` (or the largest number, if there are less than 3 distinct numbers).

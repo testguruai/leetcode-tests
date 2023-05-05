@@ -1,0 +1,7 @@
+This is a class implementation of a function that checks whether a list of integers contains any duplicates.
+
+The function takes in two parameters `self` and `nums`. `self` is a reference to the class instance and `nums` is the list of integers to check.
+
+The first method `containsDuplicate` uses set to check duplicate. The function returns `True` if the length of the input list is not equal to the length of the set of the input list. If the input list contains duplicates, the set will remove the duplicates, and the length of the set will be less than the length of the original list.
+
+The second method `containsDuplicate` sorts the input list and then loops through each element in the list to check whether there are duplicates. If it finds any duplicates, it returns `True`. If there are no duplicates, it returns `False`. However, this method is commented out as it is not being used.

@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+107_Binary_Tree_Level_Order_Traversal_II/test_107_Binary_Tree_Level_Order_Traversal_II.py . [ 20%]
+..F.                                                                     [100%]
+
+=================================== FAILURES ===================================
+___________________ test_level_order_bottom_unbalanced_tree ____________________
+
+    def test_level_order_bottom_unbalanced_tree():
+        root = TreeNode(3)
+        root.left = TreeNode(9)
+        root.right = TreeNode(20)
+        root.right.left = TreeNode(15)
+        root.right.right = TreeNode(7)
+        root.right.left.right = TreeNode(10)
+>       assert Solution().levelOrderBottom(root) == [[10,7],[15],[9,20],[3]]
+E       assert [[10], [15, 7], [9, 20], [3]] == [[10, 7], [15], [9, 20], [3]]
+E         At index 0 diff: [10] != [10, 7]
+E         Use -v to get more diff
+
+107_Binary_Tree_Level_Order_Traversal_II/test_107_Binary_Tree_Level_Order_Traversal_II.py:28: AssertionError
+=========================== short test summary info ============================
+FAILED 107_Binary_Tree_Level_Order_Traversal_II/test_107_Binary_Tree_Level_Order_Traversal_II.py::test_level_order_bottom_unbalanced_tree
+========================= 1 failed, 4 passed in 0.02s ==========================

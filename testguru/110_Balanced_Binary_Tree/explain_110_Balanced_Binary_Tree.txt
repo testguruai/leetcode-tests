@@ -1,0 +1,9 @@
+This is a solution to the problem of determining whether a binary tree is balanced or not. A binary tree is considered balanced if the height difference between the left and right sub-trees of any node is not more than 1.
+
+The solution uses a bottom-up recursion approach to determine if a tree is balanced or not. It works by recursively checking the depth or height of each node in the tree, starting from the leaf nodes up to the root.
+
+The main function, `isBalanced`, takes a root node as input, and returns True if the tree is balanced, and False otherwise. If the root node is None, it returns True. Otherwise, it checks the depth of the root node using the `getDepth` function. If the depth is less than 0, it means the sub-trees of the node are not balanced, and it returns False. Otherwise, it returns True.
+
+The `getDepth` function takes a node as input, and recursively checks the depths of its left and right sub-trees. If the depth of any sub-tree is negative, it returns -1, indicating that the sub-trees are not balanced. If the absolute difference between the depths of the left and right sub-trees is greater than 1, it returns -1. Otherwise, it returns the maximum depth of the sub-trees plus 1.
+
+There is also a commented out alternative solution using a top-down recursion approach to determine if the tree is balanced or not. This approach recursively checks the depth of each node in the tree, starting from the root down to the leaf nodes. However, it is less efficient than the bottom-up recursion approach, because it involves redundancy in computing the depths of sub-trees for each node.

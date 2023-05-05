@@ -1,0 +1,7 @@
+This is a Python class that provides a method to find the majority element(s) in an array of integers. There are three different implementations of the method, each using a different algorithm to find the majority element(s).
+
+The first implementation uses O(1) space complexity and two loops to iterate over the array. For each element in the array, it checks if the element has already been checked. If not, it counts the number of occurrences for the element by looping over the rest of the array. If the count is greater than one third of the array's length, the element is added to a result list. Finally, the method returns the result list.
+
+The second implementation uses a dictionary to store the count of each element in the array. It first loops over the array and updates the count for each element in the dictionary. Then, it loops over the dictionary to check if any element has a count greater than one third of the array's length. If so, the element is added to a result list. Finally, the method returns the result list.
+
+The third implementation is similar to the second, but instead of storing the element count in a dictionary, it uses a list comprehension to count the occurrences of each element in the array. It then loops over the resulting dictionary to check for elements with counts greater than one third of the array's length. The approach uses more memory compared to the first two implementations, but it is concise and easy to read.

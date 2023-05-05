@@ -1,0 +1,38 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+017_Letter_Combinations_of_a_Phone_Number/test_017_Letter_Combinations_of_a_Phone_Number.py E [ 33%]
+EE                                                                       [100%]
+
+==================================== ERRORS ====================================
+_______________ ERROR at setup of test_letterCombinations_empty ________________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+017_Letter_Combinations_of_a_Phone_Number/test_017_Letter_Combinations_of_a_Phone_Number.py:5: NameError
+____________ ERROR at setup of test_letterCombinations_single_digit ____________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+017_Letter_Combinations_of_a_Phone_Number/test_017_Letter_Combinations_of_a_Phone_Number.py:5: NameError
+__________ ERROR at setup of test_letterCombinations_multiple_digits ___________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+017_Letter_Combinations_of_a_Phone_Number/test_017_Letter_Combinations_of_a_Phone_Number.py:5: NameError
+=========================== short test summary info ============================
+ERROR 017_Letter_Combinations_of_a_Phone_Number/test_017_Letter_Combinations_of_a_Phone_Number.py::test_letterCombinations_empty
+ERROR 017_Letter_Combinations_of_a_Phone_Number/test_017_Letter_Combinations_of_a_Phone_Number.py::test_letterCombinations_single_digit
+ERROR 017_Letter_Combinations_of_a_Phone_Number/test_017_Letter_Combinations_of_a_Phone_Number.py::test_letterCombinations_multiple_digits
+============================== 3 errors in 0.02s ===============================

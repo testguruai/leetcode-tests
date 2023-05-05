@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+771_Jewels_and_Stones/test_771_Jewels_and_Stones.py F                    [100%]
+
+=================================== FAILURES ===================================
+_____________________ TestSolution.test_numJewelsInStones ______________________
+
+self = <test_771_Jewels_and_Stones.TestSolution object at 0x7fc8f4cc03d0>
+
+    def test_numJewelsInStones(self):
+        s = Solution()
+        assert s.numJewelsInStones("aA", "aAAbbbb") == 3
+        assert s.numJewelsInStones("z", "ZZZZ") == 0
+        assert s.numJewelsInStones("", "anything") == 0
+        assert s.numJewelsInStones("anything", "") == 0
+        assert s.numJewelsInStones("", "") == 0
+        assert s.numJewelsInStones("abc", "abcdefg") == 3
+>       assert s.numJewelsInStones("AbC", "aAbBcC") == 6
+E       AssertionError: assert 3 == 6
+E        +  where 3 = <bound method Solution.numJewelsInStones of <solution.Solution object at 0x7fc8f4cc04f0>>('AbC', 'aAbBcC')
+E        +    where <bound method Solution.numJewelsInStones of <solution.Solution object at 0x7fc8f4cc04f0>> = <solution.Solution object at 0x7fc8f4cc04f0>.numJewelsInStones
+
+771_Jewels_and_Stones/test_771_Jewels_and_Stones.py:15: AssertionError
+=========================== short test summary info ============================
+FAILED 771_Jewels_and_Stones/test_771_Jewels_and_Stones.py::TestSolution::test_numJewelsInStones
+============================== 1 failed in 0.01s ===============================

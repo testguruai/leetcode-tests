@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 270_Closest_Binary_Search_Tree_Value/test_270_Closest_Binary_Search_Tree_Value.py _
+ImportError while importing test module '/data/sandeep/leetcode-master/.verifaiws/270_Closest_Binary_Search_Tree_Value/test_270_Closest_Binary_Search_Tree_Value.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+270_Closest_Binary_Search_Tree_Value/test_270_Closest_Binary_Search_Tree_Value.py:3: in <module>
+    from solution import Solution, TreeNode
+E   ImportError: cannot import name 'TreeNode' from 'solution' (/data/sandeep/leetcode-master/.verifaiws/270_Closest_Binary_Search_Tree_Value/solution.py)
+=========================== short test summary info ============================
+ERROR 270_Closest_Binary_Search_Tree_Value/test_270_Closest_Binary_Search_Tree_Value.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

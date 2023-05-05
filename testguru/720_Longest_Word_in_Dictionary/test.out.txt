@@ -1,0 +1,92 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 9 items
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py EE [ 22%]
+EEEEEEE                                                                  [100%]
+
+==================================== ERRORS ====================================
+________________ ERROR at setup of test_longestWord_empty_list _________________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py:6: NameError
+_________________ ERROR at setup of test_longestWord_one_word __________________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py:6: NameError
+______________ ERROR at setup of test_longestWord_multiple_words _______________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py:6: NameError
+____ ERROR at setup of test_longestWord_multiple_words_with_similar_lengths ____
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py:6: NameError
+_______ ERROR at setup of test_longestWord_multiple_words_with_subwords ________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py:6: NameError
+_____ ERROR at setup of test_longestWord_multiple_words_with_same_subword ______
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py:6: NameError
+______ ERROR at setup of test_longestWord_multiple_words_with_same_prefix ______
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py:6: NameError
+________________ ERROR at setup of test_longestWord_same_words _________________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py:6: NameError
+______________ ERROR at setup of test_longestWord_long_input_list ______________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py:6: NameError
+=========================== short test summary info ============================
+ERROR 720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py::test_longestWord_empty_list
+ERROR 720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py::test_longestWord_one_word
+ERROR 720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py::test_longestWord_multiple_words
+ERROR 720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py::test_longestWord_multiple_words_with_similar_lengths
+ERROR 720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py::test_longestWord_multiple_words_with_subwords
+ERROR 720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py::test_longestWord_multiple_words_with_same_subword
+ERROR 720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py::test_longestWord_multiple_words_with_same_prefix
+ERROR 720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py::test_longestWord_same_words
+ERROR 720_Longest_Word_in_Dictionary/test_720_Longest_Word_in_Dictionary.py::test_longestWord_long_input_list
+============================== 9 errors in 0.03s ===============================

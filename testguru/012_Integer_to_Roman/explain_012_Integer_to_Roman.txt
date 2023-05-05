@@ -1,0 +1,7 @@
+This Python code defines a class called `Solution` which has a method called `intToRoman`. The purpose of this method is to take an integer as input and convert it to its equivalent Roman numeral representation as a string.
+
+There are two versions of this method. The first version is commented out and uses a list called `roman_dim` to store all the possible numerals and their corresponding values in descending order of magnitude. The method then iterates over this list to build the Roman numeral string from left to right.
+
+The second and currently active version of the method uses two lists, `values` and `symbols`, to store the possible numeral values and their corresponding symbols. The method then iterates over these lists to build the Roman numeral string from left to right.
+
+Finally, the code creates an instance of the `Solution` class and calls its `intToRoman` method, passing in the integer 90 as an argument and printing the resulting Roman numeral string.

@@ -1,0 +1,154 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py F [ 16%]
+FFFFF                                                                    [100%]
+
+=================================== FAILURES ===================================
+_______________________ TestKthLargest.test_kth_largest ________________________
+
+self = <test_703_Kth_Largest_Element_in_a_Stream.TestKthLargest object at 0x7fa3b8c74490>
+
+    def test_kth_largest(self):
+        nums = [4, 5, 8, 2]
+        k = 3
+>       obj = KthLargest(k, nums)
+
+703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.KthLargest object at 0x7fa3b8c74b80>, k = 3
+nums = [4, 5, 8, 2]
+
+    def __init__(self, k, nums):
+        self.nums = nums
+        self.k = k
+        # build min heap
+>       heapq.heapify(self.nums)
+E       NameError: name 'heapq' is not defined
+
+703_Kth_Largest_Element_in_a_Stream/solution.py:7: NameError
+____________________ TestKthLargest.test_empty_kth_largest _____________________
+
+self = <test_703_Kth_Largest_Element_in_a_Stream.TestKthLargest object at 0x7fa3b8c74580>
+
+    def test_empty_kth_largest(self):
+        nums = []
+        k = 1
+>       obj = KthLargest(k, nums)
+
+703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.KthLargest object at 0x7fa3b8c744f0>, k = 1, nums = []
+
+    def __init__(self, k, nums):
+        self.nums = nums
+        self.k = k
+        # build min heap
+>       heapq.heapify(self.nums)
+E       NameError: name 'heapq' is not defined
+
+703_Kth_Largest_Element_in_a_Stream/solution.py:7: NameError
+_______________________ TestKthLargest.test_add_to_heap ________________________
+
+self = <test_703_Kth_Largest_Element_in_a_Stream.TestKthLargest object at 0x7fa3b8c746a0>
+
+    def test_add_to_heap(self):
+        nums = [4, 5, 8, 2]
+        k = 5 # k greater than len of nums
+>       obj = KthLargest(k, nums)
+
+703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.KthLargest object at 0x7fa3b8aad690>, k = 5
+nums = [4, 5, 8, 2]
+
+    def __init__(self, k, nums):
+        self.nums = nums
+        self.k = k
+        # build min heap
+>       heapq.heapify(self.nums)
+E       NameError: name 'heapq' is not defined
+
+703_Kth_Largest_Element_in_a_Stream/solution.py:7: NameError
+_____________________ TestKthLargest.test_add_small_value ______________________
+
+self = <test_703_Kth_Largest_Element_in_a_Stream.TestKthLargest object at 0x7fa3b8c747c0>
+
+    def test_add_small_value(self):
+        nums = [4, 5, 8, 2]
+        k = 3
+>       obj = KthLargest(k, nums)
+
+703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.KthLargest object at 0x7fa3b8c77d00>, k = 3
+nums = [4, 5, 8, 2]
+
+    def __init__(self, k, nums):
+        self.nums = nums
+        self.k = k
+        # build min heap
+>       heapq.heapify(self.nums)
+E       NameError: name 'heapq' is not defined
+
+703_Kth_Largest_Element_in_a_Stream/solution.py:7: NameError
+___________________ TestKthLargest.test_add_same_value_twice ___________________
+
+self = <test_703_Kth_Largest_Element_in_a_Stream.TestKthLargest object at 0x7fa3b8c748e0>
+
+    def test_add_same_value_twice(self):
+        nums = [4, 5, 8, 2]
+        k = 3
+>       obj = KthLargest(k, nums)
+
+703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.KthLargest object at 0x7fa3b8c77c70>, k = 3
+nums = [4, 5, 8, 2]
+
+    def __init__(self, k, nums):
+        self.nums = nums
+        self.k = k
+        # build min heap
+>       heapq.heapify(self.nums)
+E       NameError: name 'heapq' is not defined
+
+703_Kth_Largest_Element_in_a_Stream/solution.py:7: NameError
+_____________________ TestKthLargest.test_add_large_value ______________________
+
+self = <test_703_Kth_Largest_Element_in_a_Stream.TestKthLargest object at 0x7fa3b8c74a00>
+
+    def test_add_large_value(self):
+        nums = [4, 5, 8, 2]
+        k = 3
+>       obj = KthLargest(k, nums)
+
+703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.KthLargest object at 0x7fa3b8c75870>, k = 3
+nums = [4, 5, 8, 2]
+
+    def __init__(self, k, nums):
+        self.nums = nums
+        self.k = k
+        # build min heap
+>       heapq.heapify(self.nums)
+E       NameError: name 'heapq' is not defined
+
+703_Kth_Largest_Element_in_a_Stream/solution.py:7: NameError
+=========================== short test summary info ============================
+FAILED 703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py::TestKthLargest::test_kth_largest
+FAILED 703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py::TestKthLargest::test_empty_kth_largest
+FAILED 703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py::TestKthLargest::test_add_to_heap
+FAILED 703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py::TestKthLargest::test_add_small_value
+FAILED 703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py::TestKthLargest::test_add_same_value_twice
+FAILED 703_Kth_Largest_Element_in_a_Stream/test_703_Kth_Largest_Element_in_a_Stream.py::TestKthLargest::test_add_large_value
+============================== 6 failed in 0.03s ===============================

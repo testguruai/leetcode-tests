@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+077_Combinations/test_077_Combinations.py FF                             [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_get_combine _______________________________
+
+    def test_get_combine():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+077_Combinations/test_077_Combinations.py:4: NameError
+_________________________________ test_combine _________________________________
+
+    def test_combine():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+077_Combinations/test_077_Combinations.py:10: NameError
+=========================== short test summary info ============================
+FAILED 077_Combinations/test_077_Combinations.py::test_get_combine - NameErro...
+FAILED 077_Combinations/test_077_Combinations.py::test_combine - NameError: n...
+============================== 2 failed in 0.01s ===============================

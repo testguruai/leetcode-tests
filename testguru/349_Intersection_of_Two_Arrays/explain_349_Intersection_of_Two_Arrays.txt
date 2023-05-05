@@ -1,0 +1,5 @@
+This is a class in Python that aims to find the intersection of two lists. The `intersection()` function takes two arguments, `nums1` and `nums2`, which are lists of integers. 
+
+To find the intersection of the two lists, it converts them to sets using the `set()` function. When you perform an `&` operation on two sets, it returns a new set containing the common elements in both sets. In this case, the `list()` function is used to convert the resulting set back into a list, which is the desired output.
+
+So, this code uses the set data type to remove duplicates and then perform an `&` operation to find common elements between `nums1` and `nums2`, and then convert the result back to a list.

@@ -1,0 +1,6 @@
+Name                                                       Stmts   Miss  Cover   Missing
+----------------------------------------------------------------------------------------
+547_Friend_Circles/test_547_Friend_Circles.py                 24      4    83%   56-63
+/data/ethan/leetcode-master/python/547_Friend_Circles.py      15      0   100%
+----------------------------------------------------------------------------------------
+TOTAL                                                         39      4    90%

@@ -1,0 +1,127 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+143_Reorder_List/test_143_Reorder_List.py FFFFF                          [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_reorderList_with_empty_list _______________________
+
+    def test_reorderList_with_empty_list():
+        sol = Solution()
+>       assert sol.reorderList(ListNode(None)) == None
+
+143_Reorder_List/test_143_Reorder_List.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f640ae38a00>
+head = <solution.ListNode object at 0x7f640ae38a30>
+
+    def reorderList(self, head):
+        # Two points
+>       if head is None or head.__next__ is None:
+E       AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+143_Reorder_List/solution.py:30: AttributeError
+____________________ test_reorderList_with_single_node_list ____________________
+
+    def test_reorderList_with_single_node_list():
+        sol = Solution()
+        node1 = ListNode(1)
+>       assert sol.reorderList(node1) == node1
+
+143_Reorder_List/test_143_Reorder_List.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f640ae38ee0>
+head = <solution.ListNode object at 0x7f640ae38e80>
+
+    def reorderList(self, head):
+        # Two points
+>       if head is None or head.__next__ is None:
+E       AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+143_Reorder_List/solution.py:30: AttributeError
+_____________________ test_reorderList_with_two_node_list ______________________
+
+    def test_reorderList_with_two_node_list():
+        sol = Solution()
+        node1 = ListNode(1)
+        node2 = ListNode(2)
+        node1.next = node2
+>       assert sol.reorderList(node1) == node1
+
+143_Reorder_List/test_143_Reorder_List.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f640ae398a0>
+head = <solution.ListNode object at 0x7f640ae399f0>
+
+    def reorderList(self, head):
+        # Two points
+>       if head is None or head.__next__ is None:
+E       AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+143_Reorder_List/solution.py:30: AttributeError
+__________________ test_reorderList_with_odd_number_node_list __________________
+
+    def test_reorderList_with_odd_number_node_list():
+        sol = Solution()
+        node1 = ListNode(1)
+        node2 = ListNode(2)
+        node3 = ListNode(3)
+        node4 = ListNode(4)
+        node5 = ListNode(5)
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+    
+>       sol.reorderList(node1)
+
+143_Reorder_List/test_143_Reorder_List.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f640ae3b7c0>
+head = <solution.ListNode object at 0x7f640ae3a8c0>
+
+    def reorderList(self, head):
+        # Two points
+>       if head is None or head.__next__ is None:
+E       AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+143_Reorder_List/solution.py:30: AttributeError
+_________________ test_reorderList_with_even_number_node_list __________________
+
+    def test_reorderList_with_even_number_node_list():
+        sol = Solution()
+        node1 = ListNode(1)
+        node2 = ListNode(2)
+        node3 = ListNode(3)
+        node4 = ListNode(4)
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+    
+>       sol.reorderList(node1)
+
+143_Reorder_List/test_143_Reorder_List.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f640ae3bb20>
+head = <solution.ListNode object at 0x7f640ae3ae60>
+
+    def reorderList(self, head):
+        # Two points
+>       if head is None or head.__next__ is None:
+E       AttributeError: 'ListNode' object has no attribute '__next__'. Did you mean: '__ne__'?
+
+143_Reorder_List/solution.py:30: AttributeError
+=========================== short test summary info ============================
+FAILED 143_Reorder_List/test_143_Reorder_List.py::test_reorderList_with_empty_list
+FAILED 143_Reorder_List/test_143_Reorder_List.py::test_reorderList_with_single_node_list
+FAILED 143_Reorder_List/test_143_Reorder_List.py::test_reorderList_with_two_node_list
+FAILED 143_Reorder_List/test_143_Reorder_List.py::test_reorderList_with_odd_number_node_list
+FAILED 143_Reorder_List/test_143_Reorder_List.py::test_reorderList_with_even_number_node_list
+============================== 5 failed in 0.03s ===============================

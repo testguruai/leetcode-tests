@@ -1,0 +1,20 @@
+This Python code defines a solution class with two functions: getPermutation and do_getPermutations. Here's what each function does:
+
+getPermutation:
+- Takes in integer parameters n and k.
+- Initializes a list named remain with the values 1 to n.
+- If k is less than or equal to 1, returns the joined string of the remain list.
+- If not, initializes the variable total to 1 and multiplies each item in remain except the last one with total.
+- Calls the do_getPermutation function with inputs remain, total, n-1 (since the first number is already removed), and k-1 (since the indexing starts from 0).
+- Returns the joined string of the returned value.
+
+do_getPermutations:
+- Takes in inputs remain, curr, n, and k.
+- If any of n, k, or curr is 0 or less, returns the remain list.
+- Calculates the step variable as the integer division of k by curr.
+- Calculates the updated k as k modulus curr.
+- Updates curr as curr divided by n.
+- Defines the res list as a concatenation of the remain[step], and the do_getPermutation function called recursively on remain excluding the step and the new input values curr, n-1, and k.
+- Returns res as the final permutation list.
+
+The if __name__ == '__main__': block initializes an object of Solution class and calls the getPermutation function with inputs 3 and 2. This returns the string '132', which is the second permutation of the given inputs. The commented line can be uncommented to run the function with inputs 2 and 2 instead.

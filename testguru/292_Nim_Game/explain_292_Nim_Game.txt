@@ -1,0 +1,7 @@
+This is a Python class named `Solution` that contains a method `canWinNim` which takes an integer argument named `n` and returns a boolean value indicating whether the current player can win the game Nim when there are `n` stones in total.
+
+The game Nim is usually played with a heap of stones, and players take turns removing any non-zero number of stones from the heap. The player who removes the last stone wins the game. 
+
+The logic used in this code is to determine whether the person who starts the game will win or not. If the total number of stones is divisible by 4, then the person who starts the game will lose, otherwise, he will win. 
+
+This method checks if the number of stones is divisible by 4 and returns False in that case, indicating that the starting player will lose. Otherwise, it returns True, indicating that the starting player will win if they play smartly.

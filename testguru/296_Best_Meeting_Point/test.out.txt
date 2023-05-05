@@ -1,0 +1,46 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+296_Best_Meeting_Point/test_296_Best_Meeting_Point.py F..F               [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_minDistance1D ______________________________
+
+    def test_minDistance1D():
+        s = Solution()
+>       assert s.minDistance1D([1,2,3,4,5]) == 10
+E       assert 6 == 10
+E        +  where 6 = <bound method Solution.minDistance1D of <solution.Solution object at 0x7f0e480c0850>>([1, 2, 3, 4, 5])
+E        +    where <bound method Solution.minDistance1D of <solution.Solution object at 0x7f0e480c0850>> = <solution.Solution object at 0x7f0e480c0850>.minDistance1D
+
+296_Best_Meeting_Point/test_296_Best_Meeting_Point.py:6: AssertionError
+____________________________ test_minTotalDistance _____________________________
+
+    def test_minTotalDistance():
+        s = Solution()
+        grid = [
+            [1,0,0],
+            [0,1,0],
+            [0,0,1]
+        ]
+>       assert s.minTotalDistance(grid) == 4
+
+296_Best_Meeting_Point/test_296_Best_Meeting_Point.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f0e480c3be0>
+grid = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+
+    def minTotalDistance(self, grid):
+        rows = self.collectRows(grid)
+        cols = self.collectCols(grid)
+>       row = rows[len(rows) / 2]
+E       TypeError: list indices must be integers or slices, not float
+
+296_Best_Meeting_Point/solution.py:39: TypeError
+=========================== short test summary info ============================
+FAILED 296_Best_Meeting_Point/test_296_Best_Meeting_Point.py::test_minDistance1D
+FAILED 296_Best_Meeting_Point/test_296_Best_Meeting_Point.py::test_minTotalDistance
+========================= 2 failed, 2 passed in 0.02s ==========================

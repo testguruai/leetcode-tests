@@ -1,0 +1,56 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py FFFFF              [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_sumOfLeftLeaves_empty __________________________
+
+    def test_sumOfLeftLeaves_empty():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py:25: NameError
+_______________________ test_sumOfLeftLeaves_single_node _______________________
+
+    def test_sumOfLeftLeaves_single_node():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py:29: NameError
+____________________ test_sumOfLeftLeaves_only_right_nodes _____________________
+
+test_tree = <test_404_Sum_of_Left_Leaves.test_tree.<locals>.TreeNode object at 0x7ffbf3a9bbe0>
+
+    def test_sumOfLeftLeaves_only_right_nodes(test_tree):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py:34: NameError
+_____________________ test_sumOfLeftLeaves_only_left_nodes _____________________
+
+test_tree = <test_404_Sum_of_Left_Leaves.test_tree.<locals>.TreeNode object at 0x7ffbf3a53730>
+
+    def test_sumOfLeftLeaves_only_left_nodes(test_tree):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py:40: NameError
+_______________________ test_sumOfLeftLeaves_both_sides ________________________
+
+test_tree = <test_404_Sum_of_Left_Leaves.test_tree.<locals>.TreeNode object at 0x7ffbf3a9b100>
+
+    def test_sumOfLeftLeaves_both_sides(test_tree):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py:46: NameError
+=========================== short test summary info ============================
+FAILED 404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py::test_sumOfLeftLeaves_empty
+FAILED 404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py::test_sumOfLeftLeaves_single_node
+FAILED 404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py::test_sumOfLeftLeaves_only_right_nodes
+FAILED 404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py::test_sumOfLeftLeaves_only_left_nodes
+FAILED 404_Sum_of_Left_Leaves/test_404_Sum_of_Left_Leaves.py::test_sumOfLeftLeaves_both_sides
+============================== 5 failed in 0.02s ===============================

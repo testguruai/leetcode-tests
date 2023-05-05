@@ -1,0 +1,5 @@
+The code is a Python class named "Solution", which has a method called "topKFrequent" that takes in two arguments, a list of words and an integer k, and returns the top k most frequent words in the list in descending order of frequency.
+
+The first implementation of "topKFrequent" method uses the "collections" module in Python to count the frequency of each word and then sort the words by frequency and lexicographically if the frequencies are the same. The "cmp_frequency" function is used in the "sorted" function to compare the frequency of the words.
+
+The second implementation of "topKFrequent" method also uses the "collections" module to count the frequency of each word. Then, it creates a heap from the count items, where the frequency of the words is negated so that heapq can create a max-heap. Finally, it pops the top k items from the heap and returns only the words without their frequencies.

@@ -1,0 +1,7 @@
+This is a Python class named "Solution" that contains a method called "sortArrayByParity" that takes a list of integers named "A" as input and returns a list of integers with even numbers first followed by odd numbers.
+
+The method first sorts the list using the modulus operator to sort even numbers before odd numbers. However, this method has a time complexity of O(nlogn).
+
+The second method creates two separate lists, one for even numbers and one for odd numbers, and then concatenates them together.
+
+The third method uses a partitioning algorithm similar to quick sort or quick selection. It maintains two pointers, "lo" and "hi", and swaps elements at the pointers if the element at "lo" is odd and the element at "hi" is even. It increments/decrements the pointers appropriately until all even numbers are on the left side and the odd numbers on the right side. This method has a time complexity of O(n).

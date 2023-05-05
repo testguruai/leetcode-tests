@@ -1,0 +1,81 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 20 items
+
+946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py ..F... [ 30%]
+.....F..FF.F..                                                           [100%]
+
+=================================== FAILURES ===================================
+________________________ test_validateStackSequences_3 _________________________
+
+solution = <solution.Solution object at 0x7f95fbe89a20>
+
+    def test_validateStackSequences_3(solution):
+        pushed = [1, 0, 3, 2]
+        popped = [0, 1, 2, 3]
+>       assert solution.validateStackSequences(pushed, popped) == False
+E       assert True == False
+E        +  where True = <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbe89a20>>([1, 0, 3, 2], [])
+E        +    where <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbe89a20>> = <solution.Solution object at 0x7f95fbe89a20>.validateStackSequences
+
+946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py:22: AssertionError
+________________________ test_validateStackSequences_12 ________________________
+
+solution = <solution.Solution object at 0x7f95fbedb700>
+
+    def test_validateStackSequences_12(solution):
+        pushed = [1, 2, 3]
+        popped = [1, 2, 3, 4]
+>       assert solution.validateStackSequences(pushed, popped) == False
+E       assert True == False
+E        +  where True = <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbedb700>>([1, 2, 3], [4])
+E        +    where <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbedb700>> = <solution.Solution object at 0x7f95fbedb700>.validateStackSequences
+
+946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py:67: AssertionError
+________________________ test_validateStackSequences_15 ________________________
+
+solution = <solution.Solution object at 0x7f95fbe8a320>
+
+    def test_validateStackSequences_15(solution):
+        pushed = [1, 2, 3, 4, 5]
+        popped = [1, 2, 3, 5, 4]
+>       assert solution.validateStackSequences(pushed, popped) == False
+E       assert True == False
+E        +  where True = <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbe8a320>>([1, 2, 3, 4, 5], [])
+E        +    where <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbe8a320>> = <solution.Solution object at 0x7f95fbe8a320>.validateStackSequences
+
+946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py:82: AssertionError
+________________________ test_validateStackSequences_16 ________________________
+
+solution = <solution.Solution object at 0x7f95fbede0e0>
+
+    def test_validateStackSequences_16(solution):
+        pushed = [1, 2, 3, 4, 5]
+        popped = [1, 2, 3, 5, 4, 6]
+>       assert solution.validateStackSequences(pushed, popped) == False
+E       assert True == False
+E        +  where True = <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbede0e0>>([1, 2, 3, 4, 5], [6])
+E        +    where <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbede0e0>> = <solution.Solution object at 0x7f95fbede0e0>.validateStackSequences
+
+946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py:87: AssertionError
+________________________ test_validateStackSequences_18 ________________________
+
+solution = <solution.Solution object at 0x7f95fbed8550>
+
+    def test_validateStackSequences_18(solution):
+        pushed = [1, 2, 3, 4, 5, 6]
+        popped = [1, 2, 3, 4, 6, 5]
+>       assert solution.validateStackSequences(pushed, popped) == False
+E       assert True == False
+E        +  where True = <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbed8550>>([1, 2, 3, 4, 5, 6], [])
+E        +    where <bound method Solution.validateStackSequences of <solution.Solution object at 0x7f95fbed8550>> = <solution.Solution object at 0x7f95fbed8550>.validateStackSequences
+
+946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py:97: AssertionError
+=========================== short test summary info ============================
+FAILED 946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py::test_validateStackSequences_3
+FAILED 946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py::test_validateStackSequences_12
+FAILED 946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py::test_validateStackSequences_15
+FAILED 946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py::test_validateStackSequences_16
+FAILED 946_Validate_Stack_Sequences/test_946_Validate_Stack_Sequences.py::test_validateStackSequences_18
+========================= 5 failed, 15 passed in 0.04s =========================

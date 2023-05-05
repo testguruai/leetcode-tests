@@ -1,0 +1,6 @@
+Name                                                                                                              Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------------------------------------------
+1599_Maximum_Profit_of_Operating_a_Centennial_Wheel/solution.py                                                      45      7    84%   22, 35-39, 41
+1599_Maximum_Profit_of_Operating_a_Centennial_Wheel/test_1599_Maximum_Profit_of_Operating_a_Centennial_Wheel.py      17      0   100%
+-----------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                62      7    89%

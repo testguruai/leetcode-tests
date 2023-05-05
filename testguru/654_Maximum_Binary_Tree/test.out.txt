@@ -1,0 +1,49 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+654_Maximum_Binary_Tree/test_654_Maximum_Binary_Tree.py FFF              [100%]
+
+=================================== FAILURES ===================================
+____________ TestSolution.test_constructMaximumBinaryTree_emptyList ____________
+
+self = <test_654_Maximum_Binary_Tree.TestSolution object at 0x7fe482340550>
+
+    def test_constructMaximumBinaryTree_emptyList(self):
+        """
+        Test that empty input list returns None
+        """
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+654_Maximum_Binary_Tree/test_654_Maximum_Binary_Tree.py:9: NameError
+__________ TestSolution.test_constructMaximumBinaryTree_singleElement __________
+
+self = <test_654_Maximum_Binary_Tree.TestSolution object at 0x7fe482340640>
+
+    def test_constructMaximumBinaryTree_singleElement(self):
+        """
+        Test that single element input list returns a TreeNode with that value
+        """
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+654_Maximum_Binary_Tree/test_654_Maximum_Binary_Tree.py:16: NameError
+________ TestSolution.test_constructMaximumBinaryTree_multipleElements _________
+
+self = <test_654_Maximum_Binary_Tree.TestSolution object at 0x7fe482340760>
+
+    def test_constructMaximumBinaryTree_multipleElements(self):
+        """
+        Test that input list with multiple elements returns a correctly constructed maximum binary tree
+        """
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+654_Maximum_Binary_Tree/test_654_Maximum_Binary_Tree.py:26: NameError
+=========================== short test summary info ============================
+FAILED 654_Maximum_Binary_Tree/test_654_Maximum_Binary_Tree.py::TestSolution::test_constructMaximumBinaryTree_emptyList
+FAILED 654_Maximum_Binary_Tree/test_654_Maximum_Binary_Tree.py::TestSolution::test_constructMaximumBinaryTree_singleElement
+FAILED 654_Maximum_Binary_Tree/test_654_Maximum_Binary_Tree.py::TestSolution::test_constructMaximumBinaryTree_multipleElements
+============================== 3 failed in 0.02s ===============================

@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 011_Container_With_Most_Water/test_011_Container_With_Most_Water.py _
+011_Container_With_Most_Water/test_011_Container_With_Most_Water.py:3: in <module>
+    from solution import Solution
+011_Container_With_Most_Water/solution.py:1: in <module>
+    class Solution:
+011_Container_With_Most_Water/solution.py:2: in Solution
+    def maxArea(self, height: List[int]) -> int:
+E   NameError: name 'List' is not defined
+=========================== short test summary info ============================
+ERROR 011_Container_With_Most_Water/test_011_Container_With_Most_Water.py - N...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

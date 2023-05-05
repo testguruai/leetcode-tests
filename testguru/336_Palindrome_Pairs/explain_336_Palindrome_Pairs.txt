@@ -1,0 +1,17 @@
+The given code is a solution for the problem 'Palindrome Pairs' on LeetCode. Given a list of words, the task is to find all the pairs of indices(i, j) such that the concatenation of the words at those indices is a palindrome.
+
+The solution uses a hash map and two pointers to find all the palindrome pairs. Here's how the code works:
+
+1) The function `palindromePairs` takes a list of words as input and returns a list of pairs of indices where the concatenation of words at those indices is a palindrome.
+
+2) First, a dictionary is created where the keys are the words reversed and the values are the indices in the input list of the original words. For example, if the input list is ['abc', 'def', 'cba'], the dictionary would be {'cba': 2, 'fed': 1, 'cba': 0}. This is done using a list comprehension where each word is reversed and a tuple of (reversed_word, index) is created. The dictionary is then created from these tuples.
+
+3) The list `res` is initialized as an empty list that will hold the resulting pairs of indices.
+
+4) For each word in the input list, the function loops through all possible splits of the word into a prefix and a postfix using the index `j`.
+
+5) If the `prefix` is already in the dictionary and its corresponding index is not the same as the current index `i`, and the `postfix` is a palindrome, then the pair `[i, word2index[prefix]]` is added to the `res` list.
+
+6) Similarly, if the `postfix` is in the dictionary and its corresponding index is not the same as the current index `i`, and the `prefix` is a palindrome, then the pair `[word2index[postfix], i]` is added to the `res` list.
+
+7) Finally, the function returns the list `res` containing all the palindrome pairs.

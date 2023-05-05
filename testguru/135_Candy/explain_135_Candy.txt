@@ -1,0 +1,13 @@
+This is a Python class named `Solution`. It has a single method named `candy` that takes a list of integers named `ratings` as input and returns an integer as output. The method implements a simple algorithm to solve the candy distribution problem for a group of children. The problem is defined as follows:
+
+- There are `n` children standing in a line. Each child is assigned a rating value.
+- The candies must be distributed in such a way that:
+
+    - Each child must have at least one candy
+    - Children with a higher rating receive more candies than their neighbors
+
+- What is the minimum number of candies you must give?
+
+The main idea of the solution is to first assign each child a single candy, i.e., initialise a list `num` with ones. Then, scan the list from left to right and compare the ratings of each pair of adjacent children. If the rating of the right child is higher than that of the left child, assign one more candy to the right child than the left child, i.e., set `num[i] = num[i-1] + 1`. Next, scan the list from right to left and compare the ratings of each pair of adjacent children. If the rating of the left child is higher than that of the right child and the number of candies assigned to the left child is less than or equal to that of the right child, assign one more candy to the left child than the right child, i.e., set `num[i-1] = max(num[i] + 1, num[i-1])`.
+
+Finally, return the sum of all elements of `num`, which gives the minimum number of candies required to distribute to all children.

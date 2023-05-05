@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+090_Subsets_II/test_090_Subsets_II.py F                                  [100%]
+
+=================================== FAILURES ===================================
+_______________________ TestSolution.test_subsetsWithDup _______________________
+
+self = <test_090_Subsets_II.TestSolution object at 0x7f82854983a0>
+
+    def test_subsetsWithDup(self):
+        s = Solution()
+        assert s.subsetsWithDup([1,2,2]) == [[],[1],[2],[1,2],[2,2],[1,2,2]]
+>       assert s.subsetsWithDup([4,4,4,1,4]) == [[],[1],[4],[1,4],[4,4],[1,4,4],[4,4,4],[1,4,4,4],[4,4,4,4]]
+E       assert [[], [1], [4]...1, 4, 4], ...] == [[], [1], [4]...1, 4, 4], ...]
+E         Left contains one more item: [1, 4, 4, 4, 4]
+E         Use -v to get more diff
+
+090_Subsets_II/test_090_Subsets_II.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED 090_Subsets_II/test_090_Subsets_II.py::TestSolution::test_subsetsWithDup
+============================== 1 failed in 0.01s ===============================

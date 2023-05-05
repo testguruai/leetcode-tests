@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+186_Reverse_Words_in_a_String_II/test_186_Reverse_Words_in_a_String_II.py F [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_reverseWords _______________________________
+
+    def test_reverseWords():
+        s = Solution()
+    
+        # Test case with no input
+        assert s.reverseWords([]) == None
+    
+        # Test case with one word input
+        word = ['Hello']
+>       s.reverseWords(word)
+
+186_Reverse_Words_in_a_String_II/test_186_Reverse_Words_in_a_String_II.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+186_Reverse_Words_in_a_String_II/solution.py:10: in reverseWords
+    self.reverse(s, 0, ls)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f56a8d68430>, array_s = ['Hello']
+begin = 0, end = 1
+
+    def reverse(self, array_s, begin, end):
+>       for i in range((end - begin) / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+186_Reverse_Words_in_a_String_II/solution.py:17: TypeError
+=========================== short test summary info ============================
+FAILED 186_Reverse_Words_in_a_String_II/test_186_Reverse_Words_in_a_String_II.py::test_reverseWords
+============================== 1 failed in 0.01s ===============================

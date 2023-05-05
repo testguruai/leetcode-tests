@@ -1,0 +1,9 @@
+This is a Python implementation of the Fisher-Yates shuffle algorithm, used to shuffle a list of numbers. The code defines a class called 'Solution' that has three methods: '__init__', 'reset', and 'shuffle'. 
+
+The '__init__' method is a constructor that takes a list of integers as input, saves a copy of the original list in an attribute called 'origin', initializes another attribute called 'curr' with a copy of the input list, and saves the length of the list in an attribute called 'size'. 
+
+The 'reset' method resets the list to its original configuration by copying 'origin' back into 'curr'. 
+
+The 'shuffle' method performs the Fisher-Yates shuffle algorithm. It loops through the list from the first item to the last, choosing a random position in the list up to that point and swapping the current item with the item at the chosen position. Finally, it returns the shuffled list. 
+
+The last few lines of code provide an example of how to create an instance of the 'Solution' class and call its 'reset' and 'shuffle' methods.

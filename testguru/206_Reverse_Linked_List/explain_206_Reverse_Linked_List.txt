@@ -1,0 +1,9 @@
+This is a Python class that provides solutions for reversing a linked list. It defines a `ListNode` class representing a node in a singly-linked list, which has a `val` attribute that stores the value and a `next` attribute that points to the next `ListNode` in the list.
+
+The first solution provided is an iterative approach, where the nodes are added to a stack in reverse order and then popped off the stack to reverse the list. This solution uses an if-else block to handle reversing the first and last nodes and returns the head of the reversed list.
+
+The second solution is a recursive approach, where the nodes are added to a stack in reverse order and then popped off the stack to reverse the list. This solution creates a new `ListNode` to serve as the head of the reversed list and calls the `do_reverse` method to perform the actual reversal and update the new head of the list before returning it.
+
+The third solution is a simple iterative approach that does not use extra space, where the nodes are reversed by swapping their `next` pointers while traversing the list in a forward direction. This solution initializes two pointers to None (prev) and the head of the list (curr), then loops over the list to reverse the nodes, updating the `next` pointers in each iteration.
+
+The fourth solution is a recursive approach that does not use extra space, where the nodes are reversed by recursively calling the `reverseList` method on the next node and swapping its `next` pointers. This solution checks if the head of the list is None or if it is the last node in the list before recursively calling itself to reverse the list.

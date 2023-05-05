@@ -1,0 +1,40 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+037_Sudoku_Solver/test_037_Sudoku_Solver.py F                            [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_solveSudoku _______________________________
+
+    def test_solveSudoku():
+        s = Solution()
+    
+        # Test empty board
+        board1 = [["."]*9 for _ in range(9)]
+>       s.solveSudoku(board1)
+
+037_Sudoku_Solver/test_037_Sudoku_Solver.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+037_Sudoku_Solver/solution.py:13: in solveSudoku
+    self.solve(board, empty)
+037_Sudoku_Solver/solution.py:21: in solve
+    if self.is_safe(board, row, col, str(k)):
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fad9ca00430>
+board = [['.', '.', '.', '.', '.', '.', ...], ['.', '.', '.', '.', '.', '.', ...], ['.', '.', '.', '.', '.', '.', ...], ['.', '.', '.', '.', '.', '.', ...], ['.', '.', '.', '.', '.', '.', ...], ['.', '.', '.', '.', '.', '.', ...], ...]
+row = 8.88888888888889, col = 8, ch = '1'
+
+    def is_safe(self, board, row, col, ch):
+        for k in range(9):
+            if board[k][col] == ch:
+                return False
+>           if board[row][k] == ch:
+E           TypeError: list indices must be integers or slices, not float
+
+037_Sudoku_Solver/solution.py:34: TypeError
+=========================== short test summary info ============================
+FAILED 037_Sudoku_Solver/test_037_Sudoku_Solver.py::test_solveSudoku - TypeEr...
+============================== 1 failed in 0.02s ===============================

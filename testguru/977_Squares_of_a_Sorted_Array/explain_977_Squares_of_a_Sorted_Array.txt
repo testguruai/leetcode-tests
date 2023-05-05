@@ -1,0 +1,11 @@
+This is a class named `Solution` with a method `sortedSquares` that takes in a list of integers `A` and returns a new list of sorted squares of the original integers in `A`.
+
+The first implementation is commented out and is a simple one-liner that uses list comprehension to square each element of `A`, then sorts the resulting list. However, it is not optimal as it has to sort the entire list even though it is already sorted except for the negative values.
+
+The second implementation uses two pointers, `pos` and `npos`, to keep track of the current positions of positive and negative values, respectively, in `A`. It first finds the first positive value in `A` and sets `pos` to its index. It then sets `npos` to the index before `pos`.
+
+It then initializes an empty list `res` and starts a `while` loop that continues until either one of the pointers reaches the end of `A`. It compares the squares of the values at the current positions of `pos` and `npos`. If the square of the value at `npos` is larger, it appends it to the `res` list and moves `npos` down one index. If not, it appends the square of the value at `pos` to `res` and moves `pos` up one index.
+
+After that, there will still be some elements left unappended in `A`. Therefore, it appends the remaining squares of the negative values in `A` to `res`, followed by the remaining squares of the positive values in `A`.
+
+Finally, it returns the sorted `res` list.

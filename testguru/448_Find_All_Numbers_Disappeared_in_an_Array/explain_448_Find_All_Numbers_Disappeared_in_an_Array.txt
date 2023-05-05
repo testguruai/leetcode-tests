@@ -1,0 +1,9 @@
+This Python code defines a class "Solution" which has a method "findDisappearedNumbers". This method takes a list of integers as an input and returns a list of integers. 
+
+The purpose of this code is to find all the missing numbers in a given list. The approach used in this code is to mark the presence of each number in the list by negating the value of index-1, which is equivalent to the number in the list. After this iteration, the positive value elements would indicate the missing numbers in the list.
+
+The function is implemented using two for loops. The first for loop iterates over each element in the input list "nums". It calculates the index for that element and negates the value at that index in the list. 
+
+The second for loop iterates over each element in the input list "nums" again. If the value at any index in the list is greater than zero, it implies that the index+1 is not present in the original list. Therefore, it appends the index+1 to the resultant list "res" which contains all the missing numbers. 
+
+Finally, the function returns the "res" list which contains all the missing numbers.

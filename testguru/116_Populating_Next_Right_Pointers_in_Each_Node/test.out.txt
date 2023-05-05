@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+116_Populating_Next_Right_Pointers_in_Each_Node/test_116_Populating_Next_Right_Pointers_in_Each_Node.py . [ 33%]
+..                                                                       [100%]
+
+============================== 3 passed in 0.01s ===============================

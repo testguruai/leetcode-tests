@@ -1,0 +1,39 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+819_Most_Common_Word/test_819_Most_Common_Word.py F                      [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_mostCommonWord ______________________________
+
+    def test_mostCommonWord():
+        solution = Solution()
+        paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
+        banned = ["hit"]
+>       assert solution.mostCommonWord(paragraph, banned) == "ball"
+
+819_Most_Common_Word/test_819_Most_Common_Word.py:8: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f8ab4dec4f0>
+paragraph = 'Bob hit a ball, the hit BALL flew far after it was hit.'
+banned = {'hit'}
+
+    def mostCommonWord(self, paragraph, banned):
+        """
+        :type paragraph: str
+        :type banned: List[str]
+        :rtype: str
+        """
+        # https://leetcode.com/problems/most-common-word/discuss/193268/python-one-liner
+        banned = set(banned)
+>       count = collections.Counter(word for word in re.split('[ !?\',;.]',
+                                    paragraph.lower()) if word)
+E       NameError: name 'collections' is not defined
+
+819_Most_Common_Word/solution.py:10: NameError
+=========================== short test summary info ============================
+FAILED 819_Most_Common_Word/test_819_Most_Common_Word.py::test_mostCommonWord
+============================== 1 failed in 0.01s ===============================

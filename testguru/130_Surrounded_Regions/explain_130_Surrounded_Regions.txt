@@ -1,0 +1,7 @@
+This code defines a class Solution with a method "solve" that takes a board (a two-dimensional list of "O"s and "X"s) as input and modifies it in-place. The goal of the method is to surround and replace all occurrences of "O" that are not completely surrounded by "X" with "X".
+
+To achieve this, the method first checks if the board is empty or not. Then it determines the height and width of the board and creates a list called "leakWall" using another method called "buildLeakWall". This method iterates through the first and last row and column of the board to find any "O"s that are not completely surrounded by "X"s and adds them to the "leakWall" list.
+
+The "solve" method then enters a loop that runs until the "leakWall" list is empty. Each iteration pops the last element from the "leakWall" list, checks if it is a valid location on the board, and if it contains an "O". If it does, it replaces it with an "S" and adds its neighboring locations (up, down, left, and right) to the "leakWall" list.
+
+After the loop is completed, the method iterates over the entire board and replaces all "S"s with "O"s, and all remaining "O"s with "X"s.

@@ -1,0 +1,80 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+013_Roman_to_Integer/test_013_Roman_to_Integer.py FFFFFFF                [100%]
+
+=================================== FAILURES ===================================
+________________________ TestSolution.test_romanToInt_I ________________________
+
+self = <test_013_Roman_to_Integer.TestSolution object at 0x7f2697ca8310>
+
+    def test_romanToInt_I(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+013_Roman_to_Integer/test_013_Roman_to_Integer.py:5: NameError
+________________________ TestSolution.test_romanToInt_V ________________________
+
+self = <test_013_Roman_to_Integer.TestSolution object at 0x7f2697ca8400>
+
+    def test_romanToInt_V(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+013_Roman_to_Integer/test_013_Roman_to_Integer.py:9: NameError
+_______________________ TestSolution.test_romanToInt_IV ________________________
+
+self = <test_013_Roman_to_Integer.TestSolution object at 0x7f2697ca8520>
+
+    def test_romanToInt_IV(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+013_Roman_to_Integer/test_013_Roman_to_Integer.py:13: NameError
+_______________________ TestSolution.test_romanToInt_IX ________________________
+
+self = <test_013_Roman_to_Integer.TestSolution object at 0x7f2697ca8640>
+
+    def test_romanToInt_IX(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+013_Roman_to_Integer/test_013_Roman_to_Integer.py:17: NameError
+_______________________ TestSolution.test_romanToInt_XL ________________________
+
+self = <test_013_Roman_to_Integer.TestSolution object at 0x7f2697ca8760>
+
+    def test_romanToInt_XL(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+013_Roman_to_Integer/test_013_Roman_to_Integer.py:21: NameError
+______________________ TestSolution.test_romanToInt_CMIX _______________________
+
+self = <test_013_Roman_to_Integer.TestSolution object at 0x7f2697ca8880>
+
+    def test_romanToInt_CMIX(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+013_Roman_to_Integer/test_013_Roman_to_Integer.py:25: NameError
+____________________ TestSolution.test_romanToInt_MMMCMXCIX ____________________
+
+self = <test_013_Roman_to_Integer.TestSolution object at 0x7f2697ca89a0>
+
+    def test_romanToInt_MMMCMXCIX(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+013_Roman_to_Integer/test_013_Roman_to_Integer.py:29: NameError
+=========================== short test summary info ============================
+FAILED 013_Roman_to_Integer/test_013_Roman_to_Integer.py::TestSolution::test_romanToInt_I
+FAILED 013_Roman_to_Integer/test_013_Roman_to_Integer.py::TestSolution::test_romanToInt_V
+FAILED 013_Roman_to_Integer/test_013_Roman_to_Integer.py::TestSolution::test_romanToInt_IV
+FAILED 013_Roman_to_Integer/test_013_Roman_to_Integer.py::TestSolution::test_romanToInt_IX
+FAILED 013_Roman_to_Integer/test_013_Roman_to_Integer.py::TestSolution::test_romanToInt_XL
+FAILED 013_Roman_to_Integer/test_013_Roman_to_Integer.py::TestSolution::test_romanToInt_CMIX
+FAILED 013_Roman_to_Integer/test_013_Roman_to_Integer.py::TestSolution::test_romanToInt_MMMCMXCIX
+============================== 7 failed in 0.02s ===============================

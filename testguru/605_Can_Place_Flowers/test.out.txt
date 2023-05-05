@@ -1,0 +1,65 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+605_Can_Place_Flowers/test_605_Can_Place_Flowers.py F                    [100%]
+
+=================================== FAILURES ===================================
+________________________ test_Solution_canPlaceFlowers _________________________
+
+    def test_Solution_canPlaceFlowers():
+        sol = Solution()
+    
+        # Test Case 1
+        flowerbed = [1,0,0,0,1]
+        n = 1
+        assert sol.canPlaceFlowers(flowerbed, n) == True
+    
+        # Test Case 2
+        flowerbed = [1,0,0,0,1]
+        n = 2
+        assert sol.canPlaceFlowers(flowerbed, n) == False
+    
+        # Test Case 3
+        flowerbed = [0,0,1,0,0]
+        n = 2
+        assert sol.canPlaceFlowers(flowerbed, n) == True
+    
+        # Test Case 4
+        flowerbed = [0,0,1,0,0]
+        n = 3
+        assert sol.canPlaceFlowers(flowerbed, n) == False
+    
+        # Test Case 5
+        flowerbed = [1,0,0,0,0,0,1]
+        n = 2
+        assert sol.canPlaceFlowers(flowerbed, n) == True
+    
+        # Test Case 6
+        flowerbed = [1,0,0,0,0,0,1]
+        n = 3
+        assert sol.canPlaceFlowers(flowerbed, n) == False
+    
+        # Test Case 7
+        flowerbed = [0,0,0,0,0,0,0]
+        n = 4
+        assert sol.canPlaceFlowers(flowerbed, n) == True
+    
+        # Test Case 8
+        flowerbed = [1,1,1,1,1,1,1]
+        n = 2
+        assert sol.canPlaceFlowers(flowerbed, n) == False
+    
+        # Test Case 9
+        flowerbed = [1,0,1,0,1,0,1]
+        n = 0
+>       assert sol.canPlaceFlowers(flowerbed, n) == True
+E       assert False == True
+E        +  where False = <bound method Solution.canPlaceFlowers of <solution.Solution object at 0x7f06f9654400>>([1, 0, 1, 0, 1, 0, ...], 0)
+E        +    where <bound method Solution.canPlaceFlowers of <solution.Solution object at 0x7f06f9654400>> = <solution.Solution object at 0x7f06f9654400>.canPlaceFlowers
+
+605_Can_Place_Flowers/test_605_Can_Place_Flowers.py:51: AssertionError
+=========================== short test summary info ============================
+FAILED 605_Can_Place_Flowers/test_605_Can_Place_Flowers.py::test_Solution_canPlaceFlowers
+============================== 1 failed in 0.01s ===============================

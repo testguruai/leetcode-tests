@@ -1,0 +1,17 @@
+This is a Python implementation of inorder tree traversal for a binary tree. The code is divided into four methods, but only the last method `inorderTraversal` is currently being used. 
+
+The purpose of this method is to return a list of node values in the order they would be visited during an inorder traversal of the binary tree. The method takes as input a single argument, `root`, which is the root node of the binary tree.
+
+The method starts by checking if the provided `root` node is None. If `root` is None, then the method simply returns an empty list since there are no values to traverse. 
+
+If `root` is not None, the method initializes an empty list `res` and a stack `stack` containing the `root` node. It then enters a loop where it repeatedly pops the top node `curr` from the `stack`.
+
+If `curr` is not a `TreeNode` (which is the same as saying that it is a previously visited left node), the method appends `curr` to the `res` list and continues to the next iteration of the loop. During the course of the algorithm, as `TreeNode` nodes are popped off the stack, they are replaced by their values to keep track of the order in which they are visited.
+
+If `curr` is a `TreeNode`, the method first checks if it has a right child. If it does, the right child is pushed onto the stack before `curr`. This ensures that when `curr` is revisited (as a `value`), it will be visited after its right child. 
+
+Next, the value of the `curr` node is pushed onto the stack. At this point, there is no further need to traverse `curr` node's left subtree, so if it has a left child, it is pushed onto the stack after `curr`. 
+
+The loop continues until there are no more nodes left in the stack. Finally, the method returns the `res` list of values visited in inorder. 
+
+The first three methods provided (`inorderTraversal`, `do_inorderTraversal`, and the commented out version of `inorderTraversal`) perform the same task as described above, but using different implementations of the inorder traversal algorithm. These alternative implementations are included for educational and illustrative purposes only and are not currently being invoked.

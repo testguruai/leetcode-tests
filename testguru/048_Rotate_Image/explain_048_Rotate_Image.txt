@@ -1,0 +1,11 @@
+This is a solution in python to rotate an n x n matrix (2D list) in clockwise direction by 90 degrees. 
+
+The rotate function takes a 2D list as the input parameter and modifies it in place. It first checks if the matrix is None or its length is 1. If it is, then there is no need to rotate and it returns.
+
+The variable ls is assigned the length of the matrix. The loop iterates from 0 to ls/2 - 1. It rotates layer by layer, starting from the outermost layer to the innermost layer. In each iteration, the begin and end indices of the border of the current layer are assigned, where begin is the index of the first column and row of the layer, and end is the index of the last column and row of the layer.
+
+Another loop is nested inside this loop that rotates the elements present on the border of the current layer. The variable 'k' iterates from 0 to ls - 2 * i - 2. The variable temp stores a copy of the element at the bottom left corner of the current border. The code then moves the element at the bottom right corner to the bottom left corner, then moves the element at the top right corner to the bottom right corner, then moves the element at the top left corner to the top right corner, and finally moves the element stored in the temp variable to the top left corner. 
+
+This shift of elements effectively rotates the current border by 90 degrees in the clockwise direction. 
+
+Finally, the function returns None. In the main function, an instance of the Solution class is created, and the rotate function is called with a 4 x 4 matrix being passed as the argument.

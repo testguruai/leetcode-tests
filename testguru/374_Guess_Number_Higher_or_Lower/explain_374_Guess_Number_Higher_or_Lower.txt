@@ -1,0 +1,7 @@
+This code is a Python implementation of the binary search algorithm used to guess a number. The guess API is a predefined function that takes in a parameter 'num' and returns -1 if the number is lower, 1 if the number is higher, and 0 if the number is correct. 
+
+The class "Solution" has a method called "guessNumber" that takes in an integer 'n' as a parameter and returns an integer value indicating the guessed number. The binary search algorithm is employed to iterate over the possible range of numbers between 1 and 'n'. 
+
+The variables 'begin' and 'end' are initialized to the range of the possible numbers. Then, the algorithm enters a loop and computes the middle value of the range using the formula (begin+end)/2. The guess API is then called using this value and the response is stored in the variable 'res'. 
+
+If the value returned by the guess API is 0, the guessed value is correct, and thus, we return the middle value. Otherwise, if the returned value is greater than 0, it means that the guessed value is higher and we adjust the range by setting the value of 'begin' to mid+1. Similarly, if the value returned by the guess API is less than 0, it means that the guessed value is lower and we adjust the range by setting the value of 'end' to mid-1. This process continues until the correct number is guessed or the range is exhausted. The code then returns the guessed number.

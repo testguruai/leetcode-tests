@@ -1,0 +1,6 @@
+Name                                                                                Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------------
+160_Intersection_of_Two_Linked_Lists/solution.py                                       16     13    19%   16-28
+160_Intersection_of_Two_Linked_Lists/test_160_Intersection_of_Two_Linked_Lists.py      29     27     7%   5-42
+-----------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                  45     40    11%

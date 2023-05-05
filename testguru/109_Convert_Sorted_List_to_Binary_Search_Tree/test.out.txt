@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+109_Convert_Sorted_List_to_Binary_Search_Tree/test_109_Convert_Sorted_List_to_Binary_Search_Tree.py F [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_Solution _________________________________
+
+    def test_Solution():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+109_Convert_Sorted_List_to_Binary_Search_Tree/test_109_Convert_Sorted_List_to_Binary_Search_Tree.py:4: NameError
+=========================== short test summary info ============================
+FAILED 109_Convert_Sorted_List_to_Binary_Search_Tree/test_109_Convert_Sorted_List_to_Binary_Search_Tree.py::test_Solution
+============================== 1 failed in 0.01s ===============================

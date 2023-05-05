@@ -1,0 +1,5 @@
+This Python code defines a class named "Solution". The class contains two methods that generate all subsets of a given list of integers, including duplicates. 
+
+The first method uses a bit manipulation technique to generate all possible combinations of the input numbers and stores them in a list. Then, it removes duplicate subsets from the list using a dictionary. Finally, the method returns a list of unique subsets.
+
+The second method generates the subsets using a different approach. It first sorts the input list in ascending order and initializes an empty list of subsets. Then, it iterates through the list of numbers and checks if the current number is different from the previous one. If so, it generates all possible subsets that include this new number. If not, it only generates new subsets that include the new number and the previous subsets that don't contain it, avoiding duplicates. Finally, the method returns the list of all generated subsets including duplicates.

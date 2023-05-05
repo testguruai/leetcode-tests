@@ -1,0 +1,15 @@
+This code defines a class called "MaxStack" that implements a stack that can retrieve its maximum element efficiently.
+
+The class has the following methods:
+
+1. __init__(self): creates two empty lists: "stack" and "max_stack".
+
+2. push(self, x): adds an element "x" to the "stack" list. If "max_stack" is empty, "x" is appended to the "max_stack" list. Otherwise, if the last element of "max_stack" is greater than "x", the same element is appended again to "max_stack". Otherwise, "x" is appended to "max_stack".
+
+3. pop(self): removes and returns the last element from "stack" list and also removes the last element from "max_stack" list.
+
+4. top(self): returns the last element from "stack" list.
+
+5. peekMax(self): returns the last element from "max_stack" list, which is the maximum element in the "stack" list.
+
+6. popMax(self): removes and returns the maximum element in the "stack" list. To do that, the method saves the maximum value ("val") by calling the "peekMax()" method. Then it creates an empty list called "buff". It pops elements from the "stack" list into "buff" until it finds the saved maximum value. Finally, it removes the saved maximum value from "stack" list and then it pushes all the popped elements in "buff" back into the "stack" list.

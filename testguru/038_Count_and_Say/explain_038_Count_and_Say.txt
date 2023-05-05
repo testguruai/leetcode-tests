@@ -1,0 +1,9 @@
+This code defines a class called `Solution` which has a method called `countAndSay`. This method takes an integer `n` as input, and returns a string. 
+
+The `countAndSay` method first checks if `n` is equal to 1. If it is, then it simply returns the string '1'. If it is not, then it initializes a variable `x` to the string '1'. It then enters a while loop that will run for `n-1` iterations. Each iteration calls the `count` method on `x`, and saves the result back to `x`. Once the loop has completed, the final value of `x` is returned.
+
+The `count` method takes a string `x` as input, and returns a string. It first converts the string to a list of characters called `m`. It then initializes an empty list called `res`, and appends `None` to the `m` list. It sets two iterators `i` and `j` to 0. 
+
+The `while` loop runs as long as `i` is less than the length of `m` minus 1. On each iteration, it increments `j` by 1. If `m[j]` is not equal to `m[i]`, then it knows that it has found a new character, so it appends the count of the previous character to `res`, followed by the previous character itself. It then sets `i` equal to `j`.
+
+Finally, it returns the characters in `res` as a concatenated string.

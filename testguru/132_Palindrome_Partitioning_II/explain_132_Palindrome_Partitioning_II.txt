@@ -1,0 +1,7 @@
+This code defines a class Solution, which has two methods named minCut that take a string s as input and return an integer.
+
+First method:
+The first method uses a dynamic programming approach to find the minimum number of cuts needed to partition the string s into a set of palindromic substrings. It initializes a list cut of length len(s)+1 with values 0, 1, 2, ..., len(s). Then, for each index i in s, it considers two cases: odd-length palindromes centered at i and even-length palindromes centered at i-1 and i. For each case, it expands the palindrome as far as possible in both directions and updates cut[i+j+1], where j is the length of the palindrome found. Finally, it returns cut[len(s)], which is the minimum number of cuts needed to partition s into palindromic substrings.
+
+Second method:
+The second method also uses a dynamic programming approach to find the minimum number of cuts needed to partition s into a set of palindromic substrings. It initializes a list d of length len(s) with values ls-i-1, where ls is the length of s and i is the index. It also initializes a 2D list pal with False values. Then, for each index i in s, it considers all possible substrings s[i:j+1] and checks if they are palindromes using pal[i][j]. If s[i:j+1] is a palindrome, it updates pal[i][j] to True and the minimum number of cuts needed to partition s[i:j+1] into palindromic substrings is d[j+1]+1, where j is the end index of the palindrome found. It updates d[i] with the minimum value found. Finally, it returns d[0].

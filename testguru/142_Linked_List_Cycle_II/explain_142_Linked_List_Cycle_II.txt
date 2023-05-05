@@ -1,0 +1,7 @@
+This Python code defines a class called `Solution` that has a single method called `detectCycle`. This method takes as input the `head` of a singly-linked list and tries to detect if there is a cycle in the linked list. If there is a cycle, the method returns the node at which the cycle starts. 
+
+The method uses the two-pointer approach to detect if there is a cycle in the linked list. Two pointers `fast` and `slow` are initialized at the beginning of the list. The `fast` pointer moves two steps forward, and the `slow` pointer moves one step forward in each iteration of the while loop. If there is a cycle in the linked list, the `fast` pointer eventually catches up to the `slow` pointer. This is because the `fast` pointer is moving twice as fast as the `slow` pointer and will eventually reach the same node that the `slow` pointer is at, but from the other direction. By this point, we know that there is a cycle in the linked list.
+
+Next, the `slow` pointer is set back to the beginning of the linked list, and both `fast` and `slow` pointers move one step at a time. Again, when `fast` and `slow` pointers meet, the node at which the cycle starts is found, and this node is returned by the method. 
+
+If there is no cycle in the linked list, the method returns `None`.

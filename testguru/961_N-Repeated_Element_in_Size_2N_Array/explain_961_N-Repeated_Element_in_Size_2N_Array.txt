@@ -1,0 +1,5 @@
+This code defines a class `Solution` with a method `repeatedNTimes` that takes a list of integers `A` and returns the integer that appears more than once in `A`. 
+
+The method uses the `collections.Counter` function to count the number of occurrences of each element in `A`. It then returns the element with the highest count using the `most_common()` method of the `counter` object.
+
+The main block of the code creates an instance of the `Solution` class and calls the `repeatedNTimes()` method on three different lists. The results are printed to standard output.

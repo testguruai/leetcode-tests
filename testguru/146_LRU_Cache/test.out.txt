@@ -1,0 +1,64 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+146_LRU_Cache/test_146_LRU_Cache.py EEEEEE                               [100%]
+
+==================================== ERRORS ====================================
+____________________ ERROR at setup of test_cache_insertion ____________________
+
+    @pytest.fixture
+    def cache():
+>       return LRUCache(2)
+E       NameError: name 'LRUCache' is not defined
+
+146_LRU_Cache/test_146_LRU_Cache.py:5: NameError
+_________________ ERROR at setup of test_cache_insert_max_size _________________
+
+    @pytest.fixture
+    def cache():
+>       return LRUCache(2)
+E       NameError: name 'LRUCache' is not defined
+
+146_LRU_Cache/test_146_LRU_Cache.py:5: NameError
+_________________ ERROR at setup of test_cache_insert_reorder __________________
+
+    @pytest.fixture
+    def cache():
+>       return LRUCache(2)
+E       NameError: name 'LRUCache' is not defined
+
+146_LRU_Cache/test_146_LRU_Cache.py:5: NameError
+_______________________ ERROR at setup of test_cache_get _______________________
+
+    @pytest.fixture
+    def cache():
+>       return LRUCache(2)
+E       NameError: name 'LRUCache' is not defined
+
+146_LRU_Cache/test_146_LRU_Cache.py:5: NameError
+_________________ ERROR at setup of test_cache_get_not_exists __________________
+
+    @pytest.fixture
+    def cache():
+>       return LRUCache(2)
+E       NameError: name 'LRUCache' is not defined
+
+146_LRU_Cache/test_146_LRU_Cache.py:5: NameError
+__________________ ERROR at setup of test_cache_put_overwrite __________________
+
+    @pytest.fixture
+    def cache():
+>       return LRUCache(2)
+E       NameError: name 'LRUCache' is not defined
+
+146_LRU_Cache/test_146_LRU_Cache.py:5: NameError
+=========================== short test summary info ============================
+ERROR 146_LRU_Cache/test_146_LRU_Cache.py::test_cache_insertion - NameError: ...
+ERROR 146_LRU_Cache/test_146_LRU_Cache.py::test_cache_insert_max_size - NameE...
+ERROR 146_LRU_Cache/test_146_LRU_Cache.py::test_cache_insert_reorder - NameEr...
+ERROR 146_LRU_Cache/test_146_LRU_Cache.py::test_cache_get - NameError: name '...
+ERROR 146_LRU_Cache/test_146_LRU_Cache.py::test_cache_get_not_exists - NameEr...
+ERROR 146_LRU_Cache/test_146_LRU_Cache.py::test_cache_put_overwrite - NameErr...
+============================== 6 errors in 0.03s ===============================

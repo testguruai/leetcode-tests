@@ -1,0 +1,9 @@
+The code defines a class called "Solution" that contains a function called "isValid". The function takes a string called "s" as input and returns a boolean value indicating whether the input string contains valid parentheses, brackets and braces. 
+
+The function first checks if the input string is None, and returns True if it is. If the input string is not None, the function initializes an empty list called "stack".
+
+It then iterates through the characters in the input string "s". If the character is one of the closing brackets ")", "}" or "]", it attempts to pop the last item added to the stack and check if it matches the corresponding opening bracket "(", "{" or "[". If it does match, the function continues iterating through the input string. If it does not match or if the stack is empty, the function returns False.
+
+If the character is not a closing bracket, it assumes that it is an opening bracket and adds it to the stack. Once the iteration over the input string is complete, the function checks if the stack is empty. If it is empty, it indicates that all brackets have been properly matched and returns True. If it is not empty, it indicates that there are still unmatched brackets and returns False. 
+
+The commented out code below the isValid function provides an alternative implementation of the same function using string replacement. It checks if the input string contains any instances of valid bracket pairs such as "()","{}" or "[]". If it does, it replaces them with an empty string and continues to check until all valid bracket pairs have been removed. If the resulting string is empty, it indicates that all brackets have been properly matched and returns True. If it is not empty, it indicates that there are still unmatched brackets and returns False.

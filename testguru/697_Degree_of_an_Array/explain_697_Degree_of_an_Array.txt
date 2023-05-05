@@ -1,0 +1,5 @@
+This is a Python class solution for finding the shortest subarray with the maximum degree of elements in a given array of integers. The main function defined in the class is `findShortestSubArray` which receives an array of integers as input and returns the length of the shortest subarray that contains the maximum degree of elements.
+
+The function works by using a dictionary to keep track of the leftmost and rightmost occurrence of each element in the array and the number of times each element appears. Then, it finds the element(s) with the maximum frequency and calculates the length of the shortest subarray that contains all occurrences of these elements by subtracting the leftmost and rightmost index of each element and adding 1.
+
+The commented out part of the code shows an alternative implementation using the Counter class from the collections module. However, the current implementation using dictionaries is more efficient and executes faster.

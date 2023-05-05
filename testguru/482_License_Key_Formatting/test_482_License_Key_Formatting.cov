@@ -1,0 +1,6 @@
+Name                                                               Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------------------------------
+482_License_Key_Formatting/test_482_License_Key_Formatting.py         12      1    92%   30
+/data/ethan/leetcode-master/python/482_License_Key_Formatting.py      13      0   100%
+------------------------------------------------------------------------------------------------
+TOTAL                                                                 25      1    96%

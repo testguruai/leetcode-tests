@@ -1,0 +1,6 @@
+Name                                                                                    Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------------------------------------
+387_First_Unique_Character_in_a_String/test_387_First_Unique_Character_in_a_String.py      34     20    41%   28-65
+/data/ethan/leetcode-master/python/387_First_Unique_Character_in_a_String.py               10      0   100%
+---------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                      44     20    55%

@@ -1,0 +1,5 @@
+This is a python code that defines a class Solution with a method isToeplitzMatrix that accepts a matrix and checks if it is a Toeplitz matrix, which is a matrix where every diagonal from top-left to bottom-right has the same element.
+
+The code first defines the method signature with a self parameter that refers to the instance of the class. The matrix parameter is a list of lists where each inner list represents a row in the matrix.
+
+The method then loops through each element in the matrix except for the last row and column. It checks if the current element is equal to the element in the next diagonal position (bottom-right), which should be one row and one column away. If any two corresponding elements are not equal, it returns false, meaning the matrix is not a Toeplitz matrix. If all diagonals have the same value, the method returns True.

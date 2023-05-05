@@ -1,0 +1,9 @@
+This is a class for a Least Recently Used (LRU) cache in Python. The LRU cache is a data structure that allows quick access to recently accessed items while keeping a limited number of items in memory. The cache eliminates the least recently used item if the maximum capacity is reached. 
+
+The class has the following methods:
+- `__init__(self, capacity)`: Constructor method that takes a capacity parameter and initializes `cache` and `queue` variables to empty dictionaries and lists, respectively.
+- `updateQueue(self, key)`: Helper method to move the accessed key to the front of the queue by removing and reinserting the item at position 0.
+- `get(self, key)`: Method that returns the value of the item based on the key if it exists in the cache, if not, it returns -1 and makes no further updates.
+- `put(self, key, value)`: Method that adds or updates the cache with key and value variables respectively. If the key already exists, it updates the value and moves the key to the front of the queue. If the queue is full, it removes the least recently used key, then adds the new key to the front.
+
+The commented section shows another implementation using a dictionary, `OrderedDict`, from the `collections` module. It has the same functionality as the above implementation, but it uses a built-in dictionary to keep track of the cache items.

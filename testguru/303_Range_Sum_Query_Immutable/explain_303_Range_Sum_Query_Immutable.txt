@@ -1,0 +1,7 @@
+This is a Python class called `NumArray` that implements a data structure to efficiently compute sum of a range of numbers from an input list.
+
+The `__init__` method takes an input list `nums`, initializes an empty list of the same length+1 called `res`. It initializes the `self.data` list with a copy of `nums`. It then loops over the `self.data` list, computes the cumulative sum of elements till that index from the start of the `nums` list and saves it at corresponding index in the output list called `res`. This means `self.res[i]` contains sum of elements till index i-1 in the original input list.
+
+The `sumRange` method takes two indices, `i` and `j`, defining the range of elements whose sum is to be computed. That is, sum of elements from index `i` to index `j` in the original input list. To compute this we can use the cumulative sum results computed earlier as `self.res[j + 1] - self.res[i]`. This is because `self.res[j+1]` contains sum of all elements till index j (not inclusive), and `self.res[i]` contains sum of all elements till index i-1 (not inclusive), so the difference between them gives sum of elements from index `i` to index `j`.
+
+At the end, the comments show how to instantiate an object of the `NumArray` class and call the `sumRange` method.

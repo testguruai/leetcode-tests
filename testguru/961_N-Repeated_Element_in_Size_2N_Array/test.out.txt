@@ -1,0 +1,88 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py E [ 14%]
+EEEEEE                                                                   [100%]
+
+==================================== ERRORS ====================================
+______________ ERROR at setup of TestSolution.test_repeatedNTimes ______________
+
+self = <test_961_N-Repeated_Element_in_Size_2N_Array.TestSolution object at 0x7ff800870580>
+
+    @pytest.fixture()
+    def solution(self):
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py:9: NameError
+___ ERROR at setup of TestSolution.test_repeatedNTimes_with_unexpected_data ____
+
+self = <test_961_N-Repeated_Element_in_Size_2N_Array.TestSolution object at 0x7ff800870460>
+
+    @pytest.fixture()
+    def solution(self):
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py:9: NameError
+__ ERROR at setup of TestSolution.test_repeatedNTimes_with_no_common_elements __
+
+self = <test_961_N-Repeated_Element_in_Size_2N_Array.TestSolution object at 0x7ff800870670>
+
+    @pytest.fixture()
+    def solution(self):
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py:9: NameError
+_ ERROR at setup of TestSolution.test_repeatedNTimes_with_multiple_common_elements _
+
+self = <test_961_N-Repeated_Element_in_Size_2N_Array.TestSolution object at 0x7ff8008707f0>
+
+    @pytest.fixture()
+    def solution(self):
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py:9: NameError
+_ ERROR at setup of TestSolution.test_repeatedNTimes_with_all_common_elements __
+
+self = <test_961_N-Repeated_Element_in_Size_2N_Array.TestSolution object at 0x7ff800870970>
+
+    @pytest.fixture()
+    def solution(self):
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py:9: NameError
+________ ERROR at setup of TestSolution.test_repeatedNTimes_returns_int ________
+
+self = <test_961_N-Repeated_Element_in_Size_2N_Array.TestSolution object at 0x7ff800870af0>
+
+    @pytest.fixture()
+    def solution(self):
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py:9: NameError
+_ ERROR at setup of TestSolution.test_repeatedNTimes_returns_2nd_most_common_element _
+
+self = <test_961_N-Repeated_Element_in_Size_2N_Array.TestSolution object at 0x7ff800870c70>
+
+    @pytest.fixture()
+    def solution(self):
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py:9: NameError
+=========================== short test summary info ============================
+ERROR 961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py::TestSolution::test_repeatedNTimes
+ERROR 961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py::TestSolution::test_repeatedNTimes_with_unexpected_data
+ERROR 961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py::TestSolution::test_repeatedNTimes_with_no_common_elements
+ERROR 961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py::TestSolution::test_repeatedNTimes_with_multiple_common_elements
+ERROR 961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py::TestSolution::test_repeatedNTimes_with_all_common_elements
+ERROR 961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py::TestSolution::test_repeatedNTimes_returns_int
+ERROR 961_N-Repeated_Element_in_Size_2N_Array/test_961_N-Repeated_Element_in_Size_2N_Array.py::TestSolution::test_repeatedNTimes_returns_2nd_most_common_element
+============================== 7 errors in 0.03s ===============================

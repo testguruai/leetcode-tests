@@ -1,0 +1,11 @@
+This code defines a class `Solution` that contains a method `combinationSum2` which takes in a list of integers `candidates` and an integer `target` as input and returns a list of lists of integers that add up to the `target`.
+
+The `candidates` list is sorted in ascending order. A list of empty lists `dp` is created with a number of elements equal to `target+1`.
+
+The first element in the `dp` list is initialized to a list with a single empty list.
+
+`dp` is then populated iteratively for each element from 1 to `target` inclusive. For each element `i`, all `candidates` less than or equal to `i` are considered. If `candidates[j]` is greater than `i`, the loop is terminated.
+
+For each valid `j`, all lists in `dp[i - candidates[j]]` are considered. If any list in `dp[i - candidates[j]]` has already used the current `candidates[j]` value, it is avoided. If no such list exists, a new list is created that includes the current index `j` and added to `dp[i]` list.
+
+The resulting `dp` list contains all possible combinations of `candidates` integers that add up to `target`. However, some combinations may have repeated values. Hence, duplicates are removed and the unique combinations are returned.

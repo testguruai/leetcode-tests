@@ -1,0 +1,27 @@
+The code defines a class `Solution` with a method `findUnsortedSubarray` that takes a list of integers `nums` as input and returns the length of the shortest possible contiguous subarray that, if sorted, would result in a sorted `nums` list.
+
+The first implementation of the method uses a sorting algorithm. It creates a sorted copy of the original list called `snums`, initializes `start` to the length of the list, and initializes `end` to zero. Then, it loops through each element of the original `nums` list and compares it to the corresponding element in `snums`. If they are not equal, it means that the element is not in its proper position and should be part of the unsorted subarray. The method updates `start` and `end` to keep track of the indices of the subarray. If `end` is greater than or equal to `start`, it means that there is an unsorted subarray, so the method returns its length (`end - start + 1`). Otherwise, it means that the list is already sorted, so the method returns zero.
+
+The second implementation of the method uses a stack data structure. It initializes two variables `l` and `r` to, respectively, the length of the list and zero. It then loops through each element of the list and performs the following operations:
+
+1. While the stack is not empty and the top element of the stack has a greater value than the current element, remove the top element from the stack and update the value of `l` to be the minimum of its current value and the index of the removed element.
+2. Append the current index to the stack.
+
+The result of this loop is that the stack will contain indices of the list in increasing order of value. Moreover, `l` will have the value of the index of the first element from the left that is not in its proper position.
+
+The method then loops through the list in reverse order and performs the following operations:
+
+1. While the stack is not empty and the top element of the stack has a smaller value than the current element, remove the top element from the stack and update the value of `r` to be the maximum of its current value and the index of the removed element.
+2. Append the current index to the stack.
+
+The result of this loop is that the stack will contain indices of the list in decreasing order of value. Moreover, `r` will have the value of the index of the last element from the right that is not in its proper position.
+
+If `r` is greater than `l`, it means that there is an unsorted subarray, so the method returns its length (`r - l + 1`). Otherwise, it means that the list is already sorted, so the method returns zero.
+
+The third implementation of the method uses a different approach. It initializes two variables `smin` and `smax` to, respectively, the maximum and minimum values of a 32-bit integer. It also initializes a boolean variable `flag` to `False`. The method then loops through the list from left to right and sets `flag` to `True` if it finds an element that is not in its proper position (i.e., it is smaller than the previous element). If `flag` is `True`, the method updates the value of `smin` to be the minimum of its current value and the value of the current element.
+
+The method then loops through the list from right to left and performs a similar operation but using `smax` instead of `smin`. Finally, the method loops through the list from left to right and finds the index `l` of the first element that is greater than `smin`. It then loops through the list from right to left and finds the index `r` of the last element that is smaller than `smax`.
+
+If `r` is greater than `l`, it means that there is an unsorted subarray, so the method returns its length (`r - l + 1`). Otherwise, it means that the list is already sorted, so the method returns zero.
+
+The first and second implementations have a time complexity of O(n log n) due to the sorting operation, while the third implementation has a time complexity of O(n) due to the three loops through the list. The second implementation, using a stack, has a space complexity of O(n) due to the stack data structure. The other two implementations have a space complexity of O(1) because they only use a few variables.

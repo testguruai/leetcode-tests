@@ -1,0 +1,65 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py F [ 16%]
+FFFFF                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_empty_matrix _______________________________
+
+    def test_empty_matrix():
+        matrix = []
+>       obj = NumMatrix(matrix)
+E       NameError: name 'NumMatrix' is not defined
+
+304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py:5: NameError
+__________________________ test_single_element_matrix __________________________
+
+    def test_single_element_matrix():
+        matrix = [[1]]
+>       obj = NumMatrix(matrix)
+E       NameError: name 'NumMatrix' is not defined
+
+304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py:10: NameError
+______________________________ test_square_matrix ______________________________
+
+    def test_square_matrix():
+        matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>       obj = NumMatrix(matrix)
+E       NameError: name 'NumMatrix' is not defined
+
+304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py:15: NameError
+___________________________ test_rectangular_matrix ____________________________
+
+    def test_rectangular_matrix():
+        matrix = [[1, 2, 3, 4], [5, 6, 7, 8]]
+>       obj = NumMatrix(matrix)
+E       NameError: name 'NumMatrix' is not defined
+
+304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py:24: NameError
+_____________________________ test_negative_values _____________________________
+
+    def test_negative_values():
+        matrix = [[-2,-1,-3,-4],[-1,-2,-3,-1],[-4,-1,-1,-1],[-2,-4,-2,-2]]
+>       obj = NumMatrix(matrix)
+E       NameError: name 'NumMatrix' is not defined
+
+304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py:33: NameError
+_________________________ test_matrix_with_zero_values _________________________
+
+    def test_matrix_with_zero_values():
+        matrix = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+>       obj = NumMatrix(matrix)
+E       NameError: name 'NumMatrix' is not defined
+
+304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py:41: NameError
+=========================== short test summary info ============================
+FAILED 304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py::test_empty_matrix
+FAILED 304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py::test_single_element_matrix
+FAILED 304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py::test_square_matrix
+FAILED 304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py::test_rectangular_matrix
+FAILED 304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py::test_negative_values
+FAILED 304_Range_Sum_Query_2D_Immutable/test_304_Range_Sum_Query_2D_Immutable.py::test_matrix_with_zero_values
+============================== 6 failed in 0.02s ===============================

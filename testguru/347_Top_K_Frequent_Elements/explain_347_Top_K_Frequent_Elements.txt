@@ -1,0 +1,9 @@
+This Python code is a solution to a problem that involves finding the top k most frequent elements in an array of integers.
+
+The "Solution" class contains a method called "topKFrequent" that takes in two parameters: the "nums" array and "k" integer. It returns a new array containing the top k most frequent elements in the input array.
+
+To solve the problem, the code first creates a "counter" object using the "collections.Counter" method, which counts the occurrences of each element in the input array. The "most_common" method of the "counter" object is then used to return the top k most common elements in the array, along with their respective counts. 
+
+Finally, the code creates a new array consisting only of the k most common elements, without their count values. This is done using a list comprehension that iterates over the key-value pairs returned by the "most_common" method.
+
+An alternative solution is also provided in the commented line. It uses the nlargest method from the heapq module instead of creating a counter object. It returns the k elements with the highest value (frequency) in the input array using the get method of dictionaries.

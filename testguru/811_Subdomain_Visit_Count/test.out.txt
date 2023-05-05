@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+811_Subdomain_Visit_Count/test_811_Subdomain_Visit_Count.py F            [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_subdomainVisits _____________________________
+
+solution = <solution.Solution object at 0x7fde9c57c6d0>
+
+    def test_subdomainVisits(solution):
+        assert solution.subdomainVisits(["9001 discuss.leetcode.com"]) == ["9001 discuss.leetcode.com", "9001 leetcode.com", "9001 com"]
+>       assert solution.subdomainVisits(["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"]) == ["951 com", "900 google.mail.com", "1 intel.mail.com", "5 wiki.org", "50 yahoo.com"]
+E       AssertionError: assert ['900 google....iki.org', ...] == ['951 com', '...50 yahoo.com']
+E         At index 0 diff: '900 google.mail.com' != '951 com'
+E         Left contains 2 more items, first extra item: '5 wiki.org'
+E         Use -v to get more diff
+
+811_Subdomain_Visit_Count/test_811_Subdomain_Visit_Count.py:10: AssertionError
+=========================== short test summary info ============================
+FAILED 811_Subdomain_Visit_Count/test_811_Subdomain_Visit_Count.py::test_subdomainVisits
+============================== 1 failed in 0.01s ===============================

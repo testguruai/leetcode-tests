@@ -1,0 +1,11 @@
+This is a Python class called Solution with a method levelOrderBottom that takes a binary tree as input and returns a list of lists containing the values of the nodes at each level, in reverse order. 
+
+The first implementation of levelOrderBottom is commented out and uses recursion to traverse the tree and populate the result list in a depth-first manner. 
+
+The second implementation uses a stack to perform a breadth-first traversal of the tree and populate the result list. The function first checks if the root node is None and returns an empty list if it is. It then initializes a stack with a list containing the root node. 
+
+The function then enters a loop that continues while the stack is not empty. In each iteration, the topmost list in the stack is popped and its values are inserted at the beginning of the result list. A new list (temp) is created to hold the child nodes of the nodes in the popped list. 
+
+The function then iterates over the nodes in the popped list, and if a node has a left or right child, those children are appended to the temp list. 
+
+Finally, if the temp list is not empty, it is appended to the stack and the loop continues. Once the stack is empty, the result list containing the node values at each level is returned.

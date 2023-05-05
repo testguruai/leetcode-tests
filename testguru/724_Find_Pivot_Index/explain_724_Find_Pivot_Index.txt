@@ -1,0 +1,5 @@
+This code defines a class named `Solution` that contains a method `pivotIndex`. This method takes a list of integers `nums` as an input and looks for the index in the list where the sum of elements on the left is equal to the sum of elements on the right. If such an index is found, it is returned by the method. 
+
+The algorithm works by first calculating the total sum of all the elements in the list. It then iterates through the list, keeping track of the sum of elements on the left side of the current index and checking if the sum of elements on the right side is equal to the difference between the total sum and the sum of elements on the left and the current element. If a pivot index is found, it is returned, otherwise, the method returns -1. 
+
+The `enumerate()` function is used to obtain both the index and the value of each element in the `nums` list.

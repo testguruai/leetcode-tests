@@ -1,0 +1,11 @@
+This is a Python class `Solution` that contains a method `maxDepth` to find the maximum depth of a given binary tree, represented by its root node.
+
+The method takes a single input argument, `root`, which is an instance of the `TreeNode` class that represents the root of the binary tree. 
+
+The method first checks if the root is None, i.e., if the binary tree is empty. If so, it returns 0, since the depth of an empty tree is 0.
+
+Otherwise, the method recursively calculates the maximum depth of the left subtree and the right subtree by calling `maxDepth` on the `left` and `right` child nodes of the current node, respectively. 
+
+Finally, the maximum of these two depths is returned plus 1, which represents the depth of the current node, i.e., the root of the current subtree.
+
+The time complexity of this method is O(n), where n is the number of nodes in the binary tree, since it visits every node exactly once.

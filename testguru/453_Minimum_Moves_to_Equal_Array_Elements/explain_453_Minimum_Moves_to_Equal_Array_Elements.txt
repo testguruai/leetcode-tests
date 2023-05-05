@@ -1,0 +1,9 @@
+This Python code defines a class named Solution with a method called minMoves. The method takes a list of integers called nums as an argument and returns an integer.
+
+The method first checks if the list is None or empty. If it is, the method returns 0.
+
+Otherwise, the method finds the minimum value in the list using the min() function and assigns it to the variable min_num.
+
+The method then calculates the sum of the differences between each value in the list and the minimum value. This is done using a list comprehension that generates a list of the differences. The sum() function is used to calculate the total of this list.
+
+Finally, the method returns the total, which represents the minimum number of moves required to make all elements in the list equal. Specifically, each move consists of incrementing n - 1 elements by 1, where n is the length of the list.

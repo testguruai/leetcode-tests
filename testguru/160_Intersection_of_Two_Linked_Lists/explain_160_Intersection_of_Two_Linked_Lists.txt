@@ -1,0 +1,19 @@
+This is a solution to the problem of finding the intersection node of two singly-linked lists. 
+
+The ListNode class is a definition of a node in a singly-linked list. 
+
+The Solution class has one method, getIntersectionNode, which takes two linked lists as arguments. 
+
+The method first checks if either of the linked lists is empty, in which case it returns None because there can be no intersection. 
+
+It then initializes two pointers, a and b, to the start of each linked list. It also initializes ans to None, which will be used to store the intersection node if it is found. 
+
+The method then enters a loop that runs as long as either pointer is not None. 
+
+Inside the loop, it checks if either pointer is None. If so, it sets that pointer to the start of the other linked list (this is to make sure each pointer traverses both linked lists equally). 
+
+It then checks if a and b point to the same node and that ans is still None (meaning it hasn't found an intersection yet). If so, it sets ans to that node. 
+
+Finally, it advances both pointers to the next node in their respective linked lists. 
+
+After the loop finishes, the method returns ans, which will be the intersection node if it was found, or None if there was no intersection.

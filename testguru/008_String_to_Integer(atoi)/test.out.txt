@@ -1,0 +1,8 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+008_String_to_Integer(atoi)/test_008_String_to_Integer(atoi).py ......   [100%]
+
+============================== 6 passed in 0.01s ===============================

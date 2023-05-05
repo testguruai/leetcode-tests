@@ -1,0 +1,5 @@
+The code defines a class `Solution` with a single method `longestPalindrome` that takes a string `s` as input and returns the longest palindrome substring of `s`. A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward. 
+
+The `longestPalindrome` method uses the Manacher algorithm to find the longest palindrome substring. This algorithm involves expanding the string from each character as the center and checking if it forms a palindrome, extending the radius of the substring until a non-palindromic character is encountered. It also creates a new list with the same string, but with "#" characters between all characters in the string, except at the beginning and end. 
+
+The code contains two alternate implementations of the `longestPalindrome` method, commented out. The first uses the expand around center method to find the longest palindrome substring. The second uses the Manacher algorithm.

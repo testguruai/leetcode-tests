@@ -1,0 +1,40 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+263_Ugly_Number/test_263_Ugly_Number.py ..FF                             [100%]
+
+=================================== FAILURES ===================================
+__________________ test_is_ugly_returns_true_for_ugly_numbers __________________
+
+    def test_is_ugly_returns_true_for_ugly_numbers():
+        s = Solution()
+        assert s.isUgly(1)
+        assert s.isUgly(6)
+        assert s.isUgly(8)
+>       assert s.isUgly(14)
+E       assert False
+E        +  where False = <bound method Solution.isUgly of <solution.Solution object at 0x7fd6002fc7f0>>(14)
+E        +    where <bound method Solution.isUgly of <solution.Solution object at 0x7fd6002fc7f0>> = <solution.Solution object at 0x7fd6002fc7f0>.isUgly
+
+263_Ugly_Number/test_263_Ugly_Number.py:22: AssertionError
+_______________ test_is_ugly_returns_false_for_non_ugly_numbers ________________
+
+    def test_is_ugly_returns_false_for_non_ugly_numbers():
+        s = Solution()
+        assert not s.isUgly(7)
+        assert not s.isUgly(11)
+        assert not s.isUgly(17)
+        assert not s.isUgly(21)
+        assert not s.isUgly(23)
+>       assert not s.isUgly(27)
+E       assert not True
+E        +  where True = <bound method Solution.isUgly of <solution.Solution object at 0x7fd6002ffca0>>(27)
+E        +    where <bound method Solution.isUgly of <solution.Solution object at 0x7fd6002ffca0>> = <solution.Solution object at 0x7fd6002ffca0>.isUgly
+
+263_Ugly_Number/test_263_Ugly_Number.py:34: AssertionError
+=========================== short test summary info ============================
+FAILED 263_Ugly_Number/test_263_Ugly_Number.py::test_is_ugly_returns_true_for_ugly_numbers
+FAILED 263_Ugly_Number/test_263_Ugly_Number.py::test_is_ugly_returns_false_for_non_ugly_numbers
+========================= 2 failed, 2 passed in 0.02s ==========================

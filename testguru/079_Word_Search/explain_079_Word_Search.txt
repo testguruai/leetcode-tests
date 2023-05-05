@@ -1,0 +1,15 @@
+This is a Python program that checks whether a word exists in a 2D board of characters.
+
+The program defines a class called Solution with a method called exist that takes in two arguments: board (a list of lists of string characters) and word (a string). The function returns a boolean value representing whether the word exists in the board.
+
+The program first creates a two-dimensional list called check_board with the same dimensions as the input board. Each cell in the check_board list is initialized to True.
+
+The program then iterates over each cell in the board, checking if the current cell contains the first character of the word and if the corresponding cell in check_board is True. If both conditions are met, the program sets the value of check_board for that cell to False, and calls another function called check_exist to recursively check if the word can be formed by adjacent characters in the board, starting from the current cell.
+
+The check_exist function takes in several arguments: the check_board list, the board list, the word string, the current index of the word being checked, the length of the word being checked, the row and column indices of the current cell being checked.
+
+The check_exist function checks if the current index of the word being checked is equal to the length of the word (which would mean the entire word has been found). If the current index is not equal to the length of the word, the function iterates over each of the adjacent cells of the current cell, and checks if the cell contains the next character in the word and if the corresponding cell in check_board is True. If these conditions are met, the function recursively calls itself with the new row and column indices, and increments the index of the word being checked. 
+
+If the word is found in the board, the program returns True. If the program reaches the end of the loop without finding the word, it returns False.
+
+At the bottom of the program, an instance of the Solution class is created, and the exist method is called with two arguments: a long list of the character 'a', and a string containing 1 'b' character. The output of the program when run will be False, as it's not possible to form the word 'b' in such a long list of 'a' characters.

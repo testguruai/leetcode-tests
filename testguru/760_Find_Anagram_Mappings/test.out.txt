@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+760_Find_Anagram_Mappings/test_760_Find_Anagram_Mappings.py F            [100%]
+
+=================================== FAILURES ===================================
+______________________ TestSolution.test_anagramMappings _______________________
+
+self = <test_760_Find_Anagram_Mappings.TestSolution object at 0x7f20303c8310>
+
+    def test_anagramMappings(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+760_Find_Anagram_Mappings/test_760_Find_Anagram_Mappings.py:6: NameError
+=========================== short test summary info ============================
+FAILED 760_Find_Anagram_Mappings/test_760_Find_Anagram_Mappings.py::TestSolution::test_anagramMappings
+============================== 1 failed in 0.01s ===============================

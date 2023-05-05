@@ -1,0 +1,19 @@
+This is a Python solution for the LeetCode problem "Path Sum III". The problem statement asks to find the number of paths in a binary tree that sums up to a given sum. 
+
+The given Python code defines a class `Solution` that contains two methods:
+- `pathSumHelper`: A helper method that recursively traverses the binary tree and calculates the number of paths that sum up to the given target. It takes four parameters:
+    - `root`: The root node of the binary tree.
+    - `target`: The given sum that needs to be achieved by the path.
+    - `so_far`: The sum of the nodes from the root to the current node.
+    - `cache`: A dictionary to store the sum and its frequency encountered so far.
+- `pathSum`: The main method that initializes the result and calls the `pathSumHelper` method with the initial parameters.
+
+The `pathSumHelper` method works as follows:
+- The method starts with checking if `root` is not null.
+- If `root` is not null, it calculates the complement of `so_far + root.val - target` and checks if the complement exists in the `cache`. The complement represents the path from some node in the tree until the current node. If the complement exists in the `cache`, it means that there is a path from some node to the current node that sums up to the given target. Therefore, it updates the result by adding the value of the complement frequency in the `cache`.
+- It then adds the current `so_far + root.val` to the `cache` and increments its frequency. This is done to keep track of the sum of nodes encountered so far and their frequency.
+- The method then recursively calls `pathSumHelper` with the left and right child of the current node, with updated parameters.
+- After completing the recursive calls, the method removes the current `so_far + root.val` from the `cache`. This is done so that the frequency of the node value does not interfere with the frequency of its parent or sibling nodes.
+- Finally, the method returns to the caller.
+
+The `pathSum` method initializes the `result` to 0 and calls the `pathSumHelper` method with the initial parameters - `root`, `sum`, `0` and `{0: 1}`. The `{0: 1}` dictionary is passed as the initial value for the `cache` parameter. The method then returns the `result`.

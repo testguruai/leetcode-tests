@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+039_Combination_Sum/test_039_Combination_Sum.py F                        [100%]
+
+=================================== FAILURES ===================================
+_______________________ TestSolution.test_combinationSum _______________________
+
+self = <test_039_Combination_Sum.TestSolution object at 0x7fa76f2e8310>
+
+    def test_combinationSum(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+039_Combination_Sum/test_039_Combination_Sum.py:5: NameError
+=========================== short test summary info ============================
+FAILED 039_Combination_Sum/test_039_Combination_Sum.py::TestSolution::test_combinationSum
+============================== 1 failed in 0.01s ===============================

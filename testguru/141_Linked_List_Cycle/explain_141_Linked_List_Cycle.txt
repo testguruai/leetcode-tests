@@ -1,0 +1,9 @@
+The given Python code defines a class `Solution` and its method `hasCycle` which checks whether a given singly-linked list has a cycle or not. A singly-linked list is a data structure in which each node contains a value and a pointer to the next node in the list.
+
+The given method has three approaches to solve the cycle detection problem.
+
+1. Approach 1: Counting and limiting the max value - This approach involves traversing the linked list while counting the number of nodes visited. A maximum value is set, and if the count exceeds that value, it is concluded that there is a cycle in the linked list. This approach is not efficient as it requires traversing the entire linked list.
+
+2. Approach 2: Using hash table or set - This approach involves traversing the linked list and storing the reference to each visited node in a hash table or set. If a node is revisited, it indicates that there is a cycle in the linked list. This approach requires additional space to store the hash table or set.
+
+3. Approach 3: Two Pointers - This approach is the fastest and most efficient approach. It involves using two pointers to traverse the linked list, a slow pointer and a fast pointer. The slow pointer moves one node at a time, while the fast pointer moves two nodes at a time. If there is a cycle in the linked list, the fast pointer will eventually catch up with the slow pointer. If there is no cycle, the fast pointer will reach the end of the linked list.

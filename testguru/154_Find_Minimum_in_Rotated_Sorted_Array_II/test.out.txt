@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+154_Find_Minimum_in_Rotated_Sorted_Array_II/test_154_Find_Minimum_in_Rotated_Sorted_Array_II.py F [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_findMin _________________________________
+
+    def test_findMin():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+154_Find_Minimum_in_Rotated_Sorted_Array_II/test_154_Find_Minimum_in_Rotated_Sorted_Array_II.py:4: NameError
+=========================== short test summary info ============================
+FAILED 154_Find_Minimum_in_Rotated_Sorted_Array_II/test_154_Find_Minimum_in_Rotated_Sorted_Array_II.py::test_findMin
+============================== 1 failed in 0.02s ===============================

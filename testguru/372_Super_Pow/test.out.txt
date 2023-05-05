@@ -1,0 +1,38 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+372_Super_Pow/test_372_Super_Pow.py FF                                   [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_superPow _________________________________
+
+    def test_superPow():
+        s = Solution()
+        assert s.superPow(2, []) == 1
+        assert s.superPow(2, [0]) == 1
+        assert s.superPow(2, [1,0]) == 1024
+>       assert s.superPow(2, [1,1]) == 2048
+E       assert 711 == 2048
+E        +  where 711 = <bound method Solution.superPow of <solution.Solution object at 0x7f8aa4fcc610>>(2, [])
+E        +    where <bound method Solution.superPow of <solution.Solution object at 0x7f8aa4fcc610>> = <solution.Solution object at 0x7f8aa4fcc610>.superPow
+
+372_Super_Pow/test_372_Super_Pow.py:11: AssertionError
+_________________________________ test_powmod __________________________________
+
+    def test_powmod():
+        s = Solution()
+        assert s.powmod(2, 3) == 8
+        assert s.powmod(3, 4) == 81
+        assert s.powmod(4, 5) == 1024
+>       assert s.powmod(5, 6) == 15625
+E       assert 918 == 15625
+E        +  where 918 = <bound method Solution.powmod of <solution.Solution object at 0x7f8aa4fcfbb0>>(5, 6)
+E        +    where <bound method Solution.powmod of <solution.Solution object at 0x7f8aa4fcfbb0>> = <solution.Solution object at 0x7f8aa4fcfbb0>.powmod
+
+372_Super_Pow/test_372_Super_Pow.py:20: AssertionError
+=========================== short test summary info ============================
+FAILED 372_Super_Pow/test_372_Super_Pow.py::test_superPow - assert 711 == 2048
+FAILED 372_Super_Pow/test_372_Super_Pow.py::test_powmod - assert 918 == 15625
+============================== 2 failed in 0.01s ===============================

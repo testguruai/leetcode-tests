@@ -1,0 +1,55 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+867_Transpose_Matrix/test_867_Transpose_Matrix.py F                      [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_transpose ________________________________
+
+    def test_transpose():
+        sol = Solution()
+    
+        # Test case 1
+        A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+        expected_output = [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+        assert sol.transpose(A) == expected_output
+    
+        # Test case 2
+        A = [[1, 2], [3, 4], [5, 6]]
+        expected_output = [[1, 3, 5], [2, 4, 6]]
+        assert sol.transpose(A) == expected_output
+    
+        # Test case 3
+        A = [[1, 2, 3], [4, 5, 6]]
+        expected_output = [[1, 4], [2, 5], [3, 6]]
+        assert sol.transpose(A) == expected_output
+    
+        # Test case 4
+        A = [[1]]
+        expected_output = [[1]]
+        assert sol.transpose(A) == expected_output
+    
+        # Test case 5
+        A = []
+        expected_output = []
+>       assert sol.transpose(A) == expected_output
+
+867_Transpose_Matrix/test_867_Transpose_Matrix.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f3e157a0430>, A = []
+
+    def transpose(self, A):
+        """
+        :type A: List[List[int]]
+        :rtype: List[List[int]]
+        """
+>       R, C = len(A), len(A[0])
+E       IndexError: list index out of range
+
+867_Transpose_Matrix/solution.py:7: IndexError
+=========================== short test summary info ============================
+FAILED 867_Transpose_Matrix/test_867_Transpose_Matrix.py::test_transpose - In...
+============================== 1 failed in 0.02s ===============================

@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+223_Rectangle Area/test_223_Rectangle Area.py F                          [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_computeArea _______________________________
+
+    def test_computeArea():
+        sol = Solution()
+        assert sol.computeArea(-3, 0, 3, 4, 0, -1, 9, 2) == 45
+        assert sol.computeArea(0, 0, 0, 0, 0, 0, 0, 0) == 0
+        assert sol.computeArea(-2, -2, 2, 2, -1, -1, 1, 1) == 16
+        assert sol.computeArea(-2, -2, 2, 2, -3, -3, 3, 3) == 36
+>       assert sol.computeArea(-2, -2, 2, 2, -1, -1, 1, 3) == 16
+E       assert 18 == 16
+E        +  where 18 = <bound method Solution.computeArea of <solution.Solution object at 0x7f1c03ce0460>>(-2, -2, 2, 2, -1, -1, 1, 3)
+E        +    where <bound method Solution.computeArea of <solution.Solution object at 0x7f1c03ce0460>> = <solution.Solution object at 0x7f1c03ce0460>.computeArea
+
+223_Rectangle Area/test_223_Rectangle Area.py:11: AssertionError
+=========================== short test summary info ============================
+FAILED 223_Rectangle Area/test_223_Rectangle Area.py::test_computeArea - asse...
+============================== 1 failed in 0.01s ===============================

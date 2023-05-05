@@ -1,0 +1,50 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+087_Scramble_String/test_087_Scramble_String.py FFFF                     [100%]
+
+=================================== FAILURES ===================================
+______________________ TestSolution.test_isScramble_basic ______________________
+
+self = <test_087_Scramble_String.TestSolution object at 0x7f2e1db48370>
+
+    def test_isScramble_basic(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+087_Scramble_String/test_087_Scramble_String.py:5: NameError
+___________________ TestSolution.test_isScramble_edge_cases ____________________
+
+self = <test_087_Scramble_String.TestSolution object at 0x7f2e1db48460>
+
+    def test_isScramble_edge_cases(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+087_Scramble_String/test_087_Scramble_String.py:19: NameError
+___________________ TestSolution.test_isScramble_memoization ___________________
+
+self = <test_087_Scramble_String.TestSolution object at 0x7f2e1db48580>
+
+    def test_isScramble_memoization(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+087_Scramble_String/test_087_Scramble_String.py:27: NameError
+_________________ TestSolution.test_isScramble_invalid_inputs __________________
+
+self = <test_087_Scramble_String.TestSolution object at 0x7f2e1db486a0>
+
+    def test_isScramble_invalid_inputs(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+087_Scramble_String/test_087_Scramble_String.py:54: NameError
+=========================== short test summary info ============================
+FAILED 087_Scramble_String/test_087_Scramble_String.py::TestSolution::test_isScramble_basic
+FAILED 087_Scramble_String/test_087_Scramble_String.py::TestSolution::test_isScramble_edge_cases
+FAILED 087_Scramble_String/test_087_Scramble_String.py::TestSolution::test_isScramble_memoization
+FAILED 087_Scramble_String/test_087_Scramble_String.py::TestSolution::test_isScramble_invalid_inputs
+============================== 4 failed in 0.02s ===============================

@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 083_Remove_Duplicates_from_Sorted_List/test_083_Remove_Duplicates_from_Sorted_List.py _
+083_Remove_Duplicates_from_Sorted_List/test_083_Remove_Duplicates_from_Sorted_List.py:79: in <module>
+    test_deleteDuplicates()
+083_Remove_Duplicates_from_Sorted_List/test_083_Remove_Duplicates_from_Sorted_List.py:4: in test_deleteDuplicates
+    assert Solution().deleteDuplicates(None) == None
+E   NameError: name 'Solution' is not defined
+=========================== short test summary info ============================
+ERROR 083_Remove_Duplicates_from_Sorted_List/test_083_Remove_Duplicates_from_Sorted_List.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

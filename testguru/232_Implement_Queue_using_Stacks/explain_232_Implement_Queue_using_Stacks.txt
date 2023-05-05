@@ -1,0 +1,11 @@
+This is the implementation of a queue using two stacks in Python.
+
+First, the class Queue is defined with two attributes: stack1 and stack2, which are both initially empty lists. 
+
+The push method simply inserts a new element at the end of stack1.
+
+The pop method removes and returns the first element in the queue. Here, if stack2 is empty, the elements from stack1 are transferred to stack2 in reverse order using a while loop. This is done so that the first element that was pushed into the queue becomes the first one to be removed. The top element of stack2 is then removed and returned as the element to be popped.
+
+The peek method returns the first element in the queue without removing it. Similar to pop, if stack2 is empty, the elements from stack1 are transferred to stack2 in reverse order using a while loop. The top element of stack2 is then returned as the element to be peeked.
+
+The empty method returns True if the queue is empty, which is equivalent to both stack1 and stack2 being empty.

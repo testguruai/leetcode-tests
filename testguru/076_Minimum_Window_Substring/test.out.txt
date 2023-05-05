@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+076_Minimum_Window_Substring/test_076_Minimum_Window_Substring.py FF     [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_minWindow ________________________________
+
+    def test_minWindow():
+        s = Solution()
+        assert s.minWindow('ADOBECODEBANC', 'ABC') == 'BANC'
+        assert s.minWindow('a', 'a') == 'a'
+        assert s.minWindow('a', 'aa') == ''
+>       assert s.minWindow('abc', 'cba') == ''
+E       AssertionError: assert 'abc' == ''
+E         + abc
+
+076_Minimum_Window_Substring/test_076_Minimum_Window_Substring.py:9: AssertionError
+_______________________________ test_first_match _______________________________
+
+    def test_first_match():
+        s = Solution()
+>       assert s.first_match('ADOBECODEBANC', 'ABC') == (9, 12, {})
+E       AttributeError: 'Solution' object has no attribute 'first_match'
+
+076_Minimum_Window_Substring/test_076_Minimum_Window_Substring.py:13: AttributeError
+=========================== short test summary info ============================
+FAILED 076_Minimum_Window_Substring/test_076_Minimum_Window_Substring.py::test_minWindow
+FAILED 076_Minimum_Window_Substring/test_076_Minimum_Window_Substring.py::test_first_match
+============================== 2 failed in 0.02s ===============================

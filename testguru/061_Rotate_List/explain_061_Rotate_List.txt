@@ -1,0 +1,13 @@
+This is a Python program to rotate a linked list k times to the right.
+
+The program defines a class Solution and a method rotateRight that takes in two arguments, head and k, representing the head of the linked list and the number of times the list needs to be rotated, respectively.
+
+If the head of the linked list is None or k is 0, the program returns the head as is.
+
+Otherwise, the program initializes two pointers, slow and fast, to the head of the linked list, and a variable length to 1. Then, in a loop, the program increments length and decrements k until either k becomes 0 or fast reaches the end of the linked list. At each iteration, slow and fast both move one node forward in the linked list.
+
+If k is not 0 after the loop, the program recalculates k as (k + length - 1) % length (this is equivalent to k % length), and then calls itself recursively with the updated k value. Otherwise, the program continues with the else clause.
+
+In the else clause, the program moves fast to the end of the linked list and slows moves k places behind it. Then, the program calls the method rotate with the head of the linked list and the slow and fast pointers. This method updates the next pointer of the fast node to point to the original head of the linked list, then sets the head of the linked list to slow.next, and finally sets the next pointer of slow to None. The method then returns the new head of the linked list.
+
+Finally, the program returns the result of the rotate method call.

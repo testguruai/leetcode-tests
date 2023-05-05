@@ -1,0 +1,9 @@
+This Python code defines a class Solution with a method called evalRPN. The method takes in one parameter, a list of strings called tokens. The goal of the method is to evaluate a reverse polish notation expression using a stack.
+
+The method first initializes an empty stack. It then iterates through each token in the input list. 
+
+If the token is an integer, it is converted to an integer and pushed onto the stack.
+
+If the token is not an integer, it is assumed to be an operator (+, -, *, /). The method then pops the last two integers, performs the necessary operation, and pushes the result back onto the stack. The process continues until all tokens have been processed.
+
+Finally, the method returns the last item in the stack, which should be the final result of the RPN expression.

@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+278_First_Bad_Version/test_278_First_Bad_Version.py F.                   [100%]
+
+=================================== FAILURES ===================================
+______________________ TestSolution.test_firstBadVersion _______________________
+
+self = <test_278_First_Bad_Version.TestSolution object at 0x7f5ca89643a0>
+
+    def test_firstBadVersion(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+278_First_Bad_Version/test_278_First_Bad_Version.py:13: NameError
+=========================== short test summary info ============================
+FAILED 278_First_Bad_Version/test_278_First_Bad_Version.py::TestSolution::test_firstBadVersion
+========================= 1 failed, 1 passed in 0.01s ==========================

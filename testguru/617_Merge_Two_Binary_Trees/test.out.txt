@@ -1,0 +1,60 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py FFFFF      [100%]
+
+=================================== FAILURES ===================================
+______________________ TestSolution.test_mergeTrees_empty ______________________
+
+self = <test_617_Merge_Two_Binary_Trees.TestSolution object at 0x7fa88c484490>
+
+    def test_mergeTrees_empty(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py:5: NameError
+_____________________ TestSolution.test_mergeTrees_oneTree _____________________
+
+self = <test_617_Merge_Two_Binary_Trees.TestSolution object at 0x7fa88c484580>
+
+    def test_mergeTrees_oneTree(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py:10: NameError
+____________________ TestSolution.test_mergeTrees_twoTrees _____________________
+
+self = <test_617_Merge_Two_Binary_Trees.TestSolution object at 0x7fa88c4846a0>
+
+    def test_mergeTrees_twoTrees(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py:18: NameError
+_______________ TestSolution.test_mergeTrees_differentTreeSizes ________________
+
+self = <test_617_Merge_Two_Binary_Trees.TestSolution object at 0x7fa88c4847c0>
+
+    def test_mergeTrees_differentTreeSizes(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py:32: NameError
+____________________ TestSolution.test_mergeTrees_sameTree _____________________
+
+self = <test_617_Merge_Two_Binary_Trees.TestSolution object at 0x7fa88c4848e0>
+
+    def test_mergeTrees_sameTree(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py:47: NameError
+=========================== short test summary info ============================
+FAILED 617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py::TestSolution::test_mergeTrees_empty
+FAILED 617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py::TestSolution::test_mergeTrees_oneTree
+FAILED 617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py::TestSolution::test_mergeTrees_twoTrees
+FAILED 617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py::TestSolution::test_mergeTrees_differentTreeSizes
+FAILED 617_Merge_Two_Binary_Trees/test_617_Merge_Two_Binary_Trees.py::TestSolution::test_mergeTrees_sameTree
+============================== 5 failed in 0.02s ===============================

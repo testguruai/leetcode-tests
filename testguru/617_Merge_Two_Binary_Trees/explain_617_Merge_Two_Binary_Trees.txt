@@ -1,0 +1,5 @@
+This Python code defines a class called `Solution` that contains a method called `mergeTrees`. `mergeTrees` accepts two arguments, namely `t1` and `t2`, both instances of the `TreeNode` class which represents a node in a binary tree. The method returns the root node of a new binary tree that is created by merging the two input binary trees.
+
+Before merging the two trees, the method checks if either of the input trees is `None`. If so, it simply returns the other tree. If both trees are not `None`, then it adds the values of the two root nodes and assigns the sum to the root node of the new tree. It then recursively merges the left and right subtrees of `t1` and `t2`, and assigns the resulting merged subtrees to the left and right children of the new root node, respectively.
+
+There is also a commented out alternative implementation of `mergeTrees` that uses a stack-based approach instead of recursion. It proceeds similarly but iteratively using a stack to keep track of the nodes to be merged.

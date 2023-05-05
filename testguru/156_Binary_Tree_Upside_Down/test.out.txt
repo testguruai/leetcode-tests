@@ -1,0 +1,65 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py .FFFFF   [100%]
+
+=================================== FAILURES ===================================
+______________ TestSolution.test_upsideDownBinaryTree_singleNode _______________
+
+self = <test_156_Binary_Tree_Upside_Down.TestSolution object at 0x7f4cdde98670>
+
+    def test_upsideDownBinaryTree_singleNode(self):
+        solution = Solution()
+>       root = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py:13: NameError
+_______________ TestSolution.test_upsideDownBinaryTree_twoNodes ________________
+
+self = <test_156_Binary_Tree_Upside_Down.TestSolution object at 0x7f4cdde98790>
+
+    def test_upsideDownBinaryTree_twoNodes(self):
+        solution = Solution()
+>       root = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py:18: NameError
+______________ TestSolution.test_upsideDownBinaryTree_threeNodes _______________
+
+self = <test_156_Binary_Tree_Upside_Down.TestSolution object at 0x7f4cdde988b0>
+
+    def test_upsideDownBinaryTree_threeNodes(self):
+        solution = Solution()
+>       root = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py:24: NameError
+_______________ TestSolution.test_upsideDownBinaryTree_balanced ________________
+
+self = <test_156_Binary_Tree_Upside_Down.TestSolution object at 0x7f4cdde989d0>
+
+    def test_upsideDownBinaryTree_balanced(self):
+        solution = Solution()
+>       root = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py:33: NameError
+______________ TestSolution.test_upsideDownBinaryTree_unbalanced _______________
+
+self = <test_156_Binary_Tree_Upside_Down.TestSolution object at 0x7f4cdde98af0>
+
+    def test_upsideDownBinaryTree_unbalanced(self):
+        solution = Solution()
+>       root = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py:47: NameError
+=========================== short test summary info ============================
+FAILED 156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py::TestSolution::test_upsideDownBinaryTree_singleNode
+FAILED 156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py::TestSolution::test_upsideDownBinaryTree_twoNodes
+FAILED 156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py::TestSolution::test_upsideDownBinaryTree_threeNodes
+FAILED 156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py::TestSolution::test_upsideDownBinaryTree_balanced
+FAILED 156_Binary_Tree_Upside_Down/test_156_Binary_Tree_Upside_Down.py::TestSolution::test_upsideDownBinaryTree_unbalanced
+========================= 5 failed, 1 passed in 0.02s ==========================

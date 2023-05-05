@@ -1,0 +1,11 @@
+The code defines a class `Solution` with a method `containsNearbyAlmostDuplicate`. This method takes in three arguments: `nums`, a list of integers, `k`, an integer, and `t`, an integer. The method returns a boolean value and determines whether there exist two distinct indices `i` and `j` in the list `nums` such that the absolute difference between `nums[i]` and `nums[j]` is at most `t`, and the absolute difference between `i` and `j` is at most `k`.
+
+The method first initializes an empty dictionary named `buckets`. It then iterates through the indices and values in the `nums` list using `enumerate` and assigns each value to the variable `v` and its index to `i`. 
+
+The method then calculates a bucket number and an offset depending on whether `t` is zero or not. The bucket number is calculated by dividing the value `v` by `t` if `t` is non-zero, otherwise `v` is used as the bucket number directly. The offset is `1` if `t` is non-zero, otherwise it is `0`. 
+
+The method then loops through the possible bucket numbers that `v` could be in, which includes `bucketNum-offset`, `bucketNum+offset`, and `bucketNum` if `offset` is zero. If the bucket number exists in `buckets` and the absolute difference between the value in the bucket and `v` is less than or equal to `t`, then the method returns `True`.
+
+If no such pair of values in `nums` meets the conditions, the method stores `v` in `buckets` with its bucket number as the key. If `buckets` contains more than `k` elements, then the earliest element in `nums` that was added to `buckets` is removed from `buckets`.
+
+Finally, if no such pair of values in `nums` meets the conditions, the method returns `False`.

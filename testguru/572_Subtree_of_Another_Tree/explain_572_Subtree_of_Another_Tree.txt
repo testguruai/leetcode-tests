@@ -1,0 +1,8 @@
+This code defines a class `Solution` that has a method called `isSubtree`. Given two binary trees `s` and `t`, the method returns True if `t` is a subtree of `s`. 
+
+The method works as follows:
+- It calls a helper method `preorder` on both `s` and `t` and saves the results in variables `s_res` and `t_res`.
+- The `preorder` method is also defined in the class and it takes a binary tree node `root` and a boolean `isLeft`. The function returns a string that represents the preorder traversal of the binary tree with `root` as the root node. It uses a special "lnull" or "rnull" string to denote that a child of a node is None.
+- Finally, the method returns True if the `t_res` string is a substring of the `s_res` string, otherwise False. 
+
+There is also a commented-out implementation of `isSubtree` using a different approach called `traverse` that recursively checks if `t` is a subtree of every node in `s` by comparing their values. However, this approach is less efficient because it traverses `s` multiple times.

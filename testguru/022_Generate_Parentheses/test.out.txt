@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+022_Generate_Parentheses/test_022_Generate_Parentheses.py F              [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_generateParenthesis ___________________________
+
+    def test_generateParenthesis():
+        sol = Solution()
+        assert sol.generateParenthesis(1) == ['()']
+        assert sol.generateParenthesis(2) == ['()()', '(())']
+>       assert sol.generateParenthesis(3) == ['((()))', '(()())', '(())()', '()(())', '()()()']
+E       AssertionError: assert ['()(())', '(...()', '()()()'] == ['((()))', '(...))', '()()()']
+E         At index 0 diff: '()(())' != '((()))'
+E         Use -v to get more diff
+
+022_Generate_Parentheses/test_022_Generate_Parentheses.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED 022_Generate_Parentheses/test_022_Generate_Parentheses.py::test_generateParenthesis
+============================== 1 failed in 0.01s ===============================

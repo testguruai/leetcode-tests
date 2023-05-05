@@ -1,0 +1,7 @@
+This is a solution to the LeetCode problem 162. Find Peak Element. Given an input array `nums`, the goal is to find its peak element i.e. the element that is greater than or equal to its neighbors. If there are multiple peaks, return any of them.
+
+The code defines a class `Solution` that has a method `findPeakElement`. The `nums` input is a list of integers and the function returns an integer that corresponds to the index of peak element.
+
+The approach used here is a binary search. The search space is divided into two halves and the middle element is compared with its neighbors. If it is smaller than its right neighbor, the peak element must be in the right half and the search is continued on that half. If it is larger than or equal to its right neighbor, the peak element must be in the left half and the search is continued on that half.
+
+Note that the while loop condition is `start < end`. This ensures that the search space contains at least two elements. The loop ends when there is only one element left, which must be the peak element.

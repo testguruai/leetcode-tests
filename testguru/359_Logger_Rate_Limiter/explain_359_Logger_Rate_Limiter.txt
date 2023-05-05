@@ -1,0 +1,7 @@
+This code defines the class `Logger`, which has a `shouldPrintMessage` method that takes in a message and a timestamp. The `shouldPrintMessage` method is used to determine if a given message should be printed or not, based on whether it has been printed in the last 10 seconds or not.
+
+There are two implementations of the `Logger` class.
+
+The first implementation uses a dictionary to store the most recent timestamp for each message. If the current timestamp is less than 10 seconds from the last printed timestamp for a particular message, the method returns False, indicating that the message should not be printed. Otherwise, the method updates the dictionary with the current timestamp and returns True.
+
+The second implementation uses a heap to store both the timestamp and message for each log entry, as well as a cache (implemented as a dictionary) to store the most recent timestamp for each message. Each time `shouldPrintMessage` is called, it first removes any log entries from the heap that are more than 10 seconds old, by iterating over the heap and popping off any entries whose timestamp is less than or equal to the current timestamp. Then, if the message has been printed within the last 10 seconds (as determined by the cache), the method returns False. Otherwise, the method updates the cache and the heap with the current timestamp and message, and returns True.

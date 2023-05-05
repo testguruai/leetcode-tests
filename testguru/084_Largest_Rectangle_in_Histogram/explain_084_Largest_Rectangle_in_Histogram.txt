@@ -1,0 +1,3 @@
+This is a Python class named Solution with a method called largestRectangleArea which accepts a list of integers called heights as input and returns the largest rectangular area possible in a given histogram. 
+
+The algorithm used is based on maintaining a stack of indices of histogram bars in increasing order of their heights. We traverse the input heights array and for each bar, we keep popping the top element from the stack while the current bar has a smaller height than the bar at the top of the stack. While popping, we calculate the area of the rectangle formed by the popped bar and the bars to its left and right. We keep track of the maximum area calculated so far and return it as the output after all the bars in the histogram have been considered.

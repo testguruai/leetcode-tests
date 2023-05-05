@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+443_String_Compression/test_443_String_Compression.py F.                 [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_compress _________________________________
+
+    def test_compress():
+        solution = Solution()
+        assert solution.compress(["a","a","b","b","c","c","c"]) == 6
+        assert solution.compress(["a"]) == 1
+        assert solution.compress(["a","b","b","c","c","c"]) == 5
+        assert solution.compress([]) == 0
+        assert solution.compress(["a", "a", "a", "a", "a"]) == 2
+        assert solution.compress(["a", "b", "c"]) == 3
+        assert solution.compress(["a", "a", "b", "b", "a", "a"]) == 6
+>       assert solution.compress(["a","a","b","b","c","c","c", "c"]) == 8
+E       AssertionError: assert 6 == 8
+E        +  where 6 = <bound method Solution.compress of <solution.Solution object at 0x7f318c1dc550>>(['a', '2', 'b', '2', 'c', '4', ...])
+E        +    where <bound method Solution.compress of <solution.Solution object at 0x7f318c1dc550>> = <solution.Solution object at 0x7f318c1dc550>.compress
+
+443_String_Compression/test_443_String_Compression.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED 443_String_Compression/test_443_String_Compression.py::test_compress
+========================= 1 failed, 1 passed in 0.01s ==========================

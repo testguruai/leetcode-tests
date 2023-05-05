@@ -1,0 +1,7 @@
+This is a Python class called "Solution" that has a method called "isStrobogrammatic". This method takes a string of digits as input and returns a boolean value indicating whether or not the input string is strobogrammatic. A number is strobogrammatic if it looks the same upside down, such as 69, 88, and 818.
+
+The method first creates a dictionary called "dic" that maps each digit to its strobogrammatic counterpart. The method then iterates through the input string in reverse order, checking if each character is in the dictionary. If a character is not in the dictionary, the method returns False. Otherwise, it looks up the strobogrammatic counterpart for the character in the dictionary and appends it to a temporary string.
+
+After iterating through the entire input string, the method compares the temporary string with the original input string to see if they are the same when read backwards. If they are, the method returns True. Otherwise, it returns False.
+
+The class also has an optional one-liner implementation of the "isStrobogrammatic" method that uses list comprehension and the "all" function to return a boolean value based on whether or not each pair of digits from the input string matches any of the strobogrammatic pairs '696', '00', '11', or '88'.

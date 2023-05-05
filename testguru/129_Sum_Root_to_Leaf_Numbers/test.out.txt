@@ -1,0 +1,57 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+129_Sum_Root_to_Leaf_Numbers/test_129_Sum_Root_to_Leaf_Numbers.py F      [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_sumNumbers ________________________________
+
+    def test_sumNumbers():
+        s = Solution()
+    
+        # Test case 1
+        root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+    
+        assert s.sumNumbers(root) == 25
+    
+        # Test case 2
+        root = TreeNode(4)
+        root.left = TreeNode(9)
+        root.left.left = TreeNode(5)
+        root.left.right = TreeNode(1)
+        root.right = TreeNode(0)
+    
+        assert s.sumNumbers(root) == 1026
+    
+        # Test case 3
+        root = None
+    
+        assert s.sumNumbers(root) == 0
+    
+        # Test case 4
+        root = TreeNode(1)
+    
+        assert s.sumNumbers(root) == 1
+    
+        # Test case 5
+        root = TreeNode(9)
+        root.left = TreeNode(8)
+        root.right = TreeNode(7)
+        root.left.left = TreeNode(6)
+        root.left.right = TreeNode(5)
+        root.right.left = TreeNode(4)
+        root.right.right = TreeNode(3)
+    
+>       assert s.sumNumbers(root) == 1846
+E       assert 3918 == 1846
+E        +  where 3918 = <bound method Solution.sumNumbers of <solution.Solution object at 0x7f28d944c430>>(<solution.TreeNode object at 0x7f28d944c5e0>)
+E        +    where <bound method Solution.sumNumbers of <solution.Solution object at 0x7f28d944c430>> = <solution.Solution object at 0x7f28d944c430>.sumNumbers
+
+129_Sum_Root_to_Leaf_Numbers/test_129_Sum_Root_to_Leaf_Numbers.py:44: AssertionError
+=========================== short test summary info ============================
+FAILED 129_Sum_Root_to_Leaf_Numbers/test_129_Sum_Root_to_Leaf_Numbers.py::test_sumNumbers
+============================== 1 failed in 0.01s ===============================

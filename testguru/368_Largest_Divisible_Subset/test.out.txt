@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+368_Largest_Divisible_Subset/test_368_Largest_Divisible_Subset.py F      [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_largestDivisibleSubset __________________________
+
+    def test_largestDivisibleSubset():
+>       obj = Solution()
+E       NameError: name 'Solution' is not defined
+
+368_Largest_Divisible_Subset/test_368_Largest_Divisible_Subset.py:2: NameError
+=========================== short test summary info ============================
+FAILED 368_Largest_Divisible_Subset/test_368_Largest_Divisible_Subset.py::test_largestDivisibleSubset
+============================== 1 failed in 0.01s ===============================

@@ -1,0 +1,9 @@
+This python code implements the "pathSum" function of a solution class that finds all the paths in a binary tree which sums up to a given target "sum". The function takes two arguments; the root of the binary tree, and the target "sum". 
+
+The function starts by initializing an empty list called "res" that will store the result paths. If the root is None, the function returns the empty list. 
+
+If the root value is equal to the target "sum" and both its left and right children are None, the function returns a list containing the root value. This is a boundary condition where the root node satisfies the required path conditions. 
+
+Otherwise, the function moves to the left and right children of the root recursively, updating the target "sum" by subtracting the current root value. This is done by calling the "pathSum" function recursively for the left and right child of the root. 
+
+The function adds all the resulting paths from the left and right side of the root by appending the root value to each path. Finally, the function returns the complete list of paths that sums up to the target "sum".

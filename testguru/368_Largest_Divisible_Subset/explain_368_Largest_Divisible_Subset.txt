@@ -1,0 +1,9 @@
+This is a Python class named "Solution" that has a method "largestDivisibleSubset". The purpose of this method is to find the largest subset of integers from a given list such that every element is divisible by every other element in the subset.
+
+The method first initializes a dictionary "S", where the key -1 is mapped to an empty set. The purpose of this set is to handle the case when the input list is empty. Then, the input list "nums" is sorted in ascending order.
+
+After that, the method iterates through each number "num" in the sorted "nums" list. For each "num", a list of "candidate" subsets is generated. These subsets include those subsets that have at least one previous element that is divisible by "num".
+
+Then, the method calculates the new subset that includes the "num" element. This is done by taking the maximum length subset from the previous subsets and adding "num" to it. The "|" operator is used to combine the two sets.
+
+Finally, the method returns the largest subset found as a list. The largest subset is the one with the maximum length in the "S" dictionary.

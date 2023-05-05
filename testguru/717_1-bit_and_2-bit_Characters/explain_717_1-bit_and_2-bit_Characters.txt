@@ -1,0 +1,5 @@
+This is a solution to the problem of determining whether the last character in a list of bits must be a one-bit character or not.
+
+The method `isOneBitCharacter` takes a parameter `bits`, which is a list of integers (0 or 1), and returns a boolean value. It uses a while loop to iterate through the bits of the list, adding either 1 or 2 to the position (`pos`) depending on the value of the current bit. If the loop reaches the second-last bit of the list, it returns True if the current position equals the second-last index of the list (`pos == len(bits) - 1`).
+
+There is a commented out alternative implementation that starts at the second last index of the `bits` list and iterates backwards until it finds a 0 or reaches the beginning of the list. It then returns whether the number of bits between the last 0 and the end of the list is even or odd.

@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+073_Set_Matrix_Zeroes/test_073_Set_Matrix_Zeroes.py F                    [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_solution _________________________________
+
+    def test_solution():
+        solution = Solution()
+        # Test case for an empty matrix
+        assert solution.setZeroes([]) == None
+        # Test case for a matrix where no zero is present
+>       assert solution.setZeroes([[1, 2], [3, 4]]) == [[1, 2], [3, 4]]
+E       assert None == [[1, 2], [3, 4]]
+E        +  where None = <bound method Solution.setZeroes of <solution.Solution object at 0x7f594c614430>>([[1, 2], [3, 4]])
+E        +    where <bound method Solution.setZeroes of <solution.Solution object at 0x7f594c614430>> = <solution.Solution object at 0x7f594c614430>.setZeroes
+
+073_Set_Matrix_Zeroes/test_073_Set_Matrix_Zeroes.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED 073_Set_Matrix_Zeroes/test_073_Set_Matrix_Zeroes.py::test_solution - a...
+============================== 1 failed in 0.01s ===============================

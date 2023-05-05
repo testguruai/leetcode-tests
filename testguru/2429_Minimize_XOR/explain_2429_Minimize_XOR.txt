@@ -1,0 +1,9 @@
+This is a Python class, `Solution`, which contains a method `minimizeXor`. This method takes two integer arguments `num1` and `num2`, and returns an integer which represents the result of minimizing the XOR operation between `num1` and `num2`.
+
+The method starts by converting `num1` and `num2` into binary strings, removing the prefix "0b" that `bin()` function adds to binary strings. It also gets the length of each binary string and counts the number of ones in `num2` binary string.
+
+Then, the method creates an empty list, `ans`, with the same length as the longest binary string, and fills both binary strings with leading zeros to facilitate indexing. 
+
+Next, the method fills the `ans` list from index 0 by setting the corresponding element to "1" if the corresponding element in `num1` is "1" and `ones` is greater than 0 (to minimize the XOR operation). In case there are still `ones` to fill, they will be placed from the end of the `ans` list to maintain the smallest possible XOR result.
+
+Finally, the `ans` list is concatenated into a string and converted into an integer with base 2 (binary). This integer is then returned as the result of the method.

@@ -1,0 +1,15 @@
+This is a Python program to find the starting indices of all substrings in a given string 's' that are a concatenation of all words in a given list 'words'. 
+
+The program defines a class Solution with a method findSubstring. The input parameters to the function are a string 's' and a list of strings, 'words'. The function returns a list of integers that represent the starting indices of substrings that are a concatenation of all words in 'words' and appear in 's'.
+
+The implementation is as follows:
+
+1. First, the length of the input string 's' and the length of each word in the list 'words' are computed.
+2. Next, a dictionary 'target_dict' is created to keep track of the number of occurrences of each word in the 'words' list.
+3. A loop is initiated over all possible starting positions of the substrings. For each starting position, a new dictionary 'curr_dict' is created as a copy of the 'target_dict'.
+4. Another loop is initiated to check if each word in the 'words' list appears in the substring starting from the current position and with a length equal to the length of each word in 'words'.
+5. If a word appears more times than in the 'target_dict', the loop is broken.
+6. If all words are present in the substring starting from the current position, the current position is added to the result list 'res'.
+7. Ultimately, the function returns the result list 'res'.
+
+The program also includes another implementation of the findSubstring function that uses sorted hash values of substrings to improve its performance. However, this implementation is commented out and not used in the program.

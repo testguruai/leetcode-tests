@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+326_Power_of_Three/test_326_Power_of_Three.py FF                         [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_isPowerOfThree_true ___________________________
+
+    def test_isPowerOfThree_true():
+>       assert Solution().isPowerOfThree(3) == True
+E       NameError: name 'Solution' is not defined
+
+326_Power_of_Three/test_326_Power_of_Three.py:5: NameError
+__________________________ test_isPowerOfThree_false ___________________________
+
+    def test_isPowerOfThree_false():
+>       assert Solution().isPowerOfThree(0) == False
+E       NameError: name 'Solution' is not defined
+
+326_Power_of_Three/test_326_Power_of_Three.py:9: NameError
+=========================== short test summary info ============================
+FAILED 326_Power_of_Three/test_326_Power_of_Three.py::test_isPowerOfThree_true
+FAILED 326_Power_of_Three/test_326_Power_of_Three.py::test_isPowerOfThree_false
+============================== 2 failed in 0.01s ===============================

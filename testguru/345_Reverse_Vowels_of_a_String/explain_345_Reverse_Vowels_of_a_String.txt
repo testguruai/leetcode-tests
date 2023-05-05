@@ -1,0 +1,9 @@
+This code defines a class named "Solution" having one method "reverseVowels". The method takes a string "s" as input and returns the string with its vowels in reverse order. 
+
+The method creates three empty lists str_index, vowel and res. 
+
+For every character in the input string "s", the method checks whether it is a vowel or not. If it is a vowel, it appends -1 to the 'str_index' list, implying that this character will be replaced with a vowel later. If it is not a vowel, the index of the character is appended to the 'str_index' list. The vowels are also appended to the 'vowel' list.
+
+Then, the method iterates through the 'str_index' list. If the index value is negative, it means that this character needs to be replaced by a vowel. Each vowel from the 'vowel' list is added to the 'res' list in reverse order. If the index value is non-negative, it means that this character does not need to be replaced by a vowel. So, the character from input string is added to the 'res' list as it is.
+
+Finally, the 'res' list is converted into a string and returned as the output.

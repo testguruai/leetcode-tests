@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+215_Kth_Largest_Element_in_an_Array/test_215_Kth_Largest_Element_in_an_Array.py F [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_findKthLargest ______________________________
+
+    def test_findKthLargest():
+        # test using sorted method
+>       assert s.findKthLargest(test_case_1[0], test_case_1[1]) == test_case_1[2]
+
+215_Kth_Largest_Element_in_an_Array/test_215_Kth_Largest_Element_in_an_Array.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f867ddd4100>, nums = [1, 2, 3, 4, 5]
+k = 2
+
+    def findKthLargest(self, nums, k):
+        # shuffle nums to avoid n*n
+>       random.shuffle(nums)
+E       NameError: name 'random' is not defined
+
+215_Kth_Largest_Element_in_an_Array/solution.py:21: NameError
+=========================== short test summary info ============================
+FAILED 215_Kth_Largest_Element_in_an_Array/test_215_Kth_Largest_Element_in_an_Array.py::test_findKthLargest
+============================== 1 failed in 0.01s ===============================

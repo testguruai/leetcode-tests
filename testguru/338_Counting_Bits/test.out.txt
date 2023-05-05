@@ -1,0 +1,55 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+338_Counting_Bits/test_338_Counting_Bits.py EEEEE                        [100%]
+
+==================================== ERRORS ====================================
+______________________ ERROR at setup of test_countBits_0 ______________________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+338_Counting_Bits/test_338_Counting_Bits.py:5: NameError
+______________________ ERROR at setup of test_countBits_1 ______________________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+338_Counting_Bits/test_338_Counting_Bits.py:5: NameError
+______________________ ERROR at setup of test_countBits_2 ______________________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+338_Counting_Bits/test_338_Counting_Bits.py:5: NameError
+______________________ ERROR at setup of test_countBits_5 ______________________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+338_Counting_Bits/test_338_Counting_Bits.py:5: NameError
+_____________________ ERROR at setup of test_countBits_10 ______________________
+
+    @pytest.fixture
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+338_Counting_Bits/test_338_Counting_Bits.py:5: NameError
+=========================== short test summary info ============================
+ERROR 338_Counting_Bits/test_338_Counting_Bits.py::test_countBits_0 - NameErr...
+ERROR 338_Counting_Bits/test_338_Counting_Bits.py::test_countBits_1 - NameErr...
+ERROR 338_Counting_Bits/test_338_Counting_Bits.py::test_countBits_2 - NameErr...
+ERROR 338_Counting_Bits/test_338_Counting_Bits.py::test_countBits_5 - NameErr...
+ERROR 338_Counting_Bits/test_338_Counting_Bits.py::test_countBits_10 - NameEr...
+============================== 5 errors in 0.02s ===============================

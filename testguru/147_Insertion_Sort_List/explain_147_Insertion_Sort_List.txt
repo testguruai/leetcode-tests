@@ -1,0 +1,11 @@
+This is an implementation of insertion sort algorithm for a singly-linked list.
+
+The `ListNode` class is defined with a constructor `__init__` that initializes the `val` attribute with the given argument `x` and the `next` attribute with `None`.
+
+The `Solution` class has a single method `insertionSortList` which takes a single argument `head` of the `ListNode` type and returns a `ListNode`. This method implements the insertion sort algorithm.
+
+The method first creates a `helper` node with a very low value which serves as the starting point of the sorted list. Then two pointers `pre` and `curr` are initialized to `helper` and `head`, respectively.
+
+The outer loop runs until the entire linked list is traversed. In each iteration, the current node `curr` is removed from the linked list by linking its next node to the previous node. Then the inner loop checks where the current node should be inserted based on the value of the nodes in the sorted list. The `pre` pointer is moved ahead until it reaches the correct position to insert `curr`. Finally, the current node `curr` is inserted by linking it to the previous node and the `pre` pointer is reset to `helper`.
+
+After the outer loop completes, the sorted linked list is returned by returning the `next` attribute of the `helper` node.

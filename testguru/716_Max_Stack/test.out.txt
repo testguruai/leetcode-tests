@@ -1,0 +1,50 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+716_Max_Stack/test_716_Max_Stack.py FFFFF                                [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_push ___________________________________
+
+    def test_push():
+>       stack = MaxStack()
+E       NameError: name 'MaxStack' is not defined
+
+716_Max_Stack/test_716_Max_Stack.py:4: NameError
+___________________________________ test_pop ___________________________________
+
+    def test_pop():
+>       stack = MaxStack()
+E       NameError: name 'MaxStack' is not defined
+
+716_Max_Stack/test_716_Max_Stack.py:11: NameError
+___________________________________ test_top ___________________________________
+
+    def test_top():
+>       stack = MaxStack()
+E       NameError: name 'MaxStack' is not defined
+
+716_Max_Stack/test_716_Max_Stack.py:19: NameError
+_________________________________ test_peekMax _________________________________
+
+    def test_peekMax():
+>       stack = MaxStack()
+E       NameError: name 'MaxStack' is not defined
+
+716_Max_Stack/test_716_Max_Stack.py:27: NameError
+_________________________________ test_popMax __________________________________
+
+    def test_popMax():
+>       stack = MaxStack()
+E       NameError: name 'MaxStack' is not defined
+
+716_Max_Stack/test_716_Max_Stack.py:36: NameError
+=========================== short test summary info ============================
+FAILED 716_Max_Stack/test_716_Max_Stack.py::test_push - NameError: name 'MaxS...
+FAILED 716_Max_Stack/test_716_Max_Stack.py::test_pop - NameError: name 'MaxSt...
+FAILED 716_Max_Stack/test_716_Max_Stack.py::test_top - NameError: name 'MaxSt...
+FAILED 716_Max_Stack/test_716_Max_Stack.py::test_peekMax - NameError: name 'M...
+FAILED 716_Max_Stack/test_716_Max_Stack.py::test_popMax - NameError: name 'Ma...
+============================== 5 failed in 0.02s ===============================

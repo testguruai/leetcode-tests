@@ -1,0 +1,11 @@
+This is a Python implementation for the "House Robber II" problem from LeetCode. 
+
+The problem statement is as follows: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+The approach used is dynamic programming. The "rob" function takes an input list of integers "nums", which represents the amount of money in each house. The first step is to determine if the list is empty or contains only one element. If so, the function returns the value. 
+
+Otherwise, the function calls the "rob_helper" function twice: once starting from the first house and excluding the last house, and once starting from the second house and including the last house. The function returns the maximum value from these two calls. 
+
+The "rob_helper" function takes three inputs: the list of integers "nums", the low index, and the high index. It initializes two variables "prevMax" and "currMax" to 0. It then iterates over the range of indices from "low" to "high" and calculates the maximum value that can be robbed at each house, considering the previous and current maximum values. Finally, the function returns the current maximum value. 
+
+Overall, the algorithm runs in O(n) time complexity, where n is the length of the input list.

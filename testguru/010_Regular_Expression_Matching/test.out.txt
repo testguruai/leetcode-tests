@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 010_Regular_Expression_Matching/test_010_Regular_Expression_Matching.py _
+010_Regular_Expression_Matching/test_010_Regular_Expression_Matching.py::test_multiple_cases: in "parametrize" the number of names (2):
+  ['inputs', 'expected']
+must be equal to the number of values (3):
+  ('', '', True)
+=========================== short test summary info ============================
+ERROR 010_Regular_Expression_Matching/test_010_Regular_Expression_Matching.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.03s ===============================

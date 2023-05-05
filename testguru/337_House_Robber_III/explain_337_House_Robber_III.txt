@@ -1,0 +1,7 @@
+This is a Python code for solving the problem of finding the maximum amount of money that can be robbed in a binary tree. The binary tree nodes represent houses and each node contains an integer value, which is the amount of money that can be robbed from that house. However, adjacent houses (nodes) cannot be robbed at the same time. Therefore, the problem is to find the maximum amount of money that can be robbed without robbing adjacent houses.
+
+The code defines a class Solution that contains two methods, rob() and rob_helper(). The commented out rob() and rob_helper() functions implement a recursive solution with memoization using a hash map. However, the second rob() function implements a simpler and more efficient recursive approach to solve the problem.
+
+The rob_helper() function is called recursively on every node of the binary tree. It returns a list of two integers, where the first one represents the maximum amount of money that can be robbed from the subtree rooted at this node without robbing the node itself, and the second one represents the maximum amount of money that can be robbed from the subtree rooted at this node while robbing the node itself.
+
+The rob() function calls the rob_helper() function on the root node of the binary tree. It then returns the maximum value between the first and second values in the list returned by the rob_helper() function.

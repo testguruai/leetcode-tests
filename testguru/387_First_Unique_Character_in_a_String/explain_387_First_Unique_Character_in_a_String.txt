@@ -1,0 +1,5 @@
+This code defines a Solution class with a method called firstUniqChar that takes a string s as input and returns the index of the first non-repeating character in the string. If there are no non-repeating characters, it returns -1.
+
+The method achieves this by creating a dictionary called count_map to store the frequency of each character in s using a for loop. It then uses another for loop along with the enumerate function to loop over the indices and characters in s. It checks whether the frequency of each character in count_map is equal to 1. If it is, the index of that character in s is returned. If no unique characters are found, it returns -1.
+
+There is also a commented-out version of the method that uses a list comprehension and the min() function to find the first occurrence of a non-repeating character. This method uses the find() method to search for each character in the string and returns the minimum index of all characters that occur only once.

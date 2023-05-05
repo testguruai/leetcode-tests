@@ -1,0 +1,101 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 9 items
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py F [ 11%]
+FFFFFFFF                                                                 [100%]
+
+=================================== FAILURES ===================================
+________________________ TestSolution.test_empty_prices ________________________
+
+self = <test_123_Best_Time_to_Buy_and_Sell_Stock_III.TestSolution object at 0x7f8a26e38370>
+
+    def test_empty_prices(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py:6: NameError
+________________________ TestSolution.test_single_price ________________________
+
+self = <test_123_Best_Time_to_Buy_and_Sell_Stock_III.TestSolution object at 0x7f8a26e38460>
+
+    def test_single_price(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py:10: NameError
+_____________________ TestSolution.test_increasing_prices ______________________
+
+self = <test_123_Best_Time_to_Buy_and_Sell_Stock_III.TestSolution object at 0x7f8a26e38580>
+
+    def test_increasing_prices(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py:14: NameError
+_____________________ TestSolution.test_decreasing_prices ______________________
+
+self = <test_123_Best_Time_to_Buy_and_Sell_Stock_III.TestSolution object at 0x7f8a26e386a0>
+
+    def test_decreasing_prices(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py:18: NameError
+____________________ TestSolution.test_alternating_prices_1 ____________________
+
+self = <test_123_Best_Time_to_Buy_and_Sell_Stock_III.TestSolution object at 0x7f8a26e387c0>
+
+    def test_alternating_prices_1(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py:22: NameError
+____________________ TestSolution.test_alternating_prices_2 ____________________
+
+self = <test_123_Best_Time_to_Buy_and_Sell_Stock_III.TestSolution object at 0x7f8a26e388e0>
+
+    def test_alternating_prices_2(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py:26: NameError
+______________________ TestSolution.test_random_prices_1 _______________________
+
+self = <test_123_Best_Time_to_Buy_and_Sell_Stock_III.TestSolution object at 0x7f8a26e38a00>
+
+    def test_random_prices_1(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py:30: NameError
+______________________ TestSolution.test_random_prices_2 _______________________
+
+self = <test_123_Best_Time_to_Buy_and_Sell_Stock_III.TestSolution object at 0x7f8a26e38b20>
+
+    def test_random_prices_2(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py:34: NameError
+______________________ TestSolution.test_random_prices_3 _______________________
+
+self = <test_123_Best_Time_to_Buy_and_Sell_Stock_III.TestSolution object at 0x7f8a26e38c40>
+
+    def test_random_prices_3(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py:38: NameError
+=========================== short test summary info ============================
+FAILED 123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py::TestSolution::test_empty_prices
+FAILED 123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py::TestSolution::test_single_price
+FAILED 123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py::TestSolution::test_increasing_prices
+FAILED 123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py::TestSolution::test_decreasing_prices
+FAILED 123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py::TestSolution::test_alternating_prices_1
+FAILED 123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py::TestSolution::test_alternating_prices_2
+FAILED 123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py::TestSolution::test_random_prices_1
+FAILED 123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py::TestSolution::test_random_prices_2
+FAILED 123_Best_Time_to_Buy_and_Sell_Stock_III/test_123_Best_Time_to_Buy_and_Sell_Stock_III.py::TestSolution::test_random_prices_3
+============================== 9 failed in 0.03s ===============================

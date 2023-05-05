@@ -1,0 +1,74 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 8 items
+
+339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py FFFFFFFF   [100%]
+
+=================================== FAILURES ===================================
+______________ test_isInteger_returns_true_for_single_integer_ni _______________
+
+    def test_isInteger_returns_true_for_single_integer_ni():
+>       ni = NestedInteger()
+E       NameError: name 'NestedInteger' is not defined
+
+339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py:5: NameError
+_______________ test_isInteger_returns_false_for_nested_list_ni ________________
+
+    def test_isInteger_returns_false_for_nested_list_ni():
+>       ni = NestedInteger()
+E       NameError: name 'NestedInteger' is not defined
+
+339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py:10: NameError
+____________ test_getInteger_returns_integer_for_single_integer_ni _____________
+
+    def test_getInteger_returns_integer_for_single_integer_ni():
+>       ni = NestedInteger()
+E       NameError: name 'NestedInteger' is not defined
+
+339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py:16: NameError
+_______________ test_getInteger_returns_none_for_nested_list_ni ________________
+
+    def test_getInteger_returns_none_for_nested_list_ni():
+>       ni = NestedInteger()
+E       NameError: name 'NestedInteger' is not defined
+
+339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py:21: NameError
+_________________ test_getList_returns_list_for_nested_list_ni _________________
+
+    def test_getList_returns_list_for_nested_list_ni():
+>       ni = NestedInteger()
+E       NameError: name 'NestedInteger' is not defined
+
+339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py:27: NameError
+_______________ test_getList_returns_none_for_single_integer_ni ________________
+
+    def test_getList_returns_none_for_single_integer_ni():
+>       ni = NestedInteger()
+E       NameError: name 'NestedInteger' is not defined
+
+339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py:32: NameError
+__________ test_depthSum_returns_correct_sum_for_single_integer_list ___________
+
+    def test_depthSum_returns_correct_sum_for_single_integer_list():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py:38: NameError
+______________ test_depthSum_returns_correct_sum_for_nested_list _______________
+
+    def test_depthSum_returns_correct_sum_for_nested_list():
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py:45: NameError
+=========================== short test summary info ============================
+FAILED 339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py::test_isInteger_returns_true_for_single_integer_ni
+FAILED 339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py::test_isInteger_returns_false_for_nested_list_ni
+FAILED 339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py::test_getInteger_returns_integer_for_single_integer_ni
+FAILED 339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py::test_getInteger_returns_none_for_nested_list_ni
+FAILED 339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py::test_getList_returns_list_for_nested_list_ni
+FAILED 339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py::test_getList_returns_none_for_single_integer_ni
+FAILED 339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py::test_depthSum_returns_correct_sum_for_single_integer_list
+FAILED 339_Nested_List_Weight_Sum/test_339_Nested_List_Weight_Sum.py::test_depthSum_returns_correct_sum_for_nested_list
+============================== 8 failed in 0.02s ===============================

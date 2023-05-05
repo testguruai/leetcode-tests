@@ -1,0 +1,9 @@
+This is a Python class named `Solution` which contains a function named `getSum`. The function takes two integers `a` and `b` as arguments and returns their sum. 
+
+This function has a simple use of bitwise operations to add two integers. It first imports the ctypes library. It then initializes two variables, `sum` and `carry`. The `sum` variable is initially set to 0 and the `carry` variable is set to the value of `b` as an `c_int32` object from the ctypes module.
+
+Then, it enters into a loop that continues until the `carry.value` is equal to 0. Inside the loop, it computes the bitwise `XOR` of `a` and the `carry.value` and stores it in the `sum` variable. Then it computes the bitwise `AND` of `a` and `carry.value`, converts the result to a `c_int32` object, and sets this result to `carry`. 
+
+The next line left-shifts the `carry.value` by one bit and assigns it to `carry.value`. Finally, it sets `a` to the value of `sum`. The loop repeats these operations on the updated value of `carry`. 
+
+After the loop completes, the function returns the value of `sum`.

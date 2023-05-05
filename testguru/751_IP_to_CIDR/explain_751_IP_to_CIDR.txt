@@ -1,0 +1,7 @@
+This code defines a class called "Solution" which contains three methods:
+
+1. `ipToInt`: This method takes a string `ip` which is an IP address in dot-decimal notation and returns an integer representation of the IP address. It does this by splitting the string by the '.' character and converting each segment to an integer which is added to the answer by multiplying the previous answer by 256.
+
+2. `intToIP`: This method takes an integer `x` which represents an IP address and returns the IP address in dot-decimal notation. It does this by taking each segment of the IP address using bit shifting and masking to extract the relevant octets.
+
+3. `ipToCIDR`: This method takes the same `ip` input as the `ipToInt` method and an integer `n` which represents the number of consecutive IP addresses to include in the output CIDR notation. It returns a list of strings representing the CIDR notations of the consecutive IP addresses. It does this by first converting the `ip` to an integer using the `ipToInt` method. Then, it iterates `n` times and calculates the mask length necessary to include the IP address and it's consecutive addresses using bit masking. Each CIDR notation is appended to the `ans` list and the `start` value is incremented by 2^(32-mask_length) and `n` is decremented by the same value. The loop continues until `n` is zero. Finally, `ans` list is returned.

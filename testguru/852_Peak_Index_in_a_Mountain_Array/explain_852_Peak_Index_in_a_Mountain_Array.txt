@@ -1,0 +1,7 @@
+The code defines a class Solution with a method peakIndexInMountainArray which takes an array A as input and returns the index of the peak element. The peak element is defined as the element which is greater than or equal to its neighboring elements.
+
+The first implementation of the method uses a while loop to iterate through the array and find the index of the peak element. It initializes the index i to 0 and increments it until A[i+1] is less than A[i], which indicates that A[i] is the peak element.
+
+The second implementation of the method uses binary search to determine the index of the peak element. It initializes two variables, lo and hi, to 0 and len(A)-1 respectively. It then enters a loop where it calculates the mid index as (lo+hi)/2 and compares A[mid] and A[mid+1]. If A[mid] is less than A[mid+1], it means that the peak element must be in the right half of the array, so it updates lo to mid+1. Otherwise, it means that the peak element must be in the left half of the array, so it updates hi to mid. The loop continues until lo is equal to hi, which means that the peak element has been found.
+
+The method then returns the value of lo, which is the index of the peak element.

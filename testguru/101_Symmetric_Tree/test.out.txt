@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+101_Symmetric_Tree/test_101_Symmetric_Tree.py F                          [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_isSymmetric _______________________________
+
+    def test_isSymmetric():
+>       node_1 = TreeNode(1)
+E       NameError: name 'TreeNode' is not defined
+
+101_Symmetric_Tree/test_101_Symmetric_Tree.py:4: NameError
+=========================== short test summary info ============================
+FAILED 101_Symmetric_Tree/test_101_Symmetric_Tree.py::test_isSymmetric - Name...
+============================== 1 failed in 0.01s ===============================

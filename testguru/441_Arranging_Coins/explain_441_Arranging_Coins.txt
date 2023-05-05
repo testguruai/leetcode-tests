@@ -1,0 +1,15 @@
+This is a python class "Solution", which contains a method "arrangeCoins". 
+
+The "arrangeCoins" method takes an integer parameter "n".
+
+The code initializes a variable "level" to zero.
+
+It then enters a while loop with the condition being "n > level".
+
+Within the loop, "level" is incremented by 1 and "n" is decreased by the value of "level".
+
+This continues until "n" is no longer greater than "level".
+
+Once the loop ends, the method will return the final value of "level".
+
+The overall purpose of this code is to determine the number of full rows of coins that can be formed given "n" number of coins. Each row has an increasing number of coins, starting with 1 coin in the first row, 2 coins in the second row, and so on.

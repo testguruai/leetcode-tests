@@ -1,0 +1,36 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+2409_Count_Days_Spent_Together/test_2409_Count_Days_Spent_Together.py F  [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_countDaysTogether ____________________________
+
+    def test_countDaysTogether():
+        solution = Solution()
+    
+        # Test Case 1
+        arriveAlice = "2021-01-01"
+        leaveAlice = "2021-01-03"
+        arriveBob = "2021-01-02"
+        leaveBob = "2021-01-04"
+        expected_output = 2
+>       assert solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob) == expected_output
+
+2409_Count_Days_Spent_Together/test_2409_Count_Days_Spent_Together.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fb46af24400>, arriveAlice = '2021-01-01'
+leaveAlice = '2021-01-03', arriveBob = '2021-01-02', leaveBob = '2021-01-04'
+
+    def countDaysTogether(self, arriveAlice: str, leaveAlice: str, arriveBob: str, leaveBob: str) -> int:
+        # split the dates to month and day.
+>       arriveAliceMonth, arriveAliceDay = list(map(int, arriveAlice.split("-")))
+E       ValueError: too many values to unpack (expected 2)
+
+2409_Count_Days_Spent_Together/solution.py:4: ValueError
+=========================== short test summary info ============================
+FAILED 2409_Count_Days_Spent_Together/test_2409_Count_Days_Spent_Together.py::test_countDaysTogether
+============================== 1 failed in 0.01s ===============================

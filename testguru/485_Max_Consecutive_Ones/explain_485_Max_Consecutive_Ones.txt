@@ -1,0 +1,11 @@
+This is a Python class called `Solution` with a method called `findMaxConsecutiveOnes`. 
+
+The method takes in a list of integers called `nums` and returns an integer value.
+
+The logic of the method is to keep track of the current length of consecutive 1s encountered in the array. It starts by initializing two variables, `ans` and `curr`, to 0. `ans` will keep track of the maximum consecutive 1s encountered so far while `curr` will keep track of the current length of consecutive 1s.
+
+The method then loops through each element in the input array `nums`. If the current element is 1, it adds 1 to `curr` and checks if `curr` is greater than `ans`. If it is, it updates `ans` to `curr`.
+
+If the current element is not 1, it means the current streak of consecutive 1s has been broken, so `curr` is reset back to 0.
+
+After the loop is finished, `ans` will hold the maximum consecutive 1s encountered in the input array, which is then returned.

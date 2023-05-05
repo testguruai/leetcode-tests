@@ -1,0 +1,7 @@
+This Python code defines a class named "RecentCounter" that has a constructor "__init__" and a method "ping". 
+
+The constructor initializes the instance variable "self.queue" as an empty list.
+
+The "ping" method takes an integer parameter "t" and appends it to the list "self.queue". Then, it removes any elements from the list that are older than 3000 milliseconds (based on the current timestamp "t"), by repeatedly removing the first element of the list until the first element is not older than 3000 milliseconds. Finally, it returns the length of the updated "self.queue" list.
+
+The commented code at the end demonstrates how to instantiate an object of the RecentCounter class and call its "ping" method with a timestamp.

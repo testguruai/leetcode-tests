@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 15 items
+
+065_Valid_Number/test_065_Valid_Number.py ........F......                [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_mixed_notation ______________________________
+
+    def test_mixed_notation():
+        s = Solution()
+>       assert s.isNumber("1.23e4") == True
+E       AssertionError: assert False == True
+E        +  where False = <bound method Solution.isNumber of <solution.Solution object at 0x7faa0dcc8fa0>>('1.23e4')
+E        +    where <bound method Solution.isNumber of <solution.Solution object at 0x7faa0dcc8fa0>> = <solution.Solution object at 0x7faa0dcc8fa0>.isNumber
+
+065_Valid_Number/test_065_Valid_Number.py:39: AssertionError
+----------------------------- Captured stdout call -----------------------------
+4 6 True
+=========================== short test summary info ============================
+FAILED 065_Valid_Number/test_065_Valid_Number.py::test_mixed_notation - Asser...
+========================= 1 failed, 14 passed in 0.02s =========================

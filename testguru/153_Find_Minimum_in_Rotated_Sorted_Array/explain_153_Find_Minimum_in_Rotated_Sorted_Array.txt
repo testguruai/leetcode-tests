@@ -1,0 +1,7 @@
+This Python code defines a class Solution that contains a function to find the minimum element in a rotated sorted array.
+
+The first part of the code (commented out) defines a recursive function get_min that uses binary search to recursively divide the input array into halves and return the minimum element. This function is then called by the findMin function, which simply calls get_min with some initial parameters.
+
+The second part of the code defines the updated findMin function. This function uses a while loop to iteratively update the left and right pointers of the array until it finds the minimum element. It uses binary search to compare the middle element with the right element of the array to determine which side of the array is sorted. Depending on whether the left or right side is sorted, the left or right pointer is updated accordingly.
+
+The function returns the element at the index pointed to by the left pointer, which is the minimum element in the rotated sorted array.

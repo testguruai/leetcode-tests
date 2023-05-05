@@ -1,0 +1,54 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+220_Contains_Duplicate_III/test_220_Contains_Duplicate_III.py F          [100%]
+
+=================================== FAILURES ===================================
+______________________ test_containsNearbyAlmostDuplicate ______________________
+
+    def test_containsNearbyAlmostDuplicate():
+        s = Solution()
+    
+        # Test case 1
+        nums = [1,2,3,1]
+        k = 3
+        t = 0
+        assert s.containsNearbyAlmostDuplicate(nums, k, t) == True
+    
+        # Test case 2
+        nums = [1,0,1,1]
+        k = 1
+        t = 2
+>       assert s.containsNearbyAlmostDuplicate(nums, k, t) == True
+
+220_Contains_Duplicate_III/test_220_Contains_Duplicate_III.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f29bab6c430>, nums = [1, 0, 1, 1], k = 1
+t = 2
+
+    def containsNearbyAlmostDuplicate(self, nums, k, t):
+        """
+        :type nums: List[int]
+        :type k: int
+        :type t: int
+        :rtype: bool
+        """
+        # https://discuss.leetcode.com/topic/19991/o-n-python-using-buckets-with-explanation-10-lines
+        # Bucket sort. Each bucket has size of t. For each number, the possible
+        # candidate can only be in the same bucket or the two buckets besides.
+        # Keep as many as k buckets to ensure that the difference is at most k.
+        buckets = {}
+        for i, v in enumerate(nums):
+            # t == 0 is a special case where we only have to check the bucket
+            # that v is in.
+            bucketNum, offset = (v / t, 1) if t else (v, 0)
+>           for idx in range(bucketNum - offset, bucketNum + offset + 1):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+220_Contains_Duplicate_III/solution.py:19: TypeError
+=========================== short test summary info ============================
+FAILED 220_Contains_Duplicate_III/test_220_Contains_Duplicate_III.py::test_containsNearbyAlmostDuplicate
+============================== 1 failed in 0.02s ===============================

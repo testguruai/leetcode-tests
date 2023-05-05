@@ -1,0 +1,7 @@
+This is a solution to the problem of adding one to a singly-linked list of digits, where each node of the list represents a digit (in reverse order) and the task is to return a linked list representing the sum of the original list and one.
+
+The function `plusOne` takes as input a singly-linked list, `head`, represented by a ListNode object. It initializes a new ListNode object called `dummy` with a value of 0 and sets its next attribute to the input list `head`. It also initializes two pointers called `place_stop` and `tail` to reference the dummy node.
+
+The function iterates through the linked list to find the rightmost non-9 digit, if any. If there is no such digit, this means all digits are 9, so the function sets all nodes (except the dummy node) to 0 and adds 1 to the dummy node. If there is a non-9 digit, the function adds 1 to it and sets all nodes behind it to 0.
+
+Finally, the function checks whether the value of the dummy node is 0. If it is, it returns the next node (which represents the sum of the original list and one). If not, it returns the dummy node itself (which represents the sum plus an additional carry digit).

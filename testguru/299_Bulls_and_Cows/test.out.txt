@@ -1,0 +1,46 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+299_Bulls_and_Cows/test_299_Bulls_and_Cows.py EEEE                       [100%]
+
+==================================== ERRORS ====================================
+________________________ ERROR at setup of test_getHint ________________________
+
+    @pytest.fixture()
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+299_Bulls_and_Cows/test_299_Bulls_and_Cows.py:5: NameError
+_________________ ERROR at setup of test_getHint_empty_string __________________
+
+    @pytest.fixture()
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+299_Bulls_and_Cows/test_299_Bulls_and_Cows.py:5: NameError
+_______________ ERROR at setup of test_getHint_different_length ________________
+
+    @pytest.fixture()
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+299_Bulls_and_Cows/test_299_Bulls_and_Cows.py:5: NameError
+__________________ ERROR at setup of test_getHint_same_string __________________
+
+    @pytest.fixture()
+    def solution():
+>       return Solution()
+E       NameError: name 'Solution' is not defined
+
+299_Bulls_and_Cows/test_299_Bulls_and_Cows.py:5: NameError
+=========================== short test summary info ============================
+ERROR 299_Bulls_and_Cows/test_299_Bulls_and_Cows.py::test_getHint - NameError...
+ERROR 299_Bulls_and_Cows/test_299_Bulls_and_Cows.py::test_getHint_empty_string
+ERROR 299_Bulls_and_Cows/test_299_Bulls_and_Cows.py::test_getHint_different_length
+ERROR 299_Bulls_and_Cows/test_299_Bulls_and_Cows.py::test_getHint_same_string
+============================== 4 errors in 0.02s ===============================

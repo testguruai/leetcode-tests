@@ -1,0 +1,11 @@
+This is a Python code for solving the N-Queens problem. The N-Queens problem is a classic problem of placing N chess queens on an NxN chessboard in such a way that no two queens threaten each other. In this implementation, the solution is computed recursively.
+
+The code defines a class Solution, where the method solveNQueens takes an integer n as input, representing the size of the chessboard, and returns a list of possible solutions, where each solution is represented by a list of strings (the placement of the queens on the board). 
+
+The method do_solveNQueens is a helper method that is called recursively to compute the solutions. It takes three arguments: the list of results, the current state of the chessboard, and the number of queens left to be placed. 
+
+The method first checks whether all queens have been placed on the board (by checking whether num==0). If so, it appends the current state of the board to the list of results and returns. 
+
+If not, the method iterates through the rows of the board (from the current position to the last row), and for each row, it checks which columns are safe to place a queen in. It does this by iterating through the columns of the board and checking whether each column and its diagonals are safe to place a queen in. If a column is found to be safe, the method places a queen in that column and calls itself recursively to place the remaining queens.
+
+When all possible solutions have been computed, the method returns the list of results. The code includes a brief testing block that prints the solutions for a 4x4 chessboard.

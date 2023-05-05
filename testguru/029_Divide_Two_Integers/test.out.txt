@@ -1,0 +1,65 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+029_Divide_Two_Integers/test_029_Divide_Two_Integers.py F.FFF..          [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_divide_by_zero ______________________________
+
+    def test_divide_by_zero():
+        # Test case for divisor equals to zero
+        s = Solution()
+>       assert s.divide(10, 0) == 2147483647
+
+029_Divide_Two_Integers/test_029_Divide_Two_Integers.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f4ba4108a60>, dividend = 10, divisor = 0
+
+    def divide(self, dividend, divisor):
+        if divisor == 0:
+>           return MAX_INT
+E           NameError: name 'MAX_INT' is not defined
+
+029_Divide_Two_Integers/solution.py:14: NameError
+______________________ test_positive_dividend_and_divisor ______________________
+
+    def test_positive_dividend_and_divisor():
+        # Test case for positive dividend and divisor
+        s = Solution()
+>       assert s.divide(18, 3) == 6
+E       assert 5 == 6
+E        +  where 5 = <bound method Solution.divide of <solution.Solution object at 0x7f4ba4109b40>>(18, 3)
+E        +    where <bound method Solution.divide of <solution.Solution object at 0x7f4ba4109b40>> = <solution.Solution object at 0x7f4ba4109b40>.divide
+
+029_Divide_Two_Integers/test_029_Divide_Two_Integers.py:17: AssertionError
+______________________ test_negative_dividend_and_divisor ______________________
+
+    def test_negative_dividend_and_divisor():
+        # Test case for negative dividend and divisor
+        s = Solution()
+>       assert s.divide(-18, -3) == 6
+E       assert 5 == 6
+E        +  where 5 = <bound method Solution.divide of <solution.Solution object at 0x7f4ba41093f0>>(-18, -3)
+E        +    where <bound method Solution.divide of <solution.Solution object at 0x7f4ba41093f0>> = <solution.Solution object at 0x7f4ba41093f0>.divide
+
+029_Divide_Two_Integers/test_029_Divide_Two_Integers.py:22: AssertionError
+_________________ test_negative_dividend_and_positive_divisor __________________
+
+    def test_negative_dividend_and_positive_divisor():
+        # Test case for negative dividend and positive divisor
+        s = Solution()
+>       assert s.divide(-18, 3) == -6
+E       assert -5 == -6
+E        +  where -5 = <bound method Solution.divide of <solution.Solution object at 0x7f4ba41097b0>>(-18, 3)
+E        +    where <bound method Solution.divide of <solution.Solution object at 0x7f4ba41097b0>> = <solution.Solution object at 0x7f4ba41097b0>.divide
+
+029_Divide_Two_Integers/test_029_Divide_Two_Integers.py:27: AssertionError
+=========================== short test summary info ============================
+FAILED 029_Divide_Two_Integers/test_029_Divide_Two_Integers.py::test_divide_by_zero
+FAILED 029_Divide_Two_Integers/test_029_Divide_Two_Integers.py::test_positive_dividend_and_divisor
+FAILED 029_Divide_Two_Integers/test_029_Divide_Two_Integers.py::test_negative_dividend_and_divisor
+FAILED 029_Divide_Two_Integers/test_029_Divide_Two_Integers.py::test_negative_dividend_and_positive_divisor
+========================= 4 failed, 3 passed in 0.02s ==========================

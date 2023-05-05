@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+053_Maximum_Subarray/test_053_Maximum_Subarray.py F                      [100%]
+
+=================================== FAILURES ===================================
+________________________ TestSolution.test_maxSubArray _________________________
+
+self = <test_053_Maximum_Subarray.TestSolution object at 0x7fd4c3ff82e0>
+
+    def test_maxSubArray(self):
+>     sol = Solution()
+E     NameError: name 'Solution' is not defined
+
+053_Maximum_Subarray/test_053_Maximum_Subarray.py:5: NameError
+=========================== short test summary info ============================
+FAILED 053_Maximum_Subarray/test_053_Maximum_Subarray.py::TestSolution::test_maxSubArray
+============================== 1 failed in 0.01s ===============================

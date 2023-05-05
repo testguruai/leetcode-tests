@@ -1,0 +1,31 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+1599_Maximum_Profit_of_Operating_a_Centennial_Wheel/test_1599_Maximum_Profit_of_Operating_a_Centennial_Wheel.py . [ 20%]
+...F                                                                     [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_minOperationsMaxProfit5 _________________________
+
+    def test_minOperationsMaxProfit5():
+        s = Solution()
+>       assert s.minOperationsMaxProfit([], 3, 8) == -1
+
+1599_Maximum_Profit_of_Operating_a_Centennial_Wheel/test_1599_Maximum_Profit_of_Operating_a_Centennial_Wheel.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f8ac3ba8a60>, customers = []
+boardingCost = 3, runningCost = 8
+
+    def minOperationsMaxProfit(self, customers, boardingCost, runningCost):
+        profit =0
+        preprofit=0
+>       cuscount = customers[0]
+E       IndexError: list index out of range
+
+1599_Maximum_Profit_of_Operating_a_Centennial_Wheel/solution.py:5: IndexError
+=========================== short test summary info ============================
+FAILED 1599_Maximum_Profit_of_Operating_a_Centennial_Wheel/test_1599_Maximum_Profit_of_Operating_a_Centennial_Wheel.py::test_minOperationsMaxProfit5
+========================= 1 failed, 4 passed in 0.02s ==========================

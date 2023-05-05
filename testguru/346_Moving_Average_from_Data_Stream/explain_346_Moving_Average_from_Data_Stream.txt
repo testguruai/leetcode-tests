@@ -1,0 +1,7 @@
+This code defines a class called `MovingAverage`. The purpose of this class is to calculate the moving average of a stream of integers.
+
+The `__init__` method of the class takes in an integer `size` as an argument and initializes two instance variables: `self.size`, which is set to `size`, and `self.curr_range`, which is an empty list.
+
+The `next` method of the class takes in an integer `val` as an argument and returns the moving average of the `val` and the previous `size` - 1 integers. If `self.curr_range` already has `size` elements, the first element of `self.curr_range` is removed with `pop(0)`. Then, the `val` is added to `self.curr_range` with `append(val)`. Finally, the moving average is calculated by taking the sum of `self.curr_range` and dividing it by the length of `self.curr_range`.
+
+The commented out code at the end is an alternative implementation of the same class using a lambda function and a deque. This implementation uses a `collections.deque` object to keep track of the last `size` integers seen. The lambda function appends each new integer to the deque, calculates the sum of the deque, and divides by the length of the deque to compute the moving average.

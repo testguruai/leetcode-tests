@@ -1,0 +1,13 @@
+This is a solution implementation in Python to find the length of the longest continuous increasing subsequence (LCIS) in a given list of integers.
+
+The function `findLengthOfLCIS` takes two arguments: `self` and `nums`. `self` is a reference to the instance of the class method is called on, and `nums` is the list of integers to find the LCIS in.
+
+The function checks if `nums` is empty or null and immediately returns 0 if either of those conditions is true.
+
+The variables `ans` and `curr` are initialized to 1. `ans` keeps track of the longest LCIS found so far, while `curr` keeps track of the length of the current increasing sequence that is being processed in the list.
+
+A loop is then run over the list from the first element to the second-to-last element. For each element `i`, the function checks if `nums[i]` is less than `nums[i+1]`. If this condition is true, it means that the current sequence is increasing, so `curr` is incremented by 1. Also, `ans` is updated to the maximum of the current value of `ans` and `curr`.
+
+If the condition is not true, it means that the current sequence has ended, so `curr` is reset to 1.
+
+After processing all elements in the list, `ans` is returned as the length of the longest continuous increasing subsequence.

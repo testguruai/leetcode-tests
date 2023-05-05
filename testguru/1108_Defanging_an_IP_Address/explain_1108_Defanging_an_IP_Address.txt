@@ -1,0 +1,5 @@
+This is a Python class named "Solution" that defines a method named "defangIPaddr". This method takes a string "address" as input and returns a string with all dots (".") in the input string replaced by "[.]" (for example, "192.168.0.1" becomes "192[.]168[.]0[.]1"). 
+
+There are multiple implementation options for this method, but only the first one is currently uncommented. It uses the "replace" method of the string object to replace each occurrence of "." in the input address string with "[.]". 
+
+The other three alternative implementations are commented out. The second approach splits the input string by dots using the split method, then join the resulting list of substrings using the "[.]" separator using the join method. The third approach uses the "re" library to substitute all matches of the dot character with "[.]". Finally, the last approach uses a list comprehension to iterate over the input string's characters. It replaces each "." character with the "[.]" substring and keeps all other characters the same and joins them back together into a string using the "join" method.

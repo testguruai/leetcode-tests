@@ -1,0 +1,38 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+096_Unique_Binary_Search_Trees/test_096_Unique_Binary_Search_Trees.py F  [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_numTrees _________________________________
+
+    def test_numTrees():
+        sol = Solution()
+        n = 3
+        assert sol.numTrees(n) == 5
+    
+        n = 0
+>       assert sol.numTrees(n) == 1
+
+096_Unique_Binary_Search_Trees/test_096_Unique_Binary_Search_Trees.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f6be02a83d0>, n = 0
+
+    def numTrees(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        # https://leetcode.com/discuss/86650/fantastic-clean-java-dp-solution-with-detail-explaination
+        dp = [0] * (n + 1)
+        dp[0] = 1
+>       dp[1] = 1
+E       IndexError: list assignment index out of range
+
+096_Unique_Binary_Search_Trees/solution.py:10: IndexError
+=========================== short test summary info ============================
+FAILED 096_Unique_Binary_Search_Trees/test_096_Unique_Binary_Search_Trees.py::test_numTrees
+============================== 1 failed in 0.01s ===============================

@@ -1,0 +1,147 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py . [ 14%]
+..FFFF                                                                   [100%]
+
+=================================== FAILURES ===================================
+__________________ test_longest_palindrome_odd_length_string ___________________
+
+    def test_longest_palindrome_odd_length_string():
+        s = Solution()
+>       assert s.longestPalindrome("babad") == "bab"
+
+005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f66028ccaf0>, s = 'babad'
+
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        # my solution
+        # expand string according to Manacher algorithm
+        # but extend radius step by step
+        ls = len(s)
+        if ls <= 1 or len(set(s)) == 1:
+            return s
+        # create a new list like this: "abc"->"a#b#c"
+        temp_s = '#'.join('{}'.format(s))
+        # print temp_s
+        tls = len(temp_s)
+        seed = list(range(1, tls - 1))
+        # this table stores the max length palindrome
+        len_table = [0] * tls
+>       for step in range(1, tls / 2 + 1):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+005_Longest_Palindromic_Substring/solution.py:20: TypeError
+__________________ test_longest_palindrome_even_length_string __________________
+
+    def test_longest_palindrome_even_length_string():
+        s = Solution()
+>       assert s.longestPalindrome("cbbd") == "bb"
+
+005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f6602713a90>, s = 'cbbd'
+
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        # my solution
+        # expand string according to Manacher algorithm
+        # but extend radius step by step
+        ls = len(s)
+        if ls <= 1 or len(set(s)) == 1:
+            return s
+        # create a new list like this: "abc"->"a#b#c"
+        temp_s = '#'.join('{}'.format(s))
+        # print temp_s
+        tls = len(temp_s)
+        seed = list(range(1, tls - 1))
+        # this table stores the max length palindrome
+        len_table = [0] * tls
+>       for step in range(1, tls / 2 + 1):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+005_Longest_Palindromic_Substring/solution.py:20: TypeError
+_________________ test_longest_palindrome_multiple_palindromes _________________
+
+    def test_longest_palindrome_multiple_palindromes():
+        s = Solution()
+>       assert s.longestPalindrome("abcbe") == "bcb"
+
+005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f66028ccfa0>, s = 'abcbe'
+
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        # my solution
+        # expand string according to Manacher algorithm
+        # but extend radius step by step
+        ls = len(s)
+        if ls <= 1 or len(set(s)) == 1:
+            return s
+        # create a new list like this: "abc"->"a#b#c"
+        temp_s = '#'.join('{}'.format(s))
+        # print temp_s
+        tls = len(temp_s)
+        seed = list(range(1, tls - 1))
+        # this table stores the max length palindrome
+        len_table = [0] * tls
+>       for step in range(1, tls / 2 + 1):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+005_Longest_Palindromic_Substring/solution.py:20: TypeError
+________________ test_longest_palindrome_full_string_palindrome ________________
+
+    def test_longest_palindrome_full_string_palindrome():
+        s = Solution()
+>       assert s.longestPalindrome("racecar") == "racecar"
+
+005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f6602710e20>, s = 'racecar'
+
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        # my solution
+        # expand string according to Manacher algorithm
+        # but extend radius step by step
+        ls = len(s)
+        if ls <= 1 or len(set(s)) == 1:
+            return s
+        # create a new list like this: "abc"->"a#b#c"
+        temp_s = '#'.join('{}'.format(s))
+        # print temp_s
+        tls = len(temp_s)
+        seed = list(range(1, tls - 1))
+        # this table stores the max length palindrome
+        len_table = [0] * tls
+>       for step in range(1, tls / 2 + 1):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+005_Longest_Palindromic_Substring/solution.py:20: TypeError
+=========================== short test summary info ============================
+FAILED 005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py::test_longest_palindrome_odd_length_string
+FAILED 005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py::test_longest_palindrome_even_length_string
+FAILED 005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py::test_longest_palindrome_multiple_palindromes
+FAILED 005_Longest_Palindromic_Substring/test_005_Longest_Palindromic_Substring.py::test_longest_palindrome_full_string_palindrome
+========================= 4 failed, 3 passed in 0.02s ==========================

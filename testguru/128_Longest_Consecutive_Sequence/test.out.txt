@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+128_Longest_Consecutive_Sequence/test_128_Longest_Consecutive_Sequence.py F [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_longest_consecutive ___________________________
+
+    def test_longest_consecutive():
+        solution = Solution()
+    
+        # test case 1 - regular input
+>       assert solution.longestConsecutive([100, 4, 200, 1, 3, 2]) == 4
+E       assert None == 4
+E        +  where None = <bound method Solution.longestConsecutive of <solution.Solution object at 0x7f0535830400>>([100, 4, 200, 1, 3, 2])
+E        +    where <bound method Solution.longestConsecutive of <solution.Solution object at 0x7f0535830400>> = <solution.Solution object at 0x7f0535830400>.longestConsecutive
+
+128_Longest_Consecutive_Sequence/test_128_Longest_Consecutive_Sequence.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED 128_Longest_Consecutive_Sequence/test_128_Longest_Consecutive_Sequence.py::test_longest_consecutive
+============================== 1 failed in 0.01s ===============================

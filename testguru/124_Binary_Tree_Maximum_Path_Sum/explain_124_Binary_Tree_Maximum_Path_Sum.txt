@@ -1,0 +1,7 @@
+This is a python code for finding the maximum path sum in a binary tree. The binary tree is represented using the TreeNode class, which has a value (val), a left child (left), and a right child (right).
+
+The Solution class has an __init__() function that initializes a variable called result to be the lowest possible integer value (-2147483647) which will be used to store the maximum path sum as the code progresses.
+
+The maxPathSum() function takes in a root node of a binary tree and returns the maximum path sum. It calls the getNodeMaxValue() function to compute the maximum node value at each node of the binary tree and updates the result variable.
+
+The getNodeMaxValue() function computes the maximum node value for each node in the binary tree recursively. If the given node is None, it returns 0. Otherwise, it computes the maximum node value for the left and right nodes of the given node using recursion and stores the value in lresult and rresult variables. Then, it updates the result variable by computing the maximum path sum for the given node (lresult + rresult + node.val). It also computes the maximum node value of the current node (ret) as node.val plus the maximum value between lresult and rresult. Finally, if max(lresult, rresult) is less than zero, it returns 0, otherwise it returns the computed maximum node value (ret).

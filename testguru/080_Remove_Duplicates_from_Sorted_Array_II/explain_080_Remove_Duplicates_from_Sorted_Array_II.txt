@@ -1,0 +1,11 @@
+This is a Python class named Solution that contains a method called removeDuplicates. This method takes a list of integers as an argument and returns an integer as a result.
+
+The method first checks whether the list is None or not. If it is None, the method returns 0.
+
+The method initializes three variables. The 'length' variable is set to the length of the input list, 'result' is set to 0, and 'i' and 'j' are both set to 0.
+
+The method then enters a while loop that runs as long as 'i' is less than 'length'. Inside the loop, 'j' is set to 'i', and another while loop starts that runs as long as 'j' is less than 'length'. This second loop checks if the current element at nums[j] is equal to the element at nums[i]. If they are not equal, the loop breaks. If they are equal, j is incremented by 1.
+
+After this second loop has finished, we check whether j-i (the length of the current run of the same elements) is greater than 2. If it is, we remove all the extra duplicates except for the first two, reduce the length of the list, and increment the result by 2. If j-i is less than or equal to 2, we simply add the length of run to the result.
+
+Finally, we set 'i' to 'j' and continue the first while loop until it is completed. The final result is returned.

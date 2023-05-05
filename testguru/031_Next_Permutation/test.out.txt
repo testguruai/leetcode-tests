@@ -1,0 +1,80 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 7 items
+
+031_Next_Permutation/test_031_Next_Permutation.py FFFFFFF                [100%]
+
+=================================== FAILURES ===================================
+__________________ TestSolution.test_nextPermutation_example1 __________________
+
+self = <test_031_Next_Permutation.TestSolution object at 0x7f976d0943a0>
+
+    def test_nextPermutation_example1(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+031_Next_Permutation/test_031_Next_Permutation.py:5: NameError
+__________________ TestSolution.test_nextPermutation_example2 __________________
+
+self = <test_031_Next_Permutation.TestSolution object at 0x7f976d094490>
+
+    def test_nextPermutation_example2(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+031_Next_Permutation/test_031_Next_Permutation.py:11: NameError
+__________________ TestSolution.test_nextPermutation_example3 __________________
+
+self = <test_031_Next_Permutation.TestSolution object at 0x7f976d0945b0>
+
+    def test_nextPermutation_example3(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+031_Next_Permutation/test_031_Next_Permutation.py:17: NameError
+_______________ TestSolution.test_nextPermutation_singleElement ________________
+
+self = <test_031_Next_Permutation.TestSolution object at 0x7f976d0946d0>
+
+    def test_nextPermutation_singleElement(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+031_Next_Permutation/test_031_Next_Permutation.py:23: NameError
+_________________ TestSolution.test_nextPermutation_emptyList __________________
+
+self = <test_031_Next_Permutation.TestSolution object at 0x7f976d0947f0>
+
+    def test_nextPermutation_emptyList(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+031_Next_Permutation/test_031_Next_Permutation.py:29: NameError
+_______________________ TestSolution.test_swap_sameIndex _______________________
+
+self = <test_031_Next_Permutation.TestSolution object at 0x7f976d094910>
+
+    def test_swap_sameIndex(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+031_Next_Permutation/test_031_Next_Permutation.py:35: NameError
+____________________ TestSolution.test_swap_differentIndex _____________________
+
+self = <test_031_Next_Permutation.TestSolution object at 0x7f976d094a30>
+
+    def test_swap_differentIndex(self):
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+031_Next_Permutation/test_031_Next_Permutation.py:41: NameError
+=========================== short test summary info ============================
+FAILED 031_Next_Permutation/test_031_Next_Permutation.py::TestSolution::test_nextPermutation_example1
+FAILED 031_Next_Permutation/test_031_Next_Permutation.py::TestSolution::test_nextPermutation_example2
+FAILED 031_Next_Permutation/test_031_Next_Permutation.py::TestSolution::test_nextPermutation_example3
+FAILED 031_Next_Permutation/test_031_Next_Permutation.py::TestSolution::test_nextPermutation_singleElement
+FAILED 031_Next_Permutation/test_031_Next_Permutation.py::TestSolution::test_nextPermutation_emptyList
+FAILED 031_Next_Permutation/test_031_Next_Permutation.py::TestSolution::test_swap_sameIndex
+FAILED 031_Next_Permutation/test_031_Next_Permutation.py::TestSolution::test_swap_differentIndex
+============================== 7 failed in 0.02s ===============================

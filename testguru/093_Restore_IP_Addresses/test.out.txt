@@ -1,0 +1,42 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+093_Restore_IP_Addresses/test_093_Restore_IP_Addresses.py FFFF           [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_restoreIpAddresses ____________________________
+
+    def test_restoreIpAddresses():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+093_Restore_IP_Addresses/test_093_Restore_IP_Addresses.py:4: NameError
+_________________________________ test_isValid _________________________________
+
+    def test_isValid():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+093_Restore_IP_Addresses/test_093_Restore_IP_Addresses.py:12: NameError
+_______________________________ test_getremainIP _______________________________
+
+    def test_getremainIP():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+093_Restore_IP_Addresses/test_093_Restore_IP_Addresses.py:20: NameError
+_______________________________ test_edge_cases ________________________________
+
+    def test_edge_cases():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+093_Restore_IP_Addresses/test_093_Restore_IP_Addresses.py:27: NameError
+=========================== short test summary info ============================
+FAILED 093_Restore_IP_Addresses/test_093_Restore_IP_Addresses.py::test_restoreIpAddresses
+FAILED 093_Restore_IP_Addresses/test_093_Restore_IP_Addresses.py::test_isValid
+FAILED 093_Restore_IP_Addresses/test_093_Restore_IP_Addresses.py::test_getremainIP
+FAILED 093_Restore_IP_Addresses/test_093_Restore_IP_Addresses.py::test_edge_cases
+============================== 4 failed in 0.02s ===============================

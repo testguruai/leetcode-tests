@@ -1,0 +1,55 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+375_Guess_Number_Higher_or_Lower_II/test_375_Guess_Number_Higher_or_Lower_II.py F [ 50%]
+F                                                                        [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_top_down_dp _______________________________
+
+    def test_top_down_dp():
+        s = Solution()
+>       assert s.getMoneyAmount(5) == 6
+
+375_Guess_Number_Higher_or_Lower_II/test_375_Guess_Number_Higher_or_Lower_II.py:6: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fa488690550>, n = 5
+
+    def getMoneyAmount(self, n):
+        # bottom up dp
+        # https://discuss.leetcode.com/topic/51353/simple-dp-solution-with-explanation/2
+        dp = [[0] * (n + 1) for _ in range(n + 1)]
+        for j in range(2, n + 1):
+            for i in range(j - 1, 0, -1):
+>               globalMin = sys.maxsize
+E               NameError: name 'sys' is not defined
+
+375_Guess_Number_Higher_or_Lower_II/solution.py:29: NameError
+______________________________ test_bottom_up_dp _______________________________
+
+    def test_bottom_up_dp():
+        s = Solution()
+>       assert s.getMoneyAmount(5) == 6
+
+375_Guess_Number_Higher_or_Lower_II/test_375_Guess_Number_Higher_or_Lower_II.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7fa488693d00>, n = 5
+
+    def getMoneyAmount(self, n):
+        # bottom up dp
+        # https://discuss.leetcode.com/topic/51353/simple-dp-solution-with-explanation/2
+        dp = [[0] * (n + 1) for _ in range(n + 1)]
+        for j in range(2, n + 1):
+            for i in range(j - 1, 0, -1):
+>               globalMin = sys.maxsize
+E               NameError: name 'sys' is not defined
+
+375_Guess_Number_Higher_or_Lower_II/solution.py:29: NameError
+=========================== short test summary info ============================
+FAILED 375_Guess_Number_Higher_or_Lower_II/test_375_Guess_Number_Higher_or_Lower_II.py::test_top_down_dp
+FAILED 375_Guess_Number_Higher_or_Lower_II/test_375_Guess_Number_Higher_or_Lower_II.py::test_bottom_up_dp
+============================== 2 failed in 0.01s ===============================

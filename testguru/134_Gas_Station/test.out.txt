@@ -1,0 +1,74 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+134_Gas_Station/test_134_Gas_Station.py F.FFF                            [100%]
+
+=================================== FAILURES ===================================
+________________________ test_canCompleteCircuit_empty _________________________
+
+solution = <solution.Solution object at 0x7f409e248cd0>
+
+    def test_canCompleteCircuit_empty(solution):
+>       assert solution.canCompleteCircuit([], []) == -1
+
+134_Gas_Station/test_134_Gas_Station.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f409e248cd0>, gas = [], cost = []
+
+    def canCompleteCircuit(self, gas, cost):
+        """
+        :type gas: List[int]
+        :type cost: List[int]
+        :rtype: int
+        """
+        # https://discuss.leetcode.com/topic/5088/my-ac-is-o-1-space-o-n-running-time-solution-does-anybody-have-posted-this-solution
+        ls = len(gas)
+        begin, end = 0, ls - 1
+>       curr = gas[end] - cost[end]
+E       IndexError: list index out of range
+
+134_Gas_Station/solution.py:11: IndexError
+_____________________ test_canCompleteCircuit_no_solution ______________________
+
+solution = <solution.Solution object at 0x7f409e248cd0>
+
+    def test_canCompleteCircuit_no_solution(solution):
+>       assert solution.canCompleteCircuit([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]) == -1
+E       assert 3 == -1
+E        +  where 3 = <bound method Solution.canCompleteCircuit of <solution.Solution object at 0x7f409e248cd0>>([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])
+E        +    where <bound method Solution.canCompleteCircuit of <solution.Solution object at 0x7f409e248cd0>> = <solution.Solution object at 0x7f409e248cd0>.canCompleteCircuit
+
+134_Gas_Station/test_134_Gas_Station.py:16: AssertionError
+_______________________ test_canCompleteCircuit_solution _______________________
+
+solution = <solution.Solution object at 0x7f409e248cd0>
+
+    def test_canCompleteCircuit_solution(solution):
+>       assert solution.canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 1, 3]) == 4
+E       assert 3 == 4
+E        +  where 3 = <bound method Solution.canCompleteCircuit of <solution.Solution object at 0x7f409e248cd0>>([5, 1, 2, 3, 4], [4, 4, 1, 1, 3])
+E        +    where <bound method Solution.canCompleteCircuit of <solution.Solution object at 0x7f409e248cd0>> = <solution.Solution object at 0x7f409e248cd0>.canCompleteCircuit
+
+134_Gas_Station/test_134_Gas_Station.py:19: AssertionError
+_____________________ test_canCompleteCircuit_large_input ______________________
+
+solution = <solution.Solution object at 0x7f409e248cd0>
+
+    def test_canCompleteCircuit_large_input(solution):
+        gas = [100] * 1000
+        cost = [99] * 999 + [1]
+>       assert solution.canCompleteCircuit(gas, cost) == 0
+E       assert 999 == 0
+E        +  where 999 = <bound method Solution.canCompleteCircuit of <solution.Solution object at 0x7f409e248cd0>>([100, 100, 100, 100, 100, 100, ...], [99, 99, 99, 99, 99, 99, ...])
+E        +    where <bound method Solution.canCompleteCircuit of <solution.Solution object at 0x7f409e248cd0>> = <solution.Solution object at 0x7f409e248cd0>.canCompleteCircuit
+
+134_Gas_Station/test_134_Gas_Station.py:24: AssertionError
+=========================== short test summary info ============================
+FAILED 134_Gas_Station/test_134_Gas_Station.py::test_canCompleteCircuit_empty
+FAILED 134_Gas_Station/test_134_Gas_Station.py::test_canCompleteCircuit_no_solution
+FAILED 134_Gas_Station/test_134_Gas_Station.py::test_canCompleteCircuit_solution
+FAILED 134_Gas_Station/test_134_Gas_Station.py::test_canCompleteCircuit_large_input
+========================= 4 failed, 1 passed in 0.02s ==========================

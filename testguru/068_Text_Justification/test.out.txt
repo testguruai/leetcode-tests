@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+068_Text_Justification/test_068_Text_Justification.py F                  [100%]
+
+=================================== FAILURES ===================================
+________________________ TestSolution.test_fullJustify _________________________
+
+self = <test_068_Text_Justification.TestSolution object at 0x7ffaec7d8310>
+
+    def test_fullJustify(self):
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+068_Text_Justification/test_068_Text_Justification.py:6: NameError
+=========================== short test summary info ============================
+FAILED 068_Text_Justification/test_068_Text_Justification.py::TestSolution::test_fullJustify
+============================== 1 failed in 0.01s ===============================

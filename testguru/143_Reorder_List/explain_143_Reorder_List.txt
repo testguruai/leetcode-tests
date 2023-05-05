@@ -1,0 +1,7 @@
+This is a solution to the LeetCode problem "Reorder List" which modifies a singly-linked list in place to have the following pattern: L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → …. 
+
+The first implementation (commented out) uses an auxiliary list to store the nodes in order and rebuild the relations in place, while the second implementation uses two pointers to find the middle of the list, reverse the second half and interleave the two halves of the list.
+
+The first implementation initializes an empty list `dmap`, iterates through the list with a `current` pointer and appends each node to `dmap`. It then calculates the length of the list `ls` and iterates through the first half of the list, connecting each node to its counterpart in the second half using list indexing. Finally, it sets the next pointer of the node at the middle of the list to `None`, since it will be the last node in the reordering.
+
+The second implementation initializes two pointers `p1` and `p2` to the head and the second node (if any) of the list. It then iterates through the list with `p1` and `p2`, stopping at the middle node of the list. It separates the second half of the list by setting the `next` pointer of the node at the middle to `None`. It then iterates through the second half of the list, reversing its order by changing the `next` pointer of each node to the previous node. It then initializes `p1` and `p2` to the head and the head of the reversed second half, respectively, and iterates through the list, interweaving the nodes by changing the `next` pointers of `p1` and `p2`.

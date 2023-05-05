@@ -1,0 +1,3 @@
+The code defines a class named "Solution" with a method named "reverseString". The reverseString method takes a string "s" as its argument and returns the reverse of the string using Python's slice notation [::-1]. 
+
+The slice notation [::-1] is used to create a reversed copy of a given string. The first two arguments are missing, which means they take on their default values of None. The last argument is -1, which means that the slice starts from the end of the string and proceeds backwards by one character till it reaches the beginning of the string. So, the code takes a string, reverses the character order and returns the reversed string.

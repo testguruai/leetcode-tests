@@ -1,0 +1,47 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 3 items
+
+257_Binary_Tree_Paths/test_257_Binary_Tree_Paths.py FFF                  [100%]
+
+=================================== FAILURES ===================================
+_____________________ TestBinaryTreePaths.test_empty_tree ______________________
+
+self = <test_257_Binary_Tree_Paths.TestBinaryTreePaths object at 0x7fdb34aa0400>
+
+    def test_empty_tree(self):
+        root = None
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+257_Binary_Tree_Paths/test_257_Binary_Tree_Paths.py:14: NameError
+__________________ TestBinaryTreePaths.test_single_node_tree ___________________
+
+self = <test_257_Binary_Tree_Paths.TestBinaryTreePaths object at 0x7fdb34aa04f0>
+
+    def test_single_node_tree(self):
+        root = TreeNode(1)
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+257_Binary_Tree_Paths/test_257_Binary_Tree_Paths.py:19: NameError
+_________________ TestBinaryTreePaths.test_multiple_nodes_tree _________________
+
+self = <test_257_Binary_Tree_Paths.TestBinaryTreePaths object at 0x7fdb34aa0610>
+
+    def test_multiple_nodes_tree(self):
+        root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.left.right = TreeNode(5)
+        root.right = TreeNode(3)
+    
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+257_Binary_Tree_Paths/test_257_Binary_Tree_Paths.py:28: NameError
+=========================== short test summary info ============================
+FAILED 257_Binary_Tree_Paths/test_257_Binary_Tree_Paths.py::TestBinaryTreePaths::test_empty_tree
+FAILED 257_Binary_Tree_Paths/test_257_Binary_Tree_Paths.py::TestBinaryTreePaths::test_single_node_tree
+FAILED 257_Binary_Tree_Paths/test_257_Binary_Tree_Paths.py::TestBinaryTreePaths::test_multiple_nodes_tree
+============================== 3 failed in 0.01s ===============================

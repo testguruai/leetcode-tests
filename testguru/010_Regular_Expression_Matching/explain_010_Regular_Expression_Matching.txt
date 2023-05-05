@@ -1,0 +1,11 @@
+This Python code defines a class Solution that contains a method isMatch. This method takes two parameters: s and p, both of type str, and returns a boolean value. The method uses dynamic programming to solve a regular expression matching problem.
+
+The regular expression matching problem involves determining if a given string, s, matches a given regular expression, p. The regular expression p can contain special characters such as '.' (matches any character) and '*' (matches zero or more occurrences of the preceding character). 
+
+The method uses a bottom-up approach to dynamic programming. It first initializes a two-dimensional array called dp with dimensions (m+1) x (n+1), where m and n are the lengths of strings s and p respectively. The entry dp[i][j] corresponds to whether s[0:i] matches p[0:j] (i.e. the substring of s from index 0 to i-1 and the substring of p from index 0 to j-1).
+
+The first action performed by the method is to set dp[0][0] to True, corresponding to the empty string matching the empty regular expression. Then, the method iterates through each column of the first row, setting dp[0][j+1] to True if p[j] is '*'. This handles cases where the regular expression starts with '*', matching empty strings.
+
+The method then iterates through the rest of the dp array, filling in entries in a manner that depends on the characters in the corresponding indices of s and p. If p[j] is a '.' or matches s[i], then dp[i+1][j+1] is set to dp[i][j]. If p[j] is '*', then there are two choices to make: either the '*' represents zero occurrences of the preceding character (in which case dp[i+1][j+1] is set to dp[i+1][j-1]), or the '*' represents one or more occurrences of the preceding character (in which case dp[i+1][j+1] is set to dp[i+1][j] or dp[i][j+1] or dp[i+1][j-1]).
+
+Finally, the method returns the value of dp[m][n], which corresponds to whether s matches p. The implementation of the dynamic programming approach used in this code comes from a Java solution provided in a thread on the LeetCode discussion forum (as referenced in the code's comments).

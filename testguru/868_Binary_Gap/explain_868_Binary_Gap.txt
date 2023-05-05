@@ -1,0 +1,9 @@
+This code defines a class Solution with a method called binaryGap that takes an integer n as input and returns the maximum distance between two consecutive 1's in the binary representation of n. 
+
+The first implementation of the method uses a list comprehension to find the binary indices (positions of 1's) of n. It then calculates the maximum distance between two consecutive indices. If there are less than two indices, the method returns 0.
+
+The second implementation uses a while loop to iterate over the binary digits of n. It keeps track of the current position and the last position where a 1 was encountered. When it encounters a 1, it checks if there was a previous 1 (by checking if last1 is not -1), and if so, it calculates the distance between the current and last 1 positions and saves it as the new maximum if it is larger than the previous maximum. At the end, it returns the maximum distance.
+
+The third implementation is similar to the second, but uses the built-in bin function to obtain the binary representation of n as a string. It iterates over the string, keeping track of the current position and the last position where a 1 was encountered, and calculates the maximum distance between two consecutive 1's in a similar way to the second implementation.
+
+All three implementations solve the same problem, but use different approaches to do so.

@@ -1,0 +1,11 @@
+The code defines a class Solution which has a method singleNumber that takes in a list of integers as input. The method uses a bit manipulation technique to find the element in the list that appears only once while all other elements appear three times.
+
+The first implementation commented out uses the ctypes library to manipulate bits to find the required element. It creates an array of 32 integers to store the count of bits and uses a ctypes.c_int32 variable to hold the result. By performing bitwise operations with the input integers, the method determines which bits are set and increments the count of those bits. Finally, using the modulo operator, it populates the result variable with the bits that were set an odd number of times.
+
+The second implementation does the same thing using three variables named ones, twos, and threes, which are bitmask variables. It iterates through the list of integers, performing the following operations for each number - 
+- It uses the bitwise OR operator to set the twos variable to hold the bits that have appeared twice before.
+- It uses the bitwise XOR operator to set the ones variable to hold the bits that have appeared once before.
+- It sets the threes variable to hold the bits that have appeared three times before using the AND operator on ones and twos.
+- It clears the bits in the ones and twos variables where the bits in threes are set, using the bitwise AND operator and the bitwise complement operator.
+
+At the end of the iteration, the ones variable holds the value of the element that appears only once and this value is returned by the method.

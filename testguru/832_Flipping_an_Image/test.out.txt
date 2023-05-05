@@ -1,0 +1,185 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 10 items
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py .FFFFFFFFF           [100%]
+
+=================================== FAILURES ===================================
+___ test_flipAndInvertImage_whenGivenSingleEmptyList_returnsSingleEmptyList ____
+
+    def test_flipAndInvertImage_whenGivenSingleEmptyList_returnsSingleEmptyList():
+>       assert solution.flipAndInvertImage([[]]) == [[]]
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f5143643eb0>, A = [[]]
+
+    def flipAndInvertImage(self, A):
+        for row in A:
+>           for i in range((len(row) + 1) / 2):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+832_Flipping_an_Image/solution.py:4: TypeError
+_ test_flipAndInvertImage_whenGivenSingleListWithASingle0_returnsSingleListWithASingle1 _
+
+    def test_flipAndInvertImage_whenGivenSingleListWithASingle0_returnsSingleListWithASingle1():
+>       assert solution.flipAndInvertImage([[0]]) == [[1]]
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f5143643eb0>, A = [[0]]
+
+    def flipAndInvertImage(self, A):
+        for row in A:
+>           for i in range((len(row) + 1) / 2):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+832_Flipping_an_Image/solution.py:4: TypeError
+_ test_flipAndInvertImage_whenGivenSingleListWithASingle1_returnsSingleListWithASingle0 _
+
+    def test_flipAndInvertImage_whenGivenSingleListWithASingle1_returnsSingleListWithASingle0():
+>       assert solution.flipAndInvertImage([[1]]) == [[0]]
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f5143643eb0>, A = [[1]]
+
+    def flipAndInvertImage(self, A):
+        for row in A:
+>           for i in range((len(row) + 1) / 2):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+832_Flipping_an_Image/solution.py:4: TypeError
+_ test_flipAndInvertImage_whenGivenSingleListWithMultiple0s_returnsSingleListWithMultiple1s _
+
+    def test_flipAndInvertImage_whenGivenSingleListWithMultiple0s_returnsSingleListWithMultiple1s():
+>       assert solution.flipAndInvertImage([[0, 0, 0]]) == [[1, 1, 1]]
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f5143643eb0>, A = [[0, 0, 0]]
+
+    def flipAndInvertImage(self, A):
+        for row in A:
+>           for i in range((len(row) + 1) / 2):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+832_Flipping_an_Image/solution.py:4: TypeError
+_ test_flipAndInvertImage_whenGivenSingleListWithMultiple1s_returnsSingleListWithMultiple0s _
+
+    def test_flipAndInvertImage_whenGivenSingleListWithMultiple1s_returnsSingleListWithMultiple0s():
+>       assert solution.flipAndInvertImage([[1, 1, 1]]) == [[0, 0, 0]]
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f5143643eb0>, A = [[1, 1, 1]]
+
+    def flipAndInvertImage(self, A):
+        for row in A:
+>           for i in range((len(row) + 1) / 2):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+832_Flipping_an_Image/solution.py:4: TypeError
+_ test_flipAndInvertImage_whenGivenMultipleSingleLists_returnsMultipleSingleLists_InvertedAndReversed _
+
+    def test_flipAndInvertImage_whenGivenMultipleSingleLists_returnsMultipleSingleLists_InvertedAndReversed():
+>       assert solution.flipAndInvertImage([[0], [1]]) == [[1], [0]]
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f5143643eb0>, A = [[0], [1]]
+
+    def flipAndInvertImage(self, A):
+        for row in A:
+>           for i in range((len(row) + 1) / 2):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+832_Flipping_an_Image/solution.py:4: TypeError
+_ test_flipAndInvertImage_whenGivenMultipleLists_returnsMultipleLists_InvertedAndReversed _
+
+    def test_flipAndInvertImage_whenGivenMultipleLists_returnsMultipleLists_InvertedAndReversed():
+>       assert solution.flipAndInvertImage([[0, 1], [1, 0]]) == [[1, 0], [0, 1]]
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f5143643eb0>, A = [[0, 1], [1, 0]]
+
+    def flipAndInvertImage(self, A):
+        for row in A:
+>           for i in range((len(row) + 1) / 2):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+832_Flipping_an_Image/solution.py:4: TypeError
+_ test_flipAndInvertImage_whenGivenALargeList_returnsLargeList_InvertedAndReversed _
+
+    def test_flipAndInvertImage_whenGivenALargeList_returnsLargeList_InvertedAndReversed():
+>       assert solution.flipAndInvertImage([
+            [1, 1, 0, 0],
+            [1, 0, 0, 1],
+            [0, 1, 1, 1],
+            [1, 0, 1, 0]
+        ]) == [
+            [1, 1, 0, 0],
+            [0, 1, 1, 0],
+            [0, 0, 0, 1],
+            [1, 0, 1, 0]
+        ]
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f5143643eb0>
+A = [[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]]
+
+    def flipAndInvertImage(self, A):
+        for row in A:
+>           for i in range((len(row) + 1) / 2):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+832_Flipping_an_Image/solution.py:4: TypeError
+_ test_flipAndInvertImage_whenGivenALargeList_returnsLargeList_InvertedAndReversed_AlternativeMethod _
+
+    def test_flipAndInvertImage_whenGivenALargeList_returnsLargeList_InvertedAndReversed_AlternativeMethod():
+>       assert solution.flipAndInvertImage([
+            [1, 1, 0, 0],
+            [1, 0, 0, 1],
+            [0, 1, 1, 1],
+            [1, 0, 1, 0]
+        ]) == [
+            [0, 1, 1, 0],
+            [1, 0, 0, 1],
+            [0, 0, 0, 1],
+            [1, 0, 1, 0]
+        ]
+
+832_Flipping_an_Image/test_832_Flipping_an_Image.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f5143643eb0>
+A = [[1, 1, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1], [1, 0, 1, 0]]
+
+    def flipAndInvertImage(self, A):
+        for row in A:
+>           for i in range((len(row) + 1) / 2):
+E           TypeError: 'float' object cannot be interpreted as an integer
+
+832_Flipping_an_Image/solution.py:4: TypeError
+=========================== short test summary info ============================
+FAILED 832_Flipping_an_Image/test_832_Flipping_an_Image.py::test_flipAndInvertImage_whenGivenSingleEmptyList_returnsSingleEmptyList
+FAILED 832_Flipping_an_Image/test_832_Flipping_an_Image.py::test_flipAndInvertImage_whenGivenSingleListWithASingle0_returnsSingleListWithASingle1
+FAILED 832_Flipping_an_Image/test_832_Flipping_an_Image.py::test_flipAndInvertImage_whenGivenSingleListWithASingle1_returnsSingleListWithASingle0
+FAILED 832_Flipping_an_Image/test_832_Flipping_an_Image.py::test_flipAndInvertImage_whenGivenSingleListWithMultiple0s_returnsSingleListWithMultiple1s
+FAILED 832_Flipping_an_Image/test_832_Flipping_an_Image.py::test_flipAndInvertImage_whenGivenSingleListWithMultiple1s_returnsSingleListWithMultiple0s
+FAILED 832_Flipping_an_Image/test_832_Flipping_an_Image.py::test_flipAndInvertImage_whenGivenMultipleSingleLists_returnsMultipleSingleLists_InvertedAndReversed
+FAILED 832_Flipping_an_Image/test_832_Flipping_an_Image.py::test_flipAndInvertImage_whenGivenMultipleLists_returnsMultipleLists_InvertedAndReversed
+FAILED 832_Flipping_an_Image/test_832_Flipping_an_Image.py::test_flipAndInvertImage_whenGivenALargeList_returnsLargeList_InvertedAndReversed
+FAILED 832_Flipping_an_Image/test_832_Flipping_an_Image.py::test_flipAndInvertImage_whenGivenALargeList_returnsLargeList_InvertedAndReversed_AlternativeMethod
+========================= 9 failed, 1 passed in 0.04s ==========================

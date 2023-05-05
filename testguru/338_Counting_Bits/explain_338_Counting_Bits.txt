@@ -1,0 +1,9 @@
+This is a class called "Solution" with a method called "countBits". This method takes an integer "num" as input and returns a list of integers.
+
+The method first initializes a list called "res" with "num+1" zeros. 
+
+The method then loops through every number from 1 to "num+1". For each number "i", it sets the value at the "i"th index of "res" to the number of 1 bits in the binary representation of "i". 
+
+To do this, the method right-shifts the binary representation of "i" by one and takes the value at the corresponding index in "res". It then adds the result of performing a bitwise AND operator between "i" and 1, indicating whether or not the least significant bit of "i" is 1. 
+
+Finally, the method returns the "res" list.

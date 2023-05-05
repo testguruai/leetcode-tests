@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+052_N-Queens II/test_052_N-Queens II.py F                                [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_totalNQueens _______________________________
+
+    def test_totalNQueens():
+        s = Solution()
+>       assert s.totalNQueens(0) == 0
+E       assert 1 == 0
+E        +  where 1 = <bound method Solution.totalNQueens of <solution.Solution object at 0x7f5685c10400>>(0)
+E        +    where <bound method Solution.totalNQueens of <solution.Solution object at 0x7f5685c10400>> = <solution.Solution object at 0x7f5685c10400>.totalNQueens
+
+052_N-Queens II/test_052_N-Queens II.py:6: AssertionError
+=========================== short test summary info ============================
+FAILED 052_N-Queens II/test_052_N-Queens II.py::test_totalNQueens - assert 1 ...
+============================== 1 failed in 0.01s ===============================

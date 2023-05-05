@@ -1,0 +1,15 @@
+This is a python code that uses dynamic programming to solve the problem of finding the n-th Ugly number. An Ugly number is a number that only has prime factors of 2, 3, or 5.
+
+The function has one parameter 'n' which is an integer representing the nth Ugly number to find. 
+
+The first if statement returns n, for values less than or equal to 5 since those are Ugly numbers and don't require any further computation.
+
+The next line initializes a list of length n+1 with zeros, which is used to store the Ugly numbers.
+
+The next few lines initializes the first five Ugly numbers in the list.
+
+The for loop starts from index 6 and iterates until the nth Ugly number. In each iteration, the while loops are used to find the next Ugly number by determining the next smallest multiple of 2, 3, or 5 from the previously computed Ugly numbers.
+
+Once all three multiples are found, the Ugly number is computed by taking the minimum of the three.
+
+Finally, the nth Ugly number is returned.

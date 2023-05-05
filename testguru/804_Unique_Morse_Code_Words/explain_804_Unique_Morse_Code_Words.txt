@@ -1,0 +1,13 @@
+This is a Python code for solving the problem of finding the number of unique representations of words in Morse code. 
+
+The first line of the code creates a list called "Morse_tab" which contains Morse codes for each alphabet.
+
+The next part of the code defines a class called "Solution" which contains a method called "uniqueMorseRepresentations". The method takes a list of strings "words" as input and returns an integer which represents the number of unique representations of words in Morse code.
+
+The method starts by checking if the length of the input list is zero. If it is, it returns 0. Otherwise, it creates an empty set called "ans_set".
+
+Then, for each word in the input list, the method creates an empty string called "morsed". It iterates over each character in the word and appends the corresponding Morse code for that character to the "morsed" string using the index of the character in the alphabet. 
+
+Finally, the method adds the "morsed" string to the "ans_set" set. Since a set only contains unique elements, this ensures that all the unique representations of the words in the input list are stored in the set.
+
+The method returns the length of the "ans_set" set, which represents the number of unique representations of words in Morse code for the input list.

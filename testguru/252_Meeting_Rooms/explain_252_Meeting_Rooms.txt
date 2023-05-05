@@ -1,0 +1,7 @@
+This is a class-based solution to check whether a person can attend all meetings or not, given the start and end times of the meetings as a list of Interval objects. The Interval class is defined with a constructor that initializes start and end time. 
+
+The `canAttendMeetings` function takes a list of Interval objects as input and returns a boolean to indicate whether a person can attend all meetings or not.
+
+The first implementation uses a count variable initialized to 0, then add 1 to the count each time a meeting starts, and subtract 1 when a meeting ends. If at any point, the count is greater than or equal to 2, it means that the person is already in a meeting and cannot attend the current one. The meetings list is transformed into a list of tuples, each containing the start or end time and a boolean value representing whether it is the start or end time of the meeting. The list of tuples is then sorted in the ascending order of the start time, and the counts are updated according to the sorted list.
+
+The second implementation is simpler, and it sorts the list of intervals based on the start times. It then checks the end time of a meeting with the start time of the next meeting. If the end time of the first meeting is greater than or equal to the start time of the second meeting, it means that the person cannot attend both meetings, and the function returns False. Otherwise, it returns True, indicating that the person can attend all meetings.

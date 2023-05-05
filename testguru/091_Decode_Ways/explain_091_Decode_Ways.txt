@@ -1,0 +1,17 @@
+This is a solution in Python for the LeetCode problem #91 - Decode Ways.
+
+The problem asks to decode a string s, which contains digits from 0 to 9, into letters according to the mapping in the following way:
+
+    'A' -> 1
+    'B' -> 2
+    ...
+    'Z' -> 26
+
+The solution implements a dynamic programming approach to solve the problem efficiently. The main idea is to keep track of the number of ways to decode a substring of s using a list dp, where each element represents the number of ways to decode the substring ending at that index.
+
+The algorithm initializes dp with 0's and sets dp[0] to 1 if the first character in s is a valid digit (i.e., not 0). Then, it iterates over each character in s and updates dp[index] based on the following rules:
+
+1. If the current character and the previous character can be decoded together (i.e., they form a valid 2-digit number in the range [10, 26]), the number of ways to decode the current substring is increased by the number of ways to decode the substring ending two positions before (i.e., dp[index-2]). This is because the current character and the previous character can be decoded either separately (i.e., dp[index-1]) or together, creating the two possible paths.
+2. If the current character can be decoded by itself (i.e., it is not 0), the number of ways to decode the current substring is increased by the number of ways to decode the substring ending one position before (i.e., dp[index-1]).
+
+Finally, the function returns the last element of dp, which represents the number of ways to decode the entire string.

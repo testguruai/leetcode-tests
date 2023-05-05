@@ -1,0 +1,46 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+929_Unique_Email_Addresses/test_929_Unique_Email_Addresses.py .FFF.      [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_numUniqueEmails_only_duplicates _____________________
+
+    def test_numUniqueEmails_only_duplicates():
+        s = Solution()
+        emails = ['test.email+123@example.com', 'test.email+123@example.com', 'test.email+456@example.com']
+>       assert s.numUniqueEmails(emails) == 2
+E       AssertionError: assert 1 == 2
+E        +  where 1 = <bound method Solution.numUniqueEmails of <solution.Solution object at 0x7ffbbb6588e0>>(['test.email+123@example.com', 'test.email+123@example.com', 'test.email+456@example.com'])
+E        +    where <bound method Solution.numUniqueEmails of <solution.Solution object at 0x7ffbbb6588e0>> = <solution.Solution object at 0x7ffbbb6588e0>.numUniqueEmails
+
+929_Unique_Email_Addresses/test_929_Unique_Email_Addresses.py:12: AssertionError
+______________________ test_numUniqueEmails_no_duplicates ______________________
+
+    def test_numUniqueEmails_no_duplicates():
+        s = Solution()
+        emails = ['test.email+123@example.com', 'test.email+456@example.com', 'test.email+789@example.com']
+>       assert s.numUniqueEmails(emails) == 3
+E       AssertionError: assert 1 == 3
+E        +  where 1 = <bound method Solution.numUniqueEmails of <solution.Solution object at 0x7ffbbb65bd00>>(['test.email+123@example.com', 'test.email+456@example.com', 'test.email+789@example.com'])
+E        +    where <bound method Solution.numUniqueEmails of <solution.Solution object at 0x7ffbbb65bd00>> = <solution.Solution object at 0x7ffbbb65bd00>.numUniqueEmails
+
+929_Unique_Email_Addresses/test_929_Unique_Email_Addresses.py:17: AssertionError
+_____________________ test_numUniqueEmails_invalid_emails ______________________
+
+    def test_numUniqueEmails_invalid_emails():
+        s = Solution()
+        emails = ['test.email+123@example.com', 'test.email+456@example', 'test.email789@example.com']
+>       assert s.numUniqueEmails(emails) == 2
+E       AssertionError: assert 3 == 2
+E        +  where 3 = <bound method Solution.numUniqueEmails of <solution.Solution object at 0x7ffbbb6599c0>>(['test.email+123@example.com', 'test.email+456@example', 'test.email789@example.com'])
+E        +    where <bound method Solution.numUniqueEmails of <solution.Solution object at 0x7ffbbb6599c0>> = <solution.Solution object at 0x7ffbbb6599c0>.numUniqueEmails
+
+929_Unique_Email_Addresses/test_929_Unique_Email_Addresses.py:22: AssertionError
+=========================== short test summary info ============================
+FAILED 929_Unique_Email_Addresses/test_929_Unique_Email_Addresses.py::test_numUniqueEmails_only_duplicates
+FAILED 929_Unique_Email_Addresses/test_929_Unique_Email_Addresses.py::test_numUniqueEmails_no_duplicates
+FAILED 929_Unique_Email_Addresses/test_929_Unique_Email_Addresses.py::test_numUniqueEmails_invalid_emails
+========================= 3 failed, 2 passed in 0.02s ==========================

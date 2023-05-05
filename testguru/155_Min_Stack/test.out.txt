@@ -1,0 +1,42 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+155_Min_Stack/test_155_Min_Stack.py FFFF                                 [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_push ___________________________________
+
+    def test_push():
+>       stack = MinStack()
+E       NameError: name 'MinStack' is not defined
+
+155_Min_Stack/test_155_Min_Stack.py:4: NameError
+___________________________________ test_pop ___________________________________
+
+    def test_pop():
+>       stack = MinStack()
+E       NameError: name 'MinStack' is not defined
+
+155_Min_Stack/test_155_Min_Stack.py:16: NameError
+___________________________________ test_top ___________________________________
+
+    def test_top():
+>       stack = MinStack()
+E       NameError: name 'MinStack' is not defined
+
+155_Min_Stack/test_155_Min_Stack.py:31: NameError
+_________________________________ test_getMin __________________________________
+
+    def test_getMin():
+>       stack = MinStack()
+E       NameError: name 'MinStack' is not defined
+
+155_Min_Stack/test_155_Min_Stack.py:46: NameError
+=========================== short test summary info ============================
+FAILED 155_Min_Stack/test_155_Min_Stack.py::test_push - NameError: name 'MinS...
+FAILED 155_Min_Stack/test_155_Min_Stack.py::test_pop - NameError: name 'MinSt...
+FAILED 155_Min_Stack/test_155_Min_Stack.py::test_top - NameError: name 'MinSt...
+FAILED 155_Min_Stack/test_155_Min_Stack.py::test_getMin - NameError: name 'Mi...
+============================== 4 failed in 0.02s ===============================

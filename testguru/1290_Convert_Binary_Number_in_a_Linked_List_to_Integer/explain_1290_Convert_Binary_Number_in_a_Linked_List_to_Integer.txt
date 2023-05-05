@@ -1,0 +1,11 @@
+This is a solution to a problem that takes in a singly-linked list as input where each node's value is either 0 or 1. The list represents a binary number, and the task is to return the decimal value of that number.
+
+To do this, the code starts by creating an empty list called `binary_numbers_list`, which will later be used to store the binary digits in reverse order. It then adds the value of the first node to that list.
+
+The code then enters a while loop, where it iterates through the linked list until it reaches the end (i.e., `head.next` is None). At each iteration, the value of the current node is added to the `binary_numbers_list`. 
+
+After creating the list of binary digits, the code initializes two variables: `answer` and `power`. The `answer` variable will store the final decimal value, while the `power` variable will be used to compute the appropriate power of 2 to apply to each binary digit.
+
+The code then enters a loop that iterates through the `binary_numbers_list` in reverse order. At each iteration, it checks if the current digit is greater than 0. If it is, it multiplies the digit by 2 raised to the power of `power` and adds the result to `answer`. The `power` variable is then incremented by 1 to prepare for the next iteration.
+
+Finally, the function returns the computed `answer`.

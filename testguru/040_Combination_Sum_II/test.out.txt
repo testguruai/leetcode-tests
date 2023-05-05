@@ -1,0 +1,62 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+040_Combination_Sum_II/test_040_Combination_Sum_II.py F..FF              [100%]
+
+=================================== FAILURES ===================================
+_____________________ TestSolution.test_combinationSum2_1 ______________________
+
+self = <test_040_Combination_Sum_II.TestSolution object at 0x7f88cfb38490>
+
+    def test_combinationSum2_1(self):
+        s = Solution()
+        candidates = [10, 1, 2, 7, 6, 1, 5]
+        target = 8
+        output = [[1, 1, 6], [1, 2, 5], [1, 7], [2, 6]]
+>       assert s.combinationSum2(candidates, target) == output
+E       assert [[1, 2, 5], [...2, 6], [1, 7]] == [[1, 1, 6], [...1, 7], [2, 6]]
+E         At index 0 diff: [1, 2, 5] != [1, 1, 6]
+E         Use -v to get more diff
+
+040_Combination_Sum_II/test_040_Combination_Sum_II.py:11: AssertionError
+_____________________ TestSolution.test_combinationSum2_4 ______________________
+
+self = <test_040_Combination_Sum_II.TestSolution object at 0x7f88cfb387c0>
+
+    def test_combinationSum2_4(self):
+        s = Solution()
+        candidates = [1, 2, 3, 4, 5]
+        target = 6
+        output = [[1, 2, 3], [1, 5], [2, 4]]
+>       assert s.combinationSum2(candidates, target) == output
+E       assert [[1, 2, 3], [2, 4], [1, 5]] == [[1, 2, 3], [1, 5], [2, 4]]
+E         At index 1 diff: [2, 4] != [1, 5]
+E         Use -v to get more diff
+
+040_Combination_Sum_II/test_040_Combination_Sum_II.py:32: AssertionError
+_____________________ TestSolution.test_combinationSum2_5 ______________________
+
+self = <test_040_Combination_Sum_II.TestSolution object at 0x7f88cfb388e0>
+
+    def test_combinationSum2_5(self):
+        s = Solution()
+        candidates = [1, 2, 3, 4, 5]
+        target = 10
+        output = [[1, 2, 3, 4], [1, 2, 4, 3], [1, 3, 2, 4], [1, 3, 4, 2], [1, 4, 2, 3], [1, 4, 3, 2],
+                  [2, 1, 3, 4], [2, 1, 4, 3], [2, 3, 1, 4], [2, 3, 4, 1], [2, 4, 1, 3], [2, 4, 3, 1],
+                  [3, 1, 2, 4], [3, 1, 4, 2], [3, 2, 1, 4], [3, 2, 4, 1], [3, 4, 1, 2], [3, 4, 2, 1],
+                  [4, 1, 2, 3], [4, 1, 3, 2], [4, 2, 1, 3], [4, 2, 3, 1], [4, 3, 1, 2], [4, 3, 2, 1]]
+>       assert s.combinationSum2(candidates, target) == output
+E       assert [[1, 2, 3, 4]...5], [1, 4, 5]] == [[1, 2, 3, 4]...4, 3, 2], ...]
+E         At index 1 diff: [2, 3, 5] != [1, 2, 4, 3]
+E         Right contains 21 more items, first extra item: [1, 3, 4, 2]
+E         Use -v to get more diff
+
+040_Combination_Sum_II/test_040_Combination_Sum_II.py:42: AssertionError
+=========================== short test summary info ============================
+FAILED 040_Combination_Sum_II/test_040_Combination_Sum_II.py::TestSolution::test_combinationSum2_1
+FAILED 040_Combination_Sum_II/test_040_Combination_Sum_II.py::TestSolution::test_combinationSum2_4
+FAILED 040_Combination_Sum_II/test_040_Combination_Sum_II.py::TestSolution::test_combinationSum2_5
+========================= 3 failed, 2 passed in 0.02s ==========================

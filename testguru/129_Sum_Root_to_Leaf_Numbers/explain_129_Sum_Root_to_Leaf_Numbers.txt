@@ -1,0 +1,15 @@
+This is a solution to a problem in which we need to find the sum of all root-to-leaf paths of a binary tree, where each path is represented as a number.
+
+## Explanation of the Code:
+
+- First, we check if the root of the tree is None. If it is, we return 0.
+- Next, we initialize a variable `res` to 0, which will store the sum of all root-to-leaf paths.
+- We use Breadth-First Search (BFS) to traverse the tree. We start with the root node and add it to a queue, along with its value.
+- We then loop until the queue is not empty.
+- Inside the loop, we pop the first element from the queue, which contains the current node (`curr`) and the current value (`curr_value`).
+- If the current node is a leaf node (i.e., it does not have any children), we add the current value to `res`, since we have reached a complete root-to-leaf path.
+- If the current node has a left child, we append it to the queue with the updated value (i.e., `curr_value * 10 + curr.left.val`), where we multiply the current value by 10 and add the value of the left child to form the new value.
+- Similarly, if the current node has a right child, we append it to the queue with the updated value (`curr_value * 10 + curr.right.val`).
+- Finally, we return the sum of all root-to-leaf paths (`res`).
+
+Note: The `TreeNode` class is a custom class that has three properties: `val`, `left`, and `right`. The `val` property stores the value of the current node, and the `left` and `right` properties store references to the node's left and right children, respectively.

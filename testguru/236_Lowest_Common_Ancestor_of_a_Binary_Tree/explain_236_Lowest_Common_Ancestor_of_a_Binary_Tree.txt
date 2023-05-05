@@ -1,0 +1,7 @@
+This is a Python solution for the problem of finding the lowest common ancestor of two nodes in a binary tree. 
+
+The `lowestCommonAncestor()` method takes in three parameters: the root of the binary tree, and two nodes `p` and `q` for which we need to find the lowest common ancestor. 
+
+The first solution is a recursive approach which is commented out. It initializes a variable `self.ans` to `None` and defines a helper function `lowestCommonAncestorHelper()` that recursively iterates through the tree, checking if the current node is `p` or `q`, or if its left or right subtrees contain one of `p` or `q`. If any of these conditions are met, the current node is marked as the current common ancestor. Then, the recursion continues until `p` and `q` are both found, and the final common ancestor is returned. 
+
+The second solution takes an iterative approach and uses a stack to traverse the binary tree. It initializes a dictionary `parent`, which will map each node to its immediate parent node. It then adds the root to the stack and iterates through the tree until both `p` and `q` have been found. At each iteration, it pops the top node off the stack, adds its left and right children to the stack (if they exist), and adds a mapping to the parent dictionary. Once both `p` and `q` have been found, the method proceeds to find their lowest common ancestor by iterating back up the tree from `q` and checking if each ancestor is in `p`'s set of ancestors. Once the first common ancestor is found, it is returned as the lowest common ancestor.

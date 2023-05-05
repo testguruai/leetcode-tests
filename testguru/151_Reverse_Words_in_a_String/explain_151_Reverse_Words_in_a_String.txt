@@ -1,0 +1,5 @@
+This Python code defines a class named "Solution" that contains a method "reverseWords()". The purpose of this method is to take a string as an input (s) and reverse the order of the words in the string. The code first removes any leading or trailing whitespace from the input string, and then removes any redundant whitespace between words in the string. It stores each character in the string (without whitespace) in an array called "array_s". 
+
+Next, it reverses the order of the elements in "array_s", and then iterates through the array to reverse the order of characters within each individual word. The "reverse()" method is defined within the class to perform this task. It takes the array "array_s", the beginning index of the word to be reversed ("begin"), and the ending index of the word to be reversed ("end") as parameters. 
+
+Finally, the method returns the modified string after joining all the elements in "array_s" without any whitespace, effectively reversing the order of the words in the original input string.

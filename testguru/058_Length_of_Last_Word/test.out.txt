@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 10 items
+
+058_Length_of_Last_Word/test_058_Length_of_Last_Word.py .........F       [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_numbers_in_string ____________________________
+
+solution = <solution.Solution object at 0x7fa0cd989180>
+
+    def test_numbers_in_string(solution):
+>       assert solution.lengthOfLastWord('hello123') == 7
+E       AssertionError: assert 8 == 7
+E        +  where 8 = <bound method Solution.lengthOfLastWord of <solution.Solution object at 0x7fa0cd989180>>('hello123')
+E        +    where <bound method Solution.lengthOfLastWord of <solution.Solution object at 0x7fa0cd989180>> = <solution.Solution object at 0x7fa0cd989180>.lengthOfLastWord
+
+058_Length_of_Last_Word/test_058_Length_of_Last_Word.py:36: AssertionError
+=========================== short test summary info ============================
+FAILED 058_Length_of_Last_Word/test_058_Length_of_Last_Word.py::test_numbers_in_string
+========================= 1 failed, 9 passed in 0.02s ==========================

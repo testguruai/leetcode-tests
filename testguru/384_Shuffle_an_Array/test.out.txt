@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+384_Shuffle_an_Array/test_384_Shuffle_an_Array.py FF                     [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_reset __________________________________
+
+nums = [1, 2, 3, 4]
+
+    def test_reset(nums):
+>       s = Solution(nums)
+E       NameError: name 'Solution' is not defined
+
+384_Shuffle_an_Array/test_384_Shuffle_an_Array.py:9: NameError
+_________________________________ test_shuffle _________________________________
+
+nums = [1, 2, 3, 4]
+
+    def test_shuffle(nums):
+>       s = Solution(nums)
+E       NameError: name 'Solution' is not defined
+
+384_Shuffle_an_Array/test_384_Shuffle_an_Array.py:13: NameError
+=========================== short test summary info ============================
+FAILED 384_Shuffle_an_Array/test_384_Shuffle_an_Array.py::test_reset - NameEr...
+FAILED 384_Shuffle_an_Array/test_384_Shuffle_an_Array.py::test_shuffle - Name...
+============================== 2 failed in 0.01s ===============================

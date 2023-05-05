@@ -1,0 +1,19 @@
+This code defines a class `TwoSum` that implements a data structure for adding numbers and finding if there exists any pair of numbers in the data structure which sum is equal to a given value.
+
+The class has three methods:
+
+1. `__init__`: Initializes the data structure with an empty list `internal` and an empty dictionary `dic`.
+
+2. `add`: Appends a number to the `internal` list and updates the `dic` dictionary. If the number is already in `dic`, it means that it has been added before, so we update its value to `True`. Otherwise, we add it to `dic` with a value of `False`.
+
+3. `find`: Iterates over the `internal` list and for each value `v`, checks whether `value - v` is in `dic`. If it is, then we have found a pair of numbers which sum is equal to `value`. However, we need to check whether both numbers in the pair are not the same (i.e., they were not added as duplicates), so we use the `self.dic[v]` and `v << 1 == value` conditions to skip over duplicate values. If no such pair is found, return `False`.
+
+The class can be instantiated and used as follows:
+
+```
+twoSum = TwoSum()
+twoSum.add(number)
+twoSum.find(value)
+```
+
+Where `number` is a numeric value to be added to the data structure and `value` is a target sum for which we want to find a pair of numbers.

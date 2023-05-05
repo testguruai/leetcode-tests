@@ -1,0 +1,6 @@
+Name                                                           Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------------------------
+695_Max_Area_of_Island/test_695_Max_Area_of_Island.py             16     10    38%   13-30
+/data/ethan/leetcode-master/python/695_Max_Area_of_Island.py      21      0   100%
+--------------------------------------------------------------------------------------------
+TOTAL                                                             37     10    73%

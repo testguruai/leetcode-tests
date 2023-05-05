@@ -1,0 +1,8 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 10 items
+
+161_One_Edit_Distance/test_161_One_Edit_Distance.py ..........           [100%]
+
+============================== 10 passed in 0.01s ==============================

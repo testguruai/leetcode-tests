@@ -1,0 +1,9 @@
+This code is a Python class that contains three implementations of the "permuteUnique" function, which takes in a list of integers and returns a list of all unique permutations of that list.
+
+The first implementation (commented out) uses recursion to generate permutations and stores them in a dictionary to avoid duplicates. It starts by sorting the input list, then recursively generates each permutation by appending each element to a prefix and calling itself with the remaining elements. It skips duplicates by checking if an element is the same as the previous one. Finally, it returns the list of permutations as values of the result dictionary.
+
+The second implementation replaces the dictionary with a list that gets populated with unique permutations using a backtracking approach. It starts with an empty result list, a list of integers to permute, and an index that starts at 0. It recursively generates each unique permutation by swapping an element at the current index with each subsequent element, then calling itself with the remaining elements and the next index until the end of the list is reached.
+
+The third implementation is an iterative solution that uses a queue of partial permutations. It starts with an empty list in the result queue, then iterates over the input list, adding each element to each partial permutation at every possible position while skipping duplicates. It uses a set to store previously generated permutations to avoid duplicates.
+
+Overall, this code demonstrates different approaches to solving the problem of generating unique permutations of a list of integers.

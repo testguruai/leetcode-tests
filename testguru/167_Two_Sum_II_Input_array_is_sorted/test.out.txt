@@ -1,0 +1,56 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+167_Two_Sum_II_Input_array_is_sorted/test_167_Two_Sum_II_Input_array_is_sorted.py F [ 25%]
+FFF                                                                      [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_twoSum_positive_numbers _________________________
+
+    def test_twoSum_positive_numbers():
+        s = Solution()
+        assert s.twoSum([1,2,3,4,5], 9) == [4, 5]
+>       assert s.twoSum([3, 4, 6, 7], 10) == [2, 4]
+E       assert [1, 4] == [2, 4]
+E         At index 0 diff: 1 != 2
+E         Use -v to get more diff
+
+167_Two_Sum_II_Input_array_is_sorted/test_167_Two_Sum_II_Input_array_is_sorted.py:8: AssertionError
+___________________________ test_twoSum_zero_target ____________________________
+
+    def test_twoSum_zero_target():
+        s = Solution()
+>       assert s.twoSum([1,2,3,4], 0) == []
+E       assert None == []
+E        +  where None = <bound method Solution.twoSum of <solution.Solution object at 0x7fd1ce026290>>([1, 2, 3, 4], 0)
+E        +    where <bound method Solution.twoSum of <solution.Solution object at 0x7fd1ce026290>> = <solution.Solution object at 0x7fd1ce026290>.twoSum
+
+167_Two_Sum_II_Input_array_is_sorted/test_167_Two_Sum_II_Input_array_is_sorted.py:12: AssertionError
+_________________________ test_twoSum_negative_numbers _________________________
+
+    def test_twoSum_negative_numbers():
+        s = Solution()
+>       assert s.twoSum([-3,-2,-1,0,1,2,3], -5) == [-3,-2]
+E       assert [1, 2] == [-3, -2]
+E         At index 0 diff: 1 != -3
+E         Use -v to get more diff
+
+167_Two_Sum_II_Input_array_is_sorted/test_167_Two_Sum_II_Input_array_is_sorted.py:16: AssertionError
+________________________ test_twoSum_duplicate_numbers _________________________
+
+    def test_twoSum_duplicate_numbers():
+        s = Solution()
+>       assert s.twoSum([1,1,1,1,2,2,2,3,4], 5) == [6, 9]
+E       assert [1, 9] == [6, 9]
+E         At index 0 diff: 1 != 6
+E         Use -v to get more diff
+
+167_Two_Sum_II_Input_array_is_sorted/test_167_Two_Sum_II_Input_array_is_sorted.py:21: AssertionError
+=========================== short test summary info ============================
+FAILED 167_Two_Sum_II_Input_array_is_sorted/test_167_Two_Sum_II_Input_array_is_sorted.py::test_twoSum_positive_numbers
+FAILED 167_Two_Sum_II_Input_array_is_sorted/test_167_Two_Sum_II_Input_array_is_sorted.py::test_twoSum_zero_target
+FAILED 167_Two_Sum_II_Input_array_is_sorted/test_167_Two_Sum_II_Input_array_is_sorted.py::test_twoSum_negative_numbers
+FAILED 167_Two_Sum_II_Input_array_is_sorted/test_167_Two_Sum_II_Input_array_is_sorted.py::test_twoSum_duplicate_numbers
+============================== 4 failed in 0.02s ===============================

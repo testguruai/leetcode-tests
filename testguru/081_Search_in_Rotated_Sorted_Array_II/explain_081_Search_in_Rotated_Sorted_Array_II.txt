@@ -1,0 +1,15 @@
+This python code defines a class `Solution` with a method `search`. The `search` method takes in an array of integers (`nums`) and a target integer and returns a boolean indicating whether the target integer is in the array or not.
+
+The method is implemented using a helper function called `get`, which performs a binary search on the array `nums` to find the target integer.
+
+The `get` function takes in two arguments, `start` and `end`, which represent the indices of the start and end of the subarray being searched. The function first handles duplicate elements in the subarray and then checks whether the middle element of the subarray is equal to the target. 
+
+If the middle element is the target, the function returns True. If the middle index equals the end index, the function recursively searches the left half of the subarray by calling `get` with `start` and `mid-1` as arguments. If the middle index equals the start index, the function recursively searches the right half of the subarray by calling `get` with `mid+1` and `end` as arguments.
+
+If neither of these conditions is true, the function determines whether the first half or second half of the subarray is sorted, by checking whether the middle element is greater than or less than the first and last elements of the subarray respectively. 
+
+If the first half is sorted and the target is within the range of the first half, `get` is called recursively with `start` and `mid-1` as arguments. If the second half is sorted and the target is within the range of the second half, `get` is called recursively with `mid+1` and `end` as arguments. 
+
+If none of the above conditions are true, the function returns False.
+
+The `search` method simply calls `get` with `start` and `end` as 0 and the length of the array minus one respectively and returns the result of `get`.

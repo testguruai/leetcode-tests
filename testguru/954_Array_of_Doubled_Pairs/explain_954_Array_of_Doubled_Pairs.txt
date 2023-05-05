@@ -1,0 +1,9 @@
+The code defines a Python class `Solution` with a single method `canReorderDoubled`. The method takes an input list (`A`) of integers as input and returns a boolean value indicating whether it is possible to reorder the input list such that each element `n` in the reordered list has a corresponding element equal to `2*n`.
+
+The method creates a dictionary `v_map` to store the count of each integer in the input list. It then sorts the input list by its absolute values using a lambda function. This sorting is done to ensure we check for the existence of the corresponding element 2*n in the list from the closest elements to the origin (0) outwards so as to optimize our checks.
+
+The method then loops through the list and checks if the count of each number in the `v_map` dictionary is greater than zero. If it is, it checks if the corresponding element 2*n is in the `v_map` dictionary and if its count is also greater than zero. If this condition is met, it decrements the counts of the original number and its corresponding element by 1. If it is not met, the method returns `False`. 
+
+If the method completes the loop without returning `False`, it returns `True`.
+
+The `if __name__ == '__main__':` block at the end creates an instance of the `Solution` class and calls the `canReorderDoubled` method with various input lists, printing the results to the console.

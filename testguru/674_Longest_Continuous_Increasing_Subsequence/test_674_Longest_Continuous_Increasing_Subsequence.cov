@@ -1,0 +1,6 @@
+Name                                                                                                  Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------------------------------------------------------------
+674_Longest_Continuous_Increasing_Subsequence/test_674_Longest_Continuous_Increasing_Subsequence.py      15      1    93%   33
+/data/ethan/leetcode-master/python/674_Longest_Continuous_Increasing_Subsequence.py                      12      0   100%
+-----------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                    27      1    96%

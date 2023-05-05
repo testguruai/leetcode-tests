@@ -1,0 +1,15 @@
+This Python code defines a class named `Solution` containing a single method `longestConsecutive`. The method takes a list of integers as input and returns the length of the longest consecutive subsequence of numbers in the list. 
+
+The algorithm used by the method is as follows:
+
+- First, the input list is converted to a set to remove duplicates and enable fast lookup.
+- A `maxLen` variable is initialized to zero which will store the current maximum length of a consecutive subsequence. 
+- The `while` loop runs until the set of numbers is empty.
+- In each iteration of the loop, a number `n` is popped from the set. 
+- Two variables `l1` and `l2` are initialized to zero. These will be used to store the lengths of the consecutive sequences to the right and left of the number `n`.
+- Starting from `n+1`, the loop checks if the number is in the set of numbers. If it is, then the number is removed from the set and the length `l1` is incremented. The loop continues until there are no more consecutive numbers in the set.
+- A similar loop checks for consecutive numbers to the left of `n` and increments the length `l2`.
+- After the loops finish, the maximum length of a consecutive subsequence containing the number `n` is `l1+l2+1`. 
+- If this length is greater than the current `maxLen`, then it is updated.
+- The loop continues until all the numbers in the set have been processed. 
+- Finally, the method returns the value of `maxLen`.

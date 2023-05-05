@@ -1,0 +1,11 @@
+This Python code is a solution to the problem of finding the length of the longest substring in a given string 's' that contains at most 'k' distinct characters. 
+
+The function 'lengthOfLongestSubstringKDistinct' takes two inputs - a string 's' and an integer 'k' - and returns an integer (the length of the longest substring with at most 'k' distinct characters). 
+
+The function first creates a list 'count' of length 256 (one for each possible ASCII character). This list is initialized with all zeros. The variables 'i' (initially set to zero), 'numDistinct' (the number of distinct characters in the current substring), and 'maxLen' (the length of the longest substring found so far) are also initialized to zero. 
+
+The code then loops through each character in the string 's'. For each character, the code updates the count of that character in the 'count' list. If the count is zero (i.e., this is the first occurrence of this character in the current substring), 'numDistinct' is incremented. 
+
+If the number of distinct characters in the current substring exceeds the given limit 'k', the code updates the 'i' index to move the starting position of the substring one step to the right. This is done by decrementing the count of the character at index 'i' in the 'count' list. If the count becomes zero, it means that the character at index 'i' is no longer part of the substring, so 'numDistinct' is decremented. 
+
+Finally, the code updates 'maxLen' with the length of the longest substring found so far. The function returns 'maxLen' as the final output.

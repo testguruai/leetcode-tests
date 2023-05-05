@@ -1,0 +1,11 @@
+This is a Python code to solve the problem of zigzag level order traversal of a binary tree. 
+
+The "TreeNode" class is defined with an "x" attribute (representing the node value) and "left" and "right" attributes pointing to the left and right child nodes, respectively. 
+
+The "zigzagLevelOrder" method takes a root node as input and returns a list of lists, with each inner list containing the values of nodes at each level of the binary tree in a zigzag order. 
+
+The method starts by checking if the root node is none. If so, then it returns an empty list. Otherwise, it creates a queue "q" initialized with a list containing the root node. Then, it enters a loop that iterates over each level of the binary tree. For each level, it creates a list "record" containing the left and right child nodes of all nodes in the current level. And it adds this "record" list to the "q" queue if it is not empty.
+
+After completing the above loop, the method processes the "q" queue to extract the values of nodes in zigzag order. It initializes an empty list "res" to store the final result. Then, it iterates over each level in the "q" queue and converts the nodes at each level into a list of their values using a list comprehension. If the level index is even, it adds the values list as is to the "res" list. But if the level index is odd, it reverses the values list using the "[::-1]" slicing syntax and then adds it to the "res" list.
+
+Finally, the method returns the "res" list, representing the zigzag level order traversal of the binary tree.

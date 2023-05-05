@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_ ERROR collecting 876_Middle_of_the_Linked_List/test_876_Middle_of_the_Linked_List.py _
+ImportError while importing test module '/data/sandeep/leetcode-master/.verifaiws/876_Middle_of_the_Linked_List/test_876_Middle_of_the_Linked_List.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+876_Middle_of_the_Linked_List/test_876_Middle_of_the_Linked_List.py:2: in <module>
+    from solution import ListNode, Solution
+E   ImportError: cannot import name 'ListNode' from 'solution' (/data/sandeep/leetcode-master/.verifaiws/876_Middle_of_the_Linked_List/solution.py)
+=========================== short test summary info ============================
+ERROR 876_Middle_of_the_Linked_List/test_876_Middle_of_the_Linked_List.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.04s ===============================

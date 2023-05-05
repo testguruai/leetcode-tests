@@ -1,0 +1,15 @@
+This is a Python code for solving the problem of guessing a number between 1 and n. The objective is to minimize the cost of guessing by selecting a number and then being told whether it is higher or lower than the target value.
+
+This code uses dynamic programming to solve the problem. There are two implementations of the algorithm: top-down and bottom-up. The top-down implementation uses recursion to check all possible guesses and selects the one that minimizes cost. The bottom-up implementation builds a table of optimal guesses for each possible range of values.
+
+The main function is `getMoneyAmount`, which takes an integer `n` as input and returns an integer representing the minimum cost of guessing a number between 1 and `n`.
+
+The top-down implementation is commented out in the code and the bottom-up implementation is used instead. The first step in the bottom-up implementation is to create a two-dimensional list `dp` of size `(n+1)x(n+1)`. Entries `dp[i][j]` represent the minimum cost of guessing a number between `i` and `j`. 
+
+The outer loop of the implementation iterates over the possible range of values, starting with `j = 2` and ending with `j = n+1`. The inner loop iterates over all values of `i` between `j-1` and `0`, in descending order.
+
+For each possible range of values, the implementation computes the minimum cost of guessing `k`, where `k` is between `i+1` and `j-1`. The cost of guessing `k` is the sum of `k` and the maximum of the cost of guessing a number between `i` and `k-1` and the cost of guessing a number between `k+1` and `j`.
+
+After computing the minimum cost of guessing all possible values of `k`, the implementation selects the minimum cost and stores it in `dp[i][j]`. If `i+1 = j`, then the minimum cost is just `i`. Otherwise, it is the computed minimum cost.
+
+Finally, the implementation returns `dp[1][n]`, which is the minimum cost of guessing a number between 1 and `n`.

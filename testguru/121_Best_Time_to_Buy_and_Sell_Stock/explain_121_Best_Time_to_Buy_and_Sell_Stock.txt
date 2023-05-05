@@ -1,0 +1,9 @@
+This is a class named Solution with a method named maxProfit that takes in a list of integers called prices as input. This function is designed to return the maximum profit that can be made from buying and selling one stock given the list of prices.
+
+First, it checks the length of the list. If it is empty, the function returns 0, as there is no way to make a profit.
+
+Next, it initializes two variables: max_profit is set to 0 and low is set to the first number in the prices list.
+
+After that, it takes a loop from the second element of the list to the end. For each element in the list, it checks if the current element is less than low. If it is, it updates low to the current element's value. If not, it calculates the profit between the current element and the low value. If this profit is greater than the current value of max_profit, the maximum profit is updated to the new profit.
+
+Finally, the function returns max_profit, which represents the maximum profit that could be made.

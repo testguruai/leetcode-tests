@@ -1,0 +1,9 @@
+The code defines a class called `Solution`. It contains a method called `fixedPoint` which takes a list of integers `A` as its input. The method is used to find any index `i` from the input list `A` where `A[i] = i`. If there is no such index `i`, it returns -1.
+
+The method first checks if the list is sorted in ascending order using the first `for` loop, which is commented out. 
+
+The second implementation of the method uses the binary search algorithm to find the index where `A[i] = i`. It initializes two pointers `l` and `h` to the start and end of the list, respectively. It then repeatedly calculates the middle index `mid` of the list using the formula `(l+h)//2`. 
+
+If `A[mid] < mid`, it means that the fixed point lies in the right half of the list, so `l` is updated to `mid+1`. If `A[mid] > mid`, it means that the fixed point lies in the left half of the list, so `h` is updated to `mid-1`. Finally, if `A[mid] == mid`, it means that the fixed point has been found, and `mid` is returned. 
+
+If by the end of the while loop, no fixed point is found, then -1 is returned.

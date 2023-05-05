@@ -1,0 +1,9 @@
+The above code defines a class Solution with a method called countPrimes that takes an integer n as input and returns the count of prime numbers less than n. 
+
+The method implements the Sieve of Eratosthenes algorithm, which is a method for finding all prime numbers up to a given limit. 
+
+The first step is to create a boolean list isPrime with n elements, all of which are initially set to True. 
+
+Then, a loop is run from 2 to n-1. For each i in this loop, if i*i is greater than or equal to n, the loop is terminated. Otherwise, if isPrime[i] is False, the loop immediately advances to the next iteration. If isPrime[i] is True, the inner loop runs from i*i to n-1 in increments of i and sets the value of isPrime[j] to False for all j. 
+
+After the completion of the loop, the number of prime numbers is calculated by iterating over the isPrime list and counting the number of True elements. Finally, the count of prime numbers is returned.

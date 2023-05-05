@@ -1,0 +1,35 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+373_Find_K_Pairs_with_Smallest_Sums/test_373_Find_K_Pairs_with_Smallest_Sums.py F [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_kSmallestPairs ______________________________
+
+    def test_kSmallestPairs():
+        s = Solution()
+    
+        nums1 = [1,7,11]
+        nums2 = [2,4,6]
+        k = 3
+>       result = s.kSmallestPairs(nums1, nums2, k)
+
+373_Find_K_Pairs_with_Smallest_Sums/test_373_Find_K_Pairs_with_Smallest_Sums.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+373_Find_K_Pairs_with_Smallest_Sums/solution.py:14: in kSmallestPairs
+    push(0, 0)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+i = 0, j = 0
+
+    def push(i, j):
+        if i < len(nums1) and j < len(nums2):
+>           heapq.heappush(queue, [nums1[i] + nums2[j], i, j])
+E           NameError: name 'heapq' is not defined
+
+373_Find_K_Pairs_with_Smallest_Sums/solution.py:13: NameError
+=========================== short test summary info ============================
+FAILED 373_Find_K_Pairs_with_Smallest_Sums/test_373_Find_K_Pairs_with_Smallest_Sums.py::test_kSmallestPairs
+============================== 1 failed in 0.01s ===============================

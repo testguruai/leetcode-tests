@@ -1,0 +1,131 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 6 items
+
+151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py FFFF [ 66%]
+FF                                                                       [100%]
+
+=================================== FAILURES ===================================
+________________________ test_reverseWords_empty_string ________________________
+
+    def test_reverseWords_empty_string():
+>       assert sol.reverseWords("") == ""
+
+151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py:7: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+151_Reverse_Words_in_a_String/solution.py:32: in reverseWords
+    self.reverse(array_s, pos, i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f445c68beb0>, array_s = [], begin = 0
+end = 0
+
+    def reverse(self, array_s, begin, end):
+>       for i in range((end - begin) / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+151_Reverse_Words_in_a_String/solution.py:37: TypeError
+________________________ test_reverseWords_only_spaces _________________________
+
+    def test_reverseWords_only_spaces():
+>       assert sol.reverseWords("    ") == ""
+
+151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+151_Reverse_Words_in_a_String/solution.py:32: in reverseWords
+    self.reverse(array_s, pos, i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f445c68beb0>, array_s = [], begin = 0
+end = 0
+
+    def reverse(self, array_s, begin, end):
+>       for i in range((end - begin) / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+151_Reverse_Words_in_a_String/solution.py:37: TypeError
+________________________ test_reverseWords_single_word _________________________
+
+    def test_reverseWords_single_word():
+>       assert sol.reverseWords("hello") == "hello"
+
+151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+151_Reverse_Words_in_a_String/solution.py:32: in reverseWords
+    self.reverse(array_s, pos, i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f445c68beb0>
+array_s = ['o', 'l', 'l', 'e', 'h'], begin = 0, end = 5
+
+    def reverse(self, array_s, begin, end):
+>       for i in range((end - begin) / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+151_Reverse_Words_in_a_String/solution.py:37: TypeError
+_______________________ test_reverseWords_multiple_words _______________________
+
+    def test_reverseWords_multiple_words():
+>       assert sol.reverseWords("The sky is blue") == "blue is sky The"
+
+151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+151_Reverse_Words_in_a_String/solution.py:32: in reverseWords
+    self.reverse(array_s, pos, i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f445c68beb0>
+array_s = ['e', 'u', 'l', 'b', ' ', 's', ...], begin = 0, end = 4
+
+    def reverse(self, array_s, begin, end):
+>       for i in range((end - begin) / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+151_Reverse_Words_in_a_String/solution.py:37: TypeError
+____________________ test_reverseWords_spaces_between_words ____________________
+
+    def test_reverseWords_spaces_between_words():
+>       assert sol.reverseWords("   The    sky  is   blue  ") == "blue is sky The"
+
+151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+151_Reverse_Words_in_a_String/solution.py:32: in reverseWords
+    self.reverse(array_s, pos, i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f445c68beb0>
+array_s = ['e', 'u', 'l', 'b', ' ', 's', ...], begin = 0, end = 4
+
+    def reverse(self, array_s, begin, end):
+>       for i in range((end - begin) / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+151_Reverse_Words_in_a_String/solution.py:37: TypeError
+_______________________ test_reverseWords_complex_string _______________________
+
+    def test_reverseWords_complex_string():
+>       assert sol.reverseWords("      this is a test phrase with spaces and punctuation marks!    ") == "!marks punctuation and spaces with phrase test a is this"
+
+151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+151_Reverse_Words_in_a_String/solution.py:32: in reverseWords
+    self.reverse(array_s, pos, i)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <solution.Solution object at 0x7f445c68beb0>
+array_s = ['!', 's', 'k', 'r', 'a', 'm', ...], begin = 0, end = 6
+
+    def reverse(self, array_s, begin, end):
+>       for i in range((end - begin) / 2):
+E       TypeError: 'float' object cannot be interpreted as an integer
+
+151_Reverse_Words_in_a_String/solution.py:37: TypeError
+=========================== short test summary info ============================
+FAILED 151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py::test_reverseWords_empty_string
+FAILED 151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py::test_reverseWords_only_spaces
+FAILED 151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py::test_reverseWords_single_word
+FAILED 151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py::test_reverseWords_multiple_words
+FAILED 151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py::test_reverseWords_spaces_between_words
+FAILED 151_Reverse_Words_in_a_String/test_151_Reverse_Words_in_a_String.py::test_reverseWords_complex_string
+============================== 6 failed in 0.03s ===============================

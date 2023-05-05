@@ -1,0 +1,50 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 5 items
+
+044_Wildcard_Matching/test_044_Wildcard_Matching.py FFFFF                [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_isMatch1 _________________________________
+
+    def test_isMatch1():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+044_Wildcard_Matching/test_044_Wildcard_Matching.py:3: NameError
+________________________________ test_isMatch2 _________________________________
+
+    def test_isMatch2():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+044_Wildcard_Matching/test_044_Wildcard_Matching.py:7: NameError
+________________________________ test_isMatch3 _________________________________
+
+    def test_isMatch3():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+044_Wildcard_Matching/test_044_Wildcard_Matching.py:11: NameError
+________________________________ test_isMatch4 _________________________________
+
+    def test_isMatch4():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+044_Wildcard_Matching/test_044_Wildcard_Matching.py:15: NameError
+________________________________ test_isMatch5 _________________________________
+
+    def test_isMatch5():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+044_Wildcard_Matching/test_044_Wildcard_Matching.py:19: NameError
+=========================== short test summary info ============================
+FAILED 044_Wildcard_Matching/test_044_Wildcard_Matching.py::test_isMatch1 - N...
+FAILED 044_Wildcard_Matching/test_044_Wildcard_Matching.py::test_isMatch2 - N...
+FAILED 044_Wildcard_Matching/test_044_Wildcard_Matching.py::test_isMatch3 - N...
+FAILED 044_Wildcard_Matching/test_044_Wildcard_Matching.py::test_isMatch4 - N...
+FAILED 044_Wildcard_Matching/test_044_Wildcard_Matching.py::test_isMatch5 - N...
+============================== 5 failed in 0.02s ===============================

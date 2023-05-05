@@ -1,0 +1,7 @@
+This code is a Python implementation of the solution to the "Nth Digit" problem on LeetCode. The problem asks to find the nth digit in the sequence 1, 2, 3, ... up to infinity and concatenate them.
+
+The solution first sets the initial count to 9, start to 1, and curr_len to 1. It then enters a while loop that increments curr_len and multiplies count and start by 10 until n becomes less than or equal to curr_len * count. This is done to find the range where the nth digit lies.
+
+After finding the appropriate range, the code computes the value of start by adding (n - 1) / curr_len to the initial value of start. It then converts this number to a string s and returns the (n - 1) % curr_len-th character as an integer.
+
+In summary, this code uses a mathematical approach to finding the nth digit in a sequence of numbers.

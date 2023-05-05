@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+041_First_Missing_Positive/test_041_First_Missing_Positive.py FF         [100%]
+
+=================================== FAILURES ===================================
+____________________ TestSolution.test_firstMissingPositive ____________________
+
+self = <test_041_First_Missing_Positive.TestSolution object at 0x7fa753ec42e0>
+
+    def test_firstMissingPositive(self):
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+041_First_Missing_Positive/test_041_First_Missing_Positive.py:5: NameError
+_____________ TestSolution.test_firstMissingPositive_invalid_input _____________
+
+self = <test_041_First_Missing_Positive.TestSolution object at 0x7fa753ec43d0>
+
+    def test_firstMissingPositive_invalid_input(self):
+>       solution = Solution()
+E       NameError: name 'Solution' is not defined
+
+041_First_Missing_Positive/test_041_First_Missing_Positive.py:14: NameError
+=========================== short test summary info ============================
+FAILED 041_First_Missing_Positive/test_041_First_Missing_Positive.py::TestSolution::test_firstMissingPositive
+FAILED 041_First_Missing_Positive/test_041_First_Missing_Positive.py::TestSolution::test_firstMissingPositive_invalid_input
+============================== 2 failed in 0.01s ===============================

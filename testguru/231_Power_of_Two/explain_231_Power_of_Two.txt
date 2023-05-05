@@ -1,0 +1,3 @@
+This code defines a Python class called `Solution` that contains a method called `isPowerOfTwo` that takes an integer parameter called `n` and returns a boolean value.
+
+The `isPowerOfTwo` method checks if the input number is a power of two by first checking if it is negative, in which case it returns `False` (since negative numbers cannot be powers of two). If the input number is not negative, it converts it to a binary string using the `bin` function and extracts the digits from the second index onwards. It then maps a lambda function that converts each digit to an integer, and calculates the sum of the resulting list. If the sum equals 1, it returns `True`, indicating that the input number is a power of two. If the sum does not equal 1, it returns `False`.

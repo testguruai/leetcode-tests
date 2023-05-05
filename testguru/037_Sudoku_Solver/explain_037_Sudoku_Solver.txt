@@ -1,0 +1,11 @@
+This is a solution to the Sudoku problem on LeetCode, which involves completing an incomplete Sudoku board. 
+
+The code defines a class Solution with three methods: 
+
+1. **solveSudoku**: This method takes in a 9x9 board of cells with uncompleted puzzle as input, where empty cells are represented by '.'. It initializes an empty list to store the coordinates of empty cells in the board. It then loops through every cell in the board, checking if it is empty and if so, appending its coordinate to the empty list. Finally, it calls the solve method with the board and empty list as arguments.
+
+2. **solve**: This method performs the backtracking algorithm to solve the puzzle. It initially checks if there are any empty cells left in the board, and if not, returns True to indicate that the Sudoku puzzle has been solved. It then selects the last empty cell in the list (since empty cells are added to the list in the same order as they are encountered in the board), and gets its row and column coordinates. It then loops through numbers 1 to 9, and checks if each number can safely be placed in the cell (by calling the is_safe method). If the method call returns True, it sets the cell to that number and removes the cell's coordinates from the empty list. It then recursively calls solve with the updated board and list of empty cells, and returns True if the call to solve returns True (i.e. the puzzle has been solved). If the recursive call returns False, it removes the number from the cell, adds the cell's coordinates back to the empty list, and moves on to the next number in the loop. If all numbers have been tried and none worked, the method returns False.
+
+3. **is_safe**: This method checks if a given cell can be filled with a given number (represented as a string) without breaking any Sudoku rules. It checks the row and column of the cell to ensure the number isn't already present in those cells, and also checks the same 3x3 subgrid (square) that the cell belongs to. If any cell violates these rules, the method returns False. Otherwise, it returns True. 
+
+Overall, this code performs a recursive backtracking approach to solve the Sudoku puzzle, checking each possible number for each empty cell until it finds a valid solution. The modifications are made in-place on the original board, and the final solution is returned as the completed board.

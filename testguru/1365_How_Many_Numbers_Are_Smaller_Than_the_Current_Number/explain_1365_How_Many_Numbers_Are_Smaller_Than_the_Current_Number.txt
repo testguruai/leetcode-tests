@@ -1,0 +1,9 @@
+The code contains three implementations of the function `smallerNumbersThanCurrent`, which takes in a list of integers `nums` and returns a list of integers where each element represents the number of elements in the input list that are smaller than the corresponding element in the input list.
+
+The first implementation uses a hashmap to store the sorted positions of each element in the input list and then iterates through the input list to construct the output list by looking up the positions of each element in the hashmap.
+
+The second implementation uses a counting sort approach to count the number of occurrences of each element in the input list and then computes the number of elements that are smaller than each element by adding up the counts of all smaller elements. It then constructs the output list using this information.
+
+The third implementation also uses counting, but it directly computes the number of elements that are smaller than each element in the input list using a cumulative sum of the counts. It then constructs the output list using this information. 
+
+Overall, all three implementations achieve the same goal but use different algorithms to do so.

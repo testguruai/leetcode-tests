@@ -1,0 +1,7 @@
+The code defines a Python class named Solution. This class has two methods: groupAnagrams and hash_key.
+
+The groupAnagrams method takes a list of strings (strs) as input and returns a list of lists that groups anagrams together. Anagrams are words that have the same letters but in a different order. For example, "listen" and "silent" are anagrams.
+
+The method first sorts the input list of strings using the sort() method. Then, it loops through each string in the sorted list, computes a hash key for it using the hash_key method, and adds it to a dictionary (hash) as a list. If the hash key already exists in the dictionary, the string is appended to the corresponding list. If not, a new entry is created with the hash key as the key and a list containing the string as the value. Finally, the values of the hash dictionary are returned as a list of lists.
+
+The hash_key method takes a string s as input and returns a string representation of a 26-length array. The array represents the frequency of each character in the input string. The ord() method is used to convert each character to its ASCII code, and the array index is calculated by subtracting the ASCII code of 'a' from it. The resulting array is then converted to a string using the str() function.

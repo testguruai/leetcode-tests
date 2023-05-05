@@ -1,0 +1,19 @@
+The code is a solution to a problem to check if a singly-linked list is a palindrome or not. A palindrome is a word, phrase or sequence of characters that reads the same backward as forward.
+
+The solution uses two pointers, p1 and p2, which advance through the list at different speeds. The first half of the list is reversed, and then the two halves are compared. If the list is a palindrome, they will match.
+
+The function `isPalindrome` takes a singly-linked list as an argument and returns a boolean indicating whether the list is a palindrome or not.
+
+Inside the function, the code first checks if the given list is empty by checking if the head node is None. If it is, the function returns True.
+
+Then, two pointers, `p1` and `p2`, are initialized to the head of the list. Another pointer, `p3`, is assigned to the next node of `p1`. Another pointer, `pre`, is initialized to point to the first node of the list. The purpose of `pre` is to keep track of the last node of the first half of the list, which we need to update its next pointer when we reverse the first half of the list.
+
+The first while loop of the code advances `p2` by two nodes and `p1` and `pre` by one node. `p3` is also updated to point to the next node of `p1`. `p1.next` is updated to point to the `pre`, and `pre` is assigned to `p1`. This effectively reverses the first half of the list.
+
+After the first while loop is over, `p1` is in the middle of the list, and `p3` is in the middle plus one if the list has an odd number of nodes. `p2` is at the end of the list.
+
+The code then checks whether `p2` has reached the end of the list. If it has, `p1` needs to be advanced by one node so that it points to the first node of the second half of the list.
+
+The second while loop of the code compares the values of nodes pointed to by `p1` and `p3`. If they do not match, the list is not a palindrome, and the function returns False. If they match, `p1` and `p3` are advanced, and the comparison is made again until `p3` reaches the end of the list.
+
+If the second while loop terminates without returning False, the list is a palindrome, and the function returns True.

@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+977_Squares_of_a_Sorted_Array/test_977_Squares_of_a_Sorted_Array.py E    [100%]
+
+==================================== ERRORS ====================================
+______________ ERROR at setup of TestSolution.test_sortedSquares _______________
+
+self = <test_977_Squares_of_a_Sorted_Array.TestSolution object at 0x7f6e0d34c5e0>
+
+    def setup(self):
+>       self.sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+977_Squares_of_a_Sorted_Array/test_977_Squares_of_a_Sorted_Array.py:5: NameError
+=========================== short test summary info ============================
+ERROR 977_Squares_of_a_Sorted_Array/test_977_Squares_of_a_Sorted_Array.py::TestSolution::test_sortedSquares
+=============================== 1 error in 0.01s ===============================

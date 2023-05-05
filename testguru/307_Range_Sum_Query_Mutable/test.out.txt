@@ -1,0 +1,46 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 4 items
+
+307_Range_Sum_Query_Mutable/test_307_Range_Sum_Query_Mutable.py FFFF     [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_num_array ________________________________
+
+    def test_num_array():
+        nums = [1, 3, 5]
+>       num_array = NumArray(nums)
+E       NameError: name 'NumArray' is not defined
+
+307_Range_Sum_Query_Mutable/test_307_Range_Sum_Query_Mutable.py:6: NameError
+_______________________________ test_build_tree ________________________________
+
+    def test_build_tree():
+        nums = [1, 3, 5]
+>       num_array = NumArray(nums)
+E       NameError: name 'NumArray' is not defined
+
+307_Range_Sum_Query_Mutable/test_307_Range_Sum_Query_Mutable.py:15: NameError
+_________________________________ test_update __________________________________
+
+    def test_update():
+        nums = [1, 3, 5]
+>       num_array = NumArray(nums)
+E       NameError: name 'NumArray' is not defined
+
+307_Range_Sum_Query_Mutable/test_307_Range_Sum_Query_Mutable.py:20: NameError
+________________________________ test_sum_range ________________________________
+
+    def test_sum_range():
+        nums = [1, 3, 5]
+>       num_array = NumArray(nums)
+E       NameError: name 'NumArray' is not defined
+
+307_Range_Sum_Query_Mutable/test_307_Range_Sum_Query_Mutable.py:28: NameError
+=========================== short test summary info ============================
+FAILED 307_Range_Sum_Query_Mutable/test_307_Range_Sum_Query_Mutable.py::test_num_array
+FAILED 307_Range_Sum_Query_Mutable/test_307_Range_Sum_Query_Mutable.py::test_build_tree
+FAILED 307_Range_Sum_Query_Mutable/test_307_Range_Sum_Query_Mutable.py::test_update
+FAILED 307_Range_Sum_Query_Mutable/test_307_Range_Sum_Query_Mutable.py::test_sum_range
+============================== 4 failed in 0.02s ===============================

@@ -1,0 +1,11 @@
+This is a Python class called `Solution` that defines a method called `anagramMappings`. The purpose of the method is to find the positions of the elements in list `A` in list `B`. The inputs of the method are two lists, `A` and `B`. The output is a list of integers.
+
+The first line of the method creates an empty dictionary called `val_index`. This dictionary will be used to store the indices of the elements in `B`.
+
+The second line initializes an empty list called `ans`. This list will be used to store the answer.
+
+The `for` loop on the third line iterates over each element in `B` and stores the index of that element in the `val_index` dictionary. The `enumerate` function is used to get both the index and the element at each iteration.
+
+The next `for` loop on the seventh line iterates over each element in `A` and appends the corresponding index from `val_index` to the `ans` list.
+
+Finally, the method returns the `ans` list.

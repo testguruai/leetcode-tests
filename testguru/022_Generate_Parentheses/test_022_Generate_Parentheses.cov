@@ -1,0 +1,6 @@
+Name                                                             Stmts   Miss  Cover   Missing
+----------------------------------------------------------------------------------------------
+022_Generate_Parentheses/test_022_Generate_Parentheses.py            9      2    78%   10-11
+/data/ethan/leetcode-master/python/022_Generate_Parentheses.py      13      0   100%
+----------------------------------------------------------------------------------------------
+TOTAL                                                               22      2    91%

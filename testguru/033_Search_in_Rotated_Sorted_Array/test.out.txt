@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 1 item
+
+033_Search_in_Rotated_Sorted_Array/test_033_Search_in_Rotated_Sorted_Array.py F [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_search __________________________________
+
+    def test_search():
+>       s = Solution()
+E       NameError: name 'Solution' is not defined
+
+033_Search_in_Rotated_Sorted_Array/test_033_Search_in_Rotated_Sorted_Array.py:3: NameError
+=========================== short test summary info ============================
+FAILED 033_Search_in_Rotated_Sorted_Array/test_033_Search_in_Rotated_Sorted_Array.py::test_search
+============================== 1 failed in 0.01s ===============================

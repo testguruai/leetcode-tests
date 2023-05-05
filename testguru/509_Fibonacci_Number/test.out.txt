@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.3.1, pluggy-1.0.0
+rootdir: /data/sandeep/leetcode-master/.verifaiws
+collected 2 items
+
+509_Fibonacci_Number/test_509_Fibonacci_Number.py FF                     [100%]
+
+=================================== FAILURES ===================================
+___________________________________ test_fib ___________________________________
+
+    def test_fib():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+509_Fibonacci_Number/test_509_Fibonacci_Number.py:4: NameError
+__________________________ test_fib_raises_exception ___________________________
+
+    def test_fib_raises_exception():
+>       sol = Solution()
+E       NameError: name 'Solution' is not defined
+
+509_Fibonacci_Number/test_509_Fibonacci_Number.py:13: NameError
+=========================== short test summary info ============================
+FAILED 509_Fibonacci_Number/test_509_Fibonacci_Number.py::test_fib - NameErro...
+FAILED 509_Fibonacci_Number/test_509_Fibonacci_Number.py::test_fib_raises_exception
+============================== 2 failed in 0.01s ===============================
