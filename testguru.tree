@@ -1,0 +1,2656 @@
+testguru
+├── 001_Two_Sum
+│   ├── .coverage
+│   ├── 001_Two_Sum.py -- Original Source
+│   ├── explain_001_Two_Sum.txt -- TestGuru Code Explanation
+│   ├── solution.py -> 001_Two_Sum.py -- Symbolic Link
+│   ├── test.out.txt -- pytest run log file
+│   ├── test_001_Two_Sum.cov -- TestGuru generated Coverage Report
+│   └── test_001_Two_Sum.py -- TestGuru generated Tests
+├── 002_Add_Two_Numbers
+│   ├── .coverage
+│   ├── 002_Add_Two_Numbers.py
+│   ├── explain_002_Add_Two_Numbers.txt
+│   ├── solution.py -> 002_Add_Two_Numbers.py
+│   ├── test.out.txt
+│   ├── test_002_Add_Two_Numbers.cov
+│   └── test_002_Add_Two_Numbers.py
+├── 003_Longest_Substring_Without_Repeating_Characters
+│   ├── .coverage
+│   ├── 003_Longest_Substring_Without_Repeating_Characters.py
+│   ├── explain_003_Longest_Substring_Without_Repeating_Characters.txt
+│   ├── solution.py -> 003_Longest_Substring_Without_Repeating_Characters.py
+│   ├── test.out.txt
+│   ├── test_003_Longest_Substring_Without_Repeating_Characters.cov
+│   └── test_003_Longest_Substring_Without_Repeating_Characters.py
+├── 004_Median_of_Two_Sorted_Arrays
+│   ├── .coverage
+│   ├── 004_Median_of_Two_Sorted_Arrays.py
+│   ├── explain_004_Median_of_Two_Sorted_Arrays.txt
+│   ├── solution.py -> 004_Median_of_Two_Sorted_Arrays.py
+│   ├── test.out.txt
+│   ├── test_004_Median_of_Two_Sorted_Arrays.cov
+│   └── test_004_Median_of_Two_Sorted_Arrays.py
+├── 005_Longest_Palindromic_Substring
+│   ├── .coverage
+│   ├── 005_Longest_Palindromic_Substring.py
+│   ├── explain_005_Longest_Palindromic_Substring.txt
+│   ├── solution.py -> 005_Longest_Palindromic_Substring.py
+│   ├── test.out.txt
+│   ├── test_005_Longest_Palindromic_Substring.cov
+│   └── test_005_Longest_Palindromic_Substring.py
+├── 006_ZigZag_Conversion
+│   ├── .coverage
+│   ├── 006_ZigZag_Conversion.py
+│   ├── explain_006_ZigZag_Conversion.txt
+│   ├── solution.py -> 006_ZigZag_Conversion.py
+│   ├── test.out.txt
+│   ├── test_006_ZigZag_Conversion.cov
+│   └── test_006_ZigZag_Conversion.py
+├── 007_Reverse_Integer
+│   ├── .coverage
+│   ├── 007_Reverse_Integer.py
+│   ├── explain_007_Reverse_Integer.txt
+│   ├── solution.py -> 007_Reverse_Integer.py
+│   ├── test.out.txt
+│   ├── test_007_Reverse_Integer.cov
+│   └── test_007_Reverse_Integer.py
+├── 008_String_to_Integer(atoi)
+│   ├── .coverage
+│   ├── 008_String_to_Integer(atoi).py
+│   ├── explain_008_String_to_Integer(atoi).txt
+│   ├── solution.py -> 008_String_to_Integer(atoi).py
+│   ├── test.out.txt
+│   ├── test_008_String_to_Integer(atoi).cov
+│   └── test_008_String_to_Integer(atoi).py
+├── 009_Palindrome_Number
+│   ├── .coverage
+│   ├── 009_Palindrome_Number.py
+│   ├── explain_009_Palindrome_Number.txt
+│   ├── solution.py -> 009_Palindrome_Number.py
+│   ├── test.out.txt
+│   ├── test_009_Palindrome_Number.cov
+│   └── test_009_Palindrome_Number.py
+├── 010_Regular_Expression_Matching
+│   ├── .coverage
+│   ├── 010_Regular_Expression_Matching.py
+│   ├── explain_010_Regular_Expression_Matching.txt
+│   ├── solution.py -> 010_Regular_Expression_Matching.py
+│   ├── test.out.txt
+│   ├── test_010_Regular_Expression_Matching.cov
+│   └── test_010_Regular_Expression_Matching.py
+├── 011_Container_With_Most_Water
+│   ├── .coverage
+│   ├── 011_Container_With_Most_Water.py
+│   ├── explain_011_Container_With_Most_Water.txt
+│   ├── solution.py -> 011_Container_With_Most_Water.py
+│   ├── test.out.txt
+│   ├── test_011_Container_With_Most_Water.cov
+│   └── test_011_Container_With_Most_Water.py
+├── 012_Integer_to_Roman
+│   ├── .coverage
+│   ├── 012_Integer_to_Roman.py
+│   ├── explain_012_Integer_to_Roman.txt
+│   ├── solution.py -> 012_Integer_to_Roman.py
+│   ├── test.out.txt
+│   ├── test_012_Integer_to_Roman.cov
+│   └── test_012_Integer_to_Roman.py
+├── 013_Roman_to_Integer
+│   ├── .coverage
+│   ├── 013_Roman_to_Integer.py
+│   ├── explain_013_Roman_to_Integer.txt
+│   ├── solution.py -> 013_Roman_to_Integer.py
+│   ├── test.out.txt
+│   ├── test_013_Roman_to_Integer.cov
+│   └── test_013_Roman_to_Integer.py
+├── 014_Longest_Common_Prefix
+│   ├── .coverage
+│   ├── 014_Longest_Common_Prefix.py
+│   ├── explain_014_Longest_Common_Prefix.txt
+│   ├── solution.py -> 014_Longest_Common_Prefix.py
+│   ├── test.out.txt
+│   ├── test_014_Longest_Common_Prefix.cov
+│   └── test_014_Longest_Common_Prefix.py
+├── 015_3Sum
+│   ├── .coverage
+│   ├── 015_3Sum.py
+│   ├── explain_015_3Sum.txt
+│   ├── solution.py -> 015_3Sum.py
+│   ├── test.out.txt
+│   ├── test_015_3Sum.cov
+│   └── test_015_3Sum.py
+├── 016_3Sum_Closest
+│   ├── .coverage
+│   ├── 016_3Sum_Closest.py
+│   ├── explain_016_3Sum_Closest.txt
+│   ├── solution.py -> 016_3Sum_Closest.py
+│   ├── test.out.txt
+│   ├── test_016_3Sum_Closest.cov
+│   └── test_016_3Sum_Closest.py
+├── 017_Letter_Combinations_of_a_Phone_Number
+│   ├── .coverage
+│   ├── 017_Letter_Combinations_of_a_Phone_Number.py
+│   ├── explain_017_Letter_Combinations_of_a_Phone_Number.txt
+│   ├── solution.py -> 017_Letter_Combinations_of_a_Phone_Number.py
+│   ├── test.out.txt
+│   ├── test_017_Letter_Combinations_of_a_Phone_Number.cov
+│   └── test_017_Letter_Combinations_of_a_Phone_Number.py
+├── 018_4Sum
+│   ├── .coverage
+│   ├── 018_4Sum.py
+│   ├── explain_018_4Sum.txt
+│   ├── solution.py -> 018_4Sum.py
+│   ├── test.out.txt
+│   ├── test_018_4Sum.cov
+│   └── test_018_4Sum.py
+├── 019_Remove_Nth_Node_From_End_of_List
+│   ├── .coverage
+│   ├── 019_Remove_Nth_Node_From_End_of_List.py
+│   ├── explain_019_Remove_Nth_Node_From_End_of_List.txt
+│   ├── solution.py -> 019_Remove_Nth_Node_From_End_of_List.py
+│   ├── test.out.txt
+│   ├── test_019_Remove_Nth_Node_From_End_of_List.cov
+│   └── test_019_Remove_Nth_Node_From_End_of_List.py
+├── 020_Valid_Parentheses
+│   ├── 020_Valid_Parentheses.py
+│   ├── explain_020_Valid_Parentheses.txt
+│   ├── solution.py -> 020_Valid_Parentheses.py
+│   ├── test.out.txt
+│   ├── test_020_Valid_Parentheses.cov
+│   └── test_020_Valid_Parentheses.py
+├── 021_Merge_Two_Sorted_Lists
+│   ├── 021_Merge_Two_Sorted_Lists.py
+│   ├── explain_021_Merge_Two_Sorted_Lists.txt
+│   ├── solution.py -> 021_Merge_Two_Sorted_Lists.py
+│   ├── test.out.txt
+│   ├── test_021_Merge_Two_Sorted_Lists.cov
+│   └── test_021_Merge_Two_Sorted_Lists.py
+├── 022_Generate_Parentheses
+│   ├── 022_Generate_Parentheses.py
+│   ├── explain_022_Generate_Parentheses.txt
+│   ├── solution.py -> 022_Generate_Parentheses.py
+│   ├── test.out.txt
+│   ├── test_022_Generate_Parentheses.cov
+│   └── test_022_Generate_Parentheses.py
+├── 023_Merge_k_Sorted_Lists
+│   ├── 023_Merge_k_Sorted_Lists.py
+│   ├── explain_023_Merge_k_Sorted_Lists.txt
+│   ├── solution.py -> 023_Merge_k_Sorted_Lists.py
+│   ├── test.out.txt
+│   ├── test_023_Merge_k_Sorted_Lists.cov
+│   └── test_023_Merge_k_Sorted_Lists.py
+├── 024_Swap_Nodes_in_Pairs
+│   ├── 024_Swap_Nodes_in_Pairs.py
+│   ├── explain_024_Swap_Nodes_in_Pairs.txt
+│   ├── solution.py -> 024_Swap_Nodes_in_Pairs.py
+│   ├── test.out.txt
+│   ├── test_024_Swap_Nodes_in_Pairs.cov
+│   └── test_024_Swap_Nodes_in_Pairs.py
+├── 025_Reverse_Nodes_i_
+│   ├── solution.py -> 025_Reverse_Nodes_i_.py
+│   └── test.out.txt
+├── 025_Reverse_Nodes_i_ k-Group
+│   ├── 025_Reverse_Nodes_i_ k-Group.py
+│   ├── solution.py -> 025_Reverse_Nodes_i_ k-Group.py
+│   ├── test.out.txt
+│   └── test_025_Reverse_Nodes_i_ k-Group.py
+├── 026_Remove_Duplicates_from_Sorted_Array
+│   ├── 026_Remove_Duplicates_from_Sorted_Array.py
+│   ├── explain_026_Remove_Duplicates_from_Sorted_Array.txt
+│   ├── solution.py -> 026_Remove_Duplicates_from_Sorted_Array.py
+│   ├── test.out.txt
+│   ├── test_026_Remove_Duplicates_from_Sorted_Array.cov
+│   └── test_026_Remove_Duplicates_from_Sorted_Array.py
+├── 027_Remove_Element
+│   ├── 027_Remove_Element.py
+│   ├── explain_027_Remove_Element.txt
+│   ├── solution.py -> 027_Remove_Element.py
+│   ├── test.out.txt
+│   ├── test_027_Remove_Element.cov
+│   └── test_027_Remove_Element.py
+├── 028_Implement_strStr()
+│   ├── 028_Implement_strStr().py
+│   ├── explain_028_Implement_strStr().txt
+│   ├── solution.py -> 028_Implement_strStr().py
+│   ├── test.out.txt
+│   ├── test_028_Implement_strStr().cov
+│   └── test_028_Implement_strStr().py
+├── 029_Divide_Two_Integers
+│   ├── 029_Divide_Two_Integers.py
+│   ├── explain_029_Divide_Two_Integers.txt
+│   ├── solution.py -> 029_Divide_Two_Integers.py
+│   ├── test.out.txt
+│   ├── test_029_Divide_Two_Integers.cov
+│   └── test_029_Divide_Two_Integers.py
+├── 030_Substring_with_Concatenation_of_All_Words
+│   ├── 030_Substring_with_Concatenation_of_All_Words.py
+│   ├── explain_030_Substring_with_Concatenation_of_All_Words.txt
+│   ├── solution.py -> 030_Substring_with_Concatenation_of_All_Words.py
+│   ├── test.out.txt
+│   ├── test_030_Substring_with_Concatenation_of_All_Words.cov
+│   └── test_030_Substring_with_Concatenation_of_All_Words.py
+├── 031_Next_Permutation
+│   ├── 031_Next_Permutation.py
+│   ├── explain_031_Next_Permutation.txt
+│   ├── solution.py -> 031_Next_Permutation.py
+│   ├── test.out.txt
+│   ├── test_031_Next_Permutation.cov
+│   └── test_031_Next_Permutation.py
+├── 032_Longest_Valid_Parentheses
+│   ├── 032_Longest_Valid_Parentheses.py
+│   ├── explain_032_Longest_Valid_Parentheses.txt
+│   ├── solution.py -> 032_Longest_Valid_Parentheses.py
+│   └── test.out.txt
+├── 033_Search_in_Rotated_Sorted_Array
+│   ├── 033_Search_in_Rotated_Sorted_Array.py
+│   ├── explain_033_Search_in_Rotated_Sorted_Array.txt
+│   ├── solution.py -> 033_Search_in_Rotated_Sorted_Array.py
+│   ├── test.out.txt
+│   ├── test_033_Search_in_Rotated_Sorted_Array.cov
+│   └── test_033_Search_in_Rotated_Sorted_Array.py
+├── 034_Search_for_a_Range
+│   ├── 034_Search_for_a_Range.py
+│   ├── explain_034_Search_for_a_Range.txt
+│   ├── solution.py -> 034_Search_for_a_Range.py
+│   ├── test.out.txt
+│   ├── test_034_Search_for_a_Range.cov
+│   └── test_034_Search_for_a_Range.py
+├── 035_Search_Insert_Position
+│   ├── 035_Search_Insert_Position.py
+│   ├── explain_035_Search_Insert_Position.txt
+│   ├── solution.py -> 035_Search_Insert_Position.py
+│   ├── test.out.txt
+│   ├── test_035_Search_Insert_Position.cov
+│   └── test_035_Search_Insert_Position.py
+├── 036_Valid
+│   ├── solution.py -> 036_Valid.py
+│   └── test.out.txt
+├── 036_Valid Sudoku
+│   ├── 036_Valid Sudoku.py
+│   ├── solution.py -> 036_Valid Sudoku.py
+│   ├── test.out.txt
+│   └── test_036_Valid Sudoku.py
+├── 037_Sudoku_Solver
+│   ├── 037_Sudoku_Solver.py
+│   ├── explain_037_Sudoku_Solver.txt
+│   ├── solution.py -> 037_Sudoku_Solver.py
+│   ├── test.out.txt
+│   ├── test_037_Sudoku_Solver.cov
+│   └── test_037_Sudoku_Solver.py
+├── 038_Count_and_Say
+│   ├── 038_Count_and_Say.py
+│   ├── explain_038_Count_and_Say.txt
+│   ├── solution.py -> 038_Count_and_Say.py
+│   ├── test.out.txt
+│   ├── test_038_Count_and_Say.cov
+│   └── test_038_Count_and_Say.py
+├── 039_Combination_Sum
+│   ├── 039_Combination_Sum.py
+│   ├── explain_039_Combination_Sum.txt
+│   ├── solution.py -> 039_Combination_Sum.py
+│   ├── test.out.txt
+│   ├── test_039_Combination_Sum.cov
+│   └── test_039_Combination_Sum.py
+├── 040_Combination_Sum_II
+│   ├── 040_Combination_Sum_II.py
+│   ├── explain_040_Combination_Sum_II.txt
+│   ├── solution.py -> 040_Combination_Sum_II.py
+│   ├── test.out.txt
+│   ├── test_040_Combination_Sum_II.cov
+│   └── test_040_Combination_Sum_II.py
+├── 041_First_Missing_Positive
+│   ├── 041_First_Missing_Positive.py
+│   ├── explain_041_First_Missing_Positive.txt
+│   ├── solution.py -> 041_First_Missing_Positive.py
+│   ├── test.out.txt
+│   ├── test_041_First_Missing_Positive.cov
+│   └── test_041_First_Missing_Positive.py
+├── 042_Trapping_Rain_Water
+│   ├── 042_Trapping_Rain_Water.py
+│   ├── explain_042_Trapping_Rain_Water.txt
+│   ├── solution.py -> 042_Trapping_Rain_Water.py
+│   ├── test.out.txt
+│   ├── test_042_Trapping_Rain_Water.cov
+│   └── test_042_Trapping_Rain_Water.py
+├── 043_Multiply_Strings
+│   ├── 043_Multiply_Strings.py
+│   ├── explain_043_Multiply_Strings.txt
+│   ├── solution.py -> 043_Multiply_Strings.py
+│   ├── test.out.txt
+│   ├── test_043_Multiply_Strings.cov
+│   └── test_043_Multiply_Strings.py
+├── 044_Wildcard_Matching
+│   ├── 044_Wildcard_Matching.py
+│   ├── explain_044_Wildcard_Matching.txt
+│   ├── solution.py -> 044_Wildcard_Matching.py
+│   ├── test.out.txt
+│   ├── test_044_Wildcard_Matching.cov
+│   └── test_044_Wildcard_Matching.py
+├── 045_Jump_Game_II
+│   ├── 045_Jump_Game_II.py
+│   ├── explain_045_Jump_Game_II.txt
+│   ├── solution.py -> 045_Jump_Game_II.py
+│   ├── test.out.txt
+│   ├── test_045_Jump_Game_II.cov
+│   └── test_045_Jump_Game_II.py
+├── 046_Permutations
+│   ├── 046_Permutations.py
+│   ├── explain_046_Permutations.txt
+│   ├── solution.py -> 046_Permutations.py
+│   ├── test.out.txt
+│   ├── test_046_Permutations.cov
+│   └── test_046_Permutations.py
+├── 047_Permutations_II
+│   ├── 047_Permutations_II.py
+│   ├── explain_047_Permutations_II.txt
+│   ├── solution.py -> 047_Permutations_II.py
+│   ├── test.out.txt
+│   ├── test_047_Permutations_II.cov
+│   └── test_047_Permutations_II.py
+├── 048_Rotate_Image
+│   ├── 048_Rotate_Image.py
+│   ├── explain_048_Rotate_Image.txt
+│   ├── solution.py -> 048_Rotate_Image.py
+│   ├── test.out.txt
+│   ├── test_048_Rotate_Image.cov
+│   └── test_048_Rotate_Image.py
+├── 049_Group_Anagrams
+│   ├── 049_Group_Anagrams.py
+│   ├── explain_049_Group_Anagrams.txt
+│   ├── solution.py -> 049_Group_Anagrams.py
+│   ├── test.out.txt
+│   ├── test_049_Group_Anagrams.cov
+│   └── test_049_Group_Anagrams.py
+├── 050_Pow(x,
+│   ├── solution.py -> 050_Pow(x,.py
+│   └── test.out.txt
+├── 050_Pow(x, n)
+│   ├── 050_Pow(x, n).py
+│   ├── solution.py -> 050_Pow(x, n).py
+│   ├── test.out.txt
+│   └── test_050_Pow(x, n).py
+├── 051_N-Queens
+│   ├── 051_N-Queens.py
+│   ├── explain_051_N-Queens.txt
+│   ├── solution.py -> 051_N-Queens.py
+│   ├── test.out.txt
+│   ├── test_051_N-Queens.cov
+│   └── test_051_N-Queens.py
+├── 052_N-Queens
+│   ├── solution.py -> 052_N-Queens.py
+│   └── test.out.txt
+├── 052_N-Queens II
+│   ├── 052_N-Queens II.py
+│   ├── solution.py -> 052_N-Queens II.py
+│   ├── test.out.txt
+│   └── test_052_N-Queens II.py
+├── 053_Maximum_Subarray
+│   ├── 053_Maximum_Subarray.py
+│   ├── explain_053_Maximum_Subarray.txt
+│   ├── solution.py -> 053_Maximum_Subarray.py
+│   ├── test.out.txt
+│   ├── test_053_Maximum_Subarray.cov
+│   └── test_053_Maximum_Subarray.py
+├── 054_Spiral_Matrix
+│   ├── 054_Spiral_Matrix.py
+│   ├── explain_054_Spiral_Matrix.txt
+│   ├── solution.py -> 054_Spiral_Matrix.py
+│   ├── test.out.txt
+│   ├── test_054_Spiral_Matrix.cov
+│   └── test_054_Spiral_Matrix.py
+├── 055_Jump_Game
+│   ├── 055_Jump_Game.py
+│   ├── explain_055_Jump_Game.txt
+│   ├── solution.py -> 055_Jump_Game.py
+│   ├── test.out.txt
+│   ├── test_055_Jump_Game.cov
+│   └── test_055_Jump_Game.py
+├── 056_Merge_Intervals
+│   ├── 056_Merge_Intervals.py
+│   ├── explain_056_Merge_Intervals.txt
+│   ├── solution.py -> 056_Merge_Intervals.py
+│   ├── test.out.txt
+│   ├── test_056_Merge_Intervals.cov
+│   └── test_056_Merge_Intervals.py
+├── 057_Insert_Interval
+│   ├── 057_Insert_Interval.py
+│   ├── explain_057_Insert_Interval.txt
+│   ├── solution.py -> 057_Insert_Interval.py
+│   ├── test.out.txt
+│   ├── test_057_Insert_Interval.cov
+│   └── test_057_Insert_Interval.py
+├── 058_Length_of_Last_Word
+│   ├── 058_Length_of_Last_Word.py
+│   ├── explain_058_Length_of_Last_Word.txt
+│   ├── solution.py -> 058_Length_of_Last_Word.py
+│   ├── test.out.txt
+│   ├── test_058_Length_of_Last_Word.cov
+│   └── test_058_Length_of_Last_Word.py
+├── 059_Spiral_Matrix_II
+│   ├── 059_Spiral_Matrix_II.py
+│   ├── explain_059_Spiral_Matrix_II.txt
+│   ├── solution.py -> 059_Spiral_Matrix_II.py
+│   ├── test.out.txt
+│   ├── test_059_Spiral_Matrix_II.cov
+│   └── test_059_Spiral_Matrix_II.py
+├── 060_Permutation_Sequence
+│   ├── 060_Permutation_Sequence.py
+│   ├── explain_060_Permutation_Sequence.txt
+│   ├── solution.py -> 060_Permutation_Sequence.py
+│   ├── test.out.txt
+│   ├── test_060_Permutation_Sequence.cov
+│   └── test_060_Permutation_Sequence.py
+├── 061_Rotate_List
+│   ├── 061_Rotate_List.py
+│   ├── explain_061_Rotate_List.txt
+│   ├── solution.py -> 061_Rotate_List.py
+│   ├── test.out.txt
+│   ├── test_061_Rotate_List.cov
+│   └── test_061_Rotate_List.py
+├── 062_Unique_Paths
+│   ├── 062_Unique_Paths.py
+│   ├── explain_062_Unique_Paths.txt
+│   ├── solution.py -> 062_Unique_Paths.py
+│   ├── test.out.txt
+│   ├── test_062_Unique_Paths.cov
+│   └── test_062_Unique_Paths.py
+├── 063_Unique_Paths_II
+│   ├── 063_Unique_Paths_II.py
+│   ├── explain_063_Unique_Paths_II.txt
+│   ├── solution.py -> 063_Unique_Paths_II.py
+│   ├── test.out.txt
+│   ├── test_063_Unique_Paths_II.cov
+│   └── test_063_Unique_Paths_II.py
+├── 064_Minimum_Path_Sum
+│   ├── 064_Minimum_Path_Sum.py
+│   ├── explain_064_Minimum_Path_Sum.txt
+│   ├── solution.py -> 064_Minimum_Path_Sum.py
+│   ├── test.out.txt
+│   ├── test_064_Minimum_Path_Sum.cov
+│   └── test_064_Minimum_Path_Sum.py
+├── 065_Valid_Number
+│   ├── 065_Valid_Number.py
+│   ├── explain_065_Valid_Number.txt
+│   ├── solution.py -> 065_Valid_Number.py
+│   ├── test.out.txt
+│   ├── test_065_Valid_Number.cov
+│   └── test_065_Valid_Number.py
+├── 066_Plus_One
+│   ├── 066_Plus_One.py
+│   ├── explain_066_Plus_One.txt
+│   ├── solution.py -> 066_Plus_One.py
+│   ├── test.out.txt
+│   ├── test_066_Plus_One.cov
+│   └── test_066_Plus_One.py
+├── 067_Add_Binary
+│   ├── 067_Add_Binary.py
+│   ├── explain_067_Add_Binary.txt
+│   ├── solution.py -> 067_Add_Binary.py
+│   ├── test.out.txt
+│   ├── test_067_Add_Binary.cov
+│   └── test_067_Add_Binary.py
+├── 068_Text_Justification
+│   ├── 068_Text_Justification.py
+│   ├── explain_068_Text_Justification.txt
+│   ├── solution.py -> 068_Text_Justification.py
+│   ├── test.out.txt
+│   ├── test_068_Text_Justification.cov
+│   └── test_068_Text_Justification.py
+├── 069_Sqrt(x)
+│   ├── 069_Sqrt(x).py
+│   ├── explain_069_Sqrt(x).txt
+│   ├── solution.py -> 069_Sqrt(x).py
+│   ├── test.out.txt
+│   ├── test_069_Sqrt(x).cov
+│   └── test_069_Sqrt(x).py
+├── 070_Climbing_Stairs
+│   ├── 070_Climbing_Stairs.py
+│   ├── explain_070_Climbing_Stairs.txt
+│   ├── solution.py -> 070_Climbing_Stairs.py
+│   ├── test.out.txt
+│   ├── test_070_Climbing_Stairs.cov
+│   └── test_070_Climbing_Stairs.py
+├── 071_Simplify_Path
+│   ├── 071_Simplify_Path.py
+│   ├── explain_071_Simplify_Path.txt
+│   ├── solution.py -> 071_Simplify_Path.py
+│   └── test.out.txt
+├── 072_Edit_Distance
+│   ├── 072_Edit_Distance.py
+│   ├── explain_072_Edit_Distance.txt
+│   ├── solution.py -> 072_Edit_Distance.py
+│   ├── test.out.txt
+│   ├── test_072_Edit_Distance.cov
+│   └── test_072_Edit_Distance.py
+├── 073_Set_Matrix_Zeroes
+│   ├── 073_Set_Matrix_Zeroes.py
+│   ├── explain_073_Set_Matrix_Zeroes.txt
+│   ├── solution.py -> 073_Set_Matrix_Zeroes.py
+│   ├── test.out.txt
+│   ├── test_073_Set_Matrix_Zeroes.cov
+│   └── test_073_Set_Matrix_Zeroes.py
+├── 074_Search_a_2D_Matrix
+│   ├── 074_Search_a_2D_Matrix.py
+│   ├── explain_074_Search_a_2D_Matrix.txt
+│   ├── solution.py -> 074_Search_a_2D_Matrix.py
+│   ├── test.out.txt
+│   ├── test_074_Search_a_2D_Matrix.cov
+│   └── test_074_Search_a_2D_Matrix.py
+├── 075_Sort_Colors
+│   ├── 075_Sort_Colors.py
+│   ├── explain_075_Sort_Colors.txt
+│   ├── solution.py -> 075_Sort_Colors.py
+│   ├── test.out.txt
+│   ├── test_075_Sort_Colors.cov
+│   └── test_075_Sort_Colors.py
+├── 076_Minimum_Window_Substring
+│   ├── 076_Minimum_Window_Substring.py
+│   ├── explain_076_Minimum_Window_Substring.txt
+│   ├── solution.py -> 076_Minimum_Window_Substring.py
+│   ├── test.out.txt
+│   ├── test_076_Minimum_Window_Substring.cov
+│   └── test_076_Minimum_Window_Substring.py
+├── 077_Combinations
+│   ├── 077_Combinations.py
+│   ├── explain_077_Combinations.txt
+│   ├── solution.py -> 077_Combinations.py
+│   ├── test.out.txt
+│   ├── test_077_Combinations.cov
+│   └── test_077_Combinations.py
+├── 078_Subsets
+│   ├── 078_Subsets.py
+│   ├── explain_078_Subsets.txt
+│   ├── solution.py -> 078_Subsets.py
+│   ├── test.out.txt
+│   ├── test_078_Subsets.cov
+│   └── test_078_Subsets.py
+├── 079_Word_Search
+│   ├── 079_Word_Search.py
+│   ├── explain_079_Word_Search.txt
+│   ├── solution.py -> 079_Word_Search.py
+│   ├── test.out.txt
+│   ├── test_079_Word_Search.cov
+│   └── test_079_Word_Search.py
+├── 080_Remove_Duplicates_from_Sorted_Array_II
+│   ├── 080_Remove_Duplicates_from_Sorted_Array_II.py
+│   ├── explain_080_Remove_Duplicates_from_Sorted_Array_II.txt
+│   ├── solution.py -> 080_Remove_Duplicates_from_Sorted_Array_II.py
+│   ├── test.out.txt
+│   ├── test_080_Remove_Duplicates_from_Sorted_Array_II.cov
+│   └── test_080_Remove_Duplicates_from_Sorted_Array_II.py
+├── 081_Search_in_Rotated_Sorted_Array_II
+│   ├── 081_Search_in_Rotated_Sorted_Array_II.py
+│   ├── explain_081_Search_in_Rotated_Sorted_Array_II.txt
+│   ├── solution.py -> 081_Search_in_Rotated_Sorted_Array_II.py
+│   ├── test.out.txt
+│   ├── test_081_Search_in_Rotated_Sorted_Array_II.cov
+│   └── test_081_Search_in_Rotated_Sorted_Array_II.py
+├── 083_Remove_Duplicates_from_Sorted_List
+│   ├── 083_Remove_Duplicates_from_Sorted_List.py
+│   ├── explain_083_Remove_Duplicates_from_Sorted_List.txt
+│   ├── solution.py -> 083_Remove_Duplicates_from_Sorted_List.py
+│   ├── test.out.txt
+│   ├── test_083_Remove_Duplicates_from_Sorted_List.cov
+│   └── test_083_Remove_Duplicates_from_Sorted_List.py
+├── 084_Largest_Rectangle_in_Histogram
+│   ├── 084_Largest_Rectangle_in_Histogram.py
+│   ├── explain_084_Largest_Rectangle_in_Histogram.txt
+│   ├── solution.py -> 084_Largest_Rectangle_in_Histogram.py
+│   └── test.out.txt
+├── 085_Maximal_Rectangle
+│   ├── 085_Maximal_Rectangle.py
+│   ├── Maximal_Rectangle.py
+│   ├── explain_085_Maximal_Rectangle.txt
+│   ├── solution.py -> 085_Maximal_Rectangle.py
+│   ├── test.out.txt
+│   ├── test_085_Maximal_Rectangle.cov
+│   └── test_085_Maximal_Rectangle.py
+├── 086_Partition_List
+│   ├── 086_Partition_List.py
+│   ├── explain_086_Partition_List.txt
+│   ├── solution.py -> 086_Partition_List.py
+│   ├── test.out.txt
+│   ├── test_086_Partition_List.cov
+│   └── test_086_Partition_List.py
+├── 087_Scramble_String
+│   ├── 087_Scramble_String.py
+│   ├── explain_087_Scramble_String.txt
+│   ├── solution.py -> 087_Scramble_String.py
+│   ├── test.out.txt
+│   ├── test_087_Scramble_String.cov
+│   └── test_087_Scramble_String.py
+├── 088_Merge_Sorted_Array
+│   ├── 088_Merge_Sorted_Array.py
+│   ├── explain_088_Merge_Sorted_Array.txt
+│   ├── solution.py -> 088_Merge_Sorted_Array.py
+│   ├── test.out.txt
+│   ├── test_088_Merge_Sorted_Array.cov
+│   └── test_088_Merge_Sorted_Array.py
+├── 089_Gray_Code
+│   ├── 089_Gray_Code.py
+│   ├── explain_089_Gray_Code.txt
+│   ├── solution.py -> 089_Gray_Code.py
+│   ├── test.out.txt
+│   ├── test_089_Gray_Code.cov
+│   └── test_089_Gray_Code.py
+├── 090_Subsets_II
+│   ├── 090_Subsets_II.py
+│   ├── explain_090_Subsets_II.txt
+│   ├── solution.py -> 090_Subsets_II.py
+│   ├── test.out.txt
+│   ├── test_090_Subsets_II.cov
+│   └── test_090_Subsets_II.py
+├── 091_Decode_Ways
+│   ├── 091_Decode_Ways.py
+│   ├── explain_091_Decode_Ways.txt
+│   ├── solution.py -> 091_Decode_Ways.py
+│   ├── test.out.txt
+│   ├── test_091_Decode_Ways.cov
+│   └── test_091_Decode_Ways.py
+├── 092_Reverse_Linked_Lis_
+│   ├── solution.py -> 092_Reverse_Linked_Lis_.py
+│   └── test.out.txt
+├── 092_Reverse_Linked_Lis_ II
+│   ├── 092_Reverse_Linked_Lis_ II.py
+│   ├── solution.py -> 092_Reverse_Linked_Lis_ II.py
+│   ├── test.out.txt
+│   └── test_092_Reverse_Linked_Lis_ II.py
+├── 093_Restore_IP_Addresses
+│   ├── 093_Restore_IP_Addresses.py
+│   ├── explain_093_Restore_IP_Addresses.txt
+│   ├── solution.py -> 093_Restore_IP_Addresses.py
+│   ├── test.out.txt
+│   ├── test_093_Restore_IP_Addresses.cov
+│   └── test_093_Restore_IP_Addresses.py
+├── 094_Binary_Tree_Inorder_Traversal
+│   ├── 094_Binary_Tree_Inorder_Traversal.py
+│   ├── explain_094_Binary_Tree_Inorder_Traversal.txt
+│   ├── solution.py -> 094_Binary_Tree_Inorder_Traversal.py
+│   ├── test.out.txt
+│   ├── test_094_Binary_Tree_Inorder_Traversal.cov
+│   └── test_094_Binary_Tree_Inorder_Traversal.py
+├── 095_Unique_Binary_Search_Trees_II
+│   ├── 095_Unique_Binary_Search_Trees_II.py
+│   ├── explain_095_Unique_Binary_Search_Trees_II.txt
+│   ├── solution.py -> 095_Unique_Binary_Search_Trees_II.py
+│   ├── test.out.txt
+│   ├── test_095_Unique_Binary_Search_Trees_II.cov
+│   └── test_095_Unique_Binary_Search_Trees_II.py
+├── 096_Unique_Binary_Search_Trees
+│   ├── 096_Unique_Binary_Search_Trees.py
+│   ├── explain_096_Unique_Binary_Search_Trees.txt
+│   ├── solution.py -> 096_Unique_Binary_Search_Trees.py
+│   ├── test.out.txt
+│   ├── test_096_Unique_Binary_Search_Trees.cov
+│   └── test_096_Unique_Binary_Search_Trees.py
+├── 097_Interleaving_String
+│   ├── 097_Interleaving_String.py
+│   ├── explain_097_Interleaving_String.txt
+│   ├── solution.py -> 097_Interleaving_String.py
+│   ├── test.out.txt
+│   ├── test_097_Interleaving_String.cov
+│   └── test_097_Interleaving_String.py
+├── 098_Validate_Binary_Search_Tree
+│   ├── 098_Validate_Binary_Search_Tree.py
+│   ├── explain_098_Validate_Binary_Search_Tree.txt
+│   ├── solution.py -> 098_Validate_Binary_Search_Tree.py
+│   ├── test.out.txt
+│   ├── test_098_Validate_Binary_Search_Tree.cov
+│   └── test_098_Validate_Binary_Search_Tree.py
+├── 099_Recover_Binary_Search_Tree
+│   ├── 099_Recover_Binary_Search_Tree.py
+│   ├── explain_099_Recover_Binary_Search_Tree.txt
+│   ├── solution.py -> 099_Recover_Binary_Search_Tree.py
+│   ├── test.out.txt
+│   ├── test_099_Recover_Binary_Search_Tree.cov
+│   └── test_099_Recover_Binary_Search_Tree.py
+├── 100_Same_Tree
+│   ├── 100_Same_Tree.py
+│   ├── explain_100_Same_Tree.txt
+│   ├── solution.py -> 100_Same_Tree.py
+│   ├── test.out.txt
+│   ├── test_100_Same_Tree.cov
+│   └── test_100_Same_Tree.py
+├── 101_Symmetric_Tree
+│   ├── 101_Symmetric_Tree.py
+│   ├── explain_101_Symmetric_Tree.txt
+│   ├── solution.py -> 101_Symmetric_Tree.py
+│   ├── test.out.txt
+│   ├── test_101_Symmetric_Tree.cov
+│   └── test_101_Symmetric_Tree.py
+├── 102_Binary_Tree_Level_Order_Traversal
+│   ├── 102_Binary_Tree_Level_Order_Traversal.py
+│   ├── explain_102_Binary_Tree_Level_Order_Traversal.txt
+│   ├── solution.py -> 102_Binary_Tree_Level_Order_Traversal.py
+│   ├── test.out.txt
+│   ├── test_102_Binary_Tree_Level_Order_Traversal.cov
+│   └── test_102_Binary_Tree_Level_Order_Traversal.py
+├── 103_Binary_Tree_Zigzag_Level_Order_Traversal
+│   ├── 103_Binary_Tree_Zigzag_Level_Order_Traversal.py
+│   ├── explain_103_Binary_Tree_Zigzag_Level_Order_Traversal.txt
+│   ├── solution.py -> 103_Binary_Tree_Zigzag_Level_Order_Traversal.py
+│   ├── test.out.txt
+│   ├── test_103_Binary_Tree_Zigzag_Level_Order_Traversal.cov
+│   └── test_103_Binary_Tree_Zigzag_Level_Order_Traversal.py
+├── 104_Maximum_Depth_of_Binary_Tree
+│   ├── 104_Maximum_Depth_of_Binary_Tree.py
+│   ├── explain_104_Maximum_Depth_of_Binary_Tree.txt
+│   ├── solution.py -> 104_Maximum_Depth_of_Binary_Tree.py
+│   ├── test.out.txt
+│   ├── test_104_Maximum_Depth_of_Binary_Tree.cov
+│   └── test_104_Maximum_Depth_of_Binary_Tree.py
+├── 105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal
+│   ├── 105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.py
+│   ├── explain_105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.txt
+│   ├── solution.py -> 105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.py
+│   └── test.out.txt
+├── 1064_Fixed_Point
+│   ├── 1064_Fixed_Point.py
+│   ├── explain_1064_Fixed_Point.txt
+│   ├── solution.py -> 1064_Fixed_Point.py
+│   ├── test.out.txt
+│   ├── test_1064_Fixed_Point.cov
+│   └── test_1064_Fixed_Point.py
+├── 106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal
+│   ├── 106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.py
+│   ├── explain_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.txt
+│   ├── solution.py -> 106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.py
+│   ├── test.out.txt
+│   ├── test_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.cov
+│   └── test_106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.py
+├── 107_Binary_Tree_Level_Order_Traversal_II
+│   ├── 107_Binary_Tree_Level_Order_Traversal_II.py
+│   ├── explain_107_Binary_Tree_Level_Order_Traversal_II.txt
+│   ├── solution.py -> 107_Binary_Tree_Level_Order_Traversal_II.py
+│   ├── test.out.txt
+│   ├── test_107_Binary_Tree_Level_Order_Traversal_II.cov
+│   └── test_107_Binary_Tree_Level_Order_Traversal_II.py
+├── 1089_Duplicate_Zeros
+│   ├── 1089_Duplicate_Zeros.py
+│   ├── explain_1089_Duplicate_Zeros.txt
+│   ├── solution.py -> 1089_Duplicate_Zeros.py
+│   ├── test.out.txt
+│   ├── test_1089_Duplicate_Zeros.cov
+│   └── test_1089_Duplicate_Zeros.py
+├── 108_Convert_Sorted_Array_to_Binary_Search_Tree
+│   ├── 108_Convert_Sorted_Array_to_Binary_Search_Tree.py
+│   ├── explain_108_Convert_Sorted_Array_to_Binary_Search_Tree.txt
+│   ├── solution.py -> 108_Convert_Sorted_Array_to_Binary_Search_Tree.py
+│   ├── test.out.txt
+│   ├── test_108_Convert_Sorted_Array_to_Binary_Search_Tree.cov
+│   └── test_108_Convert_Sorted_Array_to_Binary_Search_Tree.py
+├── 109_Convert_Sorted_List_to_Binary_Search_Tree
+│   ├── 109_Convert_Sorted_List_to_Binary_Search_Tree.py
+│   ├── explain_109_Convert_Sorted_List_to_Binary_Search_Tree.txt
+│   ├── solution.py -> 109_Convert_Sorted_List_to_Binary_Search_Tree.py
+│   ├── test.out.txt
+│   ├── test_109_Convert_Sorted_List_to_Binary_Search_Tree.cov
+│   └── test_109_Convert_Sorted_List_to_Binary_Search_Tree.py
+├── 1108_Defanging_an_IP_Address
+│   ├── 1108_Defanging_an_IP_Address.py
+│   ├── explain_1108_Defanging_an_IP_Address.txt
+│   ├── solution.py -> 1108_Defanging_an_IP_Address.py
+│   ├── test.out.txt
+│   ├── test_1108_Defanging_an_IP_Address.cov
+│   └── test_1108_Defanging_an_IP_Address.py
+├── 110_Balanced_Binary_Tree
+│   ├── 110_Balanced_Binary_Tree.py
+│   ├── explain_110_Balanced_Binary_Tree.txt
+│   ├── solution.py -> 110_Balanced_Binary_Tree.py
+│   ├── test.out.txt
+│   ├── test_110_Balanced_Binary_Tree.cov
+│   └── test_110_Balanced_Binary_Tree.py
+├── 111_Minimum_Depth_of_Binary_Tree
+│   ├── 111_Minimum_Depth_of_Binary_Tree.py
+│   ├── explain_111_Minimum_Depth_of_Binary_Tree.txt
+│   ├── solution.py -> 111_Minimum_Depth_of_Binary_Tree.py
+│   ├── test.out.txt
+│   ├── test_111_Minimum_Depth_of_Binary_Tree.cov
+│   └── test_111_Minimum_Depth_of_Binary_Tree.py
+├── 112_Path_Sum
+│   ├── 112_Path_Sum.py
+│   ├── explain_112_Path_Sum.txt
+│   ├── solution.py -> 112_Path_Sum.py
+│   ├── test.out.txt
+│   ├── test_112_Path_Sum.cov
+│   └── test_112_Path_Sum.py
+├── 113_Path_Sum_II
+│   ├── 113_Path_Sum_II.py
+│   ├── explain_113_Path_Sum_II.txt
+│   ├── solution.py -> 113_Path_Sum_II.py
+│   ├── test.out.txt
+│   ├── test_113_Path_Sum_II.cov
+│   └── test_113_Path_Sum_II.py
+├── 114_Flatten_Binary_Tree_to_Linked_List
+│   ├── 114_Flatten_Binary_Tree_to_Linked_List.py
+│   ├── explain_114_Flatten_Binary_Tree_to_Linked_List.txt
+│   ├── solution.py -> 114_Flatten_Binary_Tree_to_Linked_List.py
+│   ├── test.out.txt
+│   ├── test_114_Flatten_Binary_Tree_to_Linked_List.cov
+│   └── test_114_Flatten_Binary_Tree_to_Linked_List.py
+├── 115_Distinct_Subsequences
+│   ├── 115_Distinct_Subsequences.py
+│   ├── explain_115_Distinct_Subsequences.txt
+│   ├── solution.py -> 115_Distinct_Subsequences.py
+│   ├── test.out.txt
+│   ├── test_115_Distinct_Subsequences.cov
+│   └── test_115_Distinct_Subsequences.py
+├── 116_Populating_Next_Right_Pointers_in_Each_Node
+│   ├── 116_Populating_Next_Right_Pointers_in_Each_Node.py
+│   ├── explain_116_Populating_Next_Right_Pointers_in_Each_Node.txt
+│   ├── solution.py -> 116_Populating_Next_Right_Pointers_in_Each_Node.py
+│   ├── test.out.txt
+│   ├── test_116_Populating_Next_Right_Pointers_in_Each_Node.cov
+│   └── test_116_Populating_Next_Right_Pointers_in_Each_Node.py
+├── 117_Populating_Next_Right_Pointers_in_Each_Node_II
+│   ├── 117_Populating_Next_Right_Pointers_in_Each_Node_II.py
+│   ├── explain_117_Populating_Next_Right_Pointers_in_Each_Node_II.txt
+│   ├── solution.py -> 117_Populating_Next_Right_Pointers_in_Each_Node_II.py
+│   ├── test.out.txt
+│   ├── test_117_Populating_Next_Right_Pointers_in_Each_Node_II.cov
+│   └── test_117_Populating_Next_Right_Pointers_in_Each_Node_II.py
+├── 118_Pascal's_Triangle
+│   ├── 118_Pascal's_Triangle.py
+│   ├── explain_118_Pascal's_Triangle.txt
+│   ├── solution.py -> 118_Pascal's_Triangle.py
+│   ├── test.out.txt
+│   ├── test_118_Pascal's_Triangle.cov
+│   └── test_118_Pascal's_Triangle.py
+├── 119_Pascal's_Triangle_II
+│   ├── 119_Pascal's_Triangle_II.py
+│   ├── explain_119_Pascal's_Triangle_II.txt
+│   ├── solution.py -> 119_Pascal's_Triangle_II.py
+│   ├── test.out.txt
+│   ├── test_119_Pascal's_Triangle_II.cov
+│   └── test_119_Pascal's_Triangle_II.py
+├── 120_Triangle
+│   ├── 120_Triangle.py
+│   ├── explain_120_Triangle.txt
+│   ├── solution.py -> 120_Triangle.py
+│   ├── test.out.txt
+│   ├── test_120_Triangle.cov
+│   └── test_120_Triangle.py
+├── 121_Best_Time_to_Buy_and_Sell_Stock
+│   ├── 121_Best_Time_to_Buy_and_Sell_Stock.py
+│   ├── explain_121_Best_Time_to_Buy_and_Sell_Stock.txt
+│   ├── solution.py -> 121_Best_Time_to_Buy_and_Sell_Stock.py
+│   ├── test.out.txt
+│   ├── test_121_Best_Time_to_Buy_and_Sell_Stock.cov
+│   └── test_121_Best_Time_to_Buy_and_Sell_Stock.py
+├── 122_Best_Time_to_Buy_and_Sell_Stock_II
+│   ├── 122_Best_Time_to_Buy_and_Sell_Stock_II.py
+│   ├── explain_122_Best_Time_to_Buy_and_Sell_Stock_II.txt
+│   ├── solution.py -> 122_Best_Time_to_Buy_and_Sell_Stock_II.py
+│   ├── test.out.txt
+│   ├── test_122_Best_Time_to_Buy_and_Sell_Stock_II.cov
+│   └── test_122_Best_Time_to_Buy_and_Sell_Stock_II.py
+├── 123_Best_Time_to_Buy_and_Sell_Stock_III
+│   ├── 123_Best_Time_to_Buy_and_Sell_Stock_III.py
+│   ├── explain_123_Best_Time_to_Buy_and_Sell_Stock_III.txt
+│   ├── solution.py -> 123_Best_Time_to_Buy_and_Sell_Stock_III.py
+│   ├── test.out.txt
+│   ├── test_123_Best_Time_to_Buy_and_Sell_Stock_III.cov
+│   └── test_123_Best_Time_to_Buy_and_Sell_Stock_III.py
+├── 124_Binary_Tree_Maximum_Path_Sum
+│   ├── 124_Binary_Tree_Maximum_Path_Sum.py
+│   ├── explain_124_Binary_Tree_Maximum_Path_Sum.txt
+│   ├── solution.py -> 124_Binary_Tree_Maximum_Path_Sum.py
+│   ├── test.out.txt
+│   ├── test_124_Binary_Tree_Maximum_Path_Sum.cov
+│   └── test_124_Binary_Tree_Maximum_Path_Sum.py
+├── 125_Valid_Palindrome
+│   ├── 125_Valid_Palindrome.py
+│   ├── explain_125_Valid_Palindrome.txt
+│   ├── solution.py -> 125_Valid_Palindrome.py
+│   ├── test.out.txt
+│   ├── test_125_Valid_Palindrome.cov
+│   └── test_125_Valid_Palindrome.py
+├── 1260_Shift_2D_Grid
+│   ├── 1260_Shift_2D_Grid.py
+│   ├── explain_1260_Shift_2D_Grid.txt
+│   ├── solution.py -> 1260_Shift_2D_Grid.py
+│   ├── test.out.txt
+│   ├── test_1260_Shift_2D_Grid.cov
+│   └── test_1260_Shift_2D_Grid.py
+├── 126_Word_Ladder_II
+│   ├── 126_Word_Ladder_II.py
+│   ├── explain_126_Word_Ladder_II.txt
+│   ├── solution.py -> 126_Word_Ladder_II.py
+│   ├── test.out.txt
+│   ├── test_126_Word_Ladder_II.cov
+│   └── test_126_Word_Ladder_II.py
+├── 127_Word_Ladder
+│   ├── 127_Word_Ladder.py
+│   ├── solution.py -> 127_Word_Ladder.py
+│   └── test.out.txt
+├── 128_Longest_Consecutive_Sequence
+│   ├── 128_Longest_Consecutive_Sequence.py
+│   ├── explain_128_Longest_Consecutive_Sequence.txt
+│   ├── solution.py -> 128_Longest_Consecutive_Sequence.py
+│   ├── test.out.txt
+│   ├── test_128_Longest_Consecutive_Sequence.cov
+│   └── test_128_Longest_Consecutive_Sequence.py
+├── 1290_Convert_Binary_Number_in_a_Linked_List_to_Integer
+│   ├── 1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.py
+│   ├── explain_1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.txt
+│   ├── solution.py -> 1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.py
+│   ├── test.out.txt
+│   ├── test_1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.cov
+│   └── test_1290_Convert_Binary_Number_in_a_Linked_List_to_Integer.py
+├── 129_Sum_Root_to_Leaf_Numbers
+│   ├── 129_Sum_Root_to_Leaf_Numbers.py
+│   ├── explain_129_Sum_Root_to_Leaf_Numbers.txt
+│   ├── solution.py -> 129_Sum_Root_to_Leaf_Numbers.py
+│   ├── test.out.txt
+│   ├── test_129_Sum_Root_to_Leaf_Numbers.cov
+│   └── test_129_Sum_Root_to_Leaf_Numbers.py
+├── 1304_Find_N_Unique_Integers_Sum_up_to_Zero
+│   ├── 1304_Find_N_Unique_Integers_Sum_up_to_Zero.py
+│   ├── explain_1304_Find_N_Unique_Integers_Sum_up_to_Zero.txt
+│   ├── solution.py -> 1304_Find_N_Unique_Integers_Sum_up_to_Zero.py
+│   ├── test.out.txt
+│   ├── test_1304_Find_N_Unique_Integers_Sum_up_to_Zero.cov
+│   └── test_1304_Find_N_Unique_Integers_Sum_up_to_Zero.py
+├── 130_Surrounded_Regions
+│   ├── 130_Surrounded_Regions.py
+│   ├── explain_130_Surrounded_Regions.txt
+│   ├── solution.py -> 130_Surrounded_Regions.py
+│   ├── test.out.txt
+│   ├── test_130_Surrounded_Regions.cov
+│   └── test_130_Surrounded_Regions.py
+├── 1310_XOR_Queries_of_a_Subarray
+│   ├── 1310_XOR_Queries_of_a_Subarray.py
+│   ├── explain_1310_XOR_Queries_of_a_Subarray.txt
+│   ├── solution.py -> 1310_XOR_Queries_of_a_Subarray.py
+│   ├── test.out.txt
+│   ├── test_1310_XOR_Queries_of_a_Subarray.cov
+│   └── test_1310_XOR_Queries_of_a_Subarray.py
+├── 131_Palindrome_Partitioning
+│   ├── 131_Palindrome_Partitioning.py
+│   ├── explain_131_Palindrome_Partitioning.txt
+│   ├── solution.py -> 131_Palindrome_Partitioning.py
+│   ├── test.out.txt
+│   ├── test_131_Palindrome_Partitioning.cov
+│   └── test_131_Palindrome_Partitioning.py
+├── 1323_Maximum_69_Number
+│   ├── 1323_Maximum_69_Number.py
+│   ├── explain_1323_Maximum_69_Number.txt
+│   ├── solution.py -> 1323_Maximum_69_Number.py
+│   ├── test.out.txt
+│   ├── test_1323_Maximum_69_Number.cov
+│   └── test_1323_Maximum_69_Number.py
+├── 132_Palindrome_Partitioning_II
+│   ├── 132_Palindrome_Partitioning_II.py
+│   ├── explain_132_Palindrome_Partitioning_II.txt
+│   ├── solution.py -> 132_Palindrome_Partitioning_II.py
+│   ├── test.out.txt
+│   ├── test_132_Palindrome_Partitioning_II.cov
+│   └── test_132_Palindrome_Partitioning_II.py
+├── 1337_The_K_Weakest_Rows_in_a_Matrix
+│   ├── 1337_The_K_Weakest_Rows_in_a_Matrix.py
+│   ├── explain_1337_The_K_Weakest_Rows_in_a_Matrix.txt
+│   ├── solution.py -> 1337_The_K_Weakest_Rows_in_a_Matrix.py
+│   ├── test.out.txt
+│   ├── test_1337_The_K_Weakest_Rows_in_a_Matrix.cov
+│   └── test_1337_The_K_Weakest_Rows_in_a_Matrix.py
+├── 133_Clone_Graph
+│   ├── 133_Clone_Graph.py
+│   ├── explain_133_Clone_Graph.txt
+│   ├── solution.py -> 133_Clone_Graph.py
+│   ├── test.out.txt
+│   ├── test_133_Clone_Graph.cov
+│   └── test_133_Clone_Graph.py
+├── 1342_Number_of_Steps_to_Reduce_a_Number_to_Zero
+│   ├── 1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.py
+│   ├── explain_1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.txt
+│   ├── solution.py -> 1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.py
+│   ├── test.out.txt
+│   ├── test_1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.cov
+│   └── test_1342_Number_of_Steps_to_Reduce_a_Number_to_Zero.py
+├── 134_Gas_Station
+│   ├── 134_Gas_Station.py
+│   ├── explain_134_Gas_Station.txt
+│   ├── solution.py -> 134_Gas_Station.py
+│   ├── test.out.txt
+│   ├── test_134_Gas_Station.cov
+│   └── test_134_Gas_Station.py
+├── 135_Candy
+│   ├── 135_Candy.py
+│   ├── explain_135_Candy.txt
+│   ├── solution.py -> 135_Candy.py
+│   ├── test.out.txt
+│   ├── test_135_Candy.cov
+│   └── test_135_Candy.py
+├── 1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number
+│   ├── 1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number.py
+│   ├── explain_1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number.txt
+│   ├── solution.py -> 1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number.py
+│   ├── test.out.txt
+│   ├── test_1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number.cov
+│   └── test_1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number.py
+├── 136_Single_Number
+│   ├── 136_Single_Number.py
+│   ├── explain_136_Single_Number.txt
+│   ├── solution.py -> 136_Single_Number.py
+│   ├── test.out.txt
+│   ├── test_136_Single_Number.cov
+│   └── test_136_Single_Number.py
+├── 1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution
+│   ├── 1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution.py
+│   ├── explain_1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution.txt
+│   ├── solution.py -> 1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution.py
+│   ├── test.out.txt
+│   ├── test_1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution.cov
+│   └── test_1374_Generate_a_String_With_Characters_That_Have_Odd_Counts_Solution.py
+├── 137_Single_Number_II
+│   ├── 137_Single_Number_II.py
+│   ├── explain_137_Single_Number_II.txt
+│   ├── solution.py -> 137_Single_Number_II.py
+│   ├── test.out.txt
+│   ├── test_137_Single_Number_II.cov
+│   └── test_137_Single_Number_II.py
+├── 138_Copy_List_with_Random_Pointer
+│   ├── 138_Copy_List_with_Random_Pointer.py
+│   ├── explain_138_Copy_List_with_Random_Pointer.txt
+│   ├── solution.py -> 138_Copy_List_with_Random_Pointer.py
+│   ├── test.out.txt
+│   ├── test_138_Copy_List_with_Random_Pointer.cov
+│   └── test_138_Copy_List_with_Random_Pointer.py
+├── 139_Word_Break
+│   ├── 139_Word_Break.py
+│   ├── explain_139_Word_Break.txt
+│   ├── solution.py -> 139_Word_Break.py
+│   ├── test.out.txt
+│   ├── test_139_Word_Break.cov
+│   └── test_139_Word_Break.py
+├── 140_Word_Break_II
+│   ├── 140_Word_Break_II.py
+│   ├── explain_140_Word_Break_II.txt
+│   ├── solution.py -> 140_Word_Break_II.py
+│   ├── test.out.txt
+│   ├── test_140_Word_Break_II.cov
+│   └── test_140_Word_Break_II.py
+├── 141_Linked_List_Cycle
+│   ├── 141_Linked_List_Cycle.py
+│   ├── explain_141_Linked_List_Cycle.txt
+│   ├── solution.py -> 141_Linked_List_Cycle.py
+│   ├── test.out.txt
+│   ├── test_141_Linked_List_Cycle.cov
+│   └── test_141_Linked_List_Cycle.py
+├── 142_Linked_List_Cycle_II
+│   ├── 142_Linked_List_Cycle_II.py
+│   ├── explain_142_Linked_List_Cycle_II.txt
+│   ├── solution.py -> 142_Linked_List_Cycle_II.py
+│   ├── test.out.txt
+│   ├── test_142_Linked_List_Cycle_II.cov
+│   └── test_142_Linked_List_Cycle_II.py
+├── 143_Reorder_List
+│   ├── 143_Reorder_List.py
+│   ├── explain_143_Reorder_List.txt
+│   ├── solution.py -> 143_Reorder_List.py
+│   ├── test.out.txt
+│   ├── test_143_Reorder_List.cov
+│   └── test_143_Reorder_List.py
+├── 144_Binary_Tree_Preorder_Traversal
+│   ├── 144_Binary_Tree_Preorder_Traversal.py
+│   ├── explain_144_Binary_Tree_Preorder_Traversal.txt
+│   ├── solution.py -> 144_Binary_Tree_Preorder_Traversal.py
+│   ├── test.out.txt
+│   ├── test_144_Binary_Tree_Preorder_Traversal.cov
+│   └── test_144_Binary_Tree_Preorder_Traversal.py
+├── 145_Binary_Tree_Postorder_Traversal
+│   ├── 145_Binary_Tree_Postorder_Traversal.py
+│   ├── explain_145_Binary_Tree_Postorder_Traversal.txt
+│   ├── solution.py -> 145_Binary_Tree_Postorder_Traversal.py
+│   ├── test.out.txt
+│   ├── test_145_Binary_Tree_Postorder_Traversal.cov
+│   └── test_145_Binary_Tree_Postorder_Traversal.py
+├── 146_LRU_Cache
+│   ├── 146_LRU_Cache.py
+│   ├── explain_146_LRU_Cache.txt
+│   ├── solution.py -> 146_LRU_Cache.py
+│   ├── test.out.txt
+│   ├── test_146_LRU_Cache.cov
+│   └── test_146_LRU_Cache.py
+├── 147_Insertion_Sort_List
+│   ├── 147_Insertion_Sort_List.py
+│   ├── explain_147_Insertion_Sort_List.txt
+│   ├── solution.py -> 147_Insertion_Sort_List.py
+│   ├── test.out.txt
+│   ├── test_147_Insertion_Sort_List.cov
+│   └── test_147_Insertion_Sort_List.py
+├── 1480_Running_Sum_of_1d_Array
+│   ├── 1480_Running_Sum_of_1d_Array.py
+│   ├── explain_1480_Running_Sum_of_1d_Array.txt
+│   ├── solution.py -> 1480_Running_Sum_of_1d_Array.py
+│   ├── test.out.txt
+│   ├── test_1480_Running_Sum_of_1d_Array.cov
+│   └── test_1480_Running_Sum_of_1d_Array.py
+├── 149_Max_Points_on_a_Line
+│   ├── 149_Max_Points_on_a_Line.py
+│   ├── explain_149_Max_Points_on_a_Line.txt
+│   ├── solution.py -> 149_Max_Points_on_a_Line.py
+│   ├── test.out.txt
+│   ├── test_149_Max_Points_on_a_Line.cov
+│   └── test_149_Max_Points_on_a_Line.py
+├── 150_Evaluate_Reverse_Polish_Notation
+│   ├── 150_Evaluate_Reverse_Polish_Notation.py
+│   ├── explain_150_Evaluate_Reverse_Polish_Notation.txt
+│   ├── solution.py -> 150_Evaluate_Reverse_Polish_Notation.py
+│   ├── test.out.txt
+│   ├── test_150_Evaluate_Reverse_Polish_Notation.cov
+│   └── test_150_Evaluate_Reverse_Polish_Notation.py
+├── 151_Reverse_Words_in_a_String
+│   ├── 151_Reverse_Words_in_a_String.py
+│   ├── explain_151_Reverse_Words_in_a_String.txt
+│   ├── solution.py -> 151_Reverse_Words_in_a_String.py
+│   ├── test.out.txt
+│   ├── test_151_Reverse_Words_in_a_String.cov
+│   └── test_151_Reverse_Words_in_a_String.py
+├── 152_Maximum_Product_Subarray
+│   ├── 152_Maximum_Product_Subarray.py
+│   ├── explain_152_Maximum_Product_Subarray.txt
+│   ├── solution.py -> 152_Maximum_Product_Subarray.py
+│   ├── test.out.txt
+│   ├── test_152_Maximum_Product_Subarray.cov
+│   └── test_152_Maximum_Product_Subarray.py
+├── 153_Find_Minimum_in_Rotated_Sorted_Array
+│   ├── 153_Find_Minimum_in_Rotated_Sorted_Array.py
+│   ├── explain_153_Find_Minimum_in_Rotated_Sorted_Array.txt
+│   ├── solution.py -> 153_Find_Minimum_in_Rotated_Sorted_Array.py
+│   ├── test.out.txt
+│   ├── test_153_Find_Minimum_in_Rotated_Sorted_Array.cov
+│   └── test_153_Find_Minimum_in_Rotated_Sorted_Array.py
+├── 154_Find_Minimum_in_Rotated_Sorted_Array_II
+│   ├── 154_Find_Minimum_in_Rotated_Sorted_Array_II.py
+│   ├── explain_154_Find_Minimum_in_Rotated_Sorted_Array_II.txt
+│   ├── solution.py -> 154_Find_Minimum_in_Rotated_Sorted_Array_II.py
+│   ├── test.out.txt
+│   ├── test_154_Find_Minimum_in_Rotated_Sorted_Array_II.cov
+│   └── test_154_Find_Minimum_in_Rotated_Sorted_Array_II.py
+├── 155_Min_Stack
+│   ├── 155_Min_Stack.py
+│   ├── explain_155_Min_Stack.txt
+│   ├── solution.py -> 155_Min_Stack.py
+│   ├── test.out.txt
+│   ├── test_155_Min_Stack.cov
+│   └── test_155_Min_Stack.py
+├── 156_Binary_Tree_Upside_Down
+│   ├── 156_Binary_Tree_Upside_Down.py
+│   ├── explain_156_Binary_Tree_Upside_Down.txt
+│   ├── solution.py -> 156_Binary_Tree_Upside_Down.py
+│   ├── test.out.txt
+│   ├── test_156_Binary_Tree_Upside_Down.cov
+│   └── test_156_Binary_Tree_Upside_Down.py
+├── 157_Read_N_Characters_Given_Read4
+│   ├── 157_Read_N_Characters_Given_Read4.py
+│   ├── explain_157_Read_N_Characters_Given_Read4.txt
+│   ├── solution.py -> 157_Read_N_Characters_Given_Read4.py
+│   ├── test.out.txt
+│   ├── test_157_Read_N_Characters_Given_Read4.cov
+│   └── test_157_Read_N_Characters_Given_Read4.py
+├── 158_Read_N_Characters_Given_Read4_II_Call_multiple_times
+│   ├── 158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py
+│   ├── explain_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.txt
+│   ├── solution.py -> 158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py
+│   ├── test.out.txt
+│   ├── test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.cov
+│   └── test_158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py
+├── 1599_Maximum_Profit_of_Operating_a_Centennial_Wheel
+│   ├── 1599_Maximum_Profit_of_Operating_a_Centennial_Wheel.py
+│   ├── explain_1599_Maximum_Profit_of_Operating_a_Centennial_Wheel.txt
+│   ├── solution.py -> 1599_Maximum_Profit_of_Operating_a_Centennial_Wheel.py
+│   ├── test.out.txt
+│   ├── test_1599_Maximum_Profit_of_Operating_a_Centennial_Wheel.cov
+│   └── test_1599_Maximum_Profit_of_Operating_a_Centennial_Wheel.py
+├── 159_Longest_Substring_with_At_Most_Two_Distinct_Characters
+│   ├── .coverage
+│   ├── 159_Longest_Substring_with_At_Most_Two_Distinct_Characters.py
+│   ├── explain_159_Longest_Substring_with_At_Most_Two_Distinct_Characters.txt
+│   ├── solution.py -> 159_Longest_Substring_with_At_Most_Two_Distinct_Characters.py
+│   ├── test.out.txt
+│   ├── test_159_Longest_Substring_with_At_Most_Two_Distinct_Characters.cov
+│   └── test_159_Longest_Substring_with_At_Most_Two_Distinct_Characters.py
+├── 160_Intersection_of_Two_Linked_Lists
+│   ├── 160_Intersection_of_Two_Linked_Lists.py
+│   ├── explain_160_Intersection_of_Two_Linked_Lists.txt
+│   ├── solution.py -> 160_Intersection_of_Two_Linked_Lists.py
+│   ├── test.out.txt
+│   ├── test_160_Intersection_of_Two_Linked_Lists.cov
+│   └── test_160_Intersection_of_Two_Linked_Lists.py
+├── 161_One_Edit_Distance
+│   ├── 161_One_Edit_Distance.py
+│   ├── explain_161_One_Edit_Distance.txt
+│   ├── solution.py -> 161_One_Edit_Distance.py
+│   ├── test.out.txt
+│   ├── test_161_One_Edit_Distance.cov
+│   └── test_161_One_Edit_Distance.py
+├── 162_Find_Peak_Element
+│   ├── 162_Find_Peak_Element.py
+│   ├── explain_162_Find_Peak_Element.txt
+│   ├── solution.py -> 162_Find_Peak_Element.py
+│   ├── test.out.txt
+│   ├── test_162_Find_Peak_Element.cov
+│   └── test_162_Find_Peak_Element.py
+├── 163_Missing_Ranges
+│   ├── 163_Missing_Ranges.py
+│   ├── explain_163_Missing_Ranges.txt
+│   ├── solution.py -> 163_Missing_Ranges.py
+│   ├── test.out.txt
+│   ├── test_163_Missing_Ranges.cov
+│   └── test_163_Missing_Ranges.py
+├── 165_Compare_Version_Numbers
+│   ├── 165_Compare_Version_Numbers.py
+│   ├── explain_165_Compare_Version_Numbers.txt
+│   ├── solution.py -> 165_Compare_Version_Numbers.py
+│   ├── test.out.txt
+│   ├── test_165_Compare_Version_Numbers.cov
+│   └── test_165_Compare_Version_Numbers.py
+├── 166_Fraction_to_Recurring_Decimal
+│   ├── 166_Fraction_to_Recurring_Decimal.py
+│   ├── explain_166_Fraction_to_Recurring_Decimal.txt
+│   ├── solution.py -> 166_Fraction_to_Recurring_Decimal.py
+│   ├── test.out.txt
+│   ├── test_166_Fraction_to_Recurring_Decimal.cov
+│   └── test_166_Fraction_to_Recurring_Decimal.py
+├── 167_Two_Sum_II_Input_array_is_sorted
+│   ├── 167_Two_Sum_II_Input_array_is_sorted.py
+│   ├── explain_167_Two_Sum_II_Input_array_is_sorted.txt
+│   ├── solution.py -> 167_Two_Sum_II_Input_array_is_sorted.py
+│   ├── test.out.txt
+│   ├── test_167_Two_Sum_II_Input_array_is_sorted.cov
+│   └── test_167_Two_Sum_II_Input_array_is_sorted.py
+├── 168_Excel_Sheet_Column_Title
+│   ├── 168_Excel_Sheet_Column_Title.py
+│   ├── explain_168_Excel_Sheet_Column_Title.txt
+│   ├── solution.py -> 168_Excel_Sheet_Column_Title.py
+│   ├── test.out.txt
+│   ├── test_168_Excel_Sheet_Column_Title.cov
+│   └── test_168_Excel_Sheet_Column_Title.py
+├── 170_Two_Sum_III-Data_structure_design
+│   ├── 170_Two_Sum_III-Data_structure_design.py
+│   ├── explain_170_Two_Sum_III-Data_structure_design.txt
+│   ├── solution.py -> 170_Two_Sum_III-Data_structure_design.py
+│   ├── test.out.txt
+│   ├── test_170_Two_Sum_III-Data_structure_design.cov
+│   └── test_170_Two_Sum_III-Data_structure_design.py
+├── 179_Largest_Number
+│   ├── 179_Largest_Number.py
+│   ├── explain_179_Largest_Number.txt
+│   ├── solution.py -> 179_Largest_Number.py
+│   ├── test.out.txt
+│   ├── test_179_Largest_Number.cov
+│   └── test_179_Largest_Number.py
+├── 186_Reverse_Words_in_a_String_II
+│   ├── 186_Reverse_Words_in_a_String_II.py
+│   ├── explain_186_Reverse_Words_in_a_String_II.txt
+│   ├── solution.py -> 186_Reverse_Words_in_a_String_II.py
+│   ├── test.out.txt
+│   ├── test_186_Reverse_Words_in_a_String_II.cov
+│   └── test_186_Reverse_Words_in_a_String_II.py
+├── 1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing
+│   ├── 1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing.py
+│   ├── explain_1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing.txt
+│   ├── solution.py -> 1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing.py
+│   ├── test.out.txt
+│   ├── test_1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing.cov
+│   └── test_1909_Remove_One_Element_to_Make_the_Array_Strictly_Increasing.py
+├── 191_Number_of_1_Bits
+│   ├── 191_Number_of_1_Bits.py
+│   ├── explain_191_Number_of_1_Bits.txt
+│   ├── solution.py -> 191_Number_of_1_Bits.py
+│   ├── test.out.txt
+│   ├── test_191_Number_of_1_Bits.cov
+│   └── test_191_Number_of_1_Bits.py
+├── 198_House_Robber
+│   ├── 198_House_Robber.py
+│   ├── explain_198_House_Robber.txt
+│   ├── solution.py -> 198_House_Robber.py
+│   ├── test.out.txt
+│   ├── test_198_House_Robber.cov
+│   └── test_198_House_Robber.py
+├── 200_Number_of_Islands
+│   ├── 200_Number_of_Islands.py
+│   ├── explain_200_Number_of_Islands.txt
+│   ├── solution.py -> 200_Number_of_Islands.py
+│   ├── test.out.txt
+│   ├── test_200_Number_of_Islands.cov
+│   └── test_200_Number_of_Islands.py
+├── 202_Happy_Number
+│   ├── 202_Happy_Number.py
+│   ├── explain_202_Happy_Number.txt
+│   ├── solution.py -> 202_Happy_Number.py
+│   ├── test.out.txt
+│   ├── test_202_Happy_Number.cov
+│   └── test_202_Happy_Number.py
+├── 203_Remove_Linked_List_Elements
+│   ├── 203_Remove_Linked_List_Elements.py
+│   ├── explain_203_Remove_Linked_List_Elements.txt
+│   ├── solution.py -> 203_Remove_Linked_List_Elements.py
+│   ├── test.out.txt
+│   ├── test_203_Remove_Linked_List_Elements.cov
+│   └── test_203_Remove_Linked_List_Elements.py
+├── 204_Count_Primes
+│   ├── .coverage
+│   ├── 204_Count_Primes.py
+│   ├── explain_204_Count_Primes.txt
+│   ├── solution.py -> 204_Count_Primes.py
+│   ├── test.out.txt
+│   ├── test_204_Count_Primes.cov
+│   └── test_204_Count_Primes.py
+├── 205_Isomorphic_Strings
+│   ├── 205_Isomorphic_Strings.py
+│   ├── explain_205_Isomorphic_Strings.txt
+│   ├── solution.py -> 205_Isomorphic_Strings.py
+│   ├── test.out.txt
+│   ├── test_205_Isomorphic_Strings.cov
+│   └── test_205_Isomorphic_Strings.py
+├── 206_Reverse_Linked_List
+│   ├── 206_Reverse_Linked_List.py
+│   ├── explain_206_Reverse_Linked_List.txt
+│   ├── solution.py -> 206_Reverse_Linked_List.py
+│   ├── test.out.txt
+│   ├── test_206_Reverse_Linked_List.cov
+│   └── test_206_Reverse_Linked_List.py
+├── 207_Course_Schedule
+│   ├── 207_Course_Schedule.py
+│   ├── explain_207_Course_Schedule.txt
+│   ├── solution.py -> 207_Course_Schedule.py
+│   ├── test.out.txt
+│   ├── test_207_Course_Schedule.cov
+│   └── test_207_Course_Schedule.py
+├── 208_Implement_Trie_(Prefix_Tree)
+│   ├── 208_Implement_Trie_(Prefix_Tree).py
+│   ├── explain_208_Implement_Trie_(Prefix_Tree).txt
+│   ├── solution.py -> 208_Implement_Trie_(Prefix_Tree).py
+│   ├── test.out.txt
+│   ├── test_208_Implement_Trie_(Prefix_Tree).cov
+│   └── test_208_Implement_Trie_(Prefix_Tree).py
+├── 213_House_Robber_II
+│   ├── 213_House_Robber_II.py
+│   ├── explain_213_House_Robber_II.txt
+│   ├── solution.py -> 213_House_Robber_II.py
+│   ├── test.out.txt
+│   ├── test_213_House_Robber_II.cov
+│   └── test_213_House_Robber_II.py
+├── 215_Kth_Largest_Element_in_an_Array
+│   ├── 215_Kth_Largest_Element_in_an_Array.py
+│   ├── explain_215_Kth_Largest_Element_in_an_Array.txt
+│   ├── solution.py -> 215_Kth_Largest_Element_in_an_Array.py
+│   ├── test.out.txt
+│   ├── test_215_Kth_Largest_Element_in_an_Array.cov
+│   └── test_215_Kth_Largest_Element_in_an_Array.py
+├── 216_Combination_Sum_III
+│   ├── 216_Combination_Sum_III.py
+│   ├── explain_216_Combination_Sum_III.txt
+│   ├── solution.py -> 216_Combination_Sum_III.py
+│   ├── test.out.txt
+│   ├── test_216_Combination_Sum_III.cov
+│   └── test_216_Combination_Sum_III.py
+├── 217_Contains_Duplicate
+│   ├── 217_Contains_Duplicate.py
+│   ├── explain_217_Contains_Duplicate.txt
+│   ├── solution.py -> 217_Contains_Duplicate.py
+│   ├── test.out.txt
+│   ├── test_217_Contains_Duplicate.cov
+│   └── test_217_Contains_Duplicate.py
+├── 219_Contains_Duplicate_II
+│   ├── 219_Contains_Duplicate_II.py
+│   ├── explain_219_Contains_Duplicate_II.txt
+│   ├── solution.py -> 219_Contains_Duplicate_II.py
+│   ├── test.out.txt
+│   ├── test_219_Contains_Duplicate_II.cov
+│   └── test_219_Contains_Duplicate_II.py
+├── 220_Contains_Duplicate_III
+│   ├── 220_Contains_Duplicate_III.py
+│   ├── explain_220_Contains_Duplicate_III.txt
+│   ├── solution.py -> 220_Contains_Duplicate_III.py
+│   ├── test.out.txt
+│   ├── test_220_Contains_Duplicate_III.cov
+│   └── test_220_Contains_Duplicate_III.py
+├── 221_Maximal_Square
+│   ├── 221_Maximal_Square.py
+│   ├── explain_221_Maximal_Square.txt
+│   ├── solution.py -> 221_Maximal_Square.py
+│   ├── test.out.txt
+│   ├── test_221_Maximal_Square.cov
+│   └── test_221_Maximal_Square.py
+├── 223_Rectangle
+│   ├── solution.py -> 223_Rectangle.py
+│   └── test.out.txt
+├── 223_Rectangle Area
+│   ├── 223_Rectangle Area.py
+│   ├── solution.py -> 223_Rectangle Area.py
+│   ├── test.out.txt
+│   └── test_223_Rectangle Area.py
+├── 225_Implement_Stack_using_Queues
+│   ├── 225_Implement_Stack_using_Queues.py
+│   ├── explain_225_Implement_Stack_using_Queues.txt
+│   ├── solution.py -> 225_Implement_Stack_using_Queues.py
+│   ├── test.out.txt
+│   ├── test_225_Implement_Stack_using_Queues.cov
+│   └── test_225_Implement_Stack_using_Queues.py
+├── 226_Invert_Binary_Tree
+│   ├── 226_Invert_Binary_Tree.py
+│   ├── explain_226_Invert_Binary_Tree.txt
+│   ├── solution.py -> 226_Invert_Binary_Tree.py
+│   ├── test.out.txt
+│   ├── test_226_Invert_Binary_Tree.cov
+│   └── test_226_Invert_Binary_Tree.py
+├── 228_Summary_Ranges
+│   ├── 228_Summary_Ranges.py
+│   ├── explain_228_Summary_Ranges.txt
+│   ├── solution.py -> 228_Summary_Ranges.py
+│   ├── test.out.txt
+│   ├── test_228_Summary_Ranges.cov
+│   └── test_228_Summary_Ranges.py
+├── 229_Majority_Element_II
+│   ├── 229_Majority_Element_II.py
+│   ├── explain_229_Majority_Element_II.txt
+│   ├── solution.py -> 229_Majority_Element_II.py
+│   ├── test.out.txt
+│   ├── test_229_Majority_Element_II.cov
+│   └── test_229_Majority_Element_II.py
+├── 231_Power_of_Two
+│   ├── 231_Power_of_Two.py
+│   ├── explain_231_Power_of_Two.txt
+│   ├── solution.py -> 231_Power_of_Two.py
+│   ├── test.out.txt
+│   ├── test_231_Power_of_Two.cov
+│   └── test_231_Power_of_Two.py
+├── 232_Implement_Queue_using_Stacks
+│   ├── 232_Implement_Queue_using_Stacks.py
+│   ├── explain_232_Implement_Queue_using_Stacks.txt
+│   ├── solution.py -> 232_Implement_Queue_using_Stacks.py
+│   ├── test.out.txt
+│   ├── test_232_Implement_Queue_using_Stacks.cov
+│   └── test_232_Implement_Queue_using_Stacks.py
+├── 234_Palindrome_Linked_List
+│   ├── 234_Palindrome_Linked_List.py
+│   ├── explain_234_Palindrome_Linked_List.txt
+│   ├── solution.py -> 234_Palindrome_Linked_List.py
+│   ├── test.out.txt
+│   ├── test_234_Palindrome_Linked_List.cov
+│   └── test_234_Palindrome_Linked_List.py
+├── 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree
+│   ├── 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py
+│   ├── explain_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.txt
+│   ├── solution.py -> 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py
+│   ├── test.out.txt
+│   ├── test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cov
+│   └── test_235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.py
+├── 236_Lowest_Common_Ancestor_of_a_Binary_Tree
+│   ├── 236_Lowest_Common_Ancestor_of_a_Binary_Tree.py
+│   ├── explain_236_Lowest_Common_Ancestor_of_a_Binary_Tree.txt
+│   ├── solution.py -> 236_Lowest_Common_Ancestor_of_a_Binary_Tree.py
+│   ├── test.out.txt
+│   ├── test_236_Lowest_Common_Ancestor_of_a_Binary_Tree.cov
+│   └── test_236_Lowest_Common_Ancestor_of_a_Binary_Tree.py
+├── 237_Delete_Node_in_a_Linked_List
+│   ├── 237_Delete_Node_in_a_Linked_List.py
+│   ├── explain_237_Delete_Node_in_a_Linked_List.txt
+│   ├── solution.py -> 237_Delete_Node_in_a_Linked_List.py
+│   ├── test.out.txt
+│   ├── test_237_Delete_Node_in_a_Linked_List.cov
+│   └── test_237_Delete_Node_in_a_Linked_List.py
+├── 238_Product_of_Array_Except_Self
+│   ├── 238_Product_of_Array_Except_Self.py
+│   ├── explain_238_Product_of_Array_Except_Self.txt
+│   ├── solution.py -> 238_Product_of_Array_Except_Self.py
+│   ├── test.out.txt
+│   ├── test_238_Product_of_Array_Except_Self.cov
+│   └── test_238_Product_of_Array_Except_Self.py
+├── 2409_Count_Days_Spent_Together
+│   ├── 2409_Count_Days_Spent_Together.py
+│   ├── explain_2409_Count_Days_Spent_Together.txt
+│   ├── solution.py -> 2409_Count_Days_Spent_Together.py
+│   ├── test.out.txt
+│   ├── test_2409_Count_Days_Spent_Together.cov
+│   └── test_2409_Count_Days_Spent_Together.py
+├── 2413_Smallest_Even_Multiple
+│   ├── 2413_Smallest_Even_Multiple.py
+│   ├── explain_2413_Smallest_Even_Multiple.txt
+│   ├── solution.py -> 2413_Smallest_Even_Multiple.py
+│   ├── test.out.txt
+│   ├── test_2413_Smallest_Even_Multiple.cov
+│   └── test_2413_Smallest_Even_Multiple.py
+├── 2420_Find_All_Good_Indices
+│   ├── 2420_Find_All_Good_Indices.py
+│   ├── explain_2420_Find_All_Good_Indices.txt
+│   ├── solution.py -> 2420_Find_All_Good_Indices.py
+│   └── test.out.txt
+├── 2429_Minimize_XOR
+│   ├── 2429_Minimize_XOR.py
+│   ├── explain_2429_Minimize_XOR.txt
+│   ├── solution.py -> 2429_Minimize_XOR.py
+│   └── test.out.txt
+├── 242_Valid_Anagram
+│   ├── 242_Valid_Anagram.py
+│   ├── explain_242_Valid_Anagram.txt
+│   ├── solution.py -> 242_Valid_Anagram.py
+│   ├── test.out.txt
+│   ├── test_242_Valid_Anagram.cov
+│   └── test_242_Valid_Anagram.py
+├── 243_Shortest_Word_Distance
+│   ├── 243_Shortest_Word_Distance.py
+│   ├── explain_243_Shortest_Word_Distance.txt
+│   ├── solution.py -> 243_Shortest_Word_Distance.py
+│   ├── test.out.txt
+│   ├── test_243_Shortest_Word_Distance.cov
+│   └── test_243_Shortest_Word_Distance.py
+├── 246_Strobogrammatic_Number
+│   ├── 246_Strobogrammatic_Number.py
+│   ├── explain_246_Strobogrammatic_Number.txt
+│   ├── solution.py -> 246_Strobogrammatic_Number.py
+│   ├── test.out.txt
+│   ├── test_246_Strobogrammatic_Number.cov
+│   └── test_246_Strobogrammatic_Number.py
+├── 249_Group_Shifted_Strings
+│   ├── 249_Group_Shifted_Strings.py
+│   ├── explain_249_Group_Shifted_Strings.txt
+│   ├── solution.py -> 249_Group_Shifted_Strings.py
+│   └── test.out.txt
+├── 252_Meeting_Rooms
+│   ├── 252_Meeting_Rooms.py
+│   ├── explain_252_Meeting_Rooms.txt
+│   ├── solution.py -> 252_Meeting_Rooms.py
+│   └── test.out.txt
+├── 253_Meeting_Rooms_II
+│   ├── 253_Meeting_Rooms_II.py
+│   ├── explain_253_Meeting_Rooms_II.txt
+│   ├── solution.py -> 253_Meeting_Rooms_II.py
+│   ├── test.out.txt
+│   ├── test_253_Meeting_Rooms_II.cov
+│   └── test_253_Meeting_Rooms_II.py
+├── 257_Binary_Tree_Paths
+│   ├── 257_Binary_Tree_Paths.py
+│   ├── explain_257_Binary_Tree_Paths.txt
+│   ├── solution.py -> 257_Binary_Tree_Paths.py
+│   ├── test.out.txt
+│   ├── test_257_Binary_Tree_Paths.cov
+│   └── test_257_Binary_Tree_Paths.py
+├── 258_Add_Digits
+│   ├── 258_Add_Digits.py
+│   ├── explain_258_Add_Digits.txt
+│   ├── solution.py -> 258_Add_Digits.py
+│   ├── test.out.txt
+│   ├── test_258_Add_Digits.cov
+│   └── test_258_Add_Digits.py
+├── 259_3Sum_Smaller
+│   ├── 259_3Sum_Smaller.py
+│   ├── explain_259_3Sum_Smaller.txt
+│   ├── solution.py -> 259_3Sum_Smaller.py
+│   ├── test.out.txt
+│   ├── test_259_3Sum_Smaller.cov
+│   └── test_259_3Sum_Smaller.py
+├── 263_Ugly_Number
+│   ├── 263_Ugly_Number.py
+│   ├── explain_263_Ugly_Number.txt
+│   ├── solution.py -> 263_Ugly_Number.py
+│   ├── test.out.txt
+│   ├── test_263_Ugly_Number.cov
+│   └── test_263_Ugly_Number.py
+├── 264_Ugly_Number_II
+│   ├── 264_Ugly_Number_II.py
+│   ├── explain_264_Ugly_Number_II.txt
+│   ├── solution.py -> 264_Ugly_Number_II.py
+│   ├── test.out.txt
+│   ├── test_264_Ugly_Number_II.cov
+│   └── test_264_Ugly_Number_II.py
+├── 266_Palindrome_Permutation
+│   ├── 266_Palindrome_Permutation.py
+│   ├── explain_266_Palindrome_Permutation.txt
+│   ├── solution.py -> 266_Palindrome_Permutation.py
+│   ├── test.out.txt
+│   ├── test_266_Palindrome_Permutation.cov
+│   └── test_266_Palindrome_Permutation.py
+├── 267_Palindrome_Permutation_II
+│   ├── 267_Palindrome_Permutation_II.py
+│   ├── explain_267_Palindrome_Permutation_II.txt
+│   ├── solution.py -> 267_Palindrome_Permutation_II.py
+│   ├── test.out.txt
+│   ├── test_267_Palindrome_Permutation_II.cov
+│   └── test_267_Palindrome_Permutation_II.py
+├── 268_Missing_Number
+│   ├── 268_Missing_Number.py
+│   ├── explain_268_Missing_Number.txt
+│   ├── solution.py -> 268_Missing_Number.py
+│   ├── test.out.txt
+│   ├── test_268_Missing_Number.cov
+│   └── test_268_Missing_Number.py
+├── 270_Closest_Binary_Search_Tree_Value
+│   ├── 270_Closest_Binary_Search_Tree_Value.py
+│   ├── explain_270_Closest_Binary_Search_Tree_Value.txt
+│   ├── solution.py -> 270_Closest_Binary_Search_Tree_Value.py
+│   ├── test.out.txt
+│   ├── test_270_Closest_Binary_Search_Tree_Value.cov
+│   └── test_270_Closest_Binary_Search_Tree_Value.py
+├── 273_Integer_to_English_Words
+│   ├── 273_Integer_to_English_Words.py
+│   ├── explain_273_Integer_to_English_Words.txt
+│   ├── solution.py -> 273_Integer_to_English_Words.py
+│   ├── test.out.txt
+│   ├── test_273_Integer_to_English_Words.cov
+│   └── test_273_Integer_to_English_Words.py
+├── 274_H-Index
+│   ├── 274_H-Index.py
+│   ├── explain_274_H-Index.txt
+│   ├── solution.py -> 274_H-Index.py
+│   ├── test.out.txt
+│   ├── test_274_H-Index.cov
+│   └── test_274_H-Index.py
+├── 276_Paint_Fence
+│   ├── 276_Paint_Fence.py
+│   ├── explain_276_Paint_Fence.txt
+│   ├── solution.py -> 276_Paint_Fence.py
+│   ├── test.out.txt
+│   ├── test_276_Paint_Fence.cov
+│   └── test_276_Paint_Fence.py
+├── 278_First_Bad_Version
+│   ├── 278_First_Bad_Version.py
+│   ├── explain_278_First_Bad_Version.txt
+│   ├── solution.py -> 278_First_Bad_Version.py
+│   ├── test.out.txt
+│   ├── test_278_First_Bad_Version.cov
+│   └── test_278_First_Bad_Version.py
+├── 280_Wiggle_Sort
+│   ├── 280_Wiggle_Sort.py
+│   ├── explain_280_Wiggle_Sort.txt
+│   ├── solution.py -> 280_Wiggle_Sort.py
+│   ├── test.out.txt
+│   ├── test_280_Wiggle_Sort.cov
+│   └── test_280_Wiggle_Sort.py
+├── 283_Move
+│   ├── solution.py -> 283_Move.py
+│   └── test.out.txt
+├── 283_Move Zeroes
+│   ├── 283_Move Zeroes.py
+│   ├── solution.py -> 283_Move Zeroes.py
+│   ├── test.out.txt
+│   └── test_283_Move Zeroes.py
+├── 286_Walls_and_Gates
+│   ├── 286_Walls_and_Gates.py
+│   ├── explain_286_Walls_and_Gates.txt
+│   ├── solution.py -> 286_Walls_and_Gates.py
+│   ├── test.out.txt
+│   ├── test_286_Walls_and_Gates.cov
+│   └── test_286_Walls_and_Gates.py
+├── 288_Unique_Word_Abbreviation
+│   ├── 288_Unique_Word_Abbreviation.py
+│   ├── explain_288_Unique_Word_Abbreviation.txt
+│   ├── solution.py -> 288_Unique_Word_Abbreviation.py
+│   ├── test.out.txt
+│   ├── test_288_Unique_Word_Abbreviation.cov
+│   └── test_288_Unique_Word_Abbreviation.py
+├── 290_Word_Pattern
+│   ├── 290_Word_Pattern.py
+│   ├── explain_290_Word_Pattern.txt
+│   ├── solution.py -> 290_Word_Pattern.py
+│   ├── test.out.txt
+│   ├── test_290_Word_Pattern.cov
+│   └── test_290_Word_Pattern.py
+├── 292_Nim_Game
+│   ├── 292_Nim_Game.py
+│   ├── explain_292_Nim_Game.txt
+│   ├── solution.py -> 292_Nim_Game.py
+│   ├── test.out.txt
+│   ├── test_292_Nim_Game.cov
+│   └── test_292_Nim_Game.py
+├── 293_Flip_Game
+│   ├── 293_Flip_Game.py
+│   ├── explain_293_Flip_Game.txt
+│   ├── solution.py -> 293_Flip_Game.py
+│   ├── test.out.txt
+│   ├── test_293_Flip_Game.cov
+│   └── test_293_Flip_Game.py
+├── 294_Flip_Game_II
+│   ├── 294_Flip_Game_II.py
+│   ├── explain_294_Flip_Game_II.txt
+│   ├── solution.py -> 294_Flip_Game_II.py
+│   ├── test.out.txt
+│   ├── test_294_Flip_Game_II.cov
+│   └── test_294_Flip_Game_II.py
+├── 296_Best_Meeting_Point
+│   ├── 296_Best_Meeting_Point.py
+│   ├── explain_296_Best_Meeting_Point.txt
+│   ├── solution.py -> 296_Best_Meeting_Point.py
+│   ├── test.out.txt
+│   ├── test_296_Best_Meeting_Point.cov
+│   └── test_296_Best_Meeting_Point.py
+├── 298_Binary_Tree_Longest_Consecutive_Sequence
+│   ├── 298_Binary_Tree_Longest_Consecutive_Sequence.py
+│   ├── explain_298_Binary_Tree_Longest_Consecutive_Sequence.txt
+│   ├── solution.py -> 298_Binary_Tree_Longest_Consecutive_Sequence.py
+│   ├── test.out.txt
+│   ├── test_298_Binary_Tree_Longest_Consecutive_Sequence.cov
+│   └── test_298_Binary_Tree_Longest_Consecutive_Sequence.py
+├── 299_Bulls_and_Cows
+│   ├── 299_Bulls_and_Cows.py
+│   ├── explain_299_Bulls_and_Cows.txt
+│   ├── solution.py -> 299_Bulls_and_Cows.py
+│   ├── test.out.txt
+│   ├── test_299_Bulls_and_Cows.cov
+│   └── test_299_Bulls_and_Cows.py
+├── 303_Range_Sum_Query_Immutable
+│   ├── 303_Range_Sum_Query_Immutable.py
+│   ├── explain_303_Range_Sum_Query_Immutable.txt
+│   ├── solution.py -> 303_Range_Sum_Query_Immutable.py
+│   ├── test.out.txt
+│   ├── test_303_Range_Sum_Query_Immutable.cov
+│   └── test_303_Range_Sum_Query_Immutable.py
+├── 304_Range_Sum_Query_2D_Immutable
+│   ├── 304_Range_Sum_Query_2D_Immutable.py
+│   ├── explain_304_Range_Sum_Query_2D_Immutable.txt
+│   ├── solution.py -> 304_Range_Sum_Query_2D_Immutable.py
+│   ├── test.out.txt
+│   ├── test_304_Range_Sum_Query_2D_Immutable.cov
+│   └── test_304_Range_Sum_Query_2D_Immutable.py
+├── 305_Number_of_Islands_II
+│   ├── 305_Number_of_Islands_II.py
+│   ├── explain_305_Number_of_Islands_II.txt
+│   ├── solution.py -> 305_Number_of_Islands_II.py
+│   ├── test.out.txt
+│   ├── test_305_Number_of_Islands_II.cov
+│   └── test_305_Number_of_Islands_II.py
+├── 307_Range_Sum_Query_Mutable
+│   ├── 307_Range_Sum_Query_Mutable.py
+│   ├── explain_307_Range_Sum_Query_Mutable.txt
+│   ├── solution.py -> 307_Range_Sum_Query_Mutable.py
+│   ├── test.out.txt
+│   ├── test_307_Range_Sum_Query_Mutable.cov
+│   └── test_307_Range_Sum_Query_Mutable.py
+├── 322_Coin_Change
+│   ├── 322_Coin_Change.py
+│   ├── explain_322_Coin_Change.txt
+│   ├── solution.py -> 322_Coin_Change.py
+│   ├── test.out.txt
+│   ├── test_322_Coin_Change.cov
+│   └── test_322_Coin_Change.py
+├── 326_Power_of_Three
+│   ├── 326_Power_of_Three.py
+│   ├── explain_326_Power_of_Three.txt
+│   ├── solution.py -> 326_Power_of_Three.py
+│   ├── test.out.txt
+│   ├── test_326_Power_of_Three.cov
+│   └── test_326_Power_of_Three.py
+├── 328_Odd_Even_Linked_List
+│   ├── 328_Odd_Even_Linked_List.py
+│   ├── explain_328_Odd_Even_Linked_List.txt
+│   ├── solution.py -> 328_Odd_Even_Linked_List.py
+│   ├── test.out.txt
+│   ├── test_328_Odd_Even_Linked_List.cov
+│   └── test_328_Odd_Even_Linked_List.py
+├── 336_Palindrome_Pairs
+│   ├── 336_Palindrome_Pairs.py
+│   ├── explain_336_Palindrome_Pairs.txt
+│   ├── solution.py -> 336_Palindrome_Pairs.py
+│   ├── test.out.txt
+│   ├── test_336_Palindrome_Pairs.cov
+│   └── test_336_Palindrome_Pairs.py
+├── 337_House_Robber_III
+│   ├── 337_House_Robber_III.py
+│   ├── explain_337_House_Robber_III.txt
+│   ├── solution.py -> 337_House_Robber_III.py
+│   ├── test.out.txt
+│   ├── test_337_House_Robber_III.cov
+│   └── test_337_House_Robber_III.py
+├── 338_Counting_Bits
+│   ├── 338_Counting_Bits.py
+│   ├── explain_338_Counting_Bits.txt
+│   ├── solution.py -> 338_Counting_Bits.py
+│   ├── test.out.txt
+│   ├── test_338_Counting_Bits.cov
+│   └── test_338_Counting_Bits.py
+├── 339_Nested_List_Weight_Sum
+│   ├── 339_Nested_List_Weight_Sum.py
+│   ├── explain_339_Nested_List_Weight_Sum.txt
+│   ├── solution.py -> 339_Nested_List_Weight_Sum.py
+│   ├── test.out.txt
+│   ├── test_339_Nested_List_Weight_Sum.cov
+│   └── test_339_Nested_List_Weight_Sum.py
+├── 340_Longest_Substring_with_At_Most_K_Distinct_Characters
+│   ├── 340_Longest_Substring_with_At_Most_K_Distinct_Characters.py
+│   ├── explain_340_Longest_Substring_with_At_Most_K_Distinct_Characters.txt
+│   ├── solution.py -> 340_Longest_Substring_with_At_Most_K_Distinct_Characters.py
+│   ├── test.out.txt
+│   ├── test_340_Longest_Substring_with_At_Most_K_Distinct_Characters.cov
+│   └── test_340_Longest_Substring_with_At_Most_K_Distinct_Characters.py
+├── 342_Power_of_Four
+│   ├── 342_Power_of_Four.py
+│   ├── explain_342_Power_of_Four.txt
+│   ├── solution.py -> 342_Power_of_Four.py
+│   ├── test.out.txt
+│   ├── test_342_Power_of_Four.cov
+│   └── test_342_Power_of_Four.py
+├── 344_Reverse_String
+│   ├── 344_Reverse_String.py
+│   ├── explain_344_Reverse_String.txt
+│   ├── solution.py -> 344_Reverse_String.py
+│   ├── test.out.txt
+│   ├── test_344_Reverse_String.cov
+│   └── test_344_Reverse_String.py
+├── 345_Reverse_Vowels_of_a_String
+│   ├── 345_Reverse_Vowels_of_a_String.py
+│   ├── explain_345_Reverse_Vowels_of_a_String.txt
+│   ├── solution.py -> 345_Reverse_Vowels_of_a_String.py
+│   ├── test.out.txt
+│   ├── test_345_Reverse_Vowels_of_a_String.cov
+│   └── test_345_Reverse_Vowels_of_a_String.py
+├── 346_Moving_Average_from_Data_Stream
+│   ├── 346_Moving_Average_from_Data_Stream.py
+│   ├── explain_346_Moving_Average_from_Data_Stream.txt
+│   ├── solution.py -> 346_Moving_Average_from_Data_Stream.py
+│   ├── test.out.txt
+│   ├── test_346_Moving_Average_from_Data_Stream.cov
+│   └── test_346_Moving_Average_from_Data_Stream.py
+├── 347_Top_K_Frequent_Elements
+│   ├── 347_Top_K_Frequent_Elements.py
+│   ├── explain_347_Top_K_Frequent_Elements.txt
+│   ├── solution.py -> 347_Top_K_Frequent_Elements.py
+│   ├── test.out.txt
+│   ├── test_347_Top_K_Frequent_Elements.cov
+│   └── test_347_Top_K_Frequent_Elements.py
+├── 349_Intersection_of_Two_Arrays
+│   ├── 349_Intersection_of_Two_Arrays.py
+│   ├── explain_349_Intersection_of_Two_Arrays.txt
+│   ├── solution.py -> 349_Intersection_of_Two_Arrays.py
+│   ├── test.out.txt
+│   ├── test_349_Intersection_of_Two_Arrays.cov
+│   └── test_349_Intersection_of_Two_Arrays.py
+├── 350_Intersection_of_Two_Arrays_II
+│   ├── 350_Intersection_of_Two_Arrays_II.py
+│   ├── explain_350_Intersection_of_Two_Arrays_II.txt
+│   ├── solution.py -> 350_Intersection_of_Two_Arrays_II.py
+│   ├── test.out.txt
+│   ├── test_350_Intersection_of_Two_Arrays_II.cov
+│   └── test_350_Intersection_of_Two_Arrays_II.py
+├── 351_Android_Unlock_Patterns
+│   ├── 351_Android_Unlock_Patterns.py
+│   ├── explain_351_Android_Unlock_Patterns.txt
+│   ├── solution.py -> 351_Android_Unlock_Patterns.py
+│   ├── test.out.txt
+│   ├── test_351_Android_Unlock_Patterns.cov
+│   └── test_351_Android_Unlock_Patterns.py
+├── 359_Logger_Rate_Limiter
+│   ├── 359_Logger_Rate_Limiter.py
+│   ├── explain_359_Logger_Rate_Limiter.txt
+│   ├── solution.py -> 359_Logger_Rate_Limiter.py
+│   ├── test.out.txt
+│   ├── test_359_Logger_Rate_Limiter.cov
+│   └── test_359_Logger_Rate_Limiter.py
+├── 366_Find_Leaves_of_Binary_Tree
+│   ├── 366_Find_Leaves_of_Binary_Tree.py
+│   ├── explain_366_Find_Leaves_of_Binary_Tree.txt
+│   ├── solution.py -> 366_Find_Leaves_of_Binary_Tree.py
+│   ├── test.out.txt
+│   ├── test_366_Find_Leaves_of_Binary_Tree.cov
+│   └── test_366_Find_Leaves_of_Binary_Tree.py
+├── 367_Valid_Perfect_Square
+│   ├── 367_Valid_Perfect_Square.py
+│   ├── explain_367_Valid_Perfect_Square.txt
+│   ├── solution.py -> 367_Valid_Perfect_Square.py
+│   ├── test.out.txt
+│   ├── test_367_Valid_Perfect_Square.cov
+│   └── test_367_Valid_Perfect_Square.py
+├── 368_Largest_Divisible_Subset
+│   ├── 368_Largest_Divisible_Subset.py
+│   ├── explain_368_Largest_Divisible_Subset.txt
+│   ├── solution.py -> 368_Largest_Divisible_Subset.py
+│   ├── test.out.txt
+│   ├── test_368_Largest_Divisible_Subset.cov
+│   └── test_368_Largest_Divisible_Subset.py
+├── 369_Plus_One_Linked_List
+│   ├── 369_Plus_One_Linked_List.py
+│   ├── explain_369_Plus_One_Linked_List.txt
+│   ├── solution.py -> 369_Plus_One_Linked_List.py
+│   ├── test.out.txt
+│   ├── test_369_Plus_One_Linked_List.cov
+│   └── test_369_Plus_One_Linked_List.py
+├── 370_Range_Addition
+│   ├── 370_Range_Addition.py
+│   ├── explain_370_Range_Addition.txt
+│   ├── solution.py -> 370_Range_Addition.py
+│   ├── test.out.txt
+│   ├── test_370_Range_Addition.cov
+│   └── test_370_Range_Addition.py
+├── 371_Sum_of_Two_Integers
+│   ├── 371_Sum_of_Two_Integers.py
+│   ├── explain_371_Sum_of_Two_Integers.txt
+│   ├── solution.py -> 371_Sum_of_Two_Integers.py
+│   ├── test.out.txt
+│   ├── test_371_Sum_of_Two_Integers.cov
+│   └── test_371_Sum_of_Two_Integers.py
+├── 372_Super_Pow
+│   ├── 372_Super_Pow.py
+│   ├── explain_372_Super_Pow.txt
+│   ├── solution.py -> 372_Super_Pow.py
+│   ├── test.out.txt
+│   ├── test_372_Super_Pow.cov
+│   └── test_372_Super_Pow.py
+├── 373_Find_K_Pairs_with_Smallest_Sums
+│   ├── 373_Find_K_Pairs_with_Smallest_Sums.py
+│   ├── explain_373_Find_K_Pairs_with_Smallest_Sums.txt
+│   ├── solution.py -> 373_Find_K_Pairs_with_Smallest_Sums.py
+│   ├── test.out.txt
+│   ├── test_373_Find_K_Pairs_with_Smallest_Sums.cov
+│   └── test_373_Find_K_Pairs_with_Smallest_Sums.py
+├── 374_Guess_Number_Higher_or_Lower
+│   ├── 374_Guess_Number_Higher_or_Lower.py
+│   ├── explain_374_Guess_Number_Higher_or_Lower.txt
+│   ├── solution.py -> 374_Guess_Number_Higher_or_Lower.py
+│   ├── test.out.txt
+│   ├── test_374_Guess_Number_Higher_or_Lower.cov
+│   └── test_374_Guess_Number_Higher_or_Lower.py
+├── 375_Guess_Number_Higher_or_Lower_II
+│   ├── 375_Guess_Number_Higher_or_Lower_II.py
+│   ├── explain_375_Guess_Number_Higher_or_Lower_II.txt
+│   ├── solution.py -> 375_Guess_Number_Higher_or_Lower_II.py
+│   ├── test.out.txt
+│   ├── test_375_Guess_Number_Higher_or_Lower_II.cov
+│   └── test_375_Guess_Number_Higher_or_Lower_II.py
+├── 380_Insert_Delete_GetRandom
+│   ├── 380_Insert_Delete_GetRandom.py
+│   ├── explain_380_Insert_Delete_GetRandom.txt
+│   ├── solution.py -> 380_Insert_Delete_GetRandom.py
+│   ├── test.out.txt
+│   ├── test_380_Insert_Delete_GetRandom.cov
+│   └── test_380_Insert_Delete_GetRandom.py
+├── 383_Ransom_Note
+│   ├── 383_Ransom_Note.py
+│   ├── explain_383_Ransom_Note.txt
+│   ├── solution.py -> 383_Ransom_Note.py
+│   ├── test.out.txt
+│   ├── test_383_Ransom_Note.cov
+│   └── test_383_Ransom_Note.py
+├── 384_Shuffle_an_Array
+│   ├── 384_Shuffle_an_Array.py
+│   ├── explain_384_Shuffle_an_Array.txt
+│   ├── solution.py -> 384_Shuffle_an_Array.py
+│   ├── test.out.txt
+│   ├── test_384_Shuffle_an_Array.cov
+│   └── test_384_Shuffle_an_Array.py
+├── 387_First_Unique_Character_in_a_String
+│   ├── 387_First_Unique_Character_in_a_String.py
+│   ├── explain_387_First_Unique_Character_in_a_String.txt
+│   ├── solution.py -> 387_First_Unique_Character_in_a_String.py
+│   ├── test.out.txt
+│   ├── test_387_First_Unique_Character_in_a_String.cov
+│   └── test_387_First_Unique_Character_in_a_String.py
+├── 388_Longest_Absolute_File_Path
+│   ├── 388_Longest_Absolute_File_Path.py
+│   ├── explain_388_Longest_Absolute_File_Path.txt
+│   ├── solution.py -> 388_Longest_Absolute_File_Path.py
+│   ├── test.out.txt
+│   ├── test_388_Longest_Absolute_File_Path.cov
+│   └── test_388_Longest_Absolute_File_Path.py
+├── 389_Find_the_Difference
+│   ├── 389_Find_the_Difference.py
+│   ├── explain_389_Find_the_Difference.txt
+│   ├── solution.py -> 389_Find_the_Difference.py
+│   ├── test.out.txt
+│   ├── test_389_Find_the_Difference.cov
+│   └── test_389_Find_the_Difference.py
+├── 392_Is_Subsequence
+│   ├── 392_Is_Subsequence.py
+│   ├── explain_392_Is_Subsequence.txt
+│   ├── solution.py -> 392_Is_Subsequence.py
+│   ├── test.out.txt
+│   ├── test_392_Is_Subsequence.cov
+│   └── test_392_Is_Subsequence.py
+├── 400_Nth_Digit
+│   ├── 400_Nth_Digit.py
+│   ├── explain_400_Nth_Digit.txt
+│   ├── solution.py -> 400_Nth_Digit.py
+│   ├── test.out.txt
+│   ├── test_400_Nth_Digit.cov
+│   └── test_400_Nth_Digit.py
+├── 401_Binary_Watch
+│   ├── 401_Binary_Watch.py
+│   ├── explain_401_Binary_Watch.txt
+│   ├── solution.py -> 401_Binary_Watch.py
+│   ├── test.out.txt
+│   ├── test_401_Binary_Watch.cov
+│   └── test_401_Binary_Watch.py
+├── 404_Sum_of_Left_Leaves
+│   ├── 404_Sum_of_Left_Leaves.py
+│   ├── explain_404_Sum_of_Left_Leaves.txt
+│   ├── solution.py -> 404_Sum_of_Left_Leaves.py
+│   ├── test.out.txt
+│   ├── test_404_Sum_of_Left_Leaves.cov
+│   └── test_404_Sum_of_Left_Leaves.py
+├── 405_Convert_a_Number_to_Hexadecimal
+│   ├── 405_Convert_a_Number_to_Hexadecimal.py
+│   ├── explain_405_Convert_a_Number_to_Hexadecimal.txt
+│   ├── solution.py -> 405_Convert_a_Number_to_Hexadecimal.py
+│   ├── test.out.txt
+│   ├── test_405_Convert_a_Number_to_Hexadecimal.cov
+│   └── test_405_Convert_a_Number_to_Hexadecimal.py
+├── 408_Valid_Word_Abbreviation
+│   ├── 408_Valid_Word_Abbreviation.py
+│   ├── explain_408_Valid_Word_Abbreviation.txt
+│   ├── solution.py -> 408_Valid_Word_Abbreviation.py
+│   ├── test.out.txt
+│   ├── test_408_Valid_Word_Abbreviation.cov
+│   └── test_408_Valid_Word_Abbreviation.py
+├── 409_Longest_Palindrome
+│   ├── 409_Longest_Palindrome.py
+│   ├── explain_409_Longest_Palindrome.txt
+│   ├── solution.py -> 409_Longest_Palindrome.py
+│   ├── test.out.txt
+│   ├── test_409_Longest_Palindrome.cov
+│   └── test_409_Longest_Palindrome.py
+├── 412_Fizz_Buzz
+│   ├── 412_Fizz_Buzz.py
+│   ├── explain_412_Fizz_Buzz.txt
+│   ├── solution.py -> 412_Fizz_Buzz.py
+│   ├── test.out.txt
+│   ├── test_412_Fizz_Buzz.cov
+│   └── test_412_Fizz_Buzz.py
+├── 414_Third_Maximum_Number
+│   ├── 414_Third_Maximum_Number.py
+│   ├── explain_414_Third_Maximum_Number.txt
+│   ├── solution.py -> 414_Third_Maximum_Number.py
+│   ├── test.out.txt
+│   ├── test_414_Third_Maximum_Number.cov
+│   └── test_414_Third_Maximum_Number.py
+├── 415_Add_Strings
+│   ├── 415_Add_Strings.py
+│   ├── explain_415_Add_Strings.txt
+│   ├── solution.py -> 415_Add_Strings.py
+│   ├── test.out.txt
+│   ├── test_415_Add_Strings.cov
+│   └── test_415_Add_Strings.py
+├── 416_Partition_Equal_Subset_Sum
+│   ├── 416_Partition_Equal_Subset_Sum.py
+│   ├── explain_416_Partition_Equal_Subset_Sum.txt
+│   ├── solution.py -> 416_Partition_Equal_Subset_Sum.py
+│   ├── test.out.txt
+│   ├── test_416_Partition_Equal_Subset_Sum.cov
+│   └── test_416_Partition_Equal_Subset_Sum.py
+├── 421_Maximum_XOR_of_Two_Numbers_in_an_Array
+│   ├── 421_Maximum_XOR_of_Two_Numbers_in_an_Array.py
+│   ├── explain_421_Maximum_XOR_of_Two_Numbers_in_an_Array.txt
+│   ├── solution.py -> 421_Maximum_XOR_of_Two_Numbers_in_an_Array.py
+│   ├── test.out.txt
+│   ├── test_421_Maximum_XOR_of_Two_Numbers_in_an_Array.cov
+│   └── test_421_Maximum_XOR_of_Two_Numbers_in_an_Array.py
+├── 422_Valid_Word_Square
+│   ├── 422_Valid_Word_Square.py
+│   ├── explain_422_Valid_Word_Square.txt
+│   ├── solution.py -> 422_Valid_Word_Square.py
+│   ├── test.out.txt
+│   ├── test_422_Valid_Word_Square.cov
+│   └── test_422_Valid_Word_Square.py
+├── 434_Number_of_Segments_in_a_String
+│   ├── 434_Number_of_Segments_in_a_String.py
+│   ├── explain_434_Number_of_Segments_in_a_String.txt
+│   ├── solution.py -> 434_Number_of_Segments_in_a_String.py
+│   ├── test.out.txt
+│   ├── test_434_Number_of_Segments_in_a_String.cov
+│   └── test_434_Number_of_Segments_in_a_String.py
+├── 437_Path_Sum_III
+│   ├── 437_Path_Sum_III.py
+│   ├── explain_437_Path_Sum_III.txt
+│   ├── solution.py -> 437_Path_Sum_III.py
+│   ├── test.out.txt
+│   ├── test_437_Path_Sum_III.cov
+│   └── test_437_Path_Sum_III.py
+├── 438_Find_All_Anagrams_in_a_String
+│   ├── 438_Find_All_Anagrams_in_a_String.py
+│   ├── explain_438_Find_All_Anagrams_in_a_String.txt
+│   ├── solution.py -> 438_Find_All_Anagrams_in_a_String.py
+│   ├── test.out.txt
+│   ├── test_438_Find_All_Anagrams_in_a_String.cov
+│   └── test_438_Find_All_Anagrams_in_a_String.py
+├── 441_Arranging_Coins
+│   ├── 441_Arranging_Coins.py
+│   ├── explain_441_Arranging_Coins.txt
+│   ├── solution.py -> 441_Arranging_Coins.py
+│   ├── test.out.txt
+│   ├── test_441_Arranging_Coins.cov
+│   └── test_441_Arranging_Coins.py
+├── 443_String_Compression
+│   ├── 443_String_Compression.py
+│   ├── explain_443_String_Compression.txt
+│   ├── solution.py -> 443_String_Compression.py
+│   ├── test.out.txt
+│   ├── test_443_String_Compression.cov
+│   └── test_443_String_Compression.py
+├── 448_Find_All_Numbers_Disappeared_in_an_Array
+│   ├── 448_Find_All_Numbers_Disappeared_in_an_Array.py
+│   ├── explain_448_Find_All_Numbers_Disappeared_in_an_Array.txt
+│   ├── solution.py -> 448_Find_All_Numbers_Disappeared_in_an_Array.py
+│   ├── test.out.txt
+│   ├── test_448_Find_All_Numbers_Disappeared_in_an_Array.cov
+│   └── test_448_Find_All_Numbers_Disappeared_in_an_Array.py
+├── 453_Minimum_Moves_to_Equal_Array_Elements
+│   ├── 453_Minimum_Moves_to_Equal_Array_Elements.py
+│   ├── explain_453_Minimum_Moves_to_Equal_Array_Elements.txt
+│   ├── solution.py -> 453_Minimum_Moves_to_Equal_Array_Elements.py
+│   ├── test.out.txt
+│   ├── test_453_Minimum_Moves_to_Equal_Array_Elements.cov
+│   └── test_453_Minimum_Moves_to_Equal_Array_Elements.py
+├── 457_Circular_Array_Loop
+│   ├── 457_Circular_Array_Loop.py
+│   ├── explain_457_Circular_Array_Loop.txt
+│   ├── solution.py -> 457_Circular_Array_Loop.py
+│   ├── test.out.txt
+│   ├── test_457_Circular_Array_Loop.cov
+│   └── test_457_Circular_Array_Loop.py
+├── 458_Poor_Pigs
+│   ├── 458_Poor_Pigs.py
+│   ├── explain_458_Poor_Pigs.txt
+│   ├── solution.py -> 458_Poor_Pigs.py
+│   ├── test.out.txt
+│   ├── test_458_Poor_Pigs.cov
+│   └── test_458_Poor_Pigs.py
+├── 461_Hamming_Distance
+│   ├── 461_Hamming_Distance.py
+│   ├── explain_461_Hamming_Distance.txt
+│   ├── solution.py -> 461_Hamming_Distance.py
+│   ├── test.out.txt
+│   ├── test_461_Hamming_Distance.cov
+│   └── test_461_Hamming_Distance.py
+├── 463_Island_Perimeter
+│   ├── 463_Island_Perimeter.py
+│   ├── explain_463_Island_Perimeter.txt
+│   ├── solution.py -> 463_Island_Perimeter.py
+│   ├── test.out.txt
+│   ├── test_463_Island_Perimeter.cov
+│   └── test_463_Island_Perimeter.py
+├── 475_Heaters
+│   ├── 475_Heaters.py
+│   ├── explain_475_Heaters.txt
+│   ├── solution.py -> 475_Heaters.py
+│   ├── test.out.txt
+│   ├── test_475_Heaters.cov
+│   └── test_475_Heaters.py
+├── 479_Largest_Palindrome_Product
+│   ├── 479_Largest_Palindrome_Product.py
+│   ├── explain_479_Largest_Palindrome_Product.txt
+│   ├── solution.py -> 479_Largest_Palindrome_Product.py
+│   ├── test.out.txt
+│   ├── test_479_Largest_Palindrome_Product.cov
+│   └── test_479_Largest_Palindrome_Product.py
+├── 482_License_Key_Formatting
+│   ├── 482_License_Key_Formatting.py
+│   ├── explain_482_License_Key_Formatting.txt
+│   ├── solution.py -> 482_License_Key_Formatting.py
+│   ├── test.out.txt
+│   ├── test_482_License_Key_Formatting.cov
+│   └── test_482_License_Key_Formatting.py
+├── 485_Max_Consecutive_Ones
+│   ├── 485_Max_Consecutive_Ones.py
+│   ├── explain_485_Max_Consecutive_Ones.txt
+│   ├── solution.py -> 485_Max_Consecutive_Ones.py
+│   ├── test.out.txt
+│   ├── test_485_Max_Consecutive_Ones.cov
+│   └── test_485_Max_Consecutive_Ones.py
+├── 509_Fibonacci_Number
+│   ├── 509_Fibonacci_Number.py
+│   ├── explain_509_Fibonacci_Number.txt
+│   ├── solution.py -> 509_Fibonacci_Number.py
+│   ├── test.out.txt
+│   ├── test_509_Fibonacci_Number.cov
+│   └── test_509_Fibonacci_Number.py
+├── 523_Continuous_Subarray_Sum
+│   ├── 523_Continuous_Subarray_Sum.py
+│   ├── explain_523_Continuous_Subarray_Sum.txt
+│   ├── solution.py -> 523_Continuous_Subarray_Sum.py
+│   ├── test.out.txt
+│   ├── test_523_Continuous_Subarray_Sum.cov
+│   └── test_523_Continuous_Subarray_Sum.py
+├── 538_Convert_BST_to_Greater_Tree
+│   ├── 538_Convert_BST_to_Greater_Tree.py
+│   ├── explain_538_Convert_BST_to_Greater_Tree.txt
+│   ├── solution.py -> 538_Convert_BST_to_Greater_Tree.py
+│   ├── test.out.txt
+│   ├── test_538_Convert_BST_to_Greater_Tree.cov
+│   └── test_538_Convert_BST_to_Greater_Tree.py
+├── 541_Reverse_String_II
+│   ├── 541_Reverse_String_II.py
+│   ├── explain_541_Reverse_String_II.txt
+│   ├── solution.py -> 541_Reverse_String_II.py
+│   ├── test.out.txt
+│   ├── test_541_Reverse_String_II.cov
+│   └── test_541_Reverse_String_II.py
+├── 543_Diameter_of_Binary_Tree
+│   ├── 543_Diameter_of_Binary_Tree.py
+│   ├── explain_543_Diameter_of_Binary_Tree.txt
+│   ├── solution.py -> 543_Diameter_of_Binary_Tree.py
+│   ├── test.out.txt
+│   ├── test_543_Diameter_of_Binary_Tree.cov
+│   └── test_543_Diameter_of_Binary_Tree.py
+├── 547_Friend_Circles
+│   ├── 547_Friend_Circles.py
+│   ├── explain_547_Friend_Circles.txt
+│   ├── solution.py -> 547_Friend_Circles.py
+│   ├── test.out.txt
+│   ├── test_547_Friend_Circles.cov
+│   └── test_547_Friend_Circles.py
+├── 557_Reverse_Words_in_a_String_III
+│   ├── 557_Reverse_Words_in_a_String_III.py
+│   ├── explain_557_Reverse_Words_in_a_String_III.txt
+│   ├── solution.py -> 557_Reverse_Words_in_a_String_III.py
+│   ├── test.out.txt
+│   ├── test_557_Reverse_Words_in_a_String_III.cov
+│   └── test_557_Reverse_Words_in_a_String_III.py
+├── 560_Subarray_Sum_Equals_K
+│   ├── 560_Subarray_Sum_Equals_K.py
+│   ├── explain_560_Subarray_Sum_Equals_K.txt
+│   ├── solution.py -> 560_Subarray_Sum_Equals_K.py
+│   ├── test.out.txt
+│   ├── test_560_Subarray_Sum_Equals_K.cov
+│   └── test_560_Subarray_Sum_Equals_K.py
+├── 572_Subtree_of_Another_Tree
+│   ├── 572_Subtree_of_Another_Tree.py
+│   ├── explain_572_Subtree_of_Another_Tree.txt
+│   ├── solution.py -> 572_Subtree_of_Another_Tree.py
+│   ├── test.out.txt
+│   ├── test_572_Subtree_of_Another_Tree.cov
+│   └── test_572_Subtree_of_Another_Tree.py
+├── 581_Shortest_Unsorted_Continuous_Subarray
+│   ├── 581_Shortest_Unsorted_Continuous_Subarray.py
+│   ├── explain_581_Shortest_Unsorted_Continuous_Subarray.txt
+│   ├── solution.py -> 581_Shortest_Unsorted_Continuous_Subarray.py
+│   ├── test.out.txt
+│   ├── test_581_Shortest_Unsorted_Continuous_Subarray.cov
+│   └── test_581_Shortest_Unsorted_Continuous_Subarray.py
+├── 605_Can_Place_Flowers
+│   ├── 605_Can_Place_Flowers.py
+│   ├── explain_605_Can_Place_Flowers.txt
+│   ├── solution.py -> 605_Can_Place_Flowers.py
+│   ├── test.out.txt
+│   ├── test_605_Can_Place_Flowers.cov
+│   └── test_605_Can_Place_Flowers.py
+├── 617_Merge_Two_Binary_Trees
+│   ├── 617_Merge_Two_Binary_Trees.py
+│   ├── explain_617_Merge_Two_Binary_Trees.txt
+│   ├── solution.py -> 617_Merge_Two_Binary_Trees.py
+│   ├── test.out.txt
+│   ├── test_617_Merge_Two_Binary_Trees.cov
+│   └── test_617_Merge_Two_Binary_Trees.py
+├── 628_Maximum_Product_of_Three_Numbers
+│   ├── 628_Maximum_Product_of_Three_Numbers.py
+│   ├── explain_628_Maximum_Product_of_Three_Numbers.txt
+│   ├── solution.py -> 628_Maximum_Product_of_Three_Numbers.py
+│   ├── test.out.txt
+│   ├── test_628_Maximum_Product_of_Three_Numbers.cov
+│   └── test_628_Maximum_Product_of_Three_Numbers.py
+├── 654_Maximum_Binary_Tree
+│   ├── 654_Maximum_Binary_Tree.py
+│   ├── explain_654_Maximum_Binary_Tree.txt
+│   ├── solution.py -> 654_Maximum_Binary_Tree.py
+│   ├── test.out.txt
+│   ├── test_654_Maximum_Binary_Tree.cov
+│   └── test_654_Maximum_Binary_Tree.py
+├── 665_Non-decreasing_Array
+│   ├── 665_Non-decreasing_Array.py
+│   ├── explain_665_Non-decreasing_Array.txt
+│   ├── solution.py -> 665_Non-decreasing_Array.py
+│   ├── test.out.txt
+│   ├── test_665_Non-decreasing_Array.cov
+│   └── test_665_Non-decreasing_Array.py
+├── 668_Kth_Smallest_Number_in_Multiplication_Table
+│   ├── 668_Kth_Smallest_Number_in_Multiplication_Table.py
+│   ├── explain_668_Kth_Smallest_Number_in_Multiplication_Table.txt
+│   ├── solution.py -> 668_Kth_Smallest_Number_in_Multiplication_Table.py
+│   ├── test.out.txt
+│   ├── test_668_Kth_Smallest_Number_in_Multiplication_Table.cov
+│   └── test_668_Kth_Smallest_Number_in_Multiplication_Table.py
+├── 671_Second_Minimum_Node_In_a_Binary_Tree
+│   ├── 671_Second_Minimum_Node_In_a_Binary_Tree.py
+│   ├── explain_671_Second_Minimum_Node_In_a_Binary_Tree.txt
+│   ├── solution.py -> 671_Second_Minimum_Node_In_a_Binary_Tree.py
+│   ├── test.out.txt
+│   ├── test_671_Second_Minimum_Node_In_a_Binary_Tree.cov
+│   └── test_671_Second_Minimum_Node_In_a_Binary_Tree.py
+├── 674_Longest_Continuous_Increasing_Subsequence
+│   ├── 674_Longest_Continuous_Increasing_Subsequence.py
+│   ├── explain_674_Longest_Continuous_Increasing_Subsequence.txt
+│   ├── solution.py -> 674_Longest_Continuous_Increasing_Subsequence.py
+│   ├── test.out.txt
+│   ├── test_674_Longest_Continuous_Increasing_Subsequence.cov
+│   └── test_674_Longest_Continuous_Increasing_Subsequence.py
+├── 680_Valid_Palindrome_II
+│   ├── 680_Valid_Palindrome_II.py
+│   ├── explain_680_Valid_Palindrome_II.txt
+│   ├── solution.py -> 680_Valid_Palindrome_II.py
+│   ├── test.out.txt
+│   ├── test_680_Valid_Palindrome_II.cov
+│   └── test_680_Valid_Palindrome_II.py
+├── 692_Top_K_Frequent_Words
+│   ├── 692_Top_K_Frequent_Words.py
+│   ├── explain_692_Top_K_Frequent_Words.txt
+│   ├── solution.py -> 692_Top_K_Frequent_Words.py
+│   ├── test.out.txt
+│   ├── test_692_Top_K_Frequent_Words.cov
+│   └── test_692_Top_K_Frequent_Words.py
+├── 695_Max_Area_of_Island
+│   ├── 695_Max_Area_of_Island.py
+│   ├── explain_695_Max_Area_of_Island.txt
+│   ├── solution.py -> 695_Max_Area_of_Island.py
+│   ├── test.out.txt
+│   ├── test_695_Max_Area_of_Island.cov
+│   └── test_695_Max_Area_of_Island.py
+├── 697_Degree_of_an_Array
+│   ├── 697_Degree_of_an_Array.py
+│   ├── explain_697_Degree_of_an_Array.txt
+│   ├── solution.py -> 697_Degree_of_an_Array.py
+│   ├── test.out.txt
+│   ├── test_697_Degree_of_an_Array.cov
+│   └── test_697_Degree_of_an_Array.py
+├── 700_Search_in_a_Binary_Search_Tree
+│   ├── 700_Search_in_a_Binary_Search_Tree.py
+│   ├── explain_700_Search_in_a_Binary_Search_Tree.txt
+│   ├── solution.py -> 700_Search_in_a_Binary_Search_Tree.py
+│   ├── test.out.txt
+│   ├── test_700_Search_in_a_Binary_Search_Tree.cov
+│   └── test_700_Search_in_a_Binary_Search_Tree.py
+├── 703_Kth_Largest_Element_in_a_Stream
+│   ├── 703_Kth_Largest_Element_in_a_Stream.py
+│   ├── explain_703_Kth_Largest_Element_in_a_Stream.txt
+│   ├── solution.py -> 703_Kth_Largest_Element_in_a_Stream.py
+│   ├── test.out.txt
+│   ├── test_703_Kth_Largest_Element_in_a_Stream.cov
+│   └── test_703_Kth_Largest_Element_in_a_Stream.py
+├── 706_Design_HashMap
+│   ├── 706_Design_HashMap.py
+│   ├── explain_706_Design_HashMap.txt
+│   ├── solution.py -> 706_Design_HashMap.py
+│   ├── test.out.txt
+│   ├── test_706_Design_HashMap.cov
+│   └── test_706_Design_HashMap.py
+├── 709_To_Lower_Case
+│   ├── 709_To_Lower_Case.py
+│   ├── explain_709_To_Lower_Case.txt
+│   ├── solution.py -> 709_To_Lower_Case.py
+│   ├── test.out.txt
+│   ├── test_709_To_Lower_Case.cov
+│   └── test_709_To_Lower_Case.py
+├── 716_Max_Stack
+│   ├── 716_Max_Stack.py
+│   ├── explain_716_Max_Stack.txt
+│   ├── solution.py -> 716_Max_Stack.py
+│   ├── test.out.txt
+│   ├── test_716_Max_Stack.cov
+│   └── test_716_Max_Stack.py
+├── 717_1-bit_and_2-bit_Characters
+│   ├── 717_1-bit_and_2-bit_Characters.py
+│   ├── explain_717_1-bit_and_2-bit_Characters.txt
+│   ├── solution.py -> 717_1-bit_and_2-bit_Characters.py
+│   └── test.out.txt
+├── 720_Longest_Word_in_Dictionary
+│   ├── 720_Longest_Word_in_Dictionary.py
+│   ├── explain_720_Longest_Word_in_Dictionary.txt
+│   ├── solution.py -> 720_Longest_Word_in_Dictionary.py
+│   ├── test.out.txt
+│   ├── test_720_Longest_Word_in_Dictionary.cov
+│   └── test_720_Longest_Word_in_Dictionary.py
+├── 724_Find_Pivot_Index
+│   ├── 724_Find_Pivot_Index.py
+│   ├── explain_724_Find_Pivot_Index.txt
+│   ├── solution.py -> 724_Find_Pivot_Index.py
+│   ├── test.out.txt
+│   ├── test_724_Find_Pivot_Index.cov
+│   └── test_724_Find_Pivot_Index.py
+├── 728_Self_Dividing_Numbers
+│   ├── 728_Self_Dividing_Numbers.py
+│   ├── explain_728_Self_Dividing_Numbers.txt
+│   ├── solution.py -> 728_Self_Dividing_Numbers.py
+│   ├── test.out.txt
+│   ├── test_728_Self_Dividing_Numbers.cov
+│   └── test_728_Self_Dividing_Numbers.py
+├── 732_My_Calendar_III
+│   ├── 732_My_Calendar_III.py
+│   ├── explain_732_My_Calendar_III.txt
+│   ├── solution.py -> 732_My_Calendar_III.py
+│   ├── test.out.txt
+│   ├── test_732_My_Calendar_III.cov
+│   └── test_732_My_Calendar_III.py
+├── 733_Flood_Fill
+│   ├── 733_Flood_Fill.py
+│   ├── explain_733_Flood_Fill.txt
+│   ├── solution.py -> 733_Flood_Fill.py
+│   ├── test.out.txt
+│   ├── test_733_Flood_Fill.cov
+│   └── test_733_Flood_Fill.py
+├── 743_Network_Delay_Time
+│   ├── 743_Network_Delay_Time.py
+│   ├── explain_743_Network_Delay_Time.txt
+│   ├── solution.py -> 743_Network_Delay_Time.py
+│   ├── test.out.txt
+│   ├── test_743_Network_Delay_Time.cov
+│   └── test_743_Network_Delay_Time.py
+├── 751_IP_to_CIDR
+│   ├── 751_IP_to_CIDR.py
+│   ├── explain_751_IP_to_CIDR.txt
+│   ├── solution.py -> 751_IP_to_CIDR.py
+│   ├── test.out.txt
+│   ├── test_751_IP_to_CIDR.cov
+│   └── test_751_IP_to_CIDR.py
+├── 760_Find_Anagram_Mappings
+│   ├── 760_Find_Anagram_Mappings.py
+│   ├── explain_760_Find_Anagram_Mappings.txt
+│   ├── solution.py -> 760_Find_Anagram_Mappings.py
+│   ├── test.out.txt
+│   ├── test_760_Find_Anagram_Mappings.cov
+│   └── test_760_Find_Anagram_Mappings.py
+├── 766_Toeplitz_Matrix
+│   ├── 766_Toeplitz_Matrix.py
+│   ├── explain_766_Toeplitz_Matrix.txt
+│   ├── solution.py -> 766_Toeplitz_Matrix.py
+│   ├── test.out.txt
+│   ├── test_766_Toeplitz_Matrix.cov
+│   └── test_766_Toeplitz_Matrix.py
+├── 771_Jewels_and_Stones
+│   ├── 771_Jewels_and_Stones.py
+│   ├── explain_771_Jewels_and_Stones.txt
+│   ├── solution.py -> 771_Jewels_and_Stones.py
+│   ├── test.out.txt
+│   ├── test_771_Jewels_and_Stones.cov
+│   └── test_771_Jewels_and_Stones.py
+├── 784_Letter_Case_Permutation
+│   ├── 784_Letter_Case_Permutation.py
+│   ├── explain_784_Letter_Case_Permutation.txt
+│   ├── solution.py -> 784_Letter_Case_Permutation.py
+│   ├── test.out.txt
+│   ├── test_784_Letter_Case_Permutation.cov
+│   └── test_784_Letter_Case_Permutation.py
+├── 804_Unique_Morse_Code_Words
+│   ├── 804_Unique_Morse_Code_Words.py
+│   ├── explain_804_Unique_Morse_Code_Words.txt
+│   ├── solution.py -> 804_Unique_Morse_Code_Words.py
+│   ├── test.out.txt
+│   ├── test_804_Unique_Morse_Code_Words.cov
+│   └── test_804_Unique_Morse_Code_Words.py
+├── 811_Subdomain_Visit_Count
+│   ├── 811_Subdomain_Visit_Count.py
+│   ├── explain_811_Subdomain_Visit_Count.txt
+│   ├── solution.py -> 811_Subdomain_Visit_Count.py
+│   ├── test.out.txt
+│   ├── test_811_Subdomain_Visit_Count.cov
+│   └── test_811_Subdomain_Visit_Count.py
+├── 819_Most_Common_Word
+│   ├── 819_Most_Common_Word.py
+│   ├── explain_819_Most_Common_Word.txt
+│   ├── solution.py -> 819_Most_Common_Word.py
+│   ├── test.out.txt
+│   ├── test_819_Most_Common_Word.cov
+│   └── test_819_Most_Common_Word.py
+├── 832_Flipping_an_Image
+│   ├── 832_Flipping_an_Image.py
+│   ├── explain_832_Flipping_an_Image.txt
+│   ├── solution.py -> 832_Flipping_an_Image.py
+│   ├── test.out.txt
+│   ├── test_832_Flipping_an_Image.cov
+│   └── test_832_Flipping_an_Image.py
+├── 836_Rectangle_Overlap
+│   ├── 836_Rectangle_Overlap.py
+│   ├── explain_836_Rectangle_Overlap.txt
+│   ├── solution.py -> 836_Rectangle_Overlap.py
+│   ├── test.out.txt
+│   ├── test_836_Rectangle_Overlap.cov
+│   └── test_836_Rectangle_Overlap.py
+├── 844_Backspace_String_Compare
+│   ├── 844_Backspace_String_Compare.py
+│   ├── explain_844_Backspace_String_Compare.txt
+│   ├── solution.py -> 844_Backspace_String_Compare.py
+│   ├── test.out.txt
+│   ├── test_844_Backspace_String_Compare.cov
+│   └── test_844_Backspace_String_Compare.py
+├── 852_Peak_Index_in_a_Mountain_Array
+│   ├── 852_Peak_Index_in_a_Mountain_Array.py
+│   ├── explain_852_Peak_Index_in_a_Mountain_Array.txt
+│   ├── solution.py -> 852_Peak_Index_in_a_Mountain_Array.py
+│   ├── test.out.txt
+│   ├── test_852_Peak_Index_in_a_Mountain_Array.cov
+│   └── test_852_Peak_Index_in_a_Mountain_Array.py
+├── 867_Transpose_Matrix
+│   ├── 867_Transpose_Matrix.py
+│   ├── explain_867_Transpose_Matrix.txt
+│   ├── solution.py -> 867_Transpose_Matrix.py
+│   ├── test.out.txt
+│   ├── test_867_Transpose_Matrix.cov
+│   └── test_867_Transpose_Matrix.py
+├── 868_Binary_Gap
+│   ├── 868_Binary_Gap.py
+│   ├── explain_868_Binary_Gap.txt
+│   ├── solution.py -> 868_Binary_Gap.py
+│   ├── test.out.txt
+│   ├── test_868_Binary_Gap.cov
+│   └── test_868_Binary_Gap.py
+├── 872_Leaf-Similar_Trees
+│   ├── 872_Leaf-Similar_Trees.py
+│   ├── explain_872_Leaf-Similar_Trees.txt
+│   ├── solution.py -> 872_Leaf-Similar_Trees.py
+│   ├── test.out.txt
+│   ├── test_872_Leaf-Similar_Trees.cov
+│   └── test_872_Leaf-Similar_Trees.py
+├── 876_Middle_of_the_Linked_List
+│   ├── 876_Middle_of_the_Linked_List.py
+│   ├── explain_876_Middle_of_the_Linked_List.txt
+│   ├── solution.py -> 876_Middle_of_the_Linked_List.py
+│   ├── test.out.txt
+│   ├── test_876_Middle_of_the_Linked_List.cov
+│   └── test_876_Middle_of_the_Linked_List.py
+├── 904_Fruit_Into_Baskets
+│   ├── 904_Fruit_Into_Baskets.py
+│   ├── explain_904_Fruit_Into_Baskets.txt
+│   ├── solution.py -> 904_Fruit_Into_Baskets.py
+│   ├── test.out.txt
+│   ├── test_904_Fruit_Into_Baskets.cov
+│   └── test_904_Fruit_Into_Baskets.py
+├── 905_Sort_Array_By_Parity
+│   ├── 905_Sort_Array_By_Parity.py
+│   ├── explain_905_Sort_Array_By_Parity.txt
+│   ├── solution.py -> 905_Sort_Array_By_Parity.py
+│   ├── test.out.txt
+│   ├── test_905_Sort_Array_By_Parity.cov
+│   └── test_905_Sort_Array_By_Parity.py
+├── 922_Sort_Array_By_Parity_II
+│   ├── 922_Sort_Array_By_Parity_II.py
+│   ├── explain_922_Sort_Array_By_Parity_II.txt
+│   ├── solution.py -> 922_Sort_Array_By_Parity_II.py
+│   ├── test.out.txt
+│   ├── test_922_Sort_Array_By_Parity_II.cov
+│   └── test_922_Sort_Array_By_Parity_II.py
+├── 929_Unique_Email_Addresses
+│   ├── 929_Unique_Email_Addresses.py
+│   ├── explain_929_Unique_Email_Addresses.txt
+│   ├── solution.py -> 929_Unique_Email_Addresses.py
+│   ├── test.out.txt
+│   ├── test_929_Unique_Email_Addresses.cov
+│   └── test_929_Unique_Email_Addresses.py
+├── 933_Number_of_Recent_Calls
+│   ├── 933_Number_of_Recent_Calls.py
+│   ├── explain_933_Number_of_Recent_Calls.txt
+│   ├── solution.py -> 933_Number_of_Recent_Calls.py
+│   ├── test.out.txt
+│   ├── test_933_Number_of_Recent_Calls.cov
+│   └── test_933_Number_of_Recent_Calls.py
+├── 937_Reorder_Log_Files
+│   ├── 937_Reorder_Log_Files.py
+│   ├── explain_937_Reorder_Log_Files.txt
+│   ├── solution.py -> 937_Reorder_Log_Files.py
+│   ├── test.out.txt
+│   ├── test_937_Reorder_Log_Files.cov
+│   └── test_937_Reorder_Log_Files.py
+├── 945_Minimum_Increment_to_Make_Array_Unique
+│   ├── 945_Minimum_Increment_to_Make_Array_Unique.py
+│   ├── explain_945_Minimum_Increment_to_Make_Array_Unique.txt
+│   ├── solution.py -> 945_Minimum_Increment_to_Make_Array_Unique.py
+│   ├── test.out.txt
+│   ├── test_945_Minimum_Increment_to_Make_Array_Unique.cov
+│   └── test_945_Minimum_Increment_to_Make_Array_Unique.py
+├── 946_Validate_Stack_Sequences
+│   ├── 946_Validate_Stack_Sequences.py
+│   ├── solution.py -> 946_Validate_Stack_Sequences.py
+│   ├── test.out.txt
+│   ├── test_946_Validate_Stack_Sequences.cov
+│   └── test_946_Validate_Stack_Sequences.py
+├── 953_Verifying_an_Alien_Dictionary
+│   ├── 953_Verifying_an_Alien_Dictionary.py
+│   ├── explain_953_Verifying_an_Alien_Dictionary.txt
+│   ├── solution.py -> 953_Verifying_an_Alien_Dictionary.py
+│   ├── test.out.txt
+│   ├── test_953_Verifying_an_Alien_Dictionary.cov
+│   └── test_953_Verifying_an_Alien_Dictionary.py
+├── 954_Array_of_Doubled_Pairs
+│   ├── 954_Array_of_Doubled_Pairs.py
+│   ├── explain_954_Array_of_Doubled_Pairs.txt
+│   ├── solution.py -> 954_Array_of_Doubled_Pairs.py
+│   ├── test.out.txt
+│   ├── test_954_Array_of_Doubled_Pairs.cov
+│   └── test_954_Array_of_Doubled_Pairs.py
+├── 961_N-Repeated_Element_in_Size_2N_Array
+│   ├── 961_N-Repeated_Element_in_Size_2N_Array.py
+│   ├── explain_961_N-Repeated_Element_in_Size_2N_Array.txt
+│   ├── solution.py -> 961_N-Repeated_Element_in_Size_2N_Array.py
+│   ├── test.out.txt
+│   ├── test_961_N-Repeated_Element_in_Size_2N_Array.cov
+│   └── test_961_N-Repeated_Element_in_Size_2N_Array.py
+├── 962_Maximum_Width_Ramp
+│   ├── 962_Maximum_Width_Ramp.py
+│   ├── explain_962_Maximum_Width_Ramp.txt
+│   ├── solution.py -> 962_Maximum_Width_Ramp.py
+│   ├── test.out.txt
+│   ├── test_962_Maximum_Width_Ramp.cov
+│   └── test_962_Maximum_Width_Ramp.py
+├── 973_K_Closest_Points_to_Origin
+│   ├── 973_K_Closest_Points_to_Origin.py
+│   ├── explain_973_K_Closest_Points_to_Origin.txt
+│   ├── solution.py -> 973_K_Closest_Points_to_Origin.py
+│   ├── test.out.txt
+│   ├── test_973_K_Closest_Points_to_Origin.cov
+│   └── test_973_K_Closest_Points_to_Origin.py
+├── 977_Squares_of_a_Sorted_Array
+│   ├── 977_Squares_of_a_Sorted_Array.py
+│   ├── explain_977_Squares_of_a_Sorted_Array.txt
+│   ├── solution.py -> 977_Squares_of_a_Sorted_Array.py
+│   ├── test.out.txt
+│   ├── test_977_Squares_of_a_Sorted_Array.cov
+│   └── test_977_Squares_of_a_Sorted_Array.py
+├── 981_Time_Based_Store
+│   ├── 981_Time_Based_Store.py
+│   ├── explain_981_Time_Based_Store.txt
+│   ├── solution.py -> 981_Time_Based_Store.py
+│   ├── test.out.txt
+│   ├── test_981_Time_Based_Store.cov
+│   └── test_981_Time_Based_Store.py
+├── 997_Find_The_Town_Judge
+│   ├── 997_Find_The_Town_Judge.py
+│   ├── explain_997_Find_The_Town_Judge.txt
+│   ├── solution.py -> 997_Find_The_Town_Judge.py
+│   ├── test.out.txt
+│   ├── test_997_Find_The_Town_Judge.cov
+│   └── test_997_Find_The_Town_Judge.py
+├── __init__
+│   ├── __init__.py
+│   ├── explain___init__.txt
+│   ├── solution.py -> __init__.py
+│   └── test.out.txt
+├── test.err.csv
+└── test.err.out
+
+385 directories, 2268 files
