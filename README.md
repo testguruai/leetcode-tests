@@ -1,14 +1,16 @@
 # leetcode-tests
-# ==============================================================================
+# 
 # Copyright 2023 VerifAI All Rights Reserved.
 # hello@verifai.ai
 # https://www.verifai.ai
 # https://testguru.ai
 # VerifAI and TestGuru are trademarks of VerifAI Inc.
-# ==============================================================================
+# 
 
-This is VerifAI's TestGuru generated tests for https://github.com/qiyuangong/leetcode solutions for python
-TestGuru generated tests for the python solutions for leetcode questions. These solutions were obtained from :  https://github.com/qiyuangong/leetcode
+This is VerifAI's TestGuru generated tests for https://github.com/qiyuangong/leetcode solutions for python.
+
+TestGuru generated tests for the python solutions for leetcode questions.
+These solutions were obtained from :  https://github.com/qiyuangong/leetcode
 Permission is granted to use these generated tests and results without any restriction.
 
 Repo Structure:
