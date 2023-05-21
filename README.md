@@ -1,6 +1,9 @@
 # leetcode-tests
 # VerifAI's TestGuru generated tests for leetcode python solutions (https://github.com/qiyuangong/leetcode)
 
+![leetcode-testguru-1](https://github.com/testguruai/leetcode-tests/assets/132442834/48c765e6-d6e6-43f7-b5e0-c6d39ae0284e)
+
+
 https://testguru.ai
 # 
 # Copyright 2023 VerifAI All Rights Reserved.
